@@ -1,5 +1,5 @@
 /* CookMyFridge service worker: offline-first app shell and data caching. */
-const CACHE_NAME = "cmf-cache-20261106152533";
+const CACHE_NAME = "cmf-cache-20261106153230";
 const CORE_ASSETS = [
   "index.html",
   "result.html",
