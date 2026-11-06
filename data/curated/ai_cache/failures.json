@@ -1,47 +1,5 @@
 {
  "blindboxes:老干妈|速冻饺子": {
   "error": "多次重试仍失败：模型使用了目录外食材: ['芝士', '红椒']"
- },
- "variants:r022:fusion": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['迷迭香']"
- },
- "variants:r034:substitute": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['胡萝卜丁', '玉米粒']"
- },
- "variants:r035:method": {
-  "error": "多次重试仍失败：AI 菜谱校验失败: ['未知标签: 腐竹']"
- },
- "variants:r041:substitute": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['白吐司']"
- },
- "variants:r052:fusion": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['辣椒油']"
- },
- "variants:r056:fusion": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['蒜末', '姜末', '水淀粉']"
- },
- "variants:r059:substitute": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['白面包']"
- },
- "variants:r059:fusion": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['肉桂粉']"
- },
- "variants:r065:fusion": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['姜末', '蒜末', '青红椒']"
- },
- "variants:r066:fusion": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['糖']"
- },
- "variants:r068:fusion": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['糖']"
- },
- "variants:r075:fusion": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['糖']"
- },
- "variants:r077:fusion": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['迷迭香']"
- },
- "variants:r080:fusion": {
-  "error": "多次重试仍失败：模型使用了目录外食材: ['红枣', '枸杞']"
  }
 }

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import uuid
 
-from .catalog import allergens_of
+from .catalog import allergens_of, canonical_set
 from .dataset import AI_DISCLAIMER, METHOD_SAFETY
 from .llm import LLMClient, LLMError
 from .models import (
@@ -110,11 +110,12 @@ def _recipe_from_payload(
         return normalized
 
     methods = _normalize_list(_as_list(payload.get("methods")), METHOD_ALIASES)
-    # A method name sometimes lands in the tags slot; keep only real tags.
+    # A method or ingredient name sometimes lands in the tags slot; keep real tags.
+    ingredient_names = canonical_set()
     tags = [
         t
         for t in _normalize_list(_as_list(payload.get("tags")), TAG_ALIASES)
-        if t not in COOKING_METHODS
+        if t not in COOKING_METHODS and t not in ingredient_names
     ]
     safety_notes = [AI_DISCLAIMER]
     for risk in _as_list(payload.get("risks")):
