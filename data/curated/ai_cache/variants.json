@@ -9088,5 +9088,9609 @@
   "source": "GLM AI 生成（glm-4-flash）",
   "license": "AI-generated, see About",
   "is_ai_generated": true
+ },
+ "r009:lowcal": {
+  "id": "ai-var-r009-lowcal",
+  "title": "低卡版拍黄瓜",
+  "ingredients": [
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "2 根",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "黄瓜洗净，用刀背拍裂后切成段。",
+   "大蒜切末。",
+   "将生抽、醋、香油、盐和少许白糖混合成汁。",
+   "将调好的汁倒入黄瓜中拌匀。",
+   "腌制5分钟，即可食用。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r009:airfryer": {
+  "id": "ai-var-r009-airfryer",
+  "title": "空气炸锅版拍黄瓜",
+  "ingredients": [
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "2 根",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "黄瓜洗净，用刀背拍裂后切成段。",
+   "大蒜切末。",
+   "将生抽、醋、香油、盐、白糖混合成调味汁。",
+   "将黄瓜段放入空气炸锅中。",
+   "将调味汁均匀涂抹在黄瓜段上。",
+   "设置空气炸锅温度为180℃，时间设置为10分钟。",
+   "空气炸锅完成后，取出黄瓜段，搅拌均匀，让调味汁充分吸收。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免食物烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r010:lowcal": {
+  "id": "ai-var-r010-lowcal",
+  "title": "低卡版蒜蓉西兰花",
+  "ingredients": [
+   {
+    "name": "西兰花",
+    "canonical": "西兰花",
+    "amount": "1 颗",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "4 瓣",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 滴",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1/4 小勺",
+    "optional": false
+   },
+   {
+    "name": "蚝油",
+    "canonical": "蚝油",
+    "amount": "1/2 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "西兰花掰小朵，用盐水泡 10 分钟后洗净。",
+   "烧开水加少许盐，下西兰花焯 1 分钟捞出沥干。",
+   "热锅倒 1 滴食用油，下蒜末炒香。",
+   "加入焯好水的西兰花，快速翻炒。",
+   "根据口味加入 1/2 小勺蚝油调味，大火翻匀出锅。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制油量和蚝油用量，以保持低卡减脂的特点。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r010:airfryer": {
+  "id": "ai-var-r010-airfryer",
+  "title": "空气炸锅版蒜蓉西兰花",
+  "ingredients": [
+   {
+    "name": "西兰花",
+    "canonical": "西兰花",
+    "amount": "1 颗",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "4 瓣",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "蚝油",
+    "canonical": "蚝油",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "西兰花掰小朵，用盐水泡 10 分钟后洗净。",
+   "烧开水加少许油盐，下西兰花焯 1 分钟捞出沥干。",
+   "将西兰花沥干水分，放入空气炸锅篮中。",
+   "在西兰花上撒上蒜末。",
+   "根据空气炸锅的设定，将温度设置为 180℃，时间设置为 15 分钟。",
+   "空气炸锅完成后，取出西兰花，加入蚝油或盐调味。",
+   "翻匀后即可出锅享用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免食物烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r011:lowcal": {
+  "id": "ai-var-r011-lowcal",
+  "title": "低卡版清蒸鲈鱼",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "canonical": "鲈鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "2 段",
+    "optional": false
+   },
+   {
+    "name": "蒸鱼豉油",
+    "canonical": "蒸鱼豉油",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鲈鱼处理干净，两面划刀，抹料酒腌 5 分钟。",
+   "盘底铺姜片葱段，放上鱼，水开后上锅大火蒸 8 分钟。",
+   "倒掉盘中蒸出的腥水，换新葱丝，淋蒸鱼豉油。",
+   "另起锅，加入少量水，烧开后转小火，加入蒸鱼豉油，煮至微微冒烟，关火。",
+   "将热蒸鱼豉油浇在鱼身上激出香味。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆",
+   "鱼"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鲈鱼不要蒸煮时间过长，以免肉质变老。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r011:airfryer": {
+  "id": "ai-var-r011-airfryer",
+  "title": "空气炸锅版清蒸鲈鱼",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "canonical": "鲈鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "2 段",
+    "optional": false
+   },
+   {
+    "name": "蒸鱼豉油",
+    "canonical": "蒸鱼豉油",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鲈鱼处理干净，两面划刀，抹料酒腌 5 分钟。",
+   "盘底铺姜片葱段，放上鱼。",
+   "空气炸锅预热至 180°C。",
+   "将鱼放入空气炸锅，炸 8 分钟。",
+   "倒掉盘中蒸出的腥水，换新葱丝。",
+   "将蒸鱼豉油淋在鱼身上。",
+   "另起锅烧冒烟的热油，浇在鱼身上激出香味。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 13,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "低脂"
+  ],
+  "allergens": [
+   "大豆",
+   "鱼"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度，避免烫伤"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r012:lowcal": {
+  "id": "ai-var-r012-lowcal",
+  "title": "低卡版红烧排骨",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "500克",
+    "optional": false
+   },
+   {
+    "name": "冰糖",
+    "canonical": "冰糖",
+    "amount": "10克",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "半勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "2片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1段",
+    "optional": false
+   },
+   {
+    "name": "八角",
+    "canonical": "八角",
+    "amount": "1个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "排骨冷水下锅加料酒焯水，撇沫捞出冲洗干净。",
+   "锅中加入少量水，放入冰糖小火煮至糖色。",
+   "加入排骨，翻炒至糖色均匀附着在排骨上。",
+   "加入姜片、葱段、八角、生抽、老抽，翻炒均匀。",
+   "加入足量水，大火烧开转小火蒸煮30分钟。",
+   "最后大火收汁，汤汁裹满排骨即可。"
+  ],
+  "methods": [
+   "蒸",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制糖和油的用量，以免影响低卡减脂效果。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r012:airfryer": {
+  "id": "ai-var-r012-airfryer",
+  "title": "空气炸锅版红烧排骨",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "500克",
+    "optional": false
+   },
+   {
+    "name": "冰糖",
+    "canonical": "冰糖",
+    "amount": "20克",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1段",
+    "optional": false
+   },
+   {
+    "name": "八角",
+    "canonical": "八角",
+    "amount": "1个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "排骨冷水下锅加料酒焯水，撇沫捞出冲洗干净。",
+   "将处理干净的排骨放入空气炸锅篮中。",
+   "在排骨上撒上冰糖，用空气炸锅高温（约200℃）炸制，直到排骨表面微焦并上色。",
+   "将炸好的排骨取出，锅中留少许油，加入姜片、葱段、八角炒香。",
+   "加入生抽、老抽炒匀，然后倒入适量的水。",
+   "将炸好的排骨放回锅中，大火烧开转小火炖煮40分钟。",
+   "最后，用空气炸锅高温（约200℃）收汁，直到汤汁裹满排骨即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 60,
+  "difficulty": "中等",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "下饭"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸制排骨时油温不宜过高，以免发生火灾。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r013:lowcal": {
+  "id": "ai-var-r013-lowcal",
+  "title": "低卡版土豆炖牛肉",
+  "ingredients": [
+   {
+    "name": "牛腩",
+    "canonical": "牛腩",
+    "amount": "400克",
+    "optional": false
+   },
+   {
+    "name": "土豆",
+    "canonical": "土豆",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1段",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "八角",
+    "canonical": "八角",
+    "amount": "1个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "牛腩切块，冷水下锅加入料酒焯水，撇去浮沫捞出。",
+   "牛腩加入姜片、葱段、八角、生抽、老抽和热水，小火炖煮50分钟。",
+   "土豆、胡萝卜切滚刀块，下锅再炖煮20分钟。",
+   "炖至土豆软烂、汤汁浓稠，尝味后根据需要调整咸淡。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 80,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "下饭"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意牛肉的炖煮时间，避免肉质过于酥烂。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r013:airfryer": {
+  "id": "ai-var-r013-airfryer",
+  "title": "空气炸锅版土豆炖牛肉",
+  "ingredients": [
+   {
+    "name": "牛腩",
+    "canonical": "牛腩",
+    "amount": "400克",
+    "optional": false
+   },
+   {
+    "name": "土豆",
+    "canonical": "土豆",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1段",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "八角",
+    "canonical": "八角",
+    "amount": "1个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "牛腩切块，冷水下锅加料酒焯水，撇沫捞出。",
+   "牛腩加姜片、葱段、八角、生抽、老抽和热水，放入空气炸锅。",
+   "设置空气炸锅温度为180℃，时间设置为50分钟。",
+   "土豆、胡萝卜切滚刀块，加入空气炸锅。",
+   "继续设置空气炸锅温度为180℃，时间设置为20分钟。",
+   "炖到土豆软烂、汤汁浓稠，尝味后调整咸淡。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 70,
+  "difficulty": "中等",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "下饭"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的使用安全，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r014:lowcal": {
+  "id": "ai-var-r014-lowcal",
+  "title": "低卡版葱爆羊肉",
+  "ingredients": [
+   {
+    "name": "羊肉",
+    "canonical": "羊肉",
+    "amount": "250克",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "2根",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "孜然",
+    "canonical": "孜然",
+    "amount": "1小勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "羊肉切片，加入料酒、生抽、孜然，抓匀腌制10分钟。",
+   "大葱切段。",
+   "锅中加入少量水，将腌制好的羊肉片焯水去血水。",
+   "焯水后捞出羊肉片备用。",
+   "锅中加入少量食用油，放入大葱段翻炒至断生。",
+   "加入焯好水的羊肉片，快速翻炒均匀。",
+   "加盐调味，翻炒均匀后立刻出锅。"
+  ],
+  "methods": [
+   "煮",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "羊肉切片时注意不要切得太厚，以免影响口感和烹饪时间。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r014:airfryer": {
+  "id": "ai-var-r014-airfryer",
+  "title": "空气炸锅版葱爆羊肉",
+  "ingredients": [
+   {
+    "name": "羊肉",
+    "canonical": "羊肉",
+    "amount": "250 克",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "2 根",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "孜然",
+    "canonical": "孜然",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将羊肉切片，加入料酒、生抽、孜然，抓匀腌制10分钟。",
+   "将大葱切成滚刀块。",
+   "将腌制好的羊肉和大葱放入空气炸锅中。",
+   "设置空气炸锅温度为180℃，时间设置为10分钟。",
+   "空气炸锅完成后，取出羊肉和大葱，撒上少许盐调味，拌匀即可食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意羊肉切片要均匀，以免炸不熟。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r015:lowcal": {
+  "id": "ai-var-r015-lowcal",
+  "title": "低卡版白灼虾",
+  "ingredients": [
+   {
+    "name": "虾",
+    "canonical": "虾",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1段",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾剪去虾须，挑去虾线洗净。",
+   "锅中加水，放入姜片、葱段、料酒烧开。",
+   "下虾煮至变红蜷曲，约2分钟立刻捞出。",
+   "用生抽加醋或姜末调成蘸料佐食。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆",
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "虾煮的时间不宜过长，以免肉质变老。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r015:airfryer": {
+  "id": "ai-var-r015-airfryer",
+  "title": "空气炸锅版白灼虾",
+  "ingredients": [
+   {
+    "name": "虾",
+    "canonical": "虾",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1段",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾剪去虾须，挑去虾线洗净。",
+   "将虾放入空气炸锅篮中。",
+   "在空气炸锅中加入姜片和大葱段。",
+   "倒入料酒。",
+   "设置空气炸锅温度至180°C，时间设置为2分钟。",
+   "虾炸至变红蜷曲后，立刻捞出。",
+   "将生抽和醋混合，制成蘸料。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 2,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "快手"
+  ],
+  "allergens": [
+   "大豆",
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸虾时不要过度，以免外焦里生。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r016:lowcal": {
+  "id": "ai-var-r016-lowcal",
+  "title": "低卡版紫菜蛋花汤",
+  "ingredients": [
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "虾皮",
+    "canonical": "虾皮",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "紫菜撕成小块。",
+   "鸡蛋打散备用。",
+   "锅中加水煮沸，加入紫菜和虾皮，煮 1 分钟。",
+   "慢慢倒入打散的鸡蛋液，待蛋花浮起后关火。",
+   "加入少许盐调味。",
+   "滴入几滴香油。",
+   "撒上少许葱花提香。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将鸡蛋液倒入过快，以免形成大块。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r016:airfryer": {
+  "id": "ai-var-r016-airfryer",
+  "title": "空气炸锅版紫菜蛋花汤",
+  "ingredients": [
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "虾皮",
+    "canonical": "虾皮",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "紫菜撕小块，鸡蛋打散。",
+   "将紫菜和虾皮放入空气炸锅中。",
+   "预热空气炸锅至 180°C。",
+   "将打散的鸡蛋液均匀倒入紫菜和虾皮上。",
+   "空气炸锅设置为 180°C，炸 3 分钟。",
+   "取出，撒上葱花。",
+   "加入少许盐和几滴香油调味。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 3,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "快手"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将空气炸锅温度设置过高，以免烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r017:lowcal": {
+  "id": "ai-var-r017-lowcal",
+  "title": "低卡版凉拌木耳",
+  "ingredients": [
+   {
+    "name": "木耳",
+    "canonical": "木耳",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "木耳提前用冷水泡发，撕小朵。",
+   "烧开水下木耳焯 2 分钟，捞出过凉水沥干。",
+   "洋葱、青椒切丝，大蒜切末。",
+   "所有食材混合，加生抽、醋、香油、盐拌匀，腌 10 分钟。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意木耳泡发时间不宜过长，以免变质。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r017:airfryer": {
+  "id": "ai-var-r017-airfryer",
+  "title": "空气炸锅版凉拌木耳",
+  "ingredients": [
+   {
+    "name": "木耳",
+    "canonical": "木耳",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "木耳提前用冷水泡发，撕小朵。",
+   "将泡发好的木耳放入空气炸锅，设置温度为180℃，时间为5分钟。",
+   "将洋葱、青椒切丝，大蒜切末。",
+   "空气炸锅中的木耳炸熟后，捞出过凉水沥干。",
+   "将所有食材混合，加生抽、醋、香油、盐拌匀，腌10分钟。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将木耳炸得过久，以免口感变差。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r018:lowcal": {
+  "id": "ai-var-r018-lowcal",
+  "title": "低卡版鱼香茄子",
+  "ingredients": [
+   {
+    "name": "茄子",
+    "canonical": "茄子",
+    "amount": "2 根",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "豆瓣酱",
+    "canonical": "豆瓣酱",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "茄子切条，撒少许盐腌 10 分钟杀出水分，挤干。",
+   "生抽、醋、白糖、淀粉加 2 勺水调成鱼香汁。",
+   "热锅倒少量食用油，下姜蒜炒香。",
+   "加入豆瓣酱炒出红油。",
+   "倒入茄子条，蒸煮 5 分钟至软。",
+   "倒入调好的鱼香汁，翻炒均匀。",
+   "汤汁浓稠即可出锅。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "茄子在蒸煮过程中可能会出水，需注意控制火候。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r018:airfryer": {
+  "id": "ai-var-r018-airfryer",
+  "title": "空气炸锅版鱼香茄子",
+  "ingredients": [
+   {
+    "name": "茄子",
+    "canonical": "茄子",
+    "amount": "2 根",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "豆瓣酱",
+    "canonical": "豆瓣酱",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "2 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "茄子切条，撒少许盐腌 10 分钟杀出水分，挤干。",
+   "生抽、醋、白糖、淀粉加 3 勺水调成鱼香汁。",
+   "将茄子条放入空气炸锅中，设定温度 180℃，时间 20 分钟，炸至茄子表面金黄且熟透。",
+   "将炸好的茄子取出，锅留底油，下姜蒜和豆瓣酱炒香。",
+   "将炸好的茄子倒回锅中，淋入鱼香汁翻炒，汤汁浓稠即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 30,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意茄子不要炸得太久，以免外焦里生。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r019:lowcal": {
+  "id": "ai-var-r019-lowcal",
+  "title": "低卡版冬瓜排骨汤",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "冬瓜",
+    "canonical": "冬瓜",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "排骨冷水下锅，加入料酒，焯水后撇去浮沫捞出。",
+   "将焯好水的排骨放入炖锅中，加入姜片和热水，小火炖煮30分钟。",
+   "冬瓜去皮切成厚片，加入炖锅中，继续炖煮15分钟至冬瓜透明。",
+   "加入适量盐调味，撒上少许葱花，出锅即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "炖锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "低脂"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意排骨焯水时避免烫伤。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r019:airfryer": {
+  "id": "ai-var-r019-airfryer",
+  "title": "空气炸锅版冬瓜排骨汤",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "冬瓜",
+    "canonical": "冬瓜",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "排骨冷水下锅加料酒焯水，撇沫捞出。",
+   "将焯水后的排骨放入空气炸锅中，设置温度为180℃，时间约为10分钟。",
+   "将姜片放入空气炸锅，与排骨一起炸。",
+   "炸好的排骨和姜片取出，放入炖锅中，加入足够的热水。",
+   "将冬瓜去皮切厚片，放入炖锅中。",
+   "大火烧开后转小火炖煮，时间约为30分钟，至冬瓜透明。",
+   "根据口味加入适量盐调味。",
+   "撒上少许小葱，出锅即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 50,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅",
+   "炖锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免食物烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r020:lowcal": {
+  "id": "ai-var-r020-lowcal",
+  "title": "低卡版电饭煲煲仔饭",
+  "ingredients": [
+   {
+    "name": "大米",
+    "canonical": "大米",
+    "amount": "1杯",
+    "optional": false
+   },
+   {
+    "name": "香肠",
+    "canonical": "香肠",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "香菇",
+    "canonical": "香菇",
+    "amount": "3朵",
+    "optional": false
+   },
+   {
+    "name": "小白菜",
+    "canonical": "小白菜",
+    "amount": "2棵",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "大米淘洗干净，按平时煮饭水量放电饭煲。",
+   "加入1小勺食用油。",
+   "腊肠切片，香菇泡发切丝，铺在米上。",
+   "启动煮饭程序，煮好后焖10分钟。",
+   "小白菜焯水至熟，捞出沥干。",
+   "将焯熟的小白菜铺在煲仔饭上。",
+   "淋上1勺生抽。",
+   "拌匀即可食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 25,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制生抽的用量，以免增加热量",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r020:airfryer": {
+  "id": "ai-var-r020-airfryer",
+  "title": "空气炸锅版电饭煲煲仔饭",
+  "ingredients": [
+   {
+    "name": "大米",
+    "canonical": "大米",
+    "amount": "1杯",
+    "optional": false
+   },
+   {
+    "name": "香肠",
+    "canonical": "香肠",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "香菇",
+    "canonical": "香菇",
+    "amount": "3朵",
+    "optional": false
+   },
+   {
+    "name": "小白菜",
+    "canonical": "小白菜",
+    "amount": "2棵",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "大米淘洗干净，放入空气炸锅。",
+   "加入1小勺食用油。",
+   "将香肠切片，香菇泡发切丝，铺在米上。",
+   "设置空气炸锅至200℃，炸15分钟。",
+   "炸好后取出，焖10分钟。",
+   "青菜焯熟，饭上淋生抽，拌匀即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 25,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸锅温度，避免烫伤"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r021:lowcal": {
+  "id": "ai-var-r021-lowcal",
+  "title": "低卡版微波炉蒸蛋",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "几滴",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡蛋打散，加入少许盐，搅拌均匀。",
+   "将搅拌好的蛋液倒入微波炉适用的碗中。",
+   "用保鲜膜封好碗口，确保有透气孔。",
+   "将碗放入微波炉，中火加热2分钟。",
+   "观察蛋液凝固情况，如未完全凝固，可再加热30秒。",
+   "取出蒸蛋，淋上生抽和香油即可。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 3,
+  "difficulty": "简单",
+  "cookware": [
+   "微波炉",
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意微波炉加热时间，避免过度加热。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r021:airfryer": {
+  "id": "ai-var-r021-airfryer",
+  "title": "空气炸锅版微波炉蒸蛋",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "几滴",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡蛋打散，加同样温度的温水和少许盐搅匀，撇去浮沫。",
+   "将蛋液倒入耐高温的碗中，碗口盖保鲜膜并扎几个小孔，或倒扣一个盘子。",
+   "将装有蛋液的碗放入空气炸锅中。",
+   "设置空气炸锅温度为100℃，时间设置为2分钟。",
+   "观察凝固情况，如未完全凝固，可再补30秒。",
+   "出锅后淋生抽和香油即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 2,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅",
+   "耐高温碗",
+   "保鲜膜"
+  ],
+  "tags": [
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度不宜过高，以免鸡蛋煎焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r022:lowcal": {
+  "id": "ai-var-r022-lowcal",
+  "title": "低卡版空气炸锅烤鸡翅",
+  "ingredients": [
+   {
+    "name": "鸡翅",
+    "canonical": "鸡翅",
+    "amount": "6个",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "2片",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "半勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡翅划刀，加生抽、料酒、姜片、黑胡椒腌20分钟。",
+   "空气炸锅180°C预热3分钟，鸡翅皮朝下摆入。",
+   "180°C烤12分钟，中途翻面，刷一层蜂蜜水。",
+   "再烤3分钟到表面焦香，确认熟透即可。"
+  ],
+  "methods": [
+   "烤"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 25,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意烤制时间，避免烤焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r022:airfryer": {
+  "id": "ai-var-r022-airfryer",
+  "title": "空气炸锅版空气炸锅烤鸡翅",
+  "ingredients": [
+   {
+    "name": "鸡翅",
+    "canonical": "鸡翅",
+    "amount": "6个",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "2片",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "半勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡翅划刀，加入生抽、料酒、姜片、黑胡椒，腌制20分钟。",
+   "空气炸锅180°C预热3分钟。",
+   "将腌制好的鸡翅皮朝下摆入空气炸锅。",
+   "180°C烤12分钟，中途翻面，刷一层蜂蜜水。",
+   "再烤3分钟到表面焦香，确认熟透即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "下饭"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡翅腌制时不要划破，以免肉汁流失。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r023:lowcal": {
+  "id": "ai-var-r023-lowcal",
+  "title": "低卡版空气炸锅烤薯条",
+  "ingredients": [
+   {
+    "name": "冻薯条",
+    "canonical": "冻薯条",
+    "amount": "200克",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将冻薯条放入碗中，加入少许盐。",
+   "用筷子轻轻拌匀，使薯条均匀裹上盐。",
+   "将拌匀的薯条倒入空气炸锅中，摊平。",
+   "设置空气炸锅至200°C，烤15分钟。",
+   "中途抽出炸篮抖散一次，确保薯条受热均匀。",
+   "烤好后，取出薯条，趁热撒上少许盐。",
+   "搭配番茄酱食用。"
+  ],
+  "methods": [
+   "炒",
+   "烤",
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要烤得过焦，以免摄入过多油脂。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r023:airfryer": {
+  "id": "ai-var-r023-airfryer",
+  "title": "空气炸锅版空气炸锅烤薯条",
+  "ingredients": [
+   {
+    "name": "冻薯条",
+    "canonical": "冻薯条",
+    "amount": "200克",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "半勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将冻薯条无需解冻，淋少许食用油拌匀。",
+   "倒入空气炸锅摊平。",
+   "设置空气炸锅至200°C，烤15分钟。",
+   "中途抽出炸篮抖散一次，让薯条受热均匀。",
+   "出锅趁热撒盐，配番茄酱食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r024:lowcal": {
+  "id": "ai-var-r024-lowcal",
+  "title": "低卡版空气炸锅烤红薯",
+  "ingredients": [
+   {
+    "name": "红薯",
+    "canonical": "红薯",
+    "amount": "2个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "红薯洗净，用厨房纸巾擦干水分。",
+   "将红薯放入空气炸锅，设置200°C。",
+   "烤制30分钟，中途翻面一次。",
+   "捏一下红薯，变软且能轻松按瘪即熟透。",
+   "烤好的红薯取出，待冷却后即可食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 30,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "烤制过程中注意安全，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r024:airfryer": {
+  "id": "ai-var-r024-airfryer",
+  "title": "空气炸锅版空气炸锅烤红薯",
+  "ingredients": [
+   {
+    "name": "红薯",
+    "canonical": "红薯",
+    "amount": "2个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "红薯洗净擦干，不用去皮。",
+   "空气炸锅设置200°C，将红薯放入，烤30分钟。",
+   "大个红薯中途翻面一次。",
+   "捏一下变软、能轻松按瘪即熟透，小心烫口。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 30,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意烤制过程中翻面，以免烤焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r025:lowcal": {
+  "id": "ai-var-r025-lowcal",
+  "title": "低卡版香煎荷包蛋",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将鸡蛋打入碗中，加入少许盐。",
+   "将鸡蛋液倒入蒸锅中，用中小火蒸约5分钟至熟。",
+   "取出蒸熟的鸡蛋，淋上几滴生抽即可。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制盐的用量，以免影响低卡效果。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r025:airfryer": {
+  "id": "ai-var-r025-airfryer",
+  "title": "空气炸锅版香煎荷包蛋",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将鸡蛋打入碗中，加入少许盐。",
+   "用筷子搅拌均匀。",
+   "将空气炸锅预热至180°C。",
+   "将搅拌好的鸡蛋液倒入空气炸锅篮中。",
+   "将空气炸锅篮放入炸锅，设置时间5分钟。",
+   "时间到后，取出荷包蛋，翻面再炸1分钟至全熟。",
+   "出锅前可淋几滴生抽增香。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 6,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸锅温度，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r026:lowcal": {
+  "id": "ai-var-r026-lowcal",
+  "title": "低卡版香煎带鱼",
+  "ingredients": [
+   {
+    "name": "带鱼",
+    "canonical": "带鱼",
+    "amount": "2 段",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "带鱼洗净切段，加姜片、料酒、盐腌 15 分钟。",
+   "用厨房纸吸干水分，表面拍一层薄淀粉。",
+   "热锅倒油，中小火下带鱼，煎到底部金黄再翻面。",
+   "两面煎金黄、鱼肉熟透即可。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意煎鱼时油温不宜过高，以免产生油烟。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r026:airfryer": {
+  "id": "ai-var-r026-airfryer",
+  "title": "空气炸锅版香煎带鱼",
+  "ingredients": [
+   {
+    "name": "带鱼",
+    "canonical": "带鱼",
+    "amount": "2 段",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "带鱼洗净切段，加姜片、料酒、盐腌 15 分钟。",
+   "用厨房纸吸干水分，表面拍一层薄淀粉。",
+   "预热空气炸锅至 180°C。",
+   "将带鱼放入空气炸锅中，炸 10 分钟后取出翻面。",
+   "再炸 10 分钟至两面金黄、鱼肉熟透即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意带鱼炸制过程中不要过度，以免外焦里生。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r027:lowcal": {
+  "id": "ai-var-r027-lowcal",
+  "title": "低卡版蒜蓉蒸金针菇",
+  "ingredients": [
+   {
+    "name": "金针菇",
+    "canonical": "金针菇",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "5 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "辣椒",
+    "canonical": "辣椒",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "金针菇去根撕开，洗净摆盘。",
+   "大蒜切末。",
+   "小葱切碎。",
+   "辣椒切末。",
+   "热锅不放油，将蒜末、辣椒末和小葱放入锅中炒香。",
+   "加入生抽调味。",
+   "将炒好的蒜蓉酱均匀地铺在金针菇上。",
+   "水开后大火蒸 6 分钟。",
+   "出锅后撒上少许辣椒末作为装饰。"
+  ],
+  "methods": [
+   "炒",
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意辣椒的用量，以免过于辛辣。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r027:airfryer": {
+  "id": "ai-var-r027-airfryer",
+  "title": "空气炸锅版蒜蓉蒸金针菇",
+  "ingredients": [
+   {
+    "name": "金针菇",
+    "canonical": "金针菇",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "5 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "辣椒",
+    "canonical": "辣椒",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "金针菇去根撕开，洗净摆入空气炸锅篮子。",
+   "大蒜切末，热油浇在蒜末上，加生抽调成蒜蓉酱。",
+   "将调好的蒜蓉酱均匀涂抹在金针菇上。",
+   "预热空气炸锅至200°C。",
+   "将金针菇放入空气炸锅，炸6分钟。",
+   "出锅后撒上少许小葱和小米辣即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 6,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r028:lowcal": {
+  "id": "ai-var-r028-lowcal",
+  "title": "低卡版香菇滑鸡",
+  "ingredients": [
+   {
+    "name": "鸡腿",
+    "canonical": "鸡腿",
+    "amount": "2 个",
+    "optional": false
+   },
+   {
+    "name": "香菇",
+    "canonical": "香菇",
+    "amount": "5 朵",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡腿去骨切块，香菇泡发切块。",
+   "鸡肉加姜片、生抽、料酒、淀粉、油抓匀，腌 15 分钟。",
+   "香菇铺盘底，放上鸡块。",
+   "水开后大火蒸 15 分钟。",
+   "蒸到鸡肉完全变色熟透，撒葱花即可。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡肉腌制时间不宜过长，以免影响口感。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r028:airfryer": {
+  "id": "ai-var-r028-airfryer",
+  "title": "空气炸锅版香菇滑鸡",
+  "ingredients": [
+   {
+    "name": "鸡腿",
+    "canonical": "鸡腿",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "香菇",
+    "canonical": "香菇",
+    "amount": "5朵",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡腿去骨切块，香菇泡发切块。",
+   "鸡肉加姜片、生抽、料酒、淀粉、油抓匀，腌15分钟。",
+   "将腌好的鸡块和香菇放入空气炸锅篮中。",
+   "设置空气炸锅温度为180℃，时间设置为15分钟。",
+   "空气炸锅完成后，取出鸡块和香菇，撒上葱花即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡肉和香菇不要放得太满，以免影响炸制效果。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r029:lowcal": {
+  "id": "ai-var-r029-lowcal",
+  "title": "低卡版苦瓜炒蛋",
+  "ingredients": [
+   {
+    "name": "苦瓜",
+    "canonical": "苦瓜",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2 个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "苦瓜去瓤切薄片，撒盐腌 5 分钟，挤掉苦水。",
+   "鸡蛋打散，加入少许水，搅拌均匀。",
+   "锅中加入少量食用油，倒入鸡蛋液，待凝固后轻轻翻炒至熟，盛出。",
+   "锅中再加入少量食用油，下蒜末炒香，加入苦瓜片，大火炒 1 分钟至断生。",
+   "将炒好的鸡蛋倒回锅中，加盐翻匀，出锅。"
+  ],
+  "methods": [
+   "炒",
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意苦瓜的苦味，腌制时可以适当增加时间。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r029:airfryer": {
+  "id": "ai-var-r029-airfryer",
+  "title": "空气炸锅版苦瓜炒蛋",
+  "ingredients": [
+   {
+    "name": "苦瓜",
+    "canonical": "苦瓜",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2 个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "苦瓜去瓤切薄片，撒盐腌 5 分钟，挤掉苦水。",
+   "鸡蛋打散，用空气炸锅预热至 180°C。",
+   "将打散的鸡蛋倒入空气炸锅，炸 5 分钟至凝固。",
+   "将苦瓜片放入空气炸锅，与鸡蛋一起炸 10 分钟，期间翻动一次。",
+   "取出苦瓜和鸡蛋，加入蒜末，搅拌均匀，再炸 5 分钟至熟透。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将苦瓜炸得过熟，以免失去口感。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r030:lowcal": {
+  "id": "ai-var-r030-lowcal",
+  "title": "低卡版虾仁滑蛋",
+  "ingredients": [
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "150 克",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "半勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾仁解冻沥干，加料酒和少许盐腌 5 分钟。",
+   "鸡蛋加少许盐打散，加入切碎的小葱。",
+   "蒸锅加水烧开，将虾仁和鸡蛋液放入蒸盘中，用中火蒸 5 分钟。",
+   "蒸好后取出，撒上少许葱花即可。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "虾仁不宜蒸制时间过长，以免变老。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r030:airfryer": {
+  "id": "ai-var-r030-airfryer",
+  "title": "空气炸锅版虾仁滑蛋",
+  "ingredients": [
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "150克",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "半勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾仁解冻沥干，加料酒和少许盐腌5分钟。",
+   "鸡蛋加少许盐和葱花打散。",
+   "将腌好的虾仁放入空气炸锅，预热至180°C。",
+   "将打散的鸡蛋液倒入空气炸锅，轻轻推动到刚凝固。",
+   "将空气炸锅温度降至160°C，继续炸2-3分钟，直到蛋凝固且表面金黄。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "快手"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意虾仁不要过度腌制，以免影响口感。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r031:lowcal": {
+  "id": "ai-var-r031-lowcal",
+  "title": "低卡版青椒炒鱿鱼",
+  "ingredients": [
+   {
+    "name": "鱿鱼",
+    "canonical": "鱿鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鱿鱼撕膜切花刀切块，加料酒姜片蒸煮5分钟，打卷立刻捞出。",
+   "青椒切块，大蒜切片。",
+   "热锅倒少许食用油，下蒜片青椒炒到断生。",
+   "下鱿鱼，加生抽大火快速翻炒出锅，不要久炒。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鱿鱼不要蒸煮过久，以免口感变老。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r031:airfryer": {
+  "id": "ai-var-r031-airfryer",
+  "title": "空气炸锅版青椒炒鱿鱼",
+  "ingredients": [
+   {
+    "name": "鱿鱼",
+    "canonical": "鱿鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鱿鱼撕膜切花刀切块，加料酒姜片焯水，打卷立刻捞出。",
+   "青椒切块，大蒜切片。",
+   "将鱿鱼块、青椒块和大蒜片放入空气炸锅篮中。",
+   "加入生抽，轻轻拌匀。",
+   "设置空气炸锅温度至180℃，时间设置为10分钟。",
+   "空气炸锅完成提示后，取出鱿鱼和青椒，轻轻翻拌，确保均匀受热。",
+   "再次将鱿鱼和青椒放入空气炸锅，继续炸2分钟，直至表面金黄酥脆。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鱿鱼不要炸得过久，以免变硬。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r032:lowcal": {
+  "id": "ai-var-r032-lowcal",
+  "title": "低卡版花蛤豆腐汤",
+  "ingredients": [
+   {
+    "name": "花蛤",
+    "canonical": "花蛤",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "花蛤用盐水浸泡2小时，搓洗干净。",
+   "锅中加水，放入姜片，烧开后下花蛤煮至开口。",
+   "下豆腐块，蒸煮2分钟，撇去浮沫。",
+   "加盐、葱花调味，未开口的花蛤丢弃不食。"
+  ],
+  "methods": [
+   "蒸",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "花蛤未煮熟可能导致食物中毒，确保花蛤完全开口后再食用。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r033:lowcal": {
+  "id": "ai-var-r033-lowcal",
+  "title": "低卡版鸡胸肉生菜沙拉",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "几片",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "几个",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡胸肉撒上少许盐和黑胡椒，放入蒸锅中，蒸至熟透，取出放凉撕成细丝。",
+   "生菜洗净后撕成小块，黄瓜切片，圣女果对半切开。",
+   "将撕好的鸡胸肉、生菜、黄瓜片和圣女果装盘。",
+   "淋上少许橄榄油，撒上少许黑胡椒，拌匀即可食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡胸肉不要蒸得过熟，以免口感变差。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r033:airfryer": {
+  "id": "ai-var-r033-airfryer",
+  "title": "空气炸锅版鸡胸肉生菜沙拉",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "几片",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "几个",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡胸肉撒上少许盐和黑胡椒。",
+   "将鸡胸肉放入空气炸锅中，设置温度为180℃，时间为15分钟。",
+   "生菜洗净后撕成小块。",
+   "黄瓜切片。",
+   "圣女果对半切开。",
+   "空气炸锅计时结束后，取出鸡胸肉放凉撕成条。",
+   "将生菜、黄瓜、圣女果和鸡胸肉装盘。",
+   "淋上橄榄油，撒上黑胡椒拌匀。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡胸肉不要煎得过熟，以免变得干燥。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r034:lowcal": {
+  "id": "ai-var-r034-lowcal",
+  "title": "低卡版杂菜蛋炒饭",
+  "ingredients": [
+   {
+    "name": "米饭",
+    "canonical": "米饭",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "冷冻混合菜",
+    "canonical": "冷冻混合菜",
+    "amount": "半碗",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 滴",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "半勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将冷冻混合菜焯水 1 分钟捞出，沥干水分。",
+   "鸡蛋打散，加入少许盐。",
+   "热锅滴入食用油，倒入打散的鸡蛋液，炒至半熟，盛出。",
+   "锅中加入米饭，用铲子压散，加入焯好水的混合菜。",
+   "加入生抽，快速翻炒均匀，确保米粒分明且食材热透。",
+   "出锅前尝味，根据个人口味调整盐量。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要过度烹饪，以免米饭过于干硬。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r034:airfryer": {
+  "id": "ai-var-r034-airfryer",
+  "title": "空气炸锅版杂菜蛋炒饭",
+  "ingredients": [
+   {
+    "name": "米饭",
+    "canonical": "米饭",
+    "amount": "1碗",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "冷冻混合菜",
+    "canonical": "冷冻混合菜",
+    "amount": "半碗",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "半勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将冷冻混合菜焯水1分钟捞出，沥干水分。",
+   "鸡蛋打散。",
+   "将打散的鸡蛋倒入空气炸锅，用空气炸锅功能将鸡蛋炒散。",
+   "加入米饭，用空气炸锅功能将米饭与鸡蛋混合均匀。",
+   "加入焯水后的冷冻混合菜。",
+   "加入少许盐和生抽，用空气炸锅功能翻匀。",
+   "设定空气炸锅温度至180℃，时间约10分钟，至米粒分明、食材热透即可出锅。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度和烹饪时间，避免食物烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r035:lowcal": {
+  "id": "ai-var-r035-lowcal",
+  "title": "低卡版腐竹烧肉",
+  "ingredients": [
+   {
+    "name": "五花肉",
+    "canonical": "五花肉",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "腐竹",
+    "canonical": "腐竹",
+    "amount": "3根",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1段",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "半勺",
+    "optional": false
+   },
+   {
+    "name": "冰糖",
+    "canonical": "冰糖",
+    "amount": "10克",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "腐竹提前用温水泡软切段",
+   "五花肉切块，用开水焯水去腥",
+   "锅中加入少量水，放入冰糖小火煮至糖色",
+   "放入五花肉块和生姜、大葱段翻炒上色",
+   "加入生抽、老抽、料酒，翻炒均匀",
+   "加入足量温水，大火烧开后转小火炖煮30分钟",
+   "下腐竹继续炖煮15分钟，直至肉熟腐竹软烂",
+   "大火收汁，出锅前尝味，根据需要调整盐分"
+  ],
+  "methods": [
+   "煮",
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "汤锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "下饭"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炖煮时间，避免腐竹过于软烂影响口感",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r035:airfryer": {
+  "id": "ai-var-r035-airfryer",
+  "title": "空气炸锅版腐竹烧肉",
+  "ingredients": [
+   {
+    "name": "五花肉",
+    "canonical": "五花肉",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "腐竹",
+    "canonical": "腐竹",
+    "amount": "3 根",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1 段",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "半勺",
+    "optional": false
+   },
+   {
+    "name": "冰糖",
+    "canonical": "冰糖",
+    "amount": "10 克",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "腐竹提前用冷水泡软切段，五花肉切块焯水。",
+   "将五花肉块放入空气炸锅中，加入生姜和大葱段。",
+   "加入生抽、老抽、料酒和冰糖，搅拌均匀。",
+   "设置空气炸锅温度为180℃，时间设置为30分钟。",
+   "取出五花肉块，加入泡软的腐竹，继续设置空气炸锅温度为180℃，时间设置为15分钟。",
+   "最后，将空气炸锅设置为大火，收汁至腐竹烧肉表面焦香即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度和时间，避免食物烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r036:lowcal": {
+  "id": "ai-var-r036-lowcal",
+  "title": "低卡版豆芽炒粉丝",
+  "ingredients": [
+   {
+    "name": "豆芽",
+    "canonical": "豆芽",
+    "amount": "200克",
+    "optional": false
+   },
+   {
+    "name": "粉丝",
+    "canonical": "粉丝",
+    "amount": "1把",
+    "optional": false
+   },
+   {
+    "name": "韭菜",
+    "canonical": "韭菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "半勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将粉丝用温水泡软后剪短。",
+   "豆芽洗净沥干。",
+   "热锅倒少许食用油，下蒜片爆香。",
+   "下豆芽大火快炒，炒至断生。",
+   "加入泡软的粉丝和韭菜，快速翻炒均匀。",
+   "加入生抽和醋，调味。",
+   "炒至豆芽断生、粉丝干爽即可。"
+  ],
+  "methods": [
+   "炒",
+   "蒸",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "快手"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制调料的用量，以免影响低卡减脂效果。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r036:airfryer": {
+  "id": "ai-var-r036-airfryer",
+  "title": "空气炸锅版豆芽炒粉丝",
+  "ingredients": [
+   {
+    "name": "豆芽",
+    "canonical": "豆芽",
+    "amount": "200克",
+    "optional": false
+   },
+   {
+    "name": "粉丝",
+    "canonical": "粉丝",
+    "amount": "1把",
+    "optional": false
+   },
+   {
+    "name": "韭菜",
+    "canonical": "韭菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "半勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "粉丝用温水泡软后剪短，豆芽洗净沥干。",
+   "将豆芽、粉丝和韭菜混合，加入生抽、醋和食用油。",
+   "将混合好的食材放入空气炸锅中。",
+   "设置空气炸锅温度为180℃，时间设置为10分钟。",
+   "空气炸锅完成后，取出食材，搅拌均匀，确保豆芽断生、粉丝干爽。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免食材烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r037:lowcal": {
+  "id": "ai-var-r037-lowcal",
+  "title": "低卡版香煎手抓饼",
+  "ingredients": [
+   {
+    "name": "手抓饼",
+    "canonical": "手抓饼",
+    "amount": "1 张",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "1 片",
+    "optional": false
+   },
+   {
+    "name": "火腿肠",
+    "canonical": "火腿肠",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将手抓饼从冰箱取出，稍微解冻。",
+   "平底锅不用放油，直接将手抓饼放入锅中，中小火煎。",
+   "一面煎至金黄后翻面。",
+   "在饼上打一个鸡蛋，摊开，待鸡蛋定型。",
+   "煎至鸡蛋两面金黄。",
+   "将生菜和火腿肠放在饼上。",
+   "挤上少许番茄酱。",
+   "卷起手抓饼，切成段即可。"
+  ],
+  "methods": [
+   "煎"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "平底锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意火候，避免煎糊。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r037:airfryer": {
+  "id": "ai-var-r037-airfryer",
+  "title": "空气炸锅版香煎手抓饼",
+  "ingredients": [
+   {
+    "name": "手抓饼",
+    "canonical": "手抓饼",
+    "amount": "1 张",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "1 片",
+    "optional": false
+   },
+   {
+    "name": "火腿肠",
+    "canonical": "火腿肠",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将手抓饼放入空气炸锅，设置温度为180°C。",
+   "预热空气炸锅5分钟。",
+   "手抓饼在空气炸锅中炸3分钟，至表面金黄。",
+   "取出手抓饼，打一个鸡蛋摊在饼上。",
+   "将火腿肠切片，放在鸡蛋上。",
+   "再次放入空气炸锅，炸2分钟，至鸡蛋和火腿肠熟透。",
+   "取出手抓饼，放上生菜片。",
+   "挤上少许番茄酱，卷起手抓饼即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，以免烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r038:lowcal": {
+  "id": "ai-var-r038-lowcal",
+  "title": "低卡版豪华升级版方便面",
+  "ingredients": [
+   {
+    "name": "方便面",
+    "canonical": "方便面",
+    "amount": "1 包",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "小白菜",
+    "canonical": "小白菜",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "午餐肉",
+    "canonical": "午餐肉",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "虾皮",
+    "canonical": "虾皮",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "锅中加水烧开，放入午餐肉和虾皮，煮至午餐肉变软。",
+   "将方便面饼放入煮好的水中，煮至1分钟。",
+   "打入鸡蛋，不要搅散，小火煮至蛋白凝固。",
+   "放入小白菜，煮至软熟。",
+   "关火，加入调料包拌匀。",
+   "将方便面连汤盛出，即可食用。"
+  ],
+  "methods": [
+   "煮",
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "筷子"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制调料包的用量，以免增加热量",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r038:airfryer": {
+  "id": "ai-var-r038-airfryer",
+  "title": "空气炸锅版豪华升级版方便面",
+  "ingredients": [
+   {
+    "name": "方便面",
+    "canonical": "方便面",
+    "amount": "1 包",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "小白菜",
+    "canonical": "小白菜",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "午餐肉",
+    "canonical": "午餐肉",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "虾皮",
+    "canonical": "虾皮",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将方便面放入空气炸锅篮中，预热至180°C。",
+   "将午餐肉和虾皮均匀铺在方便面上。",
+   "打入鸡蛋，不要搅散，放在午餐肉和虾皮上方。",
+   "将小白菜洗净，放入空气炸锅篮中。",
+   "将空气炸锅设置为180°C，炸制5分钟。",
+   "取出方便面，加入调料包拌匀。",
+   "将炸好的方便面重新放入空气炸锅，继续炸制5分钟，直到鸡蛋凝固且方便面熟透。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r039:lowcal": {
+  "id": "ai-var-r039-lowcal",
+  "title": "低卡版速冻饺子快手吃法",
+  "ingredients": [
+   {
+    "name": "速冻饺子",
+    "canonical": "速冻饺子",
+    "amount": "1 袋",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "半勺",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "锅中水烧开，下速冻饺子。",
+   "用勺背轻推饺子，防止粘锅。",
+   "水再开后，半碗凉水，重复 3 次。",
+   "饺子全部浮起、肚子鼓起即熟。",
+   "将饺子捞出，放入盘中。",
+   "用醋、生抽、香油调蘸料。",
+   "将蘸料与饺子一起食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "勺",
+   "盘"
+  ],
+  "tags": [
+   "快手",
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意饺子不要煮得过熟，以免口感变差。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r039:airfryer": {
+  "id": "ai-var-r039-airfryer",
+  "title": "空气炸锅版速冻饺子快手吃法",
+  "ingredients": [
+   {
+    "name": "速冻饺子",
+    "canonical": "速冻饺子",
+    "amount": "1 袋",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "半勺",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将速冻饺子放入空气炸锅中。",
+   "设置空气炸锅温度为180°C。",
+   "设置空气炸锅时间为5分钟。",
+   "5分钟后，打开空气炸锅取出饺子。",
+   "用醋、生抽、香油调蘸料。",
+   "将饺子蘸上调好的蘸料食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度较高，使用时请小心。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r040:lowcal": {
+  "id": "ai-var-r040-lowcal",
+  "title": "低卡版牛奶燕麦粥",
+  "ingredients": [
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "40克",
+    "optional": false
+   },
+   {
+    "name": "牛奶",
+    "canonical": "牛奶",
+    "amount": "250毫升",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将燕麦加入少量水，小火煮至浓稠。",
+   "倒入牛奶，搅拌均匀，继续煮至微开。",
+   "加入香蕉片，用蜂蜜调味。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意香蕉不宜过量食用，以免引起血糖波动。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r040:airfryer": {
+  "id": "ai-var-r040-airfryer",
+  "title": "空气炸锅版牛奶燕麦粥",
+  "ingredients": [
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "40克",
+    "optional": false
+   },
+   {
+    "name": "牛奶",
+    "canonical": "牛奶",
+    "amount": "250毫升",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将燕麦和少量水混合，用空气炸锅预热至适当温度后放入燕麦和水，设置时间为3分钟。",
+   "3分钟后，打开空气炸锅，倒入牛奶，搅拌均匀。",
+   "再次设置空气炸锅，继续加热至牛奶微开，时间约为5分钟。",
+   "取出空气炸锅中的燕麦粥，加入香蕉片和蜂蜜调味。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免过度加热。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r041:lowcal": {
+  "id": "ai-var-r041-lowcal",
+  "title": "低卡版吐司三明治",
+  "ingredients": [
+   {
+    "name": "吐司",
+    "canonical": "吐司",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "1 片",
+    "optional": false
+   },
+   {
+    "name": "番茄",
+    "canonical": "番茄",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "沙拉酱",
+    "canonical": "沙拉酱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将鸡蛋打入碗中，加入少许盐，搅拌均匀。",
+   "锅中加水烧开，将鸡蛋液倒入锅中，煮至凝固，取出切片。",
+   "生菜洗净沥干，番茄切片。",
+   "将一片吐司放入微波炉中烘30秒，使其变软。",
+   "在吐司上涂抹少许沙拉酱。",
+   "依次铺上生菜、番茄片和煎蛋。",
+   "盖上另一片吐司，对角切开即可。"
+  ],
+  "methods": [
+   "煮",
+   "微波炉"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "微波炉",
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "早餐",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制沙拉酱的用量，以免增加热量。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r041:airfryer": {
+  "id": "ai-var-r041-airfryer",
+  "title": "空气炸锅版吐司三明治",
+  "ingredients": [
+   {
+    "name": "吐司",
+    "canonical": "吐司",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "1 片",
+    "optional": false
+   },
+   {
+    "name": "番茄",
+    "canonical": "番茄",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "沙拉酱",
+    "canonical": "沙拉酱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡蛋打入碗中，加入少许盐，搅拌均匀。",
+   "生菜洗净沥干，番茄切片。",
+   "空气炸锅预热至180°C。",
+   "将搅拌好的鸡蛋液倒入空气炸锅篮中，炸2-3分钟至凝固。",
+   "将吐司放入干锅中烘30秒，两面金黄。",
+   "在一片吐司上抹上沙拉酱，依次铺上生菜、番茄、煎蛋。",
+   "盖上另一片吐司，对角切开即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅",
+   "干锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸鸡蛋时不要溅出。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r042:lowcal": {
+  "id": "ai-var-r042-lowcal",
+  "title": "低卡版酸奶水果杯",
+  "ingredients": [
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "草莓",
+    "canonical": "草莓",
+    "amount": "几颗",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "水果洗净，切成小块。",
+   "杯中先放入一层酸奶。",
+   "再铺上一层草莓。",
+   "接着放入一层酸奶。",
+   "然后铺上一层蓝莓。",
+   "再放入一层酸奶。",
+   "最后铺上一层香蕉。",
+   "顶部撒上燕麦。",
+   "轻轻搅拌均匀即可。"
+  ],
+  "methods": [
+   "蒸",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意水果不要选择过甜的品种，以免增加热量。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r042:airfryer": {
+  "id": "ai-var-r042-airfryer",
+  "title": "空气炸锅版酸奶水果杯",
+  "ingredients": [
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   },
+   {
+    "name": "草莓",
+    "canonical": "草莓",
+    "amount": "几颗",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将草莓、蓝莓洗净，香蕉去皮切小块。",
+   "将酸奶倒入空气炸锅容器中。",
+   "将切好的水果交替铺在酸奶上。",
+   "撒上燕麦和蓝莓。",
+   "将空气炸锅设置为150℃，炸5-7分钟，或至水果表面微焦。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 7,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度，避免食物烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r043:lowcal": {
+  "id": "ai-var-r043-lowcal",
+  "title": "低卡版水煮汤圆",
+  "ingredients": [
+   {
+    "name": "汤圆",
+    "canonical": "汤圆",
+    "amount": "10个",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将汤圆放入蒸锅中，加入适量清水。",
+   "大火蒸煮约10分钟，直到汤圆熟透。",
+   "取出汤圆，放入碗中。",
+   "根据个人口味，加入少许白糖。",
+   "搅拌均匀后即可食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食",
+   "早餐",
+   "夜宵"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "汤圆不宜过度蒸煮，以免口感变差",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r043:airfryer": {
+  "id": "ai-var-r043-airfryer",
+  "title": "空气炸锅版水煮汤圆",
+  "ingredients": [
+   {
+    "name": "汤圆",
+    "canonical": "汤圆",
+    "amount": "10个",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将汤圆放入空气炸锅篮中。",
+   "预热空气炸锅至180°C。",
+   "将汤圆放入预热好的空气炸锅中，炸约5分钟。",
+   "取出汤圆，轻轻摇动篮子，使汤圆均匀受热。",
+   "再次将汤圆放入空气炸锅中，继续炸约5分钟。",
+   "汤圆表面变得金黄且表皮透亮即熟，取出。",
+   "根据个人口味，可加少许白糖食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r044:lowcal": {
+  "id": "ai-var-r044-lowcal",
+  "title": "低卡版咖喱鸡饭",
+  "ingredients": [
+   {
+    "name": "鸡腿",
+    "canonical": "鸡腿",
+    "amount": "2 个",
+    "optional": false
+   },
+   {
+    "name": "土豆",
+    "canonical": "土豆",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "咖喱块",
+    "canonical": "咖喱块",
+    "amount": "3 块",
+    "optional": false
+   },
+   {
+    "name": "米饭",
+    "canonical": "米饭",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡腿切块，土豆、胡萝卜、洋葱切丁。",
+   "锅中加水，放入鸡腿块，大火煮开后撇去浮沫。",
+   "加入土豆和胡萝卜，小火煮至软熟。",
+   "加入洋葱，继续煮至所有食材熟透。",
+   "关火，加入咖喱块，用勺子搅化。",
+   "开小火，煮至咖喱浓稠，离火。",
+   "将咖喱鸡浇在米饭上。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意咖喱块不要煮得过久，以免糊锅",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r044:airfryer": {
+  "id": "ai-var-r044-airfryer",
+  "title": "空气炸锅版咖喱鸡饭",
+  "ingredients": [
+   {
+    "name": "鸡腿",
+    "canonical": "鸡腿",
+    "amount": "2 个",
+    "optional": false
+   },
+   {
+    "name": "土豆",
+    "canonical": "土豆",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "咖喱块",
+    "canonical": "咖喱块",
+    "amount": "3 块",
+    "optional": false
+   },
+   {
+    "name": "米饭",
+    "canonical": "米饭",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡腿切块，土豆、胡萝卜、洋葱切丁。",
+   "将鸡块、土豆、胡萝卜、洋葱放入空气炸锅篮中。",
+   "加入1勺食用油。",
+   "设置空气炸锅温度为180℃，时间设置为20分钟。",
+   "炸熟后取出，放入碗中。",
+   "加入咖喱块，搅拌均匀。",
+   "将咖喱鸡饭浇在米饭上即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅使用安全。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r045:lowcal": {
+  "id": "ai-var-r045-lowcal",
+  "title": "低卡版午餐肉饭团",
+  "ingredients": [
+   {
+    "name": "米饭",
+    "canonical": "米饭",
+    "amount": "1碗",
+    "optional": false
+   },
+   {
+    "name": "午餐肉",
+    "canonical": "午餐肉",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1片",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将米饭加入少许盐和香油拌匀。",
+   "将午餐肉煎至两面微黄。",
+   "将紫菜剪成条。",
+   "取一团米饭压平，包入煎好的午餐肉捏成三角或圆球。",
+   "外面缠一条紫菜。",
+   "将制作好的饭团放入蒸锅中，蒸约5分钟。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要过度加热，以免午餐肉过于油腻。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r046:lowcal": {
+  "id": "ai-var-r046-lowcal",
+  "title": "低卡版地三鲜",
+  "ingredients": [
+   {
+    "name": "土豆",
+    "canonical": "土豆",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "茄子",
+    "canonical": "茄子",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "土豆切滚刀块，茄子切块，青椒掰成小块。",
+   "茄子切块后撒少许盐腌5分钟，挤干水分。",
+   "锅中加水，将土豆和茄子放入蒸锅中蒸至熟透。",
+   "蒸熟的土豆和茄子取出，放入炒锅中。",
+   "加入大蒜煸香。",
+   "加入青椒和生抽，快速翻炒均匀。",
+   "青椒断生后即可出锅。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "炒锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意茄子蒸煮时间不宜过长，以免变软。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r046:airfryer": {
+  "id": "ai-var-r046-airfryer",
+  "title": "空气炸锅版地三鲜",
+  "ingredients": [
+   {
+    "name": "土豆",
+    "canonical": "土豆",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "茄子",
+    "canonical": "茄子",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "土豆切滚刀块，茄子切块撒少许盐腌5分钟挤水，青椒掰成小块。",
+   "将土豆块和茄子块分别放入空气炸锅中，设置温度200℃，时间约20分钟，土豆煎至边缘金黄，茄子煎软。",
+   "将煎好的土豆和茄子取出，放入同一个空气炸锅中，加入大蒜煸香。",
+   "加入青椒块，继续空气炸5分钟，至青椒断生。",
+   "最后加入生抽快速翻炒均匀，出锅前尝味，根据个人口味调整盐量。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 25,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意油温，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r047:lowcal": {
+  "id": "ai-var-r047-lowcal",
+  "title": "低卡版番茄鸡蛋面",
+  "ingredients": [
+   {
+    "name": "番茄",
+    "canonical": "番茄",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "挂面",
+    "canonical": "挂面",
+    "amount": "1把",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "番茄切块，鸡蛋打散，小葱切葱花。",
+   "锅中加入少量清水，放入挂面煮至无硬芯。",
+   "将煮好的挂面捞出，用冷水冲洗，沥干水分。",
+   "锅中加入少量橄榄油，放入番茄炒至出汁。",
+   "将打散的鸡蛋倒入锅中，快速翻炒至鸡蛋凝固。",
+   "加入适量盐调味，撒上葱花。",
+   "将煮好的挂面放入碗中，加入炒好的番茄鸡蛋，拌匀即可食用。"
+  ],
+  "methods": [
+   "煮",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要煮过久的挂面，以免口感变差。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r047:airfryer": {
+  "id": "ai-var-r047-airfryer",
+  "title": "空气炸锅版番茄鸡蛋面",
+  "ingredients": [
+   {
+    "name": "番茄",
+    "canonical": "番茄",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "挂面",
+    "canonical": "挂面",
+    "amount": "1把",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将番茄切块，鸡蛋打散，小葱切葱花。",
+   "将打散的鸡蛋放入空气炸锅，设置温度180℃，时间5分钟，炸熟后盛出。",
+   "将番茄块放入空气炸锅，设置温度180℃，时间10分钟，炸出红汤。",
+   "将挂面放入沸水中煮至无硬芯，捞出备用。",
+   "将炸好的番茄和鸡蛋回锅，加入适量盐调味，撒上葱花，与煮好的挂面一起拌匀即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免食物烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r048:airfryer": {
+  "id": "ai-var-r048-airfryer",
+  "title": "空气炸锅版蒜蓉菠菜",
+  "ingredients": [
+   {
+    "name": "菠菜",
+    "canonical": "菠菜",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "4 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "菠菜洗净沥干，大蒜切末。",
+   "将切好的蒜末均匀撒在菠菜上。",
+   "将菠菜放入空气炸锅中。",
+   "设置空气炸锅温度为180℃，时间为10分钟。",
+   "空气炸锅完成后，取出菠菜，撒上适量的盐。",
+   "再次放入空气炸锅，设置温度为180℃，时间为2分钟，让菠菜表面微微焦脆。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r049:lowcal": {
+  "id": "ai-var-r049-lowcal",
+  "title": "低卡版糖醋猪肉",
+  "ingredients": [
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "250克",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "3勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "2勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将猪肉切成条状，加入淀粉抓匀，让表面裹上一层薄浆。",
+   "锅中加水，水开后放入裹好淀粉的猪肉条，煮至定型捞出。",
+   "锅中留少量水，加入番茄酱和醋，搅拌均匀，制成糖醋汁。",
+   "将煮好的猪肉条放入锅中，快速翻炒，让酱汁裹满猪肉条即可。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意猪肉不宜煮得过久，以免肉质变硬。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r049:airfryer": {
+  "id": "ai-var-r049-airfryer",
+  "title": "空气炸锅版糖醋猪肉",
+  "ingredients": [
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "250克",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "3勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "2勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将猪肉切成条状。",
+   "将猪肉条放入碗中，加入淀粉，抓匀至表面裹上一层薄浆。",
+   "将裹好淀粉的猪肉条放入空气炸锅中，设定温度为180°C，炸约10分钟至肉条定型。",
+   "取出猪肉条，再次放入空气炸锅中，设定温度为190°C，复炸约5分钟至肉条金黄。",
+   "锅中留底油，加入番茄酱、醋和少许糖，搅拌均匀制成糖醋汁。",
+   "将复炸好的猪肉条倒入糖醋汁中，快速翻炒均匀，让酱汁裹满肉条即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅",
+   "锅"
+  ],
+  "tags": [
+   "一人食",
+   "下饭"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸猪肉时油温不宜过高，以免发生火灾。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r050:lowcal": {
+  "id": "ai-var-r050-lowcal",
+  "title": "低卡版孜然土豆",
+  "ingredients": [
+   {
+    "name": "土豆",
+    "canonical": "土豆",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "孜然",
+    "canonical": "孜然",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "辣椒",
+    "canonical": "辣椒",
+    "amount": "1个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "土豆去皮切小块，用水冲去表面淀粉。",
+   "将土豆块放入蒸锅中，蒸至外软内熟。",
+   "取出土豆块，用厨房纸巾吸去多余水分。",
+   "热锅不放油，加入孜然和辣椒，小火炒香。",
+   "将蒸好的土豆块倒入锅中，快速翻炒均匀。",
+   "根据口味撒入适量盐，翻匀即可出锅。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "炒锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意辣椒的用量，避免过多食用。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r050:airfryer": {
+  "id": "ai-var-r050-airfryer",
+  "title": "空气炸锅版孜然土豆",
+  "ingredients": [
+   {
+    "name": "土豆",
+    "canonical": "土豆",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "孜然",
+    "canonical": "孜然",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "辣椒",
+    "canonical": "辣椒",
+    "amount": "1个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "土豆去皮切小块，用水冲去表面淀粉。",
+   "将土豆块放入空气炸锅中，调整温度至180°C。",
+   "设置空气炸锅时间为20分钟。",
+   "将孜然和辣椒放入土豆块中，搅拌均匀。",
+   "继续空气炸5分钟，直到土豆块外脆内软。",
+   "取出土豆块，撒上适量盐，翻匀即可出锅。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 25,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将土豆块切得太小，以免在空气炸过程中炸焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r051:lowcal": {
+  "id": "ai-var-r051-lowcal",
+  "title": "低卡版鸡蛋羹",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "几滴",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡蛋打散，加约1.5倍冷水和少许盐轻轻搅匀。",
+   "撇去表面浮沫，碗口盖保鲜膜并扎几个小孔。",
+   "水开后上锅小火蒸10分钟，关火再焖2分钟。",
+   "淋几滴生抽即可。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食",
+   "早餐",
+   "夜宵"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意蒸煮时间不宜过长，以免鸡蛋羹过老。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r051:airfryer": {
+  "id": "ai-var-r051-airfryer",
+  "title": "空气炸锅版鸡蛋羹",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡蛋打散，加约1.5倍温水和少许盐轻轻搅匀。",
+   "撇去表面浮沫，碗口盖保鲜膜并扎几个小孔。",
+   "将调好的鸡蛋液倒入空气炸锅中。",
+   "设置空气炸锅温度为150℃，时间设置为10分钟。",
+   "蒸至时间到后，关火再焖2分钟。",
+   "取出后，淋几滴生抽即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度不宜过高，以免鸡蛋羹过度焦糊。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r052:lowcal": {
+  "id": "ai-var-r052-lowcal",
+  "title": "低卡版凉拌鸡丝黄瓜",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡胸肉冷水下锅，加姜片煮至熟透，捞出过凉水。",
+   "鸡胸肉用手撕成细丝。",
+   "黄瓜切丝垫在盘底。",
+   "大蒜捣成蒜末。",
+   "生抽和醋混合，加入蒜末调制成凉拌汁。",
+   "将调好的凉拌汁淋在鸡丝上，吃前拌匀即可。"
+  ],
+  "methods": [
+   "煮",
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "盘子",
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡胸肉煮熟透，避免生食细菌感染。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r052:airfryer": {
+  "id": "ai-var-r052-airfryer",
+  "title": "空气炸锅版凉拌鸡丝黄瓜",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡胸肉冷水下锅，加入料酒和盐煮至熟透，捞出过凉水。",
+   "用手撕成细丝，黄瓜切丝垫在盘底。",
+   "蒜末加生抽、醋、香油调成凉拌汁。",
+   "把酱汁淋在鸡丝上，吃前拌匀。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡胸肉煮熟透，避免生食。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r053:lowcal": {
+  "id": "ai-var-r053-lowcal",
+  "title": "低卡版番茄炖牛腩",
+  "ingredients": [
+   {
+    "name": "牛腩",
+    "canonical": "牛腩",
+    "amount": "400克",
+    "optional": false
+   },
+   {
+    "name": "番茄",
+    "canonical": "番茄",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "半个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "牛腩切块，冷水下锅焯水，撇去浮沫捞出。",
+   "番茄切块，洋葱切块，锅中加入少量水，蒸软洋葱。",
+   "将蒸软的洋葱和番茄放入炖锅中，加入足量开水。",
+   "放入牛腩，小火炖煮60分钟到牛腩软烂。",
+   "根据口味加盐调味，收汁至汤汁浓稠。"
+  ],
+  "methods": [
+   "蒸",
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 60,
+  "difficulty": "简单",
+  "cookware": [
+   "炖锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意牛腩炖煮时间不宜过长，以免肉质过于软烂。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r053:airfryer": {
+  "id": "ai-var-r053-airfryer",
+  "title": "空气炸锅版番茄炖牛腩",
+  "ingredients": [
+   {
+    "name": "牛腩",
+    "canonical": "牛腩",
+    "amount": "400克",
+    "optional": false
+   },
+   {
+    "name": "番茄",
+    "canonical": "番茄",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "半个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "牛腩切块，冷水下锅焯水，撇去浮沫捞出。",
+   "番茄切块，洋葱切块。",
+   "将牛腩、番茄和洋葱放入空气炸锅篮中。",
+   "预热空气炸锅至200摄氏度。",
+   "将食材放入空气炸锅，炸30分钟。",
+   "取出食材，加入适量开水，放入空气炸锅继续炸30分钟。",
+   "最后加入盐调味，收汁即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 60,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "下饭"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅使用安全，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r054:lowcal": {
+  "id": "ai-var-r054-lowcal",
+  "title": "低卡版洋葱炒牛肉",
+  "ingredients": [
+   {
+    "name": "牛肉",
+    "canonical": "牛肉",
+    "amount": "200克",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "牛肉切片，用生抽、淀粉和少量水抓匀腌制10分钟。",
+   "洋葱切丝。",
+   "锅中加水烧开，将腌制好的牛肉片焯水至变色，捞出备用。",
+   "锅中加入少量水，放入洋葱丝煮至变软。",
+   "将焯好水的牛肉片放入锅中，加入黑胡椒和盐，翻炒均匀。",
+   "出锅前尝味，根据个人口味调整盐量。"
+  ],
+  "methods": [
+   "蒸",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意牛肉腌制时不要加入过多生抽，以免焯水后颜色过重。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r054:airfryer": {
+  "id": "ai-var-r054-airfryer",
+  "title": "空气炸锅版洋葱炒牛肉",
+  "ingredients": [
+   {
+    "name": "牛肉",
+    "canonical": "牛肉",
+    "amount": "200 克",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将牛肉切成薄片，加入生抽、淀粉和油，抓匀腌制10分钟。",
+   "将洋葱切丝。",
+   "将腌制好的牛肉片用厨房纸巾吸去多余水分。",
+   "将洋葱丝和牛肉片分别放入空气炸锅中。",
+   "将空气炸锅预热至200摄氏度。",
+   "将牛肉片放入空气炸锅，炸5-7分钟至表面金黄。",
+   "将洋葱丝放入空气炸锅，炸3-5分钟至变软。",
+   "将炸好的牛肉和洋葱混合，加入少许黑胡椒和盐，搅拌均匀。",
+   "将混合好的食材再次放入空气炸锅，再炸1-2分钟，使调味料充分吸收。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸制时间，避免过度炸制导致食材烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r055:lowcal": {
+  "id": "ai-var-r055-lowcal",
+  "title": "低卡版香菇炒青菜",
+  "ingredients": [
+   {
+    "name": "香菇",
+    "canonical": "香菇",
+    "amount": "6 朵",
+    "optional": false
+   },
+   {
+    "name": "小白菜",
+    "canonical": "小白菜",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "香菇切片，小白菜洗净切段，大蒜切末。",
+   "锅中加入少许橄榄油，热锅凉油，放入蒜末煸香。",
+   "下香菇片炒至变软。",
+   "倒入小白菜大火快速翻炒。",
+   "菜叶变软后，加盐调味，翻炒均匀后出锅。"
+  ],
+  "methods": [
+   "炒",
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炒菜时油温不宜过高，以免产生有害物质。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r055:airfryer": {
+  "id": "ai-var-r055-airfryer",
+  "title": "空气炸锅版香菇炒青菜",
+  "ingredients": [
+   {
+    "name": "香菇",
+    "canonical": "香菇",
+    "amount": "6 朵",
+    "optional": false
+   },
+   {
+    "name": "小白菜",
+    "canonical": "小白菜",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "香菇切片，小白菜洗净切段，大蒜切末。",
+   "将香菇片和大蒜末放入空气炸锅篮中。",
+   "加入小白菜段，轻轻拌匀。",
+   "设置空气炸锅温度为180°C，时间设置为15分钟。",
+   "时间到后，取出菜篮，轻轻翻动，确保均匀受热。",
+   "再次设置空气炸锅温度为180°C，时间设置为5分钟，直至小白菜变软且香菇熟透。",
+   "出锅前，根据口味加盐调味。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅篮"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅使用安全，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r056:lowcal": {
+  "id": "ai-var-r056-lowcal",
+  "title": "低卡版家常豆腐",
+  "ingredients": [
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1盒",
+    "optional": false
+   },
+   {
+    "name": "豆瓣酱",
+    "canonical": "豆瓣酱",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将嫩豆腐切成厚片，用厨房纸巾吸干表面水分。",
+   "在蒸锅中加水烧开，将豆腐片放入蒸笼中，蒸5分钟。",
+   "另起锅，加入少量水，放入豆瓣酱，小火煮开。",
+   "将蒸好的豆腐放入豆瓣酱汤中，小火煮3分钟，让豆腐入味。",
+   "撒上葱花，出锅即可。"
+  ],
+  "methods": [
+   "蒸",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意豆腐不宜蒸煮时间过长，以免变硬。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r056:airfryer": {
+  "id": "ai-var-r056-airfryer",
+  "title": "空气炸锅版家常豆腐",
+  "ingredients": [
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1盒",
+    "optional": false
+   },
+   {
+    "name": "豆瓣酱",
+    "canonical": "豆瓣酱",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将嫩豆腐切厚片，用厨房纸吸干表面水分。",
+   "将豆腐片放入空气炸锅中，设置温度为180℃，时间设置为10分钟，炸至两面金黄。",
+   "将豆瓣酱加入少许清水，搅拌均匀。",
+   "将炸好的豆腐放入豆瓣酱汁中，小火烧3分钟，使豆腐入味。",
+   "撒上葱花，出锅即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "下饭"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意豆腐不宜炸得过久，以免外焦里生。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r057:lowcal": {
+  "id": "ai-var-r057-lowcal",
+  "title": "低卡版虾仁蒸蛋",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "6只",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡蛋打散，加入适量盐，搅拌均匀。",
+   "虾仁去壳去肠线，洗净。",
+   "将鸡蛋液倒入碗中，加入虾仁，轻轻拌匀。",
+   "碗口盖上一层保鲜膜，水开后放入蒸锅，小火蒸8分钟。",
+   "打开保鲜膜，摆上虾仁，再蒸3分钟到虾仁变红熟透。",
+   "关火焖2分钟，取出后淋上少许生抽即可。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意虾仁不要蒸太久，以免口感变老。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r057:airfryer": {
+  "id": "ai-var-r057-airfryer",
+  "title": "空气炸锅版虾仁蒸蛋",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "6只",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡蛋加1.5倍温水搅匀，撇去浮沫。",
+   "摆上虾仁。",
+   "将混合物倒入空气炸锅容器中。",
+   "设置空气炸锅温度为180°C，时间设置为10分钟。",
+   "取出，翻面，再设置空气炸锅温度为180°C，时间设置为5分钟。",
+   "取出，淋少许生抽。",
+   "关火焖2分钟。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r058:lowcal": {
+  "id": "ai-var-r058-lowcal",
+  "title": "低卡版花生莲藕排骨汤",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "莲藕",
+    "canonical": "莲藕",
+    "amount": "1节",
+    "optional": false
+   },
+   {
+    "name": "花生",
+    "canonical": "花生",
+    "amount": "1把",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "排骨冷水下锅焯水，撇去浮沫后捞出冲净。",
+   "莲藕去皮切块。",
+   "花生提前用清水泡20分钟。",
+   "将所有食材放入砂锅，加入足量清水。",
+   "大火烧开转小火炖煮60分钟。",
+   "出锅前根据个人口味加盐调味即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 60,
+  "difficulty": "简单",
+  "cookware": [
+   "砂锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "花生"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意排骨焯水时撇去浮沫，以免影响汤的口感和营养。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r058:airfryer": {
+  "id": "ai-var-r058-airfryer",
+  "title": "空气炸锅版花生莲藕排骨汤",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "莲藕",
+    "canonical": "莲藕",
+    "amount": "1 节",
+    "optional": false
+   },
+   {
+    "name": "花生",
+    "canonical": "花生",
+    "amount": "1 把",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "排骨冷水下锅焯水，捞出冲净。",
+   "莲藕去皮切块，花生提前泡 20 分钟。",
+   "将处理好的食材放入空气炸锅，设定温度为 150℃，时间为 30 分钟。",
+   "空气炸锅完成后，取出食材，加入足量清水。",
+   "将汤液重新放入空气炸锅，设定温度为 100℃，时间为 30 分钟。",
+   "出锅前加盐调味。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 60,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食"
+  ],
+  "allergens": [
+   "花生"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免食材烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r059:lowcal": {
+  "id": "ai-var-r059-lowcal",
+  "title": "低卡版蒜香黄油吐司",
+  "ingredients": [
+   {
+    "name": "吐司",
+    "canonical": "吐司",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "黄油",
+    "canonical": "黄油",
+    "amount": "20 克",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将黄油室温软化。",
+   "将大蒜切末。",
+   "将软化的黄油和大蒜末混合成蒜香酱。",
+   "将吐司切条或整片。",
+   "将吐司均匀抹上蒜香酱。",
+   "将抹好蒜香酱的吐司放入蒸锅中，用中小火蒸 8 分钟。",
+   "蒸至表面金黄酥脆即可，趁热食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "早餐"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意蒸煮时间，避免吐司过度吸水变软。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r059:airfryer": {
+  "id": "ai-var-r059-airfryer",
+  "title": "空气炸锅版蒜香黄油吐司",
+  "ingredients": [
+   {
+    "name": "吐司",
+    "canonical": "吐司",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "黄油",
+    "canonical": "黄油",
+    "amount": "20 克",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "黄油室温软化，大蒜切末。",
+   "吐司切条或整片，均匀抹上蒜香酱。",
+   "空气炸锅预热至 180°C。",
+   "将吐司放入空气炸锅，烤 8 分钟，表面金黄酥脆即可。",
+   "趁热食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将吐司烤焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r060:lowcal": {
+  "id": "ai-var-r060-lowcal",
+  "title": "低卡版燕麦香蕉松饼",
+  "ingredients": [
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "80克",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将香蕉压成泥。",
+   "将鸡蛋打入碗中，与香蕉泥混合。",
+   "加入燕麦，搅拌均匀成面糊。",
+   "在蒸锅中铺上蒸布，将面糊舀入小碗中，摆放在蒸布上。",
+   "蒸锅上汽后，将面糊放入蒸锅，中火蒸约10分钟。",
+   "蒸熟后取出，待凉后即可食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "早餐",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制燕麦和香蕉的分量，以免糖分摄入过高。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r060:airfryer": {
+  "id": "ai-var-r060-airfryer",
+  "title": "空气炸锅版燕麦香蕉松饼",
+  "ingredients": [
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "80克",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "香蕉压成泥，与鸡蛋、燕麦混合均匀。",
+   "将混合好的面糊倒入空气炸锅中，用勺子舀成小圆饼。",
+   "设置空气炸锅温度为180℃，时间设置为10分钟。",
+   "取出松饼，翻面，再设置空气炸锅温度为180℃，时间设置为5分钟。",
+   "松饼两面金黄即可取出，可搭配水果食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制温度和时间，以免烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r061:lowcal": {
+  "id": "ai-var-r061-lowcal",
+  "title": "低卡版酸辣汤",
+  "ingredients": [
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "木耳",
+    "canonical": "木耳",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "豆腐切丝，木耳泡发切丝。",
+   "锅中加水烧开，放入豆腐和木耳煮2分钟。",
+   "加醋、生抽调味，用淀粉水勾薄芡。",
+   "淋入鸡蛋液搅出蛋花，关火撒葱花。"
+  ],
+  "methods": [
+   "煮",
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制食材的用量，避免摄入过多热量。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r061:airfryer": {
+  "id": "ai-var-r061-airfryer",
+  "title": "空气炸锅版酸辣汤",
+  "ingredients": [
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "木耳",
+    "canonical": "木耳",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "2勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "豆腐切丝，木耳泡发切丝。",
+   "鸡蛋打散。",
+   "将豆腐丝和木耳丝放入空气炸锅中，设置温度为180℃，时间约为10分钟。",
+   "将炸好的豆腐丝和木耳丝取出，放入碗中。",
+   "在碗中加入醋、白胡椒和生抽调味。",
+   "用淀粉水勾薄芡。",
+   "将打散的鸡蛋液倒入碗中，轻轻搅动，使蛋花均匀分布。",
+   "将调好味的汤料倒入装有豆腐丝和木耳丝的碗中，撒上葱花。",
+   "搅拌均匀后即可食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免食物烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r062:lowcal": {
+  "id": "ai-var-r062-lowcal",
+  "title": "低卡版豆角焖面",
+  "ingredients": [
+   {
+    "name": "豆角",
+    "canonical": "豆角",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "挂面",
+    "canonical": "挂面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "豆角掰段洗净，挂面提前用开水煮熟，捞出备用。",
+   "大蒜切末。",
+   "锅中加入少量水，放入蒜末炒香。",
+   "加入适量生抽调味。",
+   "将豆角放入锅中，炒至变色。",
+   "将煮好的挂面铺在豆角上。",
+   "小火蒸煮，直到汤汁收干，豆角和挂面熟透，根据口味加入适量盐。",
+   "翻炒均匀，出锅即可。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制盐的用量，以免影响低卡效果。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r062:airfryer": {
+  "id": "ai-var-r062-airfryer",
+  "title": "空气炸锅版豆角焖面",
+  "ingredients": [
+   {
+    "name": "豆角",
+    "canonical": "豆角",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "挂面",
+    "canonical": "挂面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "豆角掰段洗净，大蒜切末。",
+   "将豆角和大蒜末放入空气炸锅篮中。",
+   "加入适量的生抽和清水。",
+   "将面条铺在豆角和大蒜末上。",
+   "将空气炸锅设置为180°C，炸制15分钟。",
+   "取出后拌匀即可享用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "快手"
+  ],
+  "allergens": [
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸制过程中不要打开空气炸锅，以免热气伤人。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r063:lowcal": {
+  "id": "ai-var-r063-lowcal",
+  "title": "低卡版清炒虾仁豌豆",
+  "ingredients": [
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "150克",
+    "optional": false
+   },
+   {
+    "name": "豌豆",
+    "canonical": "豌豆",
+    "amount": "1把",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "半根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾仁挑去虾线，用厨房纸吸干。",
+   "加少许料酒抓匀。",
+   "豌豆和胡萝卜洗净，切成小丁。",
+   "锅中加水，烧开后放入豌豆和胡萝卜丁焯水1分钟，捞出。",
+   "锅中加入少量水，放入虾仁，蒸3-5分钟至熟。",
+   "取出虾仁，放入豌豆和胡萝卜丁。",
+   "加入少许盐，快速翻炒均匀，出锅。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "虾仁蒸煮时间不宜过长，以免口感变老。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r063:airfryer": {
+  "id": "ai-var-r063-airfryer",
+  "title": "空气炸锅版清炒虾仁豌豆",
+  "ingredients": [
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "150克",
+    "optional": false
+   },
+   {
+    "name": "豌豆",
+    "canonical": "豌豆",
+    "amount": "1把",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "半根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾仁挑去虾线，用厨房纸吸干，加少许料酒抓匀。",
+   "豌豆和胡萝卜洗净，切丁。",
+   "将虾仁、豌豆和胡萝卜丁放入空气炸锅篮中。",
+   "空气炸锅预热至180°C。",
+   "将虾仁、豌豆和胡萝卜丁放入空气炸锅，炸8-10分钟，中途翻动一次。",
+   "炸好后，取出，加盐快速翻匀出锅。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅使用安全，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r064:lowcal": {
+  "id": "ai-var-r064-lowcal",
+  "title": "低卡版南瓜小米粥",
+  "ingredients": [
+   {
+    "name": "南瓜",
+    "canonical": "南瓜",
+    "amount": "200克",
+    "optional": false
+   },
+   {
+    "name": "小米",
+    "canonical": "小米",
+    "amount": "1杯",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "南瓜去皮切小块。",
+   "小米淘洗干净。",
+   "锅中加水烧开，放入小米大火煮10分钟。",
+   "加入南瓜转小火，不时搅动防粘底。",
+   "煮到南瓜化开、米粥浓稠即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要煮得过久，以免米粒过于软烂影响口感。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r064:airfryer": {
+  "id": "ai-var-r064-airfryer",
+  "title": "空气炸锅版南瓜小米粥",
+  "ingredients": [
+   {
+    "name": "南瓜",
+    "canonical": "南瓜",
+    "amount": "200克",
+    "optional": false
+   },
+   {
+    "name": "小米",
+    "canonical": "小米",
+    "amount": "1杯",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "南瓜去皮切小块。",
+   "小米淘洗干净。",
+   "将南瓜块和小米放入空气炸锅篮中。",
+   "预热空气炸锅至180°C。",
+   "将空气炸锅设置为180°C，烹饪时间设置为20分钟。",
+   "中途翻动南瓜和小米，确保均匀受热。",
+   "烹饪完成后，取出混合物，搅拌均匀，煮至南瓜化开、米粥浓稠即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免过热或烹饪时间不足。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r065:lowcal": {
+  "id": "ai-var-r065-lowcal",
+  "title": "低卡版川味麻婆豆腐",
+  "ingredients": [
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1盒",
+    "optional": false
+   },
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "100克",
+    "optional": false
+   },
+   {
+    "name": "豆瓣酱",
+    "canonical": "豆瓣酱",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "花椒",
+    "canonical": "花椒",
+    "amount": "1小勺",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "酱油",
+    "canonical": "酱油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "豆腐切小块，放入淡盐水中焯一下捞出",
+   "猪肉剁成末，用少量盐和酱油腌制",
+   "锅中加入少量水，放入豆瓣酱和花椒炒出红油",
+   "轻轻放入豆腐，小火煮3分钟",
+   "用淀粉水勾薄芡",
+   "撒上葱花，出锅"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意豆腐不要煮得过烂，以免影响口感",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r065:airfryer": {
+  "id": "ai-var-r065-airfryer",
+  "title": "空气炸锅版川味麻婆豆腐",
+  "ingredients": [
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1盒",
+    "optional": false
+   },
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "100克",
+    "optional": false
+   },
+   {
+    "name": "豆瓣酱",
+    "canonical": "豆瓣酱",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "花椒",
+    "canonical": "花椒",
+    "amount": "1小勺",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "豆腐切小块，放入淡盐水里焯一下捞出",
+   "猪肉剁成末",
+   "空气炸锅预热至180°C",
+   "将猪肉末放入空气炸锅，炸熟",
+   "取出猪肉末，加入豆瓣酱，炒出红油",
+   "加入适量清水，轻轻放入豆腐，用空气炸锅炸3分钟",
+   "用淀粉水勾薄芡，加入花椒粉和葱花，搅拌均匀"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "下饭"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意豆腐不要炸得太久，以免变硬"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r066:lowcal": {
+  "id": "ai-var-r066-lowcal",
+  "title": "低卡版回锅肉",
+  "ingredients": [
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "豆瓣酱",
+    "canonical": "豆瓣酱",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将猪肉冷水下锅煮至八分熟，捞出晾凉后切片。",
+   "青椒切块，大蒜切片。",
+   "锅中加入少量水，放入肉片蒸至肉片熟透。",
+   "取出肉片，锅中少油下豆瓣酱和蒜片炒香。",
+   "放入青椒炒至断生，加入蒸好的肉片快速翻炒均匀。",
+   "出锅前可适量加入少量酱油调味。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制豆瓣酱的用量，以免过咸。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r066:airfryer": {
+  "id": "ai-var-r066-airfryer",
+  "title": "空气炸锅版回锅肉",
+  "ingredients": [
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "豆瓣酱",
+    "canonical": "豆瓣酱",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将猪肉整块冷水下锅煮至八分熟，捞出晾凉后切片。",
+   "青椒切块，大蒜切片。",
+   "将猪肉片放入空气炸锅中，设定温度为180℃，时间约为15分钟，炸至表面微焦。",
+   "将炸好的猪肉片取出，留少量油在锅中，加入豆瓣酱和大蒜片炒香。",
+   "放入青椒块，炒至断生。",
+   "将炸好的猪肉片重新放入锅中，与青椒一起翻炒均匀，出锅即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "下饭"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意猪肉不要炸得过熟，以免口感变差。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r067:airfryer": {
+  "id": "ai-var-r067-airfryer",
+  "title": "空气炸锅版鱼香肉丝",
+  "ingredients": [
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "200 克",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "木耳",
+    "canonical": "木耳",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "猪肉切丝，加淀粉和生抽腌 10 分钟。",
+   "胡萝卜、青椒、木耳切丝。",
+   "将腌好的猪肉丝放入空气炸锅，设定温度 180℃，时间 10 分钟，炸熟。",
+   "将炸好的猪肉丝取出，放入另一个空气炸锅篮中。",
+   "在另一个空气炸锅篮中放入胡萝卜、青椒、木耳，设定温度 180℃，时间 5 分钟，炸熟。",
+   "将炸好的蔬菜取出，放入大碗中。",
+   "将炸好的猪肉丝也放入大碗中。",
+   "在锅中加入醋、生抽、糖，调成鱼香汁。",
+   "将调好的鱼香汁均匀淋在猪肉丝和蔬菜上，拌匀即可食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 25,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸制时油温不要过高，以免发生火灾。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r068:lowcal": {
+  "id": "ai-var-r068-lowcal",
+  "title": "低卡版家常宫保鸡丁",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "花生",
+    "canonical": "花生",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "辣椒",
+    "canonical": "辣椒",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香醋",
+    "canonical": "醋",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "少量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡胸肉切丁，加生抽、淀粉抓匀。",
+   "黄瓜、胡萝卜切丁，辣椒剪段。",
+   "锅中加入少量油，滑炒鸡丁到变色盛出。",
+   "锅中留少量油，煸香辣椒，下蔬菜和花生，回锅鸡丁。",
+   "加入料酒、香醋、番茄酱和少量白糖，翻炒均匀。",
+   "出锅前尝味，根据个人口味调整。",
+   "将炒好的宫保鸡丁装盘，即可享用。"
+  ],
+  "methods": [
+   "炒",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆",
+   "花生"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要过量食用花生，以免增加热量",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r068:airfryer": {
+  "id": "ai-var-r068-airfryer",
+  "title": "空气炸锅版家常宫保鸡丁",
+  "ingredients": [
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1块",
+    "optional": false
+   },
+   {
+    "name": "花生",
+    "canonical": "花生",
+    "amount": "1把",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "辣椒",
+    "canonical": "辣椒",
+    "amount": "3个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡胸肉切丁，加生抽、淀粉抓匀。",
+   "黄瓜、胡萝卜切丁，辣椒剪段。",
+   "将鸡丁放入空气炸锅，设置200°C，炸10分钟至变色。",
+   "将花生放入空气炸锅，设置180°C，炸5分钟至酥脆。",
+   "将炸好的鸡丁和花生放入大碗中，加入黄瓜丁和胡萝卜丁。",
+   "将辣椒段放入空气炸锅，设置200°C，炸2分钟至熟。",
+   "将炸好的辣椒段加入碗中，拌匀即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 17,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "下饭"
+  ],
+  "allergens": [
+   "花生"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸鸡丁和花生时不要过度，以免外焦里生。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r069:lowcal": {
+  "id": "ai-var-r069-lowcal",
+  "title": "低卡版干煸豆角",
+  "ingredients": [
+   {
+    "name": "豆角",
+    "canonical": "豆角",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "辣椒",
+    "canonical": "辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "豆角掰段洗净，充分沥干水分。",
+   "锅中加入少量水，放入豆角和辣椒，蒸煮至豆角熟软。",
+   "取出豆角和辣椒，沥干水分。",
+   "锅中加入少量橄榄油，下蒜末煸出香味。",
+   "加入蒸煮好的豆角和辣椒，快速翻炒均匀。",
+   "加入少量盐和生抽调味，翻炒均匀即可。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "炒锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要过度烹饪豆角，以免影响口感。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r069:airfryer": {
+  "id": "ai-var-r069-airfryer",
+  "title": "空气炸锅版干煸豆角",
+  "ingredients": [
+   {
+    "name": "豆角",
+    "canonical": "豆角",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "辣椒",
+    "canonical": "辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "豆角掰段洗净，充分沥干水分。",
+   "将豆角、大蒜和辣椒放入空气炸锅篮中。",
+   "预热空气炸锅至180°C。",
+   "将豆角、大蒜和辣椒放入空气炸锅，炸制10分钟。",
+   "取出篮子，轻轻摇动，确保均匀受热。",
+   "继续炸制5分钟，直至豆角表皮起皱，大蒜和辣椒出香味。",
+   "取出篮子，加入盐和生抽调味，搅拌均匀。",
+   "再次放入空气炸锅，炸制1分钟，使调味料均匀附着。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 16,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸制过程中不要让油溅出。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r070:airfryer": {
+  "id": "ai-var-r070-airfryer",
+  "title": "空气炸锅版蚝油生菜",
+  "ingredients": [
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "1 棵",
+    "optional": false
+   },
+   {
+    "name": "蚝油",
+    "canonical": "蚝油",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "生菜洗净，用手撕成大片。",
+   "大蒜剥皮，切末。",
+   "将生菜放入空气炸锅篮中。",
+   "预热空气炸锅至180°C。",
+   "将蒜末和蚝油混合，加入少许清水。",
+   "将混合好的酱汁均匀淋在生菜上。",
+   "将生菜放入空气炸锅，炸制5分钟。",
+   "取出生菜，翻面，再炸5分钟，至生菜变软且酱汁收干。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意生菜不要炸得过久，以免变黄。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r071:lowcal": {
+  "id": "ai-var-r071-lowcal",
+  "title": "低卡版蒜蓉空心菜",
+  "ingredients": [
+   {
+    "name": "空心菜",
+    "canonical": "空心菜",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "4 瓣",
+    "optional": false
+   },
+   {
+    "name": "植物油",
+    "canonical": "食用油",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "空心菜洗净，掐成段。",
+   "大蒜切末。",
+   "锅中加入少许植物油，加热。",
+   "油热后加入一半蒜末煸香。",
+   "倒入空心菜段，大火快炒。",
+   "菜叶变软后，加盐调味，加入剩余蒜末，快速翻炒均匀。",
+   "出锅前可加入少许水，使菜更加爽滑。"
+  ],
+  "methods": [
+   "炒",
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炒菜时油温不宜过高，以免产生有害物质。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r071:airfryer": {
+  "id": "ai-var-r071-airfryer",
+  "title": "空气炸锅版蒜蓉空心菜",
+  "ingredients": [
+   {
+    "name": "空心菜",
+    "canonical": "空心菜",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "4 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "空心菜洗净掐段，大蒜切末。",
+   "将空心菜和蒜末混合，加入适量的盐。",
+   "将混合好的空心菜和大蒜放入空气炸锅中。",
+   "设置空气炸锅温度为180℃，时间设置为10分钟。",
+   "炸熟后，取出拌匀即可食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸制过程中不要过度加热，以免烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r072:airfryer": {
+  "id": "ai-var-r072-airfryer",
+  "title": "空气炸锅版清炖冬瓜排骨汤",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "冬瓜",
+    "canonical": "冬瓜",
+    "amount": "300 克",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "排骨冷水下锅焯水，撇去浮沫捞出。",
+   "冬瓜去皮切大块。",
+   "将焯好水的排骨放入空气炸锅，加入适量水。",
+   "设置空气炸锅至炖煮模式，温度设置为100℃，时间设置为1小时。",
+   "炖煮过程中，加入切好的冬瓜。",
+   "炖煮完成，加盐调味。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 60,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的使用安全，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r073:lowcal": {
+  "id": "ai-var-r073-lowcal",
+  "title": "低卡版简易紫菜蛋花汤",
+  "ingredients": [
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "紫菜撕成小块。",
+   "鸡蛋打散。",
+   "小葱切葱花。",
+   "锅中加水烧开，放入紫菜煮 1 分钟。",
+   "加入生抽和盐调味。",
+   "关火，缓缓倒入蛋液，用筷子轻轻搅动。",
+   "待蛋花浮起，撒入葱花即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意紫菜不宜煮太久，以免口感变差。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r073:airfryer": {
+  "id": "ai-var-r073-airfryer",
+  "title": "空气炸锅版简易紫菜蛋花汤",
+  "ingredients": [
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "紫菜撕小块，鸡蛋打散，小葱切葱花。",
+   "将紫菜放入空气炸锅篮中。",
+   "将打散的鸡蛋液均匀倒入紫菜上。",
+   "撒上葱花。",
+   "设置空气炸锅温度为180℃，时间设置为2分钟。",
+   "空气炸锅完成后，取出紫菜蛋花汤，搅拌均匀即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 2,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅使用安全，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r074:airfryer": {
+  "id": "ai-var-r074-airfryer",
+  "title": "空气炸锅版番茄鸡蛋疙瘩汤",
+  "ingredients": [
+   {
+    "name": "番茄",
+    "canonical": "番茄",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "面粉",
+    "canonical": "面粉",
+    "amount": "1小碗",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "番茄切块，鸡蛋打散。",
+   "面粉边加水边搅成小面疙瘩。",
+   "将番茄块放入空气炸锅，设置温度为200℃，时间约为10分钟，炸至番茄出汁。",
+   "将炸好的番茄块连同汁液一起倒入锅中，加入适量水，用中火加热至水开。",
+   "慢慢撒入面疙瘩，边撒边搅，煮至疙瘩熟透。",
+   "将打散的鸡蛋液沿锅边淋入，轻轻搅动，使蛋液形成小块。",
+   "根据个人口味加盐调味，搅拌均匀后即可关火。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅",
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让空气炸锅内的液体过多，以免发生意外。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r075:lowcal": {
+  "id": "ai-var-r075-lowcal",
+  "title": "低卡版葱油拌面",
+  "ingredients": [
+   {
+    "name": "挂面",
+    "canonical": "挂面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将小葱洗净，切成细段。",
+   "在锅中加入适量的水，大火烧开后下入挂面，煮至面条熟透。",
+   "将煮熟的面条捞出，用冷水冲洗，沥干水分。",
+   "另起锅，加入少量食用油，小火将葱段煎至微黄。",
+   "在葱段中加入生抽，煮至汤汁略微收紧。",
+   "将煮好的葱油汁倒入面条中，拌匀即可食用。"
+  ],
+  "methods": [
+   "煮",
+   "煎"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意面条煮的时间，避免过熟或未熟。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r075:airfryer": {
+  "id": "ai-var-r075-airfryer",
+  "title": "空气炸锅版葱油拌面",
+  "ingredients": [
+   {
+    "name": "挂面",
+    "canonical": "挂面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将小葱切段，生抽加糖调成料汁。",
+   "将葱段放入空气炸锅中，设置温度为180℃，时间约为10分钟，炸至葱段焦黄。",
+   "将炸好的葱段连同油一起倒入锅中，加入调好的料汁，煮开成葱油汁。",
+   "将挂面煮熟捞出，放入碗中，倒入葱油汁拌匀。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅",
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸葱段时油温不宜过高，以免发生火灾。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r076:lowcal": {
+  "id": "ai-var-r076-lowcal",
+  "title": "低卡版蛋包饭",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "米饭",
+    "canonical": "米饭",
+    "amount": "1碗",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "2勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将洋葱切丁。",
+   "鸡蛋打散。",
+   "锅中加入少量水，放入洋葱丁，蒸至半熟。",
+   "将打散的鸡蛋倒入蒸好的洋葱上，继续蒸至鸡蛋凝固。",
+   "将蒸好的洋葱和鸡蛋混合，加入番茄酱，搅拌均匀。",
+   "将混合好的洋葱鸡蛋饭放入碗中，用保鲜膜封好，放入冰箱冷藏。",
+   "取出后，将米饭和鸡蛋包入保鲜膜中，轻轻揉搓成饭团。",
+   "将饭团放入另一个碗中，用保鲜膜封好，再次放入冰箱冷藏。",
+   "冷藏后取出，切片即可食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 30,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "保鲜膜"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将鸡蛋和洋葱蒸得过熟，以免影响口感。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r076:airfryer": {
+  "id": "ai-var-r076-airfryer",
+  "title": "空气炸锅版蛋包饭",
+  "ingredients": [
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "米饭",
+    "canonical": "米饭",
+    "amount": "1碗",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "2勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "洋葱切丁，鸡蛋打散。",
+   "空气炸锅中层，150℃预热5分钟。",
+   "锅中热油炒香洋葱，下米饭和番茄酱炒均匀。",
+   "另起平底锅刷油，倒入蛋液摊成蛋皮。",
+   "蛋皮半凝固时放上炒饭，对折包住。",
+   "将蛋包饭放入空气炸锅，200℃炸5分钟，至蛋皮金黄。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅",
+   "平底锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意油温，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r077:lowcal": {
+  "id": "ai-var-r077-lowcal",
+  "title": "低卡版照烧鸡腿",
+  "ingredients": [
+   {
+    "name": "鸡腿",
+    "canonical": "鸡腿",
+    "amount": "2 只",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "姜",
+    "canonical": "生姜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡腿去骨，用姜和大蒜腌制10分钟。",
+   "将鸡腿放入蒸锅中，蒸15分钟至熟透。",
+   "生抽和蜂蜜按1:1的比例混合成照烧汁。",
+   "将蒸好的鸡腿取出，用厨房纸巾吸去多余水分。",
+   "在鸡腿上刷上一层照烧汁，放入蒸锅中再蒸5分钟。",
+   "取出鸡腿，再次刷上照烧汁，蒸至汁液收紧，鸡腿表面光亮。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 30,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡腿不要蒸得过烂，以免影响口感。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r077:airfryer": {
+  "id": "ai-var-r077-airfryer",
+  "title": "空气炸锅版照烧鸡腿",
+  "ingredients": [
+   {
+    "name": "鸡腿",
+    "canonical": "鸡腿",
+    "amount": "2 只",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡腿去骨，用生抽和蜂蜜调成照烧汁。",
+   "将鸡腿放入空气炸锅中，鸡皮朝下，设置温度为180℃，炸10分钟。",
+   "取出鸡腿，翻面，再次放入空气炸锅中，继续炸10分钟。",
+   "鸡腿两面金黄且熟透后，取出鸡腿，将照烧汁均匀淋在鸡腿上。",
+   "将鸡腿放回空气炸锅中，设置温度为150℃，炸5分钟，让照烧汁收汁裹满鸡腿。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 25,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡腿不要炸得过熟，以免肉质变硬。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r078:lowcal": {
+  "id": "ai-var-r078-lowcal",
+  "title": "低卡版蒜蓉椒盐虾",
+  "ingredients": [
+   {
+    "name": "虾",
+    "canonical": "虾",
+    "amount": "10 只",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "5 瓣",
+    "optional": false
+   },
+   {
+    "name": "辣椒",
+    "canonical": "辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾剪去虾须，挑去虾线，用厨房纸吸干。",
+   "大蒜切末，辣椒切圈。",
+   "锅中加水，放入虾，大火蒸至壳变红。",
+   "取出虾，沥干水分。",
+   "锅中少放油，下蒜末和辣椒煸香。",
+   "将蒸好的虾放入锅中，撒盐，快速翻炒均匀，出锅即可。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "虾蒸煮时间不宜过长，以免肉质变老。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r078:airfryer": {
+  "id": "ai-var-r078-airfryer",
+  "title": "空气炸锅版蒜蓉椒盐虾",
+  "ingredients": [
+   {
+    "name": "虾",
+    "canonical": "虾",
+    "amount": "10 只",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "5 瓣",
+    "optional": false
+   },
+   {
+    "name": "辣椒",
+    "canonical": "辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾剪去虾须，挑去虾线，用厨房纸吸干。",
+   "大蒜切末，辣椒切圈。",
+   "将虾放入空气炸锅中，撒上蒜末和辣椒圈。",
+   "设置空气炸锅温度为180℃，时间设置为10分钟。",
+   "取出虾，撒上盐和孜然，翻匀。",
+   "再设置空气炸锅温度为180℃，时间设置为5分钟，使虾壳更加酥脆。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "虾在烹饪过程中可能会溅油，请注意安全。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r079:lowcal": {
+  "id": "ai-var-r079-lowcal",
+  "title": "低卡版蒜蓉粉丝蒸虾",
+  "ingredients": [
+   {
+    "name": "虾",
+    "canonical": "虾",
+    "amount": "8 只",
+    "optional": false
+   },
+   {
+    "name": "粉丝",
+    "canonical": "粉丝",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "1 头",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将粉丝放入温水中泡软，捞出沥干水分，铺在盘底。",
+   "虾开背去虾线，摆在粉丝上。",
+   "大蒜切末。",
+   "锅中加水烧开，将虾和粉丝放入蒸锅中，大火蒸6分钟。",
+   "蒸好后，撒上葱花。",
+   "另起锅，加入少量植物油，烧热后淋在葱花上，激发香气。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆",
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "虾线未去除干净可能导致口感不佳。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r079:airfryer": {
+  "id": "ai-var-r079-airfryer",
+  "title": "空气炸锅版蒜蓉粉丝蒸虾",
+  "ingredients": [
+   {
+    "name": "虾",
+    "canonical": "虾",
+    "amount": "8 只",
+    "optional": false
+   },
+   {
+    "name": "粉丝",
+    "canonical": "粉丝",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "1 头",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将粉丝泡软，铺在空气炸锅篮子底部。",
+   "虾开背去虾线，摆在粉丝上。",
+   "大蒜切末，用空气炸锅预热至160°C，将蒜末放入热油中炸至金黄色，制成金银蒜。",
+   "将金银蒜撒在虾上，淋上生抽调味。",
+   "将虾和粉丝放入空气炸锅，设置温度为160°C，时间设置为6分钟。",
+   "时间到后，撒上葱花，再淋一勺热油激香，即可出锅。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 6,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意虾的熟度，避免食用未熟虾。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r080:lowcal": {
+  "id": "ai-var-r080-lowcal",
+  "title": "低卡版银耳莲子羹",
+  "ingredients": [
+   {
+    "name": "银耳",
+    "canonical": "银耳",
+    "amount": "1朵",
+    "optional": false
+   },
+   {
+    "name": "莲子",
+    "canonical": "莲子",
+    "amount": "1把",
+    "optional": false
+   },
+   {
+    "name": "冰糖",
+    "canonical": "冰糖",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "银耳提前泡发撕成小朵。",
+   "莲子去芯。",
+   "将银耳和莲子放入电饭煲中。",
+   "加入足量清水。",
+   "选择蒸煮功能，炖煮40分钟。",
+   "中途搅动帮助出胶。",
+   "加入冰糖，继续蒸煮至冰糖融化。",
+   "汤汁浓稠即可关火。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 40,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意银耳和莲子不要炖煮过久，以免口感变差。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r080:airfryer": {
+  "id": "ai-var-r080-airfryer",
+  "title": "空气炸锅版银耳莲子羹",
+  "ingredients": [
+   {
+    "name": "银耳",
+    "canonical": "银耳",
+    "amount": "1朵",
+    "optional": false
+   },
+   {
+    "name": "莲子",
+    "canonical": "莲子",
+    "amount": "1把",
+    "optional": false
+   },
+   {
+    "name": "冰糖",
+    "canonical": "冰糖",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "银耳提前泡发撕成小朵，莲子去芯。",
+   "将银耳和莲子放入空气炸锅篮中。",
+   "加入足量清水，水量需没过食材。",
+   "设置空气炸锅温度为100℃，时间设置为40分钟。",
+   "中途搅动帮助出胶。",
+   "40分钟后，加入冰糖。",
+   "继续空气炸锅烹饪，直到冰糖融化，汤汁浓稠即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 40,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让空气炸锅内的水沸腾溢出。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r032:airfryer": {
+  "id": "ai-var-r032-airfryer",
+  "title": "空气炸锅版花蛤豆腐汤",
+  "ingredients": [
+   {
+    "name": "花蛤",
+    "canonical": "花蛤",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1盒",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "花蛤用盐水浸泡2小时，搓洗干净。",
+   "将花蛤放入空气炸锅，设置温度200℃，炸3-5分钟至开口。",
+   "将炸好的花蛤取出，放入汤锅中，加入姜片和适量水烧开。",
+   "将嫩豆腐切成小块，加入汤中煮2分钟，撇去浮沫。",
+   "加入葱花、盐和香油调味，煮至花蛤全部开口。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅",
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "海鲜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "确保花蛤煮熟后食用，以防食物中毒。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r045:airfryer": {
+  "id": "ai-var-r045-airfryer",
+  "title": "空气炸锅版午餐肉饭团",
+  "ingredients": [
+   {
+    "name": "米饭",
+    "canonical": "米饭",
+    "amount": "1碗",
+    "optional": false
+   },
+   {
+    "name": "午餐肉",
+    "canonical": "午餐肉",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1片",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将米饭加入少许盐和香油拌匀。",
+   "将午餐肉煎至两面金黄。",
+   "将紫菜剪成条。",
+   "取一团米饭压平，包入午餐肉捏成三角或圆球。",
+   "外面缠一条紫菜。",
+   "将制作好的饭团放入空气炸锅中。",
+   "空气炸锅预热至180°C，炸制5-7分钟，至表面金黄即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让空气炸锅内的油溅出。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r048:lowcal": {
+  "id": "ai-var-r048-lowcal",
+  "title": "低卡版蒜蓉菠菜",
+  "ingredients": [
+   {
+    "name": "菠菜",
+    "canonical": "菠菜",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "4 瓣",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "菠菜洗净后焯水，沥干备用。",
+   "大蒜切末。",
+   "锅中加水烧开，放入蒜末，煮至蒜末变软。",
+   "将焯好水的菠菜放入煮蒜末的水中，煮至菠菜变软。",
+   "加入少许盐调味。",
+   "捞出菠菜，沥干水分，与蒜末一起装盘。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意菠菜焯水时间不宜过长，以免营养流失。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r067:lowcal": {
+  "id": "ai-var-r067-lowcal",
+  "title": "低卡版鱼香肉丝",
+  "ingredients": [
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "200 克",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "木耳",
+    "canonical": "木耳",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "猪肉切丝，加少许淀粉和生抽腌10分钟。",
+   "胡萝卜、青椒、木耳切丝。",
+   "将醋、生抽、少量糖和少许水调成鱼香汁。",
+   "锅中加水烧开，蒸猪肉丝至熟。",
+   "锅中加少许水，煮胡萝卜、青椒、木耳至熟。",
+   "将蒸煮好的蔬菜和肉丝放入碗中，倒入鱼香汁。",
+   "拌匀即可食用。"
+  ],
+  "methods": [
+   "蒸",
+   "煮",
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "煮锅",
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制调料的用量，避免摄入过多热量。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r070:lowcal": {
+  "id": "ai-var-r070-lowcal",
+  "title": "低卡版蚝油生菜",
+  "ingredients": [
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "1 棵",
+    "optional": false
+   },
+   {
+    "name": "蚝油",
+    "canonical": "蚝油",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "清水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "生菜洗净，用手轻轻撕成大片。",
+   "锅中水烧开，加入少许盐，将生菜快速焯水约10秒，捞出沥干水分。",
+   "另起锅，加入少许水，放入蒜末和蚝油，小火煮开。",
+   "将煮好的蚝油汁均匀淋在生菜上即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "生菜焯水时间不宜过长，以免失去营养。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r072:lowcal": {
+  "id": "ai-var-r072-lowcal",
+  "title": "低卡版清炖冬瓜排骨汤",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "冬瓜",
+    "canonical": "冬瓜",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "姜片",
+    "canonical": "生姜",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "排骨冷水下锅焯水，撇去浮沫捞出。",
+   "冬瓜去皮切大块。",
+   "排骨加姜片和清水烧开，转小火炖 40 分钟。",
+   "放入冬瓜再炖 15 分钟，加盐调味。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 55,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意排骨焯水时不要煮得太久，以免肉质变硬。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r074:lowcal": {
+  "id": "ai-var-r074-lowcal",
+  "title": "低卡版番茄鸡蛋疙瘩汤",
+  "ingredients": [
+   {
+    "name": "番茄",
+    "canonical": "番茄",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "面粉",
+    "canonical": "面粉",
+    "amount": "1小碗",
+    "optional": false
+   },
+   {
+    "name": "清水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "番茄切块，鸡蛋打散。",
+   "锅中加入清水，大火烧开。",
+   "将面粉边加水边搅成小面疙瘩，慢慢撒入锅中，边撒边搅。",
+   "煮至疙瘩熟透，淋入蛋液，轻轻搅动。",
+   "加盐调味，煮至汤浓稠即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将鸡蛋直接打入生水中，以免影响口感。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
  }
 }
