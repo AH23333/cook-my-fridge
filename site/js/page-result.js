@@ -124,6 +124,17 @@
     wirePlanButtons();
   }
 
+  function decideForMe() {
+    const result = CMF.search(CMF.data.recipes, selected, currentFilters());
+    const pool = dropAllergen(result.cookNow).concat(dropAllergen(result.almostThere));
+    if (!pool.length) {
+      CMF.toast("当前筛选下没有可选的菜，先放宽筛选条件");
+      return;
+    }
+    const pick = pool[Math.floor(Math.random() * pool.length)].recipe;
+    location.href = "recipe.html?id=" + encodeURIComponent(pick.id);
+  }
+
   function start() {
     if (!selected.length) {
       summary.innerHTML = '<div class="empty">还没有选择食材，先去 <a href="index.html">首页</a> 点几样。</div>';
@@ -148,6 +159,7 @@
       document.getElementById("allergen-toggle").style.display = "block";
       document.getElementById("hide-allergens").addEventListener("change", render);
     }
+    document.getElementById("btn-decide").onclick = decideForMe;
     render();
     renderUnlock();
   }
