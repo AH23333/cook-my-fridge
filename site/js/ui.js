@@ -23,6 +23,13 @@
     return shown + match[2];
   };
 
+  CMF.formatTimer = function (totalSeconds) {
+    const s = Math.max(0, Number(totalSeconds) || 0);
+    const mm = String(Math.floor(s / 60)).padStart(2, "0");
+    const ss = String(s % 60).padStart(2, "0");
+    return mm + ":" + ss;
+  };
+
   let toastTimer = null;
   CMF.toast = function (msg) {
     let node = document.querySelector(".toast");
