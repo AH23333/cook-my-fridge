@@ -344,6 +344,23 @@ a:hover { text-decoration: underline; }
   padding: 14px 16px;
 }
 .backup-box p { margin: 0 0 10px; font-size: 13px; color: var(--ink-soft); }
+.planner-intro { color: var(--ink-soft); font-size: 13.5px; margin: 4px 0 12px; }
+.planner-actions { margin-bottom: 14px; }
+.week-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.week-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.week-day { font-size: 12.5px; font-weight: 700; color: var(--brand); }
+.week-title { font-size: 15px; font-weight: 600; }
+.week-reroll { align-self: flex-start; }
+.week-shop-list { margin: 0; display: flex; flex-direction: column; gap: 7px; }
+.shop-meta { color: var(--ink-soft); font-size: 12px; margin-left: 4px; }
 
 /* --- Detail page --- */
 .detail {
