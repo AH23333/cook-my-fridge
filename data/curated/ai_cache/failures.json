@@ -55,5 +55,11 @@
  },
  "ideas:r083": {
   "error": "ideas 字段格式或数量不符"
+ },
+ "variants:r012:substitute": {
+  "error": "多次重试仍失败：AI 菜谱校验失败: ['未知标签: 家常菜']"
+ },
+ "variants:r013:substitute": {
+  "error": "多次重试仍失败：AI 菜谱校验失败: ['未知标签: 家常', '未知标签: 晚餐']"
  }
 }
