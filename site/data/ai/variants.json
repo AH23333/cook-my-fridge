@@ -2,7 +2,7 @@
 {
 "key": "r001:lazy",
 "id": "ai-var-r001-lazy",
-"title": "懒人版懒人番茄炒蛋",
+"title": "懒人番茄炒蛋",
 "ingredients": [
 {
 "name": "番茄",
@@ -75,7 +75,7 @@
 {
 "key": "r001:lowcal",
 "id": "ai-var-r001-lowcal",
-"title": "低卡版低卡番茄蒸蛋",
+"title": "低卡番茄蒸蛋",
 "ingredients": [
 {
 "name": "番茄",
@@ -147,7 +147,7 @@
 {
 "key": "r001:airfryer",
 "id": "ai-var-r001-airfryer",
-"title": "空气炸锅版空气炸锅番茄炒蛋",
+"title": "空气炸锅番茄炒蛋",
 "ingredients": [
 {
 "name": "番茄",
@@ -454,7 +454,7 @@
 {
 "key": "r001:fusion",
 "id": "ai-var-r001-fusion",
-"title": "融合版番茄炒蛋（融合风味）",
+"title": "番茄炒蛋（融合风味）",
 "ingredients": [
 {
 "name": "番茄",
@@ -599,7 +599,7 @@
 {
 "key": "r002:lowcal",
 "id": "ai-var-r002-lowcal",
-"title": "低卡版低卡蛋炒饭",
+"title": "低卡蛋炒饭",
 "ingredients": [
 {
 "name": "米饭",
@@ -681,7 +681,7 @@
 {
 "key": "r002:airfryer",
 "id": "ai-var-r002-airfryer",
-"title": "空气炸锅版空气炸锅蛋炒饭",
+"title": "空气炸锅蛋炒饭",
 "ingredients": [
 {
 "name": "米饭",
@@ -978,7 +978,7 @@
 {
 "key": "r002:fusion",
 "id": "ai-var-r002-fusion",
-"title": "融合版融合日式风味的蛋炒饭",
+"title": "融合日式风味的蛋炒饭",
 "ingredients": [
 {
 "name": "米饭",
@@ -1054,7 +1054,7 @@
 {
 "key": "r003:lazy",
 "id": "ai-var-r003-lazy",
-"title": "懒人版懒人酸辣土豆丝",
+"title": "懒人酸辣土豆丝",
 "ingredients": [
 {
 "name": "土豆",
@@ -1126,7 +1126,7 @@
 {
 "key": "r003:lowcal",
 "id": "ai-var-r003-lowcal",
-"title": "低卡版低卡酸辣土豆丝",
+"title": "低卡酸辣土豆丝",
 "ingredients": [
 {
 "name": "土豆",
@@ -1201,7 +1201,7 @@
 {
 "key": "r003:airfryer",
 "id": "ai-var-r003-airfryer",
-"title": "空气炸锅版空气炸锅酸辣土豆丝",
+"title": "空气炸锅酸辣土豆丝",
 "ingredients": [
 {
 "name": "土豆",
@@ -1505,7 +1505,7 @@
 {
 "key": "r003:fusion",
 "id": "ai-var-r003-fusion",
-"title": "融合版酸辣土豆丝融合菜",
+"title": "酸辣土豆丝融合菜",
 "ingredients": [
 {
 "name": "土豆",
@@ -1576,7 +1576,7 @@
 {
 "key": "r004:lazy",
 "id": "ai-var-r004-lazy",
-"title": "懒人版懒人青椒肉丝",
+"title": "懒人青椒肉丝",
 "ingredients": [
 {
 "name": "猪肉",
@@ -1656,7 +1656,7 @@
 {
 "key": "r004:lowcal",
 "id": "ai-var-r004-lowcal",
-"title": "低卡版低卡青椒肉丝",
+"title": "低卡青椒肉丝",
 "ingredients": [
 {
 "name": "猪肉",
@@ -1736,7 +1736,7 @@
 {
 "key": "r004:airfryer",
 "id": "ai-var-r004-airfryer",
-"title": "空气炸锅版空气炸锅青椒肉丝",
+"title": "空气炸锅青椒肉丝",
 "ingredients": [
 {
 "name": "猪肉",
@@ -2067,7 +2067,7 @@
 {
 "key": "r004:fusion",
 "id": "ai-var-r004-fusion",
-"title": "融合版青椒肉丝融合菜",
+"title": "青椒肉丝融合菜",
 "ingredients": [
 {
 "name": "猪肉",
@@ -2234,7 +2234,7 @@
 {
 "key": "r005:lowcal",
 "id": "ai-var-r005-lowcal",
-"title": "低卡版低卡减脂红烧肉",
+"title": "低卡减脂红烧肉",
 "ingredients": [
 {
 "name": "五花肉",
@@ -2323,7 +2323,7 @@
 {
 "key": "r005:airfryer",
 "id": "ai-var-r005-airfryer",
-"title": "空气炸锅版空气炸锅红烧肉",
+"title": "空气炸锅红烧肉",
 "ingredients": [
 {
 "name": "五花肉",
@@ -2676,7 +2676,7 @@
 {
 "key": "r006:lazy",
 "id": "ai-var-r006-lazy",
-"title": "懒人版懒人可乐鸡翅",
+"title": "懒人可乐鸡翅",
 "ingredients": [
 {
 "name": "鸡翅",
@@ -2758,7 +2758,7 @@
 {
 "key": "r006:lowcal",
 "id": "ai-var-r006-lowcal",
-"title": "低卡版低卡减脂可乐鸡翅",
+"title": "低卡减脂可乐鸡翅",
 "ingredients": [
 {
 "name": "鸡翅",
@@ -2842,7 +2842,7 @@
 {
 "key": "r006:airfryer",
 "id": "ai-var-r006-airfryer",
-"title": "空气炸锅版空气炸锅可乐鸡翅",
+"title": "空气炸锅可乐鸡翅",
 "ingredients": [
 {
 "name": "鸡翅",
@@ -3298,7 +3298,7 @@
 {
 "key": "r007:lazy",
 "id": "ai-var-r007-lazy",
-"title": "懒人版懒人麻婆豆腐",
+"title": "懒人麻婆豆腐",
 "ingredients": [
 {
 "name": "嫩豆腐",
@@ -3387,7 +3387,7 @@
 {
 "key": "r007:lowcal",
 "id": "ai-var-r007-lowcal",
-"title": "低卡版低卡麻婆豆腐",
+"title": "低卡麻婆豆腐",
 "ingredients": [
 {
 "name": "嫩豆腐",
@@ -3475,7 +3475,7 @@
 {
 "key": "r007:airfryer",
 "id": "ai-var-r007-airfryer",
-"title": "空气炸锅版空气炸锅麻婆豆腐",
+"title": "空气炸锅麻婆豆腐",
 "ingredients": [
 {
 "name": "嫩豆腐",
@@ -3747,7 +3747,7 @@
 {
 "key": "r007:leftover",
 "id": "ai-var-r007-leftover",
-"title": "剩菜改造版剩菜改造：麻婆豆腐炒饭",
+"title": "剩菜改造：麻婆豆腐炒饭",
 "ingredients": [
 {
 "name": "嫩豆腐",
@@ -3948,7 +3948,7 @@
 {
 "key": "r008:lowcal",
 "id": "ai-var-r008-lowcal",
-"title": "低卡版低卡蒸煮宫保鸡丁",
+"title": "低卡蒸煮宫保鸡丁",
 "ingredients": [
 {
 "name": "鸡胸肉",
@@ -4059,7 +4059,7 @@
 {
 "key": "r008:airfryer",
 "id": "ai-var-r008-airfryer",
-"title": "空气炸锅版空气炸锅宫保鸡丁",
+"title": "空气炸锅宫保鸡丁",
 "ingredients": [
 {
 "name": "鸡胸肉",
@@ -4387,7 +4387,7 @@
 {
 "key": "r008:leftover",
 "id": "ai-var-r008-leftover",
-"title": "剩菜改造版剩菜宫保鸡丁炒饭",
+"title": "剩菜宫保鸡丁炒饭",
 "ingredients": [
 {
 "name": "鸡胸肉",
@@ -11346,7 +11346,7 @@
 {
 "key": "r022:airfryer",
 "id": "ai-var-r022-airfryer",
-"title": "空气炸锅版空气炸锅烤鸡翅",
+"title": "空气炸锅烤鸡翅",
 "ingredients": [
 {
 "name": "鸡翅",
@@ -11476,7 +11476,7 @@
 {
 "key": "r023:airfryer",
 "id": "ai-var-r023-airfryer",
-"title": "空气炸锅版空气炸锅烤薯条",
+"title": "空气炸锅烤薯条",
 "ingredients": [
 {
 "name": "冻薯条",
@@ -11575,7 +11575,7 @@
 {
 "key": "r024:airfryer",
 "id": "ai-var-r024-airfryer",
-"title": "空气炸锅版空气炸锅烤红薯",
+"title": "空气炸锅烤红薯",
 "ingredients": [
 {
 "name": "红薯",
