@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import shutil
+from datetime import datetime, timezone
 from pathlib import Path
 
 from . import catalog as cat
@@ -81,6 +82,17 @@ def copy_web_assets() -> None:
         src = WEB_DIR / extra
         if src.exists():
             shutil.copy2(src, SITE_DIR / extra)
+
+    # Version the service worker cache so each release invalidates old caches.
+    sw_target = SITE_DIR / "sw.js"
+    if sw_target.exists():
+        version = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
+        text = sw_target.read_text(encoding="utf-8")
+        sw_target.write_text(
+            text.replace("cmf-cache-v1", f"cmf-cache-{version}"),
+            encoding="utf-8",
+            newline="\n",
+        )
 
 
 def build_site() -> dict:

@@ -12,8 +12,11 @@ def test_build_site(tmp_path, monkeypatch):
     (fake_web / "js").mkdir(parents=True)
     (fake_web / "css").joinpath("style.css").write_text("/* x */", encoding="utf-8")
     (fake_web).joinpath("index.html").write_text("<html></html>", encoding="utf-8")
-    for extra in ("sw.js", "manifest.webmanifest", "icon.svg"):
+    for extra in ("manifest.webmanifest", "icon.svg"):
         (fake_web / extra).write_text("x", encoding="utf-8")
+    (fake_web / "sw.js").write_text(
+        'const CACHE_NAME = "cmf-cache-v1";', encoding="utf-8"
+    )
 
     monkeypatch.setattr(build, "SITE_DIR", fake_site)
     monkeypatch.setattr(build, "WEB_DIR", fake_web)
@@ -32,6 +35,9 @@ def test_build_site(tmp_path, monkeypatch):
         assert (fake_site / "data" / "ai" / f"{name}.json").exists()
     for extra in ("sw.js", "manifest.webmanifest", "icon.svg"):
         assert (fake_site / extra).exists()
+    sw_text = (fake_site / "sw.js").read_text(encoding="utf-8")
+    assert "cmf-cache-v1" not in sw_text
+    assert "cmf-cache-" in sw_text
 
 
 def test_export_catalog_includes_staples(tmp_path, monkeypatch):
