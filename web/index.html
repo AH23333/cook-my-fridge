@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookMyFridge · 冰箱开饭</title>
+  <meta name="description" content="点选冰箱里的食材，数据集负责靠谱，AI 负责开脑洞。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍳%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>别点外卖，让冰箱开饭</h1>
+      <p>点几样你冰箱里有的食材，数据集帮你找能做的菜，AI 帮你发明没见过的组合。</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" id="btn-random">🎲 随机开一局</button>
+        <button class="btn" id="btn-blindbox-page">🎁 冰箱盲盒</button>
+      </div>
+    </section>
+
+    <div class="search-box">
+      <input type="search" id="ingredient-search" placeholder="搜索食材，如：番茄、土豆、鸡蛋…" autocomplete="off">
+    </div>
+
+    <div id="ingredient-wall"></div>
+    <div class="page-spacer"></div>
+  </main>
+
+  <div class="cook-bar" id="cook-bar"></div>
+
+  <script src="js/store.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/page-home.js"></script>
+</body>
+</html>
