@@ -178,6 +178,22 @@
     });
   }
 
+  function fallbackCopy(text, onDone) {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand("copy");
+      onDone();
+    } catch (e) {
+      CMF.toast("复制失败，请手动选择文本");
+    }
+    document.body.removeChild(ta);
+  }
+
   function renderPlan() {
     const root = document.getElementById("plan-content");
     const plan = CMF.getPlan();
@@ -215,7 +231,23 @@
     root.innerHTML =
       "<ul style='margin:0 0 12px'>" + recipeLines + "</ul>" +
       "<h3 style='margin:6px 0'>需要采购</h3>" +
+      '<button class="btn btn-sm" id="copy-list" style="margin-bottom:8px">📋 复制清单</button>' +
       '<div style="display:flex;flex-direction:column;gap:7px">' + shopItems + "</div>";
+    const copyBtn = root.querySelector("#copy-list");
+    copyBtn.onclick = () => {
+      const text =
+        "CookMyFridge 采购清单\n" +
+        [...need.keys()].sort().map((c) => `- ${c}（用于 ${need.get(c).length} 道菜）`).join("\n");
+      const done = () => {
+        copyBtn.textContent = "✓ 已复制";
+        setTimeout(() => (copyBtn.textContent = "📋 复制清单"), 1500);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+      } else {
+        fallbackCopy(text, done);
+      }
+    };
     root.querySelectorAll("input[data-item]").forEach((box) => {
       box.onchange = () => {
         const current = CMF.getPlan();
