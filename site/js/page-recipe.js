@@ -20,12 +20,15 @@
     return CMF.data.ai.variants.find((v) => v.key === key) || null;
   }
 
+  const FACTORS = [0.5, 1, 1.5, 2, 3];
+  let factor = 1;
+
   function render(recipe) {
     const ingredientRows = recipe.ingredients
       .map(
         (i) =>
           `<li><span>${CMF.esc(i.canonical)}${i.optional ? ' <span class="pill">可选</span>' : ""}</span>` +
-          `<span class="amount">${CMF.esc(i.amount)}</span></li>`
+          `<span class="amount">${CMF.esc(CMF.scaleAmount(i.amount, factor))}</span></li>`
       )
       .join("");
 
@@ -59,7 +62,15 @@
         ? recipe.safety_notes.map((n) => `<div class="notice info">${CMF.esc(n)}</div>`).join("")
         : "") +
       '<div class="detail-grid">' +
-      "<div><h3>食材与用量</h3><ul class='ingredient-list'>" + ingredientRows + "</ul></div>" +
+      "<div><h3>食材与用量</h3>" +
+      '<div class="factor-stepper" style="display:flex;align-items:center;gap:8px;margin-bottom:10px">' +
+      '<span style="font-size:13.5px">份量</span>' +
+      FACTORS.map(
+        (f) =>
+          `<button class="btn btn-sm factor-btn${f === factor ? " factor-active" : ""}" data-factor="${f}">${f}×</button>`
+      ).join("") +
+      "</div>" +
+      "<ul class='ingredient-list'>" + ingredientRows + "</ul></div>" +
       "<div><h3>做法步骤</h3>" +
       `<button class="btn btn-primary" id="start-cooking" style="margin-bottom:10px">🍳 开始烹饪</button>` +
       "<ol class='steps'>" +
@@ -87,6 +98,13 @@
       CMF.toggleFavorite(recipe.id);
       render(recipe);
     };
+
+    root.querySelectorAll(".factor-btn").forEach((btn) => {
+      btn.onclick = () => {
+        factor = parseFloat(btn.dataset.factor);
+        render(recipe);
+      };
+    });
 
     document.getElementById("start-cooking").onclick = () => openCookingMode(recipe);
 
