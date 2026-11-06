@@ -113,6 +113,31 @@
     return plan.recipeIds.includes(recipeId);
   };
 
+  /* --- Backup / restore --- */
+
+  CMF.exportData = function () {
+    const payload = { version: 1, exportedAt: new Date().toISOString(), data: {} };
+    Object.values(KEYS).forEach((key) => {
+      payload.data[key] = readJSON(key, null);
+    });
+    return payload;
+  };
+
+  CMF.importData = function (payload) {
+    if (!payload || typeof payload !== "object" || !payload.data) {
+      throw new Error("备份文件格式不正确");
+    }
+    const known = new Set(Object.values(KEYS));
+    let count = 0;
+    Object.entries(payload.data).forEach(([key, value]) => {
+      if (known.has(key) && value != null) {
+        writeJSON(key, value);
+        count += 1;
+      }
+    });
+    return count;
+  };
+
   /* --- URL helpers --- */
 
   CMF.queryParam = function (name) {

@@ -337,6 +337,13 @@ a:hover { text-decoration: underline; }
 }
 .similar-item:hover { border-color: var(--brand); }
 .similar-meta { color: var(--ink-soft); font-size: 12px; white-space: nowrap; }
+.backup-box {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 14px 16px;
+}
+.backup-box p { margin: 0 0 10px; font-size: 13px; color: var(--ink-soft); }
 
 /* --- Detail page --- */
 .detail {
