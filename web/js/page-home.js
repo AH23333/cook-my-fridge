@@ -136,6 +136,38 @@
     renderCookBar();
     CMF.toast("已添加：" + canonical);
   });
+  const nlInput = document.getElementById("nl-input");
+  const nlFeedback = document.getElementById("nl-feedback");
+
+  function addFromText() {
+    const text = nlInput.value.trim();
+    if (!text) return;
+    const parsed = CMF.parseIngredients(text);
+    if (!parsed.length) {
+      nlFeedback.textContent = "没认出已知食材，换个说法或从食材墙点选。";
+      return;
+    }
+    let added = 0;
+    parsed.forEach((c) => {
+      if (!selected.has(c)) {
+        selected.add(c);
+        added += 1;
+      }
+    });
+    syncFridge();
+    renderWall(searchInput.value);
+    renderCookBar();
+    nlInput.value = "";
+    nlFeedback.textContent =
+      "识别到 " + parsed.length + " 样，新增 " + added + " 样：" +
+      parsed.map((c) => CMF.emojiOf(c) + c).join(" ");
+  }
+
+  document.getElementById("nl-add").onclick = addFromText;
+  nlInput.addEventListener("keydown", (ev) => {
+    if (ev.key === "Enter") addFromText();
+  });
+
   document.getElementById("btn-random").onclick = randomBox;
   document.getElementById("btn-surprise").onclick = () => {
     const recipes = CMF.data.recipes;
