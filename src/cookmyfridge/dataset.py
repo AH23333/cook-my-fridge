@@ -10,8 +10,16 @@ from .curated_data2 import SPECS_BATCH2
 from .curated_data3 import SPECS_BATCH3
 from .curated_data4 import SPECS_BATCH4
 from .curated_data5 import SPECS_BATCH5
+from .curated_data6 import SPECS_BATCH6
 
-ALL_SPECS = SPECS + SPECS_BATCH2 + SPECS_BATCH3 + SPECS_BATCH4 + SPECS_BATCH5
+ALL_SPECS = (
+    SPECS
+    + SPECS_BATCH2
+    + SPECS_BATCH3
+    + SPECS_BATCH4
+    + SPECS_BATCH5
+    + SPECS_BATCH6
+)
 from .models import IngredientUse, Recipe
 from .validate import validate_recipe
 from .config import CURATED_DIR
