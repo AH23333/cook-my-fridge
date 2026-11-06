@@ -6326,5 +6326,537 @@
 "source": "CookMyFridge 人工策展",
 "license": "CC BY 4.0",
 "is_ai_generated": false
+},
+{
+"id": "r109",
+"title": "电饭煲香肠焖饭",
+"ingredients": [
+{
+"name": "大米",
+"canonical": "大米",
+"amount": "2 杯",
+"optional": false
+},
+{
+"name": "香肠",
+"canonical": "香肠",
+"amount": "2 根",
+"optional": false
+},
+{
+"name": "胡萝卜",
+"canonical": "胡萝卜",
+"amount": "1 根",
+"optional": false
+},
+{
+"name": "香菇",
+"canonical": "香菇",
+"amount": "4 朵",
+"optional": false
+}
+],
+"steps": [
+"大米淘洗干净，按平时煮饭的水量放入电饭煲。",
+"香肠、胡萝卜、香菇切丁，铺在米上，加一勺生抽和少许油。",
+"按煮饭键，跳档后焖 10 分钟，开盖拌匀即可。"
+],
+"methods": [
+"电饭煲",
+"煮"
+],
+"cuisine": "家常菜",
+"time_minutes": 40,
+"difficulty": "简单",
+"cookware": [
+"电饭煲"
+],
+"tags": [
+"一人食",
+"下饭"
+],
+"allergens": [],
+"safety_notes": [
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r110",
+"title": "电饭煲番茄整颗饭",
+"ingredients": [
+{
+"name": "大米",
+"canonical": "大米",
+"amount": "2 杯",
+"optional": false
+},
+{
+"name": "番茄",
+"canonical": "番茄",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "玉米",
+"canonical": "玉米",
+"amount": "半根",
+"optional": false
+},
+{
+"name": "豌豆",
+"canonical": "豌豆",
+"amount": "1 把",
+"optional": false
+}
+],
+"steps": [
+"大米淘好加正常水量，番茄整颗去蒂放在中间。",
+"周围撒玉米粒、豌豆，加一勺橄榄油、盐和黑胡椒。",
+"煮饭键完成后，用饭勺把番茄和米饭压拌均匀。"
+],
+"methods": [
+"电饭煲",
+"煮"
+],
+"cuisine": "家常菜",
+"time_minutes": 40,
+"difficulty": "简单",
+"cookware": [
+"电饭煲"
+],
+"tags": [
+"素食",
+"一人食",
+"下饭"
+],
+"allergens": [],
+"safety_notes": [
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r111",
+"title": "微波蛋羹",
+"ingredients": [
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+}
+],
+"steps": [
+"鸡蛋打散，加 1.5 倍温水和少许盐搅匀，撇去浮沫。",
+"盖上保鲜膜并扎几个小孔，微波炉中火加热 2 分钟。",
+"凝固后取出，淋生抽和几滴香油，撒葱花。"
+],
+"methods": [
+"微波炉"
+],
+"cuisine": "家常菜",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"微波炉"
+],
+"tags": [
+"快手",
+"宝宝辅食",
+"一人食"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r112",
+"title": "微波炉土豆泥",
+"ingredients": [
+{
+"name": "土豆",
+"canonical": "土豆",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "100 毫升",
+"optional": false
+}
+],
+"steps": [
+"土豆去皮切厚片，盖保鲜膜扎孔，微波炉高火 6 分钟到软烂。",
+"趁热压成泥，分次加温牛奶搅到顺滑。",
+"加盐和黑胡椒调味，也可抹一点黄油增香。"
+],
+"methods": [
+"微波炉",
+"免开火"
+],
+"cuisine": "西式",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"微波炉"
+],
+"tags": [
+"快手",
+"宝宝辅食",
+"低脂"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r113",
+"title": "空气炸锅蒜香鸡翅",
+"ingredients": [
+{
+"name": "鸡翅",
+"canonical": "鸡翅",
+"amount": "8 个",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "4 瓣",
+"optional": false
+}
+],
+"steps": [
+"鸡翅两面划刀，加蒜末、生抽、料酒、盐腌 20 分钟。",
+"空气炸锅 180 度烤 12 分钟，中途翻面并刷一层腌汁。",
+"出炉后表面金黄微焦即可，撒孜然粉更香。"
+],
+"methods": [
+"空气炸锅",
+"烤"
+],
+"cuisine": "家常菜",
+"time_minutes": 35,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"下饭",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r114",
+"title": "空气炸锅烤带鱼",
+"ingredients": [
+{
+"name": "带鱼",
+"canonical": "带鱼",
+"amount": "2 段",
+"optional": false
+}
+],
+"steps": [
+"带鱼段洗净沥干，加料酒、姜片、盐腌 15 分钟。",
+"表面刷油，空气炸锅 190 度烤 10 分钟，翻面再烤 5 分钟。",
+"烤到边缘微焦、鱼肉熟透，蘸椒盐食用。"
+],
+"methods": [
+"空气炸锅",
+"烤"
+],
+"cuisine": "家常菜",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"海鲜",
+"下饭",
+"一人食"
+],
+"allergens": [
+"鱼"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r115",
+"title": "空气炸锅烤红薯块",
+"ingredients": [
+{
+"name": "红薯",
+"canonical": "红薯",
+"amount": "2 个",
+"optional": false
+}
+],
+"steps": [
+"红薯去皮切滚刀块，冲洗掉淀粉并沥干，拌一勺橄榄油。",
+"空气炸锅 200 度烤 18 分钟，中途抖篮一次。",
+"外脆里软即可，喜欢甜的可在最后 3 分钟刷一点蜂蜜。"
+],
+"methods": [
+"空气炸锅",
+"烤"
+],
+"cuisine": "家常菜",
+"time_minutes": 25,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"素食",
+"低脂",
+"快手"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r116",
+"title": "蒜蓉粉丝蒸扇贝",
+"ingredients": [
+{
+"name": "扇贝",
+"canonical": "扇贝",
+"amount": "6 只",
+"optional": false
+},
+{
+"name": "粉丝",
+"canonical": "粉丝",
+"amount": "1 小把",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "1 整头",
+"optional": false
+}
+],
+"steps": [
+"扇贝刷洗干净，粉丝温水泡软铺在扇贝上。",
+"蒜末用油炒成金蒜，加生抽调成蒜酱，舀在粉丝上。",
+"水开上锅大火蒸 6 分钟，出锅撒葱花，淋一勺热油。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "粤菜",
+"time_minutes": 25,
+"difficulty": "中等",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"海鲜",
+"下饭"
+],
+"allergens": [],
+"safety_notes": [
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r117",
+"title": "香煎三文鱼",
+"ingredients": [
+{
+"name": "三文鱼",
+"canonical": "三文鱼",
+"amount": "1 块",
+"optional": false
+}
+],
+"steps": [
+"三文鱼用厨房纸吸干，撒盐和黑胡椒腌 5 分钟。",
+"平底锅少油，鱼皮朝下中火煎 3 分钟到酥脆，翻面煎 1 分钟。",
+"出锅挤柠檬汁，配芦笋或西兰花一起食用。"
+],
+"methods": [
+"煎"
+],
+"cuisine": "西式",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"海鲜",
+"低卡",
+"一人食"
+],
+"allergens": [
+"鱼"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r118",
+"title": "鱿鱼炒洋葱",
+"ingredients": [
+{
+"name": "鱿鱼",
+"canonical": "鱿鱼",
+"amount": "1 条",
+"optional": false
+},
+{
+"name": "洋葱",
+"canonical": "洋葱",
+"amount": "半个",
+"optional": false
+}
+],
+"steps": [
+"鱿鱼去膜切花刀切块，沸水焯 10 秒打卷立刻捞出。",
+"洋葱切丝，热油下锅炒到变软出香。",
+"下鱿鱼卷，加生抽、蚝油大火快炒 1 分钟，撒孜然出锅。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "家常菜",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"海鲜",
+"下饭",
+"快手"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r119",
+"title": "豉汁炒花蛤",
+"ingredients": [
+{
+"name": "花蛤",
+"canonical": "花蛤",
+"amount": "500 克",
+"optional": false
+},
+{
+"name": "洋葱",
+"canonical": "洋葱",
+"amount": "半个",
+"optional": false
+}
+],
+"steps": [
+"花蛤淡盐水吐沙 2 小时，洗净沥干。",
+"热油下洋葱丝和一勺豆豉炒香，倒入花蛤大火翻炒。",
+"盖盖焖到全部开口，加生抽和葱花，不开口的丢弃。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "粤菜",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"海鲜",
+"下饭"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r120",
+"title": "巴沙鱼番茄炖",
+"ingredients": [
+{
+"name": "巴沙鱼",
+"canonical": "巴沙鱼",
+"amount": "1 片",
+"optional": false
+},
+{
+"name": "番茄",
+"canonical": "番茄",
+"amount": "2 个",
+"optional": false
+}
+],
+"steps": [
+"巴沙鱼切块，用料酒、盐和黑胡椒腌 10 分钟。",
+"番茄去皮切块，热油炒出沙，加半碗水煮成番茄汤底。",
+"下鱼块小火炖 5 分钟到鱼肉变白熟透，撒葱花出锅。"
+],
+"methods": [
+"炖",
+"煮"
+],
+"cuisine": "家常菜",
+"time_minutes": 25,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"海鲜",
+"低卡",
+"一人食"
+],
+"allergens": [
+"鱼"
+],
+"safety_notes": [
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
 }
 ]
