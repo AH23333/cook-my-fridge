@@ -7,8 +7,9 @@ from pathlib import Path
 from .catalog import allergens_of
 from .curated_data import SPECS
 from .curated_data2 import SPECS_BATCH2
+from .curated_data3 import SPECS_BATCH3
 
-ALL_SPECS = SPECS + SPECS_BATCH2
+ALL_SPECS = SPECS + SPECS_BATCH2 + SPECS_BATCH3
 from .models import IngredientUse, Recipe
 from .validate import validate_recipe
 from .config import CURATED_DIR
