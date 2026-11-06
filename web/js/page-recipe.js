@@ -60,7 +60,9 @@
         : "") +
       '<div class="detail-grid">' +
       "<div><h3>食材与用量</h3><ul class='ingredient-list'>" + ingredientRows + "</ul></div>" +
-      "<div><h3>做法步骤</h3><ol class='steps'>" +
+      "<div><h3>做法步骤</h3>" +
+      `<button class="btn btn-primary" id="start-cooking" style="margin-bottom:10px">🍳 开始烹饪</button>` +
+      "<ol class='steps'>" +
       recipe.steps.map((s) => `<li>${CMF.esc(s)}</li>`).join("") +
       "</ol></div></div>" +
       (subRows
@@ -86,6 +88,8 @@
       render(recipe);
     };
 
+    document.getElementById("start-cooking").onclick = () => openCookingMode(recipe);
+
     root.querySelectorAll(".ai-actions .btn").forEach((btn) => {
       btn.onclick = () => {
         const variant = findVariant(recipe.id, btn.dataset.kind);
@@ -96,6 +100,75 @@
         }
       };
     });
+  }
+
+  let wakeLock = null;
+  async function requestWakeLock() {
+    try {
+      if ("wakeLock" in navigator) {
+        wakeLock = await navigator.wakeLock.request("screen");
+      }
+    } catch (e) {
+      wakeLock = null; // not supported or denied; cooking mode still works
+    }
+  }
+  function releaseWakeLock() {
+    if (wakeLock) {
+      wakeLock.release().catch(() => {});
+      wakeLock = null;
+    }
+  }
+
+  function openCookingMode(recipe) {
+    const steps = recipe.steps;
+    let index = 0;
+    const overlay = document.createElement("div");
+    overlay.className = "cooking-overlay";
+    document.body.appendChild(overlay);
+
+    function paint() {
+      overlay.innerHTML =
+        '<div class="cooking-card">' +
+        `<div class="cooking-progress">第 ${index + 1} / ${steps.length} 步 · ${CMF.esc(recipe.title)}</div>` +
+        `<div class="cooking-step">${CMF.esc(steps[index])}</div>` +
+        '<div class="cooking-controls">' +
+        `<button class="btn" id="cook-prev" ${index === 0 ? "disabled" : ""}>上一步</button>` +
+        (index === steps.length - 1
+          ? '<button class="btn btn-primary" id="cook-done">完成 🎉</button>'
+          : '<button class="btn btn-primary" id="cook-next">下一步</button>') +
+        '<button class="btn" id="cook-close">退出</button>' +
+        "</div></div>";
+      overlay.querySelector("#cook-prev") &&
+        (overlay.querySelector("#cook-prev").onclick = () => {
+          if (index > 0) {
+            index -= 1;
+            paint();
+          }
+        });
+      const next = overlay.querySelector("#cook-next");
+      if (next)
+        next.onclick = () => {
+          if (index < steps.length - 1) {
+            index += 1;
+            paint();
+          }
+        };
+      const done = overlay.querySelector("#cook-done");
+      if (done)
+        done.onclick = () => close();
+      overlay.querySelector("#cook-close").onclick = () => close();
+    }
+
+    function close() {
+      releaseWakeLock();
+      overlay.remove();
+    }
+
+    overlay.onkeydown = (e) => {
+      if (e.key === "Escape") close();
+    };
+    requestWakeLock();
+    paint();
   }
 
   function start() {
