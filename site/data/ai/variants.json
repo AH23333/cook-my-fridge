@@ -81586,5 +81586,6286 @@
 "source": "GLM AI 生成（glm-4-flash）",
 "license": "AI-generated, see About",
 "is_ai_generated": true
+},
+{
+"key": "r166:lazy",
+"id": "ai-var-r166-lazy",
+"title": "懒人版冰糖炖雪梨",
+"ingredients": [
+{
+"name": "梨",
+"canonical": "梨",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将梨洗净，顶部切盖，挖去果核。",
+"梨盅里放入冰糖，加入适量水。",
+"将梨放入电饭煲中，蒸30分钟至梨肉通透。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"电饭煲"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将梨蒸得过烂，以免影响口感。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r166:lowcal",
+"id": "ai-var-r166-lowcal",
+"title": "低卡版冰糖炖雪梨",
+"ingredients": [
+{
+"name": "梨",
+"canonical": "梨",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"梨洗净，顶部切盖，挖去果核。",
+"梨盅里放入冰糖，加少许清水。",
+"盖回梨盖，上锅蒸30分钟到梨肉通透。",
+"蒸好后连汤食用。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸煮时间，避免梨肉过于软烂。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r166:airfryer",
+"id": "ai-var-r166-airfryer",
+"title": "空气炸锅版冰糖炖雪梨",
+"ingredients": [
+{
+"name": "梨",
+"canonical": "梨",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "1把",
+"optional": false
+}
+],
+"steps": [
+"梨洗净，顶部切盖，挖去果核。",
+"梨盅里放冰糖，加少许清水，盖回梨盖。",
+"将梨放入空气炸锅篮中，调整温度至150°C。",
+"设置空气炸锅时间为30分钟。",
+"时间到后，取出梨，连汤食用。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将梨蒸煮过久，以免水分流失过多。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r166:substitute",
+"id": "ai-var-r166-substitute",
+"title": "家常替代版冰糖炖雪梨",
+"ingredients": [
+{
+"name": "梨",
+"canonical": "梨",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "清水",
+"canonical": "清水",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"梨洗净，顶部切盖，挖去果核。",
+"梨盅里放入冰糖，加入少许清水。",
+"盖回梨盖，上锅蒸30分钟到梨肉通透。",
+"蒸好后连汤食用。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"快手",
+"一人食",
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸煮时间，避免过熟导致梨肉过于软烂。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r166:method",
+"id": "ai-var-r166-method",
+"title": "换做法版冰糖炖雪梨",
+"ingredients": [
+{
+"name": "梨",
+"canonical": "梨",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"梨洗净，顶部切盖，挖去果核。",
+"梨盅里放入冰糖，加入适量水。",
+"将梨盖盖回，放入空气炸锅。",
+"空气炸锅设置为蒸煮模式，蒸煮时间为30分钟。",
+"蒸煮完成后，取出梨，连汤食用。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意梨的蒸煮时间，避免过度蒸煮导致梨肉变烂。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r167:lazy",
+"id": "ai-var-r167-lazy",
+"title": "懒人版木瓜炖牛奶",
+"ingredients": [
+{
+"name": "木瓜",
+"canonical": "木瓜",
+"amount": "半个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+}
+],
+"steps": [
+"将木瓜去皮去籽切块。",
+"将木瓜块和牛奶倒入锅中。",
+"加入少许冰糖。",
+"盖上锅盖，用中小火加热至牛奶微沸。",
+"关火，盖上锅盖，焖煮5分钟。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"甜品",
+"一人食"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让牛奶沸腾过久，以免溢出。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r167:lowcal",
+"id": "ai-var-r167-lowcal",
+"title": "低卡版木瓜炖牛奶",
+"ingredients": [
+{
+"name": "木瓜",
+"canonical": "木瓜",
+"amount": "半个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"木瓜去皮去籽切块，放入碗中。",
+"加入牛奶和少许冰糖。",
+"盖上保鲜膜。",
+"上锅小火蒸15分钟。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"碗",
+"蒸锅"
+],
+"tags": [
+"低卡",
+"减脂餐",
+"甜品"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r167:airfryer",
+"id": "ai-var-r167-airfryer",
+"title": "空气炸锅版木瓜炖牛奶",
+"ingredients": [
+{
+"name": "木瓜",
+"canonical": "木瓜",
+"amount": "半个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"木瓜去皮去籽切块，放入碗中。",
+"加入牛奶和少许冰糖。",
+"盖上保鲜膜。",
+"放入空气炸锅，设置温度为100℃，时间为15分钟。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"甜品"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将木瓜块蒸煮时间过长，以免影响口感。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r167:substitute",
+"id": "ai-var-r167-substitute",
+"title": "家常替代版木瓜炖牛奶",
+"ingredients": [
+{
+"name": "木瓜",
+"canonical": "木瓜",
+"amount": "半个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"木瓜去皮去籽切块，放入碗中。",
+"加入牛奶和少许冰糖，盖上保鲜膜。",
+"上锅小火蒸15分钟即可。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"碗",
+"蒸锅"
+],
+"tags": [
+"甜品",
+"一人食"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸煮时间，避免过度蒸煮导致木瓜过于软烂。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r167:method",
+"id": "ai-var-r167-method",
+"title": "换做法版木瓜炖牛奶",
+"ingredients": [
+{
+"name": "木瓜",
+"canonical": "木瓜",
+"amount": "半个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"将木瓜去皮去籽切块，放入碗中。",
+"加入牛奶和少许冰糖。",
+"将碗放入空气炸锅中。",
+"设置空气炸锅至低温模式，烹饪时间为20分钟。",
+"烹饪结束后，取出木瓜牛奶，稍微冷却后即可食用。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"甜品"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意空气炸锅的温度和时间，避免过度烹饪导致木瓜过于干硬。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r167:leftover",
+"id": "ai-var-r167-leftover",
+"title": "剩菜改造版木瓜炖牛奶",
+"ingredients": [
+{
+"name": "木瓜",
+"canonical": "木瓜",
+"amount": "半个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "玉米淀粉",
+"canonical": "淀粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将木瓜炖牛奶的剩余部分倒入锅中。",
+"加入玉米淀粉，搅拌均匀。",
+"小火加热，边加热边搅拌，直到汤汁变得浓稠。",
+"加入适量的白糖，继续煮至糖融化。",
+"关火，待汤汁冷却后，倒入碗中，冷藏至凝固成冻状。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"剩菜改造",
+"甜品"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让汤汁烧干，以免影响口感。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r167:fusion",
+"id": "ai-var-r167-fusion",
+"title": "融合版木瓜炖牛奶",
+"ingredients": [
+{
+"name": "木瓜",
+"canonical": "木瓜",
+"amount": "半个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "椰奶",
+"canonical": "椰浆",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "肉桂粉",
+"canonical": "桂皮",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"木瓜去皮去籽切块，放入碗中。",
+"加入牛奶、椰奶和适量冰糖。",
+"撒上少许肉桂粉。",
+"盖上保鲜膜。",
+"上锅小火蒸15分钟。",
+"蒸好后，稍微放凉即可食用。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"碗",
+"蒸锅"
+],
+"tags": [
+"融合菜",
+"甜品",
+"夜宵"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸煮时间，避免木瓜过于软烂。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r168:lazy",
+"id": "ai-var-r168-lazy",
+"title": "懒人版蜂蜜柚子茶",
+"ingredients": [
+{
+"name": "柚子",
+"canonical": "柚子",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "1罐",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "半碗",
+"optional": false
+}
+],
+"steps": [
+"柚子洗净，切片，去籽。",
+"将柚子片和冰糖放入电饭煲中。",
+"加入适量水，选择电饭煲的煮粥功能。",
+"煮至电饭煲提示完成，待冷却后加入蜂蜜。",
+"搅拌均匀，冷藏保存，随饮。"
+],
+"methods": [
+"煮",
+"微波炉"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"电饭煲"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将柚子皮和果肉煮得过久，以免影响口感。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r168:lowcal",
+"id": "ai-var-r168-lowcal",
+"title": "低卡版蜂蜜柚子茶",
+"ingredients": [
+{
+"name": "柚子",
+"canonical": "柚子",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "少量",
+"optional": false
+}
+],
+"steps": [
+"柚子用盐搓洗，刮下外皮切丝，果肉剥块。",
+"柚子皮焯水去苦。",
+"将果肉和冰糖放入蒸锅中，小火蒸至浓稠。",
+"放凉后拌入蜂蜜。",
+"冷藏保存，温水冲饮。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"低卡",
+"减脂餐",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r168:airfryer",
+"id": "ai-var-r168-airfryer",
+"title": "空气炸锅版蜂蜜柚子茶",
+"ingredients": [
+{
+"name": "柚子",
+"canonical": "柚子",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "1罐",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "半碗",
+"optional": false
+}
+],
+"steps": [
+"柚子用盐搓洗，刮下外皮切丝，果肉剥块。",
+"将柚子皮和果肉放入空气炸锅，加入冰糖。",
+"设置空气炸锅温度为150℃，时间设置为30分钟。",
+"取出后放凉，拌入蜂蜜。",
+"冷藏保存，温水冲饮。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 60,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将蜂蜜直接加热，以免破坏其营养成分。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r168:substitute",
+"id": "ai-var-r168-substitute",
+"title": "家常替代版蜂蜜柚子茶",
+"ingredients": [
+{
+"name": "柚子",
+"canonical": "柚子",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "1罐",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"柚子用盐搓洗，刮下外皮切丝，果肉剥块。",
+"柚子皮焯水去苦，和果肉、冰糖一起小火熬到浓稠。",
+"放凉后拌入蜂蜜，冷藏保存。",
+"温水冲饮。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食",
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将柚子皮煮得过久，以免苦味过重。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r168:method",
+"id": "ai-var-r168-method",
+"title": "换做法版蜂蜜柚子茶",
+"ingredients": [
+{
+"name": "柚子",
+"canonical": "柚子",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "1 罐",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "半碗",
+"optional": false
+}
+],
+"steps": [
+"柚子用盐搓洗，刮下外皮切丝，果肉剥块。",
+"柚子皮焯水去苦。",
+"将果肉和冰糖放入搅拌机中搅拌成泥。",
+"将搅拌好的果肉泥和柚子皮丝放入锅中，加入适量水，小火煮至浓稠。",
+"放凉后拌入蜂蜜，搅拌均匀。",
+"将混合好的柚子茶倒入瓶中，冷藏保存。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "中等",
+"cookware": [
+"锅",
+"搅拌机",
+"瓶"
+],
+"tags": [
+"一人食",
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将柚子皮煮得过久，以免影响口感。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r168:leftover",
+"id": "ai-var-r168-leftover",
+"title": "剩菜改造版蜂蜜柚子茶",
+"ingredients": [
+{
+"name": "柚子",
+"canonical": "柚子",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "1 罐",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将剩余的柚子皮和果肉取出",
+"将柚子皮和果肉放入锅中，加入适量的水",
+"加入冰糖，小火煮至糖融化",
+"继续煮至汤汁浓稠，柚子皮变软",
+"关火，待汤汁冷却后，加入蜂蜜搅拌均匀",
+"将混合好的柚子茶放入冰箱冷藏保存"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"剩菜改造",
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要食用过期的蜂蜜",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r168:fusion",
+"id": "ai-var-r168-fusion",
+"title": "融合版蜂蜜柚子茶",
+"ingredients": [
+{
+"name": "柚子",
+"canonical": "柚子",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "1 罐",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "半碗",
+"optional": false
+}
+],
+"steps": [
+"柚子用盐搓洗，刮下外皮切丝，果肉剥块。",
+"柚子皮焯水去苦，和果肉、冰糖一起小火熬到浓稠。",
+"放凉后拌入蜂蜜，冷藏保存。",
+"加入绿茶包，浸泡片刻，增加茶香。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"融合菜",
+"一人食",
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要食用未煮熟的柚子。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r169:lazy",
+"id": "ai-var-r169-lazy",
+"title": "懒人版火龙果奶昔",
+"ingredients": [
+{
+"name": "火龙果",
+"canonical": "火龙果",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+}
+],
+"steps": [
+"将火龙果和牛奶一起倒入搅拌机中",
+"启动搅拌机至顺滑"
+],
+"methods": [
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"搅拌机"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐",
+"甜品"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意火龙果的糖分较高，糖尿病患者应适量食用"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r169:lowcal",
+"id": "ai-var-r169-lowcal",
+"title": "低卡版火龙果奶昔",
+"ingredients": [
+{
+"name": "火龙果",
+"canonical": "火龙果",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+}
+],
+"steps": [
+"火龙果去皮切块，放入蒸锅中蒸煮5分钟",
+"将蒸熟的火龙果取出，放入搅拌机中",
+"加入牛奶，搅拌至顺滑",
+"立即饮用"
+],
+"methods": [
+"蒸",
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"蒸锅",
+"搅拌机"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意火龙果的糖分，适量饮用",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r169:airfryer",
+"id": "ai-var-r169-airfryer",
+"title": "空气炸锅版火龙果奶昔",
+"ingredients": [
+{
+"name": "火龙果",
+"canonical": "火龙果",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+}
+],
+"steps": [
+"将火龙果去皮切块，放入空气炸锅。",
+"设置空气炸锅温度为150℃，时间设置为1小时。",
+"空气炸锅完成后，将火龙果块取出。",
+"将火龙果块和牛奶放入搅拌机。",
+"打到顺滑，立即饮用。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 60,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"甜品"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意火龙果的糖分较高，糖尿病患者应适量食用。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r169:substitute",
+"id": "ai-var-r169-substitute",
+"title": "家常替代版火龙果奶昔",
+"ingredients": [
+{
+"name": "火龙果",
+"canonical": "火龙果",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+}
+],
+"steps": [
+"将火龙果去皮切块",
+"将火龙果块冷冻1小时",
+"将冷冻的火龙果块和牛奶放入搅拌机",
+"搅拌至顺滑",
+"立即饮用"
+],
+"methods": [
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"搅拌机"
+],
+"tags": [
+"低卡",
+"甜品",
+"一人食"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要食用未熟透的火龙果"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r169:method",
+"id": "ai-var-r169-method",
+"title": "换做法版火龙果奶昔",
+"ingredients": [
+{
+"name": "火龙果",
+"canonical": "火龙果",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1盒",
+"optional": false
+}
+],
+"steps": [
+"将火龙果去皮切块。",
+"将火龙果块放入冰箱冷冻1小时。",
+"将冷冻好的火龙果块和牛奶一起放入搅拌机。",
+"搅拌至顺滑，倒入杯中即可饮用。"
+],
+"methods": [
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"搅拌机",
+"冰箱"
+],
+"tags": [
+"低卡",
+"早餐",
+"甜品"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意火龙果的糖分较高，糖尿病患者应适量食用。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r169:leftover",
+"id": "ai-var-r169-leftover",
+"title": "剩菜改造版火龙果奶昔",
+"ingredients": [
+{
+"name": "火龙果",
+"canonical": "火龙果",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1 盒",
+"optional": false
+},
+{
+"name": "酸奶",
+"canonical": "酸奶",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将火龙果和牛奶放入搅拌机中。",
+"加入适量的酸奶和蜂蜜。",
+"搅拌至顺滑。",
+"立即饮用，或者冷藏后作为甜品食用。"
+],
+"methods": [
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"搅拌机"
+],
+"tags": [
+"甜品",
+"低脂"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"无特殊风险，注意不要食用过量的蜂蜜。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r169:fusion",
+"id": "ai-var-r169-fusion",
+"title": "融合版火龙果奶昔",
+"ingredients": [
+{
+"name": "火龙果",
+"canonical": "火龙果",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1 盒",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "肉桂粉",
+"canonical": "桂皮",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"火龙果去皮切块，冷冻 1 小时。",
+"将火龙果和牛奶放入搅拌机。",
+"加入蜂蜜和肉桂粉，打到顺滑。",
+"立即饮用，口感更佳。"
+],
+"methods": [
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"搅拌机"
+],
+"tags": [
+"融合菜",
+"甜品"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将火龙果和牛奶混合时间过长，以免影响口感。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r170:lazy",
+"id": "ai-var-r170-lazy",
+"title": "懒人版樱桃酸奶杯",
+"ingredients": [
+{
+"name": "樱桃",
+"canonical": "樱桃",
+"amount": "1碗",
+"optional": false
+},
+{
+"name": "酸奶",
+"canonical": "酸奶",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "2勺",
+"optional": false
+}
+],
+"steps": [
+"将樱桃洗净去核。",
+"将酸奶倒入杯中。",
+"将燕麦撒在酸奶上。",
+"重复以上步骤，直至杯满。",
+"冷藏片刻后食用。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"杯子"
+],
+"tags": [
+"快手",
+"甜品",
+"一人食"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意樱桃的甜度，避免过甜。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r170:lowcal",
+"id": "ai-var-r170-lowcal",
+"title": "低卡版樱桃酸奶杯",
+"ingredients": [
+{
+"name": "樱桃",
+"canonical": "樱桃",
+"amount": "1 碗",
+"optional": false
+},
+{
+"name": "酸奶",
+"canonical": "酸奶",
+"amount": "1 盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "2 勺",
+"optional": false
+}
+],
+"steps": [
+"樱桃洗净去核。",
+"将一半樱桃用搅拌机打成果泥。",
+"在杯中依次铺上一层燕麦。",
+"倒入一层酸奶。",
+"加入一层樱桃果泥。",
+"重复以上步骤，直至杯满。",
+"放入冰箱冷藏片刻，直至凝固成型。"
+],
+"methods": [
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"搅拌机",
+"杯子",
+"冰箱"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意樱桃核不要误食。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r170:airfryer",
+"id": "ai-var-r170-airfryer",
+"title": "空气炸锅版樱桃酸奶杯",
+"ingredients": [
+{
+"name": "樱桃",
+"canonical": "樱桃",
+"amount": "1 碗",
+"optional": false
+},
+{
+"name": "酸奶",
+"canonical": "酸奶",
+"amount": "1 盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "2 勺",
+"optional": false
+}
+],
+"steps": [
+"樱桃洗净去核，一半压成果酱。",
+"杯中依次铺燕麦、酸奶和樱桃。",
+"重复叠层。",
+"将叠好的杯放入空气炸锅。",
+"设置空气炸锅温度为150℃，时间为5分钟。",
+"取出后冷藏片刻再食用。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"一人食",
+"甜品"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意空气炸锅温度和时间，避免食物烧焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r170:method",
+"id": "ai-var-r170-method",
+"title": "换做法版樱桃酸奶杯",
+"ingredients": [
+{
+"name": "樱桃",
+"canonical": "樱桃",
+"amount": "1 碗",
+"optional": false
+},
+{
+"name": "酸奶",
+"canonical": "酸奶",
+"amount": "1 盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "2 勺",
+"optional": false
+}
+],
+"steps": [
+"樱桃洗净去核，一半压成果酱。",
+"将酸奶倒入杯底。",
+"撒上燕麦。",
+"将樱桃果酱均匀铺在燕麦上。",
+"重复以上步骤，直至杯满。",
+"冷藏片刻，待酸奶凝固后即可食用。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"杯子"
+],
+"tags": [
+"甜品",
+"一人食",
+"早餐",
+"夜宵"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意樱桃核不要误食。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r170:leftover",
+"id": "ai-var-r170-leftover",
+"title": "剩菜改造版樱桃酸奶杯",
+"ingredients": [
+{
+"name": "樱桃",
+"canonical": "樱桃",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "酸奶",
+"canonical": "酸奶",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将樱桃洗净去核，一半压成果酱。",
+"在杯中依次铺上燕麦、酸奶和樱桃。",
+"重复叠层，直至杯满。",
+"冷藏片刻后食用。",
+"将剩余的樱桃酸奶杯放入冰箱，冷藏保存。",
+"食用前可加入新鲜水果或坚果碎增加口感。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"杯子"
+],
+"tags": [
+"剩菜改造",
+"甜品"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"确保樱桃新鲜，避免食用后引起不适。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r170:fusion",
+"id": "ai-var-r170-fusion",
+"title": "融合版樱桃酸奶杯",
+"ingredients": [
+{
+"name": "樱桃",
+"canonical": "樱桃",
+"amount": "1 碗",
+"optional": false
+},
+{
+"name": "酸奶",
+"canonical": "酸奶",
+"amount": "1 盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "2 勺",
+"optional": false
+}
+],
+"steps": [
+"樱桃洗净去核，用勺子压成樱桃泥。",
+"将杯中铺上一层燕麦。",
+"倒入一层酸奶。",
+"加入一层樱桃泥。",
+"重复以上步骤，直至杯满。",
+"放入冰箱冷藏片刻，直至凝固。",
+"食用前可撒上一些蜂蜜或肉桂粉增加风味。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"杯子",
+"勺子"
+],
+"tags": [
+"甜品",
+"融合菜"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意樱桃泥不要压得太稀，以免影响口感"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r171:lowcal",
+"id": "ai-var-r171-lowcal",
+"title": "低卡版荔枝冰",
+"ingredients": [
+{
+"name": "荔枝",
+"canonical": "荔枝",
+"amount": "1 串",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"荔枝剥壳去核，留几颗完整果肉。",
+"将果肉放入冰格。",
+"加入适量水。",
+"冷冻 4 小时成冰块。",
+"可配气泡水食用。"
+],
+"methods": [
+"蒸",
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 240,
+"difficulty": "简单",
+"cookware": [
+"冰格"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"无特殊风险。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r171:airfryer",
+"id": "ai-var-r171-airfryer",
+"title": "空气炸锅版荔枝冰",
+"ingredients": [
+{
+"name": "荔枝",
+"canonical": "荔枝",
+"amount": "1串",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"荔枝剥壳去核，留几颗完整果肉。",
+"将荔枝果肉放入冰格。",
+"加入适量水。",
+"将冰格放入空气炸锅。",
+"设置空气炸锅温度为150℃，时间设置为4小时。",
+"空气炸锅完成程序后，取出荔枝冰块。",
+"可配气泡水食用。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 240,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意荔枝冰块在空气炸过程中可能会爆裂，操作时请小心。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r171:method",
+"id": "ai-var-r171-method",
+"title": "换做法版荔枝冰",
+"ingredients": [
+{
+"name": "荔枝",
+"canonical": "荔枝",
+"amount": "1 串",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"荔枝剥壳去核，留几颗完整果肉",
+"将果肉放入杯中",
+"加入适量水",
+"将杯子放入冰箱冷藏室",
+"冷藏4小时至果肉凝固成冰",
+"取出冰块，放入杯中",
+"加入气泡水或冰镇饮料"
+],
+"methods": [
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 240,
+"difficulty": "简单",
+"cookware": [
+"杯子",
+"冰箱"
+],
+"tags": [
+"甜品",
+"夏日饮品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"确保荔枝新鲜，避免食物中毒"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r171:fusion",
+"id": "ai-var-r171-fusion",
+"title": "融合版荔枝冰",
+"ingredients": [
+{
+"name": "荔枝",
+"canonical": "荔枝",
+"amount": "1 串",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "少许",
+"optional": false
+},
+{
+"name": "柠檬汁",
+"canonical": "柠檬汁",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"荔枝剥壳去核，留几颗完整果肉。",
+"将荔枝果肉和蜂蜜、柠檬汁混合。",
+"倒入冰格中，加入水至八分满。",
+"放入冰箱冷冻4小时，制成荔枝冰。",
+"取出荔枝冰块，放入杯中，加入气泡水即可。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 4,
+"difficulty": "简单",
+"cookware": [
+"冰格",
+"杯子"
+],
+"tags": [
+"夏日饮品",
+"融合菜"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r172:lazy",
+"id": "ai-var-r172-lazy",
+"title": "懒人版糖水黄桃",
+"ingredients": [
+{
+"name": "桃子",
+"canonical": "桃子",
+"amount": "3个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将桃子去皮去核切块。",
+"将桃块和冰糖放入电饭煲中。",
+"按下电饭煲的煮粥功能，煮至冰糖溶化。",
+"待电饭煲自动断电后，将桃块和糖水放入冰箱冷藏。",
+"冷藏至冷却后即可食用。"
+],
+"methods": [
+"煮",
+"电饭煲"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"电饭煲"
+],
+"tags": [
+"快手",
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"桃子需新鲜，避免食用变质水果。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r172:lowcal",
+"id": "ai-var-r172-lowcal",
+"title": "低卡版糖水黄桃",
+"ingredients": [
+{
+"name": "桃子",
+"canonical": "桃子",
+"amount": "3个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"桃子洗净，去皮去核，切成小块。",
+"锅中加入适量水，放入冰糖，用中小火煮至冰糖完全溶解。",
+"将切好的桃子块放入锅中，小火煮至桃子变软，大约5分钟。",
+"关火，将桃子和糖水一起倒入碗中，放凉后放入冰箱冷藏。",
+"冷藏至完全冷却后即可食用。"
+],
+"methods": [
+"煮",
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅",
+"碗",
+"冰箱"
+],
+"tags": [
+"低卡",
+"减脂餐",
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r172:airfryer",
+"id": "ai-var-r172-airfryer",
+"title": "空气炸锅版糖水黄桃",
+"ingredients": [
+{
+"name": "桃子",
+"canonical": "桃子",
+"amount": "3个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"桃子洗净，去皮去核，切成小块。",
+"将切好的桃块放入空气炸锅中。",
+"加入适量的冰糖。",
+"设置空气炸锅温度为150℃，时间设置为10分钟。",
+"空气炸锅完成烹饪后，取出桃块，放凉后冷藏食用。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"甜品",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意桃子不要切得太小，以免在空气炸过程中散落。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r172:substitute",
+"id": "ai-var-r172-substitute",
+"title": "家常替代版糖水黄桃",
+"ingredients": [
+{
+"name": "桃子",
+"canonical": "桃子",
+"amount": "3个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"桃子洗净，去皮去核，切成小块。",
+"锅中加入适量的清水，放入冰糖。",
+"大火将水烧开后，转小火，放入桃块。",
+"煮至冰糖完全溶解，桃肉变软，大约10分钟。",
+"关火，待糖水冷却后，放入冰箱冷藏。",
+"冷藏后即可食用，冰镇口感更佳。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"甜品",
+"夏日饮品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将桃核一同煮制，以免造成不必要的风险。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r172:method",
+"id": "ai-var-r172-method",
+"title": "换做法版糖水黄桃",
+"ingredients": [
+{
+"name": "桃子",
+"canonical": "桃子",
+"amount": "3个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "1把",
+"optional": false
+}
+],
+"steps": [
+"将桃子洗净，去皮去核，切成小块。",
+"将冰糖放入炖锅中，加入适量的水。",
+"将桃子块放入锅中，大火煮沸。",
+"转小火慢炖15分钟，直到桃子变软。",
+"将炖好的桃子连同糖水一起倒入碗中，放凉。",
+"将桃子糖水放入冰箱冷藏，冷藏至冰凉后即可食用。"
+],
+"methods": [
+"炖"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"炖锅"
+],
+"tags": [
+"甜品",
+"夏日饮品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意桃子不要煮得过烂，以免影响口感。",
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r172:leftover",
+"id": "ai-var-r172-leftover",
+"title": "剩菜改造版糖水黄桃",
+"ingredients": [
+{
+"name": "桃子",
+"canonical": "桃子",
+"amount": "3个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "1把",
+"optional": false
+},
+{
+"name": "糯米粉",
+"canonical": "糯米粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将桃子去皮去核切块。",
+"锅中加水和冰糖煮开，下桃块。",
+"小火煮10分钟，放凉冷藏。",
+"将糯米粉用水调匀，慢慢倒入锅中，边倒边搅拌，煮至糖水变稠。",
+"将冷藏的桃块放入糖水中，搅拌均匀，即可食用。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"甜品",
+"剩菜改造"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意糯米粉不要一次性加入过多，以免糖水过于浓稠",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r172:fusion",
+"id": "ai-var-r172-fusion",
+"title": "融合版糖水黄桃",
+"ingredients": [
+{
+"name": "桃子",
+"canonical": "桃子",
+"amount": "3个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "1把",
+"optional": false
+}
+],
+"steps": [
+"桃子去皮去核切块。",
+"锅中加入适量的水，放入冰糖煮至溶化。",
+"将桃块放入锅中，小火煮10分钟。",
+"将煮好的糖水放凉后冷藏，冷藏后食用。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"甜品",
+"融合菜"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让糖水煮得过久，以免桃子煮烂。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r173:lazy",
+"id": "ai-var-r173-lazy",
+"title": "懒人版糖渍橘子",
+"ingredients": [
+{
+"name": "橘子",
+"canonical": "橘子",
+"amount": "4个",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "半碗",
+"optional": false
+}
+],
+"steps": [
+"橘子去皮，撕掉白色橘络，分瓣。",
+"橘子瓣和白糖拌匀，静置出汁。",
+"放入冰箱冷藏至汁水浓稠。"
+],
+"methods": [
+"凉拌",
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"冰箱"
+],
+"tags": [
+"快手",
+"剩菜改造"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意橘子不要放太多糖，以免过甜。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r173:lowcal",
+"id": "ai-var-r173-lowcal",
+"title": "低卡版糖渍橘子",
+"ingredients": [
+{
+"name": "橘子",
+"canonical": "橘子",
+"amount": "4个",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"橘子洗净，去皮。",
+"撕掉橘子白色橘络，分瓣。",
+"将橘子瓣放入蒸锅中，蒸约5分钟。",
+"取出橘子瓣，沥干水分。",
+"将白糖与橘子瓣拌匀，静置约1小时，让糖分渗透。",
+"将橘子瓣放入冰箱冷藏，冷藏过夜，让糖汁更加浓稠。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"低卡",
+"减脂餐",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意橘子瓣不要蒸得过软，以免影响口感。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r173:airfryer",
+"id": "ai-var-r173-airfryer",
+"title": "空气炸锅版糖渍橘子",
+"ingredients": [
+{
+"name": "橘子",
+"canonical": "橘子",
+"amount": "4个",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "半碗",
+"optional": false
+}
+],
+"steps": [
+"橘子去皮，撕掉白色橘络，分瓣。",
+"橘子瓣和白糖拌匀，静置出汁。",
+"将拌匀的橘子瓣放入空气炸锅中。",
+"设置空气炸锅温度为150℃，时间设置为30分钟。",
+"取出后，待橘子冷却至室温，冷藏保存。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意橘子瓣不要放得过于紧密，以免炸焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r173:substitute",
+"id": "ai-var-r173-substitute",
+"title": "家常替代版糖渍橘子",
+"ingredients": [
+{
+"name": "橘子",
+"canonical": "橘子",
+"amount": "4个",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "半碗",
+"optional": false
+}
+],
+"steps": [
+"橘子去皮，撕掉白色橘络，分瓣。",
+"橘子瓣和白糖拌匀，静置出汁。",
+"小火熬到汁水浓稠，冷藏保存。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意火候，避免熬煮过度导致糖分焦化。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r173:method",
+"id": "ai-var-r173-method",
+"title": "换做法版糖渍橘子",
+"ingredients": [
+{
+"name": "橘子",
+"canonical": "橘子",
+"amount": "4个",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "柠檬汁",
+"canonical": "柠檬汁",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "橄榄油",
+"canonical": "橄榄油",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"橘子洗净，去皮去籽，切成小块。",
+"将橘子块放入碗中，加入柠檬汁和蜂蜜拌匀，腌制30分钟。",
+"将腌制好的橘子块沥干，用厨房纸巾吸去多余水分。",
+"在平底锅中加入橄榄油，加热至微热。",
+"将橘子块放入锅中，小火慢煎，煎至两面金黄。",
+"将煎好的橘子块取出，放入盘中，撒上白糖。",
+"将锅中剩余的糖汁加热至浓稠，淋在橘子块上。",
+"冷藏保存，食用时取出即可。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"甜品",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意煎橘子时火不宜过大，以免烧焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r173:leftover",
+"id": "ai-var-r173-leftover",
+"title": "剩菜改造版糖渍橘子",
+"ingredients": [
+{
+"name": "橘子",
+"canonical": "橘子",
+"amount": "4个",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "酸奶",
+"canonical": "酸奶",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将橘子瓣和白糖拌匀，静置出汁。",
+"将出汁后的橘子瓣放入冰箱冷藏，待汁水浓稠。",
+"取出冷藏的橘子瓣，加入适量的酸奶和蜂蜜。",
+"搅拌均匀后即可食用。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"碗"
+],
+"tags": [
+"甜品",
+"一人食"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要食用过量的白糖，以免影响血糖水平。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r173:fusion",
+"id": "ai-var-r173-fusion",
+"title": "融合版糖渍橘子",
+"ingredients": [
+{
+"name": "橘子",
+"canonical": "橘子",
+"amount": "4个",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "柠檬汁",
+"canonical": "柠檬汁",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "肉桂粉",
+"canonical": "桂皮",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"橘子去皮，撕掉白色橘络，分瓣。",
+"橘子瓣和白糖、柠檬汁、肉桂粉拌匀，静置出汁。",
+"小火熬到汁水浓稠，冷藏保存。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"融合菜"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意火候，避免熬煮过程中糊底。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r174:lazy",
+"id": "ai-var-r174-lazy",
+"title": "懒人版水煮菱角",
+"ingredients": [
+{
+"name": "菱角",
+"canonical": "菱角",
+"amount": "1 斤",
+"optional": false
+}
+],
+"steps": [
+"菱角刷洗干净，冷水下锅。",
+"加少许盐，大火烧开。",
+"转中火煮 10 分钟，捞出沥干。",
+"剥壳趁热食用。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要煮得过久，以免菱角过于软烂影响口感。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r174:lowcal",
+"id": "ai-var-r174-lowcal",
+"title": "低卡版水煮菱角",
+"ingredients": [
+{
+"name": "菱角",
+"canonical": "菱角",
+"amount": "1 斤",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"菱角刷洗干净，冷水下锅。",
+"加入少许盐，大火烧开转中火煮 20 分钟。",
+"捞出菱角，沥干水分，剥壳。",
+"将剥好的菱角放入蒸锅中，蒸 5 分钟至熟透。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 25,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意菱角煮的时间不宜过长，以免口感变差。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r174:airfryer",
+"id": "ai-var-r174-airfryer",
+"title": "空气炸锅版水煮菱角",
+"ingredients": [
+{
+"name": "菱角",
+"canonical": "菱角",
+"amount": "1 斤",
+"optional": false
+}
+],
+"steps": [
+"菱角刷洗干净",
+"冷水下锅，加入少许盐",
+"大火烧开转中火煮 10 分钟",
+"捞出沥干，剥壳",
+"将剥好的菱角放入空气炸锅中"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将菱角煮得过熟，以免影响口感"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r174:substitute",
+"id": "ai-var-r174-substitute",
+"title": "家常替代版水煮菱角",
+"ingredients": [
+{
+"name": "玉米粒",
+"canonical": "玉米",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "胡萝卜",
+"canonical": "胡萝卜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "豌豆",
+"canonical": "豌豆",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"将玉米粒、胡萝卜和豌豆洗净，切成小段。",
+"锅中加水，加入少许盐，大火烧开。",
+"水开后，将切好的玉米粒、胡萝卜和豌豆放入锅中，中火煮 20 分钟。",
+"煮好后，捞出沥干，即可食用。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食",
+"素食",
+"剩菜改造"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r174:method",
+"id": "ai-var-r174-method",
+"title": "换做法版水煮菱角",
+"ingredients": [
+{
+"name": "菱角",
+"canonical": "菱角",
+"amount": "1 斤",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"菱角刷洗干净，冷水下锅。",
+"加入适量糖，大火烧开转中火煮 20 分钟。",
+"捞出沥干，剥壳。",
+"将菱角放入碗中，加入煮菱角的水。",
+"放入冰箱冷藏，待菱角冷却后即可食用。"
+],
+"methods": [
+"煮",
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 40,
+"difficulty": "简单",
+"cookware": [
+"锅",
+"碗",
+"冰箱"
+],
+"tags": [
+"甜品",
+"夏日饮品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要食用未煮熟的菱角，以免引起食物中毒。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r174:leftover",
+"id": "ai-var-r174-leftover",
+"title": "剩菜改造版水煮菱角",
+"ingredients": [
+{
+"name": "菱角",
+"canonical": "菱角",
+"amount": "1 斤",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "青椒",
+"canonical": "青椒",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "蒜末",
+"canonical": "大蒜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "豆瓣酱",
+"canonical": "豆瓣酱",
+"amount": "1 大勺",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "1 汤匙",
+"optional": false
+},
+{
+"name": "老抽",
+"canonical": "老抽",
+"amount": "少许",
+"optional": false
+},
+{
+"name": "水淀粉",
+"canonical": "淀粉",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"菱角剥壳，鸡蛋打散备用。",
+"青椒和红椒切块。",
+"锅中加油，烧热后下蒜末和豆瓣酱炒香。",
+"加入菱角翻炒，再加入青椒和红椒继续翻炒。",
+"倒入鸡蛋液，快速翻炒均匀。",
+"加入生抽和老抽调味。",
+"用水淀粉勾芡，撒上葱花即可出锅。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"下饭",
+"剩菜改造"
+],
+"allergens": [
+"大豆",
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意菱角剥壳时小心烫伤"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r174:fusion",
+"id": "ai-var-r174-fusion",
+"title": "融合版水煮菱角",
+"ingredients": [
+{
+"name": "菱角",
+"canonical": "菱角",
+"amount": "1 斤",
+"optional": false
+},
+{
+"name": "花椒",
+"canonical": "花椒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "干辣椒",
+"canonical": "干辣椒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "蒜",
+"canonical": "大蒜",
+"amount": "2 瓣",
+"optional": false
+},
+{
+"name": "姜片",
+"canonical": "生姜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "老抽",
+"canonical": "老抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "料酒",
+"canonical": "料酒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"菱角刷洗干净，冷水下锅。",
+"加少许盐，大火烧开转中火煮 20 分钟。",
+"捞出菱角沥干，剥壳。",
+"锅中加入适量油，放入花椒、干辣椒、蒜和姜片炒香。",
+"加入煮好的菱角，翻炒均匀。",
+"加入生抽、老抽、料酒和糖调味。",
+"翻炒均匀，出锅前根据口味调整盐量。",
+"撒上葱花或香菜装饰，即可食用。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 25,
+"difficulty": "中等",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"融合菜"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要煮得过久，以免菱角过于软烂。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r175:lazy",
+"id": "ai-var-r175-lazy",
+"title": "懒人版藕粉羹",
+"ingredients": [
+{
+"name": "藕粉",
+"canonical": "藕粉",
+"amount": "3勺",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将藕粉用少量水化开，搅拌均匀至无颗粒。",
+"将藕粉水冲入沸水中，边冲边快速搅拌。",
+"煮至藕粉呈半透明糊状，即可关火。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让藕粉结块，否则会影响口感。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r175:lowcal",
+"id": "ai-var-r175-lowcal",
+"title": "低卡版藕粉羹",
+"ingredients": [
+{
+"name": "藕粉",
+"canonical": "藕粉",
+"amount": "3勺",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将藕粉用少量凉水化开，搅拌均匀至无颗粒。",
+"将化开的藕粉冲入沸水中，边冲边快速搅拌。",
+"继续搅拌至藕粉呈半透明糊状，煮至沸腾即可。",
+"根据个人口味，可加入少许桂花或坚果增加风味。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让藕粉煮得过稠，以免影响口感。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r175:airfryer",
+"id": "ai-var-r175-airfryer",
+"title": "空气炸锅版藕粉羹",
+"ingredients": [
+{
+"name": "藕粉",
+"canonical": "藕粉",
+"amount": "3勺",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将藕粉用少量凉水化开，搅拌均匀至无颗粒。",
+"将化开的藕粉冲入沸水，边冲边快速搅拌。",
+"继续搅拌至藕粉呈半透明糊状。",
+"将藕粉糊倒入空气炸锅容器中。",
+"设置空气炸锅温度为100°C，时间为10分钟。",
+"待时间到后，打开空气炸锅取出藕粉羹。",
+"可加入桂花或坚果增加风味。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅容器"
+],
+"tags": [
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让空气炸锅温度过高，以免烧焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r175:substitute",
+"id": "ai-var-r175-substitute",
+"title": "家常替代版藕粉羹",
+"ingredients": [
+{
+"name": "藕粉",
+"canonical": "藕粉",
+"amount": "3勺",
+"optional": false
+},
+{
+"name": "清水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将藕粉用少量清水化开，搅拌均匀，确保无颗粒。",
+"将化开的藕粉冲入沸水中，边冲边快速搅拌。",
+"继续搅拌至藕粉呈半透明糊状，根据个人口味加入适量糖。",
+"继续搅拌至糖完全溶解，即可关火。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"甜品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让藕粉糊底。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r175:method",
+"id": "ai-var-r175-method",
+"title": "换做法版藕粉羹",
+"ingredients": [
+{
+"name": "藕粉",
+"canonical": "藕粉",
+"amount": "3勺",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "500毫升",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "玉米淀粉",
+"canonical": "淀粉",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将藕粉用少量牛奶或水化开，搅拌均匀，确保无颗粒。",
+"将化开的藕粉倒入锅中，加入剩余的牛奶和糖，搅拌均匀。",
+"将玉米淀粉用少量牛奶或水调匀，慢慢倒入锅中，边倒边搅拌，防止结块。",
+"用小火加热，边加热边不断搅拌，直到藕粉羹变得浓稠且呈半透明糊状。",
+"关火，稍微冷却后即可享用。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"甜品",
+"早餐",
+"一人食"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让藕粉羹沸腾，以免溢出。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r175:leftover",
+"id": "ai-var-r175-leftover",
+"title": "剩菜改造版藕粉羹",
+"ingredients": [
+{
+"name": "藕粉",
+"canonical": "藕粉",
+"amount": "3勺",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将藕粉用少量温水化开，搅拌均匀至无颗粒。",
+"将藕粉水冲入沸水中，边冲边快速搅拌。",
+"煮至藕粉呈半透明糊状，加入适量牛奶和蜂蜜。",
+"继续搅拌均匀，煮至藕粉羹浓稠即可。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"甜品",
+"剩菜改造"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意藕粉不宜煮得过久，以免糊底。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r175:fusion",
+"id": "ai-var-r175-fusion",
+"title": "融合版藕粉羹",
+"ingredients": [
+{
+"name": "藕粉",
+"canonical": "藕粉",
+"amount": "3勺",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "500毫升",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "肉桂粉",
+"canonical": "桂皮",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"将藕粉用少量温水化开，搅拌均匀，确保无颗粒。",
+"将化开的藕粉慢慢倒入煮沸的牛奶中，边倒边快速搅拌。",
+"继续搅拌至藕粉糊变得浓稠且呈半透明状。",
+"加入适量的糖和肉桂粉，搅拌均匀。",
+"最后，根据个人口味加入蜂蜜调味，继续搅拌均匀即可。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"融合菜"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让藕粉糊煮得过久，以免糊底。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r176:lazy",
+"id": "ai-var-r176-lazy",
+"title": "懒人版红烧鱼",
+"ingredients": [
+{
+"name": "鱼",
+"canonical": "鱼",
+"amount": "1条",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "老抽",
+"canonical": "老抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "料酒",
+"canonical": "料酒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鱼处理干净，两面划刀，薄裹面粉。",
+"热油下锅煎到两面金黄。",
+"加入生抽、老抽、料酒和糖。",
+"加半碗水，中火炖10分钟，收汁撒葱花。"
+],
+"methods": [
+"煎",
+"炖"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"下饭"
+],
+"allergens": [
+"大豆",
+"鱼",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"鱼煎时注意火候，避免煎糊。",
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r176:lowcal",
+"id": "ai-var-r176-lowcal",
+"title": "低卡版红烧鱼",
+"ingredients": [
+{
+"name": "鱼",
+"canonical": "鱼",
+"amount": "1 条",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "老抽",
+"canonical": "老抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "料酒",
+"canonical": "料酒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "少许",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "薄裹一层",
+"optional": false
+}
+],
+"steps": [
+"鱼处理干净，两面划刀，用厨房纸吸干。",
+"薄裹面粉，热锅凉油，下鱼煎至两面金黄。",
+"加入生抽、老抽、料酒和少许糖，翻炒均匀。",
+"加入半碗水，中火炖煮 10 分钟。",
+"收汁，撒上葱花即可。"
+],
+"methods": [
+"蒸",
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"炒锅",
+"锅"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [
+"大豆",
+"鱼",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意鱼煎的时候油温不宜过高，以免溅油。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r176:airfryer",
+"id": "ai-var-r176-airfryer",
+"title": "空气炸锅版红烧鱼",
+"ingredients": [
+{
+"name": "鱼",
+"canonical": "鱼",
+"amount": "1 条",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "老抽",
+"canonical": "老抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "料酒",
+"canonical": "料酒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鱼处理干净，两面划刀，用厨房纸吸干，薄裹面粉。",
+"将裹好面粉的鱼放入空气炸锅中，设置温度为180°C，炸制约10分钟至两面金黄。",
+"将炸好的鱼取出，放入另一个容器中。",
+"在锅中加入适量的生抽、老抽、料酒和糖，煮沸。",
+"将煮沸的调味汁倒入装有鱼的容器中，确保鱼完全浸入调味汁中。",
+"将容器放入空气炸锅中，设置温度为150°C，继续烹饪约10分钟，使鱼充分吸收调味汁。",
+"最后取出鱼，撒上葱花即可。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"下饭"
+],
+"allergens": [
+"大豆",
+"鱼",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意鱼炸制时油温不宜过高，以免发生溅油。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r176:substitute",
+"id": "ai-var-r176-substitute",
+"title": "家常替代版红烧鱼",
+"ingredients": [
+{
+"name": "鱼",
+"canonical": "鱼",
+"amount": "1 条",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "老抽",
+"canonical": "老抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "料酒",
+"canonical": "料酒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鱼处理干净，两面划刀，用厨房纸吸干。",
+"薄裹面粉。",
+"热油下锅煎到两面金黄。",
+"下生抽、老抽、料酒和糖。",
+"加半碗水，中火炖 10 分钟。",
+"收汁撒葱花。"
+],
+"methods": [
+"煎",
+"炖"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"下饭"
+],
+"allergens": [
+"大豆",
+"鱼",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"鱼煎时注意火候，避免煎糊。",
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r176:method",
+"id": "ai-var-r176-method",
+"title": "换做法版红烧鱼",
+"ingredients": [
+{
+"name": "鱼",
+"canonical": "鱼",
+"amount": "1 条",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "老抽",
+"canonical": "老抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "料酒",
+"canonical": "料酒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鱼处理干净，两面划刀，用厨房纸吸干，薄裹面粉。",
+"热油下锅煎到两面金黄。",
+"加入生抽、老抽、料酒和糖。",
+"加入半碗水，中火炖 10 分钟。",
+"收汁撒葱花。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"下饭"
+],
+"allergens": [
+"大豆",
+"鱼",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意油温，避免烫伤。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r176:leftover",
+"id": "ai-var-r176-leftover",
+"title": "剩菜改造版红烧鱼",
+"ingredients": [
+{
+"name": "鱼",
+"canonical": "鱼",
+"amount": "1条",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "老抽",
+"canonical": "老抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "料酒",
+"canonical": "料酒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将剩余红烧鱼的鱼肉切成小块。",
+"将鱼肉裹上面粉。",
+"热锅凉油，将裹粉的鱼肉块下锅煎至两面金黄。",
+"锅中留少量油，加入葱花炒香。",
+"加入适量的生抽、老抽、料酒和糖，翻炒均匀。",
+"加入半碗水，小火炖煮5分钟。",
+"打开盖子，大火收汁，撒上葱花即可。"
+],
+"methods": [
+"炒",
+"炖"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"炒锅",
+"锅"
+],
+"tags": [
+"剩菜改造",
+"下饭"
+],
+"allergens": [
+"大豆",
+"鱼",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让鱼肉煎糊。",
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r176:fusion",
+"id": "ai-var-r176-fusion",
+"title": "融合版红烧鱼",
+"ingredients": [
+{
+"name": "鱼",
+"canonical": "鱼",
+"amount": "1 条",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "老抽",
+"canonical": "老抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "料酒",
+"canonical": "料酒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "番茄酱",
+"canonical": "番茄酱",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鱼处理干净，两面划刀，用厨房纸吸干，薄裹面粉。",
+"热油下锅煎到两面金黄。",
+"加入生抽、老抽、料酒、糖、番茄酱和黑胡椒，翻炒均匀。",
+"加入半碗水，中火炖 10 分钟。",
+"收汁撒盐，出锅前撒上葱花。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "中等",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"融合菜"
+],
+"allergens": [
+"大豆",
+"鱼",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意鱼煎的时候不要煎糊。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r177:lazy",
+"id": "ai-var-r177-lazy",
+"title": "懒人版生煎包",
+"ingredients": [
+{
+"name": "包子",
+"canonical": "包子",
+"amount": "6个",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "芝麻",
+"canonical": "芝麻",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将包子底部微煎至微黄",
+"倒入适量面粉和水，水量没过包子底部",
+"盖盖焖至水干",
+"撒上葱花和芝麻出锅"
+],
+"methods": [
+"煎",
+"炖"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"快手",
+"剩菜改造"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意煎包子时火不宜太大，以免烧焦",
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r177:lowcal",
+"id": "ai-var-r177-lowcal",
+"title": "低卡版生煎包",
+"ingredients": [
+{
+"name": "包子",
+"canonical": "包子",
+"amount": "6个",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "芝麻",
+"canonical": "芝麻",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将包子底部刷上一层薄薄的面粉。",
+"将刷好面粉的包子摆放在蒸锅的蒸笼上。",
+"大火将水烧开，将蒸锅盖好，蒸煮5分钟。",
+"取出包子，撒上葱花和芝麻。",
+"将蒸好的包子摆放在盘子上，即可食用。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"低卡",
+"减脂餐",
+"一人食",
+"早餐"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸煮时间，避免包子过度蒸煮变烂。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r177:airfryer",
+"id": "ai-var-r177-airfryer",
+"title": "空气炸锅版生煎包",
+"ingredients": [
+{
+"name": "包子",
+"canonical": "包子",
+"amount": "6个",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "芝麻",
+"canonical": "芝麻",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将包子底部刷上一层薄油。",
+"将包子收口朝下摆入空气炸锅篮中。",
+"预热空气炸锅至180°C。",
+"将空气炸锅设置为180°C，炸制10分钟。",
+"取出包子，倒入适量面粉和水，搅拌均匀成面糊。",
+"将面糊倒入空气炸锅，覆盖包子。",
+"将空气炸锅设置为180°C，继续炸制10分钟。",
+"取出包子，撒上葱花和芝麻，出锅即可。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"一人食",
+"早餐"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意炸制过程中不要打开空气炸锅，以免热气伤人。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r177:method",
+"id": "ai-var-r177-method",
+"title": "换做法版生煎包",
+"ingredients": [
+{
+"name": "包子",
+"canonical": "包子",
+"amount": "6个",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "芝麻",
+"canonical": "芝麻",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将包子底部均匀裹上面粉。",
+"将裹上面粉的包子放入蒸锅中，底部朝下。",
+"开大火将水烧开后转小火，蒸约10分钟。",
+"蒸至包子底部微黄，取出。",
+"将包子底部刷上一层薄油。",
+"将包子重新放入蒸锅中，底部朝上。",
+"继续蒸约5分钟，至包子底部熟透。",
+"出锅后撒上葱花和芝麻即可。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"一人食",
+"早餐"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸锅内的水不要沸腾，以免发生意外。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r177:leftover",
+"id": "ai-var-r177-leftover",
+"title": "剩菜改造版生煎包",
+"ingredients": [
+{
+"name": "包子",
+"canonical": "包子",
+"amount": "6个",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "芝麻",
+"canonical": "芝麻",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "50毫升",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "胡椒粉",
+"canonical": "胡椒粉",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将包子底部微黄的皮撕下，切成小块备用。",
+"鸡蛋打散，加入牛奶、盐和胡椒粉，搅拌均匀。",
+"将包子皮放入蛋液中，使其均匀裹上蛋液。",
+"平底锅加热，倒入少量油，将裹了蛋液的包子皮放入锅中。",
+"煎至两面金黄，加入撕成小块的包子肉。",
+"加入适量面粉，翻炒至面粉微黄，形成糊状。",
+"加入葱花和芝麻，翻炒均匀，出锅即可。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "中等",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"剩菜改造",
+"一人食"
+],
+"allergens": [
+"牛奶",
+"鸡蛋",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意火候，避免糊锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r177:fusion",
+"id": "ai-var-r177-fusion",
+"title": "融合版生煎包",
+"ingredients": [
+{
+"name": "包子",
+"canonical": "包子",
+"amount": "6个",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "芝麻",
+"canonical": "芝麻",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将包子底部微黄，倒入没过包子三分之一的面粉水。",
+"盖盖焖到水干，撒葱花和芝麻出锅。",
+"在煎包子的同时，准备一份日式照烧酱。",
+"将照烧酱均匀涂抹在每个包子的表面。",
+"再次煎至底部微黄，确保照烧酱完全附着在包子表面。"
+],
+"methods": [
+"煎"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "中等",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"融合菜"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意火候，避免包子煎糊。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r178:lazy",
+"id": "ai-var-r178-lazy",
+"title": "懒人版桂圆炖蛋",
+"ingredients": [
+{
+"name": "龙眼",
+"canonical": "龙眼",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+}
+],
+"steps": [
+"鸡蛋打入碗中，加入适量温水打散。",
+"将龙眼剥壳，放入打散的鸡蛋液中。",
+"将鸡蛋液和龙眼放入蒸锅中，盖上锅盖。",
+"大火蒸约12分钟，然后转小火焖2分钟。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 14,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐",
+"夜宵",
+"宝宝辅食"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸煮时间，避免过度蒸煮导致口感变差。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r178:lowcal",
+"id": "ai-var-r178-lowcal",
+"title": "低卡版桂圆炖蛋",
+"ingredients": [
+{
+"name": "龙眼",
+"canonical": "龙眼",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "温水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"龙眼剥壳备用。",
+"鸡蛋打入碗中，加入适量温水打散，过筛去除杂质。",
+"将龙眼放入蛋液中，轻轻拌匀。",
+"将混合好的蛋液放入蒸碗中，盖上保鲜膜。",
+"上锅大火蒸12分钟，然后转小火焖2分钟，再开盖。",
+"取出后稍微放凉即可食用。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"蒸锅",
+"蒸碗"
+],
+"tags": [
+"低卡",
+"减脂餐",
+"甜品"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"无特殊风险，注意不要将蛋液蒸得过老。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r178:airfryer",
+"id": "ai-var-r178-airfryer",
+"title": "空气炸锅版桂圆炖蛋",
+"ingredients": [
+{
+"name": "龙眼",
+"canonical": "龙眼",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "温水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"龙眼剥壳备用。",
+"鸡蛋打入碗中，加入温水打散并过筛。",
+"将龙眼放入蛋液中。",
+"倒入空气炸锅篮中，盖上保鲜膜。",
+"设置空气炸锅温度为 150℃，时间设置为 12 分钟。",
+"完成蒸煮后，焖 2 分钟再开盖取出。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 14,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"一人食",
+"甜品"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意空气炸锅温度和时间，避免食物烧焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r178:substitute",
+"id": "ai-var-r178-substitute",
+"title": "家常替代版桂圆炖蛋",
+"ingredients": [
+{
+"name": "龙眼",
+"canonical": "龙眼",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "清水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将龙眼剥壳，备用。",
+"鸡蛋打入碗中，加入适量温水打散。",
+"将打散的蛋液过筛，去除杂质。",
+"将过筛后的蛋液倒入蒸碗中，放入剥壳的龙眼。",
+"盖上保鲜膜，用牙签在保鲜膜上扎几个小孔。",
+"上锅，大火烧开后转小火蒸12分钟。",
+"蒸好后，焖2分钟再开盖，取出即可食用。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 14,
+"difficulty": "简单",
+"cookware": [
+"蒸锅",
+"蒸碗",
+"筛子"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐",
+"夜宵",
+"宝宝辅食",
+"低脂"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸煮时间，避免鸡蛋未熟或龙眼过熟。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r178:method",
+"id": "ai-var-r178-method",
+"title": "换做法版桂圆炖蛋",
+"ingredients": [
+{
+"name": "龙眼",
+"canonical": "龙眼",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "清水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"龙眼剥壳，鸡蛋加温水打散过筛。",
+"将蛋液和龙眼放入碗中，加入适量清水。",
+"将碗放入微波炉中，高火加热 3 分钟。",
+"取出后焖 2 分钟，再继续加热 2 分钟。",
+"取出后搅拌均匀，即可食用。"
+],
+"methods": [
+"微波炉"
+],
+"cuisine": "AI 创意",
+"time_minutes": 7,
+"difficulty": "简单",
+"cookware": [
+"微波炉"
+],
+"tags": [
+"快手",
+"一人食",
+"甜品"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意微波炉加热时间，避免过度加热。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r178:leftover",
+"id": "ai-var-r178-leftover",
+"title": "剩菜改造版桂圆炖蛋",
+"ingredients": [
+{
+"name": "龙眼",
+"canonical": "龙眼",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "100毫升",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将龙眼剥壳，鸡蛋打散。",
+"将打散的鸡蛋液倒入碗中，加入牛奶和糖。",
+"将龙眼放入蛋液中，搅拌均匀。",
+"将混合好的蛋液倒入蒸碗中，盖上保鲜膜。",
+"上锅大火蒸8分钟，然后转小火蒸5分钟。",
+"取出蒸好的蛋羹，稍微冷却后即可食用。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 13,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"甜品",
+"一人食",
+"早餐",
+"夜宵",
+"宝宝辅食"
+],
+"allergens": [
+"牛奶",
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将牛奶加得过多，以免影响口感。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r178:fusion",
+"id": "ai-var-r178-fusion",
+"title": "融合版桂圆炖蛋",
+"ingredients": [
+{
+"name": "龙眼",
+"canonical": "龙眼",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "肉桂粉",
+"canonical": "桂皮",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"龙眼剥壳，鸡蛋加温水打散过筛。",
+"将蛋液倒入碗中，放入剥好的龙眼。",
+"撒上少许肉桂粉。",
+"盖上保鲜膜，上锅小火蒸 12 分钟。",
+"焖 2 分钟后开盖，加入适量蜂蜜调味即可。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"融合菜",
+"甜品"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸煮时间，避免鸡蛋未熟。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r179:lazy",
+"id": "ai-var-r179-lazy",
+"title": "懒人版豌豆泥",
+"ingredients": [
+{
+"name": "冻豌豆",
+"canonical": "冻豌豆",
+"amount": "1碗",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "少许",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"将冻豌豆和牛奶放入搅拌机中",
+"搅拌至豌豆成泥状",
+"根据口味加入少许盐和黑胡椒调味"
+],
+"methods": [
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"搅拌机"
+],
+"tags": [
+"快手",
+"一人食",
+"素食"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"确保使用新鲜或合格的冻豌豆"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r179:lowcal",
+"id": "ai-var-r179-lowcal",
+"title": "低卡版豌豆泥",
+"ingredients": [
+{
+"name": "冻豌豆",
+"canonical": "冻豌豆",
+"amount": "1碗",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "少许",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将冻豌豆放入沸水中焯3分钟，捞出后过凉水",
+"将焯好水的豌豆和少许牛奶放入搅拌机中打成泥",
+"加入适量的盐和黑胡椒调味"
+],
+"methods": [
+"煮",
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"搅拌机",
+"锅"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将豌豆煮得过烂，以免影响口感",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r179:airfryer",
+"id": "ai-var-r179-airfryer",
+"title": "空气炸锅版豌豆泥",
+"ingredients": [
+{
+"name": "冻豌豆",
+"canonical": "冻豌豆",
+"amount": "1碗",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将冻豌豆放入沸水中焯3分钟，捞出后过凉水。",
+"将焯好水的豌豆和适量牛奶放入搅拌机中打成泥。",
+"将打好的豌豆泥放入空气炸锅中，设置温度为180℃，时间约为10分钟。",
+"取出豌豆泥，加入盐和黑胡椒调味。",
+"将调味好的豌豆泥装盘，即可食用。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 13,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"快手"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意空气炸锅的温度和时间，避免烧焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r179:substitute",
+"id": "ai-var-r179-substitute",
+"title": "家常替代版豌豆泥",
+"ingredients": [
+{
+"name": "冻豌豆",
+"canonical": "冻豌豆",
+"amount": "1碗",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "少许",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将冻豌豆放入沸水中焯3分钟，捞出后过凉水",
+"将焯好水的豌豆和少许牛奶放入搅拌机中打成泥",
+"加入盐和黑胡椒调味"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"搅拌机",
+"锅"
+],
+"tags": [
+"快手",
+"一人食",
+"剩菜改造"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将豌豆煮得过烂，以免影响口感",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r179:method",
+"id": "ai-var-r179-method",
+"title": "换做法版豌豆泥",
+"ingredients": [
+{
+"name": "冻豌豆",
+"canonical": "冻豌豆",
+"amount": "1碗",
+"optional": false
+},
+{
+"name": "黄油",
+"canonical": "黄油",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "洋葱",
+"canonical": "洋葱",
+"amount": "半个",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"洋葱切碎炒香",
+"加入面粉炒至微黄",
+"逐渐加入牛奶，搅拌均匀",
+"加入焯好水的冻豌豆，煮至浓稠",
+"加入黄油，搅拌均匀",
+"加盐和黑胡椒调味"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "中等",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"快手",
+"一人食",
+"素食"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让洋葱和面粉烧焦"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r179:leftover",
+"id": "ai-var-r179-leftover",
+"title": "剩菜改造版豌豆泥",
+"ingredients": [
+{
+"name": "冻豌豆",
+"canonical": "冻豌豆",
+"amount": "1碗",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "橄榄油",
+"canonical": "橄榄油",
+"amount": "1汤匙",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "2瓣",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "面包",
+"canonical": "面包",
+"amount": "2片",
+"optional": false
+}
+],
+"steps": [
+"将冻豌豆放入沸水中焯3分钟，捞出过凉水。",
+"将焯好水的豌豆和牛奶放入搅拌机中打成泥。",
+"将大蒜切碎，用橄榄油炒香。",
+"将炒好的大蒜和豌豆泥混合，加盐和黑胡椒调味。",
+"将面包切片，用橄榄油煎至两面金黄。",
+"将调味好的豌豆泥涂抹在煎好的面包片上，即可食用。"
+],
+"methods": [
+"煮",
+"免开火",
+"炒",
+"煎"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"搅拌机",
+"锅",
+"煎锅",
+"面包机"
+],
+"tags": [
+"快手",
+"一人食",
+"剩菜改造"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r179:fusion",
+"id": "ai-var-r179-fusion",
+"title": "融合版豌豆泥",
+"ingredients": [
+{
+"name": "冻豌豆",
+"canonical": "冻豌豆",
+"amount": "1碗",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "橄榄油",
+"canonical": "橄榄油",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "1瓣",
+"optional": false
+},
+{
+"name": "罗勒叶",
+"canonical": "罗勒",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将冻豌豆放入沸水中焯3分钟，捞出过凉水。",
+"将焯好的豌豆和牛奶放入搅拌机中打成泥。",
+"将大蒜切碎，罗勒叶切碎。",
+"在锅中加热橄榄油，加入切碎的大蒜炒香。",
+"将炒好的大蒜和罗勒叶加入豌豆泥中，搅拌均匀。",
+"根据口味加入盐和黑胡椒调味。",
+"将调味好的豌豆泥装盘即可。"
+],
+"methods": [
+"煮",
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅",
+"搅拌机"
+],
+"tags": [
+"融合菜"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让豌豆泥过热，以免营养流失。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r180:lazy",
+"id": "ai-var-r180-lazy",
+"title": "懒人版豆浆燕麦粥",
+"ingredients": [
+{
+"name": "豆浆",
+"canonical": "豆浆",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "半碗",
+"optional": false
+}
+],
+"steps": [
+"将豆浆倒入锅中，加入燕麦。",
+"开启电饭煲或微波炉，设置煮粥模式，煮至浓稠。"
+],
+"methods": [
+"电饭煲",
+"微波炉"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"电饭煲",
+"微波炉"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐"
+],
+"allergens": [
+"大豆",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意豆浆加热时避免沸腾溢出。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r180:lowcal",
+"id": "ai-var-r180-lowcal",
+"title": "低卡版豆浆燕麦粥",
+"ingredients": [
+{
+"name": "豆浆",
+"canonical": "豆浆",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将豆浆倒入锅中，加入适量水。",
+"小火加热至微沸。",
+"加入燕麦，边煮边搅动。",
+"煮5分钟至浓稠。",
+"关火，根据个人口味可加入少量蜂蜜或水果增加口感。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [
+"大豆",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"煮粥时注意火候，避免糊底。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r180:airfryer",
+"id": "ai-var-r180-airfryer",
+"title": "空气炸锅版豆浆燕麦粥",
+"ingredients": [
+{
+"name": "豆浆",
+"canonical": "豆浆",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "半碗",
+"optional": false
+}
+],
+"steps": [
+"将豆浆倒入空气炸锅中",
+"放入燕麦，搅拌均匀",
+"设置空气炸锅温度为150℃，时间设置为10分钟",
+"定时结束后，取出搅拌，再次设置温度为150℃，时间设置为5分钟"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"一人食",
+"早餐"
+],
+"allergens": [
+"大豆",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意空气炸锅使用安全，避免烫伤"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r180:substitute",
+"id": "ai-var-r180-substitute",
+"title": "家常替代版豆浆燕麦粥",
+"ingredients": [
+{
+"name": "豆浆",
+"canonical": "豆浆",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "1杯",
+"optional": false
+},
+{
+"name": "大米",
+"canonical": "大米",
+"amount": "1/4杯",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将豆浆、牛奶、大米和水倒入锅中，搅拌均匀。",
+"开小火，慢慢加热至沸腾。",
+"转小火，继续煮约10分钟，期间不断搅拌。",
+"加入燕麦，继续煮5分钟至粥体浓稠。",
+"根据个人口味，可加入蜂蜜或水果调味。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"早餐",
+"一人食"
+],
+"allergens": [
+"大豆",
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意火候，避免粥煮焦。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r180:method",
+"id": "ai-var-r180-method",
+"title": "换做法版豆浆燕麦粥",
+"ingredients": [
+{
+"name": "豆浆",
+"canonical": "豆浆",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将豆浆倒入锅中，加入燕麦。",
+"用微波炉加热豆浆和燕麦，搅拌使其均匀。",
+"加热至燕麦软烂，豆浆微沸。",
+"根据个人口味加入适量蜂蜜调味。"
+],
+"methods": [
+"微波炉"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"微波炉"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [
+"大豆",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意微波炉加热时间，避免过热导致烫伤。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r180:leftover",
+"id": "ai-var-r180-leftover",
+"title": "剩菜改造版豆浆燕麦粥",
+"ingredients": [
+{
+"name": "豆浆",
+"canonical": "豆浆",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "香蕉",
+"canonical": "香蕉",
+"amount": "1根",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将剩余的豆浆燕麦粥倒入碗中",
+"加入切片的香蕉",
+"淋上适量蜂蜜",
+"搅拌均匀即可食用"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"碗"
+],
+"tags": [
+"甜品",
+"剩菜改造"
+],
+"allergens": [
+"大豆",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"无特殊风险"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r180:fusion",
+"id": "ai-var-r180-fusion",
+"title": "融合版豆浆燕麦粥",
+"ingredients": [
+{
+"name": "豆浆",
+"canonical": "豆浆",
+"amount": "1 盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "半碗",
+"optional": false
+},
+{
+"name": "椰奶",
+"canonical": "椰浆",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "肉桂粉",
+"canonical": "桂皮",
+"amount": "少许",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将豆浆倒入锅中，小火加热到微沸。",
+"加入椰奶和肉桂粉，搅拌均匀。",
+"下燕麦，边煮边搅。",
+"煮 5 分钟到浓稠，根据个人口味加入蜂蜜调味。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"融合菜"
+],
+"allergens": [
+"大豆",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让豆浆沸腾过猛，以免溢出。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r166:leftover",
+"id": "ai-var-r166-leftover",
+"title": "剩菜改造版冰糖炖雪梨",
+"ingredients": [
+{
+"name": "梨",
+"canonical": "梨",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "枸杞",
+"canonical": "枸杞",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "红枣",
+"canonical": "红枣",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将梨洗净，顶部切盖，挖去果核。",
+"梨盅里放入枸杞和红枣，再放入冰糖。",
+"加入适量水，盖回梨盖。",
+"上锅蒸30分钟到梨肉通透。",
+"取出梨盅，将梨肉和汤汁一起食用。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"剩菜改造",
+"甜品",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸煮时间，避免过度蒸煮导致梨肉过于软烂。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r166:fusion",
+"id": "ai-var-r166-fusion",
+"title": "融合版冰糖炖雪梨",
+"ingredients": [
+{
+"name": "梨",
+"canonical": "梨",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "1把",
+"optional": false
+},
+{
+"name": "枸杞",
+"canonical": "枸杞",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "红枣",
+"canonical": "红枣",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "生姜",
+"canonical": "生姜",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"梨洗净，顶部切盖，挖去果核。",
+"梨盅里放入枸杞、红枣和生姜。",
+"将冰糖撒在梨盅内，加少许清水。",
+"盖回梨盖，上锅蒸30分钟到梨肉通透。",
+"蒸好后，连汤食用。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"融合菜",
+"一人食",
+"夜宵"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意梨核不要留在梨盅内，以免蒸煮时发生意外。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r170:substitute",
+"id": "ai-var-r170-substitute",
+"title": "家常替代版樱桃酸奶杯",
+"ingredients": [
+{
+"name": "樱桃",
+"canonical": "樱桃",
+"amount": "1 碗",
+"optional": false
+},
+{
+"name": "酸奶",
+"canonical": "酸奶",
+"amount": "1 盒",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "2 勺",
+"optional": false
+}
+],
+"steps": [
+"樱桃洗净去核，一半切成小块。",
+"杯中先放入一层燕麦。",
+"倒入一层酸奶。",
+"放入一层樱桃。",
+"重复以上步骤，直至杯满。",
+"放入冰箱冷藏片刻，待酸奶凝固后即可食用。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"杯子"
+],
+"tags": [
+"快手",
+"一人食",
+"甜品"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意樱桃不要切得太小，以免食用时误吞。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r171:lazy",
+"id": "ai-var-r171-lazy",
+"title": "懒人版荔枝冰",
+"ingredients": [
+{
+"name": "荔枝",
+"canonical": "荔枝",
+"amount": "1 串",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"荔枝剥壳去核，留几颗完整果肉。",
+"将果肉和适量水放入冰格。",
+"冷冻4小时成冰块。"
+],
+"methods": [
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 240,
+"difficulty": "简单",
+"cookware": [
+"冰格"
+],
+"tags": [
+"夏日饮品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"确保荔枝新鲜，避免食用变质水果。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r171:substitute",
+"id": "ai-var-r171-substitute",
+"title": "家常替代版荔枝冰",
+"ingredients": [
+{
+"name": "荔枝",
+"canonical": "荔枝",
+"amount": "1 串",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"荔枝剥壳去核，留几颗完整果肉。",
+"将果肉放入冰格。",
+"加入适量的水。",
+"放入冰箱冷冻 4 小时，制成冰块。",
+"可配气泡水食用。"
+],
+"methods": [
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 240,
+"difficulty": "简单",
+"cookware": [
+"冰格"
+],
+"tags": [
+"夏日饮品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意荔枝不要食用过多，以免引起身体不适。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r177:substitute",
+"id": "ai-var-r177-substitute",
+"title": "家常替代版生煎包",
+"ingredients": [
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "酵母",
+"canonical": "酵母",
+"amount": "一小勺",
+"optional": false
+},
+{
+"name": "食用油",
+"canonical": "食用油",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "葱花",
+"canonical": "小葱",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "芝麻",
+"canonical": "芝麻",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将面粉和酵母混合，加入适量水揉成面团，发酵至体积膨胀。",
+"将面团分割成小剂子，擀成圆形皮。",
+"取适量馅料放在皮中央，捏紧收口。",
+"平底锅加热，倒入少量食用油，将包子的收口朝下放入锅中。",
+"中火煎至底部微黄，倒入适量水，水量没过包子三分之一的皮。",
+"盖上锅盖，焖至水干，撒上葱花和芝麻。",
+"煎至水干，底部金黄，撒上芝麻和葱花，出锅。"
+],
+"methods": [
+"煎"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"快手",
+"早餐",
+"一人食"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意煎包子的火候，避免烧焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r171:leftover",
+"id": "ai-var-r171-leftover",
+"title": "剩菜改造版荔枝冰",
+"ingredients": [
+{
+"name": "荔枝",
+"canonical": "荔枝",
+"amount": "1 串",
+"optional": false
+},
+{
+"name": "糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将荔枝剥壳去核，留几颗完整果肉。",
+"将荔枝果肉和糖、水一起放入锅中。",
+"大火煮沸后转小火煮至糖完全溶解。",
+"将煮好的荔枝糖水倒入冰格中。",
+"放入冰箱冷冻4小时成冰块。",
+"取出冰块，放入杯中，加入气泡水即可享用。"
+],
+"methods": [
+"煮",
+"免开火"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"锅",
+"冰格",
+"杯"
+],
+"tags": [
+"一人食",
+"甜品",
+"夏日饮品"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将荔枝核一同食用。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
 }
 ]
