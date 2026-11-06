@@ -1,0 +1,2537 @@
+{
+"ingredients": [
+{
+"canonical": "白菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"大白菜",
+"黄芽菜"
+],
+"allergens": []
+},
+{
+"canonical": "娃娃菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"微型大白菜"
+],
+"allergens": []
+},
+{
+"canonical": "小白菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"青菜",
+"上海青",
+"小油菜"
+],
+"allergens": []
+},
+{
+"canonical": "油菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"芸薹"
+],
+"allergens": []
+},
+{
+"canonical": "菠菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"赤根菜"
+],
+"allergens": []
+},
+{
+"canonical": "生菜",
+"category": "蔬菜",
+"emoji": "🥗",
+"synonyms": [
+"叶用莴苣"
+],
+"allergens": []
+},
+{
+"canonical": "芹菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"旱芹"
+],
+"allergens": []
+},
+{
+"canonical": "韭菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"起阳草"
+],
+"allergens": []
+},
+{
+"canonical": "香菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"芫荽",
+"胡荽"
+],
+"allergens": []
+},
+{
+"canonical": "茼蒿",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"皇帝菜",
+"蓬蒿"
+],
+"allergens": []
+},
+{
+"canonical": "空心菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"通菜",
+"蕹菜"
+],
+"allergens": []
+},
+{
+"canonical": "苋菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"汉菜"
+],
+"allergens": []
+},
+{
+"canonical": "芥蓝",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"芥兰"
+],
+"allergens": []
+},
+{
+"canonical": "芦笋",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"石刁柏"
+],
+"allergens": []
+},
+{
+"canonical": "西兰花",
+"category": "蔬菜",
+"emoji": "🥦",
+"synonyms": [
+"绿花菜",
+"西蓝花"
+],
+"allergens": []
+},
+{
+"canonical": "菜花",
+"category": "蔬菜",
+"emoji": "🥦",
+"synonyms": [
+"花菜",
+"花椰菜"
+],
+"allergens": []
+},
+{
+"canonical": "黄瓜",
+"category": "蔬菜",
+"emoji": "🥒",
+"synonyms": [
+"青瓜",
+"胡瓜"
+],
+"allergens": []
+},
+{
+"canonical": "冬瓜",
+"category": "蔬菜",
+"emoji": "🍈",
+"synonyms": [
+"白瓜"
+],
+"allergens": []
+},
+{
+"canonical": "南瓜",
+"category": "蔬菜",
+"emoji": "🎃",
+"synonyms": [
+"倭瓜",
+"番瓜"
+],
+"allergens": []
+},
+{
+"canonical": "丝瓜",
+"category": "蔬菜",
+"emoji": "🥒",
+"synonyms": [
+"胜瓜"
+],
+"allergens": []
+},
+{
+"canonical": "苦瓜",
+"category": "蔬菜",
+"emoji": "🥒",
+"synonyms": [
+"凉瓜"
+],
+"allergens": []
+},
+{
+"canonical": "西葫芦",
+"category": "蔬菜",
+"emoji": "🥒",
+"synonyms": [
+"角瓜",
+"小瓜"
+],
+"allergens": []
+},
+{
+"canonical": "番茄",
+"category": "蔬菜",
+"emoji": "🍅",
+"synonyms": [
+"西红柿",
+"洋柿子",
+"柿子"
+],
+"allergens": []
+},
+{
+"canonical": "茄子",
+"category": "蔬菜",
+"emoji": "🍆",
+"synonyms": [
+"落苏"
+],
+"allergens": []
+},
+{
+"canonical": "青椒",
+"category": "蔬菜",
+"emoji": "🫑",
+"synonyms": [
+"菜椒",
+"甜椒",
+"灯笼椒"
+],
+"allergens": []
+},
+{
+"canonical": "辣椒",
+"category": "蔬菜",
+"emoji": "🌶️",
+"synonyms": [
+"尖椒",
+"小米辣",
+"朝天椒"
+],
+"allergens": []
+},
+{
+"canonical": "土豆",
+"category": "蔬菜",
+"emoji": "🥔",
+"synonyms": [
+"马铃薯",
+"洋芋",
+"地蛋"
+],
+"allergens": []
+},
+{
+"canonical": "红薯",
+"category": "蔬菜",
+"emoji": "🍠",
+"synonyms": [
+"地瓜",
+"甘薯",
+"番薯"
+],
+"allergens": []
+},
+{
+"canonical": "山药",
+"category": "蔬菜",
+"emoji": "🍠",
+"synonyms": [
+"薯蓣",
+"淮山"
+],
+"allergens": []
+},
+{
+"canonical": "莲藕",
+"category": "蔬菜",
+"emoji": "🪷",
+"synonyms": [
+"藕"
+],
+"allergens": []
+},
+{
+"canonical": "萝卜",
+"category": "蔬菜",
+"emoji": "🥕",
+"synonyms": [
+"白萝卜"
+],
+"allergens": []
+},
+{
+"canonical": "胡萝卜",
+"category": "蔬菜",
+"emoji": "🥕",
+"synonyms": [
+"红萝卜",
+"甘笋"
+],
+"allergens": []
+},
+{
+"canonical": "洋葱",
+"category": "蔬菜",
+"emoji": "🧅",
+"synonyms": [
+"球葱",
+"圆葱"
+],
+"allergens": []
+},
+{
+"canonical": "大葱",
+"category": "蔬菜",
+"emoji": "🧅",
+"synonyms": [
+"葱",
+"葱白"
+],
+"allergens": []
+},
+{
+"canonical": "生姜",
+"category": "蔬菜",
+"emoji": "🫚",
+"synonyms": [
+"姜",
+"老姜"
+],
+"allergens": []
+},
+{
+"canonical": "大蒜",
+"category": "蔬菜",
+"emoji": "🧄",
+"synonyms": [
+"蒜",
+"蒜头"
+],
+"allergens": []
+},
+{
+"canonical": "小葱",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"葱花",
+"香葱",
+"小香葱"
+],
+"allergens": []
+},
+{
+"canonical": "干辣椒",
+"category": "调料",
+"emoji": "🌶️",
+"synonyms": [
+"辣椒干",
+"干红椒"
+],
+"allergens": []
+},
+{
+"canonical": "蒜苔",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"蒜薹"
+],
+"allergens": []
+},
+{
+"canonical": "豆角",
+"category": "蔬菜",
+"emoji": "🫘",
+"synonyms": [
+"豇豆",
+"长豆角"
+],
+"allergens": []
+},
+{
+"canonical": "豌豆",
+"category": "蔬菜",
+"emoji": "🫛",
+"synonyms": [
+"青豆",
+"荷兰豆"
+],
+"allergens": []
+},
+{
+"canonical": "玉米",
+"category": "蔬菜",
+"emoji": "🌽",
+"synonyms": [
+"苞米",
+"苞谷"
+],
+"allergens": []
+},
+{
+"canonical": "圣女果",
+"category": "蔬菜",
+"emoji": "🍅",
+"synonyms": [
+"小番茄",
+"樱桃番茄"
+],
+"allergens": []
+},
+{
+"canonical": "四季豆",
+"category": "蔬菜",
+"emoji": "🫛",
+"synonyms": [
+"菜豆"
+],
+"allergens": []
+},
+{
+"canonical": "豆芽",
+"category": "蔬菜",
+"emoji": "🌱",
+"synonyms": [
+"绿豆芽",
+"黄豆芽"
+],
+"allergens": []
+},
+{
+"canonical": "莴笋",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"莴苣"
+],
+"allergens": []
+},
+{
+"canonical": "竹笋",
+"category": "蔬菜",
+"emoji": "🎋",
+"synonyms": [
+"笋",
+"春笋",
+"冬笋"
+],
+"allergens": []
+},
+{
+"canonical": "茭白",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"高笋"
+],
+"allergens": []
+},
+{
+"canonical": "木耳",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"黑木耳",
+"云耳"
+],
+"allergens": []
+},
+{
+"canonical": "香菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"冬菇",
+"花菇"
+],
+"allergens": []
+},
+{
+"canonical": "金针菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"冬蘑"
+],
+"allergens": []
+},
+{
+"canonical": "平菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"侧耳"
+],
+"allergens": []
+},
+{
+"canonical": "杏鲍菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"刺芹菇"
+],
+"allergens": []
+},
+{
+"canonical": "口蘑",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"白蘑菇"
+],
+"allergens": []
+},
+{
+"canonical": "蟹味菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"真姬菇"
+],
+"allergens": []
+},
+{
+"canonical": "海带",
+"category": "蔬菜",
+"emoji": "🌊",
+"synonyms": [
+"昆布"
+],
+"allergens": []
+},
+{
+"canonical": "紫菜",
+"category": "蔬菜",
+"emoji": "🟣",
+"synonyms": [
+"索菜"
+],
+"allergens": []
+},
+{
+"canonical": "猪肉",
+"category": "肉蛋",
+"emoji": "🥩",
+"synonyms": [
+"里脊",
+"猪里脊",
+"瘦肉"
+],
+"allergens": []
+},
+{
+"canonical": "五花肉",
+"category": "肉蛋",
+"emoji": "🥓",
+"synonyms": [
+"三层肉",
+"五花"
+],
+"allergens": []
+},
+{
+"canonical": "排骨",
+"category": "肉蛋",
+"emoji": "🍖",
+"synonyms": [
+"猪排骨",
+"小排"
+],
+"allergens": []
+},
+{
+"canonical": "猪蹄",
+"category": "肉蛋",
+"emoji": "🍖",
+"synonyms": [
+"猪脚",
+"猪手"
+],
+"allergens": []
+},
+{
+"canonical": "猪肝",
+"category": "肉蛋",
+"emoji": "🥩",
+"synonyms": [
+"肝片"
+],
+"allergens": []
+},
+{
+"canonical": "牛肉",
+"category": "肉蛋",
+"emoji": "🥩",
+"synonyms": [
+"牛里脊",
+"肥牛"
+],
+"allergens": []
+},
+{
+"canonical": "牛腩",
+"category": "肉蛋",
+"emoji": "🥩",
+"synonyms": [
+"牛腹肉"
+],
+"allergens": []
+},
+{
+"canonical": "羊肉",
+"category": "肉蛋",
+"emoji": "🥩",
+"synonyms": [
+"羊腿肉",
+"羔羊肉"
+],
+"allergens": []
+},
+{
+"canonical": "鸡肉",
+"category": "肉蛋",
+"emoji": "🍗",
+"synonyms": [
+"整鸡",
+"三黄鸡",
+"土鸡"
+],
+"allergens": []
+},
+{
+"canonical": "鸡胸肉",
+"category": "肉蛋",
+"emoji": "🍗",
+"synonyms": [
+"鸡脯肉"
+],
+"allergens": []
+},
+{
+"canonical": "鸡腿",
+"category": "肉蛋",
+"emoji": "🍗",
+"synonyms": [
+"鸡大腿"
+],
+"allergens": []
+},
+{
+"canonical": "鸡翅",
+"category": "肉蛋",
+"emoji": "🍗",
+"synonyms": [
+"鸡翅膀",
+"翅中"
+],
+"allergens": []
+},
+{
+"canonical": "鸡爪",
+"category": "肉蛋",
+"emoji": "🍗",
+"synonyms": [
+"凤爪"
+],
+"allergens": []
+},
+{
+"canonical": "鸭肉",
+"category": "肉蛋",
+"emoji": "🦆",
+"synonyms": [
+"鸭",
+"老鸭"
+],
+"allergens": []
+},
+{
+"canonical": "鸡蛋",
+"category": "肉蛋",
+"emoji": "🥚",
+"synonyms": [
+"鸡子",
+"土鸡蛋"
+],
+"allergens": [
+"鸡蛋"
+]
+},
+{
+"canonical": "咸鸭蛋",
+"category": "肉蛋",
+"emoji": "🥚",
+"synonyms": [
+"腌鸭蛋",
+"咸蛋"
+],
+"allergens": [
+"鸡蛋"
+]
+},
+{
+"canonical": "火腿肠",
+"category": "肉蛋",
+"emoji": "🌭",
+"synonyms": [
+"火腿"
+],
+"allergens": []
+},
+{
+"canonical": "午餐肉",
+"category": "肉蛋",
+"emoji": "🥫",
+"synonyms": [
+"梅林午餐肉"
+],
+"allergens": []
+},
+{
+"canonical": "香肠",
+"category": "肉蛋",
+"emoji": "🌭",
+"synonyms": [
+"腊肠"
+],
+"allergens": []
+},
+{
+"canonical": "腊肉",
+"category": "肉蛋",
+"emoji": "🥓",
+"synonyms": [
+"咸肉"
+],
+"allergens": []
+},
+{
+"canonical": "培根",
+"category": "肉蛋",
+"emoji": "🥓",
+"synonyms": [
+"烟肉"
+],
+"allergens": []
+},
+{
+"canonical": "鲫鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"鲫瓜子"
+],
+"allergens": [
+"鱼"
+]
+},
+{
+"canonical": "草鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"鲩鱼"
+],
+"allergens": [
+"鱼"
+]
+},
+{
+"canonical": "带鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"刀鱼"
+],
+"allergens": [
+"鱼"
+]
+},
+{
+"canonical": "鳕鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"狭鳕"
+],
+"allergens": [
+"鱼"
+]
+},
+{
+"canonical": "三文鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"鲑鱼",
+"大马哈鱼"
+],
+"allergens": [
+"鱼"
+]
+},
+{
+"canonical": "金枪鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"吞拿鱼"
+],
+"allergens": [
+"鱼"
+]
+},
+{
+"canonical": "巴沙鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"龙利鱼柳"
+],
+"allergens": [
+"鱼"
+]
+},
+{
+"canonical": "鲈鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"花鲈",
+"寨花"
+],
+"allergens": [
+"鱼"
+]
+},
+{
+"canonical": "鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"鲜鱼",
+"整鱼"
+],
+"allergens": [
+"鱼"
+]
+},
+{
+"canonical": "虾",
+"category": "水产",
+"emoji": "🦐",
+"synonyms": [
+"大虾",
+"基围虾",
+"明虾"
+],
+"allergens": [
+"甲壳类"
+]
+},
+{
+"canonical": "虾仁",
+"category": "水产",
+"emoji": "🦐",
+"synonyms": [
+"青虾仁",
+"海米"
+],
+"allergens": [
+"甲壳类"
+]
+},
+{
+"canonical": "鱿鱼",
+"category": "水产",
+"emoji": "🦑",
+"synonyms": [
+"枪乌贼"
+],
+"allergens": []
+},
+{
+"canonical": "螃蟹",
+"category": "水产",
+"emoji": "🦀",
+"synonyms": [
+"蟹",
+"大闸蟹"
+],
+"allergens": [
+"甲壳类"
+]
+},
+{
+"canonical": "扇贝",
+"category": "水产",
+"emoji": "🐚",
+"synonyms": [
+"带子"
+],
+"allergens": []
+},
+{
+"canonical": "花蛤",
+"category": "水产",
+"emoji": "🐚",
+"synonyms": [
+"花甲",
+"蛤蜊"
+],
+"allergens": []
+},
+{
+"canonical": "虾皮",
+"category": "水产",
+"emoji": "🦐",
+"synonyms": [
+"毛虾",
+"海米干"
+],
+"allergens": [
+"甲壳类"
+]
+},
+{
+"canonical": "大米",
+"category": "主食",
+"emoji": "🍚",
+"synonyms": [
+"米",
+"粳米"
+],
+"allergens": []
+},
+{
+"canonical": "米饭",
+"category": "主食",
+"emoji": "🍚",
+"synonyms": [
+"白米饭",
+"剩饭",
+"隔夜饭"
+],
+"allergens": []
+},
+{
+"canonical": "小米",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"粟米"
+],
+"allergens": []
+},
+{
+"canonical": "糯米",
+"category": "主食",
+"emoji": "🍚",
+"synonyms": [
+"江米"
+],
+"allergens": []
+},
+{
+"canonical": "燕麦",
+"category": "主食",
+"emoji": "🥣",
+"synonyms": [
+"燕麦片"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "面粉",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"小麦粉",
+"中筋面粉"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "面条",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"鲜面",
+"手擀面"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "挂面",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"干面条"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "方便面",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"泡面",
+"速食面"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "荞麦面",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"荞麦面条"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "乌冬面",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"日式乌冬"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "意面",
+"category": "主食",
+"emoji": "🍝",
+"synonyms": [
+"意大利面",
+"通心粉"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "米粉",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"米线"
+],
+"allergens": []
+},
+{
+"canonical": "粉丝",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"细粉",
+"龙口粉丝"
+],
+"allergens": []
+},
+{
+"canonical": "粉条",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"红薯粉"
+],
+"allergens": []
+},
+{
+"canonical": "馒头",
+"category": "主食",
+"emoji": "🍞",
+"synonyms": [
+"馍"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "面包糠",
+"category": "主食",
+"emoji": "🍞",
+"synonyms": [
+"面包屑"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "糯米粉",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"江米粉"
+],
+"allergens": []
+},
+{
+"canonical": "藕粉",
+"category": "主食",
+"emoji": "🟡",
+"synonyms": [
+"藕淀粉"
+],
+"allergens": []
+},
+{
+"canonical": "面包",
+"category": "主食",
+"emoji": "🍞",
+"synonyms": [
+"餐包"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "吐司",
+"category": "主食",
+"emoji": "🍞",
+"synonyms": [
+"切片面包",
+"方包"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "饺子",
+"category": "主食",
+"emoji": "🥟",
+"synonyms": [
+"水饺"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "馄饨",
+"category": "主食",
+"emoji": "🥟",
+"synonyms": [
+"云吞"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "包子",
+"category": "主食",
+"emoji": "🥟",
+"synonyms": [
+"肉包"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "豆腐",
+"category": "豆乳",
+"emoji": "🧈",
+"synonyms": [
+"北豆腐",
+"南豆腐"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "嫩豆腐",
+"category": "豆乳",
+"emoji": "🧈",
+"synonyms": [
+"内酯豆腐",
+"绢豆腐"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "老豆腐",
+"category": "豆乳",
+"emoji": "🧈",
+"synonyms": [
+"硬豆腐"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "豆干",
+"category": "豆乳",
+"emoji": "🧈",
+"synonyms": [
+"豆腐干",
+"香干"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "腐竹",
+"category": "豆乳",
+"emoji": "🟡",
+"synonyms": [
+"豆腐皮"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "豆浆",
+"category": "豆乳",
+"emoji": "🥛",
+"synonyms": [
+"豆汁"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "毛豆",
+"category": "豆乳",
+"emoji": "🫛",
+"synonyms": [
+"青大豆"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "黄豆",
+"category": "豆乳",
+"emoji": "🫘",
+"synonyms": [
+"大豆"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "绿豆",
+"category": "豆乳",
+"emoji": "🫘",
+"synonyms": [
+"青小豆"
+],
+"allergens": []
+},
+{
+"canonical": "红豆",
+"category": "豆乳",
+"emoji": "🫘",
+"synonyms": [
+"赤小豆",
+"红小豆"
+],
+"allergens": []
+},
+{
+"canonical": "牛奶",
+"category": "豆乳",
+"emoji": "🥛",
+"synonyms": [
+"纯牛奶",
+"鲜奶"
+],
+"allergens": [
+"牛奶"
+]
+},
+{
+"canonical": "酸奶",
+"category": "豆乳",
+"emoji": "🥛",
+"synonyms": [
+"酸乳"
+],
+"allergens": [
+"牛奶"
+]
+},
+{
+"canonical": "奶酪",
+"category": "豆乳",
+"emoji": "🧀",
+"synonyms": [
+"芝士片",
+"干酪"
+],
+"allergens": [
+"牛奶"
+]
+},
+{
+"canonical": "黄油",
+"category": "豆乳",
+"emoji": "🧈",
+"synonyms": [
+"牛油",
+"白脱"
+],
+"allergens": [
+"牛奶"
+]
+},
+{
+"canonical": "奶油",
+"category": "豆乳",
+"emoji": "🍶",
+"synonyms": [
+"淡奶油",
+"稀奶油"
+],
+"allergens": [
+"牛奶"
+]
+},
+{
+"canonical": "花生",
+"category": "豆乳",
+"emoji": "🥜",
+"synonyms": [
+"花生米",
+"花生仁"
+],
+"allergens": [
+"花生"
+]
+},
+{
+"canonical": "食用油",
+"category": "调料",
+"emoji": "🫒",
+"synonyms": [
+"植物油",
+"色拉油",
+"菜籽油"
+],
+"allergens": []
+},
+{
+"canonical": "花生油",
+"category": "调料",
+"emoji": "🫒",
+"synonyms": [],
+"allergens": [
+"花生"
+]
+},
+{
+"canonical": "橄榄油",
+"category": "调料",
+"emoji": "🫒",
+"synonyms": [],
+"allergens": []
+},
+{
+"canonical": "香油",
+"category": "调料",
+"emoji": "🫒",
+"synonyms": [
+"芝麻油",
+"麻油"
+],
+"allergens": []
+},
+{
+"canonical": "盐",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"食盐",
+"精盐"
+],
+"allergens": []
+},
+{
+"canonical": "白糖",
+"category": "调料",
+"emoji": "🍬",
+"synonyms": [
+"白砂糖",
+"绵白糖"
+],
+"allergens": []
+},
+{
+"canonical": "冰糖",
+"category": "调料",
+"emoji": "🍬",
+"synonyms": [
+"老冰糖"
+],
+"allergens": []
+},
+{
+"canonical": "生抽",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"味极鲜"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "老抽",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"酱油膏"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "酱油",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"豉油"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "醋",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"米醋",
+"陈醋",
+"香醋"
+],
+"allergens": []
+},
+{
+"canonical": "料酒",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"黄酒",
+"绍酒"
+],
+"allergens": []
+},
+{
+"canonical": "蚝油",
+"category": "调料",
+"emoji": "🦪",
+"synonyms": [
+"牡蛎油"
+],
+"allergens": []
+},
+{
+"canonical": "豆瓣酱",
+"category": "调料",
+"emoji": "🥫",
+"synonyms": [
+"郫县豆瓣"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "黄豆酱",
+"category": "调料",
+"emoji": "🥫",
+"synonyms": [
+"大豆酱"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "甜面酱",
+"category": "调料",
+"emoji": "🥫",
+"synonyms": [
+"甜酱"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "辣椒酱",
+"category": "调料",
+"emoji": "🌶️",
+"synonyms": [
+"剁椒"
+],
+"allergens": []
+},
+{
+"canonical": "老干妈",
+"category": "调料",
+"emoji": "🌶️",
+"synonyms": [
+"陶华碧老干妈"
+],
+"allergens": []
+},
+{
+"canonical": "火锅底料",
+"category": "调料",
+"emoji": "🍲",
+"synonyms": [
+"牛油底料"
+],
+"allergens": []
+},
+{
+"canonical": "可乐",
+"category": "调料",
+"emoji": "🥤",
+"synonyms": [
+"汽水"
+],
+"allergens": []
+},
+{
+"canonical": "咖喱块",
+"category": "调料",
+"emoji": "🍛",
+"synonyms": [
+"咖喱"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "番茄酱",
+"category": "调料",
+"emoji": "🍅",
+"synonyms": [
+"番茄沙司"
+],
+"allergens": []
+},
+{
+"canonical": "沙拉酱",
+"category": "调料",
+"emoji": "🫙",
+"synonyms": [
+"蛋黄酱",
+"美乃滋"
+],
+"allergens": [
+"鸡蛋"
+]
+},
+{
+"canonical": "芝麻酱",
+"category": "调料",
+"emoji": "🫙",
+"synonyms": [
+"麻酱"
+],
+"allergens": []
+},
+{
+"canonical": "花生酱",
+"category": "调料",
+"emoji": "🫙",
+"synonyms": [],
+"allergens": [
+"花生"
+]
+},
+{
+"canonical": "腐乳",
+"category": "调料",
+"emoji": "🫙",
+"synonyms": [
+"豆腐乳"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "花椒",
+"category": "调料",
+"emoji": "🟤",
+"synonyms": [
+"麻椒"
+],
+"allergens": []
+},
+{
+"canonical": "八角",
+"category": "调料",
+"emoji": "🟤",
+"synonyms": [
+"大料",
+"茴香"
+],
+"allergens": []
+},
+{
+"canonical": "桂皮",
+"category": "调料",
+"emoji": "🟤",
+"synonyms": [
+"肉桂"
+],
+"allergens": []
+},
+{
+"canonical": "香叶",
+"category": "调料",
+"emoji": "🌿",
+"synonyms": [
+"月桂叶"
+],
+"allergens": []
+},
+{
+"canonical": "胡椒粉",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"胡椒",
+"白胡椒"
+],
+"allergens": []
+},
+{
+"canonical": "黑胡椒",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"黑椒"
+],
+"allergens": []
+},
+{
+"canonical": "孜然",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"安息茴香"
+],
+"allergens": []
+},
+{
+"canonical": "十三香",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"五香粉"
+],
+"allergens": []
+},
+{
+"canonical": "鸡精",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"鸡粉"
+],
+"allergens": []
+},
+{
+"canonical": "淀粉",
+"category": "调料",
+"emoji": "🌾",
+"synonyms": [
+"生粉",
+"玉米淀粉"
+],
+"allergens": []
+},
+{
+"canonical": "蜂蜜",
+"category": "调料",
+"emoji": "🍯",
+"synonyms": [
+"蜜糖"
+],
+"allergens": []
+},
+{
+"canonical": "蒸鱼豉油",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"蒸鱼酱油"
+],
+"allergens": [
+"大豆"
+]
+},
+{
+"canonical": "姜粉",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"干姜粉"
+],
+"allergens": []
+},
+{
+"canonical": "蒜粉",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"大蒜粉"
+],
+"allergens": []
+},
+{
+"canonical": "花椒粉",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"花椒面"
+],
+"allergens": []
+},
+{
+"canonical": "白酒",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"烧酒"
+],
+"allergens": []
+},
+{
+"canonical": "白醋",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"米醋白醋"
+],
+"allergens": []
+},
+{
+"canonical": "椰浆",
+"category": "调料",
+"emoji": "🥥",
+"synonyms": [
+"椰奶"
+],
+"allergens": []
+},
+{
+"canonical": "柠檬汁",
+"category": "调料",
+"emoji": "🍋",
+"synonyms": [
+"柠檬原汁"
+],
+"allergens": []
+},
+{
+"canonical": "苹果",
+"category": "水果",
+"emoji": "🍎",
+"synonyms": [
+"红富士"
+],
+"allergens": []
+},
+{
+"canonical": "香蕉",
+"category": "水果",
+"emoji": "🍌",
+"synonyms": [
+"甘蕉"
+],
+"allergens": []
+},
+{
+"canonical": "橙子",
+"category": "水果",
+"emoji": "🍊",
+"synonyms": [
+"甜橙",
+"脐橙"
+],
+"allergens": []
+},
+{
+"canonical": "橘子",
+"category": "水果",
+"emoji": "🍊",
+"synonyms": [
+"桔子",
+"蜜橘"
+],
+"allergens": []
+},
+{
+"canonical": "柠檬",
+"category": "水果",
+"emoji": "🍋",
+"synonyms": [
+"柠果"
+],
+"allergens": []
+},
+{
+"canonical": "葡萄",
+"category": "水果",
+"emoji": "🍇",
+"synonyms": [
+"提子"
+],
+"allergens": []
+},
+{
+"canonical": "西瓜",
+"category": "水果",
+"emoji": "🍉",
+"synonyms": [
+"夏瓜"
+],
+"allergens": []
+},
+{
+"canonical": "草莓",
+"category": "水果",
+"emoji": "🍓",
+"synonyms": [
+"士多啤梨"
+],
+"allergens": []
+},
+{
+"canonical": "蓝莓",
+"category": "水果",
+"emoji": "🫐",
+"synonyms": [
+"蓝浆果"
+],
+"allergens": []
+},
+{
+"canonical": "菠萝",
+"category": "水果",
+"emoji": "🍍",
+"synonyms": [
+"凤梨"
+],
+"allergens": []
+},
+{
+"canonical": "芒果",
+"category": "水果",
+"emoji": "🥭",
+"synonyms": [
+"杧果"
+],
+"allergens": []
+},
+{
+"canonical": "梨",
+"category": "水果",
+"emoji": "🍐",
+"synonyms": [
+"雪梨",
+"鸭梨"
+],
+"allergens": []
+},
+{
+"canonical": "桃子",
+"category": "水果",
+"emoji": "🍑",
+"synonyms": [
+"桃",
+"水蜜桃"
+],
+"allergens": []
+},
+{
+"canonical": "猕猴桃",
+"category": "水果",
+"emoji": "🥝",
+"synonyms": [
+"奇异果"
+],
+"allergens": []
+},
+{
+"canonical": "火龙果",
+"category": "水果",
+"emoji": "🐉",
+"synonyms": [
+"红龙果"
+],
+"allergens": []
+},
+{
+"canonical": "柚子",
+"category": "水果",
+"emoji": "🍊",
+"synonyms": [
+"文旦"
+],
+"allergens": []
+},
+{
+"canonical": "木瓜",
+"category": "水果",
+"emoji": "🍈",
+"synonyms": [
+"番木瓜"
+],
+"allergens": []
+},
+{
+"canonical": "樱桃",
+"category": "水果",
+"emoji": "🍒",
+"synonyms": [
+"车厘子"
+],
+"allergens": []
+},
+{
+"canonical": "荔枝",
+"category": "水果",
+"emoji": "🍒",
+"synonyms": [
+"丹荔"
+],
+"allergens": []
+},
+{
+"canonical": "龙眼",
+"category": "水果",
+"emoji": "🍒",
+"synonyms": [
+"桂圆"
+],
+"allergens": []
+},
+{
+"canonical": "速冻饺子",
+"category": "冷冻食品",
+"emoji": "🥟",
+"synonyms": [
+"冻饺子"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "速冻包子",
+"category": "冷冻食品",
+"emoji": "🥟",
+"synonyms": [
+"冻包子"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "手抓饼",
+"category": "冷冻食品",
+"emoji": "🫓",
+"synonyms": [
+"葱油饼"
+],
+"allergens": [
+"麸质"
+]
+},
+{
+"canonical": "冻薯条",
+"category": "冷冻食品",
+"emoji": "🍟",
+"synonyms": [
+"冷冻薯条"
+],
+"allergens": []
+},
+{
+"canonical": "冻豌豆",
+"category": "冷冻食品",
+"emoji": "🟢",
+"synonyms": [
+"冷冻豌豆"
+],
+"allergens": []
+},
+{
+"canonical": "冻玉米粒",
+"category": "冷冻食品",
+"emoji": "🌽",
+"synonyms": [
+"冷冻玉米粒"
+],
+"allergens": []
+},
+{
+"canonical": "冻虾仁",
+"category": "冷冻食品",
+"emoji": "🦐",
+"synonyms": [
+"冷冻虾仁"
+],
+"allergens": [
+"甲壳类"
+]
+},
+{
+"canonical": "冻鸡块",
+"category": "冷冻食品",
+"emoji": "🍗",
+"synonyms": [
+"上校鸡块",
+"鸡米花"
+],
+"allergens": []
+},
+{
+"canonical": "汤圆",
+"category": "冷冻食品",
+"emoji": "🍡",
+"synonyms": [
+"元宵"
+],
+"allergens": []
+},
+{
+"canonical": "冷冻混合菜",
+"category": "冷冻食品",
+"emoji": "🥗",
+"synonyms": [
+"杂菜粒",
+"什锦菜"
+],
+"allergens": []
+}
+],
+"substitutions": {
+"牛肉": [
+{
+"canonical": "猪肉",
+"reason": "家常替代，成本更低"
+},
+{
+"canonical": "杏鲍菇",
+"reason": "素食替代，切片模拟口感"
+}
+],
+"蟹味菇": [
+{
+"canonical": "金针菇",
+"reason": "口感接近，替换等量"
+},
+{
+"canonical": "杏鲍菇",
+"reason": "切条替代"
+}
+],
+"虾": [
+{
+"canonical": "虾仁",
+"reason": "冻虾仁解冻替代"
+},
+{
+"canonical": "巴沙鱼",
+"reason": "低脂白肉替代"
+}
+],
+"西兰花": [
+{
+"canonical": "菜花",
+"reason": "同科替换，烹饪时间相近"
+}
+],
+"粉丝": [
+{
+"canonical": "粉条",
+"reason": "更耐煮，提前泡软"
+},
+{
+"canonical": "米粉",
+"reason": "细米粉替代"
+}
+],
+"大米": [
+{
+"canonical": "糯米",
+"reason": "少量混合增加黏度"
+},
+{
+"canonical": "小米",
+"reason": "焖饭时混合杂粮"
+}
+],
+"白糖": [
+{
+"canonical": "冰糖",
+"reason": "敲碎后等量替换"
+},
+{
+"canonical": "蜂蜜",
+"reason": "出锅后加，避免高温"
+}
+],
+"五花肉": [
+{
+"canonical": "猪肉",
+"reason": "加一勺油弥补油脂不足"
+},
+{
+"canonical": "培根",
+"reason": "烟熏风味，注意减盐"
+}
+],
+"蚝油": [
+{
+"canonical": "生抽",
+"reason": "用生抽提咸鲜，再加少许糖增厚"
+},
+{
+"canonical": "黄豆酱",
+"reason": "少量替代，注意先剁碎"
+}
+],
+"面包糠": [
+{
+"canonical": "吐司",
+"reason": "吐司烤干碾碎替代"
+},
+{
+"canonical": "淀粉",
+"reason": "炸物裹粉替代"
+}
+],
+"老抽": [
+{
+"canonical": "生抽",
+"reason": "减量上色，另加少许糖"
+},
+{
+"canonical": "酱油",
+"reason": "少量多次调色"
+}
+],
+"胡椒粉": [
+{
+"canonical": "黑胡椒",
+"reason": "风味更冲，减量使用"
+},
+{
+"canonical": "花椒粉",
+"reason": "麻味替代，风味不同"
+}
+],
+"黄油": [
+{
+"canonical": "橄榄油",
+"reason": "煎炒时等量替换，风味更清淡"
+},
+{
+"canonical": "食用油",
+"reason": "烘焙外的烹饪可等量替换"
+}
+],
+"大葱": [
+{
+"canonical": "洋葱",
+"reason": "切碎替代，甜度更高"
+},
+{
+"canonical": "大蒜",
+"reason": "爆香替代，香气不同"
+}
+],
+"牛奶": [
+{
+"canonical": "豆浆",
+"reason": "烘焙和浓汤可用无糖豆浆替代"
+},
+{
+"canonical": "酸奶",
+"reason": "部分面糊可用原味酸奶替代"
+}
+],
+"料酒": [
+{
+"canonical": "白酒",
+"reason": "减量使用，去腥后挥发"
+}
+],
+"醋": [
+{
+"canonical": "柠檬汁",
+"reason": "酸味清新，等量替换"
+},
+{
+"canonical": "白醋",
+"reason": "酸度接近，无香气"
+}
+],
+"大蒜": [
+{
+"canonical": "蒜苔",
+"reason": "切碎替代，香气更淡"
+},
+{
+"canonical": "蒜粉",
+"reason": "1 小勺替代 2 瓣蒜"
+}
+],
+"猪肉": [
+{
+"canonical": "鸡胸肉",
+"reason": "低脂替代，缩短加热时间"
+},
+{
+"canonical": "牛肉",
+"reason": "口感不同，注意顺纹切"
+}
+],
+"木耳": [
+{
+"canonical": "腐竹",
+"reason": "泡发后口感接近"
+},
+{
+"canonical": "香菇",
+"reason": "鲜味替代"
+}
+],
+"鸡蛋": [
+{
+"canonical": "淀粉",
+"reason": "炸物裹粉时用淀粉水替代蛋液"
+},
+{
+"canonical": "嫩豆腐",
+"reason": "素食版本可用豆腐替代"
+}
+],
+"淀粉": [
+{
+"canonical": "面粉",
+"reason": "勾芡替代，容易结块需调水"
+},
+{
+"canonical": "藕粉",
+"reason": "透亮勾芡替代"
+}
+],
+"培根": [
+{
+"canonical": "腊肉",
+"reason": "咸香接近，提前泡淡"
+},
+{
+"canonical": "火腿肠",
+"reason": "切丁替代，减少盐量"
+}
+],
+"莴笋": [
+{
+"canonical": "西葫芦",
+"reason": "脆感替代"
+},
+{
+"canonical": "黄瓜",
+"reason": "凉拌替代"
+}
+],
+"香菜": [
+{
+"canonical": "芹菜",
+"reason": "切碎替代，口感接近"
+},
+{
+"canonical": "茼蒿",
+"reason": "烫煮后气味相近"
+}
+],
+"奶油": [
+{
+"canonical": "牛奶",
+"reason": "加一勺淀粉勾芡模拟浓稠感"
+},
+{
+"canonical": "椰浆",
+"reason": "咖喱和浓汤里风味接近"
+}
+],
+"面条": [
+{
+"canonical": "挂面",
+"reason": "同物干鲜互换"
+},
+{
+"canonical": "米粉",
+"reason": "无麸质替代，注意泡发时间"
+}
+],
+"豆瓣酱": [
+{
+"canonical": "黄豆酱",
+"reason": "加一勺辣椒面补辣"
+},
+{
+"canonical": "辣椒酱",
+"reason": "减盐替换"
+}
+],
+"豆腐": [
+{
+"canonical": "嫩豆腐",
+"reason": "口感更软，适合煮汤"
+},
+{
+"canonical": "鸡蛋",
+"reason": "蛋白质替代，做法调整"
+}
+],
+"土豆": [
+{
+"canonical": "山药",
+"reason": "炖汤替代，口感粉糯"
+},
+{
+"canonical": "红薯",
+"reason": "炖煮时甜味替代"
+}
+],
+"面粉": [
+{
+"canonical": "淀粉",
+"reason": "勾芡用途可替代，不适合做面团"
+},
+{
+"canonical": "糯米粉",
+"reason": "仅限部分点心"
+}
+],
+"香菇": [
+{
+"canonical": "口蘑",
+"reason": "鲜味替代"
+},
+{
+"canonical": "杏鲍菇",
+"reason": "切丁替代，口感更弹"
+}
+],
+"生姜": [
+{
+"canonical": "姜粉",
+"reason": "1 小勺姜粉替代 1 片姜"
+},
+{
+"canonical": "料酒",
+"reason": "去腥用途可部分替代"
+}
+],
+"番茄": [
+{
+"canonical": "番茄酱",
+"reason": "3 勺番茄酱加少量糖替代 1 个番茄"
+},
+{
+"canonical": "圣女果",
+"reason": "整颗对半切"
+}
+],
+"豆角": [
+{
+"canonical": "四季豆",
+"reason": "同类替换，务必焖熟"
+},
+{
+"canonical": "豌豆",
+"reason": "清甜替代"
+}
+],
+"洋葱": [
+{
+"canonical": "大葱",
+"reason": "葱白部分替代，减量使用"
+},
+{
+"canonical": "大蒜",
+"reason": "用蒜片补香气"
+}
+],
+"生抽": [
+{
+"canonical": "酱油",
+"reason": "同物通用，注意颜色深浅"
+},
+{
+"canonical": "蒸鱼豉油",
+"reason": "鲜甜接近，减盐"
+}
+],
+"胡萝卜": [
+{
+"canonical": "萝卜",
+"reason": "炖汤替代，甜味不同"
+},
+{
+"canonical": "南瓜",
+"reason": "配色和甜味替代"
+}
+],
+"午餐肉": [
+{
+"canonical": "火腿肠",
+"reason": "切片替代，口感相近"
+},
+{
+"canonical": "香肠",
+"reason": "切丁替代"
+}
+]
+},
+"pantry_staples": [
+"八角",
+"冰糖",
+"十三香",
+"姜粉",
+"孜然",
+"干辣椒",
+"料酒",
+"桂皮",
+"橄榄油",
+"淀粉",
+"生抽",
+"白糖",
+"白酒",
+"白醋",
+"盐",
+"老抽",
+"胡椒粉",
+"花椒",
+"花椒粉",
+"花生油",
+"蒜粉",
+"蒸鱼豉油",
+"蚝油",
+"酱油",
+"醋",
+"食用油",
+"香叶",
+"香油",
+"鸡精",
+"黑胡椒"
+],
+"method_aliases": {
+"拌": "凉拌",
+"凉拌菜": "凉拌",
+"焖": "炖",
+"烧": "炖",
+"红烧": "炖",
+"焯": "煮",
+"白灼": "煮",
+"灼": "煮",
+"烘焙": "烤",
+"焗": "烤",
+"泡": "免开火",
+"无需加热": "免开火",
+"不用开火": "免开火",
+"搅拌": "免开火",
+"搅匀": "免开火",
+"混合": "免开火",
+"搅打": "免开火"
+},
+"tag_aliases": {
+"快手菜": "快手",
+"快手料理": "快手",
+"减脂": "减脂餐",
+"低热量": "低卡"
+}
+}

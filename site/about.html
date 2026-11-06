@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 · CookMyFridge</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍳%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="about-block" style="margin-top:24px">
+      <h2>这是什么</h2>
+      <p>CookMyFridge（冰箱开饭）是一个「数据集检索 + AI 创意」双引擎的料理网站：点选冰箱里的食材，
+      数据集负责靠谱的菜谱，AI 负责没见过的创意，所有数据预构建，站点可纯静态部署。</p>
+      <p>Slogan：<strong>Don’t order. CookMyFridge.</strong>（别点外卖，让冰箱开饭。）</p>
+    </section>
+
+    <section class="about-block">
+      <h2>数据来源与许可证</h2>
+      <table class="data-table">
+        <tr><th>数据</th><th>来源</th><th>许可证 / 标识</th></tr>
+        <tr><td>基础菜谱</td><td>项目原创人工策展（家常菜、早餐、轻食等）</td><td>CC BY 4.0</td></tr>
+        <tr><td>食材目录 / 同义词 / 替代表</td><td>项目原创整理</td><td>CC BY 4.0</td></tr>
+        <tr><td>AI 创意菜 / 变体 / 盲盒</td><td>智谱 GLM-4-Flash 生成，经结构化与白名单校验</td><td>AI-generated，均有明确 AI 标识</td></tr>
+      </table>
+      <p style="font-size:13px;color:var(--ink-soft)">后续可接入下厨房语料、RecipeNLG、Recipe1M+、HowToCook 等公开数据集，接入时会在此逐库登记许可证。</p>
+    </section>
+
+    <section class="about-block">
+      <h2>AI 是怎么用的</h2>
+      <ul>
+        <li>AI 采用离线批处理，结果沉淀为静态 JSON，站点默认不依赖实时调用。</li>
+        <li>AI 输出必须通过固定字段校验，食材必须命中目录白名单，未通过的结果不会展示。</li>
+        <li>所有 AI 内容都标注「AI 创意菜，未经过人工实测」，并附风险提示。</li>
+        <li>你可以在 AI 卡片上点「靠谱 / 离谱」，反馈仅保存在你自己的浏览器里。</li>
+      </ul>
+    </section>
+
+    <section class="about-block">
+      <h2>过敏原与食品安全</h2>
+      <div class="notice warn">本网站对常见过敏原（鸡蛋、牛奶、花生、大豆、麸质、鱼、甲壳类等）做了标注，但不能替代食品包装标签和专业医疗建议。过敏体质请以食材包装和医生意见为准。</div>
+      <ul>
+        <li>肉类、海鲜、蛋类务必彻底加热，避免生食带来的寄生虫和细菌风险。</li>
+        <li>贝类煮后不开口的请丢弃；发霉、有异味的食材直接丢弃。</li>
+        <li>油炸、高压锅、明火烹饪存在烫伤风险，请勿让儿童单独操作。</li>
+        <li>AI 菜谱未经过人工实测，烹饪前请自行判断食材搭配与加热是否安全。</li>
+      </ul>
+    </section>
+
+    <section class="about-block">
+      <h2>隐私</h2>
+      <p>你的冰箱、开饭历史和反馈都只保存在本地浏览器（localStorage），站点不登录、不建账号、不收集个人数据。分享通过 URL 参数完成。</p>
+    </section>
+
+    <div class="page-spacer"></div>
+  </main>
+
+  <script src="js/store.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/ui.js"></script>
+  <script>window.CMF.boots("about.html");</script>
+</body>
+</html>

@@ -1,0 +1,700 @@
+[
+{
+"key": "燕麦|酸奶|香蕉",
+"id": "ai-blind-63be9ac6b4",
+"title": "香蕉燕麦酸奶杯",
+"ingredients": [
+{
+"name": "香蕉",
+"canonical": "香蕉",
+"amount": "1根",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "酸奶",
+"canonical": "酸奶",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将香蕉切片备用。",
+"在杯底放入一层燕麦。",
+"加入切片的香蕉。",
+"倒入适量的酸奶。",
+"撒上剩余的燕麦，即可享用。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"杯子"
+],
+"tags": [
+"早餐",
+"一人食",
+"甜品"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "番茄|米饭|鸡蛋",
+"id": "ai-blind-6e0290b2f3",
+"title": "番茄炒蛋盖饭",
+"ingredients": [
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "番茄",
+"canonical": "番茄",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "米饭",
+"canonical": "米饭",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鸡蛋打散，加入少许盐，搅拌均匀。",
+"番茄洗净切块。",
+"锅中加油，将打散的鸡蛋液倒入锅中，炒至凝固后盛出。",
+"锅中留少许油，加入番茄块，炒至出汁。",
+"将炒好的鸡蛋重新倒入锅中与番茄一起翻炒，加入适量盐调味。",
+"将炒好的番茄炒蛋盖在米饭上即可。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐",
+"剩菜改造"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让鸡蛋炒糊。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "午餐肉|土豆|奶酪",
+"id": "ai-blind-3036d14b05",
+"title": "奶酪土豆午餐肉球",
+"ingredients": [
+{
+"name": "土豆",
+"canonical": "土豆",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "午餐肉",
+"canonical": "午餐肉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "奶酪",
+"canonical": "奶酪",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"土豆去皮切块，午餐肉切片，奶酪切条。",
+"土豆块蒸熟，用勺子压成泥。",
+"将午餐肉片和奶酪条包裹在土豆泥中，搓成球状。",
+"热锅加油，将土豆球煎至两面金黄。",
+"出锅装盘，撒上葱花即可。"
+],
+"methods": [
+"煎"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食",
+"空气炸锅"
+],
+"allergens": [
+"牛奶"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意油温，避免煎糊。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "米饭|虾仁|西兰花",
+"id": "ai-blind-05bea5677b",
+"title": "虾仁西兰花炒饭",
+"ingredients": [
+{
+"name": "虾仁",
+"canonical": "虾仁",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "西兰花",
+"canonical": "西兰花",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "米饭",
+"canonical": "米饭",
+"amount": "1碗",
+"optional": false
+}
+],
+"steps": [
+"虾仁洗净，焯水后捞出备用。",
+"西兰花洗净，切成小朵，焯水后捞出备用。",
+"锅中加油，放入虾仁翻炒至变色。",
+"加入西兰花和米饭，快速翻炒均匀。",
+"调味后出锅，撒上葱花即可。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐",
+"剩菜改造"
+],
+"allergens": [
+"甲壳类"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意虾仁不要炒得太老，以免口感变差。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "虾皮|面条|鸡蛋",
+"id": "ai-blind-d2d501f28c",
+"title": "虾皮鸡蛋面",
+"ingredients": [
+{
+"name": "面条",
+"canonical": "面条",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "虾皮",
+"canonical": "虾皮",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将面条煮熟，捞出过冷水备用。",
+"鸡蛋打散，加入虾皮搅拌均匀。",
+"热锅加油，倒入蛋液，快速翻炒至凝固。",
+"将煮好的面条加入锅中，快速翻炒均匀。",
+"出锅前可加入适量盐和胡椒粉调味。"
+],
+"methods": [
+"煮",
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅",
+"筷子"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐"
+],
+"allergens": [
+"甲壳类",
+"鸡蛋",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让面条煮得过烂，以免影响口感。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "吐司|花生酱|香蕉",
+"id": "ai-blind-8f5f4870d5",
+"title": "香蕉花生酱吐司卷",
+"ingredients": [
+{
+"name": "吐司",
+"canonical": "吐司",
+"amount": "2片",
+"optional": false
+},
+{
+"name": "香蕉",
+"canonical": "香蕉",
+"amount": "1根",
+"optional": false
+},
+{
+"name": "花生酱",
+"canonical": "花生酱",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将香蕉切片，吐司切成条状。",
+"在吐司条上涂抹一层花生酱。",
+"将香蕉片放在花生酱涂好的吐司条上。",
+"将香蕉片卷起，形成香蕉花生酱吐司卷。",
+"将吐司卷放入空气炸锅，炸至表面金黄即可。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐",
+"甜品"
+],
+"allergens": [
+"花生",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意炸制过程中不要离开，以免烧焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "手抓饼|生菜|鸡蛋",
+"id": "ai-blind-c8bb8337d8",
+"title": "手抓饼鸡蛋卷",
+"ingredients": [
+{
+"name": "手抓饼",
+"canonical": "手抓饼",
+"amount": "1张",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "生菜",
+"canonical": "生菜",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鸡蛋打散，加入生菜丝拌匀。",
+"手抓饼铺平，铺上鸡蛋生菜混合物。",
+"卷起手抓饼，切成小段。",
+"热锅加油，将手抓饼段煎至两面金黄。",
+"出锅，摆盘，可撒上葱花或番茄酱增加风味。"
+],
+"methods": [
+"煎"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"快手",
+"早餐",
+"一人食"
+],
+"allergens": [
+"鸡蛋",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意油温，避免煎糊。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "生菜|番茄|鸡胸肉|黄瓜",
+"id": "ai-blind-5329621570",
+"title": "鸡胸肉黄瓜卷",
+"ingredients": [
+{
+"name": "鸡胸肉",
+"canonical": "鸡胸肉",
+"amount": "2片",
+"optional": false
+},
+{
+"name": "生菜",
+"canonical": "生菜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黄瓜",
+"canonical": "黄瓜",
+"amount": "1根",
+"optional": false
+},
+{
+"name": "番茄",
+"canonical": "番茄",
+"amount": "1个",
+"optional": false
+}
+],
+"steps": [
+"鸡胸肉煮熟切片，黄瓜、番茄切片。",
+"将生菜铺在盘底，鸡胸肉片、黄瓜片、番茄片依次卷起。",
+"卷好的鸡胸肉黄瓜卷摆放在生菜上。",
+"可加入沙拉酱或其他调味料。",
+"摆盘拍照分享"
+],
+"methods": [
+"煮",
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"锅",
+"盘子"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐",
+"空气炸锅"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"煮熟的鸡胸肉切片时注意不要烫伤。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "嫩豆腐|紫菜|虾皮",
+"id": "ai-blind-88a8c17ec6",
+"title": "紫菜虾皮豆腐卷",
+"ingredients": [
+{
+"name": "嫩豆腐",
+"canonical": "嫩豆腐",
+"amount": "1块",
+"optional": false
+},
+{
+"name": "紫菜",
+"canonical": "紫菜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "虾皮",
+"canonical": "虾皮",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"嫩豆腐焯水后沥干，切成薄片。",
+"紫菜铺平，放上豆腐片。",
+"撒上虾皮。",
+"将紫菜卷起，卷紧。",
+"放入蒸锅中蒸5分钟，取出切片摆盘。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"快手",
+"一人食",
+"空气炸锅"
+],
+"allergens": [
+"大豆",
+"甲壳类"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意蒸煮时间，避免豆腐过熟。",
+"虾皮不宜过量食用，以免摄入过多盐分。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "燕麦|牛奶|红薯",
+"id": "ai-blind-ca21229e27",
+"title": "红薯燕麦牛奶球",
+"ingredients": [
+{
+"name": "红薯",
+"canonical": "红薯",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "牛奶",
+"canonical": "牛奶",
+"amount": "200ml",
+"optional": false
+},
+{
+"name": "燕麦",
+"canonical": "燕麦",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"红薯蒸熟后压成泥",
+"牛奶加热至温热",
+"将红薯泥和牛奶混合均匀",
+"加入燕麦，揉成小球",
+"将小球放入微波炉加热1分钟"
+],
+"methods": [
+"微波炉"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"微波炉"
+],
+"tags": [
+"一人食",
+"早餐",
+"夜宵",
+"甜品"
+],
+"allergens": [
+"牛奶",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意微波炉加热时间，避免过热"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "牛肉|米粉|青椒",
+"id": "ai-blind-8c3174362e",
+"title": "青椒牛肉米粉卷",
+"ingredients": [
+{
+"name": "米粉",
+"canonical": "米粉",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "牛肉",
+"canonical": "牛肉",
+"amount": "100克",
+"optional": false
+},
+{
+"name": "青椒",
+"canonical": "青椒",
+"amount": "1个",
+"optional": false
+}
+],
+"steps": [
+"将牛肉切成细丝，用料酒、生抽、淀粉腌制10分钟。",
+"青椒切丝，米粉用开水泡软。",
+"热锅加油，将腌制好的牛肉丝快速翻炒至变色。",
+"将炒好的牛肉丝和青椒丝放入泡软的米粉中。",
+"将米粉和蔬菜卷成卷，用牙签固定，放入微波炉中加热2分钟。",
+"取出米粉卷，去掉牙签，即可食用。"
+],
+"methods": [
+"炒",
+"微波炉"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"微波炉",
+"锅",
+"碗"
+],
+"tags": [
+"快手",
+"一人食",
+"剩菜改造"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意微波炉加热时间，避免米粉过。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "小葱|辣椒|速冻饺子",
+"id": "ai-blind-beb9b6a5aa",
+"title": "葱香辣味速冻饺子",
+"ingredients": [
+{
+"name": "速冻饺子",
+"canonical": "速冻饺子",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "小葱",
+"canonical": "小葱",
+"amount": "2根",
+"optional": false
+},
+{
+"name": "辣椒",
+"canonical": "辣椒",
+"amount": "1个",
+"optional": false
+}
+],
+"steps": [
+"将速冻饺子按照包装说明煮熟。",
+"辣椒切成小段，小葱切成葱花。",
+"热锅凉油，放入辣椒段翻炒至微黄。",
+"加入煮好的饺子，快速翻炒均匀。",
+"撒上葱花，出锅前根据口味加入适量盐和酱油调味。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"下饭",
+"一人食"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意辣椒的辣度，避免过量食用。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+}
+]
