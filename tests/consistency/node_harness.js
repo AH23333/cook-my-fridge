@@ -36,8 +36,8 @@ const rand = mulberry32(20261106);
 
 const all = CMF.data.catalog.ingredients.map((e) => e.canonical);
 const queries = [];
-for (let q = 0; q < 400; q++) {
-  const size = 1 + Math.floor(rand() * 6);
+for (let q = 0; q < 800; q++) {
+  const size = 1 + Math.floor(rand() * 10);
   const picked = new Set();
   while (picked.size < size) {
     picked.add(all[Math.floor(rand() * all.length)]);
