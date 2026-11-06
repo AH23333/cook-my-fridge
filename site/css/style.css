@@ -207,6 +207,40 @@ a:hover { text-decoration: underline; }
 }
 .search-box input:focus { border-color: var(--accent); }
 
+/* --- Natural-language input --- */
+.nl-box {
+  max-width: 620px;
+  margin: 14px auto 18px;
+  padding: 14px 16px;
+  background: #fdf6f0;
+  border: 1px solid #f3ddcc;
+  border-radius: var(--radius);
+}
+.nl-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+}
+.nl-row { display: flex; gap: 8px; }
+.nl-row input {
+  flex: 1;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--surface);
+  outline: none;
+}
+.nl-row input:focus { border-color: var(--accent); }
+.nl-feedback {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  min-height: 16px;
+}
+
 /* --- Sticky selection bar --- */
 .cook-bar {
   position: fixed;
