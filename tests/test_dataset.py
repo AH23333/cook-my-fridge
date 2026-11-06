@@ -9,6 +9,11 @@ def test_all_specs_build_and_validate():
     assert len(ids) == len(set(ids))
 
 
+def test_curated_titles_are_unique():
+    titles = [r.title for r in build_curated_recipes()]
+    assert len(titles) == len(set(titles))
+
+
 def test_allergens_auto_derived():
     recipes = {r.id: r for r in build_curated_recipes()}
     assert "鸡蛋" in recipes["r001"].allergens

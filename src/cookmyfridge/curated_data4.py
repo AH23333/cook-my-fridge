@@ -4,7 +4,7 @@ from __future__ import annotations
 SPECS_BATCH4: list[dict] = [
     {
         "id": "r065",
-        "title": "麻婆豆腐",
+        "title": "川味麻婆豆腐",
         "ingredients": [
             ("嫩豆腐", "1 盒"),
             ("猪肉", "100 克"),
@@ -72,7 +72,7 @@ SPECS_BATCH4: list[dict] = [
     },
     {
         "id": "r068",
-        "title": "宫保鸡丁",
+        "title": "家常宫保鸡丁",
         "ingredients": [
             ("鸡胸肉", "1 块"),
             ("花生", "1 把"),
@@ -157,7 +157,7 @@ SPECS_BATCH4: list[dict] = [
     },
     {
         "id": "r072",
-        "title": "冬瓜排骨汤",
+        "title": "清炖冬瓜排骨汤",
         "ingredients": [
             ("排骨", "300 克"),
             ("冬瓜", "300 克"),
@@ -177,7 +177,7 @@ SPECS_BATCH4: list[dict] = [
     },
     {
         "id": "r073",
-        "title": "紫菜蛋花汤",
+        "title": "简易紫菜蛋花汤",
         "ingredients": [
             ("紫菜", "1 小把"),
             ("鸡蛋", "1 个"),
