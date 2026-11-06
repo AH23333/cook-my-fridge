@@ -6858,5 +6858,677 @@
 "source": "CookMyFridge 人工策展",
 "license": "CC BY 4.0",
 "is_ai_generated": false
+},
+{
+"id": "r121",
+"title": "丝瓜炒蛋",
+"ingredients": [
+{
+"name": "丝瓜",
+"canonical": "丝瓜",
+"amount": "2 根",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "3 个",
+"optional": false
+}
+],
+"steps": [
+"丝瓜去皮切滚刀块，鸡蛋加少许盐打散。",
+"热油先把鸡蛋炒凝固盛出，底油下丝瓜炒到变软出汁。",
+"倒回鸡蛋，加盐翻炒均匀即可。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "家常菜",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"素食",
+"下饭"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r122",
+"title": "西葫芦煎饼",
+"ingredients": [
+{
+"name": "西葫芦",
+"canonical": "西葫芦",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "5 勺",
+"optional": false
+}
+],
+"steps": [
+"西葫芦擦丝，加少许盐腌 5 分钟出水。",
+"打入鸡蛋，加面粉搅成能流动的面糊。",
+"平底锅刷油，舀面糊摊成小饼，两面煎到金黄。"
+],
+"methods": [
+"煎"
+],
+"cuisine": "家常菜",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"早餐",
+"素食",
+"快手"
+],
+"allergens": [
+"鸡蛋",
+"麸质"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r123",
+"title": "手撕杏鲍菇",
+"ingredients": [
+{
+"name": "杏鲍菇",
+"canonical": "杏鲍菇",
+"amount": "3 根",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "3 瓣",
+"optional": false
+}
+],
+"steps": [
+"杏鲍菇洗净上锅蒸 8 分钟，放凉后手撕成细条。",
+"蒜末、生抽、醋、辣椒油和少许糖调成料汁。",
+"料汁拌入杏鲍菇，撒葱花即可。"
+],
+"methods": [
+"蒸",
+"凉拌"
+],
+"cuisine": "家常菜",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"素食",
+"低卡",
+"下饭"
+],
+"allergens": [],
+"safety_notes": [
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r124",
+"title": "上汤娃娃菜",
+"ingredients": [
+{
+"name": "娃娃菜",
+"canonical": "娃娃菜",
+"amount": "2 棵",
+"optional": false
+},
+{
+"name": "咸鸭蛋",
+"canonical": "咸鸭蛋",
+"amount": "1 个",
+"optional": false
+}
+],
+"steps": [
+"娃娃菜纵向切开洗净，咸鸭蛋去壳切碎。",
+"热油下咸蛋炒出泡沫，加一碗水煮成奶白汤。",
+"下娃娃菜煮 5 分钟到软嫩，加盐和白胡椒调味。"
+],
+"methods": [
+"煮",
+"炖"
+],
+"cuisine": "家常菜",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"低卡",
+"素食",
+"一人食"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。",
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r125",
+"title": "番茄炒菜花",
+"ingredients": [
+{
+"name": "番茄",
+"canonical": "番茄",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "菜花",
+"canonical": "菜花",
+"amount": "半个",
+"optional": false
+}
+],
+"steps": [
+"菜花掰小朵，沸水焯 2 分钟捞出。",
+"番茄去皮切块，热油炒出沙，加番茄沙司和少许糖。",
+"下菜花翻炒裹汁，加盐收汁出锅。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "家常菜",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"素食",
+"下饭",
+"低卡"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r126",
+"title": "蒜蓉茼蒿",
+"ingredients": [
+{
+"name": "茼蒿",
+"canonical": "茼蒿",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "4 瓣",
+"optional": false
+}
+],
+"steps": [
+"茼蒿洗净掐段，大蒜切末。",
+"热油爆香一半蒜末，下茼蒿大火快炒。",
+"断生后加剩下的蒜末、盐和少许生抽，翻匀出锅。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "家常菜",
+"time_minutes": 12,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"素食",
+"低卡"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r127",
+"title": "竹笋炒肉丝",
+"ingredients": [
+{
+"name": "竹笋",
+"canonical": "竹笋",
+"amount": "1 根",
+"optional": false
+},
+{
+"name": "猪肉",
+"canonical": "猪肉",
+"amount": "150 克",
+"optional": false
+}
+],
+"steps": [
+"竹笋切丝，沸水焯 3 分钟去涩，捞出沥干。",
+"猪肉切丝，用生抽、料酒和淀粉腌 10 分钟。",
+"热油滑炒肉丝变色，下笋丝，加盐和蚝油炒熟。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "家常菜",
+"time_minutes": 25,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"下饭",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r128",
+"title": "香煎鳕鱼",
+"ingredients": [
+{
+"name": "鳕鱼",
+"canonical": "鳕鱼",
+"amount": "2 块",
+"optional": false
+}
+],
+"steps": [
+"鳕鱼用厨房纸吸干，撒盐和黑胡椒，薄薄裹一层面粉。",
+"平底锅少油，中火每面煎 3 分钟到金黄。",
+"出锅挤柠檬汁，配西兰花一起吃。"
+],
+"methods": [
+"煎"
+],
+"cuisine": "西式",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"海鲜",
+"低卡",
+"一人食"
+],
+"allergens": [
+"鱼"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r129",
+"title": "爆炒猪肝",
+"ingredients": [
+{
+"name": "猪肝",
+"canonical": "猪肝",
+"amount": "200 克",
+"optional": false
+},
+{
+"name": "青椒",
+"canonical": "青椒",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "木耳",
+"canonical": "木耳",
+"amount": "1 小把",
+"optional": false
+}
+],
+"steps": [
+"猪肝切薄片，用清水泡去血水，加料酒、生抽和淀粉抓匀。",
+"宽油大火，猪肝下锅快速滑炒到变色立刻盛出。",
+"底油炒青椒、木耳，倒回猪肝，加盐和生抽翻匀出锅。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "家常菜",
+"time_minutes": 25,
+"difficulty": "中等",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"下饭",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r130",
+"title": "卤鸡爪",
+"ingredients": [
+{
+"name": "鸡爪",
+"canonical": "鸡爪",
+"amount": "8 只",
+"optional": false
+},
+{
+"name": "生姜",
+"canonical": "生姜",
+"amount": "1 块",
+"optional": false
+}
+],
+"steps": [
+"鸡爪剪去指甲，冷水下锅加姜片焯水，捞出洗净。",
+"锅中加生抽、老抽、料酒、冰糖、八角和适量水。",
+"下鸡爪小火卤 25 分钟，关火浸泡 20 分钟更入味。"
+],
+"methods": [
+"炖"
+],
+"cuisine": "家常菜",
+"time_minutes": 55,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"下饭",
+"夜宵"
+],
+"allergens": [],
+"safety_notes": [
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r131",
+"title": "清蒸螃蟹",
+"ingredients": [
+{
+"name": "螃蟹",
+"canonical": "螃蟹",
+"amount": "3 只",
+"optional": false
+},
+{
+"name": "生姜",
+"canonical": "生姜",
+"amount": "1 块",
+"optional": false
+}
+],
+"steps": [
+"螃蟹刷洗干净，肚子朝上放入蒸锅，放姜片。",
+"水开后大火蒸 12 分钟到壳变红。",
+"姜末加醋调成蘸汁，趁热食用。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "家常菜",
+"time_minutes": 25,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"海鲜",
+"一人食"
+],
+"allergens": [
+"甲壳类"
+],
+"safety_notes": [
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r132",
+"title": "酸汤饺子",
+"ingredients": [
+{
+"name": "饺子",
+"canonical": "饺子",
+"amount": "1 份",
+"optional": false
+},
+{
+"name": "紫菜",
+"canonical": "紫菜",
+"amount": "1 小把",
+"optional": false
+}
+],
+"steps": [
+"碗中放紫菜、葱花、生抽、醋、辣椒油和少许香油。",
+"饺子沸水下锅煮熟，先舀两勺煮饺汤冲开底料。",
+"捞入饺子，撒香菜即可。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "家常菜",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"快手",
+"一人食",
+"夜宵"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r133",
+"title": "香煎馒头片",
+"ingredients": [
+{
+"name": "馒头",
+"canonical": "馒头",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+}
+],
+"steps": [
+"馒头切厚片，鸡蛋打散加少许盐。",
+"馒头片两面裹满蛋液。",
+"平底锅刷油，小火煎到两面金黄酥脆。"
+],
+"methods": [
+"煎"
+],
+"cuisine": "家常菜",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"早餐",
+"快手",
+"一人食"
+],
+"allergens": [
+"鸡蛋",
+"麸质"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r134",
+"title": "金枪鱼拌饭",
+"ingredients": [
+{
+"name": "金枪鱼",
+"canonical": "金枪鱼",
+"amount": "1 罐",
+"optional": false
+},
+{
+"name": "米饭",
+"canonical": "米饭",
+"amount": "1 碗",
+"optional": false
+}
+],
+"steps": [
+"金枪鱼沥干，用勺子压碎。",
+"热米饭上放金枪鱼，加一勺生抽和少许沙拉酱。",
+"撒海苔碎和熟芝麻，拌匀即可。"
+],
+"methods": [
+"凉拌",
+"免开火"
+],
+"cuisine": "家常菜",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"沙拉碗"
+],
+"tags": [
+"快手",
+"海鲜",
+"一人食"
+],
+"allergens": [
+"鱼"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r135",
+"title": "菠萝咕噜肉",
+"ingredients": [
+{
+"name": "菠萝",
+"canonical": "菠萝",
+"amount": "半个",
+"optional": false
+},
+{
+"name": "猪肉",
+"canonical": "猪肉",
+"amount": "200 克",
+"optional": false
+},
+{
+"name": "青椒",
+"canonical": "青椒",
+"amount": "1 个",
+"optional": false
+}
+],
+"steps": [
+"猪肉切块，加盐和料酒腌，裹上淀粉。",
+"油温六成热下肉块炸定型，复炸一次到金黄酥脆。",
+"番茄沙司、白醋、糖调成汁，炒青椒和菠萝，下肉块裹匀。"
+],
+"methods": [
+"炸",
+"炒"
+],
+"cuisine": "粤菜",
+"time_minutes": 40,
+"difficulty": "中等",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"下饭",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"油炸时注意油温，食材需沥干水分再下锅，防止溅油烫伤，不要让儿童单独操作。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
 }
 ]
