@@ -1,6 +1,10 @@
 """Tests for AI cache repair and scalar-to-list coercion."""
 from cookmyfridge.ai import _as_list
-from cookmyfridge.batch import repair_safety_notes, repair_variant_title
+from cookmyfridge.batch import (
+    clean_variant_title,
+    repair_safety_notes,
+    repair_variant_title,
+)
 
 
 def test_as_list_wraps_scalar():
@@ -43,3 +47,18 @@ def test_variant_title_unchanged_when_already_marked():
 
 def test_variant_title_unknown_kind_unchanged():
     assert repair_variant_title("ai-var-r001-weird", "菜") == "菜"
+
+
+def test_variant_title_accepts_root_marker():
+    assert repair_variant_title("ai-var-r001-lazy", "懒人番茄炒蛋") == "懒人番茄炒蛋"
+    assert repair_variant_title("ai-var-r002-lowcal", "低卡蛋炒饭") == "低卡蛋炒饭"
+
+
+def test_clean_variant_title_collapses_redundant_prefix():
+    assert clean_variant_title("ai-var-r001-lazy", "懒人版懒人番茄炒蛋") == "懒人番茄炒蛋"
+    assert (
+        clean_variant_title("ai-var-r003-airfryer", "空气炸锅版空气炸锅土豆丝")
+        == "空气炸锅土豆丝"
+    )
+    # Plain title still gets a marker.
+    assert clean_variant_title("ai-var-r001-lazy", "番茄炒蛋") == "懒人版番茄炒蛋"

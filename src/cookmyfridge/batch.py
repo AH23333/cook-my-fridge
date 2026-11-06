@@ -103,6 +103,18 @@ VARIANT_TITLE_SUFFIX: dict[str, str] = {
 }
 
 
+# Root markers that already indicate the kind, so we do not prepend a suffix.
+VARIANT_TITLE_MARKERS: dict[str, tuple[str, ...]] = {
+    "lazy": ("懒人版", "懒人"),
+    "lowcal": ("低卡版", "低卡"),
+    "airfryer": ("空气炸锅版", "空气炸锅"),
+    "substitute": ("家常替代版", "替代"),
+    "method": ("换做法版", "换做法"),
+    "leftover": ("剩菜改造版", "剩菜"),
+    "fusion": ("融合版", "融合"),
+}
+
+
 def repair_variant_title(recipe_id: str, title: str) -> str:
     """Ensure a variant title carries its kind marker instead of reusing base title."""
     parts = recipe_id.rsplit("-", 1)
@@ -112,9 +124,25 @@ def repair_variant_title(recipe_id: str, title: str) -> str:
     suffix = VARIANT_TITLE_SUFFIX.get(kind)
     if not suffix:
         return title
-    if suffix in title:
+    if any(marker in title for marker in VARIANT_TITLE_MARKERS.get(kind, (suffix,))):
         return title
     return suffix + title
+
+
+def clean_variant_title(recipe_id: str, title: str) -> str:
+    """Collapse redundant prefixes, then guarantee a kind marker is present."""
+    parts = recipe_id.rsplit("-", 1)
+    if len(parts) != 2:
+        return title
+    kind = parts[1]
+    suffix = VARIANT_TITLE_SUFFIX.get(kind)
+    markers = VARIANT_TITLE_MARKERS.get(kind, (suffix,))
+    # Drop a leading suffix when the remainder already carries a marker.
+    if suffix and title.startswith(suffix):
+        remainder = title[len(suffix):].strip()
+        if any(marker in remainder for marker in markers):
+            title = remainder
+    return repair_variant_title(recipe_id, title)
 
 
 def repair_all_caches() -> dict:
@@ -134,7 +162,7 @@ def repair_all_caches() -> dict:
                     changed += 1
             if name == "variants":
                 old_title = value.get("title", "")
-                new_title = repair_variant_title(value.get("id", ""), old_title)
+                new_title = clean_variant_title(value.get("id", ""), old_title)
                 if new_title != old_title:
                     value["title"] = new_title
                     changed += 1

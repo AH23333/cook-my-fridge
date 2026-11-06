@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import json
 
-from .batch import CACHE_DIR, VARIANT_TITLE_SUFFIX
+from .batch import CACHE_DIR, VARIANT_TITLE_MARKERS, VARIANT_TITLE_SUFFIX
 from .catalog import canonical_set
 from .dataset import load_recipes
 
@@ -50,9 +50,11 @@ def run_audit() -> dict:
             problems.append(f"变体指向不存在的菜谱: {key}")
         if kind not in _VARIANT_KINDS:
             problems.append(f"变体 kind 非法: {key}")
-        suffix = VARIANT_TITLE_SUFFIX.get(kind)
-        if suffix and isinstance(value, dict) and suffix not in value.get("title", ""):
-            problems.append(f"变体标题缺少后缀: {key}")
+        markers = VARIANT_TITLE_MARKERS.get(kind, (VARIANT_TITLE_SUFFIX.get(kind),))
+        if isinstance(value, dict) and not any(
+            m in value.get("title", "") for m in markers
+        ):
+            problems.append(f"变体标题缺少 kind 标记: {key}")
 
     # 4. Ideas keys reference real recipes.
     ideas = _load_cache("ideas")
