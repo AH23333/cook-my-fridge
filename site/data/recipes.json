@@ -5964,5 +5964,367 @@
 "source": "CookMyFridge 人工策展",
 "license": "CC BY 4.0",
 "is_ai_generated": false
+},
+{
+"id": "r101",
+"title": "白灼秋葵",
+"ingredients": [
+{
+"name": "秋葵",
+"canonical": "秋葵",
+"amount": "10 根",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "3 瓣",
+"optional": false
+}
+],
+"steps": [
+"秋葵洗净，整根放入加了盐和几滴油的沸水中焯 1 分钟。",
+"捞出过凉水保持脆绿，切掉蒂，对半切开摆盘。",
+"蒜末加生抽、少许糖和热油调成蘸汁，淋在秋葵上。"
+],
+"methods": [
+"煮",
+"凉拌"
+],
+"cuisine": "家常菜",
+"time_minutes": 12,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"快手",
+"素食",
+"低卡"
+],
+"allergens": [],
+"safety_notes": [
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r102",
+"title": "藜麦鸡胸沙拉",
+"ingredients": [
+{
+"name": "藜麦",
+"canonical": "藜麦",
+"amount": "80 克",
+"optional": false
+},
+{
+"name": "鸡胸肉",
+"canonical": "鸡胸肉",
+"amount": "1 块",
+"optional": false
+},
+{
+"name": "圣女果",
+"canonical": "圣女果",
+"amount": "8 颗",
+"optional": false
+}
+],
+"steps": [
+"藜麦淘洗后加水煮 15 分钟，焖 5 分钟，捞出沥干。",
+"鸡胸肉冷水下锅加姜片煮熟，撕成细丝。",
+"圣女果对半切，和藜麦、鸡丝混合，加橄榄油、黑胡椒和柠檬汁拌匀。"
+],
+"methods": [
+"煮",
+"凉拌"
+],
+"cuisine": "轻食",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"减脂餐",
+"低卡",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r103",
+"title": "牛油果鸡蛋吐司",
+"ingredients": [
+{
+"name": "牛油果",
+"canonical": "牛油果",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "吐司",
+"canonical": "吐司",
+"amount": "2 片",
+"optional": false
+}
+],
+"steps": [
+"吐司烤到表面微脆。",
+"牛油果取肉压成泥，加少许盐和黑胡椒，抹在吐司上。",
+"鸡蛋煎成溏心蛋，铺在牛油果吐司上，撒一点黑胡椒。"
+],
+"methods": [
+"煎",
+"免开火"
+],
+"cuisine": "西式",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"平底锅",
+"烤面包机"
+],
+"tags": [
+"早餐",
+"一人食",
+"快手"
+],
+"allergens": [
+"鸡蛋",
+"麸质"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r104",
+"title": "香酥烤鹰嘴豆",
+"ingredients": [
+{
+"name": "鹰嘴豆",
+"canonical": "鹰嘴豆",
+"amount": "1 罐",
+"optional": false
+}
+],
+"steps": [
+"鹰嘴豆沥干，用厨房纸吸干表面水分。",
+"拌橄榄油、盐、孜然粉和辣椒粉，平铺在烤盘上。",
+"烤箱 200 度烤 25 分钟，中途翻一次，到整体酥脆即可。"
+],
+"methods": [
+"烤"
+],
+"cuisine": "轻食",
+"time_minutes": 35,
+"difficulty": "简单",
+"cookware": [
+"烤箱",
+"烤盘"
+],
+"tags": [
+"素食",
+"低卡",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r105",
+"title": "羽衣甘蓝苹果沙拉",
+"ingredients": [
+{
+"name": "羽衣甘蓝",
+"canonical": "羽衣甘蓝",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "苹果",
+"canonical": "苹果",
+"amount": "1 个",
+"optional": false
+}
+],
+"steps": [
+"羽衣甘蓝去掉硬梗，叶片撕成小块，加少许盐和橄榄油按摩 1 分钟变软。",
+"苹果带皮切小丁，柠檬挤汁防氧化。",
+"苹果拌入甘蓝，加坚果碎和蜂蜜，淋柠檬汁即可。"
+],
+"methods": [
+"凉拌",
+"免开火"
+],
+"cuisine": "轻食",
+"time_minutes": 12,
+"difficulty": "简单",
+"cookware": [
+"沙拉碗"
+],
+"tags": [
+"减脂餐",
+"素食",
+"低卡"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r106",
+"title": "荠菜豆腐羹",
+"ingredients": [
+{
+"name": "荠菜",
+"canonical": "荠菜",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "嫩豆腐",
+"canonical": "嫩豆腐",
+"amount": "1 盒",
+"optional": false
+}
+],
+"steps": [
+"荠菜焯水 30 秒捞出过凉，挤干切碎。",
+"嫩豆腐切小丁，锅中加水烧开，下豆腐煮 2 分钟。",
+"下荠菜碎，淋水淀粉勾薄芡，加盐和白胡椒调味。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "家常菜",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"素食",
+"低卡",
+"一人食"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r107",
+"title": "凉拌折耳根",
+"ingredients": [
+{
+"name": "折耳根",
+"canonical": "折耳根",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "辣椒",
+"canonical": "辣椒",
+"amount": "2 个",
+"optional": false
+}
+],
+"steps": [
+"折耳根掐去老根，洗净摘成小段，用盐腌 10 分钟，倒掉腌出的水。",
+"辣椒、蒜切末，加生抽、醋、白糖和辣椒油调成料汁。",
+"料汁倒入折耳根拌匀，冷藏 15 分钟更入味。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "云贵风味",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"沙拉碗"
+],
+"tags": [
+"素食",
+"下饭",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r108",
+"title": "蒜香抱子甘蓝",
+"ingredients": [
+{
+"name": "抱子甘蓝",
+"canonical": "抱子甘蓝",
+"amount": "20 颗",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "4 瓣",
+"optional": false
+}
+],
+"steps": [
+"抱子甘蓝切半，洗净沥干，大蒜切片。",
+"平底锅热油，切口朝下煎 3 分钟到微焦，下蒜片煸香。",
+"加盐、黑胡椒和少许生抽，淋一勺水焖 2 分钟，收汁出锅。"
+],
+"methods": [
+"煎",
+"炖"
+],
+"cuisine": "西式",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"低卡",
+"素食",
+"下饭"
+],
+"allergens": [],
+"safety_notes": [
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
 }
 ]

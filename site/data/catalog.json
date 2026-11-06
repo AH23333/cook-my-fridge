@@ -1680,7 +1680,7 @@
 "emoji": "🟤",
 "synonyms": [
 "大料",
-"茴香"
+"八角茴香"
 ],
 "allergens": []
 },
@@ -2124,109 +2124,186 @@
 "什锦菜"
 ],
 "allergens": []
+},
+{
+"canonical": "秋葵",
+"category": "蔬菜",
+"emoji": "🫛",
+"synonyms": [
+"羊角豆",
+"黄秋葵"
+],
+"allergens": []
+},
+{
+"canonical": "羽衣甘蓝",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"绿叶甘蓝",
+"kale"
+],
+"allergens": []
+},
+{
+"canonical": "抱子甘蓝",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"球芽甘蓝",
+"小卷心菜"
+],
+"allergens": []
+},
+{
+"canonical": "茴香",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"茴香菜",
+"小怀香"
+],
+"allergens": []
+},
+{
+"canonical": "荠菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"菱角菜",
+"护生草"
+],
+"allergens": []
+},
+{
+"canonical": "苦菊",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"苦苣",
+"苦叶生菜"
+],
+"allergens": []
+},
+{
+"canonical": "韭黄",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"韭芽",
+"黄韭"
+],
+"allergens": []
+},
+{
+"canonical": "蒜黄",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"蒜苗黄"
+],
+"allergens": []
+},
+{
+"canonical": "折耳根",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"鱼腥草",
+"蕺菜"
+],
+"allergens": []
+},
+{
+"canonical": "马齿苋",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"马苋",
+"五行草"
+],
+"allergens": []
+},
+{
+"canonical": "菱角",
+"category": "蔬菜",
+"emoji": "🪷",
+"synonyms": [
+"水菱",
+"菱实"
+],
+"allergens": []
+},
+{
+"canonical": "百合",
+"category": "蔬菜",
+"emoji": "🪷",
+"synonyms": [
+"鲜百合",
+"蒜脑薯"
+],
+"allergens": []
+},
+{
+"canonical": "牛油果",
+"category": "水果",
+"emoji": "🥑",
+"synonyms": [
+"鳄梨",
+"酪梨"
+],
+"allergens": []
+},
+{
+"canonical": "鹰嘴豆",
+"category": "豆乳",
+"emoji": "🫘",
+"synonyms": [
+"桃豆",
+"鸡心豆"
+],
+"allergens": []
+},
+{
+"canonical": "藜麦",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"奎藜",
+"藜米"
+],
+"allergens": []
 }
 ],
 "substitutions": {
-"黄油": [
+"香菇": [
 {
-"canonical": "橄榄油",
-"reason": "煎炒时等量替换，风味更清淡"
-},
-{
-"canonical": "食用油",
-"reason": "烘焙外的烹饪可等量替换"
-}
-],
-"午餐肉": [
-{
-"canonical": "火腿肠",
-"reason": "切片替代，口感相近"
-},
-{
-"canonical": "香肠",
-"reason": "切丁替代"
-}
-],
-"老抽": [
-{
-"canonical": "生抽",
-"reason": "减量上色，另加少许糖"
-},
-{
-"canonical": "酱油",
-"reason": "少量多次调色"
-}
-],
-"奶油": [
-{
-"canonical": "牛奶",
-"reason": "加一勺淀粉勾芡模拟浓稠感"
-},
-{
-"canonical": "椰浆",
-"reason": "咖喱和浓汤里风味接近"
-}
-],
-"大蒜": [
-{
-"canonical": "蒜苔",
-"reason": "切碎替代，香气更淡"
-},
-{
-"canonical": "蒜粉",
-"reason": "1 小勺替代 2 瓣蒜"
-}
-],
-"料酒": [
-{
-"canonical": "白酒",
-"reason": "减量使用，去腥后挥发"
-}
-],
-"莴笋": [
-{
-"canonical": "西葫芦",
-"reason": "脆感替代"
-},
-{
-"canonical": "黄瓜",
-"reason": "凉拌替代"
-}
-],
-"五花肉": [
-{
-"canonical": "猪肉",
-"reason": "加一勺油弥补油脂不足"
-},
-{
-"canonical": "培根",
-"reason": "烟熏风味，注意减盐"
-}
-],
-"大米": [
-{
-"canonical": "糯米",
-"reason": "少量混合增加黏度"
-},
-{
-"canonical": "小米",
-"reason": "焖饭时混合杂粮"
-}
-],
-"西兰花": [
-{
-"canonical": "菜花",
-"reason": "同科替换，烹饪时间相近"
-}
-],
-"蟹味菇": [
-{
-"canonical": "金针菇",
-"reason": "口感接近，替换等量"
+"canonical": "口蘑",
+"reason": "鲜味替代"
 },
 {
 "canonical": "杏鲍菇",
-"reason": "切条替代"
+"reason": "切丁替代，口感更弹"
+}
+],
+"牛肉": [
+{
+"canonical": "猪肉",
+"reason": "家常替代，成本更低"
+},
+{
+"canonical": "杏鲍菇",
+"reason": "素食替代，切片模拟口感"
+}
+],
+"生抽": [
+{
+"canonical": "酱油",
+"reason": "同物通用，注意颜色深浅"
+},
+{
+"canonical": "蒸鱼豉油",
+"reason": "鲜甜接近，减盐"
 }
 ],
 "木耳": [
@@ -2239,24 +2316,14 @@
 "reason": "鲜味替代"
 }
 ],
-"豆腐": [
+"大蒜": [
 {
-"canonical": "嫩豆腐",
-"reason": "口感更软，适合煮汤"
+"canonical": "蒜苔",
+"reason": "切碎替代，香气更淡"
 },
 {
-"canonical": "鸡蛋",
-"reason": "蛋白质替代，做法调整"
-}
-],
-"豆瓣酱": [
-{
-"canonical": "黄豆酱",
-"reason": "加一勺辣椒面补辣"
-},
-{
-"canonical": "辣椒酱",
-"reason": "减盐替换"
+"canonical": "蒜粉",
+"reason": "1 小勺替代 2 瓣蒜"
 }
 ],
 "醋": [
@@ -2267,26 +2334,6 @@
 {
 "canonical": "白醋",
 "reason": "酸度接近，无香气"
-}
-],
-"番茄": [
-{
-"canonical": "番茄酱",
-"reason": "3 勺番茄酱加少量糖替代 1 个番茄"
-},
-{
-"canonical": "圣女果",
-"reason": "整颗对半切"
-}
-],
-"洋葱": [
-{
-"canonical": "大葱",
-"reason": "葱白部分替代，减量使用"
-},
-{
-"canonical": "大蒜",
-"reason": "用蒜片补香气"
 }
 ],
 "粉丝": [
@@ -2309,14 +2356,124 @@
 "reason": "出锅后加，避免高温"
 }
 ],
-"香菜": [
+"五花肉": [
 {
-"canonical": "芹菜",
-"reason": "切碎替代，口感接近"
+"canonical": "猪肉",
+"reason": "加一勺油弥补油脂不足"
 },
 {
-"canonical": "茼蒿",
-"reason": "烫煮后气味相近"
+"canonical": "培根",
+"reason": "烟熏风味，注意减盐"
+}
+],
+"老抽": [
+{
+"canonical": "生抽",
+"reason": "减量上色，另加少许糖"
+},
+{
+"canonical": "酱油",
+"reason": "少量多次调色"
+}
+],
+"洋葱": [
+{
+"canonical": "大葱",
+"reason": "葱白部分替代，减量使用"
+},
+{
+"canonical": "大蒜",
+"reason": "用蒜片补香气"
+}
+],
+"培根": [
+{
+"canonical": "腊肉",
+"reason": "咸香接近，提前泡淡"
+},
+{
+"canonical": "火腿肠",
+"reason": "切丁替代，减少盐量"
+}
+],
+"面包糠": [
+{
+"canonical": "吐司",
+"reason": "吐司烤干碾碎替代"
+},
+{
+"canonical": "淀粉",
+"reason": "炸物裹粉替代"
+}
+],
+"大葱": [
+{
+"canonical": "洋葱",
+"reason": "切碎替代，甜度更高"
+},
+{
+"canonical": "大蒜",
+"reason": "爆香替代，香气不同"
+}
+],
+"面条": [
+{
+"canonical": "挂面",
+"reason": "同物干鲜互换"
+},
+{
+"canonical": "米粉",
+"reason": "无麸质替代，注意泡发时间"
+}
+],
+"胡萝卜": [
+{
+"canonical": "萝卜",
+"reason": "炖汤替代，甜味不同"
+},
+{
+"canonical": "南瓜",
+"reason": "配色和甜味替代"
+}
+],
+"午餐肉": [
+{
+"canonical": "火腿肠",
+"reason": "切片替代，口感相近"
+},
+{
+"canonical": "香肠",
+"reason": "切丁替代"
+}
+],
+"豆腐": [
+{
+"canonical": "嫩豆腐",
+"reason": "口感更软，适合煮汤"
+},
+{
+"canonical": "鸡蛋",
+"reason": "蛋白质替代，做法调整"
+}
+],
+"鸡蛋": [
+{
+"canonical": "淀粉",
+"reason": "炸物裹粉时用淀粉水替代蛋液"
+},
+{
+"canonical": "嫩豆腐",
+"reason": "素食版本可用豆腐替代"
+}
+],
+"番茄": [
+{
+"canonical": "番茄酱",
+"reason": "3 勺番茄酱加少量糖替代 1 个番茄"
+},
+{
+"canonical": "圣女果",
+"reason": "整颗对半切"
 }
 ],
 "淀粉": [
@@ -2339,154 +2496,14 @@
 "reason": "去腥用途可部分替代"
 }
 ],
-"土豆": [
+"蟹味菇": [
 {
-"canonical": "山药",
-"reason": "炖汤替代，口感粉糯"
-},
-{
-"canonical": "红薯",
-"reason": "炖煮时甜味替代"
-}
-],
-"香菇": [
-{
-"canonical": "口蘑",
-"reason": "鲜味替代"
+"canonical": "金针菇",
+"reason": "口感接近，替换等量"
 },
 {
 "canonical": "杏鲍菇",
-"reason": "切丁替代，口感更弹"
-}
-],
-"鸡蛋": [
-{
-"canonical": "淀粉",
-"reason": "炸物裹粉时用淀粉水替代蛋液"
-},
-{
-"canonical": "嫩豆腐",
-"reason": "素食版本可用豆腐替代"
-}
-],
-"生抽": [
-{
-"canonical": "酱油",
-"reason": "同物通用，注意颜色深浅"
-},
-{
-"canonical": "蒸鱼豉油",
-"reason": "鲜甜接近，减盐"
-}
-],
-"蚝油": [
-{
-"canonical": "生抽",
-"reason": "用生抽提咸鲜，再加少许糖增厚"
-},
-{
-"canonical": "黄豆酱",
-"reason": "少量替代，注意先剁碎"
-}
-],
-"猪肉": [
-{
-"canonical": "鸡胸肉",
-"reason": "低脂替代，缩短加热时间"
-},
-{
-"canonical": "牛肉",
-"reason": "口感不同，注意顺纹切"
-}
-],
-"胡萝卜": [
-{
-"canonical": "萝卜",
-"reason": "炖汤替代，甜味不同"
-},
-{
-"canonical": "南瓜",
-"reason": "配色和甜味替代"
-}
-],
-"牛肉": [
-{
-"canonical": "猪肉",
-"reason": "家常替代，成本更低"
-},
-{
-"canonical": "杏鲍菇",
-"reason": "素食替代，切片模拟口感"
-}
-],
-"虾": [
-{
-"canonical": "虾仁",
-"reason": "冻虾仁解冻替代"
-},
-{
-"canonical": "巴沙鱼",
-"reason": "低脂白肉替代"
-}
-],
-"面粉": [
-{
-"canonical": "淀粉",
-"reason": "勾芡用途可替代，不适合做面团"
-},
-{
-"canonical": "糯米粉",
-"reason": "仅限部分点心"
-}
-],
-"面包糠": [
-{
-"canonical": "吐司",
-"reason": "吐司烤干碾碎替代"
-},
-{
-"canonical": "淀粉",
-"reason": "炸物裹粉替代"
-}
-],
-"豆角": [
-{
-"canonical": "四季豆",
-"reason": "同类替换，务必焖熟"
-},
-{
-"canonical": "豌豆",
-"reason": "清甜替代"
-}
-],
-"牛奶": [
-{
-"canonical": "豆浆",
-"reason": "烘焙和浓汤可用无糖豆浆替代"
-},
-{
-"canonical": "酸奶",
-"reason": "部分面糊可用原味酸奶替代"
-}
-],
-"培根": [
-{
-"canonical": "腊肉",
-"reason": "咸香接近，提前泡淡"
-},
-{
-"canonical": "火腿肠",
-"reason": "切丁替代，减少盐量"
-}
-],
-"大葱": [
-{
-"canonical": "洋葱",
-"reason": "切碎替代，甜度更高"
-},
-{
-"canonical": "大蒜",
-"reason": "爆香替代，香气不同"
+"reason": "切条替代"
 }
 ],
 "胡椒粉": [
@@ -2499,14 +2516,146 @@
 "reason": "麻味替代，风味不同"
 }
 ],
-"面条": [
+"面粉": [
 {
-"canonical": "挂面",
-"reason": "同物干鲜互换"
+"canonical": "淀粉",
+"reason": "勾芡用途可替代，不适合做面团"
 },
 {
-"canonical": "米粉",
-"reason": "无麸质替代，注意泡发时间"
+"canonical": "糯米粉",
+"reason": "仅限部分点心"
+}
+],
+"黄油": [
+{
+"canonical": "橄榄油",
+"reason": "煎炒时等量替换，风味更清淡"
+},
+{
+"canonical": "食用油",
+"reason": "烘焙外的烹饪可等量替换"
+}
+],
+"大米": [
+{
+"canonical": "糯米",
+"reason": "少量混合增加黏度"
+},
+{
+"canonical": "小米",
+"reason": "焖饭时混合杂粮"
+}
+],
+"牛奶": [
+{
+"canonical": "豆浆",
+"reason": "烘焙和浓汤可用无糖豆浆替代"
+},
+{
+"canonical": "酸奶",
+"reason": "部分面糊可用原味酸奶替代"
+}
+],
+"香菜": [
+{
+"canonical": "芹菜",
+"reason": "切碎替代，口感接近"
+},
+{
+"canonical": "茼蒿",
+"reason": "烫煮后气味相近"
+}
+],
+"莴笋": [
+{
+"canonical": "西葫芦",
+"reason": "脆感替代"
+},
+{
+"canonical": "黄瓜",
+"reason": "凉拌替代"
+}
+],
+"土豆": [
+{
+"canonical": "山药",
+"reason": "炖汤替代，口感粉糯"
+},
+{
+"canonical": "红薯",
+"reason": "炖煮时甜味替代"
+}
+],
+"奶油": [
+{
+"canonical": "牛奶",
+"reason": "加一勺淀粉勾芡模拟浓稠感"
+},
+{
+"canonical": "椰浆",
+"reason": "咖喱和浓汤里风味接近"
+}
+],
+"料酒": [
+{
+"canonical": "白酒",
+"reason": "减量使用，去腥后挥发"
+}
+],
+"猪肉": [
+{
+"canonical": "鸡胸肉",
+"reason": "低脂替代，缩短加热时间"
+},
+{
+"canonical": "牛肉",
+"reason": "口感不同，注意顺纹切"
+}
+],
+"豆角": [
+{
+"canonical": "四季豆",
+"reason": "同类替换，务必焖熟"
+},
+{
+"canonical": "豌豆",
+"reason": "清甜替代"
+}
+],
+"虾": [
+{
+"canonical": "虾仁",
+"reason": "冻虾仁解冻替代"
+},
+{
+"canonical": "巴沙鱼",
+"reason": "低脂白肉替代"
+}
+],
+"豆瓣酱": [
+{
+"canonical": "黄豆酱",
+"reason": "加一勺辣椒面补辣"
+},
+{
+"canonical": "辣椒酱",
+"reason": "减盐替换"
+}
+],
+"西兰花": [
+{
+"canonical": "菜花",
+"reason": "同科替换，烹饪时间相近"
+}
+],
+"蚝油": [
+{
+"canonical": "生抽",
+"reason": "用生抽提咸鲜，再加少许糖增厚"
+},
+{
+"canonical": "黄豆酱",
+"reason": "少量替代，注意先剁碎"
 }
 ]
 },
