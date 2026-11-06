@@ -1,4 +1,7 @@
 """Tests for AI cache repair and scalar-to-list coercion."""
+import json
+
+from cookmyfridge import batch
 from cookmyfridge.ai import _as_list
 from cookmyfridge.batch import (
     clean_variant_title,
@@ -62,3 +65,30 @@ def test_clean_variant_title_collapses_redundant_prefix():
     )
     # Plain title still gets a marker.
     assert clean_variant_title("ai-var-r001-lazy", "番茄炒蛋") == "懒人版番茄炒蛋"
+
+
+def test_prune_failures_removes_recovered_keeps_real(tmp_path, monkeypatch):
+    cache_dir = tmp_path / "ai_cache"
+    cache_dir.mkdir()
+    (cache_dir / "variants.json").write_text(
+        json.dumps({"r001:lazy": {"id": "x"}}, ensure_ascii=False), encoding="utf-8"
+    )
+    (cache_dir / "ideas.json").write_text("{}", encoding="utf-8")
+    (cache_dir / "wildcards.json").write_text("{}", encoding="utf-8")
+    (cache_dir / "blindboxes.json").write_text("{}", encoding="utf-8")
+    (cache_dir / "failures.json").write_text(
+        json.dumps(
+            {
+                "variants:r001:lazy": {"error": "old"},
+                "ideas:r009": {"error": "still broken"},
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(batch, "CACHE_DIR", cache_dir)
+    report = batch.prune_failures()
+    assert report["removed"] == 1
+    assert report["remaining"] == 1
+    remaining = json.loads((cache_dir / "failures.json").read_text(encoding="utf-8"))
+    assert list(remaining) == ["ideas:r009"]

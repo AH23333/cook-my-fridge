@@ -172,6 +172,27 @@ def repair_all_caches() -> dict:
     return changed_summary
 
 
+def prune_failures() -> dict:
+    """Drop failure records whose item now exists in its cache; keep real failures."""
+    stores = {
+        "wildcards": CacheStore(CACHE_DIR / "wildcards.json"),
+        "blindboxes": CacheStore(CACHE_DIR / "blindboxes.json"),
+        "variants": CacheStore(CACHE_DIR / "variants.json"),
+        "ideas": CacheStore(CACHE_DIR / "ideas.json"),
+    }
+    failures = CacheStore(CACHE_DIR / "failures.json")
+    removed: list[str] = []
+    for record in list(failures.data):
+        job, _, key = record.partition(":")
+        store = stores.get(job)
+        if store is not None and store.has(key):
+            del failures.data[record]
+            removed.append(record)
+    if removed:
+        failures.flush()
+    return {"removed": len(removed), "remaining": len(failures.data), "keys": removed}
+
+
 class CacheStore:
     def __init__(self, path: Path):
         self.path = path
