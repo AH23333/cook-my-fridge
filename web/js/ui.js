@@ -39,6 +39,7 @@
 
   const NAV_ITEMS = [
     ["index.html", "开饭"],
+    ["browse.html", "菜谱"],
     ["fridge.html", "我的冰箱"],
     ["about.html", "关于"],
   ];

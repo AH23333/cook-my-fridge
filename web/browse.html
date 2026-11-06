@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浏览全部菜谱 · CookMyFridge</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%3C/svg%3E%3C/svg%3E">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#e8632a">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="hero" style="padding-bottom:8px">
+      <h1>全部菜谱</h1>
+      <p>不挑食材也能慢慢逛，按做法、标签和时间筛选。</p>
+    </section>
+
+    <div class="search-box">
+      <input type="search" id="browse-search" placeholder="搜索菜名或食材，如：番茄、空气炸锅…" autocomplete="off">
+    </div>
+
+    <div id="filter-bar" class="filter-bar">
+      <div class="filter-group">
+        <span class="filter-label">做法</span>
+        <div id="filter-methods" class="filter-chips"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">标签</span>
+        <div id="filter-tags" class="filter-chips"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">时间</span>
+        <select id="time-select" class="filter-select">
+          <option value="all">不限</option>
+          <option value="15">15 分钟内</option>
+          <option value="30">30 分钟内</option>
+          <option value="45">45 分钟内</option>
+          <option value="60">60 分钟内</option>
+        </select>
+      </div>
+    </div>
+
+    <p id="browse-count" class="browse-count"></p>
+    <div id="browse-grid" class="recipe-grid"></div>
+    <div class="page-spacer"></div>
+  </main>
+
+  <script src="js/store.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/page-browse.js"></script>
+</body>
+</html>
