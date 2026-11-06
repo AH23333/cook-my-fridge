@@ -91,6 +91,9 @@
     for (const recipe of recipes) {
       if (!passes(recipe, filters)) continue;
       const m = matchRecipe(recipe, selectedSet);
+      // Mirror Python candidate pruning: a recipe must share at least one
+      // selected ingredient, otherwise it is unrelated to this query.
+      if (!m.matched.length) continue;
       if (m.bucket === "cook_now") cookNow.push(m);
       else if (m.bucket === "almost_there") almost.push(m);
     }
