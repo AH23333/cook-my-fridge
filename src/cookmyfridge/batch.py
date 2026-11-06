@@ -92,6 +92,31 @@ def repair_safety_notes(notes: list) -> list:
     return fixed
 
 
+VARIANT_TITLE_SUFFIX: dict[str, str] = {
+    "lazy": "懒人版",
+    "lowcal": "低卡版",
+    "airfryer": "空气炸锅版",
+    "substitute": "家常替代版",
+    "method": "换做法版",
+    "leftover": "剩菜改造版",
+    "fusion": "融合版",
+}
+
+
+def repair_variant_title(recipe_id: str, title: str) -> str:
+    """Ensure a variant title carries its kind marker instead of reusing base title."""
+    parts = recipe_id.rsplit("-", 1)
+    if len(parts) != 2:
+        return title
+    kind = parts[1]
+    suffix = VARIANT_TITLE_SUFFIX.get(kind)
+    if not suffix:
+        return title
+    if suffix in title:
+        return title
+    return suffix + title
+
+
 def repair_all_caches() -> dict:
     """Repair every cache store in place; return per-file changed counts."""
     changed_summary: dict = {}
@@ -102,12 +127,17 @@ def repair_all_caches() -> dict:
             if not isinstance(value, dict):
                 continue
             original = value.get("safety_notes")
-            if not isinstance(original, list):
-                continue
-            repaired = repair_safety_notes(original)
-            if repaired != original:
-                value["safety_notes"] = repaired
-                changed += 1
+            if isinstance(original, list):
+                repaired = repair_safety_notes(original)
+                if repaired != original:
+                    value["safety_notes"] = repaired
+                    changed += 1
+            if name == "variants":
+                old_title = value.get("title", "")
+                new_title = repair_variant_title(value.get("id", ""), old_title)
+                if new_title != old_title:
+                    value["title"] = new_title
+                    changed += 1
         if changed:
             store.flush()
         changed_summary[name] = changed

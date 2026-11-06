@@ -227,12 +227,22 @@ class AIEngine:
         brief = briefs.get(kind)
         if brief is None:
             raise AIGenerationError(f"未知变体类型: {kind}")
+        title_suffix = {
+            "lazy": "懒人版",
+            "lowcal": "低卡版",
+            "airfryer": "空气炸锅版",
+            "substitute": "家常替代版",
+            "method": "换做法版",
+            "leftover": "剩菜改造版",
+            "fusion": "融合版",
+        }[kind]
         base_ingredients = [
             f"{i.canonical}（{i.amount}）" for i in base.ingredients
         ]
         instruction = (
             f"基于菜谱《{base.title}》，原食材：{ '、'.join(base_ingredients) }，"
             f"原做法：{ '；'.join(base.steps) }。{brief} "
+            f"新菜的标题必须与原菜不同，命名为「{title_suffix}{base.title}」这种形式。"
             "输出一个完整的新菜谱 JSON，食材名必须来自目录。"
         )
         return self._generate_recipe(instruction, recipe_id)
