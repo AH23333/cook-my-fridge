@@ -411,3 +411,41 @@ footer.site-footer {
   padding: 24px 0 40px;
   text-align: center;
 }
+
+/* --- Cooking mode overlay --- */
+.cooking-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(38, 26, 18, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+.cooking-card {
+  background: #fffaf3;
+  border-radius: 18px;
+  width: min(720px, 100%);
+  padding: 28px 26px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+.cooking-progress {
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.cooking-step {
+  font-size: clamp(20px, 4.5vw, 28px);
+  line-height: 1.55;
+  color: var(--ink);
+  min-height: 130px;
+  margin-bottom: 22px;
+}
+.cooking-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.cooking-controls .btn[disabled] { opacity: .45; cursor: default; }
