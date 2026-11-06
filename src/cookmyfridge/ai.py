@@ -8,6 +8,7 @@ from .catalog import allergens_of
 from .dataset import AI_DISCLAIMER, METHOD_SAFETY
 from .llm import LLMClient, LLMError
 from .models import (
+    COOKING_METHODS,
     KNOWN_TAGS,
     METHOD_ALIASES,
     TAG_ALIASES,
@@ -109,7 +110,12 @@ def _recipe_from_payload(
         return normalized
 
     methods = _normalize_list(_as_list(payload.get("methods")), METHOD_ALIASES)
-    tags = _normalize_list(_as_list(payload.get("tags")), TAG_ALIASES)
+    # A method name sometimes lands in the tags slot; keep only real tags.
+    tags = [
+        t
+        for t in _normalize_list(_as_list(payload.get("tags")), TAG_ALIASES)
+        if t not in COOKING_METHODS
+    ]
     safety_notes = [AI_DISCLAIMER]
     for risk in _as_list(payload.get("risks")):
         text = str(risk).strip()
