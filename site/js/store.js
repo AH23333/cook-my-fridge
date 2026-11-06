@@ -11,6 +11,7 @@
     prefs: "cmf.prefs",
     plan: "cmf.plan",
     favorites: "cmf.favorites",
+    week: "cmf.week",
   };
 
   CMF.KEYS = KEYS;

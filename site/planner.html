@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一周菜单 · CookMyFridge</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B3%3C/text%3E%3C/svg%3E">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#e8632a">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h2 class="section-title">🗓️ 一周菜单</h2>
+    <p class="planner-intro">根据你的冰箱、口味和过敏原，自动安排 7 天不重样的菜单，优先用现有食材。</p>
+    <div class="planner-actions">
+      <button class="btn btn-primary btn-sm" id="btn-shuffle">重新生成整周</button>
+    </div>
+    <div id="week-root"></div>
+    <div id="shop-root"></div>
+    <div class="page-spacer"></div>
+  </main>
+
+  <script src="js/store.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/planner.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/page-planner.js"></script>
+</body>
+</html>

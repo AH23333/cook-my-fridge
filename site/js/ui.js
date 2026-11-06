@@ -48,6 +48,7 @@
     ["index.html", "开饭"],
     ["browse.html", "菜谱"],
     ["fridge.html", "我的冰箱"],
+    ["planner.html", "一周菜单"],
     ["about.html", "关于"],
   ];
 
@@ -165,6 +166,34 @@
     document.addEventListener("keydown", onKey);
     document.body.appendChild(overlay);
   };
+
+  CMF.copyText = function (text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard
+        .writeText(text)
+        .then(() => true)
+        .catch(() => legacyCopy(text));
+    }
+    return Promise.resolve(legacyCopy(text));
+  };
+
+  function legacyCopy(text) {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try {
+      ok = document.execCommand("copy");
+    } catch (e) {
+      ok = false;
+    }
+    document.body.removeChild(ta);
+    return ok;
+  }
 
   if (
     location.protocol.startsWith("http") &&
