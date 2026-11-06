@@ -67,8 +67,10 @@
     const missingPills = match.missing
       ? match.missing.map((c) => `<span class="pill missing">缺 ${CMF.esc(c)}</span>`).join("")
       : "";
+    const userAllergens = new Set((CMF.getPrefs().allergens || []));
+    const hits = (r.allergens || []).filter((a) => userAllergens.has(a));
     return (
-      '<article class="recipe-card">' +
+      `<article class="recipe-card${hits.length ? " danger" : ""}">` +
       `<h3><a href="${link}">${CMF.esc(r.title)}</a></h3>` +
       '<div class="meta">' +
       `<span>⏱ ${r.time_minutes} 分钟</span>` +
@@ -79,6 +81,9 @@
       CMF.pills(r.tags) +
       missingPills +
       "</div>" +
+      (hits.length
+        ? `<div class="notice warn" style="margin:0;padding:6px 9px;font-size:12px">⚠️ 含你的过敏原：${CMF.esc(hits.join("、"))}</div>`
+        : "") +
       (r.is_ai_generated
         ? '<span class="notice ai" style="margin:0;padding:6px 9px;font-size:12px">AI 创意，未人工实测</span>'
         : "") +
