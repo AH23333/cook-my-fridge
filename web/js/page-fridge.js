@@ -46,15 +46,21 @@
       historyRoot.innerHTML = '<div class="empty">还没有开饭记录。</div>';
       return;
     }
-    historyRoot.innerHTML = history
-      .map(
-        (h) =>
-          '<div class="history-item">' +
-          `<div style="color:var(--ink-soft);font-size:12.5px">${new Date(h.date).toLocaleString()}</div>` +
-          `<div>${h.selected.map((c) => CMF.esc(c)).join("、")}</div>` +
-          `<a href="result.html?i=${CMF.encodeSelected(h.selected)}">再开一局</a></div>`
-      )
-      .join("");
+    historyRoot.innerHTML =
+      history
+        .map(
+          (h) =>
+            '<div class="history-item">' +
+            `<div style="color:var(--ink-soft);font-size:12.5px">${new Date(h.date).toLocaleString()}</div>` +
+            `<div>${h.selected.map((c) => CMF.esc(c)).join("、")}</div>` +
+            `<a href="result.html?i=${CMF.encodeSelected(h.selected)}">再开一局</a></div>`
+        )
+        .join("") +
+      '<button class="btn btn-sm" id="btn-clear-history" style="margin-top:10px">清空历史</button>';
+    historyRoot.querySelector("#btn-clear-history").onclick = () => {
+      CMF.clearHistory();
+      renderAll();
+    };
   }
 
   function renderShare() {

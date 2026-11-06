@@ -83,6 +83,7 @@
     list.unshift(entry);
     writeJSON(KEYS.history, list.slice(0, 50));
   };
+  CMF.clearHistory = () => writeJSON(KEYS.history, []);
 
   CMF.getFeedback = () => readJSON(KEYS.feedback, {});
   CMF.setFeedback = (map) => writeJSON(KEYS.feedback, map);

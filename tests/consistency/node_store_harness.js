@@ -50,6 +50,10 @@ check("plan remove", CMF.togglePlanRecipe("r002") === false);
 for (let i = 0; i < 60; i++) CMF.addHistory({ id: "r" + i });
 check("history capped at 50", CMF.getHistory().length === 50);
 
+// clear history empties the list
+CMF.clearHistory();
+check("clear history", CMF.getHistory().length === 0);
+
 // malformed JSON falls back instead of throwing
 mem.set("cmf.fridge", "{broken");
 check("malformed fallback", JSON.stringify(CMF.getFridge()) === "[]");
@@ -58,4 +62,4 @@ if (failures.length) {
   console.error("STORE TEST FAILURES:", failures);
   process.exit(1);
 }
-console.log(JSON.stringify({ ok: true, checks: 9 }));
+console.log(JSON.stringify({ ok: true, checks: 10 }));
