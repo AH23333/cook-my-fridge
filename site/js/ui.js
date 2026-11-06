@@ -109,6 +109,55 @@
     );
   };
 
+  /* Ingredient encyclopedia modal: category, allergens, substitutions, recipes. */
+  CMF.showIngredientInfo = function (name) {
+    const entry = CMF.entry(name);
+    if (!entry) {
+      CMF.toast("目录里没有这个食材：" + name);
+      return;
+    }
+    const subs = CMF.substitutionsFor(name);
+    const usedIn = CMF.data.recipes
+      .filter((r) => r.ingredients.some((i) => i.canonical === name))
+      .map(
+        (r) =>
+          `<a class="ing-link" href="recipe.html?id=${encodeURIComponent(r.id)}">${CMF.esc(r.title)}</a>`
+      );
+
+    const overlay = document.createElement("div");
+    overlay.className = "modal-overlay";
+    overlay.innerHTML =
+      '<div class="modal" role="dialog" aria-modal="true" aria-label="' + CMF.esc(name) + '">' +
+      '<button class="modal-close" aria-label="关闭">×</button>' +
+      `<h3><span class="modal-emoji">${entry.emoji}</span>${CMF.esc(name)}</h3>` +
+      `<div class="modal-row"><span>分类</span>${CMF.esc(entry.category)}</div>` +
+      '<div class="modal-row"><span>同义词</span>' +
+      (entry.synonyms.length ? CMF.esc(entry.synonyms.join("、")) : "无") +
+      "</div>" +
+      '<div class="modal-row"><span>过敏原</span>' +
+      (entry.allergens.length ? CMF.esc(entry.allergens.join("、")) : "无") +
+      "</div>" +
+      '<div class="modal-row"><span>常见替代</span>' +
+      (subs.length ? CMF.esc(subs.join("、")) : "无") +
+      "</div>" +
+      '<div class="modal-recipes"><strong>用到它的菜谱（' + usedIn.length + "）</strong>" +
+      (usedIn.length ? '<div class="ing-link-grid">' + usedIn.join("") + "</div>" : '<div class="empty">暂无菜谱</div>') +
+      "</div></div>";
+
+    function close() {
+      overlay.remove();
+      document.removeEventListener("keydown", onKey);
+    }
+    function onKey(ev) {
+      if (ev.key === "Escape") close();
+    }
+    overlay.addEventListener("click", (ev) => {
+      if (ev.target === overlay || ev.target.closest(".modal-close")) close();
+    });
+    document.addEventListener("keydown", onKey);
+    document.body.appendChild(overlay);
+  };
+
   if (
     location.protocol.startsWith("http") &&
     "serviceWorker" in navigator
