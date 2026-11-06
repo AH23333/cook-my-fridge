@@ -70,6 +70,7 @@
     const userAllergens = new Set((CMF.getPrefs().allergens || []));
     const hits = (r.allergens || []).filter((a) => userAllergens.has(a));
     const planned = new Set(CMF.getPlan().recipeIds).has(r.id);
+    const fav = new Set(CMF.getFavorites()).has(r.id);
     return (
       `<article class="recipe-card${hits.length ? " danger" : ""}">` +
       `<h3><a href="${link}">${CMF.esc(r.title)}</a></h3>` +
@@ -88,9 +89,12 @@
       (r.is_ai_generated
         ? '<span class="notice ai" style="margin:0;padding:6px 9px;font-size:12px">AI 创意，未人工实测</span>'
         : "") +
+      '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">' +
+      `<button class="btn btn-sm fav-btn" data-fav-id="${r.id}">${fav ? "♥ 已收藏" : "♡ 收藏"}</button>` +
       (wildcardPage
         ? ""
-        : `<button class="btn btn-sm plan-btn" data-plan-id="${r.id}" style="margin-top:8px">${planned ? "✓ 已加入计划" : "📋 加入计划"}</button>`) +
+        : `<button class="btn btn-sm plan-btn" data-plan-id="${r.id}">${planned ? "✓ 已加入计划" : "📋 加入计划"}</button>`) +
+      "</div>" +
       "</article>"
     );
   };

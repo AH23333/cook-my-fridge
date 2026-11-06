@@ -106,6 +106,12 @@
         render();
       };
     });
+    buckets.querySelectorAll(".fav-btn").forEach((btn) => {
+      btn.onclick = () => {
+        CMF.toggleFavorite(btn.dataset.favId);
+        render();
+      };
+    });
   }
 
   function render() {
