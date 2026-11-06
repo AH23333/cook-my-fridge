@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from functools import lru_cache
 
-from .catalog_data import INGREDIENTS, SUBSTITUTIONS
+from .catalog_data import INGREDIENTS, PANTRY_STAPLES, SUBSTITUTIONS
 
 
 @lru_cache(maxsize=1)
@@ -74,3 +74,7 @@ def substitutions_for(canonical: str) -> list[dict]:
 
 def is_known(canonical: str) -> bool:
     return canonical in canonical_set()
+
+
+def is_pantry_staple(canonical: str) -> bool:
+    return canonical in PANTRY_STAPLES

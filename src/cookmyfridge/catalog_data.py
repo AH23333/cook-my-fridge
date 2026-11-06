@@ -235,6 +235,42 @@ INGREDIENTS: list[tuple[str, str, str, list[str], list[str]]] = [
 ]
 
 
+# Pantry staples: seasonings assumed to exist in a kitchen. They are still
+# displayed on the recipe detail page but do not block Cook Now classification.
+PANTRY_STAPLES: set[str] = {
+    "盐",
+    "食用油",
+    "花生油",
+    "橄榄油",
+    "香油",
+    "生抽",
+    "老抽",
+    "酱油",
+    "蒸鱼豉油",
+    "醋",
+    "白醋",
+    "料酒",
+    "白酒",
+    "白糖",
+    "冰糖",
+    "蚝油",
+    "胡椒粉",
+    "黑胡椒",
+    "鸡精",
+    "淀粉",
+    "花椒",
+    "花椒粉",
+    "八角",
+    "桂皮",
+    "香叶",
+    "十三香",
+    "姜粉",
+    "蒜粉",
+    "干辣椒",
+    "孜然",
+}
+
+
 # Canonical ingredient -> list of (alternative canonical, reason)
 SUBSTITUTIONS: dict[str, list[tuple[str, str]]] = {
     "黄油": [("橄榄油", "煎炒时等量替换，风味更清淡"), ("食用油", "烘焙外的烹饪可等量替换")],
