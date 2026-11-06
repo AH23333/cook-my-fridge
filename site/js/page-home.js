@@ -120,6 +120,22 @@
   }
 
   searchInput.addEventListener("input", () => renderWall(searchInput.value));
+  searchInput.addEventListener("keydown", (ev) => {
+    if (ev.key !== "Enter") return;
+    const typed = searchInput.value.trim();
+    if (!typed) return;
+    const canonical = CMF.normalizeName(typed);
+    if (!CMF.isKnown(canonical)) {
+      CMF.toast("目录里还没有这个食材，先从食材墙选吧");
+      return;
+    }
+    selected.add(canonical);
+    syncFridge();
+    searchInput.value = "";
+    renderWall("");
+    renderCookBar();
+    CMF.toast("已添加：" + canonical);
+  });
   document.getElementById("btn-random").onclick = randomBox;
   document.getElementById("btn-blindbox-page").onclick = () => {
     location.href = "wildcard.html?blind=1";
