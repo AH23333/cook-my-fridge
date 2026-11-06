@@ -60,6 +60,8 @@ METHOD_ALIASES: dict[str, str] = {
     "搅打": "免开火",
     "搅拌机": "免开火",
     "破壁机": "免开火",
+    "榨汁": "免开火",
+    "鲜榨": "免开火",
 }
 
 TAG_ALIASES: dict[str, str] = {
