@@ -1,0 +1,3 @@
+# Core runtime uses Python standard library only (urllib, json, dataclasses...).
+# Dev/test dependencies:
+pytest>=8.0
