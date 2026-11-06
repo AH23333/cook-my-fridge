@@ -91,6 +91,13 @@
     );
   };
 
+  if (
+    location.protocol.startsWith("http") &&
+    "serviceWorker" in navigator
+  ) {
+    window.addEventListener("load", () => navigator.serviceWorker.register("sw.js"));
+  }
+
   CMF.boots = function (active, init) {
     CMF.renderChrome(active);
     CMF.preload()

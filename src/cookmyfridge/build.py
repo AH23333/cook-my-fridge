@@ -77,6 +77,10 @@ def copy_web_assets() -> None:
             shutil.copytree(src, SITE_DIR / child)
     for html in WEB_DIR.glob("*.html"):
         shutil.copy2(html, SITE_DIR / html.name)
+    for extra in ("sw.js", "manifest.webmanifest", "icon.svg"):
+        src = WEB_DIR / extra
+        if src.exists():
+            shutil.copy2(src, SITE_DIR / extra)
 
 
 def build_site() -> dict:

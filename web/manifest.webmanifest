@@ -1,0 +1,19 @@
+{
+  "name": "CookMyFridge 冰箱开饭",
+  "short_name": "冰箱开饭",
+  "description": "点选冰箱食材，数据集检索 + AI 创意双引擎，帮你决定今天做什么。",
+  "start_url": "index.html",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#fbf6ee",
+  "theme_color": "#e8632a",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
