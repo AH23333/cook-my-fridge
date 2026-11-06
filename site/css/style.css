@@ -388,6 +388,26 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
 }
 .nutrition-note { font-size: 11.5px; color: var(--ink-soft); }
+.stat-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; margin-bottom: 18px; }
+.stat-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.stat-card-num { font-size: 26px; font-weight: 800; color: var(--brand); }
+.stat-card-label { font-size: 12.5px; color: var(--ink-soft); }
+.stat-h { margin: 18px 0 9px; font-size: 16px; }
+.stat-bars { display: flex; flex-direction: column; gap: 7px; }
+.stat-row { display: flex; align-items: center; gap: 10px; }
+.stat-label { width: 130px; flex: 0 0 130px; font-size: 13px; }
+.stat-track { flex: 1; height: 12px; background: #f0ece7; border-radius: 999px; overflow: hidden; }
+.stat-fill { display: block; height: 100%; background: linear-gradient(90deg, var(--brand), #f29a5b); border-radius: 999px; }
+.stat-count { width: 34px; text-align: right; font-size: 12.5px; color: var(--ink-soft); }
 
 /* --- Detail page --- */
 .detail {
