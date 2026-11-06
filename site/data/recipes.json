@@ -7530,5 +7530,719 @@
 "source": "CookMyFridge 人工策展",
 "license": "CC BY 4.0",
 "is_ai_generated": false
+},
+{
+"id": "r136",
+"title": "日式炒乌冬",
+"ingredients": [
+{
+"name": "乌冬面",
+"canonical": "乌冬面",
+"amount": "2 包",
+"optional": false
+},
+{
+"name": "猪肉",
+"canonical": "猪肉",
+"amount": "100 克",
+"optional": false
+},
+{
+"name": "卷心菜",
+"canonical": "卷心菜",
+"amount": "2 片",
+"optional": false
+},
+{
+"name": "洋葱",
+"canonical": "洋葱",
+"amount": "半个",
+"optional": false
+}
+],
+"steps": [
+"乌冬面焯软捞出，猪肉切片，卷心菜和洋葱切丝。",
+"热油炒肉片变色，下洋葱、卷心菜炒软。",
+"加乌冬面，放生抽、蚝油和少许糖，大火炒匀。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "日式",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"一人食",
+"下饭"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r137",
+"title": "蒜香口蘑",
+"ingredients": [
+{
+"name": "口蘑",
+"canonical": "口蘑",
+"amount": "1 盒",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "4 瓣",
+"optional": false
+}
+],
+"steps": [
+"口蘑洗净切厚片，大蒜切末。",
+"少油小火煎口蘑，到两面金黄出汁。",
+"下蒜末炒香，加盐和黑胡椒，撒欧芹碎出锅。"
+],
+"methods": [
+"煎",
+"炒"
+],
+"cuisine": "西式",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"低卡",
+"素食",
+"快手"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r138",
+"title": "平菇炒肉片",
+"ingredients": [
+{
+"name": "平菇",
+"canonical": "平菇",
+"amount": "1 大朵",
+"optional": false
+},
+{
+"name": "猪肉",
+"canonical": "猪肉",
+"amount": "150 克",
+"optional": false
+}
+],
+"steps": [
+"平菇撕小朵，沸水焯 1 分钟挤干，猪肉切片。",
+"热油炒肉片变色，加生抽上色。",
+"下平菇翻炒，加盐和蚝油，炒到入味收汁。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "家常菜",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"下饭",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r139",
+"title": "蟹味菇炒蛋",
+"ingredients": [
+{
+"name": "蟹味菇",
+"canonical": "蟹味菇",
+"amount": "1 包",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "3 个",
+"optional": false
+}
+],
+"steps": [
+"蟹味菇去根洗净，鸡蛋加少许盐打散。",
+"热油先炒鸡蛋盛出，底油下蟹味菇炒软。",
+"倒回鸡蛋，加盐和少许生抽翻匀。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "家常菜",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"素食",
+"下饭"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r140",
+"title": "家常烧老豆腐",
+"ingredients": [
+{
+"name": "老豆腐",
+"canonical": "老豆腐",
+"amount": "1 块",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "2 瓣",
+"optional": false
+}
+],
+"steps": [
+"老豆腐切厚片，平底锅少油煎到两面金黄。",
+"加生抽、老抽、蚝油和半碗水，放蒜片。",
+"小火烧 5 分钟入味，收汁撒葱花。"
+],
+"methods": [
+"煎",
+"炖"
+],
+"cuisine": "家常菜",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"素食",
+"下饭",
+"低卡"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r141",
+"title": "蒜苔炒肉丝",
+"ingredients": [
+{
+"name": "蒜苔",
+"canonical": "蒜苔",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "猪肉",
+"canonical": "猪肉",
+"amount": "150 克",
+"optional": false
+}
+],
+"steps": [
+"蒜苔切段，猪肉切丝用生抽、料酒、淀粉腌。",
+"热油滑炒肉丝变色盛出。",
+"底油炒蒜苔，加盐和少许生抽，倒回肉丝炒熟。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "家常菜",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"下饭",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r142",
+"title": "黄豆炖猪蹄",
+"ingredients": [
+{
+"name": "猪蹄",
+"canonical": "猪蹄",
+"amount": "1 只",
+"optional": false
+},
+{
+"name": "黄豆",
+"canonical": "黄豆",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "生姜",
+"canonical": "生姜",
+"amount": "1 块",
+"optional": false
+}
+],
+"steps": [
+"黄豆提前泡 2 小时，猪蹄冷水下锅焯水洗净。",
+"锅中放猪蹄、黄豆、姜片、生抽、老抽、八角和足量水。",
+"大火烧开转小火炖 1 小时，到猪蹄软烂，加盐收汁。"
+],
+"methods": [
+"炖"
+],
+"cuisine": "家常菜",
+"time_minutes": 80,
+"difficulty": "中等",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"下饭",
+"一人食"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r143",
+"title": "姜母老鸭汤",
+"ingredients": [
+{
+"name": "鸭肉",
+"canonical": "鸭肉",
+"amount": "半只",
+"optional": false
+},
+{
+"name": "生姜",
+"canonical": "生姜",
+"amount": "1 大块",
+"optional": false
+}
+],
+"steps": [
+"鸭肉剁块焯水洗净，生姜切片。",
+"锅中少油，下姜片和鸭肉翻炒到表面微黄。",
+"加足量热水，大火烧开转小火炖 1 小时，加盐调味。"
+],
+"methods": [
+"炖",
+"煮"
+],
+"cuisine": "家常菜",
+"time_minutes": 75,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"一人食",
+"低卡"
+],
+"allergens": [],
+"safety_notes": [
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r144",
+"title": "清汤馄饨",
+"ingredients": [
+{
+"name": "馄饨",
+"canonical": "馄饨",
+"amount": "1 份",
+"optional": false
+},
+{
+"name": "紫菜",
+"canonical": "紫菜",
+"amount": "1 小把",
+"optional": false
+}
+],
+"steps": [
+"碗中放紫菜、葱花、虾皮、盐和香油。",
+"馄饨沸水下锅煮到浮起。",
+"先舀汤冲开底料，再捞入馄饨。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "家常菜",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"快手",
+"早餐",
+"一人食"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r145",
+"title": "家庭麻辣烫",
+"ingredients": [
+{
+"name": "火锅底料",
+"canonical": "火锅底料",
+"amount": "2 勺",
+"optional": false
+},
+{
+"name": "金针菇",
+"canonical": "金针菇",
+"amount": "1 包",
+"optional": false
+},
+{
+"name": "白菜",
+"canonical": "白菜",
+"amount": "3 片",
+"optional": false
+},
+{
+"name": "豆腐",
+"canonical": "豆腐",
+"amount": "1 块",
+"optional": false
+},
+{
+"name": "面条",
+"canonical": "面条",
+"amount": "1 把",
+"optional": false
+}
+],
+"steps": [
+"火锅底料加水煮开，搅匀成汤底。",
+"先下豆腐、面条煮片刻，再下白菜、金针菇。",
+"全部煮熟后加盐和少许芝麻酱，连汤盛出。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "川菜",
+"time_minutes": 25,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"一人食",
+"夜宵",
+"下饭"
+],
+"allergens": [
+"大豆",
+"麸质"
+],
+"safety_notes": [
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r146",
+"title": "京酱肉丝",
+"ingredients": [
+{
+"name": "猪肉",
+"canonical": "猪肉",
+"amount": "200 克",
+"optional": false
+},
+{
+"name": "甜面酱",
+"canonical": "甜面酱",
+"amount": "3 勺",
+"optional": false
+},
+{
+"name": "大葱",
+"canonical": "大葱",
+"amount": "1 根",
+"optional": false
+}
+],
+"steps": [
+"猪肉切丝，用料酒、蛋清和淀粉抓匀，大葱切丝铺盘底。",
+"宽油滑炒肉丝到变色盛出。",
+"底油下甜面酱和少许糖炒香，倒回肉丝裹匀，盖在葱丝上。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "京菜",
+"time_minutes": 25,
+"difficulty": "中等",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"下饭",
+"一人食"
+],
+"allergens": [
+"麸质"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r147",
+"title": "腐乳空心菜",
+"ingredients": [
+{
+"name": "腐乳",
+"canonical": "腐乳",
+"amount": "2 块",
+"optional": false
+},
+{
+"name": "空心菜",
+"canonical": "空心菜",
+"amount": "1 把",
+"optional": false
+}
+],
+"steps": [
+"空心菜洗净掐段，腐乳加少许腐乳汁压碎。",
+"热油下腐乳炒香，下空心菜大火快炒。",
+"断生后加少许糖和蒜末，翻匀出锅。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "家常菜",
+"time_minutes": 12,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"素食",
+"快手",
+"低卡"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r148",
+"title": "白菜炖粉条",
+"ingredients": [
+{
+"name": "白菜",
+"canonical": "白菜",
+"amount": "半颗",
+"optional": false
+},
+{
+"name": "粉条",
+"canonical": "粉条",
+"amount": "1 把",
+"optional": false
+}
+],
+"steps": [
+"粉条温水泡软，白菜切片。",
+"热油炒白菜到变软，加生抽和老抽。",
+"加粉条和适量水，小火炖 8 分钟，加盐收汁。"
+],
+"methods": [
+"炖",
+"煮"
+],
+"cuisine": "家常菜",
+"time_minutes": 25,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"素食",
+"下饭",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r149",
+"title": "麻酱拌菠菜",
+"ingredients": [
+{
+"name": "芝麻酱",
+"canonical": "芝麻酱",
+"amount": "2 勺",
+"optional": false
+},
+{
+"name": "菠菜",
+"canonical": "菠菜",
+"amount": "1 把",
+"optional": false
+}
+],
+"steps": [
+"菠菜沸水焯 30 秒，过凉水挤干，切段摆盘。",
+"芝麻酱加温水、生抽、醋搅匀成酱汁。",
+"酱汁淋在菠菜上，撒芝麻即可。"
+],
+"methods": [
+"凉拌",
+"煮"
+],
+"cuisine": "家常菜",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"沙拉碗"
+],
+"tags": [
+"素食",
+"低卡",
+"快手"
+],
+"allergens": [],
+"safety_notes": [
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
+},
+{
+"id": "r150",
+"title": "芒果糯米饭",
+"ingredients": [
+{
+"name": "芒果",
+"canonical": "芒果",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "糯米",
+"canonical": "糯米",
+"amount": "1 杯",
+"optional": false
+},
+{
+"name": "椰浆",
+"canonical": "椰浆",
+"amount": "1 罐",
+"optional": false
+}
+],
+"steps": [
+"糯米提前泡 2 小时，蒸熟。",
+"椰浆加少许糖和盐加热，一半拌入糯米饭。",
+"芒果切块，糯米饭摆盘，淋剩下的椰浆。"
+],
+"methods": [
+"蒸",
+"免开火"
+],
+"cuisine": "泰式",
+"time_minutes": 40,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"甜品",
+"素食",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "CookMyFridge 人工策展",
+"license": "CC BY 4.0",
+"is_ai_generated": false
 }
 ]
