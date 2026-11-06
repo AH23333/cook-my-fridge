@@ -33,11 +33,15 @@ def run_audit() -> dict:
         dupes = sorted({t for t in titles if titles.count(t) > 1})
         problems.append(f"菜谱标题重复: {dupes}")
 
-    # 2. Every ingredient line resolves to a known canonical.
+    # 2. Every ingredient line resolves to a known canonical, with no dupes.
     for r in recipes:
-        for use in r.ingredients:
-            if use.canonical not in known:
-                problems.append(f"{r.id} 含目录外食材: {use.canonical}")
+        canonicals = [use.canonical for use in r.ingredients]
+        for canonical in canonicals:
+            if canonical not in known:
+                problems.append(f"{r.id} 含目录外食材: {canonical}")
+        if len(canonicals) != len(set(canonicals)):
+            dupes = sorted({c for c in canonicals if canonicals.count(c) > 1})
+            problems.append(f"{r.id} 菜谱内食材重复: {dupes}")
 
     # 3. Variant keys reference a real recipe and a valid kind.
     variants = _load_cache("variants")
@@ -68,6 +72,21 @@ def run_audit() -> dict:
             notes = value.get("safety_notes", []) if isinstance(value, dict) else []
             if any(isinstance(n, str) and len(n.strip()) <= 1 for n in notes):
                 problems.append(f"{name}:{key} 残留单字安全提示")
+
+    # 6. Every AI card ingredient resolves to a known canonical, with no dupes.
+    for name in ("wildcards", "blindboxes", "variants"):
+        for key, value in _load_cache(name).items():
+            if not isinstance(value, dict):
+                continue
+            canonicals = [
+                row.get("canonical") for row in value.get("ingredients", [])
+            ]
+            for canonical in canonicals:
+                if canonical not in known:
+                    problems.append(f"{name}:{key} 含目录外食材: {canonical}")
+            if len(canonicals) != len(set(canonicals)):
+                dupes = sorted({c for c in canonicals if canonicals.count(c) > 1})
+                problems.append(f"{name}:{key} 食材重复: {dupes}")
 
     return {
         "ok": not problems,

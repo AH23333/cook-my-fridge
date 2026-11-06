@@ -19,3 +19,23 @@ def test_audit_detects_unknown_ingredient(monkeypatch):
     report = audit.run_audit()
     assert report["ok"] is False
     assert any("目录外食材" in p for p in report["problems"])
+
+
+def test_audit_detects_duplicate_ingredient(monkeypatch):
+    from cookmyfridge.dataset import load_recipes
+    from cookmyfridge.models import IngredientUse
+
+    recipes = load_recipes()
+    first = recipes[0].ingredients[0]
+    recipes[0].ingredients.append(
+        IngredientUse(
+            name=first.canonical,
+            canonical=first.canonical,
+            amount="1",
+            optional=False,
+        )
+    )
+    monkeypatch.setattr(audit, "load_recipes", lambda: recipes)
+    report = audit.run_audit()
+    assert report["ok"] is False
+    assert any("菜谱内食材重复" in p for p in report["problems"])
