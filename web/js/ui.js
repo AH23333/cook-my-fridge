@@ -49,6 +49,7 @@
     ["browse.html", "菜谱"],
     ["fridge.html", "我的冰箱"],
     ["planner.html", "一周菜单"],
+    ["stats.html", "统计"],
     ["about.html", "关于"],
   ];
 
