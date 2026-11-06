@@ -268,6 +268,47 @@
     });
   }
 
+  function renderBackup() {
+    const root = document.getElementById("backup-content");
+    root.innerHTML =
+      '<div class="backup-box">' +
+      "<p>导出冰箱、偏好、收藏和计划，换浏览器或设备时可恢复。</p>" +
+      '<div style="display:flex;gap:9px;flex-wrap:wrap">' +
+      '<button class="btn btn-sm" id="btn-export">下载备份文件</button>' +
+      '<label class="btn btn-sm" style="cursor:pointer">导入备份' +
+      '<input type="file" id="file-import" accept="application/json,.json" style="display:none"></label>' +
+      "</div></div>";
+
+    root.querySelector("#btn-export").onclick = () => {
+      const payload = JSON.stringify(CMF.exportData(), null, 2);
+      const blob = new Blob([payload], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "cookmyfridge-backup.json";
+      a.click();
+      URL.revokeObjectURL(url);
+      CMF.toast("备份文件已下载");
+    };
+
+    root.querySelector("#file-import").onchange = (ev) => {
+      const file = ev.target.files && ev.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const parsed = JSON.parse(reader.result);
+          const count = CMF.importData(parsed);
+          CMF.toast("已恢复 " + count + " 项数据");
+          renderAll();
+        } catch (e) {
+          CMF.toast("导入失败：" + e.message);
+        }
+      };
+      reader.readAsText(file);
+    };
+  }
+
   function renderAll() {
     renderFridge();
     renderHistory();
@@ -276,6 +317,7 @@
     renderFavorites();
     renderPlan();
     renderShare();
+    renderBackup();
   }
 
   CMF.boots("fridge.html", renderAll);

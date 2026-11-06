@@ -58,8 +58,32 @@ check("clear history", CMF.getHistory().length === 0);
 mem.set("cmf.fridge", "{broken");
 check("malformed fallback", JSON.stringify(CMF.getFridge()) === "[]");
 
+// export then import round trip
+CMF.setFridge(["番茄", "鸡蛋"]);
+CMF.toggleFavorite("r005");
+const backup = CMF.exportData();
+check("export has version", backup.version === 1 && backup.data["cmf.fridge"]);
+mem.clear();
+const imported = CMF.importData(backup);
+check("import count", imported >= 2);
+check("import restores fridge", JSON.stringify(CMF.getFridge()) === '["番茄","鸡蛋"]');
+check("import restores favorites", JSON.stringify(CMF.getFavorites()) === '["r005"]');
+
+// import rejects malformed payloads
+let threw = false;
+try {
+  CMF.importData({ data: null });
+} catch (e) {
+  threw = true;
+}
+check("import validates", threw);
+
+// unknown keys are ignored
+const ignored = CMF.importData({ data: { "cmf.unknown": ["x"] } });
+check("import ignores unknown", ignored === 0);
+
 if (failures.length) {
   console.error("STORE TEST FAILURES:", failures);
   process.exit(1);
 }
-console.log(JSON.stringify({ ok: true, checks: 10 }));
+console.log(JSON.stringify({ ok: true, checks: 16 }));
