@@ -23,6 +23,22 @@
   const FACTORS = [0.5, 1, 1.5, 2, 3];
   let factor = 1;
 
+  function renderSimilar(recipe) {
+    const rows = CMF.similarRecipes(recipe, CMF.data.recipes, 4);
+    if (!rows.length) return "";
+    return (
+      "<h3>相似菜谱</h3><div class='similar-list'>" +
+      rows
+        .map(
+          (r) =>
+            `<a class="similar-item" href="recipe.html?id=${encodeURIComponent(r.id)}">` +
+            `<span>${CMF.esc(r.title)}</span><span class="similar-meta">⏱ ${r.time_minutes} 分钟</span></a>`
+        )
+        .join("") +
+      "</div>"
+    );
+  }
+
   function render(recipe) {
     const ingredientRows = recipe.ingredients
       .map(
@@ -91,6 +107,7 @@
         ? "<h3>数据集里没有的三个主意</h3><ul>" +
           ideasEntry.ideas.map((x) => `<li>${CMF.esc(x)}</li>`).join("") + "</ul>"
         : "") +
+      renderSimilar(recipe) +
       `<p style="font-size:12.5px;color:var(--ink-soft);margin-top:16px">来源：${CMF.esc(recipe.source)} · 许可证：${CMF.esc(recipe.license)}</p>` +
       "</article>";
 

@@ -84,6 +84,29 @@
     return 0;
   }
 
+  CMF.similarRecipes = function (recipe, recipes, limit) {
+    const target = new Set(
+      recipe.ingredients.filter((i) => !i.optional).map((i) => i.canonical)
+    );
+    return recipes
+      .filter((r) => r.id !== recipe.id)
+      .map((r) => ({
+        recipe: r,
+        shared: r.ingredients.filter(
+          (i) => !i.optional && target.has(i.canonical)
+        ).length,
+      }))
+      .filter((x) => x.shared > 0)
+      .sort(
+        (a, b) =>
+          b.shared - a.shared ||
+          a.recipe.time_minutes - b.recipe.time_minutes ||
+          (a.recipe.id < b.recipe.id ? -1 : 1)
+      )
+      .slice(0, limit || 4)
+      .map((x) => x.recipe);
+  };
+
   CMF.search = function (recipes, selected, filters) {
     const selectedSet = new Set(selected);
     const cookNow = [];
