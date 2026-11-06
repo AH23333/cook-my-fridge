@@ -9,6 +9,8 @@
     const options = opts || {};
     const maxRecipes = options.maxRecipes || 4;
     const maxExtra = options.maxExtra == null ? 3 : options.maxExtra;
+    const urgentSet = new Set(options.urgent || []);
+    const URGENT_WEIGHT = 3;
     const fridgeSet = new Set(fridge);
     const remaining = new Set(fridge);
     const selected = [];
@@ -17,7 +19,18 @@
     function score(recipe) {
       const m = CMF.matchRecipe(recipe, fridgeSet);
       const newCovered = m.matched.filter((c) => remaining.has(c));
-      return { m, newCovered, benefit: newCovered.length, cost: m.missingCount };
+      const urgentCovered = newCovered.filter((c) => urgentSet.has(c));
+      // Urgent items weigh more so expiring ingredients are cleared first.
+      const weightedBenefit =
+        newCovered.length + urgentCovered.length * (URGENT_WEIGHT - 1);
+      return {
+        m,
+        newCovered,
+        urgentCovered,
+        benefit: newCovered.length,
+        weightedBenefit,
+        cost: m.missingCount,
+      };
     }
 
     while (selected.length < maxRecipes) {
@@ -28,9 +41,8 @@
         const s = score(r);
         if (s.benefit === 0) return;
         if (s.cost > maxExtra) return;
-        // ratio of benefit to cost, with stable tiebreak
-        const ratio = s.benefit / (s.cost + 1);
-        const key = [ratio, s.benefit, -s.cost];
+        const ratio = s.weightedBenefit / (s.cost + 1);
+        const key = [ratio, s.weightedBenefit, -s.cost];
         if (
           bestScore === null ||
           key[0] > bestScore[0] ||
@@ -50,6 +62,7 @@
         recipeId: best.id,
         title: best.title,
         addedCoverage: s.newCovered,
+        urgentCovered: s.urgentCovered,
         missing: s.m.missing,
       });
     }

@@ -71,8 +71,22 @@ check("more recipes non-decreasing", bigger.coveredCount >= plan.coveredCount);
 const tight = CMF.cleanoutPlan(recipes, fridge, { maxRecipes: 4, maxExtra: 0 });
 check("tight budget works", tight.selected.length >= 1 && tight.selected.every((s) => s.missing.length === 0));
 
+// Urgent weighting: mark the first fridge ingredient urgent.
+const urgentItem = fridge[0];
+const urgentPlan = CMF.cleanoutPlan(recipes, fridge, {
+  maxRecipes: 4,
+  maxExtra: 3,
+  urgent: [urgentItem],
+});
+check("urgent item covered", urgentPlan.selected.some((s) => s.urgentCovered.includes(urgentItem)));
+check("urgent first priority", urgentPlan.selected[0].urgentCovered.includes(urgentItem));
+check("urgent item not unused", !urgentPlan.unusedFridge.includes(urgentItem));
+
+// No urgent set -> urgentCovered always empty
+check("no urgent empty", plan.selected.every((s) => s.urgentCovered.length === 0));
+
 if (failures.length) {
   console.error("CLEANOUT TEST FAILURES:", failures);
   process.exit(1);
 }
-console.log(JSON.stringify({ ok: true, checks: 13 }));
+console.log(JSON.stringify({ ok: true, checks: 17 }));
