@@ -6,6 +6,9 @@ from pathlib import Path
 
 from .catalog import allergens_of
 from .curated_data import SPECS
+from .curated_data2 import SPECS_BATCH2
+
+ALL_SPECS = SPECS + SPECS_BATCH2
 from .models import IngredientUse, Recipe
 from .validate import validate_recipe
 from .config import CURATED_DIR
@@ -68,7 +71,7 @@ def _build_recipe(spec: dict) -> Recipe:
 
 
 def build_curated_recipes() -> list[Recipe]:
-    recipes = [_build_recipe(spec) for spec in SPECS]
+    recipes = [_build_recipe(spec) for spec in ALL_SPECS]
     for recipe in recipes:
         result = validate_recipe(recipe)
         if not result.ok:
@@ -78,8 +81,9 @@ def build_curated_recipes() -> list[Recipe]:
 
 def write_curated(path: Path = CURATED_FILE) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
+    recipes = build_curated_recipes()
     with path.open("w", encoding="utf-8", newline="\n") as fh:
-        for recipe in build_curated_recipes():
+        for recipe in recipes:
             fh.write(json.dumps(recipe.to_dict(), ensure_ascii=False) + "\n")
     return path
 

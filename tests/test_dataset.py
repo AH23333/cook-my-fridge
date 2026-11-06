@@ -1,11 +1,10 @@
 """Curated dataset build/load tests."""
-from cookmyfridge.curated_data import SPECS
-from cookmyfridge.dataset import build_curated_recipes, load_recipes, write_curated
+from cookmyfridge.dataset import ALL_SPECS, build_curated_recipes, load_recipes, write_curated
 
 
 def test_all_specs_build_and_validate():
     recipes = build_curated_recipes()
-    assert len(recipes) == len(SPECS)
+    assert len(recipes) == len(ALL_SPECS)
     ids = [r.id for r in recipes]
     assert len(ids) == len(set(ids))
 
@@ -26,7 +25,7 @@ def test_write_and_load_roundtrip(tmp_path):
     target = tmp_path / "recipes.jsonl"
     write_curated(target)
     loaded = load_recipes(target)
-    assert len(loaded) == len(SPECS)
+    assert len(loaded) == len(ALL_SPECS)
     assert loaded[0].title == build_curated_recipes()[0].title
 
 
