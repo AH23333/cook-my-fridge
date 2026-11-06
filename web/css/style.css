@@ -263,6 +263,10 @@ a:hover { text-decoration: underline; }
   display: flex; gap: 10px; flex-wrap: wrap;
 }
 .recipe-card .tagline { font-size: 13px; color: var(--ink-soft); }
+.recipe-card.danger {
+  border-color: #e0a3a3;
+  background: #fdf2f2;
+}
 .tag-pills { display: flex; gap: 5px; flex-wrap: wrap; }
 .pill {
   font-size: 11.5px;

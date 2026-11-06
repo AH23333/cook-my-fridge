@@ -113,10 +113,38 @@
     });
   }
 
+  const ALLERGEN_OPTIONS = ["花生", "牛奶", "鸡蛋", "鱼", "甲壳类", "大豆", "麸质"];
+
+  function renderAllergens() {
+    const prefs = CMF.getPrefs();
+    const active = new Set(prefs.allergens || []);
+    const root = document.getElementById("allergen-content");
+    root.innerHTML =
+      '<div class="chip-grid">' +
+      ALLERGEN_OPTIONS.map(
+        (a) =>
+          `<span class="chip ${active.has(a) ? "selected" : ""}" data-allergen="${a}" style="justify-content:center">${a}</span>`
+      ).join("") +
+      "</div>";
+    root.querySelectorAll(".chip").forEach((chip) => {
+      chip.onclick = () => {
+        const current = new Set(CMF.getPrefs().allergens || []);
+        const a = chip.dataset.allergen;
+        if (current.has(a)) current.delete(a);
+        else current.add(a);
+        const next = CMF.getPrefs();
+        next.allergens = [...current];
+        CMF.setPrefs(next);
+        renderAllergens();
+      };
+    });
+  }
+
   function renderAll() {
     renderFridge();
     renderHistory();
     renderPrefs();
+    renderAllergens();
     renderShare();
   }
 

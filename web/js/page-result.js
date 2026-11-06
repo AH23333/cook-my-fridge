@@ -89,13 +89,23 @@
     });
   }
 
+  function hasUserAllergen(recipe) {
+    const user = new Set(CMF.getPrefs().allergens || []);
+    return (recipe.allergens || []).some((a) => user.has(a));
+  }
+
+  function dropAllergen(matches) {
+    if (!document.getElementById("hide-allergens").checked) return matches;
+    return matches.filter((m) => !hasUserAllergen(m.recipe));
+  }
+
   function render() {
     const result = CMF.search(CMF.data.recipes, selected, currentFilters());
     const wild = wildcardMatches();
     buckets.innerHTML =
-      bucketNode("badge-now", "COOK NOW", "现在就能做", result.cookNow) +
-      bucketNode("badge-almost", "ALMOST", "只差一点", result.almostThere) +
-      bucketNode("badge-wild", "AI WILDCARD", "AI 创意菜", wild, true);
+      bucketNode("badge-now", "COOK NOW", "现在就能做", dropAllergen(result.cookNow)) +
+      bucketNode("badge-almost", "ALMOST", "只差一点", dropAllergen(result.almostThere)) +
+      bucketNode("badge-wild", "AI WILDCARD", "AI 创意菜", dropAllergen(wild), true);
   }
 
   function start() {
@@ -118,6 +128,10 @@
     [methodSel, timeSel, diffSel].forEach((node) =>
       node.addEventListener("change", render)
     );
+    if ((CMF.getPrefs().allergens || []).length) {
+      document.getElementById("allergen-toggle").style.display = "block";
+      document.getElementById("hide-allergens").addEventListener("change", render);
+    }
     render();
     renderUnlock();
   }
