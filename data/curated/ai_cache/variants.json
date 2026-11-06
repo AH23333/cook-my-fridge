@@ -24107,5 +24107,960 @@
   "source": "GLM AI 生成（glm-4-flash）",
   "license": "AI-generated, see About",
   "is_ai_generated": true
+ },
+ "r009:leftover": {
+  "id": "ai-var-r009-leftover",
+  "title": "剩菜改造版拍黄瓜",
+  "ingredients": [
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "2根",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1小勺",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "黄瓜洗净，用刀背拍裂后切成段。",
+   "大蒜切末。",
+   "将生抽、醋、香油、盐和白糖混合成调味汁。",
+   "将调味汁倒入黄瓜中拌匀，腌制约5分钟。",
+   "将腌好的黄瓜装盘，可根据个人口味加入少许葱花或香菜点缀。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "盘子"
+  ],
+  "tags": [
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "确保黄瓜新鲜，避免食用变质食物。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r010:leftover": {
+  "id": "ai-var-r010-leftover",
+  "title": "剩菜改造版蒜蓉西兰花",
+  "ingredients": [
+   {
+    "name": "西兰花",
+    "canonical": "西兰花",
+    "amount": "1 颗",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "4 瓣",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "蚝油",
+    "canonical": "蚝油",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "西兰花掰小朵，用盐水泡 10 分钟后洗净。",
+   "烧开水加少许油盐，下西兰花焯 1 分钟捞出沥干。",
+   "热锅倒油，下蒜末炒香，下西兰花翻炒。",
+   "加蚝油或盐调味，大火翻匀出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "剩菜改造"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "确保西兰花煮熟，避免生食"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r011:leftover": {
+  "id": "ai-var-r011-leftover",
+  "title": "剩菜改造版清蒸鲈鱼",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "canonical": "鲈鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "2 段",
+    "optional": false
+   },
+   {
+    "name": "蒸鱼豉油",
+    "canonical": "蒸鱼豉油",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鲈鱼处理干净，两面划刀，抹料酒腌 5 分钟。",
+   "盘底铺姜片葱段，放上鱼，水开后上锅大火蒸 8 分钟。",
+   "倒掉盘中蒸出的腥水，换新葱丝，淋蒸鱼豉油。",
+   "另起锅，加入食用油烧热，浇在鱼身上激出香味。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "炒锅"
+  ],
+  "tags": [
+   "剩菜改造",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "鱼"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鱼刺，食用时小心。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r012:leftover": {
+  "id": "ai-var-r012-leftover",
+  "title": "剩菜改造版红烧排骨",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "500克",
+    "optional": false
+   },
+   {
+    "name": "冰糖",
+    "canonical": "冰糖",
+    "amount": "20克",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1段",
+    "optional": false
+   },
+   {
+    "name": "八角",
+    "canonical": "八角",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "土豆",
+    "canonical": "土豆",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "1个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将排骨冷水下锅，加入料酒焯水，撇去浮沫后捞出冲洗干净。",
+   "锅中加入少许油，放入冰糖炒制糖色，加入排骨翻炒至表面变色。",
+   "加入姜片、葱段、八角、生抽、老抽炒匀。",
+   "加入土豆块、胡萝卜块、青椒块，翻炒均匀。",
+   "加热水没过所有食材，大火烧开后转小火炖煮40分钟。",
+   "最后大火收汁，使汤汁裹满排骨和蔬菜，即可出锅。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 50,
+  "difficulty": "中等",
+  "cookware": [
+   "炒锅",
+   "汤锅"
+  ],
+  "tags": [
+   "剩菜改造",
+   "下饭",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炖煮时间，避免排骨过于酥烂。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r013:leftover": {
+  "id": "ai-var-r013-leftover",
+  "title": "剩菜改造版土豆炖牛肉",
+  "ingredients": [
+   {
+    "name": "牛腩",
+    "canonical": "牛腩",
+    "amount": "400克",
+    "optional": false
+   },
+   {
+    "name": "土豆",
+    "canonical": "土豆",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1段",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "2勺",
+    "optional": false
+   },
+   {
+    "name": "八角",
+    "canonical": "八角",
+    "amount": "1个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将牛腩切块，放入冷水锅中，加入料酒焯水，撇去浮沫后捞出。",
+   "将牛腩放入锅中，加入姜片、葱段、八角、生抽、老抽和热水，小火炖煮50分钟。",
+   "将土豆和胡萝卜切成滚刀块，加入锅中继续炖煮20分钟。",
+   "炖至土豆软烂、汤汁浓稠，尝味后根据个人口味调整咸淡。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 90,
+  "difficulty": "中等",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炖煮时间，避免牛肉过于烂糊。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r014:leftover": {
+  "id": "ai-var-r014-leftover",
+  "title": "剩菜改造版葱爆羊肉",
+  "ingredients": [
+   {
+    "name": "羊肉",
+    "canonical": "羊肉",
+    "amount": "剩余250克",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "剩余2根",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "剩余1勺",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "剩余1勺",
+    "optional": false
+   },
+   {
+    "name": "孜然",
+    "canonical": "孜然",
+    "amount": "剩余1小勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "剩余1勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将剩余的羊肉切片，加入剩余的料酒、生抽和孜然，抓匀腌制10分钟。",
+   "将剩余的大葱切成滚刀块。",
+   "热锅倒油，大火下羊肉快速滑散至变色。",
+   "下大葱爆炒至断生，加入剩余的盐调味，立刻出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意羊肉不要炒得过老，以免口感变硬。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r015:leftover": {
+  "id": "ai-var-r015-leftover",
+  "title": "剩菜改造版白灼虾",
+  "ingredients": [
+   {
+    "name": "虾",
+    "canonical": "虾",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1 段",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾剪去虾须，挑去虾线洗净。",
+   "锅中加水，放姜片、葱段、料酒烧开。",
+   "下虾煮到变红蜷曲，约 2 分钟立刻捞出。",
+   "用生抽加醋或姜末调成蘸料佐食。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆",
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "虾煮的时间不宜过长，以免肉质变老",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r016:leftover": {
+  "id": "ai-var-r016-leftover",
+  "title": "剩菜改造版紫菜蛋花汤",
+  "ingredients": [
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "虾皮",
+    "canonical": "虾皮",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "几滴",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将紫菜撕成小块，鸡蛋打散备用。",
+   "锅中加水烧开，加入撕好的紫菜和虾皮，煮1分钟。",
+   "将打散的鸡蛋沿着锅边缓慢倒入，形成蛋花。",
+   "加入切好的胡萝卜和黄瓜片，继续煮2分钟。",
+   "根据口味加盐调味，最后滴入几滴香油。",
+   "撒上少许葱花，关火即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "剩菜改造",
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将鸡蛋直接打入开水中，以免烫伤。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r017:leftover": {
+  "id": "ai-var-r017-leftover",
+  "title": "剩菜改造版凉拌木耳",
+  "ingredients": [
+   {
+    "name": "木耳",
+    "canonical": "木耳",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "木耳提前用冷水泡发，撕小朵。",
+   "烧开水下木耳焯 2 分钟，捞出过凉水沥干。",
+   "洋葱、青椒切丝，大蒜切末。",
+   "所有食材混合，加生抽、醋、香油、盐拌匀，腌 10 分钟。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意木耳泡发时间不宜过长，以免变质。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r018:leftover": {
+  "id": "ai-var-r018-leftover",
+  "title": "剩菜改造版鱼香茄子",
+  "ingredients": [
+   {
+    "name": "茄子",
+    "canonical": "茄子",
+    "amount": "2 根",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "豆瓣酱",
+    "canonical": "豆瓣酱",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "2 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "茄子切条，撒少许盐腌 10 分钟杀出水分，挤干。",
+   "生抽、醋、白糖、淀粉加 3 勺水调成鱼香汁。",
+   "热锅倒油，下茄子炒软盛出。",
+   "锅留底油下姜蒜和豆瓣酱炒香，倒回茄子。",
+   "淋入鱼香汁翻炒，汤汁浓稠即可。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意茄子不宜过度炒制，以免变黑。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r019:leftover": {
+  "id": "ai-var-r019-leftover",
+  "title": "剩菜改造版冬瓜排骨汤",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "冬瓜",
+    "canonical": "冬瓜",
+    "amount": "300克",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3片",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将排骨冷水下锅，加入料酒，焯水撇沫后捞出。",
+   "将焯水后的排骨加入姜片和热水，小火炖煮30分钟。",
+   "冬瓜去皮切厚片，放入锅中，继续炖煮15分钟至透明。",
+   "加入适量盐调味，撒上少许葱花，出锅即可。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "剩菜改造"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炖煮时间，避免排骨过烂或冬瓜煮烂",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r020:leftover": {
+  "id": "ai-var-r020-leftover",
+  "title": "剩菜改造版电饭煲煲仔饭",
+  "ingredients": [
+   {
+    "name": "大米",
+    "canonical": "大米",
+    "amount": "1杯",
+    "optional": false
+   },
+   {
+    "name": "香肠",
+    "canonical": "香肠",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "香菇",
+    "canonical": "香菇",
+    "amount": "3朵",
+    "optional": false
+   },
+   {
+    "name": "小白菜",
+    "canonical": "小白菜",
+    "amount": "2棵",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "1小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "大米淘洗干净，按平时煮饭水量放电饭煲，加一勺油。",
+   "腊肠切片，香菇泡发切丝，铺在米上。",
+   "启动煮饭程序，煮好后焖10分钟。",
+   "青菜焯熟，饭上淋生抽，拌匀即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意食材新鲜度，确保食品安全。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
  }
 }
