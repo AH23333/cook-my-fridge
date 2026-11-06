@@ -16,6 +16,7 @@ from .curated_data8 import SPECS_BATCH8
 from .curated_data9 import SPECS_BATCH9
 from .curated_data10 import SPECS_BATCH10
 from .curated_data11 import SPECS_BATCH11
+from .curated_data12 import SPECS_BATCH12
 
 ALL_SPECS = (
     SPECS
@@ -29,6 +30,7 @@ ALL_SPECS = (
     + SPECS_BATCH9
     + SPECS_BATCH10
     + SPECS_BATCH11
+    + SPECS_BATCH12
 )
 from .models import IngredientUse, Recipe
 from .validate import validate_recipe

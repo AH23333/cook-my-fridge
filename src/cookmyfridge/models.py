@@ -79,6 +79,7 @@ TAG_ALIASES: dict[str, str] = {
     "家常": "下饭",
     "融合": "融合菜",
     "清凉解暑": "夏日饮品",
+    "冰箱冷藏": "免开火",
 }
 
 # Default tags used across the dataset and the AI batch jobs.

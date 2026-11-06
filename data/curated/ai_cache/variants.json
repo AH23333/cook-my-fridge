@@ -86607,5 +86607,7014 @@
   "source": "GLM AI 生成（glm-4-flash）",
   "license": "AI-generated, see About",
   "is_ai_generated": true
+ },
+ "r181:lazy": {
+  "id": "ai-var-r181-lazy",
+  "title": "懒人版日式味噌汤",
+  "ingredients": [
+   {
+    "name": "味噌",
+    "canonical": "味噌",
+    "amount": "1.5勺",
+    "optional": false
+   },
+   {
+    "name": "裙带菜",
+    "canonical": "裙带菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "裙带菜用清水泡发",
+   "嫩豆腐切小块",
+   "锅中加水烧开，放入豆腐和裙带菜煮2分钟",
+   "转小火，加入味噌，用勺子搅拌至融化",
+   "继续煮2分钟，不要煮沸，关火即可"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让汤煮沸，以免破坏味噌的风味",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r181:lowcal": {
+  "id": "ai-var-r181-lowcal",
+  "title": "低卡版日式味噌汤",
+  "ingredients": [
+   {
+    "name": "味噌",
+    "canonical": "味噌",
+    "amount": "1.5勺",
+    "optional": false
+   },
+   {
+    "name": "裙带菜",
+    "canonical": "裙带菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "裙带菜用清水泡发",
+   "嫩豆腐切小块",
+   "锅中加水烧开，放入豆腐和裙带菜煮2分钟，转小火",
+   "舀一勺热汤把味噌化开再倒回锅中，搅匀即可，不要煮沸"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让汤煮沸，以免破坏味噌的风味",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r181:airfryer": {
+  "id": "ai-var-r181-airfryer",
+  "title": "空气炸锅版日式味噌汤",
+  "ingredients": [
+   {
+    "name": "味噌",
+    "canonical": "味噌",
+    "amount": "1.5勺",
+    "optional": false
+   },
+   {
+    "name": "裙带菜",
+    "canonical": "裙带菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "裙带菜用清水泡发",
+   "嫩豆腐切小块",
+   "将裙带菜和嫩豆腐放入空气炸锅中",
+   "设置空气炸锅温度为150°C，时间为5分钟",
+   "取出裙带菜和嫩豆腐，加入味噌",
+   "将味噌与裙带菜和嫩豆腐混合均匀",
+   "再次放入空气炸锅中，设置温度为150°C，时间为3分钟"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "低脂"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅使用安全，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r181:substitute": {
+  "id": "ai-var-r181-substitute",
+  "title": "家常替代版日式味噌汤",
+  "ingredients": [
+   {
+    "name": "味噌",
+    "canonical": "味噌",
+    "amount": "1.5勺",
+    "optional": false
+   },
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "紫菜用清水泡发。",
+   "嫩豆腐切小块。",
+   "锅中加水烧开，放入豆腐和紫菜煮2分钟，转小火。",
+   "舀一勺热汤把味噌化开再倒回锅中，搅匀即可，不要煮沸。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "素食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让汤煮沸，以免破坏味噌的风味。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r181:method": {
+  "id": "ai-var-r181-method",
+  "title": "换做法版日式味噌汤",
+  "ingredients": [
+   {
+    "name": "味噌",
+    "canonical": "味噌",
+    "amount": "1.5勺",
+    "optional": false
+   },
+   {
+    "name": "裙带菜",
+    "canonical": "裙带菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "酱油",
+    "canonical": "酱油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "裙带菜用清水泡发，嫩豆腐切小块。",
+   "锅中加水烧开，放入豆腐和裙带菜煮2分钟，转小火。",
+   "将味噌与酱油混合均匀，用少量热水溶解。",
+   "将溶解的味噌酱油倒入锅中，搅拌均匀。",
+   "撒上葱花，煮至汤微沸即可关火。",
+   "将汤盛出，放入微波炉中加热至适宜温度即可食用。"
+  ],
+  "methods": [
+   "煮",
+   "微波炉"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "微波炉"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让汤煮沸，以免破坏味噌的风味。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r181:leftover": {
+  "id": "ai-var-r181-leftover",
+  "title": "剩菜改造版日式味噌汤",
+  "ingredients": [
+   {
+    "name": "味噌",
+    "canonical": "味噌",
+    "amount": "1.5勺",
+    "optional": false
+   },
+   {
+    "name": "裙带菜",
+    "canonical": "裙带菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "裙带菜用清水泡发，嫩豆腐切小块。",
+   "锅中加水烧开，放入豆腐和裙带菜煮2分钟，转小火。",
+   "鸡蛋打散，慢慢倒入锅中，边倒边用筷子轻轻搅动。",
+   "舀一勺热汤把味噌化开再倒回锅中，加入葱花，搅匀即可，不要煮沸。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "早餐",
+   "素食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让汤煮沸，以免影响口感。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r181:fusion": {
+  "id": "ai-var-r181-fusion",
+  "title": "融合版日式味噌汤",
+  "ingredients": [
+   {
+    "name": "味噌",
+    "canonical": "味噌",
+    "amount": "1.5勺",
+    "optional": false
+   },
+   {
+    "name": "裙带菜",
+    "canonical": "裙带菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "鸡肉",
+    "canonical": "鸡肉",
+    "amount": "100克",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将裙带菜用清水泡发。",
+   "将鸡肉洗净切块，洋葱和胡萝卜洗净切块。",
+   "锅中加水烧开，放入鸡肉、洋葱和胡萝卜煮10分钟。",
+   "加入味噌，用勺子搅拌均匀。",
+   "放入嫩豆腐和裙带菜，继续煮2分钟。",
+   "根据口味加入盐和黑胡椒调味，不要煮沸，关火即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "中等",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡肉和蔬菜的熟度，确保食物安全。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r182:lazy": {
+  "id": "ai-var-r182-lazy",
+  "title": "懒人版凉拌魔芋丝",
+  "ingredients": [
+   {
+    "name": "魔芋",
+    "canonical": "魔芋",
+    "amount": "1盒",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "小半根",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蒜末",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将魔芋丝焯水2分钟，捞出后过凉水沥干。",
+   "黄瓜和胡萝卜切丝。",
+   "将魔芋丝、黄瓜丝、胡萝卜丝放入碗中。",
+   "加入生抽、醋、蒜末和少许香油拌匀即可。"
+  ],
+  "methods": [
+   "煮",
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "碗",
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意魔芋丝焯水时间不宜过长，以免口感变差。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r182:lowcal": {
+  "id": "ai-var-r182-lowcal",
+  "title": "低卡版凉拌魔芋丝",
+  "ingredients": [
+   {
+    "name": "魔芋",
+    "canonical": "魔芋",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "小半根",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蒜末",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将魔芋丝焯水 2 分钟后捞出，过凉水沥干。",
+   "黄瓜、胡萝卜切丝。",
+   "将魔芋丝、黄瓜丝和胡萝卜丝放入碗中。",
+   "加入生抽、醋、蒜末和少许香油。",
+   "拌匀即可食用。"
+  ],
+  "methods": [
+   "煮",
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "碗",
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "无特殊风险，注意魔芋不宜过量食用。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r182:airfryer": {
+  "id": "ai-var-r182-airfryer",
+  "title": "空气炸锅版凉拌魔芋丝",
+  "ingredients": [
+   {
+    "name": "魔芋",
+    "canonical": "魔芋",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "小半根",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蒜末",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将魔芋丝焯水 2 分钟捞出，过凉水沥干。",
+   "黄瓜、胡萝卜切丝。",
+   "将魔芋丝、黄瓜丝和胡萝卜丝放入空气炸锅中。",
+   "设置空气炸锅温度为 180℃，时间设置为 5 分钟。",
+   "取出炸好的魔芋丝、黄瓜丝和胡萝卜丝，放入碗中。",
+   "加入生抽、醋、蒜末和少许香油拌匀即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 7,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "低卡"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意魔芋丝不要炸太久，以免变硬。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r182:substitute": {
+  "id": "ai-var-r182-substitute",
+  "title": "家常替代版凉拌魔芋丝",
+  "ingredients": [
+   {
+    "name": "魔芋丝",
+    "canonical": "魔芋",
+    "amount": "1盒",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "小半根",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蒜末",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "魔芋丝焯水2分钟捞出，过凉水沥干。",
+   "黄瓜、胡萝卜切丝。",
+   "将魔芋丝、黄瓜丝、胡萝卜丝放入碗中。",
+   "加入生抽、醋、蒜末和少许香油。",
+   "拌匀即可食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "碗",
+   "筷子"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "魔芋丝焯水时间不宜过长，以免口感变差。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r182:method": {
+  "id": "ai-var-r182-method",
+  "title": "换做法版凉拌魔芋丝",
+  "ingredients": [
+   {
+    "name": "魔芋",
+    "canonical": "魔芋",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "小半根",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蒜末",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "魔芋丝焯水 2 分钟捞出，过凉水沥干。",
+   "黄瓜、胡萝卜切丝。",
+   "将魔芋丝、黄瓜丝、胡萝卜丝放入碗中。",
+   "加入生抽、醋、蒜末和少许香油。",
+   "拌匀即可食用。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "快手",
+   "低卡",
+   "一人食",
+   "素食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r182:leftover": {
+  "id": "ai-var-r182-leftover",
+  "title": "剩菜改造版凉拌魔芋丝",
+  "ingredients": [
+   {
+    "name": "魔芋",
+    "canonical": "魔芋",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "豆瓣酱",
+    "canonical": "豆瓣酱",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蒜末",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将魔芋丝、黄瓜丝、胡萝卜丝放入碗中。",
+   "打入鸡蛋，加入豆瓣酱、生抽、蒜末和香油。",
+   "搅拌均匀，使所有食材充分混合。",
+   "将混合好的食材放入冰箱冷藏一段时间，让味道更加融合。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "碗",
+   "冰箱"
+  ],
+  "tags": [
+   "剩菜改造",
+   "一人食",
+   "低卡"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意豆瓣酱的用量，避免过咸。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r182:fusion": {
+  "id": "ai-var-r182-fusion",
+  "title": "融合版凉拌魔芋丝",
+  "ingredients": [
+   {
+    "name": "魔芋",
+    "canonical": "魔芋",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "小半根",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蒜末",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "魔芋丝焯水 2 分钟捞出，过凉水沥干。",
+   "黄瓜、胡萝卜切丝。",
+   "将魔芋丝、黄瓜丝、胡萝卜丝放入碗中。",
+   "加入生抽、醋、蒜末和少许香油。",
+   "拌匀即可食用。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "碗",
+   "锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意魔芋丝焯水时间不宜过长，以免口感变差。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r183:lazy": {
+  "id": "ai-var-r183-lazy",
+  "title": "懒人版白灼菜心",
+  "ingredients": [
+   {
+    "name": "菜心",
+    "canonical": "菜心",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "菜心洗净，锅中水烧开。",
+   "水开后加入少许盐和油，放入菜心烫30秒。",
+   "捞出菜心，沥干水分，摆盘。",
+   "淋上生抽，浇上热油即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "低脂"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意烫菜心的时间不宜过长，以免口感变差。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r183:lowcal": {
+  "id": "ai-var-r183-lowcal",
+  "title": "低卡版白灼菜心",
+  "ingredients": [
+   {
+    "name": "菜心",
+    "canonical": "菜心",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "菜心洗净，切成小段。",
+   "锅中水烧开，加入少许盐。",
+   "将菜心放入沸水中烫煮 1 分钟，捞出沥干。",
+   "将烫煮好的菜心摆放在盘中。",
+   "生抽均匀淋在菜心上。",
+   "将热油浇在生抽上，激发香气。"
+  ],
+  "methods": [
+   "煮",
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "盘子"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意烫煮时间，避免菜心过熟变软。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r183:airfryer": {
+  "id": "ai-var-r183-airfryer",
+  "title": "空气炸锅版白灼菜心",
+  "ingredients": [
+   {
+    "name": "菜心",
+    "canonical": "菜心",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "菜心洗净，沥干水分。",
+   "将菜心放入空气炸锅中。",
+   "设置空气炸锅温度为180℃，时间设置为1分钟。",
+   "时间到后，取出菜心，沥干油分。",
+   "将生抽均匀淋在菜心上。",
+   "再次将菜心放入空气炸锅，设置温度为200℃，时间设置为30秒，使生抽更加香浓。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 2,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "快手"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r183:substitute": {
+  "id": "ai-var-r183-substitute",
+  "title": "家常替代版白灼菜心",
+  "ingredients": [
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "生菜洗净，锅中水烧开加少许盐。",
+   "放入生菜烫 1 分钟，捞出沥干摆盘。",
+   "淋一勺生抽，再浇一勺热油激香即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "生菜烫煮时间不宜过长，以免口感变差。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r183:method": {
+  "id": "ai-var-r183-method",
+  "title": "换做法版白灼菜心",
+  "ingredients": [
+   {
+    "name": "菜心",
+    "canonical": "菜心",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "蒜蓉",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "辣椒油",
+    "canonical": "干辣椒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "芝麻油",
+    "canonical": "香油",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "菜心洗净，切成段。",
+   "锅中水烧开，加入少许盐和油。",
+   "将菜心放入沸水中焯水约1分钟，捞出沥干。",
+   "将焯好水的菜心摆入盘中。",
+   "将蒜蓉、辣椒油和芝麻油混合均匀。",
+   "将调好的酱料均匀淋在菜心上。",
+   "撒上葱花增香，即可上桌享用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意焯水时间不宜过长，以免菜心变黄。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r183:leftover": {
+  "id": "ai-var-r183-leftover",
+  "title": "剩菜改造版白灼菜心",
+  "ingredients": [
+   {
+    "name": "菜心",
+    "canonical": "菜心",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "蒜末",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将鸡蛋打散，加入少许盐。",
+   "锅中加油烧热，倒入打散的鸡蛋液，快速翻炒至凝固成块。",
+   "将白灼菜心切成小块，与炒好的鸡蛋块混合。",
+   "加入蒜末和生抽，快速翻炒均匀。",
+   "最后淋上香油，出锅即可。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "剩菜改造",
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炒鸡蛋时火候不宜过大，以免炒焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r183:fusion": {
+  "id": "ai-var-r183-fusion",
+  "title": "融合版白灼菜心",
+  "ingredients": [
+   {
+    "name": "菜心",
+    "canonical": "菜心",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "蒜末",
+    "canonical": "大蒜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "辣椒圈",
+    "canonical": "干辣椒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "芝麻油",
+    "canonical": "香油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "菜心洗净，锅中水烧开加少许盐和油。",
+   "放入菜心烫 1 分钟，捞出沥干摆盘。",
+   "蒜末和辣椒圈炒香，加入生抽和芝麻油。",
+   "将热油浇在烫好的菜心上，撒上少许盐。",
+   "拌匀即可食用。"
+  ],
+  "methods": [
+   "炒",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "炒锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意烫菜心的时间不宜过长，以免口感变差。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r184:lazy": {
+  "id": "ai-var-r184-lazy",
+  "title": "懒人版荷兰豆炒虾仁",
+  "ingredients": [
+   {
+    "name": "荷兰豆",
+    "canonical": "荷兰豆",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "10只",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "荷兰豆去筋洗净，虾仁解冻。",
+   "将虾仁和荷兰豆放入同一个碗中，加入蒜末。",
+   "加入适量的盐。",
+   "将所有食材搅拌均匀。",
+   "将混合好的食材放入锅中，大火快速翻炒均匀。",
+   "炒至虾仁变色，荷兰豆变软即可出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意虾仁不要炒太久，以免变老。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r184:lowcal": {
+  "id": "ai-var-r184-lowcal",
+  "title": "低卡版荷兰豆炒虾仁",
+  "ingredients": [
+   {
+    "name": "荷兰豆",
+    "canonical": "荷兰豆",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "10 只",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "荷兰豆去筋洗净，虾仁解冻。",
+   "虾仁加料酒腌制10分钟。",
+   "锅中加水烧开，放入虾仁蒸5分钟至变色。",
+   "虾仁蒸熟后取出，沥干水分。",
+   "锅中加入少量水，放入荷兰豆焯水1分钟。",
+   "荷兰豆焯水后捞出，沥干水分。",
+   "锅中加入少量橄榄油，爆香蒜片。",
+   "下虾仁翻炒至表面微焦。",
+   "加入荷兰豆，快速翻炒均匀。",
+   "加盐调味，炒匀后出锅。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "锅",
+   "蒸锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "虾仁未完全解冻可能导致口感不佳。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r184:airfryer": {
+  "id": "ai-var-r184-airfryer",
+  "title": "空气炸锅版荷兰豆炒虾仁",
+  "ingredients": [
+   {
+    "name": "荷兰豆",
+    "canonical": "荷兰豆",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "10 只",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "荷兰豆去筋洗净，虾仁解冻加料酒腌一下。",
+   "将腌制好的虾仁和荷兰豆放入空气炸锅篮中。",
+   "设置空气炸锅温度为180℃，时间设置为15分钟。",
+   "空气炸锅完成后，取出虾仁和荷兰豆，加入适量盐。",
+   "将虾仁和荷兰豆拌匀即可食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅使用安全，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r184:substitute": {
+  "id": "ai-var-r184-substitute",
+  "title": "家常替代版荷兰豆炒虾仁",
+  "ingredients": [
+   {
+    "name": "荷兰豆",
+    "canonical": "荷兰豆",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "10只",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2瓣",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "荷兰豆去筋洗净，虾仁解冻后用料酒腌制10分钟。",
+   "热锅冷油，爆香大蒜。",
+   "下虾仁炒至变色，盛出备用。",
+   "下荷兰豆大火翻炒2分钟。",
+   "将虾仁倒回锅中，加盐炒匀，出锅即可。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "下饭"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "虾仁未完全煮熟可能导致食物中毒。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r184:method": {
+  "id": "ai-var-r184-method",
+  "title": "换做法版荷兰豆炒虾仁",
+  "ingredients": [
+   {
+    "name": "荷兰豆",
+    "canonical": "荷兰豆",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "10 只",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "荷兰豆去筋洗净，虾仁解冻加料酒腌一下。",
+   "将荷兰豆和虾仁分别焯水至断生，捞出沥干。",
+   "热锅冷油，加入大蒜爆香。",
+   "加入荷兰豆和虾仁，快速翻炒均匀。",
+   "加盐调味，炒匀后出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要过度焯水，以免荷兰豆失去口感。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r184:leftover": {
+  "id": "ai-var-r184-leftover",
+  "title": "剩菜改造版荷兰豆炒虾仁",
+  "ingredients": [
+   {
+    "name": "荷兰豆",
+    "canonical": "荷兰豆",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "10 只",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2 个",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将虾仁和荷兰豆切成丁。",
+   "鸡蛋打散备用。",
+   "热锅加油，先下虾仁炒至变色，盛出。",
+   "锅中留底油，加入蒜末炒香。",
+   "加入胡萝卜丁和青椒丁翻炒。",
+   "倒入虾仁和荷兰豆丁，快速翻炒均匀。",
+   "倒入打散的鸡蛋液，快速翻炒至鸡蛋凝固。",
+   "出锅前根据口味加盐调味即可。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "剩菜改造",
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炒菜时火候不宜过大，以免糊锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r184:fusion": {
+  "id": "ai-var-r184-fusion",
+  "title": "融合版荷兰豆炒虾仁",
+  "ingredients": [
+   {
+    "name": "荷兰豆",
+    "canonical": "荷兰豆",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "10 只",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "2 瓣",
+    "optional": false
+   },
+   {
+    "name": "酱油",
+    "canonical": "酱油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蚝油",
+    "canonical": "蚝油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "糖",
+    "canonical": "白糖",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "胡椒粉",
+    "canonical": "胡椒粉",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "荷兰豆去筋洗净，虾仁解冻加料酒腌一下。",
+   "热锅冷油爆香蒜片，下虾仁炒变色盛出。",
+   "下荷兰豆大火翻炒 2 分钟，加入酱油、蚝油调味。",
+   "倒回虾仁，加盐、糖、胡椒粉炒匀出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆",
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意虾仁不要炒得过老。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r185:lazy": {
+  "id": "ai-var-r185-lazy",
+  "title": "懒人版荸荠炒肉片",
+  "ingredients": [
+   {
+    "name": "荸荠",
+    "canonical": "荸荠",
+    "amount": "1碗",
+    "optional": false
+   },
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "100克",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将猪肉切片，用生抽和淀粉腌制10分钟。",
+   "荸荠去皮切片，青椒切丝。",
+   "锅中加油，肉片炒至变色后加入荸荠和青椒。",
+   "加盐和少许蚝油，快速翻炒均匀即可。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "猪肉不宜炒得过老，以免口感变硬。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r185:lowcal": {
+  "id": "ai-var-r185-lowcal",
+  "title": "低卡版荸荠炒肉片",
+  "ingredients": [
+   {
+    "name": "荸荠",
+    "canonical": "荸荠",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "100 克",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蚝油",
+    "canonical": "蚝油",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "荸荠去皮切片，猪肉切片用生抽和淀粉腌 10 分钟。",
+   "锅中加水煮沸，将腌好的肉片放入蒸锅蒸至变色，取出备用。",
+   "锅中加入少许水，放入荸荠和青椒，煮至断生。",
+   "将蒸好的肉片倒入锅中，加盐和少许蚝油，快速翻炒均匀。",
+   "出锅前撒上葱花增香"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "炒锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意肉片不要蒸得过熟，以免口感变差。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r185:airfryer": {
+  "id": "ai-var-r185-airfryer",
+  "title": "空气炸锅版荸荠炒肉片",
+  "ingredients": [
+   {
+    "name": "荸荠",
+    "canonical": "荸荠",
+    "amount": "1碗",
+    "optional": false
+   },
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "100克",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将猪肉切片，用生抽和淀粉腌制10分钟。",
+   "将荸荠去皮切片，青椒去籽切片。",
+   "将腌制好的猪肉片放入空气炸锅，设定温度200℃，时间约10分钟，至猪肉表面微焦。",
+   "将荸荠和青椒放入空气炸锅，设定温度200℃，时间约5分钟，至荸荠和青椒熟透。",
+   "将空气炸好的猪肉片和荸荠青椒混合，加入少许盐和蚝油，搅拌均匀。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意猪肉不要炸得过焦，以免影响口感。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r185:substitute": {
+  "id": "ai-var-r185-substitute",
+  "title": "家常替代版荸荠炒肉片",
+  "ingredients": [
+   {
+    "name": "荸荠",
+    "canonical": "荸荠",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "100 克",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "荸荠去皮切片，猪肉切片用生抽和淀粉腌 10 分钟。",
+   "热锅下油，先炒肉片至变色盛出。",
+   "下荸荠和青椒翻炒，倒回肉片，加盐和少许蚝油炒匀。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意荸荠切片时不要切得太厚，以免影响口感。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r185:method": {
+  "id": "ai-var-r185-method",
+  "title": "换做法版荸荠炒肉片",
+  "ingredients": [
+   {
+    "name": "荸荠",
+    "canonical": "荸荠",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "100 克",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "荸荠去皮切片，猪肉切片用生抽和淀粉腌 10 分钟。",
+   "将腌好的肉片和荸荠片分别用厨房纸巾吸去多余水分。",
+   "热锅下油，先下肉片快速翻炒至变色，取出备用。",
+   "锅中留少量油，下荸荠片和青椒片翻炒至断生。",
+   "将炒好的肉片倒回锅中，加入少许生抽、盐和少许蚝油快速炒匀。",
+   "出锅前撒上葱花增香。",
+   "将炒好的荸荠炒肉片倒入电饭煲中，用煮饭功能煮熟。",
+   "待电饭煲煮饭完成，打开盖子即可食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将肉片煮得过烂。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r185:leftover": {
+  "id": "ai-var-r185-leftover",
+  "title": "剩菜改造版荸荠炒肉片",
+  "ingredients": [
+   {
+    "name": "荸荠",
+    "canonical": "荸荠",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "100 克",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "面粉",
+    "canonical": "面粉",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蚝油",
+    "canonical": "蚝油",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将剩余的肉片和荸荠、青椒混合。",
+   "打入鸡蛋，加入面粉，搅拌均匀。",
+   "热锅下油，将混合好的肉片和荸荠、青椒糊放入锅中。",
+   "用中火翻炒至肉片熟透，加入葱花、盐、生抽和蚝油调味。",
+   "炒至食材熟透，出锅即可。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "剩菜改造",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意火候，避免肉片炒糊。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r185:fusion": {
+  "id": "ai-var-r185-fusion",
+  "title": "融合版荸荠炒肉片",
+  "ingredients": [
+   {
+    "name": "荸荠",
+    "canonical": "荸荠",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "猪肉",
+    "canonical": "猪肉",
+    "amount": "100 克",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "油",
+    "canonical": "食用油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蚝油",
+    "canonical": "蚝油",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "荸荠去皮切片，猪肉切片用生抽和淀粉腌 10 分钟。",
+   "热锅下油，先炒肉片至变色盛出。",
+   "下荸荠和青椒翻炒，加入番茄酱炒匀。",
+   "倒回肉片，加入黑胡椒和盐调味，炒匀。",
+   "出锅前加入少许蚝油提鲜。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意肉片不要炒得太老，保持嫩滑口感。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r186:lazy": {
+  "id": "ai-var-r186-lazy",
+  "title": "懒人版蚕豆炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "蚕豆",
+    "canonical": "蚕豆",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "蚕豆焯水去豆腥味。",
+   "鸡蛋打散，与蚕豆一起翻炒至熟。",
+   "加盐炒匀，出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意蚕豆焯水时间不宜过长，以免影响口感。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r186:lowcal": {
+  "id": "ai-var-r186-lowcal",
+  "title": "低卡版蚕豆炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "蚕豆",
+    "canonical": "蚕豆",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "蚕豆去壳剥成豆瓣，焯水3分钟去豆腥味。",
+   "鸡蛋打散，加入少许盐，搅拌均匀。",
+   "锅中加入少许水，水开后倒入鸡蛋液，煮至凝固成蛋花，捞出备用。",
+   "锅中加入少许水，放入焯好水的蚕豆瓣，煮至熟透。",
+   "将煮好的蚕豆瓣和蛋花一起放入碗中，拌匀即可食用。"
+  ],
+  "methods": [
+   "煮",
+   "蒸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意蚕豆焯水时间不宜过长，以免豆腥味过重。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r186:airfryer": {
+  "id": "ai-var-r186-airfryer",
+  "title": "空气炸锅版蚕豆炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "蚕豆",
+    "canonical": "蚕豆",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "蚕豆去壳剥成豆瓣，焯水3分钟去豆腥味。",
+   "鸡蛋打散。",
+   "将蚕豆和鸡蛋混合，加入适量的盐。",
+   "将混合好的蚕豆鸡蛋倒入空气炸锅中。",
+   "设置空气炸锅温度为180°C，时间设置为10分钟。",
+   "空气炸锅完成后，取出蚕豆鸡蛋，翻炒均匀即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意蚕豆焯水时间不宜过长，以免影响口感。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r186:substitute": {
+  "id": "ai-var-r186-substitute",
+  "title": "家常替代版蚕豆炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "蚕豆",
+    "canonical": "蚕豆",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "食用油",
+    "canonical": "食用油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "蚕豆去壳剥成豆瓣，焯水3分钟去豆腥味。",
+   "鸡蛋打散，热锅下油，油热后倒入鸡蛋液，炒至蛋花状盛出。",
+   "锅中留少许油，下蚕豆翻炒2分钟，然后倒入炒好的鸡蛋，加盐炒匀。",
+   "翻炒均匀后，出锅装盘。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意蚕豆焯水时间不宜过长，以免影响口感。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r186:method": {
+  "id": "ai-var-r186-method",
+  "title": "换做法版蚕豆炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "蚕豆",
+    "canonical": "蚕豆",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "植物油",
+    "canonical": "食用油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "蚕豆去壳剥成豆瓣，焯水3分钟去豆腥味。",
+   "鸡蛋打散，加入少量盐，搅拌均匀。",
+   "热锅下油，油热后倒入鸡蛋液，炒至半熟盛出。",
+   "锅中留少量油，下蚕豆翻炒2分钟。",
+   "将炒好的鸡蛋倒回锅中，与蚕豆一起翻炒均匀。",
+   "加盐调味，炒匀后出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炒鸡蛋时火不宜太大，以免糊锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r186:leftover": {
+  "id": "ai-var-r186-leftover",
+  "title": "剩菜改造版蚕豆炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "蚕豆",
+    "canonical": "蚕豆",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2 个",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "青豆",
+    "canonical": "豌豆",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "玉米粒",
+    "canonical": "玉米",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将蚕豆、胡萝卜、青豆、玉米粒分别焯水去腥味。",
+   "鸡蛋打散，热锅下油炒成蛋花盛出。",
+   "将焯水后的蔬菜放入锅中，加入炒好的蛋花，加盐炒匀。",
+   "翻炒均匀后，出锅即可。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意蔬菜焯水时间，避免过度烹饪变软。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r186:fusion": {
+  "id": "ai-var-r186-fusion",
+  "title": "融合版蚕豆炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "蚕豆",
+    "canonical": "蚕豆",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "黄油",
+    "canonical": "黄油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香葱",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "蚕豆去壳剥成豆瓣，焯水3分钟去豆腥味。",
+   "鸡蛋打散，热锅加入黄油融化。",
+   "将打散的鸡蛋液倒入锅中，炒至蛋花状，盛出备用。",
+   "锅中留少量黄油，加入蚕豆瓣翻炒2分钟。",
+   "将炒好的鸡蛋倒回锅中，加入适量盐和黑胡椒调味。",
+   "撒上切碎的香葱，快速翻炒均匀，出锅即可。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "牛奶",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炒鸡蛋时不要炒得过老，以免口感变差。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r187:lazy": {
+  "id": "ai-var-r187-lazy",
+  "title": "懒人版蟹棒炒蛋",
+  "ingredients": [
+   {
+    "name": "蟹棒",
+    "canonical": "蟹棒",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "2 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡蛋打散，加入蟹棒和小葱，搅拌均匀。",
+   "热锅加油，倒入混合物，中火翻炒至蛋液凝固。",
+   "撒入剩余葱花，翻炒均匀后出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "鱼",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意油温，避免溅油。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r187:lowcal": {
+  "id": "ai-var-r187-lowcal",
+  "title": "低卡版蟹棒炒蛋",
+  "ingredients": [
+   {
+    "name": "蟹棒",
+    "canonical": "蟹棒",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "2 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "蟹棒撕成条，鸡蛋加少许盐打散，小葱切葱花。",
+   "锅中加水，水开后放入蟹棒蒸3分钟。",
+   "取出蟹棒，沥干水分。",
+   "锅中加入少许水，倒入蛋液，小火推炒至凝固。",
+   "撒入葱花，翻炒均匀，出锅。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "鱼",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意蟹棒不要蒸制时间过长，以免口感变差。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r187:airfryer": {
+  "id": "ai-var-r187-airfryer",
+  "title": "空气炸锅版蟹棒炒蛋",
+  "ingredients": [
+   {
+    "name": "蟹棒",
+    "canonical": "蟹棒",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "2 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将蟹棒撕成条。",
+   "鸡蛋加少许盐打散。",
+   "小葱切葱花。",
+   "将蟹棒条和蛋液混合。",
+   "将混合好的蛋液倒入空气炸锅。",
+   "设置空气炸锅温度为180°C，时间设置为10分钟。",
+   "炸熟后撒上葱花。",
+   "出锅即可食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食"
+  ],
+  "allergens": [
+   "鱼",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意蟹棒和鸡蛋的分量，避免过多油炸导致油脂过多。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r187:substitute": {
+  "id": "ai-var-r187-substitute",
+  "title": "家常替代版蟹棒炒蛋",
+  "ingredients": [
+   {
+    "name": "蟹棒",
+    "canonical": "蟹棒",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "葱",
+    "canonical": "大葱",
+    "amount": "2 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡蛋打入碗中，加入少许盐，打散备用。",
+   "葱切成葱花。",
+   "锅中加入适量油，油热后放入蟹棒，翻炒至蟹棒变软。",
+   "倒入打散的鸡蛋液，用小火慢慢推炒至蛋液凝固。",
+   "撒上葱花，翻炒均匀后出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "鱼",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意油温，避免烧糊。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r187:method": {
+  "id": "ai-var-r187-method",
+  "title": "换做法版蟹棒炒蛋",
+  "ingredients": [
+   {
+    "name": "蟹棒",
+    "canonical": "蟹棒",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "2 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将蟹棒撕成条。",
+   "鸡蛋打入碗中，加少许盐打散。",
+   "小葱洗净切末。",
+   "锅中加入适量水，放入蟹棒煮至蟹棒变软。",
+   "将打散的鸡蛋液倒入锅中，用筷子轻轻搅动，使蛋液均匀分布在蟹棒上。",
+   "煮至蛋液凝固，撒入葱花，关火。",
+   "将煮好的蟹棒炒蛋盛出，放入盘中即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "鱼",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r187:leftover": {
+  "id": "ai-var-r187-leftover",
+  "title": "剩菜改造版蟹棒炒蛋",
+  "ingredients": [
+   {
+    "name": "蟹棒",
+    "canonical": "蟹棒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "油",
+    "canonical": "食用油",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将蟹棒撕成条，胡萝卜和青椒切成丁。",
+   "鸡蛋打散，加入少许盐。",
+   "热锅加油，先下蟹棒和胡萝卜、青椒丁翻炒。",
+   "倒入蛋液，小火推炒至凝固。",
+   "加入生抽调味，撒上葱花，翻炒均匀后出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆",
+   "鱼",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r187:fusion": {
+  "id": "ai-var-r187-fusion",
+  "title": "融合版蟹棒炒蛋",
+  "ingredients": [
+   {
+    "name": "蟹棒",
+    "canonical": "蟹棒",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "2 根",
+    "optional": false
+   },
+   {
+    "name": "酱油",
+    "canonical": "酱油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "胡椒粉",
+    "canonical": "胡椒粉",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "糖",
+    "canonical": "白糖",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "蟹棒撕成条，鸡蛋加少许盐打散，小葱切葱花。",
+   "热锅下油，先放蟹棒略炒。",
+   "倒入蛋液，小火推炒至凝固。",
+   "加入酱油、料酒、胡椒粉、糖调味。",
+   "撒上葱花，翻炒均匀后出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆",
+   "鱼",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "无特殊风险，注意油温不宜过高以免烧糊。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r188:lazy": {
+  "id": "ai-var-r188-lazy",
+  "title": "懒人版虾滑紫菜汤",
+  "ingredients": [
+   {
+    "name": "虾滑",
+    "canonical": "虾滑",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "锅中加入适量水，大火烧开。",
+   "水开后，将虾滑放入锅中，用勺子轻轻团成小丸子。",
+   "虾丸浮起后，撇去浮沫，放入紫菜，煮1分钟。",
+   "加入适量盐和少许香油调味。",
+   "撒上葱花即可关火。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "低卡"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意虾滑不要煮太久，以免口感变差。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r188:lowcal": {
+  "id": "ai-var-r188-lowcal",
+  "title": "低卡版虾滑紫菜汤",
+  "ingredients": [
+   {
+    "name": "虾滑",
+    "canonical": "虾滑",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "锅中加水烧开",
+   "虾滑用勺子团成小丸子下锅",
+   "虾丸浮起后撇去浮沫",
+   "放入紫菜煮1分钟",
+   "加盐和少许香油",
+   "撒葱花即可"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意虾滑不要煮太久，以免口感变差",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r188:airfryer": {
+  "id": "ai-var-r188-airfryer",
+  "title": "空气炸锅版虾滑紫菜汤",
+  "ingredients": [
+   {
+    "name": "虾滑",
+    "canonical": "虾滑",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将虾滑用勺子团成小丸子。",
+   "将水倒入空气炸锅中，预热至200°C。",
+   "将虾丸放入空气炸锅中，炸3-5分钟至表面金黄。",
+   "将紫菜放入炸好的虾丸中，继续炸1分钟。",
+   "加入适量盐和少许香油调味。",
+   "撒上葱花即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r188:substitute": {
+  "id": "ai-var-r188-substitute",
+  "title": "家常替代版虾滑紫菜汤",
+  "ingredients": [
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "锅中加水烧开，虾仁洗净后切成小块。",
+   "鸡蛋打散，加入少许盐，搅拌均匀。",
+   "将虾仁放入沸水中煮至变色。",
+   "将打散的鸡蛋液慢慢倒入锅中，用筷子轻轻搅动，形成蛋花。",
+   "放入紫菜，煮至紫菜变软。",
+   "加盐和少许香油调味，撒上葱花即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "早餐",
+   "素食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意虾仁不要煮太久，以免口感变老。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r188:method": {
+  "id": "ai-var-r188-method",
+  "title": "换做法版虾滑紫菜汤",
+  "ingredients": [
+   {
+    "name": "虾滑",
+    "canonical": "虾滑",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "牛奶",
+    "canonical": "牛奶",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡蛋打散，加入牛奶和盐搅拌均匀。",
+   "将虾滑加入蛋液中，轻轻搅拌均匀。",
+   "锅中加水烧开，将搅拌好的蛋液慢慢倒入锅中，用筷子轻轻搅动，形成细腻的蛋花。",
+   "待蛋花浮起后，放入紫菜煮 1 分钟。",
+   "加盐和少许香油调味，撒上葱花即可。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "早餐",
+   "素食",
+   "宝宝辅食"
+  ],
+  "allergens": [
+   "牛奶",
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让紫菜煮得过久，以免口感变差。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r188:leftover": {
+  "id": "ai-var-r188-leftover",
+  "title": "剩菜改造版虾滑紫菜汤",
+  "ingredients": [
+   {
+    "name": "虾滑",
+    "canonical": "虾滑",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "香菜",
+    "canonical": "香菜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "胡萝卜",
+    "canonical": "胡萝卜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将虾滑和鸡蛋打散，加入少许盐调味。",
+   "锅中加水烧开，将打散的蛋液慢慢倒入锅中，形成蛋花。",
+   "将胡萝卜切成细丝，加入锅中。",
+   "将虾滑和紫菜放入锅中，煮至虾滑熟透，紫菜变软。",
+   "撒上香菜和葱花，加入少许盐和香油调味。",
+   "煮开后即可关火，盛出享用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "剩菜改造",
+   "快手",
+   "一人食",
+   "早餐",
+   "素食"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让鸡蛋煮老。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r188:fusion": {
+  "id": "ai-var-r188-fusion",
+  "title": "融合版虾滑紫菜汤",
+  "ingredients": [
+   {
+    "name": "虾滑",
+    "canonical": "虾滑",
+    "amount": "1盘",
+    "optional": false
+   },
+   {
+    "name": "紫菜",
+    "canonical": "紫菜",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "少许",
+    "optional": false
+   },
+   {
+    "name": "葱花",
+    "canonical": "小葱",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "酱油",
+    "canonical": "酱油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "胡椒粉",
+    "canonical": "胡椒粉",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "锅中加水烧开，加入酱油调味。",
+   "将鸡蛋打散，慢慢倒入锅中，用筷子轻轻搅散成蛋花。",
+   "待蛋花浮起后，加入虾滑，用勺子团成小丸子下锅。",
+   "虾丸浮起后撇去浮沫，放入紫菜煮1分钟。",
+   "加盐和少许香油调味，撒上葱花。",
+   "最后撒上适量胡椒粉提味。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆",
+   "甲壳类",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意虾滑下锅时不要煮太久，以免口感变老。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r189:lazy": {
+  "id": "ai-var-r189-lazy",
+  "title": "懒人版鹌鹑蛋烧五花肉",
+  "ingredients": [
+   {
+    "name": "鹌鹑蛋",
+    "canonical": "鹌鹑蛋",
+    "amount": "20个",
+    "optional": false
+   },
+   {
+    "name": "五花肉",
+    "canonical": "五花肉",
+    "amount": "1块",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鹌鹑蛋煮熟剥壳，五花肉切块焯水。",
+   "锅中放糖炒出糖色，下五花肉上色，加生抽、老抽和料酒。",
+   "加水没过肉，放入鹌鹑蛋，大火烧开后转小火炖煮30分钟。",
+   "待汤汁浓稠后，关火，盖上锅盖焖10分钟，使鹌鹑蛋吸收肉汁。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 40,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭",
+   "一人食"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意火候，避免五花肉烧焦。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r189:lowcal": {
+  "id": "ai-var-r189-lowcal",
+  "title": "低卡版鹌鹑蛋烧五花肉",
+  "ingredients": [
+   {
+    "name": "鹌鹑蛋",
+    "canonical": "鹌鹑蛋",
+    "amount": "20个",
+    "optional": false
+   },
+   {
+    "name": "五花肉",
+    "canonical": "五花肉",
+    "amount": "1块",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鹌鹑蛋煮熟后剥壳备用。",
+   "五花肉切块，焯水去腥。",
+   "锅中加入少量水，放入五花肉，加入生抽、老抽和料酒。",
+   "小火炖煮五花肉，直至肉质软烂。",
+   "加入剥壳的鹌鹑蛋，继续炖煮。",
+   "炖煮过程中，根据需要加入适量水。",
+   "炖煮完成后，大火收汁，使汤汁浓稠。",
+   "出锅前尝味，根据口味调整盐分。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 40,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意控制五花肉的用量，以免摄入过多脂肪。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r189:airfryer": {
+  "id": "ai-var-r189-airfryer",
+  "title": "空气炸锅版鹌鹑蛋烧五花肉",
+  "ingredients": [
+   {
+    "name": "鹌鹑蛋",
+    "canonical": "鹌鹑蛋",
+    "amount": "20个",
+    "optional": false
+   },
+   {
+    "name": "五花肉",
+    "canonical": "五花肉",
+    "amount": "1块",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鹌鹑蛋煮熟后剥壳，五花肉切块焯水。",
+   "将五花肉块放入空气炸锅中，加入适量的糖。",
+   "设置空气炸锅至160℃，炸制五花肉至表面微焦。",
+   "取出五花肉，加入生抽、老抽和料酒。",
+   "再次放入空气炸锅，加入鹌鹑蛋，设置温度至150℃，炸制30分钟。",
+   "最后将五花肉和鹌鹑蛋一起取出，大火收汁。",
+   "将炸好的鹌鹑蛋和五花肉装盘，即可食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "中等",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "下饭"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炸制过程中火候控制，避免五花肉烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r189:substitute": {
+  "id": "ai-var-r189-substitute",
+  "title": "家常替代版鹌鹑蛋烧五花肉",
+  "ingredients": [
+   {
+    "name": "鹌鹑蛋",
+    "canonical": "鹌鹑蛋",
+    "amount": "20个",
+    "optional": false
+   },
+   {
+    "name": "五花肉",
+    "canonical": "五花肉",
+    "amount": "1块",
+    "optional": false
+   },
+   {
+    "name": "糖",
+    "canonical": "白糖",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鹌鹑蛋煮熟后剥壳备用。",
+   "五花肉切块，焯水去腥。",
+   "锅中放糖，小火炒至糖色。",
+   "下五花肉块，翻炒均匀至上色。",
+   "加入生抽、老抽和料酒，翻炒均匀。",
+   "加水没过肉，放入鹌鹑蛋。",
+   "小火炖煮30分钟，期间可翻动。",
+   "大火收汁，出锅前尝味调整。",
+   "装盘，即可享用。"
+  ],
+  "methods": [
+   "炒",
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "中等",
+  "cookware": [
+   "炒锅",
+   "锅"
+  ],
+  "tags": [
+   "下饭"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炖煮过程中不要让汤汁完全收干，以免烧焦。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r189:method": {
+  "id": "ai-var-r189-method",
+  "title": "换做法版鹌鹑蛋烧五花肉",
+  "ingredients": [
+   {
+    "name": "鹌鹑蛋",
+    "canonical": "鹌鹑蛋",
+    "amount": "20个",
+    "optional": false
+   },
+   {
+    "name": "五花肉",
+    "canonical": "五花肉",
+    "amount": "1块",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "糖",
+    "canonical": "白糖",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鹌鹑蛋煮熟剥壳，五花肉切块焯水。",
+   "锅中放糖，小火炒至糖色。",
+   "下五花肉块，翻炒均匀至上色。",
+   "加入生抽、老抽和料酒，翻炒均匀。",
+   "加入水，放入鹌鹑蛋，大火烧开后转小火炖煮30分钟。",
+   "最后大火收汁，出锅前尝味，根据需要调整。",
+   "将炖好的鹌鹑蛋五花肉装盘，撒上葱花或香菜装饰。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "中等",
+  "cookware": [
+   "炒锅",
+   "锅"
+  ],
+  "tags": [
+   "下饭",
+   "一人食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炖煮时间，避免鹌鹑蛋过熟。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r189:leftover": {
+  "id": "ai-var-r189-leftover",
+  "title": "剩菜改造版鹌鹑蛋烧五花肉",
+  "ingredients": [
+   {
+    "name": "鹌鹑蛋",
+    "canonical": "鹌鹑蛋",
+    "amount": "20个",
+    "optional": false
+   },
+   {
+    "name": "五花肉",
+    "canonical": "五花肉",
+    "amount": "1块",
+    "optional": false
+   },
+   {
+    "name": "青椒",
+    "canonical": "青椒",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "洋葱",
+    "canonical": "洋葱",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "糖",
+    "canonical": "白糖",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将鹌鹑蛋和五花肉切成小块，青椒、红椒和洋葱切成丝。",
+   "锅中放油，将五花肉块煸炒至表面微焦。",
+   "加入青椒丝、红椒丝和洋葱丝，继续翻炒至蔬菜变软。",
+   "加入鹌鹑蛋，翻炒均匀。",
+   "加入生抽、老抽和料酒，翻炒均匀。",
+   "加入适量的水，大火烧开后转小火炖煮10分钟。",
+   "最后加入盐和糖调味，翻炒均匀即可出锅。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "剩菜改造",
+   "快手",
+   "下饭"
+  ],
+  "allergens": [
+   "大豆",
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鹌鹑蛋和五花肉的熟度，确保煮熟后再进行烹饪。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r189:fusion": {
+  "id": "ai-var-r189-fusion",
+  "title": "融合版鹌鹑蛋烧五花肉",
+  "ingredients": [
+   {
+    "name": "鹌鹑蛋",
+    "canonical": "鹌鹑蛋",
+    "amount": "20个",
+    "optional": false
+   },
+   {
+    "name": "五花肉",
+    "canonical": "五花肉",
+    "amount": "1块",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鹌鹑蛋煮熟后剥壳备用。",
+   "五花肉切块，焯水去腥。",
+   "锅中放糖炒至糖色，下五花肉块上色。",
+   "加入生抽、老抽和料酒，翻炒均匀。",
+   "加水没过肉块，放入鹌鹑蛋。",
+   "小火炖煮30分钟，直至肉质酥烂。",
+   "大火收汁，出锅前可加入适量葱段提香。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "中等",
+  "cookware": [
+   "炒锅",
+   "锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意炖煮时间，避免肉质过于酥烂。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r190:lazy": {
+  "id": "ai-var-r190-lazy",
+  "title": "懒人版琥珀核桃",
+  "ingredients": [
+   {
+    "name": "核桃",
+    "canonical": "核桃",
+    "amount": "1碗",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "3勺",
+    "optional": false
+   },
+   {
+    "name": "芝麻",
+    "canonical": "芝麻",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "核桃放入预热至150度的烤箱烤8分钟。",
+   "将白糖和少许水放入不粘锅，中小火加热至糖溶解。",
+   "糖液起密集小泡时，倒入核桃快速翻炒，使每颗核桃都裹上糖汁。",
+   "撒上芝麻，关火，将核桃均匀摊开在烤盘上晾凉。"
+  ],
+  "methods": [
+   "烤",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "烤箱",
+   "不粘锅",
+   "烤盘"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意烤箱温度，避免烤焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r190:lowcal": {
+  "id": "ai-var-r190-lowcal",
+  "title": "低卡版琥珀核桃",
+  "ingredients": [
+   {
+    "name": "核桃",
+    "canonical": "核桃",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "芝麻",
+    "canonical": "芝麻",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将核桃放入蒸锅中，蒸约5分钟至熟透。",
+   "将白糖和少许水放入锅中，小火加热至糖溶解。",
+   "将蒸熟的核桃取出，轻轻拍碎。",
+   "将核桃碎放入糖水中快速翻炒，使核桃均匀裹上糖汁。",
+   "撒上芝麻，迅速翻炒均匀。",
+   "将核桃糖芝麻混合物倒在铺有烘焙纸的盘子上，晾凉后即可食用。"
+  ],
+  "methods": [
+   "蒸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "锅",
+   "盘子"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意核桃不宜过量食用，以免引起消化不良。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r190:airfryer": {
+  "id": "ai-var-r190-airfryer",
+  "title": "空气炸锅版琥珀核桃",
+  "ingredients": [
+   {
+    "name": "核桃",
+    "canonical": "核桃",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "芝麻",
+    "canonical": "芝麻",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将核桃放入空气炸锅，设置温度150度，炸8分钟至烤香。",
+   "在锅中加入白糖和少许水，小火熬至起密集小泡。",
+   "将炸好的核桃倒入锅中，快速翻炒使其裹匀糖汁。",
+   "撒上芝麻，趁热将核桃摊开晾凉。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅",
+   "锅"
+  ],
+  "tags": [
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要让糖汁熬得过干，以免烤焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r190:substitute": {
+  "id": "ai-var-r190-substitute",
+  "title": "家常替代版琥珀核桃",
+  "ingredients": [
+   {
+    "name": "核桃",
+    "canonical": "核桃",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "芝麻",
+    "canonical": "芝麻",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将核桃仁放入烤箱，预热至150度，烤8分钟至香脆。",
+   "在锅中加入白糖和少许水，小火加热至糖水起密集小泡。",
+   "倒入核桃仁快速翻炒，使核桃均匀裹上糖汁。",
+   "撒上芝麻，迅速翻炒均匀。",
+   "将核桃仁和糖汁倒入烤盘，摊开晾凉至室温。"
+  ],
+  "methods": [
+   "烤",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "烤箱",
+   "炒锅",
+   "烤盘"
+  ],
+  "tags": [
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意烤箱温度，避免烤焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r190:method": {
+  "id": "ai-var-r190-method",
+  "title": "换做法版琥珀核桃",
+  "ingredients": [
+   {
+    "name": "核桃",
+    "canonical": "核桃",
+    "amount": "1碗",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "3勺",
+    "optional": false
+   },
+   {
+    "name": "芝麻",
+    "canonical": "芝麻",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将核桃仁放入微波炉中，高火加热2分钟至烤香。",
+   "在锅中加入白糖和少量水，用中火煮至糖汁起密集小泡。",
+   "将烤好的核桃仁迅速倒入糖汁中，快速翻炒使核桃均匀裹上糖汁。",
+   "撒上芝麻，立即关火，将核桃仁和糖汁倒入铺有烘焙纸的盘中，摊开晾凉。"
+  ],
+  "methods": [
+   "微波炉"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "微波炉"
+  ],
+  "tags": [
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意微波炉加热时间不宜过长，以免核桃烤焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r190:leftover": {
+  "id": "ai-var-r190-leftover",
+  "title": "剩菜改造版琥珀核桃",
+  "ingredients": [
+   {
+    "name": "核桃",
+    "canonical": "核桃",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "芝麻",
+    "canonical": "芝麻",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "面粉",
+    "canonical": "面粉",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "面包糠",
+    "canonical": "面包糠",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将核桃仁和芝麻混合均匀。",
+   "鸡蛋打散，加入面粉和面包糠，搅拌均匀。",
+   "将核桃仁和芝麻混合物裹上面糊。",
+   "锅中加油，油热后放入裹好的核桃仁和芝麻，炸至金黄捞出。",
+   "将炸好的核桃仁和芝麻放在厨房纸上吸去多余油分。",
+   "将炸好的核桃仁和芝麻与白糖混合，搅拌均匀即可食用。"
+  ],
+  "methods": [
+   "炸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意油温，避免油溅伤人",
+   "油炸时注意油温，食材需沥干水分再下锅，防止溅油烫伤，不要让儿童单独操作。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r190:fusion": {
+  "id": "ai-var-r190-fusion",
+  "title": "融合版琥珀核桃",
+  "ingredients": [
+   {
+    "name": "核桃",
+    "canonical": "核桃",
+    "amount": "1 碗",
+    "optional": false
+   },
+   {
+    "name": "白糖",
+    "canonical": "白糖",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "芝麻",
+    "canonical": "芝麻",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "肉桂粉",
+    "canonical": "桂皮",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "核桃仁烤箱 150 度烤 8 分钟烤香。",
+   "锅中放白糖和少许水，小火熬到起密集小泡。",
+   "加入蜂蜜和肉桂粉，继续小火煮至糖汁浓稠。",
+   "倒入核桃快速翻炒裹匀糖汁，撒芝麻，趁热摊开晾凉。"
+  ],
+  "methods": [
+   "烤",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "烤箱",
+   "锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意糖汁熬制过程中不要烧焦。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r191:lazy": {
+  "id": "ai-var-r191-lazy",
+  "title": "懒人版腰果虾仁",
+  "ingredients": [
+   {
+    "name": "腰果",
+    "canonical": "腰果",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾仁用料酒和盐腌制10分钟。",
+   "将腌制好的虾仁和切丁的黄瓜一起放入空气炸锅，炸5分钟至虾仁变色。",
+   "取出炸好的虾仁和黄瓜，加入炸好的腰果，快速拌匀。",
+   "出锅前撒上少许盐调味即可。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意虾仁不要炸得太久，以免变硬。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r191:lowcal": {
+  "id": "ai-var-r191-lowcal",
+  "title": "低卡版腰果虾仁",
+  "ingredients": [
+   {
+    "name": "腰果",
+    "canonical": "腰果",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾仁用少许盐和料酒腌制10分钟",
+   "黄瓜洗净切丁",
+   "将腌制好的虾仁放入蒸锅中蒸5分钟",
+   "腰果放入微波炉中加热至金黄色",
+   "将蒸好的虾仁和黄瓜丁放入碗中",
+   "撒上加热好的腰果",
+   "加入少许酱油和胡椒粉调味"
+  ],
+  "methods": [
+   "蒸",
+   "微波炉"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅",
+   "微波炉"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "虾仁蒸制时间不宜过长，以免肉质变老",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r191:airfryer": {
+  "id": "ai-var-r191-airfryer",
+  "title": "空气炸锅版腰果虾仁",
+  "ingredients": [
+   {
+    "name": "腰果",
+    "canonical": "腰果",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将腰果放入空气炸锅，预热至160°C，炸约10分钟至金黄捞出。",
+   "虾仁用料酒、盐和胡椒粉腌制10分钟。",
+   "将腌制好的虾仁放入空气炸锅，预热至180°C，炸约5分钟至变色。",
+   "将炸好的虾仁和腰果放入同一个容器中。",
+   "黄瓜洗净切丁，加入虾仁和腰果中。",
+   "加入适量的盐和胡椒粉调味，快速翻匀，即可出锅。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意油温，避免油溅。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r191:substitute": {
+  "id": "ai-var-r191-substitute",
+  "title": "家常替代版腰果虾仁",
+  "ingredients": [
+   {
+    "name": "腰果",
+    "canonical": "腰果",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "油",
+    "canonical": "食用油",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "腰果放入热油中炸至金黄捞出",
+   "虾仁用料酒、盐腌制10分钟",
+   "热锅加油，下虾仁炒至变色",
+   "放入黄瓜丁略炒",
+   "加入适量盐调味",
+   "最后倒入腰果快速翻匀出锅"
+  ],
+  "methods": [
+   "炸",
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅",
+   "漏勺"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "下饭"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意油温，避免腰果炸糊",
+   "油炸时注意油温，食材需沥干水分再下锅，防止溅油烫伤，不要让儿童单独操作。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r191:method": {
+  "id": "ai-var-r191-method",
+  "title": "换做法版腰果虾仁",
+  "ingredients": [
+   {
+    "name": "腰果",
+    "canonical": "腰果",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "面粉",
+    "canonical": "面粉",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "面包糠",
+    "canonical": "面包糠",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾仁洗净，用料酒、盐腌制10分钟。",
+   "鸡蛋打散，面粉和面包糠分别放在两个盘子里。",
+   "将腌制好的虾仁裹上面粉，再裹上面包糠。",
+   "锅中倒入橄榄油，油温5成热时放入裹好的虾仁，炸至金黄捞出。",
+   "黄瓜洗净，切成丁。",
+   "锅中留少许油，放入黄瓜丁翻炒至断生。",
+   "将炸好的虾仁放入黄瓜丁中，快速翻炒均匀，出锅即可。"
+  ],
+  "methods": [
+   "炸"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "一人食",
+   "低脂"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意油温，避免虾仁炸糊。",
+   "油炸时注意油温，食材需沥干水分再下锅，防止溅油烫伤，不要让儿童单独操作。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r191:leftover": {
+  "id": "ai-var-r191-leftover",
+  "title": "剩菜改造版腰果虾仁",
+  "ingredients": [
+   {
+    "name": "腰果",
+    "canonical": "腰果",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "面粉",
+    "canonical": "面粉",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "胡椒粉",
+    "canonical": "胡椒粉",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将虾仁和鸡蛋打散，加入面粉和胡椒粉，搅拌均匀。",
+   "将腰果和黄瓜丁加入虾仁鸡蛋液中，拌匀。",
+   "热锅加油，将混合好的虾仁腰果黄瓜丁液倒入锅中，用中火煎至两面金黄。",
+   "出锅前撒上适量盐调味即可。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "平底锅"
+  ],
+  "tags": [
+   "剩菜改造",
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "甲壳类",
+   "鸡蛋",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意油温，避免煎糊。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r191:fusion": {
+  "id": "ai-var-r191-fusion",
+  "title": "融合版腰果虾仁",
+  "ingredients": [
+   {
+    "name": "腰果",
+    "canonical": "腰果",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "虾仁",
+    "canonical": "虾仁",
+    "amount": "1 盘",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "番茄酱",
+    "canonical": "番茄酱",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "糖",
+    "canonical": "白糖",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "淀粉",
+    "canonical": "淀粉",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "虾仁用料酒、盐和淀粉腌制10分钟。",
+   "腰果放入热油中炸至金黄捞出。",
+   "锅中留少量油，加入番茄酱、糖和黑胡椒，小火煮至酱汁浓稠。",
+   "放入腌制好的虾仁快速翻炒至变色。",
+   "加入炸好的腰果和黄瓜丁，快速翻炒均匀。",
+   "出锅前尝味，根据个人口味调整盐量。",
+   "出锅装盘即可。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "甲壳类"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意油温，避免腰果炸糊。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r192:lazy": {
+  "id": "ai-var-r192-lazy",
+  "title": "懒人版百香果汁",
+  "ingredients": [
+   {
+    "name": "百香果",
+    "canonical": "百香果",
+    "amount": "3个",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将百香果洗净，从顶部切开。",
+   "用勺子挖出果肉，放入杯子中。",
+   "加入蜂蜜，倒入温水。",
+   "搅拌均匀后，加入冰块即可饮用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "夏日饮品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意选择新鲜百香果，避免食用过期果肉。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r192:lowcal": {
+  "id": "ai-var-r192-lowcal",
+  "title": "低卡版百香果汁",
+  "ingredients": [
+   {
+    "name": "百香果",
+    "canonical": "百香果",
+    "amount": "3个",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将百香果洗净，从顶部切开。",
+   "用勺子挖出果肉，放入杯子中。",
+   "加入蜂蜜，搅拌均匀。",
+   "倒入适量冷水，搅拌均匀。",
+   "加入冰块，即可饮用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "夏日饮品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "无特殊风险，注意不要食用过量蜂蜜。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r192:airfryer": {
+  "id": "ai-var-r192-airfryer",
+  "title": "空气炸锅版百香果汁",
+  "ingredients": [
+   {
+    "name": "百香果",
+    "canonical": "百香果",
+    "amount": "3个",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将百香果洗净，用刀轻轻切开。",
+   "用勺子挖出百香果肉。",
+   "将挖出的百香果肉放入空气炸锅专用容器中。",
+   "加入蜂蜜。",
+   "将空气炸锅预热至150°C。",
+   "将装有百香果肉和蜂蜜的容器放入空气炸锅。",
+   "空气炸3分钟，期间可以轻轻摇动容器以确保均匀受热。",
+   "取出容器，待其冷却后倒入凉白开或气泡水。",
+   "加入冰块，搅拌均匀后即可饮用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅",
+   "专用容器",
+   "勺子"
+  ],
+  "tags": [
+   "一人食",
+   "夏日饮品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "空气炸锅操作时请注意安全，避免烫伤。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r192:substitute": {
+  "id": "ai-var-r192-substitute",
+  "title": "家常替代版百香果汁",
+  "ingredients": [
+   {
+    "name": "橙子",
+    "canonical": "橙子",
+    "amount": "3个",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "冰块",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "橙子洗净，切成两半。",
+   "用勺子挖出橙子果肉。",
+   "将橙子果肉放入杯子中。",
+   "加入蜂蜜。",
+   "倒入适量白开水。",
+   "加入冰块。",
+   "搅拌均匀后即可饮用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "夏日饮品",
+   "低卡",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "无特殊风险，注意不要过量饮用蜂蜜。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r192:method": {
+  "id": "ai-var-r192-method",
+  "title": "换做法版百香果汁",
+  "ingredients": [
+   {
+    "name": "百香果",
+    "canonical": "百香果",
+    "amount": "3个",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "冰块",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将百香果洗净，从顶部切开挖出果肉。",
+   "将果肉放入搅拌机中。",
+   "加入蜂蜜。",
+   "倒入适量凉白开或气泡水。",
+   "加入冰块。",
+   "搅拌至均匀，倒入杯中即可饮用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "搅拌机",
+   "杯子"
+  ],
+  "tags": [
+   "夏日饮品",
+   "甜品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r192:leftover": {
+  "id": "ai-var-r192-leftover",
+  "title": "剩菜改造版百香果汁",
+  "ingredients": [
+   {
+    "name": "百香果",
+    "canonical": "百香果",
+    "amount": "3个",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "柠檬汁",
+    "canonical": "柠檬汁",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "冰块",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将百香果切开，挖出果肉。",
+   "将果肉和蜂蜜放入搅拌机中。",
+   "加入适量柠檬汁。",
+   "倒入冰块，搅拌均匀。",
+   "倒入杯中，即可享用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "搅拌机",
+   "杯子"
+  ],
+  "tags": [
+   "夏日饮品",
+   "低卡",
+   "甜品"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "无特殊风险，注意不要将冰块放入过小的杯子中以免溢出。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r192:fusion": {
+  "id": "ai-var-r192-fusion",
+  "title": "融合版百香果汁",
+  "ingredients": [
+   {
+    "name": "百香果",
+    "canonical": "百香果",
+    "amount": "3个",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1勺",
+    "optional": false
+   },
+   {
+    "name": "柠檬汁",
+    "canonical": "柠檬汁",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "冰块",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "百香果洗净，从顶部切开挖出果肉。",
+   "将果肉放入杯子中。",
+   "加入蜂蜜和柠檬汁。",
+   "倒入适量的凉白开或气泡水。",
+   "加入冰块，搅拌均匀后即可饮用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "夏日饮品",
+   "融合菜"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "无特殊风险，注意不要将果肉挖得太深以免挖破果皮。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r193:lazy": {
+  "id": "ai-var-r193-lazy",
+  "title": "懒人版蔓越莓燕麦杯",
+  "ingredients": [
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "3勺",
+    "optional": false
+   },
+   {
+    "name": "蔓越莓",
+    "canonical": "蔓越莓",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将燕麦和蔓越莓混合均匀。",
+   "倒入酸奶。",
+   "放入冰箱冷藏过夜。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "冰箱"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "早餐",
+   "夜宵",
+   "素食",
+   "宝宝辅食"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "无特殊风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r193:lowcal": {
+  "id": "ai-var-r193-lowcal",
+  "title": "低卡版蔓越莓燕麦杯",
+  "ingredients": [
+   {
+    "name": "蔓越莓",
+    "canonical": "蔓越莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "低脂牛奶",
+    "canonical": "牛奶",
+    "amount": "1 杯",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将燕麦均匀铺在杯底",
+   "倒入低脂牛奶，使其没过燕麦",
+   "撒上蔓越莓干",
+   "重复以上步骤，直至杯满",
+   "盖好杯盖，放入冰箱冷藏过夜",
+   "第二天早上取出即可食用"
+  ],
+  "methods": [
+   "蒸",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "早餐",
+   "一人食"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "无特殊风险，注意选择低脂牛奶",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r193:airfryer": {
+  "id": "ai-var-r193-airfryer",
+  "title": "空气炸锅版蔓越莓燕麦杯",
+  "ingredients": [
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "3勺",
+    "optional": false
+   },
+   {
+    "name": "蔓越莓干",
+    "canonical": "蔓越莓",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将燕麦和蔓越莓干混合均匀。",
+   "将混合好的燕麦和蔓越莓干倒入空气炸锅中。",
+   "预热空气炸锅至180°C。",
+   "将酸奶倒入空气炸锅中的燕麦和蔓越莓干上。",
+   "关闭空气炸锅，将混合物放入空气炸锅中，设置时间为5分钟。",
+   "取出空气炸锅中的蔓越莓燕麦杯，放入冰箱冷藏过夜。",
+   "第二天早上取出即可食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "早餐"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅的温度和时间，避免烧焦。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r193:substitute": {
+  "id": "ai-var-r193-substitute",
+  "title": "家常替代版蔓越莓燕麦杯",
+  "ingredients": [
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "3勺",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   },
+   {
+    "name": "蔓越莓",
+    "canonical": "蔓越莓",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "在杯底铺上一层燕麦",
+   "倒入一层酸奶",
+   "撒上适量的蔓越莓",
+   "重复以上步骤，直至杯满",
+   "盖好杯盖，放入冰箱冷藏过夜",
+   "第二天早上即可食用"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "快手",
+   "一人食",
+   "早餐",
+   "夜宵",
+   "甜品"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "无特殊风险，注意食材新鲜度"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r193:method": {
+  "id": "ai-var-r193-method",
+  "title": "换做法版蔓越莓燕麦杯",
+  "ingredients": [
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "3勺",
+    "optional": false
+   },
+   {
+    "name": "蔓越莓",
+    "canonical": "蔓越莓",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将燕麦放入碗中，加入适量的酸奶，搅拌均匀。",
+   "撒上蔓越莓和坚果。",
+   "加入蜂蜜调味。",
+   "将混合好的燕麦杯放入冰箱冷藏过夜。",
+   "第二天早上取出，即可享用。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "快手",
+   "早餐",
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要添加过多的蜂蜜，以免过甜。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r193:leftover": {
+  "id": "ai-var-r193-leftover",
+  "title": "剩菜改造版蔓越莓燕麦杯",
+  "ingredients": [
+   {
+    "name": "蔓越莓",
+    "canonical": "蔓越莓",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将剩余的燕麦和蔓越莓混合均匀。",
+   "在杯底倒入一层酸奶。",
+   "撒上混合好的燕麦和蔓越莓。",
+   "重复步骤2和3，直至杯满。",
+   "最后在顶层撒上蜂蜜和坚果。",
+   "放入冰箱冷藏过夜，第二天即可享用。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "剩菜改造",
+   "甜品",
+   "一人食"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意酸奶不要加太多，以免太稀"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r193:fusion": {
+  "id": "ai-var-r193-fusion",
+  "title": "融合版蔓越莓燕麦杯",
+  "ingredients": [
+   {
+    "name": "蔓越莓",
+    "canonical": "蔓越莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "燕麦",
+    "canonical": "燕麦",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "肉桂粉",
+    "canonical": "桂皮",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "在杯底铺上一层燕麦",
+   "倒入一层酸奶，加入适量蜂蜜和肉桂粉调味",
+   "撒上蔓越莓干",
+   "重复以上步骤，直至杯满",
+   "盖好杯盖，放入冰箱冷藏过夜"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "牛奶",
+   "麸质"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要添加过多的蜂蜜，以免过甜"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r194:lazy": {
+  "id": "ai-var-r194-lazy",
+  "title": "懒人版椰子鸡汤",
+  "ingredients": [
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "鸡肉",
+    "canonical": "鸡肉",
+    "amount": "半只",
+    "optional": false
+   },
+   {
+    "name": "红枣",
+    "canonical": "红枣",
+    "amount": "几颗",
+    "optional": false
+   },
+   {
+    "name": "枸杞",
+    "canonical": "枸杞",
+    "amount": "1小把",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "椰子倒出椰汁，挖椰肉切块。",
+   "鸡肉切块，焯水去血沫。",
+   "将鸡肉、椰肉、椰汁和清水放入砂锅。",
+   "加入红枣，大火烧开后转小火炖煮40分钟。",
+   "加入枸杞，继续煮5分钟。",
+   "少许盐调味即可。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "砂锅"
+  ],
+  "tags": [
+   "快手",
+   "一人食"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡肉焯水时不要煮太久，以免肉质变硬。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r194:lowcal": {
+  "id": "ai-var-r194-lowcal",
+  "title": "低卡版椰子鸡汤",
+  "ingredients": [
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "鸡肉",
+    "canonical": "鸡肉",
+    "amount": "半只",
+    "optional": false
+   },
+   {
+    "name": "红枣",
+    "canonical": "红枣",
+    "amount": "几颗",
+    "optional": false
+   },
+   {
+    "name": "枸杞",
+    "canonical": "枸杞",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "清水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "椰子倒出椰汁，挖椰肉切块。",
+   "鸡肉切块，焯水去血沫。",
+   "鸡肉和椰肉放入砂锅，加入椰汁和清水。",
+   "放入红枣，小火炖煮40分钟。",
+   "加入枸杞，继续煮5分钟。",
+   "少许盐调味即可。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "砂锅"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "鸡肉需焯水去血沫，否则汤色不佳。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r194:airfryer": {
+  "id": "ai-var-r194-airfryer",
+  "title": "空气炸锅版椰子鸡汤",
+  "ingredients": [
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "鸡肉",
+    "canonical": "鸡肉",
+    "amount": "半只",
+    "optional": false
+   },
+   {
+    "name": "红枣",
+    "canonical": "红枣",
+    "amount": "几颗",
+    "optional": false
+   },
+   {
+    "name": "枸杞",
+    "canonical": "枸杞",
+    "amount": "1 小把",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "椰子倒出椰汁，挖椰肉切块。",
+   "鸡肉切块，焯水。",
+   "将鸡肉和椰肉放入空气炸锅篮中。",
+   "加入椰汁和清水。",
+   "放入红枣。",
+   "设置空气炸锅温度为150℃，时间设置为40分钟。",
+   "40分钟后取出，加入枸杞再煮5分钟。",
+   "少许盐调味，即可食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅"
+  ],
+  "tags": [
+   "一人食",
+   "低脂",
+   "剩菜改造"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡肉和椰肉不要过多，以免空气炸锅内溢出。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r194:substitute": {
+  "id": "ai-var-r194-substitute",
+  "title": "家常替代版椰子鸡汤",
+  "ingredients": [
+   {
+    "name": "鸡肉",
+    "canonical": "鸡肉",
+    "amount": "半只",
+    "optional": false
+   },
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "红枣",
+    "canonical": "红枣",
+    "amount": "几颗",
+    "optional": false
+   },
+   {
+    "name": "枸杞",
+    "canonical": "枸杞",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "清水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "鸡肉切块，放入沸水中焯水去血沫。",
+   "椰子打开，取出椰肉，切成小块。",
+   "将鸡肉和椰肉放入砂锅中，加入清水。",
+   "放入红枣，大火烧开后转小火炖煮40分钟。",
+   "加入枸杞，继续煮5分钟。",
+   "根据口味加入少许盐调味，即可食用。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "砂锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭",
+   "一人食",
+   "素食",
+   "剩菜改造"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡肉焯水时不要煮太久，以免肉质变硬。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r194:method": {
+  "id": "ai-var-r194-method",
+  "title": "换做法版椰子鸡汤",
+  "ingredients": [
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "1个",
+    "optional": false
+   },
+   {
+    "name": "鸡肉",
+    "canonical": "鸡肉",
+    "amount": "半只",
+    "optional": false
+   },
+   {
+    "name": "红枣",
+    "canonical": "红枣",
+    "amount": "几颗",
+    "optional": false
+   },
+   {
+    "name": "枸杞",
+    "canonical": "枸杞",
+    "amount": "1小把",
+    "optional": false
+   },
+   {
+    "name": "清水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "少许",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "椰子倒出椰汁，挖椰肉切块。",
+   "鸡肉切块，放入沸水中焯水去血沫。",
+   "将鸡肉、椰肉、椰汁和清水放入锅中。",
+   "放入红枣，大火烧开后转小火炖煮。",
+   "炖煮40分钟后，加入枸杞继续煮5分钟。",
+   "最后根据口味加入少许盐调味即可。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭",
+   "一人食",
+   "早餐",
+   "夜宵",
+   "素食",
+   "剩菜改造",
+   "宝宝辅食",
+   "减脂餐",
+   "低脂",
+   "甜品",
+   "海鲜",
+   "夏日饮品",
+   "融合菜"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡肉焯水时不要煮得太久，以免肉质变老。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r194:leftover": {
+  "id": "ai-var-r194-leftover",
+  "title": "剩菜改造版椰子鸡汤",
+  "ingredients": [
+   {
+    "name": "鸡肉",
+    "canonical": "鸡肉",
+    "amount": "半只",
+    "optional": false
+   },
+   {
+    "name": "红枣",
+    "canonical": "红枣",
+    "amount": "几颗",
+    "optional": false
+   },
+   {
+    "name": "枸杞",
+    "canonical": "枸杞",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "清水",
+    "canonical": "清水",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将剩余的鸡肉和椰肉切成小块。",
+   "将鸡肉块放入锅中，加入清水。",
+   "大火煮沸后撇去浮沫。",
+   "加入红枣和枸杞，转小火炖煮。",
+   "炖煮约 30 分钟，根据个人口味调整盐的用量。",
+   "将炖好的椰子鸡汤过滤去渣，重新加热至沸腾。",
+   "将鸡汤倒入碗中，加入适量的椰子肉，搅拌均匀即可食用。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 30,
+  "difficulty": "简单",
+  "cookware": [
+   "锅"
+  ],
+  "tags": [
+   "剩菜改造",
+   "一人食",
+   "低脂"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要食用过夜的剩菜，以免食物中毒。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r194:fusion": {
+  "id": "ai-var-r194-fusion",
+  "title": "融合版椰子鸡汤",
+  "ingredients": [
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "1 个",
+    "optional": false
+   },
+   {
+    "name": "鸡肉",
+    "canonical": "鸡肉",
+    "amount": "半只",
+    "optional": false
+   },
+   {
+    "name": "红枣",
+    "canonical": "红枣",
+    "amount": "几颗",
+    "optional": false
+   },
+   {
+    "name": "枸杞",
+    "canonical": "枸杞",
+    "amount": "1 小把",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "几片",
+    "optional": false
+   },
+   {
+    "name": "大葱",
+    "canonical": "大葱",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "料酒",
+    "canonical": "料酒",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "老抽",
+    "canonical": "老抽",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "胡椒粉",
+    "canonical": "胡椒粉",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "椰子倒出椰汁，挖椰肉切块。",
+   "鸡肉切块，焯水去血沫。",
+   "生姜切片，大葱切段。",
+   "鸡肉和椰肉放入锅中，加入椰汁、清水、姜片、葱段、料酒。",
+   "大火烧开后转小火炖煮40分钟。",
+   "加入生抽、老抽、胡椒粉调味。",
+   "放入枸杞，再煮5分钟。",
+   "最后加入少许盐调味，即可出锅。"
+  ],
+  "methods": [
+   "炖"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 45,
+  "difficulty": "中等",
+  "cookware": [
+   "砂锅"
+  ],
+  "tags": [
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意鸡肉焯水时不要煮太久，以免肉质变老。",
+   "炖煮注意用火时长，离人关火；高压锅使用前检查密封圈和排气阀。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r195:lazy": {
+  "id": "ai-var-r195-lazy",
+  "title": "懒人版缤纷水果杯",
+  "ingredients": [
+   {
+    "name": "石榴",
+    "canonical": "石榴",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "无花果",
+    "canonical": "无花果",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "小半个",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将石榴剥出籽。",
+   "无花果和椰肉切小块。",
+   "将酸奶倒入杯中，铺上一层水果。",
+   "重复步骤3，直到杯满。",
+   "顶部用石榴籽点缀即可。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "快手",
+   "甜品",
+   "一人食"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r195:lowcal": {
+  "id": "ai-var-r195-lowcal",
+  "title": "低卡版缤纷水果杯",
+  "ingredients": [
+   {
+    "name": "石榴",
+    "canonical": "石榴",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "无花果",
+    "canonical": "无花果",
+    "amount": "2 个",
+    "optional": false
+   },
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "小半个",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1 杯",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将石榴剥出籽",
+   "无花果和椰肉切小块",
+   "杯中先倒入一层酸奶",
+   "铺上一层无花果和椰肉",
+   "重复叠加酸奶和水果",
+   "顶部用石榴籽点缀"
+  ],
+  "methods": [
+   "蒸",
+   "煮"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "水果杯",
+   "勺子"
+  ],
+  "tags": [
+   "低卡",
+   "减脂餐",
+   "甜品"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+   "煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r195:airfryer": {
+  "id": "ai-var-r195-airfryer",
+  "title": "空气炸锅版缤纷水果杯",
+  "ingredients": [
+   {
+    "name": "石榴",
+    "canonical": "石榴",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "无花果",
+    "canonical": "无花果",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "小半个",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将石榴剥出籽",
+   "无花果和椰肉切小块",
+   "将水果块放入空气炸锅篮中",
+   "倒入酸奶至水果块的一半高度",
+   "重复叠加水果和酸奶，直至杯满",
+   "撒上石榴籽点缀",
+   "设置空气炸锅至150°C",
+   "炸制5-7分钟，或至水果表面微焦"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 7,
+  "difficulty": "简单",
+  "cookware": [
+   "空气炸锅篮"
+  ],
+  "tags": [
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意空气炸锅温度，避免水果烧焦"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r195:substitute": {
+  "id": "ai-var-r195-substitute",
+  "title": "家常替代版缤纷水果杯",
+  "ingredients": [
+   {
+    "name": "草莓",
+    "canonical": "草莓",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "1根",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "草莓洗净去蒂，蓝莓洗净。",
+   "香蕉去皮切片。",
+   "杯中先倒入一层酸奶。",
+   "铺上一层草莓片，再铺一层蓝莓。",
+   "重复步骤3，直到杯中铺满水果。",
+   "最后用香蕉片装饰顶部，用蓝莓点缀即可。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "一人食",
+   "甜品"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意水果新鲜度，避免食用变质水果。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r195:leftover": {
+  "id": "ai-var-r195-leftover",
+  "title": "剩菜改造版缤纷水果杯",
+  "ingredients": [
+   {
+    "name": "石榴",
+    "canonical": "石榴",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "无花果",
+    "canonical": "无花果",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "小半个",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将石榴剥出籽。",
+   "无花果和椰肉切小块。",
+   "在杯中先倒入一层酸奶。",
+   "铺上一层无花果和椰肉。",
+   "重复步骤3和4，直到杯满。",
+   "在最顶层撒上石榴籽。",
+   "加入适量蜂蜜调味。",
+   "轻轻搅拌均匀后即可食用。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "甜品",
+   "一人食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "注意不要将石榴籽误食过多，以免影响消化。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r195:fusion": {
+  "id": "ai-var-r195-fusion",
+  "title": "融合版缤纷水果杯",
+  "ingredients": [
+   {
+    "name": "石榴",
+    "canonical": "石榴",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "无花果",
+    "canonical": "无花果",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "小半个",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "适量",
+    "optional": false
+   },
+   {
+    "name": "肉桂粉",
+    "canonical": "桂皮",
+    "amount": "适量",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将石榴剥出籽，备用。",
+   "无花果和椰肉切小块，备用。",
+   "在杯中先倒入一层酸奶。",
+   "铺上一层无花果和椰肉。",
+   "再倒入一层酸奶。",
+   "重复步骤3和4，直到杯满。",
+   "在最顶层用石榴籽点缀。",
+   "在酸奶上撒上适量蜂蜜和肉桂粉调味。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "融合菜",
+   "甜品"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
+ },
+ "r195:method": {
+  "id": "ai-var-r195-method",
+  "title": "换做法版缤纷水果杯",
+  "ingredients": [
+   {
+    "name": "石榴",
+    "canonical": "石榴",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "无花果",
+    "canonical": "无花果",
+    "amount": "2个",
+    "optional": false
+   },
+   {
+    "name": "椰子",
+    "canonical": "椰子",
+    "amount": "小半个",
+    "optional": false
+   },
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1杯",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "将石榴剥出籽，备用。",
+   "无花果和椰肉切小块。",
+   "将切好的水果块放入杯中。",
+   "倒入酸奶。",
+   "重复步骤2和3，直到杯满。",
+   "顶部用石榴籽点缀。",
+   "放入冰箱冷藏一段时间，使其更加美味。"
+  ],
+  "methods": [
+   "凉拌"
+  ],
+  "cuisine": "AI 创意",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "杯子"
+  ],
+  "tags": [
+   "甜品",
+   "一人食"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+   "无特殊风险。"
+  ],
+  "source": "GLM AI 生成（glm-4-flash）",
+  "license": "AI-generated, see About",
+  "is_ai_generated": true
  }
 }
