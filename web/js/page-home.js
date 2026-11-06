@@ -137,6 +137,12 @@
     CMF.toast("已添加：" + canonical);
   });
   document.getElementById("btn-random").onclick = randomBox;
+  document.getElementById("btn-surprise").onclick = () => {
+    const recipes = CMF.data.recipes;
+    if (!recipes.length) return;
+    const pick = recipes[Math.floor(Math.random() * recipes.length)];
+    location.href = "recipe.html?id=" + encodeURIComponent(pick.id);
+  };
   document.getElementById("btn-blindbox-page").onclick = () => {
     location.href = "wildcard.html?blind=1";
   };
