@@ -10,6 +10,7 @@
     feedback: "cmf.feedback",
     prefs: "cmf.prefs",
     plan: "cmf.plan",
+    favorites: "cmf.favorites",
   };
 
   CMF.KEYS = KEYS;
@@ -88,6 +89,16 @@
 
   CMF.getPrefs = () => readJSON(KEYS.prefs, { tags: [] });
   CMF.setPrefs = (prefs) => writeJSON(KEYS.prefs, prefs);
+
+  CMF.getFavorites = () => readJSON(KEYS.favorites, []);
+  CMF.setFavorites = (list) => writeJSON(KEYS.favorites, list);
+  CMF.toggleFavorite = (recipeId) => {
+    const set = new Set(CMF.getFavorites());
+    if (set.has(recipeId)) set.delete(recipeId);
+    else set.add(recipeId);
+    CMF.setFavorites([...set]);
+    return set.has(recipeId);
+  };
 
   CMF.getPlan = () => readJSON(KEYS.plan, { recipeIds: [], checked: [] });
   CMF.setPlan = (plan) => writeJSON(KEYS.plan, plan);

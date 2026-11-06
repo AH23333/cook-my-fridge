@@ -40,8 +40,10 @@
 
     const ideasEntry = CMF.data.ai.ideas.find((x) => x.key === recipe.id);
 
+    const isFav = new Set(CMF.getFavorites()).has(recipe.id);
     root.innerHTML =
-      `<article class="detail"><h1>${CMF.esc(recipe.title)}</h1>` +
+      `<article class="detail"><h1>${CMF.esc(recipe.title)} ` +
+      `<button class="btn btn-sm detail-fav" style="vertical-align:middle">${isFav ? "♥ 已收藏" : "♡ 收藏"}</button></h1>` +
       '<div class="meta" style="display:flex;gap:14px;flex-wrap:wrap;color:var(--ink-soft);font-size:13.5px">' +
       `<span>⏱ ${recipe.time_minutes} 分钟</span><span>🎯 ${CMF.esc(recipe.difficulty)}</span>` +
       `<span>🍳 ${CMF.esc(recipe.methods.join("、"))}</span><span>🍽️ ${CMF.esc(recipe.cookware.join("、"))}</span>` +
@@ -77,6 +79,12 @@
         : "") +
       `<p style="font-size:12.5px;color:var(--ink-soft);margin-top:16px">来源：${CMF.esc(recipe.source)} · 许可证：${CMF.esc(recipe.license)}</p>` +
       "</article>";
+
+    const favBtn = root.querySelector(".detail-fav");
+    favBtn.onclick = () => {
+      CMF.toggleFavorite(recipe.id);
+      render(recipe);
+    };
 
     root.querySelectorAll(".ai-actions .btn").forEach((btn) => {
       btn.onclick = () => {

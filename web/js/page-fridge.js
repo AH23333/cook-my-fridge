@@ -140,6 +140,44 @@
     });
   }
 
+  function renderFavorites() {
+    const root = document.getElementById("favorites-content");
+    const ids = CMF.getFavorites();
+    if (!ids.length) {
+      root.innerHTML = '<div class="empty">还没有收藏，点菜谱上的 ♡ 收藏起来。</div>';
+      return;
+    }
+    const ai = CMF.data.ai;
+    const all = [].concat(
+      CMF.data.recipes,
+      ai.wildcards,
+      ai.blindboxes,
+      ai.variants
+    );
+    const byId = new Map(all.map((r) => [r.id, r]));
+    root.innerHTML =
+      '<ul style="margin:0;display:flex;flex-direction:column;gap:6px">' +
+      ids
+        .map((id) => {
+          const r = byId.get(id);
+          if (!r) return "";
+          const isAi = r.is_ai_generated;
+          const href = isAi
+            ? "wildcard.html?key=" + encodeURIComponent(r.id)
+            : "recipe.html?id=" + encodeURIComponent(r.id);
+          return `<li><a href="${href}">${CMF.emojiOf(r.ingredients[0] ? r.ingredients[0].canonical : "")} ${CMF.esc(r.title)}</a>
+            <button class="btn btn-sm fav-remove" data-remove="${CMF.esc(id)}" style="padding:2px 8px;margin-left:6px">移除</button></li>`;
+        })
+        .join("") +
+      "</ul>";
+    root.querySelectorAll(".fav-remove").forEach((btn) => {
+      btn.onclick = () => {
+        CMF.toggleFavorite(btn.dataset.remove);
+        renderFavorites();
+      };
+    });
+  }
+
   function renderPlan() {
     const root = document.getElementById("plan-content");
     const plan = CMF.getPlan();
@@ -197,6 +235,7 @@
     renderHistory();
     renderPrefs();
     renderAllergens();
+    renderFavorites();
     renderPlan();
     renderShare();
   }
