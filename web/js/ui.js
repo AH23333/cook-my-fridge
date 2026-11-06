@@ -13,6 +13,16 @@
       .replace(/'/g, "&#39;");
   };
 
+  CMF.scaleAmount = function (amount, factor) {
+    const text = String(amount);
+    const match = text.match(/^(\d+(?:\.\d+)?)(.*)$/);
+    if (!match) return text; // non-numeric amounts such as 少许 / 半勺 stay unchanged
+    const value = parseFloat(match[1]) * factor;
+    const rounded = Math.round(value * 10) / 10;
+    const shown = Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
+    return shown + match[2];
+  };
+
   let toastTimer = null;
   CMF.toast = function (msg) {
     let node = document.querySelector(".toast");

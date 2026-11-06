@@ -449,3 +449,10 @@ footer.site-footer {
   flex-wrap: wrap;
 }
 .cooking-controls .btn[disabled] { opacity: .45; cursor: default; }
+
+.factor-stepper .factor-btn { padding: 4px 10px; }
+.factor-stepper .factor-active {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
