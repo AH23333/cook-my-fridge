@@ -12,6 +12,7 @@
     plan: "cmf.plan",
     favorites: "cmf.favorites",
     week: "cmf.week",
+    urgent: "cmf.urgent",
   };
 
   CMF.KEYS = KEYS;
@@ -100,6 +101,16 @@
     else set.add(recipeId);
     CMF.setFavorites([...set]);
     return set.has(recipeId);
+  };
+
+  CMF.getUrgent = () => readJSON(KEYS.urgent, []);
+  CMF.setUrgent = (list) => writeJSON(KEYS.urgent, list);
+  CMF.toggleUrgent = (canonical) => {
+    const set = new Set(CMF.getUrgent());
+    if (set.has(canonical)) set.delete(canonical);
+    else set.add(canonical);
+    CMF.setUrgent([...set]);
+    return set.has(canonical);
   };
 
   CMF.getPlan = () => readJSON(KEYS.plan, { recipeIds: [], checked: [] });

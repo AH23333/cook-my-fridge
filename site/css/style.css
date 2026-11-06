@@ -370,6 +370,19 @@ a:hover { text-decoration: underline; }
   margin-bottom: 12px;
 }
 .cleanout-list { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.chip.urgent {
+  border-color: #f97316;
+  background: #fff7ed;
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.18);
+}
+.chip .urg {
+  font-size: 12px;
+  padding: 0 2px;
+  margin-left: 2px;
+}
+.chip.urgent .urg {
+  filter: drop-shadow(0 0 2px rgba(249, 115, 22, 0.6));
+}
 .nutrition-badges {
   display: flex;
   align-items: center;

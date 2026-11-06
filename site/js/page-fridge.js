@@ -13,16 +13,19 @@
       fridgeRoot.innerHTML = '<div class="empty">冰箱是空的，去 <a href="index.html">首页</a> 点几样食材。</div>';
       return;
     }
+    const urgent = new Set(CMF.getUrgent());
     fridgeRoot.innerHTML =
-      '<div class="chip-grid" style="grid-template-columns:repeat(auto-fill,minmax(120px,1fr))">' +
+      '<div class="chip-grid" style="grid-template-columns:repeat(auto-fill,minmax(140px,1fr))">' +
       list
         .map(
           (c) =>
-            `<span class="chip selected" style="cursor:default">${CMF.emojiOf(c)} <span class="name">${CMF.esc(c)}</span>` +
-            `<span class="x" data-name="${CMF.esc(c)}" style="margin-left:auto;cursor:pointer">×</span></span>`
+            `<span class="chip selected ${urgent.has(c) ? "urgent" : ""}" style="cursor:default">${CMF.emojiOf(c)} <span class="name">${CMF.esc(c)}</span>` +
+            `<span class="urg" data-name="${CMF.esc(c)}" title="标记快过期，优先消耗" style="cursor:pointer">⏰</span>` +
+            `<span class="x" data-name="${CMF.esc(c)}" style="cursor:pointer">×</span></span>`
         )
         .join("") +
       "</div>" +
+      '<p class="hint" style="margin:10px 0 0">点 ⏰ 标记快过期，清冰箱方案会优先消耗这些食材。</p>' +
       '<div style="margin-top:14px;display:flex;gap:9px;flex-wrap:wrap">' +
       `<a class="btn btn-primary btn-sm" href="result.html?i=${CMF.encodeSelected(list)}">用这些食材开饭</a>` +
       '<button class="btn btn-sm" id="btn-clear-fridge">清空冰箱</button></div>';
@@ -31,11 +34,20 @@
       x.onclick = () => {
         const next = CMF.getFridge().filter((c) => c !== x.dataset.name);
         CMF.setFridge(next);
+        const u = CMF.getUrgent().filter((c) => c !== x.dataset.name);
+        CMF.setUrgent(u);
+        renderAll();
+      };
+    });
+    fridgeRoot.querySelectorAll(".urg").forEach((b) => {
+      b.onclick = () => {
+        CMF.toggleUrgent(b.dataset.name);
         renderAll();
       };
     });
     fridgeRoot.querySelector("#btn-clear-fridge").onclick = () => {
       CMF.setFridge([]);
+      CMF.setUrgent([]);
       renderAll();
     };
   }
@@ -319,6 +331,7 @@
     const plan = CMF.cleanoutPlan(CMF.data.recipes, fridge, {
       maxRecipes: 4,
       maxExtra: 3,
+      urgent: CMF.getUrgent(),
     });
     if (!plan.selected.length) {
       root.innerHTML = '<div class="empty">暂无能消耗这些食材的菜谱组合。</div>';
