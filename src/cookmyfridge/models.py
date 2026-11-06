@@ -33,6 +33,34 @@ COOKING_METHODS: tuple[str, ...] = (
 
 DIFFICULTIES: tuple[str, ...] = ("简单", "中等", "较难")
 
+# Aliases that models frequently emit, mapped onto controlled cooking methods.
+METHOD_ALIASES: dict[str, str] = {
+    "拌": "凉拌",
+    "凉拌菜": "凉拌",
+    "焖": "炖",
+    "烧": "炖",
+    "红烧": "炖",
+    "焯": "煮",
+    "白灼": "煮",
+    "灼": "煮",
+    "烘焙": "烤",
+    "焗": "烤",
+    "泡": "免开火",
+    "无需加热": "免开火",
+    "不用开火": "免开火",
+    "搅拌": "免开火",
+    "搅匀": "免开火",
+    "混合": "免开火",
+    "搅打": "免开火",
+}
+
+TAG_ALIASES: dict[str, str] = {
+    "快手菜": "快手",
+    "快手料理": "快手",
+    "减脂": "减脂餐",
+    "低热量": "低卡",
+}
+
 # Default tags used across the dataset and the AI batch jobs.
 KNOWN_TAGS: tuple[str, ...] = (
     "快手",
