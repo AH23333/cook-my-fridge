@@ -69,8 +69,11 @@ def _recipe_from_payload(
     ingredient_uses: list[IngredientUse] = []
     unknown: list[str] = []
     seen: set[str] = set()
+    generic_terms = {"水果", "坚果", "蔬菜", "肉类", "配料", "调料", "适量", "少许"}
     for row in raw_ingredients:
         raw_name = str(row.get("name", "")).strip()
+        if raw_name in generic_terms:
+            continue
         canonical = normalize_strict(raw_name)
         if canonical is None:
             unknown.append(raw_name)
