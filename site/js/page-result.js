@@ -15,7 +15,8 @@
     const methods = methodSel.value ? [CMF.normalizeMethod(methodSel.value)] : [];
     const maxTime = timeSel.value ? Number(timeSel.value) : null;
     const difficulty = diffSel.value ? [diffSel.value] : [];
-    return { methods, maxTime, difficulty, tags: [] };
+    const tags = CMF.getPrefs().tags || [];
+    return { methods, maxTime, difficulty, tags };
   }
 
   function bucketNode(badgeClass, badge, title, matches, wildcardPage) {
@@ -51,6 +52,43 @@
     }));
   }
 
+  function renderUnlock() {
+    const panel = document.getElementById("unlock-panel");
+    // Unfiltered Almost matches so suggestions reflect the whole dataset.
+    const all = CMF.search(CMF.data.recipes, selected);
+    const freq = {};
+    all.almostThere.forEach((m) => {
+      new Set(m.missing).forEach((c) => {
+        freq[c] = (freq[c] || 0) + 1;
+      });
+    });
+    const top = Object.entries(freq)
+      .sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1))
+      .slice(0, 6);
+    if (!top.length) {
+      panel.innerHTML = "";
+      return;
+    }
+    panel.innerHTML =
+      '<h3 class="section-title" style="margin-top:16px">🛒 再买一样，就能多做</h3>' +
+      '<div class="chip-grid">' +
+      top
+        .map(
+          ([c, n]) =>
+            `<span class="chip unlock-chip" data-add="${CMF.esc(c)}">${CMF.emojiOf(c)} ${CMF.esc(c)} <strong>+${n}</strong></span>`
+        )
+        .join("") +
+      "</div>";
+    panel.querySelectorAll(".unlock-chip").forEach((chip) => {
+      chip.onclick = () => {
+        const next = selected.concat(chip.dataset.add).filter(
+          (c, i, arr) => arr.indexOf(c) === i
+        );
+        location.href = "result.html?i=" + CMF.encodeSelected(next);
+      };
+    });
+  }
+
   function render() {
     const result = CMF.search(CMF.data.recipes, selected, currentFilters());
     const wild = wildcardMatches();
@@ -81,6 +119,7 @@
       node.addEventListener("change", render)
     );
     render();
+    renderUnlock();
   }
 
   CMF.boots("index.html", start);

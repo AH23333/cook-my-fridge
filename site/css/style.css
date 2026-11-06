@@ -180,6 +180,8 @@ a:hover { text-decoration: underline; }
 }
 .chip .emoji { font-size: 16px; }
 .chip .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.unlock-chip strong { color: var(--brand); margin-left: auto; }
+.unlock-chip:hover { background: #fdeee7; border-color: var(--brand); }
 
 /* --- Search box --- */
 .search-box {

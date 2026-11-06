@@ -83,9 +83,40 @@
     };
   }
 
+  const PREF_OPTIONS = [
+    ["素食", "🥬 只看素食"],
+    ["低卡", "🥗 低卡"],
+    ["减脂餐", "🏃 减脂餐"],
+    ["快手", "⚡ 快手"],
+  ];
+
+  function renderPrefs() {
+    const prefs = CMF.getPrefs();
+    const active = new Set(prefs.tags || []);
+    const root = document.getElementById("prefs-content");
+    root.innerHTML =
+      '<div class="chip-grid">' +
+      PREF_OPTIONS.map(
+        ([tag, label]) =>
+          `<span class="chip ${active.has(tag) ? "selected" : ""}" data-tag="${tag}" style="justify-content:center">${label}</span>`
+      ).join("") +
+      "</div>";
+    root.querySelectorAll(".chip").forEach((chip) => {
+      chip.onclick = () => {
+        const current = new Set(CMF.getPrefs().tags || []);
+        const tag = chip.dataset.tag;
+        if (current.has(tag)) current.delete(tag);
+        else current.add(tag);
+        CMF.setPrefs({ tags: [...current] });
+        renderPrefs();
+      };
+    });
+  }
+
   function renderAll() {
     renderFridge();
     renderHistory();
+    renderPrefs();
     renderShare();
   }
 
