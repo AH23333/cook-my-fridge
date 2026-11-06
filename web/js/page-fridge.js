@@ -140,11 +140,64 @@
     });
   }
 
+  function renderPlan() {
+    const root = document.getElementById("plan-content");
+    const plan = CMF.getPlan();
+    const fridge = new Set(CMF.getFridge());
+    const byId = new Map(CMF.data.recipes.map((r) => [r.id, r]));
+    const chosen = plan.recipeIds.map((id) => byId.get(id)).filter(Boolean);
+    if (!chosen.length) {
+      root.innerHTML =
+        '<div class="empty">还没有计划。去 <a href="result.html">结果页</a> 把想做的菜「加入计划」。</div>';
+      return;
+    }
+    const need = new Map();
+    const recipeLines = chosen
+      .map((r) => {
+        const m = CMF.matchRecipe(r, fridge);
+        m.missing.forEach((c) => {
+          if (!need.has(c)) need.set(c, []);
+          need.get(c).push(r.title);
+        });
+        return `<li><a href="recipe.html?id=${r.id}">${CMF.esc(r.title)}</a>（缺 ${m.missing.length} 样）</li>`;
+      })
+      .join("");
+    const checked = new Set(plan.checked || []);
+    const shopItems = [...need.keys()]
+      .sort()
+      .map((c) => {
+        const done = checked.has(c);
+        return (
+          `<label style="display:flex;gap:8px;align-items:center;${done ? "opacity:.55;text-decoration:line-through" : ""}">` +
+          `<input type="checkbox" data-item="${CMF.esc(c)}" ${done ? "checked" : ""}>` +
+          `${CMF.emojiOf(c)} ${CMF.esc(c)} <span style="color:var(--ink-soft);font-size:12px">用于 ${need.get(c).length} 道菜</span></label>`
+        );
+      })
+      .join("");
+    root.innerHTML =
+      "<ul style='margin:0 0 12px'>" + recipeLines + "</ul>" +
+      "<h3 style='margin:6px 0'>需要采购</h3>" +
+      '<div style="display:flex;flex-direction:column;gap:7px">' + shopItems + "</div>";
+    root.querySelectorAll("input[data-item]").forEach((box) => {
+      box.onchange = () => {
+        const current = CMF.getPlan();
+        const set = new Set(current.checked || []);
+        const item = box.dataset.item;
+        if (box.checked) set.add(item);
+        else set.delete(item);
+        current.checked = [...set];
+        CMF.setPlan(current);
+        renderPlan();
+      };
+    });
+  }
+
   function renderAll() {
     renderFridge();
     renderHistory();
     renderPrefs();
     renderAllergens();
+    renderPlan();
     renderShare();
   }
 

@@ -9,6 +9,7 @@
     history: "cmf.history",
     feedback: "cmf.feedback",
     prefs: "cmf.prefs",
+    plan: "cmf.plan",
   };
 
   CMF.KEYS = KEYS;
@@ -87,6 +88,18 @@
 
   CMF.getPrefs = () => readJSON(KEYS.prefs, { tags: [] });
   CMF.setPrefs = (prefs) => writeJSON(KEYS.prefs, prefs);
+
+  CMF.getPlan = () => readJSON(KEYS.plan, { recipeIds: [], checked: [] });
+  CMF.setPlan = (plan) => writeJSON(KEYS.plan, plan);
+  CMF.togglePlanRecipe = (recipeId) => {
+    const plan = CMF.getPlan();
+    const set = new Set(plan.recipeIds);
+    if (set.has(recipeId)) set.delete(recipeId);
+    else set.add(recipeId);
+    plan.recipeIds = [...set];
+    CMF.setPlan(plan);
+    return plan.recipeIds.includes(recipeId);
+  };
 
   /* --- URL helpers --- */
 
