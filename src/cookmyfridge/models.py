@@ -51,6 +51,7 @@ METHOD_ALIASES: dict[str, str] = {
     "烘焙": "烤",
     "焗": "烤",
     "泡": "免开火",
+    "冷藏": "免开火",
     "无需加热": "免开火",
     "不用开火": "免开火",
     "搅拌": "免开火",
@@ -65,6 +66,7 @@ TAG_ALIASES: dict[str, str] = {
     "减脂": "减脂餐",
     "低热量": "低卡",
     "午餐": "一人食",
+    "清凉解暑": "夏日饮品",
 }
 
 # Default tags used across the dataset and the AI batch jobs.
@@ -84,6 +86,7 @@ KNOWN_TAGS: tuple[str, ...] = (
     "低脂",
     "甜品",
     "海鲜",
+    "夏日饮品",
 )
 
 
