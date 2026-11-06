@@ -26800,5 +26800,1499 @@
 "source": "GLM AI 生成（glm-4-flash）",
 "license": "AI-generated, see About",
 "is_ai_generated": true
+},
+{
+"key": "r101:lazy",
+"id": "ai-var-r101-lazy",
+"title": "懒人版白灼秋葵",
+"ingredients": [
+{
+"name": "秋葵",
+"canonical": "秋葵",
+"amount": "10 根",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "3 瓣",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将秋葵洗净，整根放入加了盐的沸水中焯 1 分钟。",
+"捞出秋葵过凉水，保持脆绿，切掉蒂，对半切开摆盘。",
+"将大蒜剁成蒜末，加入生抽调匀，作为蘸汁。",
+"将调好的蒜末生抽汁淋在秋葵上即可。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食",
+"素食",
+"剩菜改造"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意秋葵焯水时间不宜过长，以免口感变差。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r101:lowcal",
+"id": "ai-var-r101-lowcal",
+"title": "低卡版白灼秋葵",
+"ingredients": [
+{
+"name": "秋葵",
+"canonical": "秋葵",
+"amount": "10 根",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "3 瓣",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将秋葵洗净，整根放入加了盐的沸水中焯 1 分钟。",
+"捞出秋葵，过凉水保持脆绿，切掉蒂，对半切开摆盘。",
+"将大蒜剁成蒜末。",
+"将蒜末放入碗中，加入少许生抽。",
+"将焯秋葵的水煮沸，加入少许盐，关火。",
+"将热盐水倒入蒜末中，搅拌均匀。",
+"将调好的蒜末盐水淋在秋葵上即可。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅",
+"碗"
+],
+"tags": [
+"低卡",
+"减脂餐",
+"素食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意秋葵焯水时间不宜过长，以免失去口感。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r101:airfryer",
+"id": "ai-var-r101-airfryer",
+"title": "空气炸锅版白灼秋葵",
+"ingredients": [
+{
+"name": "秋葵",
+"canonical": "秋葵",
+"amount": "10 根",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "3 瓣",
+"optional": false
+}
+],
+"steps": [
+"将秋葵洗净，整根放入加了盐和几滴油的沸水中焯 1 分钟。",
+"捞出秋葵，过凉水保持脆绿，切掉蒂，对半切开摆盘。",
+"将大蒜剥皮，切成蒜末。",
+"将蒜末加入碗中，加入生抽、少许糖。",
+"将空气炸锅预热至 180°C。",
+"将秋葵放入空气炸锅中，炸 5-7 分钟，至表面微焦。",
+"将炸好的秋葵摆盘，淋上蒜末和生抽的调味汁。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意秋葵的火候，避免炸焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r102:lazy",
+"id": "ai-var-r102-lazy",
+"title": "懒人版藜麦鸡胸沙拉",
+"ingredients": [
+{
+"name": "藜麦",
+"canonical": "藜麦",
+"amount": "80克",
+"optional": false
+},
+{
+"name": "鸡胸肉",
+"canonical": "鸡胸肉",
+"amount": "1块",
+"optional": false
+},
+{
+"name": "圣女果",
+"canonical": "圣女果",
+"amount": "8颗",
+"optional": false
+}
+],
+"steps": [
+"将藜麦和鸡胸肉分别放入电饭煲，加入适量水。",
+"按下电饭煲煮饭键，煮至饭熟。",
+"取出鸡胸肉撕成细丝，藜麦沥干。",
+"圣女果对半切开。",
+"将藜麦、鸡丝和圣女果混合，加入橄榄油、黑胡椒和柠檬汁拌匀即可。"
+],
+"methods": [
+"煮",
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"电饭煲"
+],
+"tags": [
+"快手",
+"一人食",
+"素食",
+"低脂"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r102:lowcal",
+"id": "ai-var-r102-lowcal",
+"title": "低卡版藜麦鸡胸沙拉",
+"ingredients": [
+{
+"name": "藜麦",
+"canonical": "藜麦",
+"amount": "80克",
+"optional": false
+},
+{
+"name": "鸡胸肉",
+"canonical": "鸡胸肉",
+"amount": "1块",
+"optional": false
+},
+{
+"name": "圣女果",
+"canonical": "圣女果",
+"amount": "8颗",
+"optional": false
+},
+{
+"name": "橄榄油",
+"canonical": "橄榄油",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "柠檬汁",
+"canonical": "柠檬汁",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将藜麦淘洗后，加入适量水，大火煮开后转小火煮15分钟。",
+"将鸡胸肉放入冷水锅中，加入姜片，大火煮开后转小火炖煮至熟透。",
+"捞出鸡胸肉，撕成细丝。",
+"圣女果对半切开。",
+"将煮好的藜麦、撕好的鸡胸肉丝和圣女果混合。",
+"加入适量橄榄油、黑胡椒和柠檬汁拌匀。",
+"装盘即可食用。"
+],
+"methods": [
+"煮",
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"锅",
+"碗"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意鸡胸肉煮熟透，避免生食。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r102:airfryer",
+"id": "ai-var-r102-airfryer",
+"title": "空气炸锅版藜麦鸡胸沙拉",
+"ingredients": [
+{
+"name": "藜麦",
+"canonical": "藜麦",
+"amount": "80克",
+"optional": false
+},
+{
+"name": "鸡胸肉",
+"canonical": "鸡胸肉",
+"amount": "1块",
+"optional": false
+},
+{
+"name": "圣女果",
+"canonical": "圣女果",
+"amount": "8颗",
+"optional": false
+}
+],
+"steps": [
+"将藜麦淘洗后加入适量水，用空气炸锅煮15分钟，然后焖5分钟，捞出沥干。",
+"鸡胸肉冷水下锅，加入姜片，用空气炸锅煮熟，撕成细丝。",
+"圣女果对半切开，与藜麦和鸡丝混合。",
+"加入橄榄油、黑胡椒和柠檬汁拌匀。",
+"将混合好的沙拉放入空气炸锅，以180°C的温度炸3-5分钟，至沙拉表面微焦即可。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 25,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意鸡胸肉煮熟后撕丝时不要撕得太细，以免口感不佳。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r103:lazy",
+"id": "ai-var-r103-lazy",
+"title": "懒人版牛油果鸡蛋吐司",
+"ingredients": [
+{
+"name": "牛油果",
+"canonical": "牛油果",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "吐司",
+"canonical": "吐司",
+"amount": "2片",
+"optional": false
+}
+],
+"steps": [
+"将牛油果取肉压成泥。",
+"在吐司上涂抹牛油果泥。",
+"鸡蛋煮熟后切片。",
+"将鸡蛋片铺在牛油果泥上。",
+"撒上少许盐和黑胡椒。",
+"放入微波炉加热30秒至1分钟至吐司微脆。"
+],
+"methods": [
+"微波炉"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"微波炉"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐"
+],
+"allergens": [
+"鸡蛋",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将鸡蛋煮得过熟，以免影响口感。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r103:lowcal",
+"id": "ai-var-r103-lowcal",
+"title": "低卡版牛油果鸡蛋吐司",
+"ingredients": [
+{
+"name": "牛油果",
+"canonical": "牛油果",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "吐司",
+"canonical": "吐司",
+"amount": "2 片",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "少许",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"将牛油果去皮去核，取肉压成泥。",
+"在吐司上均匀涂抹牛油果泥，撒上少许盐和黑胡椒。",
+"将鸡蛋煮熟，取出蛋黄，用叉子压成泥。",
+"将压好的蛋黄泥铺在牛油果吐司上。",
+"将吐司放入蒸锅中，用中小火蒸5分钟至熟透。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"低卡",
+"减脂餐",
+"早餐",
+"素食"
+],
+"allergens": [
+"鸡蛋",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"无特殊风险。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r103:airfryer",
+"id": "ai-var-r103-airfryer",
+"title": "空气炸锅版牛油果鸡蛋吐司",
+"ingredients": [
+{
+"name": "牛油果",
+"canonical": "牛油果",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "吐司",
+"canonical": "吐司",
+"amount": "2 片",
+"optional": false
+}
+],
+"steps": [
+"将吐司放入空气炸锅中，设定温度为180°C，时间约为5分钟，烤至表面微脆。",
+"牛油果取肉压成泥，加入少许盐和黑胡椒，均匀涂抹在烤好的吐司上。",
+"鸡蛋打入碗中，搅拌均匀，倒入空气炸锅，设定温度为180°C，时间约为5分钟，煎成溏心蛋。",
+"将煎好的溏心蛋放在牛油果吐司上，撒上一些黑胡椒即可。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐"
+],
+"allergens": [
+"鸡蛋",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意空气炸锅的温度和时间，以免烤焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r104:lazy",
+"id": "ai-var-r104-lazy",
+"title": "懒人版香酥烤鹰嘴豆",
+"ingredients": [
+{
+"name": "鹰嘴豆",
+"canonical": "鹰嘴豆",
+"amount": "1罐",
+"optional": false
+},
+{
+"name": "橄榄油",
+"canonical": "橄榄油",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鹰嘴豆沥干，用厨房纸吸干表面水分。",
+"将橄榄油、盐均匀涂抹在鹰嘴豆上。",
+"将鹰嘴豆平铺在烤盘上。",
+"烤箱预热至200度，将烤盘放入烤箱中烤25分钟，中途翻一次，至鹰嘴豆酥脆即可。"
+],
+"methods": [
+"烤"
+],
+"cuisine": "AI 创意",
+"time_minutes": 25,
+"difficulty": "简单",
+"cookware": [
+"烤盘",
+"烤箱"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r104:lowcal",
+"id": "ai-var-r104-lowcal",
+"title": "低卡版香酥烤鹰嘴豆",
+"ingredients": [
+{
+"name": "鹰嘴豆",
+"canonical": "鹰嘴豆",
+"amount": "1 罐",
+"optional": false
+},
+{
+"name": "橄榄油",
+"canonical": "橄榄油",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鹰嘴豆沥干，用厨房纸吸干表面水分。",
+"将橄榄油、盐和黑胡椒混合，均匀涂抹在鹰嘴豆上。",
+"将涂抹好的鹰嘴豆平铺在烤盘上。",
+"预热烤箱至180度，将烤盘放入烤箱中烤制15分钟。",
+"取出烤盘，翻动鹰嘴豆，继续烤制5分钟，至整体酥脆即可。"
+],
+"methods": [
+"烤"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"烤盘",
+"烤箱"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意烤箱温度，避免烤焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r104:airfryer",
+"id": "ai-var-r104-airfryer",
+"title": "空气炸锅版香酥烤鹰嘴豆",
+"ingredients": [
+{
+"name": "鹰嘴豆",
+"canonical": "鹰嘴豆",
+"amount": "1 罐",
+"optional": false
+},
+{
+"name": "橄榄油",
+"canonical": "橄榄油",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鹰嘴豆沥干，用厨房纸吸干表面水分。",
+"将橄榄油、盐混合均匀，涂抹在鹰嘴豆表面。",
+"将鹰嘴豆平铺在空气炸锅篮子上。",
+"空气炸锅预热至180度，将鹰嘴豆放入空气炸锅。",
+"炸制15-20分钟，中途翻动一次，至鹰嘴豆酥脆即可。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅",
+"厨房纸",
+"烤盘"
+],
+"tags": [
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意油温，避免油溅出造成烫伤。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r105:lazy",
+"id": "ai-var-r105-lazy",
+"title": "懒人版羽衣甘蓝苹果沙拉",
+"ingredients": [
+{
+"name": "羽衣甘蓝",
+"canonical": "羽衣甘蓝",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "苹果",
+"canonical": "苹果",
+"amount": "1 个",
+"optional": false
+}
+],
+"steps": [
+"羽衣甘蓝去掉硬梗，叶片撕成小块。",
+"苹果带皮切小丁。",
+"将羽衣甘蓝和苹果放入大碗中。",
+"加入少许盐和橄榄油，轻轻拌匀。",
+"加入柠檬汁，拌匀即可食用。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"大碗"
+],
+"tags": [
+"快手",
+"一人食",
+"素食",
+"低脂"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要食用过量的羽衣甘蓝，以免引起甲状腺问题。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r105:lowcal",
+"id": "ai-var-r105-lowcal",
+"title": "低卡版羽衣甘蓝苹果沙拉",
+"ingredients": [
+{
+"name": "羽衣甘蓝",
+"canonical": "羽衣甘蓝",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "苹果",
+"canonical": "苹果",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "柠檬",
+"canonical": "柠檬",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"羽衣甘蓝去掉硬梗，叶片撕成小块。",
+"将羽衣甘蓝放入开水中焯水1分钟，捞出沥干。",
+"苹果带皮切小丁。",
+"在羽衣甘蓝中加入苹果丁。",
+"挤入适量柠檬汁。",
+"加入适量蜂蜜调味。",
+"拌匀即可食用。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"煮锅"
+],
+"tags": [
+"低卡",
+"减脂餐",
+"素食",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意控制蜂蜜的用量，以免影响低卡减脂效果。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r105:airfryer",
+"id": "ai-var-r105-airfryer",
+"title": "空气炸锅版羽衣甘蓝苹果沙拉",
+"ingredients": [
+{
+"name": "羽衣甘蓝",
+"canonical": "羽衣甘蓝",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "苹果",
+"canonical": "苹果",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "橄榄油",
+"canonical": "橄榄油",
+"amount": "少许",
+"optional": false
+},
+{
+"name": "柠檬",
+"canonical": "柠檬",
+"amount": "1 个",
+"optional": false
+}
+],
+"steps": [
+"羽衣甘蓝去掉硬梗，叶片撕成小块。",
+"苹果带皮切小丁。",
+"将羽衣甘蓝和苹果放入空气炸锅篮中。",
+"加入少许橄榄油。",
+"柠檬挤汁。",
+"将柠檬汁均匀淋在羽衣甘蓝和苹果上。",
+"空气炸锅预热至180°C。",
+"将羽衣甘蓝和苹果放入空气炸锅，炸2-3分钟，直到羽衣甘蓝变软。",
+"取出沙拉，加入蜂蜜调味。",
+"再次将沙拉放入空气炸锅，炸1分钟，让蜂蜜融化。",
+"撒上盐调味，拌匀即可食用。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意空气炸锅的温度和时间，避免食物烧焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r106:lazy",
+"id": "ai-var-r106-lazy",
+"title": "懒人版荠菜豆腐羹",
+"ingredients": [
+{
+"name": "荠菜",
+"canonical": "荠菜",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "嫩豆腐",
+"canonical": "嫩豆腐",
+"amount": "1 盒",
+"optional": false
+}
+],
+"steps": [
+"将荠菜洗净焯水30秒，捞出过凉，挤干切碎。",
+"嫩豆腐切小丁，放入锅中。",
+"加入适量水，大火烧开，煮至豆腐熟透。",
+"加入切碎的荠菜，搅拌均匀，煮至荠菜变软。",
+"根据个人口味，加入适量的盐调味，即可关火。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意豆腐不要煮太久，以免变硬。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r106:lowcal",
+"id": "ai-var-r106-lowcal",
+"title": "低卡版荠菜豆腐羹",
+"ingredients": [
+{
+"name": "荠菜",
+"canonical": "荠菜",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "嫩豆腐",
+"canonical": "嫩豆腐",
+"amount": "1 盒",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"将荠菜洗净，焯水 30 秒捞出过凉，挤干切碎。",
+"嫩豆腐切小丁，放入蒸锅中，蒸 5 分钟至熟。",
+"锅中加水烧开，将蒸好的豆腐丁放入水中煮 2 分钟。",
+"加入切碎的荠菜，煮至沸腾。",
+"根据个人口味加入适量盐调味，无需额外加糖。",
+"关火，盛出即可食用。"
+],
+"methods": [
+"蒸",
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"蒸锅",
+"锅"
+],
+"tags": [
+"低卡",
+"减脂餐",
+"素食"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意豆腐不宜煮得过久，以免影响口感。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r106:airfryer",
+"id": "ai-var-r106-airfryer",
+"title": "空气炸锅版荠菜豆腐羹",
+"ingredients": [
+{
+"name": "荠菜",
+"canonical": "荠菜",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "嫩豆腐",
+"canonical": "嫩豆腐",
+"amount": "1 盒",
+"optional": false
+}
+],
+"steps": [
+"将荠菜焯水 30 秒捞出过凉，挤干切碎。",
+"将嫩豆腐切小丁。",
+"将豆腐丁放入空气炸锅中，设置温度为 180℃，炸 5 分钟至表面金黄。",
+"将炸好的豆腐丁取出，放入碗中。",
+"将切碎的荠菜加入碗中，加入适量的盐和白胡椒调味。",
+"将调味好的荠菜豆腐羹放入空气炸锅，设置温度为 160℃，再炸 5 分钟至荠菜熟透。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"快手"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意空气炸锅的温度和时间，避免烧焦。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r107:lazy",
+"id": "ai-var-r107-lazy",
+"title": "懒人版凉拌折耳根",
+"ingredients": [
+{
+"name": "折耳根",
+"canonical": "折耳根",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "辣椒",
+"canonical": "辣椒",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "醋",
+"canonical": "醋",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"折耳根掐去老根，洗净摘成小段。",
+"辣椒切末。",
+"将折耳根和辣椒末放入碗中，加入生抽、醋和白糖。",
+"拌匀即可食用，无需冷藏。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 5,
+"difficulty": "简单",
+"cookware": [
+"碗"
+],
+"tags": [
+"快手",
+"素食"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意折耳根的用量，不宜过多。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r107:lowcal",
+"id": "ai-var-r107-lowcal",
+"title": "低卡版凉拌折耳根",
+"ingredients": [
+{
+"name": "折耳根",
+"canonical": "折耳根",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "辣椒",
+"canonical": "辣椒",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "蒜",
+"canonical": "大蒜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "醋",
+"canonical": "醋",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"折耳根掐去老根，洗净摘成小段。",
+"用盐腌10分钟，倒掉腌出的水。",
+"辣椒、蒜切末。",
+"生抽、醋、白糖按个人口味混合。",
+"将调好的料汁倒入折耳根中拌匀。",
+"冷藏15分钟，使味道更入味。"
+],
+"methods": [
+"凉拌"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"碗"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意折耳根的用量，过量食用可能导致不适。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r107:airfryer",
+"id": "ai-var-r107-airfryer",
+"title": "空气炸锅版凉拌折耳根",
+"ingredients": [
+{
+"name": "折耳根",
+"canonical": "折耳根",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "辣椒",
+"canonical": "辣椒",
+"amount": "2 个",
+"optional": false
+},
+{
+"name": "蒜",
+"canonical": "大蒜",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "醋",
+"canonical": "醋",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "白糖",
+"canonical": "白糖",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"折耳根掐去老根，洗净摘成小段。",
+"用盐腌10分钟，倒掉腌出的水。",
+"辣椒、蒜切末。",
+"将生抽、醋、白糖混合，制成料汁。",
+"将料汁倒入腌好的折耳根中拌匀。",
+"将拌匀的折耳根放入空气炸锅中，设置温度为180℃，时间约为10分钟。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"一人食"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意辣椒和蒜的用量，以免过于辛辣。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r108:lazy",
+"id": "ai-var-r108-lazy",
+"title": "懒人版蒜香抱子甘蓝",
+"ingredients": [
+{
+"name": "抱子甘蓝",
+"canonical": "抱子甘蓝",
+"amount": "20颗",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "4瓣",
+"optional": false
+},
+{
+"name": "食用油",
+"canonical": "食用油",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"抱子甘蓝切半，洗净沥干。",
+"平底锅热油，放入抱子甘蓝和蒜片，切口朝下煎3分钟。",
+"加入适量盐、黑胡椒和少许生抽，淋一勺水，焖2分钟。",
+"收汁出锅，撒上黑胡椒即可。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"平底锅"
+],
+"tags": [
+"快手",
+"一人食",
+"低脂"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意油温，避免煎糊。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r108:lowcal",
+"id": "ai-var-r108-lowcal",
+"title": "低卡版蒜香抱子甘蓝",
+"ingredients": [
+{
+"name": "抱子甘蓝",
+"canonical": "抱子甘蓝",
+"amount": "20 颗",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "4 瓣",
+"optional": false
+},
+{
+"name": "橄榄油",
+"canonical": "橄榄油",
+"amount": "1 汤匙",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "少许",
+"optional": false
+},
+{
+"name": "水",
+"canonical": "清水",
+"amount": "1 汤匙",
+"optional": false
+}
+],
+"steps": [
+"将抱子甘蓝切半，洗净沥干。",
+"将大蒜切片。",
+"在蒸锅中加入橄榄油，将抱子甘蓝和大蒜片放入蒸笼中。",
+"蒸约 5 分钟至抱子甘蓝熟软。",
+"取出蒸好的抱子甘蓝和大蒜片，撒上黑胡椒。",
+"加入少许生抽调味。",
+"淋上少许水，继续蒸 2 分钟，使味道更加融合。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"低卡",
+"减脂餐"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要蒸煮时间过长，以免抱子甘蓝过于软烂。",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r108:airfryer",
+"id": "ai-var-r108-airfryer",
+"title": "空气炸锅版蒜香抱子甘蓝",
+"ingredients": [
+{
+"name": "抱子甘蓝",
+"canonical": "抱子甘蓝",
+"amount": "20 颗",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "4 瓣",
+"optional": false
+},
+{
+"name": "食用油",
+"canonical": "食用油",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "盐",
+"canonical": "盐",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "黑胡椒",
+"canonical": "黑胡椒",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "少许",
+"optional": false
+}
+],
+"steps": [
+"将抱子甘蓝切半，洗净沥干。",
+"将大蒜切片。",
+"将抱子甘蓝和大蒜片放入空气炸锅中。",
+"加入适量食用油。",
+"设置空气炸锅温度至 180°C，时间设置为 15 分钟。",
+"中途翻面一次，确保均匀受热。",
+"时间到后，撒上适量盐和黑胡椒。",
+"根据口味可加入少许生抽。",
+"取出，稍微放凉后即可享用。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将抱子甘蓝切得太小，以免在炸制过程中散开。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
 }
 ]
