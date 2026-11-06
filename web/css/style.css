@@ -484,6 +484,27 @@ footer.site-footer {
 }
 .cooking-controls .btn[disabled] { opacity: .45; cursor: default; }
 
+.kitchen-timer {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.timer-display {
+  font-size: 34px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  text-align: center;
+  letter-spacing: 1px;
+}
+.timer-display.done { color: var(--brand); }
+.timer-presets, .timer-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+
 .factor-stepper .factor-btn { padding: 4px 10px; }
 .factor-stepper .factor-active {
   background: var(--brand);

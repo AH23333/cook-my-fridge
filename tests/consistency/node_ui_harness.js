@@ -29,6 +29,7 @@ global.document = {
 const src = fs.readFileSync(path.join(root, "web", "js", "ui.js"), "utf8");
 (0, eval)(src);
 const scaleAmount = global.window.CMF.scaleAmount;
+const formatTimer = global.window.CMF.formatTimer;
 
 const cases = [
   ["2 个", 2, "4 个"],
@@ -43,8 +44,19 @@ const failures = cases
   .filter(([amount, factor, expected]) => scaleAmount(amount, factor) !== expected)
   .map(([amount, factor]) => `${amount} x${factor} => ${scaleAmount(amount, factor)}`);
 
-if (failures.length) {
-  console.error("SCALE TEST FAILURES:", failures);
+const timerCases = [
+  [0, "00:00"],
+  [65, "01:05"],
+  [599, "09:59"],
+  [600, "10:00"],
+  [-5, "00:00"],
+];
+const timerFailures = timerCases
+  .filter(([sec, expected]) => formatTimer(sec) !== expected)
+  .map(([sec]) => `${sec} => ${formatTimer(sec)}`);
+
+if (failures.length || timerFailures.length) {
+  console.error("UI TEST FAILURES:", failures, timerFailures);
   process.exit(1);
 }
-console.log(JSON.stringify({ ok: true, checks: cases.length }));
+console.log(JSON.stringify({ ok: true, checks: cases.length + timerCases.length }));

@@ -166,11 +166,106 @@
     overlay.className = "cooking-overlay";
     document.body.appendChild(overlay);
 
+    // Kitchen timer state, kept across step re-renders.
+    let tRemaining = 5 * 60;
+    let tRunning = false;
+    let tInterval = null;
+
+    function beep() {
+      try {
+        const Ctx = window.AudioContext || window.webkitAudioContext;
+        if (!Ctx) return;
+        const ctx = new Ctx();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = "sine";
+        osc.frequency.value = 880;
+        gain.gain.setValueAtTime(0.001, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.3, ctx.currentTime + 0.02);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.9);
+        osc.onended = () => ctx.close();
+      } catch (e) {
+        /* audio not available; visual alert still shows */
+      }
+    }
+
+    function stopTick() {
+      if (tInterval) {
+        clearInterval(tInterval);
+        tInterval = null;
+      }
+      tRunning = false;
+    }
+
+    function tick() {
+      tRemaining -= 1;
+      if (tRemaining <= 0) {
+        tRemaining = 0;
+        stopTick();
+        beep();
+      }
+      renderTimer();
+    }
+
+    function toggleTimer() {
+      if (tRunning) {
+        stopTick();
+      } else if (tRemaining > 0) {
+        tRunning = true;
+        tInterval = setInterval(tick, 1000);
+      }
+      renderTimer();
+    }
+
+    function renderTimer() {
+      const display = overlay.querySelector("#timer-display");
+      const toggle = overlay.querySelector("#timer-toggle");
+      if (display) {
+        display.textContent = CMF.formatTimer(tRemaining);
+        display.classList.toggle("done", tRemaining === 0);
+      }
+      if (toggle) toggle.textContent = tRunning ? "暂停" : "开始";
+    }
+
+    function wireTimer() {
+      overlay.querySelectorAll(".timer-preset").forEach((btn) => {
+        btn.onclick = () => {
+          stopTick();
+          tRemaining = Number(btn.dataset.min) * 60;
+          renderTimer();
+        };
+      });
+      overlay.querySelector("#timer-toggle").onclick = toggleTimer;
+      overlay.querySelector("#timer-reset").onclick = () => {
+        stopTick();
+        tRemaining = 5 * 60;
+        renderTimer();
+      };
+      renderTimer();
+    }
+
     function paint() {
       overlay.innerHTML =
         '<div class="cooking-card">' +
         `<div class="cooking-progress">第 ${index + 1} / ${steps.length} 步 · ${CMF.esc(recipe.title)}</div>` +
         `<div class="cooking-step">${CMF.esc(steps[index])}</div>` +
+        '<div class="kitchen-timer">' +
+        '<div class="timer-display" id="timer-display"></div>' +
+        '<div class="timer-presets">' +
+        [1, 3, 5, 10]
+          .map(
+            (m) =>
+              `<button class="btn btn-sm timer-preset" data-min="${m}">${m} 分</button>`
+          )
+          .join("") +
+        "</div>" +
+        '<div class="timer-actions">' +
+        '<button class="btn btn-sm" id="timer-toggle">开始</button>' +
+        '<button class="btn btn-sm" id="timer-reset">重置</button>' +
+        "</div></div>" +
         '<div class="cooking-controls">' +
         `<button class="btn" id="cook-prev" ${index === 0 ? "disabled" : ""}>上一步</button>` +
         (index === steps.length - 1
@@ -183,6 +278,7 @@
           if (index > 0) {
             index -= 1;
             paint();
+            wireTimer();
           }
         });
       const next = overlay.querySelector("#cook-next");
@@ -191,15 +287,18 @@
           if (index < steps.length - 1) {
             index += 1;
             paint();
+            wireTimer();
           }
         };
       const done = overlay.querySelector("#cook-done");
       if (done)
         done.onclick = () => close();
       overlay.querySelector("#cook-close").onclick = () => close();
+      wireTimer();
     }
 
     function close() {
+      stopTick();
       releaseWakeLock();
       overlay.remove();
     }
