@@ -13,6 +13,8 @@
 - **个性化与安全**：口味偏好（素食/低卡/减脂/快手）持久化；过敏原档案在结果页对危险菜谱警示并可一键隐藏。
 - **开饭计划**：把想做的菜加入计划，冰箱页自动聚合去重购物清单，可逐项勾选划线。
 - **收藏菜谱**：在卡片或详情页一键收藏，冰箱页集中查看，支持移除。
+- **帮我决定**：选择困难时一键随机挑一道，优先零缺失菜。
+- **PWA 离线**：可安装、可离线；构建时自动版本化 service worker 缓存，避免老用户拿到旧内容。
 - **灵活添加**：食材墙点选，也可在搜索框输入名称（含同义词）回车直接添加。
 - **可安装、可离线（PWA）**：web manifest + service worker，首次访问后离线可用，可添加到主屏幕。
 - **纯静态**：原生 HTML/CSS/JS，无框架、无打包步骤，`file://` 与静态托管都能跑（SW 需 http/https）。
@@ -81,6 +83,7 @@ python run.py blindboxes   # 冰箱盲盒
 python run.py ideas        # 每道菜“三个主意”
 python run.py variants     # AI 变体，可 --kinds lazy 限定
 python run.py repair       # 修复单字安全提示与变体标题
+python run.py audit        # 离线完整性审计（不联网，发现问题退出码 1）
 python run.py build        # 导出静态站点
 ```
 
