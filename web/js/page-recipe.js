@@ -27,7 +27,8 @@
     const ingredientRows = recipe.ingredients
       .map(
         (i) =>
-          `<li><span>${CMF.esc(i.canonical)}${i.optional ? ' <span class="pill">可选</span>' : ""}</span>` +
+          `<li><button class="ing-name-btn" data-ing="${CMF.esc(i.canonical)}">${CMF.esc(i.canonical)}</button>` +
+          (i.optional ? ' <span class="pill">可选</span>' : "") +
           `<span class="amount">${CMF.esc(CMF.scaleAmount(i.amount, factor))}</span></li>`
       )
       .join("");
@@ -104,6 +105,10 @@
         factor = parseFloat(btn.dataset.factor);
         render(recipe);
       };
+    });
+
+    root.querySelectorAll(".ing-name-btn").forEach((btn) => {
+      btn.onclick = () => CMF.showIngredientInfo(btn.dataset.ing);
     });
 
     document.getElementById("start-cooking").onclick = () => openCookingMode(recipe);

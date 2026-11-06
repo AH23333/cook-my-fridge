@@ -501,3 +501,95 @@ footer.site-footer {
     break-inside: avoid;
   }
 }
+
+.ing-name-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+.ing-name-btn:hover {
+  color: var(--accent-dark);
+}
+
+/* --- Ingredient encyclopedia modal --- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(40, 28, 20, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  z-index: 1000;
+}
+.modal {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px 24px;
+  max-width: 520px;
+  width: 100%;
+  max-height: 86vh;
+  overflow-y: auto;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+}
+.modal h3 {
+  margin: 0 0 14px;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.modal-emoji {
+  font-size: 24px;
+}
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--ink-soft);
+}
+.modal-row {
+  display: flex;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid #f0e7df;
+  font-size: 14px;
+}
+.modal-row span:first-child {
+  min-width: 64px;
+  color: var(--ink-soft);
+}
+.modal-recipes {
+  margin-top: 14px;
+}
+.ing-link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.ing-link {
+  background: #fdeee7;
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 13px;
+  text-decoration: none;
+}
+@media print {
+  .modal-overlay {
+    display: none !important;
+  }
+}
