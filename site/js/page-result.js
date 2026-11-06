@@ -99,6 +99,15 @@
     return matches.filter((m) => !hasUserAllergen(m.recipe));
   }
 
+  function wirePlanButtons() {
+    buckets.querySelectorAll(".plan-btn").forEach((btn) => {
+      btn.onclick = () => {
+        CMF.togglePlanRecipe(btn.dataset.planId);
+        render();
+      };
+    });
+  }
+
   function render() {
     const result = CMF.search(CMF.data.recipes, selected, currentFilters());
     const wild = wildcardMatches();
@@ -106,6 +115,7 @@
       bucketNode("badge-now", "COOK NOW", "现在就能做", dropAllergen(result.cookNow)) +
       bucketNode("badge-almost", "ALMOST", "只差一点", dropAllergen(result.almostThere)) +
       bucketNode("badge-wild", "AI WILDCARD", "AI 创意菜", dropAllergen(wild), true);
+    wirePlanButtons();
   }
 
   function start() {
