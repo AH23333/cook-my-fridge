@@ -361,6 +361,15 @@ a:hover { text-decoration: underline; }
 .week-reroll { align-self: flex-start; }
 .week-shop-list { margin: 0; display: flex; flex-direction: column; gap: 7px; }
 .shop-meta { color: var(--ink-soft); font-size: 12px; margin-left: 4px; }
+.cleanout-summary {
+  background: #f2f8f1;
+  border: 1px solid #cfe6cc;
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 13.5px;
+  margin-bottom: 12px;
+}
+.cleanout-list { margin: 0; display: flex; flex-direction: column; gap: 8px; }
 
 /* --- Detail page --- */
 .detail {

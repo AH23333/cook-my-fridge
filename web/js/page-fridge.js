@@ -309,12 +309,44 @@
     };
   }
 
+  function renderCleanout() {
+    const root = document.getElementById("cleanout-content");
+    const fridge = CMF.getFridge();
+    if (!fridge.length) {
+      root.innerHTML = '<div class="empty">先在冰箱里放些食材，再生成清冰箱方案。</div>';
+      return;
+    }
+    const plan = CMF.cleanoutPlan(CMF.data.recipes, fridge, {
+      maxRecipes: 4,
+      maxExtra: 3,
+    });
+    if (!plan.selected.length) {
+      root.innerHTML = '<div class="empty">暂无能消耗这些食材的菜谱组合。</div>';
+      return;
+    }
+    const dishes = plan.selected
+      .map(
+        (s) =>
+          `<li><a href="recipe.html?id=${encodeURIComponent(s.recipeId)}">${CMF.esc(s.title)}</a>
+            <span class="shop-meta">用掉 ${s.addedCoverage.length} 样${s.missing.length ? "，需补 " + s.missing.map((c) => CMF.esc(c)).join("、") : ""}</span></li>`
+      )
+      .join("");
+    const pct = plan.totalFridge ? Math.round((plan.coveredCount / plan.totalFridge) * 100) : 0;
+    const unused = plan.unusedFridge.length
+      ? plan.unusedFridge.map((c) => CMF.emojiOf(c) + " " + CMF.esc(c)).join("、")
+      : "无";
+    root.innerHTML =
+      `<div class="cleanout-summary">这套组合能消耗 <strong>${plan.coveredCount}/${plan.totalFridge}</strong> 样冰箱食材（${pct}%），剩余：${unused}</div>` +
+      '<ul class="cleanout-list">' + dishes + "</ul>";
+  }
+
   function renderAll() {
     renderFridge();
     renderHistory();
     renderPrefs();
     renderAllergens();
     renderFavorites();
+    renderCleanout();
     renderPlan();
     renderShare();
     renderBackup();
