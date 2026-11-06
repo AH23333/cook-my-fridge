@@ -9,19 +9,23 @@
 - **双引擎**
   - 数据集检索：Cook Now（严格 0 缺失）/ Almost There（1–3 缺失，挂替代建议）。
   - AI 创意：Wildcard 创意菜、冰箱盲盒、菜谱详情页 7 种 AI 变体、“数据集里没有的三个主意”。
-- **六个页面**：首页（食材墙/点选/随机开一局）、结果页（三桶 + 实时筛选）、菜谱详情、AI 创意菜、我的冰箱、关于。
-- **纯静态**：原生 HTML/CSS/JS，无框架、无打包步骤，`file://` 与静态托管都能跑。
+- **六个页面**：首页（食材墙/点选/随机开一局）、结果页（三桶 + 实时筛选 + 解锁面板）、菜谱详情、AI 创意菜、我的冰箱、关于。
+- **个性化与安全**：口味偏好（素食/低卡/减脂/快手）持久化；过敏原档案在结果页对危险菜谱警示并可一键隐藏。
+- **可安装、可离线（PWA）**：web manifest + service worker，首次访问后离线可用，可添加到主屏幕。
+- **纯静态**：原生 HTML/CSS/JS，无框架、无打包步骤，`file://` 与静态托管都能跑（SW 需 http/https）。
 - **数据治理**：AI 输出必须通过固定字段校验 + 食材白名单，强制 AI 标识、过敏原与安全提示；失败自动带反馈重试。
-- **隐私优先**：冰箱、历史、反馈只存在浏览器 localStorage，不建账号、不收集数据。
+- **隐私优先**：冰箱、历史、反馈、偏好只存在浏览器 localStorage，不建账号、不收集数据。
 
 ## 数据规模
 
 | 数据 | 数量 |
 |---|---|
-| 人工策展菜谱 | 45 |
-| 食材目录 | 209 |
+| 人工策展菜谱 | 80 |
+| 食材目录 | 211 |
 | AI Wildcard | 20 |
 | 冰箱盲盒 | 12 |
+| AI 变体 | 125 |
+| 每道菜“三个主意” | 80 |
 
 ## 目录结构
 
@@ -30,9 +34,9 @@ CookMyFridge/
 ├── src/cookmyfridge/      # 领域模型、目录、归一化、校验、检索、LLM、AI、批处理、构建
 ├── tests/                 # pytest 全量测试
 ├── data/curated/          # 基础菜谱 JSONL + AI 缓存
-├── web/                   # 静态站点源码（6 HTML + css + js）
+├── web/                   # 静态站点源码（6 HTML + css + js + PWA）
 ├── site/                  # 构建产物（可直接托管）
-├── docs/                  # 产品定位、实施进度、踩坑记录、交接文档
+├── docs/                  # 产品定位、实施进度、踩坑记录、交接文档、架构设计
 └── run.py                 # 统一命令行入口
 ```
 
@@ -72,8 +76,8 @@ python run.py data         # 从策展规格生成基础菜谱
 python run.py wildcards    # AI Wildcard 批处理（断点续跑）
 python run.py blindboxes   # 冰箱盲盒
 python run.py ideas        # 每道菜“三个主意”
-python run.py variants     # 7 种 AI 变体
-python run.py repair       # 修复历史缓存的单字安全提示
+python run.py variants     # AI 变体，可 --kinds lazy 限定
+python run.py repair       # 修复单字安全提示与变体标题
 python run.py build        # 导出静态站点
 ```
 
@@ -106,6 +110,7 @@ python run.py build        # 导出静态站点
 - `docs/实施进度.md`：分阶段交付与状态。
 - `docs/踩坑记录.md`：每个问题的现象、根因、方案与沉淀。
 - `docs/交接文档.md`：断点续作手册。
+- `docs/架构设计.md`：分层架构、核心算法与数据字典。
 
 ## 许可证
 
