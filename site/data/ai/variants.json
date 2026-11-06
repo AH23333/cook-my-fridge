@@ -8280,5 +8280,938 @@
 "source": "GLM AI 生成（glm-4-flash）",
 "license": "AI-generated, see About",
 "is_ai_generated": true
+},
+{
+"key": "r065:lazy",
+"id": "ai-var-r065-lazy",
+"title": "懒人版川味麻婆豆腐",
+"ingredients": [
+{
+"name": "嫩豆腐",
+"canonical": "嫩豆腐",
+"amount": "1盒",
+"optional": false
+},
+{
+"name": "猪肉",
+"canonical": "猪肉",
+"amount": "100克",
+"optional": false
+},
+{
+"name": "豆瓣酱",
+"canonical": "豆瓣酱",
+"amount": "1勺",
+"optional": false
+},
+{
+"name": "花椒",
+"canonical": "花椒",
+"amount": "1小勺",
+"optional": false
+},
+{
+"name": "小葱",
+"canonical": "小葱",
+"amount": "1根",
+"optional": false
+}
+],
+"steps": [
+"豆腐切小块，放入淡盐水里焯一下捞出",
+"猪肉剁成末，锅中热油炒散肉末",
+"下豆瓣酱炒出红油，加适量清水烧开",
+"轻轻放入豆腐小火烧3分钟",
+"用淀粉水勾薄芡，撒花椒粉和葱花出锅"
+],
+"methods": [
+"炒",
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"下饭",
+"一人食"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意豆腐不要煮太久，以免变硬",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r066:lazy",
+"id": "ai-var-r066-lazy",
+"title": "懒人版回锅肉",
+"ingredients": [
+{
+"name": "猪肉",
+"canonical": "猪肉",
+"amount": "300克",
+"optional": false
+},
+{
+"name": "青椒",
+"canonical": "青椒",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "豆瓣酱",
+"canonical": "豆瓣酱",
+"amount": "1勺",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "3瓣",
+"optional": false
+}
+],
+"steps": [
+"将猪肉切片，青椒切块，大蒜切片。",
+"锅中加油，放入肉片翻炒至微微卷曲出油。",
+"加入豆瓣酱和大蒜片，快速翻炒均匀。",
+"放入青椒，炒至断生即可出锅。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"下饭",
+"一人食"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意豆瓣酱的咸度，避免过咸"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r067:lazy",
+"id": "ai-var-r067-lazy",
+"title": "懒人版鱼香肉丝",
+"ingredients": [
+{
+"name": "猪肉",
+"canonical": "猪肉",
+"amount": "200克",
+"optional": false
+},
+{
+"name": "胡萝卜",
+"canonical": "胡萝卜",
+"amount": "1根",
+"optional": false
+},
+{
+"name": "木耳",
+"canonical": "木耳",
+"amount": "1小把",
+"optional": false
+},
+{
+"name": "青椒",
+"canonical": "青椒",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "醋",
+"canonical": "醋",
+"amount": "1勺",
+"optional": false
+}
+],
+"steps": [
+"猪肉切丝，加淀粉和生抽腌10分钟。",
+"胡萝卜、青椒、木耳切丝，与腌好的肉丝混合。",
+"锅中热油，加入混合好的肉丝和蔬菜快速翻炒。",
+"加入醋、生抽、糖调成的鱼香汁，快速翻炒均匀，出锅。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"下饭",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意炒制时油温不宜过高，以免发生溅油。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r068:lazy",
+"id": "ai-var-r068-lazy",
+"title": "懒人版家常宫保鸡丁",
+"ingredients": [
+{
+"name": "鸡胸肉",
+"canonical": "鸡胸肉",
+"amount": "1块",
+"optional": false
+},
+{
+"name": "花生",
+"canonical": "花生",
+"amount": "1把",
+"optional": false
+},
+{
+"name": "黄瓜",
+"canonical": "黄瓜",
+"amount": "半根",
+"optional": false
+},
+{
+"name": "胡萝卜",
+"canonical": "胡萝卜",
+"amount": "半根",
+"optional": false
+},
+{
+"name": "辣椒",
+"canonical": "辣椒",
+"amount": "3个",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "适量",
+"optional": false
+},
+{
+"name": "淀粉",
+"canonical": "淀粉",
+"amount": "适量",
+"optional": false
+}
+],
+"steps": [
+"鸡胸肉切丁，加生抽、淀粉抓匀。",
+"锅中加油，将鸡丁炒至变色。",
+"加入黄瓜丁、胡萝卜丁和辣椒段，快速翻炒。",
+"加入花生，快速翻炒均匀。",
+"出锅前尝一下味道，根据需要调整盐分。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"下饭",
+"一人食"
+],
+"allergens": [
+"大豆",
+"花生"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意辣椒的量，避免过辣。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r069:lazy",
+"id": "ai-var-r069-lazy",
+"title": "懒人版干煸豆角",
+"ingredients": [
+{
+"name": "豆角",
+"canonical": "豆角",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "3 瓣",
+"optional": false
+},
+{
+"name": "辣椒",
+"canonical": "辣椒",
+"amount": "2 个",
+"optional": false
+}
+],
+"steps": [
+"豆角掰段洗净，充分沥干水分。",
+"锅中多放一点油，将豆角、蒜末和辣椒一起放入，大火煸炒至豆角表皮起皱。",
+"加盐和生抽调味，翻炒均匀即可。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"下饭"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意油温，避免油溅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r070:lazy",
+"id": "ai-var-r070-lazy",
+"title": "懒人版蚝油生菜",
+"ingredients": [
+{
+"name": "生菜",
+"canonical": "生菜",
+"amount": "1 棵",
+"optional": false
+},
+{
+"name": "蚝油",
+"canonical": "蚝油",
+"amount": "2 勺",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "3 瓣",
+"optional": false
+}
+],
+"steps": [
+"生菜洗净，撕成大片。",
+"锅中水烧开，加入少许油，将生菜快速焯熟，捞出沥干。",
+"另起锅，热油，加入蒜末炒香，加入蚝油和少许清水烧开。",
+"将烧好的蚝油汁淋在生菜上即可。"
+],
+"methods": [
+"煮",
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"生菜焯水时间不宜过长，以免失去口感",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r071:lazy",
+"id": "ai-var-r071-lazy",
+"title": "懒人版蒜蓉空心菜",
+"ingredients": [
+{
+"name": "空心菜",
+"canonical": "空心菜",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "4 瓣",
+"optional": false
+}
+],
+"steps": [
+"将空心菜洗净，掐成段。",
+"将大蒜切末。",
+"锅中加入适量油，放入蒜末炒香。",
+"倒入空心菜快速翻炒至变软。",
+"根据口味加入盐调味，翻炒均匀后出锅。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"炒锅"
+],
+"tags": [
+"快手",
+"一人食",
+"低卡"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意炒菜时不要烧焦"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r072:lazy",
+"id": "ai-var-r072-lazy",
+"title": "懒人版清炖冬瓜排骨汤",
+"ingredients": [
+{
+"name": "排骨",
+"canonical": "排骨",
+"amount": "300克",
+"optional": false
+},
+{
+"name": "冬瓜",
+"canonical": "冬瓜",
+"amount": "300克",
+"optional": false
+}
+],
+"steps": [
+"排骨冷水下锅焯水，撇去浮沫捞出。",
+"将排骨和冬瓜放入锅中，加入足量清水。",
+"大火烧开后转小火炖煮40分钟。",
+"根据个人口味加盐调味，继续炖煮15分钟。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 55,
+"difficulty": "简单",
+"cookware": [
+"汤锅"
+],
+"tags": [
+"快手",
+"一人食",
+"低卡",
+"剩菜改造"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"排骨焯水时可能会有浮沫，需撇清。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r073:lazy",
+"id": "ai-var-r073-lazy",
+"title": "懒人版简易紫菜蛋花汤",
+"ingredients": [
+{
+"name": "紫菜",
+"canonical": "紫菜",
+"amount": "1 小把",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "1 个",
+"optional": false
+},
+{
+"name": "小葱",
+"canonical": "小葱",
+"amount": "1 根",
+"optional": false
+}
+],
+"steps": [
+"锅中加入适量水，大火烧开。",
+"水开后，放入紫菜，煮至紫菜变软。",
+"将鸡蛋打散，慢慢倒入锅中，边倒边用筷子轻轻搅动，形成蛋花。",
+"撒上葱花，根据口味加入适量盐调味，即可关火。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐",
+"夜宵",
+"素食",
+"剩菜改造",
+"低脂"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让紫菜煮得过久，以免口感变差。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r074:lazy",
+"id": "ai-var-r074-lazy",
+"title": "懒人版番茄鸡蛋疙瘩汤",
+"ingredients": [
+{
+"name": "番茄",
+"canonical": "番茄",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "1个",
+"optional": false
+},
+{
+"name": "面粉",
+"canonical": "面粉",
+"amount": "1小碗",
+"optional": false
+}
+],
+"steps": [
+"番茄切块，鸡蛋打散。",
+"锅中加入适量水，放入番茄块，大火烧开。",
+"水开后，慢慢撒入面粉，边撒边搅，形成小面疙瘩。",
+"煮至疙瘩熟透，淋入蛋液，轻轻搅动，煮至蛋液凝固。",
+"根据口味加盐调味，关火即可。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [
+"鸡蛋",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要让水烧干。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r075:lazy",
+"id": "ai-var-r075-lazy",
+"title": "懒人版葱油拌面",
+"ingredients": [
+{
+"name": "挂面",
+"canonical": "挂面",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "小葱",
+"canonical": "小葱",
+"amount": "1 把",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "2 勺",
+"optional": false
+}
+],
+"steps": [
+"将挂面放入沸水中煮至熟透，捞出过冷水。",
+"将生抽倒入碗中，加入适量热水稀释。",
+"将小葱切成葱花。",
+"将煮好的挂面放入碗中，加入稀释后的生抽和葱花。",
+"拌匀即可食用。"
+],
+"methods": [
+"煮"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅",
+"碗"
+],
+"tags": [
+"快手",
+"一人食",
+"早餐"
+],
+"allergens": [
+"大豆",
+"麸质"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意面条不要煮得过烂。",
+"煮制海鲜和肉类务必彻底熟透，避免寄生虫和细菌风险。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r076:lazy",
+"id": "ai-var-r076-lazy",
+"title": "懒人版蛋包饭",
+"ingredients": [
+{
+"name": "鸡蛋",
+"canonical": "鸡蛋",
+"amount": "2个",
+"optional": false
+},
+{
+"name": "米饭",
+"canonical": "米饭",
+"amount": "1碗",
+"optional": false
+},
+{
+"name": "洋葱",
+"canonical": "洋葱",
+"amount": "半个",
+"optional": false
+},
+{
+"name": "番茄酱",
+"canonical": "番茄酱",
+"amount": "2勺",
+"optional": false
+}
+],
+"steps": [
+"洋葱切丁，鸡蛋打散。",
+"锅中热油炒香洋葱，加入米饭和番茄酱炒均匀。",
+"将炒好的米饭平铺在盘子上，倒入打散的鸡蛋液。",
+"待鸡蛋液半凝固时，将米饭卷起，用番茄酱淋在卷好的饭团上。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [
+"鸡蛋"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要将鸡蛋液炒得太老，以免口感变差。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r077:lazy",
+"id": "ai-var-r077-lazy",
+"title": "懒人版照烧鸡腿",
+"ingredients": [
+{
+"name": "鸡腿",
+"canonical": "鸡腿",
+"amount": "2 只",
+"optional": false
+},
+{
+"name": "生抽",
+"canonical": "生抽",
+"amount": "2 勺",
+"optional": false
+},
+{
+"name": "蜂蜜",
+"canonical": "蜂蜜",
+"amount": "1 勺",
+"optional": false
+}
+],
+"steps": [
+"鸡腿去骨，用生抽和蜂蜜混合成照烧汁。",
+"将鸡腿放入空气炸锅中，鸡皮朝下，设置温度200℃，炸10分钟。",
+"取出鸡腿，翻面，再炸5分钟至鸡肉熟透。",
+"将炸好的鸡腿取出，淋上照烧汁，放入空气炸锅，设置温度180℃，再炸5分钟至汁液收紧。"
+],
+"methods": [
+"空气炸锅"
+],
+"cuisine": "AI 创意",
+"time_minutes": 20,
+"difficulty": "简单",
+"cookware": [
+"空气炸锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [
+"大豆"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意炸鸡腿时不要炸焦，以免造成食物中毒。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r078:lazy",
+"id": "ai-var-r078-lazy",
+"title": "懒人版蒜蓉椒盐虾",
+"ingredients": [
+{
+"name": "虾",
+"canonical": "虾",
+"amount": "10 只",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "5 瓣",
+"optional": false
+},
+{
+"name": "辣椒",
+"canonical": "辣椒",
+"amount": "2 个",
+"optional": false
+}
+],
+"steps": [
+"虾剪去虾须、挑去虾线，用厨房纸吸干。",
+"大蒜切末。",
+"辣椒切圈。",
+"锅中多放油，下虾大火煎到壳脆变红。",
+"下蒜末和辣椒煸香，撒盐翻匀。"
+],
+"methods": [
+"炒"
+],
+"cuisine": "AI 创意",
+"time_minutes": 15,
+"difficulty": "简单",
+"cookware": [
+"锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [
+"甲壳类"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意油温，避免烫伤。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r079:lazy",
+"id": "ai-var-r079-lazy",
+"title": "懒人版蒜蓉粉丝蒸虾",
+"ingredients": [
+{
+"name": "虾",
+"canonical": "虾",
+"amount": "8只",
+"optional": false
+},
+{
+"name": "粉丝",
+"canonical": "粉丝",
+"amount": "1把",
+"optional": false
+},
+{
+"name": "大蒜",
+"canonical": "大蒜",
+"amount": "1头",
+"optional": false
+}
+],
+"steps": [
+"将粉丝用温水泡软，铺在盘底。",
+"虾开背去虾线，摆在粉丝上。",
+"大蒜切末，热油爆香。",
+"将爆香的大蒜末撒在虾上。",
+"水开后，将虾盘放入蒸锅，蒸6分钟。",
+"出锅撒上葱花，淋上热油即可。"
+],
+"methods": [
+"蒸"
+],
+"cuisine": "AI 创意",
+"time_minutes": 10,
+"difficulty": "简单",
+"cookware": [
+"蒸锅"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [
+"甲壳类"
+],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"虾线未去除干净可能导致不适",
+"蒸制注意水蒸气烫伤，开盖时脸不要正对蒸锅。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
+},
+{
+"key": "r080:lazy",
+"id": "ai-var-r080-lazy",
+"title": "懒人版银耳莲子羹",
+"ingredients": [
+{
+"name": "银耳",
+"canonical": "银耳",
+"amount": "1朵",
+"optional": false
+},
+{
+"name": "莲子",
+"canonical": "莲子",
+"amount": "1把",
+"optional": false
+},
+{
+"name": "冰糖",
+"canonical": "冰糖",
+"amount": "1勺",
+"optional": false
+}
+],
+"steps": [
+"将银耳和莲子提前泡发，银耳撕成小朵，莲子去芯。",
+"将泡发好的银耳和莲子连同泡发水一起倒入电饭煲。",
+"加入冰糖，选择电饭煲的汤/粥功能，煮至程序结束。",
+"待电饭煲自动保温后，打开盖子，搅拌均匀即可食用。"
+],
+"methods": [
+"电饭煲"
+],
+"cuisine": "AI 创意",
+"time_minutes": 30,
+"difficulty": "简单",
+"cookware": [
+"电饭煲"
+],
+"tags": [
+"快手",
+"一人食"
+],
+"allergens": [],
+"safety_notes": [
+"AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。",
+"注意不要食用未泡发完全的银耳和莲子。"
+],
+"source": "GLM AI 生成（glm-4-flash）",
+"license": "AI-generated, see About",
+"is_ai_generated": true
 }
 ]
