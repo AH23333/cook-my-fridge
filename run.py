@@ -36,6 +36,7 @@ def main() -> None:
 
     sub.add_parser("build")
     sub.add_parser("repair")
+    sub.add_parser("audit")
 
     args = parser.parse_args()
 
@@ -55,6 +56,15 @@ def main() -> None:
         from cookmyfridge.batch import repair_all_caches
 
         print(repair_all_caches())
+        return
+
+    if args.task == "audit":
+        from cookmyfridge.audit import run_audit
+
+        report = run_audit()
+        print(report)
+        if not report["ok"]:
+            sys.exit(1)
         return
 
     runner = BatchRunner()
