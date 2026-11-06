@@ -12,6 +12,8 @@ def test_build_site(tmp_path, monkeypatch):
     (fake_web / "js").mkdir(parents=True)
     (fake_web / "css").joinpath("style.css").write_text("/* x */", encoding="utf-8")
     (fake_web).joinpath("index.html").write_text("<html></html>", encoding="utf-8")
+    for extra in ("sw.js", "manifest.webmanifest", "icon.svg"):
+        (fake_web / extra).write_text("x", encoding="utf-8")
 
     monkeypatch.setattr(build, "SITE_DIR", fake_site)
     monkeypatch.setattr(build, "WEB_DIR", fake_web)
@@ -28,6 +30,8 @@ def test_build_site(tmp_path, monkeypatch):
     assert (fake_site / "index.html").exists()
     for name in ("wildcards", "blindboxes", "variants", "ideas"):
         assert (fake_site / "data" / "ai" / f"{name}.json").exists()
+    for extra in ("sw.js", "manifest.webmanifest", "icon.svg"):
+        assert (fake_site / extra).exists()
 
 
 def test_export_catalog_includes_staples(tmp_path, monkeypatch):
