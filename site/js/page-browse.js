@@ -10,6 +10,7 @@
     const text = String(criteria.text || "").trim().toLowerCase();
     const methods = criteria.methods || [];
     const tags = criteria.tags || [];
+    const nutrition = criteria.nutrition || [];
     const maxTime = criteria.maxTime;
     return recipes.filter((r) => {
       if (maxTime != null && r.time_minutes > maxTime) return false;
@@ -17,6 +18,10 @@
         return false;
       }
       if (tags.length && !tags.every((t) => r.tags.includes(t))) return false;
+      if (nutrition.length) {
+        const have = CMF.recipeNutrition ? CMF.recipeNutrition(r) : [];
+        if (!nutrition.every((f) => have.includes(f))) return false;
+      }
       if (text) {
         const haystack = (
           r.title +
@@ -30,10 +35,11 @@
   };
 
   function init() {
-    const state = { text: "", methods: [], tags: [], maxTime: null };
+    const state = { text: "", methods: [], tags: [], nutrition: [], maxTime: null };
     const grid = document.getElementById("browse-grid");
     const count = document.getElementById("browse-count");
     const vocab = CMF.data.vocab;
+    const NUTRITION_OPTIONS = ["高蛋白", "高纤维", "低脂", "低碳水", "优质碳水"];
 
     function toggle(list, value) {
       const idx = list.indexOf(value);
@@ -56,6 +62,15 @@
             `<button class="filter-chip${state.tags.includes(t) ? " on" : ""}" data-kind="tag" data-value="${CMF.esc(t)}">${CMF.esc(t)}</button>`
         )
         .join("");
+      const nutBox = document.getElementById("filter-nutrition");
+      if (nutBox) {
+        nutBox.innerHTML = NUTRITION_OPTIONS
+          .map(
+            (f) =>
+              `<button class="filter-chip${state.nutrition.includes(f) ? " on" : ""}" data-kind="nutrition" data-value="${CMF.esc(f)}">${CMF.esc(f)}</button>`
+          )
+          .join("");
+      }
     }
 
     function renderGrid() {
@@ -84,6 +99,7 @@
         if (!chip) return;
         const value = chip.dataset.value;
         if (chip.dataset.kind === "method") toggle(state.methods, value);
+        else if (chip.dataset.kind === "nutrition") toggle(state.nutrition, value);
         else toggle(state.tags, value);
         chip.classList.toggle("on");
         renderGrid();

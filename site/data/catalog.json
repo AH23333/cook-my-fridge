@@ -8,7 +8,12 @@
 "大白菜",
 "黄芽菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "卷心菜",
@@ -20,7 +25,12 @@
 "甘蓝",
 "莲花白"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "娃娃菜",
@@ -29,7 +39,8 @@
 "synonyms": [
 "微型大白菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "小白菜",
@@ -40,7 +51,8 @@
 "上海青",
 "小油菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "油菜",
@@ -49,7 +61,8 @@
 "synonyms": [
 "芸薹"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "菠菜",
@@ -58,7 +71,12 @@
 "synonyms": [
 "赤根菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "生菜",
@@ -67,7 +85,12 @@
 "synonyms": [
 "叶用莴苣"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "芹菜",
@@ -76,7 +99,12 @@
 "synonyms": [
 "旱芹"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "韭菜",
@@ -85,7 +113,8 @@
 "synonyms": [
 "起阳草"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "香菜",
@@ -95,7 +124,8 @@
 "芫荽",
 "胡荽"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "茼蒿",
@@ -105,7 +135,8 @@
 "皇帝菜",
 "蓬蒿"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "空心菜",
@@ -115,7 +146,8 @@
 "通菜",
 "蕹菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "苋菜",
@@ -124,7 +156,8 @@
 "synonyms": [
 "汉菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "芥蓝",
@@ -133,7 +166,8 @@
 "synonyms": [
 "芥兰"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "芦笋",
@@ -142,7 +176,12 @@
 "synonyms": [
 "石刁柏"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "西兰花",
@@ -152,7 +191,12 @@
 "绿花菜",
 "西蓝花"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "菜花",
@@ -162,7 +206,12 @@
 "花菜",
 "花椰菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "黄瓜",
@@ -172,7 +221,12 @@
 "青瓜",
 "胡瓜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "冬瓜",
@@ -181,7 +235,8 @@
 "synonyms": [
 "白瓜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "南瓜",
@@ -191,7 +246,11 @@
 "倭瓜",
 "番瓜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
 },
 {
 "canonical": "丝瓜",
@@ -200,7 +259,8 @@
 "synonyms": [
 "胜瓜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "苦瓜",
@@ -209,7 +269,8 @@
 "synonyms": [
 "凉瓜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "西葫芦",
@@ -219,7 +280,8 @@
 "角瓜",
 "小瓜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "番茄",
@@ -230,7 +292,12 @@
 "洋柿子",
 "柿子"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "茄子",
@@ -239,7 +306,12 @@
 "synonyms": [
 "落苏"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "青椒",
@@ -252,7 +324,12 @@
 "红甜椒",
 "红椒"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "辣椒",
@@ -263,7 +340,8 @@
 "小米辣",
 "朝天椒"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "土豆",
@@ -274,7 +352,10 @@
 "洋芋",
 "地蛋"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"优质碳水"
+]
 },
 {
 "canonical": "红薯",
@@ -285,7 +366,11 @@
 "甘薯",
 "番薯"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
 },
 {
 "canonical": "山药",
@@ -295,7 +380,10 @@
 "薯蓣",
 "淮山"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"优质碳水"
+]
 },
 {
 "canonical": "莲藕",
@@ -304,7 +392,11 @@
 "synonyms": [
 "藕"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
 },
 {
 "canonical": "萝卜",
@@ -313,7 +405,8 @@
 "synonyms": [
 "白萝卜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "胡萝卜",
@@ -323,7 +416,11 @@
 "红萝卜",
 "甘笋"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂"
+]
 },
 {
 "canonical": "洋葱",
@@ -333,7 +430,11 @@
 "球葱",
 "圆葱"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂"
+]
 },
 {
 "canonical": "大葱",
@@ -343,7 +444,8 @@
 "葱",
 "葱白"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "生姜",
@@ -354,7 +456,8 @@
 "老姜",
 "姜片"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "大蒜",
@@ -366,7 +469,8 @@
 "蒜末",
 "蒜蓉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "小葱",
@@ -377,7 +481,8 @@
 "香葱",
 "小香葱"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "干辣椒",
@@ -391,7 +496,8 @@
 "辣椒油",
 "辣椒圈"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "蒜苔",
@@ -401,7 +507,8 @@
 "蒜薹",
 "蒜苗"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "豆角",
@@ -411,7 +518,11 @@
 "豇豆",
 "长豆角"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂"
+]
 },
 {
 "canonical": "豌豆",
@@ -421,7 +532,8 @@
 "青豆",
 "荷兰豆"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "玉米",
@@ -432,7 +544,11 @@
 "苞谷",
 "玉米粒"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
 },
 {
 "canonical": "圣女果",
@@ -442,7 +558,8 @@
 "小番茄",
 "樱桃番茄"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "四季豆",
@@ -451,7 +568,8 @@
 "synonyms": [
 "菜豆"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "豆芽",
@@ -461,7 +579,8 @@
 "绿豆芽",
 "黄豆芽"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "莴笋",
@@ -470,7 +589,8 @@
 "synonyms": [
 "莴苣"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "竹笋",
@@ -481,7 +601,8 @@
 "春笋",
 "冬笋"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "茭白",
@@ -490,7 +611,8 @@
 "synonyms": [
 "高笋"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "木耳",
@@ -500,7 +622,12 @@
 "黑木耳",
 "云耳"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "银耳",
@@ -510,7 +637,8 @@
 "白木耳",
 "雪耳"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "香菇",
@@ -520,7 +648,12 @@
 "冬菇",
 "花菇"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "金针菇",
@@ -529,7 +662,12 @@
 "synonyms": [
 "冬蘑"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "平菇",
@@ -538,7 +676,12 @@
 "synonyms": [
 "侧耳"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "杏鲍菇",
@@ -547,7 +690,12 @@
 "synonyms": [
 "刺芹菇"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "口蘑",
@@ -556,7 +704,12 @@
 "synonyms": [
 "白蘑菇"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "蟹味菇",
@@ -565,7 +718,12 @@
 "synonyms": [
 "真姬菇"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "海带",
@@ -574,7 +732,8 @@
 "synonyms": [
 "昆布"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "紫菜",
@@ -583,7 +742,8 @@
 "synonyms": [
 "索菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "猪肉",
@@ -597,7 +757,11 @@
 "肉馅",
 "肉末"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"低碳水"
+]
 },
 {
 "canonical": "五花肉",
@@ -607,7 +771,8 @@
 "三层肉",
 "五花"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "排骨",
@@ -617,7 +782,10 @@
 "猪排骨",
 "小排"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高蛋白"
+]
 },
 {
 "canonical": "猪蹄",
@@ -627,7 +795,8 @@
 "猪脚",
 "猪手"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "猪肝",
@@ -636,7 +805,12 @@
 "synonyms": [
 "肝片"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"高铁",
+"低脂"
+]
 },
 {
 "canonical": "牛肉",
@@ -646,7 +820,12 @@
 "牛里脊",
 "肥牛"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"低碳水",
+"高铁"
+]
 },
 {
 "canonical": "牛腩",
@@ -655,7 +834,8 @@
 "synonyms": [
 "牛腹肉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "羊肉",
@@ -665,7 +845,8 @@
 "羊腿肉",
 "羔羊肉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "鸡肉",
@@ -677,7 +858,11 @@
 "土鸡",
 "鸡肉丝"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"低碳水"
+]
 },
 {
 "canonical": "鸡胸肉",
@@ -686,7 +871,12 @@
 "synonyms": [
 "鸡脯肉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "鸡腿",
@@ -695,7 +885,8 @@
 "synonyms": [
 "鸡大腿"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "鸡翅",
@@ -705,7 +896,8 @@
 "鸡翅膀",
 "翅中"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "鸡爪",
@@ -714,7 +906,8 @@
 "synonyms": [
 "凤爪"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "鸭肉",
@@ -724,7 +917,8 @@
 "鸭",
 "老鸭"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "鸡蛋",
@@ -736,6 +930,10 @@
 ],
 "allergens": [
 "鸡蛋"
+],
+"nutrition": [
+"高蛋白",
+"低碳水"
 ]
 },
 {
@@ -748,7 +946,8 @@
 ],
 "allergens": [
 "鸡蛋"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "火腿肠",
@@ -757,7 +956,8 @@
 "synonyms": [
 "火腿"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "午餐肉",
@@ -766,7 +966,8 @@
 "synonyms": [
 "梅林午餐肉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "香肠",
@@ -775,7 +976,8 @@
 "synonyms": [
 "腊肠"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "腊肉",
@@ -784,7 +986,8 @@
 "synonyms": [
 "咸肉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "培根",
@@ -793,7 +996,8 @@
 "synonyms": [
 "烟肉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "鲫鱼",
@@ -804,7 +1008,8 @@
 ],
 "allergens": [
 "鱼"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "草鱼",
@@ -815,7 +1020,8 @@
 ],
 "allergens": [
 "鱼"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "带鱼",
@@ -826,7 +1032,8 @@
 ],
 "allergens": [
 "鱼"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "鳕鱼",
@@ -837,6 +1044,11 @@
 ],
 "allergens": [
 "鱼"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
 ]
 },
 {
@@ -849,6 +1061,10 @@
 ],
 "allergens": [
 "鱼"
+],
+"nutrition": [
+"高蛋白",
+"低碳水"
 ]
 },
 {
@@ -861,6 +1077,11 @@
 ],
 "allergens": [
 "鱼"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
 ]
 },
 {
@@ -872,6 +1093,11 @@
 ],
 "allergens": [
 "鱼"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
 ]
 },
 {
@@ -884,7 +1110,8 @@
 ],
 "allergens": [
 "鱼"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "鱼",
@@ -896,7 +1123,8 @@
 ],
 "allergens": [
 "鱼"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "虾",
@@ -909,6 +1137,11 @@
 ],
 "allergens": [
 "甲壳类"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
 ]
 },
 {
@@ -921,6 +1154,11 @@
 ],
 "allergens": [
 "甲壳类"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
 ]
 },
 {
@@ -930,7 +1168,8 @@
 "synonyms": [
 "枪乌贼"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "螃蟹",
@@ -942,6 +1181,11 @@
 ],
 "allergens": [
 "甲壳类"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
 ]
 },
 {
@@ -951,7 +1195,8 @@
 "synonyms": [
 "带子"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "花蛤",
@@ -961,7 +1206,12 @@
 "花甲",
 "蛤蜊"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "虾皮",
@@ -973,7 +1223,8 @@
 ],
 "allergens": [
 "甲壳类"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "大米",
@@ -983,7 +1234,10 @@
 "米",
 "粳米"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"优质碳水"
+]
 },
 {
 "canonical": "米饭",
@@ -994,7 +1248,8 @@
 "剩饭",
 "隔夜饭"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "小米",
@@ -1003,7 +1258,11 @@
 "synonyms": [
 "粟米"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
 },
 {
 "canonical": "糯米",
@@ -1012,7 +1271,8 @@
 "synonyms": [
 "江米"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "莲子",
@@ -1022,7 +1282,8 @@
 "莲米",
 "白莲"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "燕麦",
@@ -1033,6 +1294,10 @@
 ],
 "allergens": [
 "麸质"
+],
+"nutrition": [
+"高纤维",
+"优质碳水"
 ]
 },
 {
@@ -1045,7 +1310,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "面条",
@@ -1057,7 +1323,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "挂面",
@@ -1068,7 +1335,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "方便面",
@@ -1080,7 +1348,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "荞麦面",
@@ -1091,7 +1360,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "乌冬面",
@@ -1102,7 +1372,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "意面",
@@ -1114,7 +1385,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "米粉",
@@ -1123,7 +1395,8 @@
 "synonyms": [
 "米线"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "粉丝",
@@ -1133,7 +1406,8 @@
 "细粉",
 "龙口粉丝"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "粉条",
@@ -1142,7 +1416,8 @@
 "synonyms": [
 "红薯粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "馒头",
@@ -1153,7 +1428,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "面包糠",
@@ -1164,7 +1440,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "糯米粉",
@@ -1173,7 +1450,8 @@
 "synonyms": [
 "江米粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "藕粉",
@@ -1182,7 +1460,8 @@
 "synonyms": [
 "藕淀粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "面包",
@@ -1193,7 +1472,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "吐司",
@@ -1207,7 +1487,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "饺子",
@@ -1218,7 +1499,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "馄饨",
@@ -1229,7 +1511,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "包子",
@@ -1240,7 +1523,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "豆腐",
@@ -1252,6 +1536,11 @@
 ],
 "allergens": [
 "大豆"
+],
+"nutrition": [
+"高蛋白",
+"高纤维",
+"低碳水"
 ]
 },
 {
@@ -1264,6 +1553,10 @@
 ],
 "allergens": [
 "大豆"
+],
+"nutrition": [
+"高蛋白",
+"低碳水"
 ]
 },
 {
@@ -1275,7 +1568,8 @@
 ],
 "allergens": [
 "大豆"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "豆干",
@@ -1287,6 +1581,11 @@
 ],
 "allergens": [
 "大豆"
+],
+"nutrition": [
+"高蛋白",
+"高纤维",
+"低碳水"
 ]
 },
 {
@@ -1298,6 +1597,10 @@
 ],
 "allergens": [
 "大豆"
+],
+"nutrition": [
+"高蛋白",
+"低碳水"
 ]
 },
 {
@@ -1309,7 +1612,8 @@
 ],
 "allergens": [
 "大豆"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "毛豆",
@@ -1320,7 +1624,8 @@
 ],
 "allergens": [
 "大豆"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "黄豆",
@@ -1331,6 +1636,11 @@
 ],
 "allergens": [
 "大豆"
+],
+"nutrition": [
+"高蛋白",
+"高纤维",
+"优质碳水"
 ]
 },
 {
@@ -1340,7 +1650,12 @@
 "synonyms": [
 "青小豆"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"高纤维",
+"优质碳水"
+]
 },
 {
 "canonical": "红豆",
@@ -1350,7 +1665,8 @@
 "赤小豆",
 "红小豆"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "牛奶",
@@ -1364,7 +1680,8 @@
 ],
 "allergens": [
 "牛奶"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "酸奶",
@@ -1375,7 +1692,8 @@
 ],
 "allergens": [
 "牛奶"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "奶酪",
@@ -1387,7 +1705,8 @@
 ],
 "allergens": [
 "牛奶"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "黄油",
@@ -1399,7 +1718,8 @@
 ],
 "allergens": [
 "牛奶"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "奶油",
@@ -1411,7 +1731,8 @@
 ],
 "allergens": [
 "牛奶"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "花生",
@@ -1423,7 +1744,8 @@
 ],
 "allergens": [
 "花生"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "食用油",
@@ -1435,7 +1757,8 @@
 "菜籽油",
 "油"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "清水",
@@ -1449,7 +1772,8 @@
 "凉水",
 "冰块"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "花生油",
@@ -1458,14 +1782,16 @@
 "synonyms": [],
 "allergens": [
 "花生"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "橄榄油",
 "category": "调料",
 "emoji": "🫒",
 "synonyms": [],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "香油",
@@ -1475,7 +1801,8 @@
 "芝麻油",
 "麻油"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "芝麻",
@@ -1488,7 +1815,8 @@
 "熟白芝麻",
 "白芝麻粒"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "酵母",
@@ -1499,7 +1827,8 @@
 "酵母粉",
 "发酵粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "盐",
@@ -1509,7 +1838,8 @@
 "食盐",
 "精盐"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "白糖",
@@ -1520,7 +1850,8 @@
 "绵白糖",
 "糖"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "冰糖",
@@ -1529,7 +1860,8 @@
 "synonyms": [
 "老冰糖"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "生抽",
@@ -1540,7 +1872,8 @@
 ],
 "allergens": [
 "大豆"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "老抽",
@@ -1551,7 +1884,8 @@
 ],
 "allergens": [
 "大豆"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "酱油",
@@ -1562,7 +1896,8 @@
 ],
 "allergens": [
 "大豆"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "醋",
@@ -1574,7 +1909,8 @@
 "香醋",
 "黑醋"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "料酒",
@@ -1584,7 +1920,8 @@
 "黄酒",
 "绍酒"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "蚝油",
@@ -1593,7 +1930,8 @@
 "synonyms": [
 "牡蛎油"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "豆瓣酱",
@@ -1604,7 +1942,8 @@
 ],
 "allergens": [
 "大豆"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "黄豆酱",
@@ -1615,7 +1954,8 @@
 ],
 "allergens": [
 "大豆"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "甜面酱",
@@ -1626,7 +1966,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "辣椒酱",
@@ -1635,7 +1976,8 @@
 "synonyms": [
 "剁椒"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "老干妈",
@@ -1644,7 +1986,8 @@
 "synonyms": [
 "陶华碧老干妈"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "火锅底料",
@@ -1653,7 +1996,8 @@
 "synonyms": [
 "牛油底料"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "可乐",
@@ -1662,7 +2006,8 @@
 "synonyms": [
 "汽水"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "咖喱块",
@@ -1673,7 +2018,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "番茄酱",
@@ -1682,7 +2028,8 @@
 "synonyms": [
 "番茄沙司"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "沙拉酱",
@@ -1694,7 +2041,8 @@
 ],
 "allergens": [
 "鸡蛋"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "芝麻酱",
@@ -1703,7 +2051,8 @@
 "synonyms": [
 "麻酱"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "花生酱",
@@ -1712,7 +2061,8 @@
 "synonyms": [],
 "allergens": [
 "花生"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "腐乳",
@@ -1723,7 +2073,8 @@
 ],
 "allergens": [
 "大豆"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "花椒",
@@ -1732,7 +2083,8 @@
 "synonyms": [
 "麻椒"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "八角",
@@ -1742,7 +2094,8 @@
 "大料",
 "八角茴香"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "桂皮",
@@ -1752,7 +2105,8 @@
 "肉桂",
 "肉桂粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "香叶",
@@ -1761,7 +2115,8 @@
 "synonyms": [
 "月桂叶"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "罗勒",
@@ -1771,7 +2126,8 @@
 "罗勒叶",
 "九层塔"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "高汤",
@@ -1782,7 +2138,8 @@
 "骨头汤",
 "清汤"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "胡椒粉",
@@ -1793,7 +2150,8 @@
 "白胡椒",
 "白胡椒粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "黑胡椒",
@@ -1802,7 +2160,8 @@
 "synonyms": [
 "黑椒"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "孜然",
@@ -1811,7 +2170,8 @@
 "synonyms": [
 "安息茴香"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "十三香",
@@ -1820,7 +2180,8 @@
 "synonyms": [
 "五香粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "鸡精",
@@ -1829,7 +2190,8 @@
 "synonyms": [
 "鸡粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "淀粉",
@@ -1840,7 +2202,8 @@
 "玉米淀粉",
 "水淀粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "蜂蜜",
@@ -1849,7 +2212,8 @@
 "synonyms": [
 "蜜糖"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "蒸鱼豉油",
@@ -1860,7 +2224,8 @@
 ],
 "allergens": [
 "大豆"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "姜粉",
@@ -1869,7 +2234,8 @@
 "synonyms": [
 "干姜粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "蒜粉",
@@ -1878,7 +2244,8 @@
 "synonyms": [
 "大蒜粉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "花椒粉",
@@ -1887,7 +2254,8 @@
 "synonyms": [
 "花椒面"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "白酒",
@@ -1896,7 +2264,8 @@
 "synonyms": [
 "烧酒"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "白醋",
@@ -1905,7 +2274,8 @@
 "synonyms": [
 "米醋白醋"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "椰浆",
@@ -1914,7 +2284,8 @@
 "synonyms": [
 "椰奶"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "柠檬汁",
@@ -1923,7 +2294,8 @@
 "synonyms": [
 "柠檬原汁"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "苹果",
@@ -1932,7 +2304,8 @@
 "synonyms": [
 "红富士"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "香蕉",
@@ -1941,7 +2314,8 @@
 "synonyms": [
 "甘蕉"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "橙子",
@@ -1951,7 +2325,8 @@
 "甜橙",
 "脐橙"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "橘子",
@@ -1961,7 +2336,8 @@
 "桔子",
 "蜜橘"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "柠檬",
@@ -1970,7 +2346,8 @@
 "synonyms": [
 "柠果"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "葡萄",
@@ -1979,7 +2356,8 @@
 "synonyms": [
 "提子"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "西瓜",
@@ -1988,7 +2366,8 @@
 "synonyms": [
 "夏瓜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "草莓",
@@ -1997,7 +2376,8 @@
 "synonyms": [
 "士多啤梨"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "蓝莓",
@@ -2006,7 +2386,8 @@
 "synonyms": [
 "蓝浆果"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "菠萝",
@@ -2015,7 +2396,8 @@
 "synonyms": [
 "凤梨"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "芒果",
@@ -2024,7 +2406,8 @@
 "synonyms": [
 "杧果"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "梨",
@@ -2034,7 +2417,8 @@
 "雪梨",
 "鸭梨"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "桃子",
@@ -2044,7 +2428,8 @@
 "桃",
 "水蜜桃"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "猕猴桃",
@@ -2053,7 +2438,8 @@
 "synonyms": [
 "奇异果"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "火龙果",
@@ -2062,7 +2448,8 @@
 "synonyms": [
 "红龙果"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "柚子",
@@ -2071,7 +2458,8 @@
 "synonyms": [
 "文旦"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "木瓜",
@@ -2080,7 +2468,8 @@
 "synonyms": [
 "番木瓜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "樱桃",
@@ -2089,7 +2478,8 @@
 "synonyms": [
 "车厘子"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "荔枝",
@@ -2099,7 +2489,8 @@
 "丹荔",
 "荔枝冰块"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "龙眼",
@@ -2108,7 +2499,8 @@
 "synonyms": [
 "桂圆"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "红枣",
@@ -2119,7 +2511,8 @@
 "干枣",
 "枣"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "枸杞",
@@ -2129,7 +2522,8 @@
 "枸杞子",
 "红枸杞"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "速冻饺子",
@@ -2140,7 +2534,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "速冻包子",
@@ -2151,7 +2546,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "手抓饼",
@@ -2162,7 +2558,8 @@
 ],
 "allergens": [
 "麸质"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "冻薯条",
@@ -2171,7 +2568,8 @@
 "synonyms": [
 "冷冻薯条"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "冻豌豆",
@@ -2180,7 +2578,8 @@
 "synonyms": [
 "冷冻豌豆"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "冻玉米粒",
@@ -2189,7 +2588,8 @@
 "synonyms": [
 "冷冻玉米粒"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "冻虾仁",
@@ -2200,7 +2600,8 @@
 ],
 "allergens": [
 "甲壳类"
-]
+],
+"nutrition": []
 },
 {
 "canonical": "冻鸡块",
@@ -2210,7 +2611,8 @@
 "上校鸡块",
 "鸡米花"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "汤圆",
@@ -2219,7 +2621,8 @@
 "synonyms": [
 "元宵"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "冷冻混合菜",
@@ -2229,7 +2632,8 @@
 "杂菜粒",
 "什锦菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "秋葵",
@@ -2239,7 +2643,12 @@
 "羊角豆",
 "黄秋葵"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
 },
 {
 "canonical": "羽衣甘蓝",
@@ -2249,7 +2658,8 @@
 "绿叶甘蓝",
 "kale"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "抱子甘蓝",
@@ -2259,7 +2669,8 @@
 "球芽甘蓝",
 "小卷心菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "茴香",
@@ -2269,7 +2680,8 @@
 "茴香菜",
 "小怀香"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "荠菜",
@@ -2279,7 +2691,8 @@
 "菱角菜",
 "护生草"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "苦菊",
@@ -2289,7 +2702,8 @@
 "苦苣",
 "苦叶生菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "韭黄",
@@ -2299,7 +2713,8 @@
 "韭芽",
 "黄韭"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "蒜黄",
@@ -2308,7 +2723,8 @@
 "synonyms": [
 "蒜苗黄"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "折耳根",
@@ -2318,7 +2734,8 @@
 "鱼腥草",
 "蕺菜"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "马齿苋",
@@ -2328,7 +2745,8 @@
 "马苋",
 "五行草"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "菱角",
@@ -2338,7 +2756,8 @@
 "水菱",
 "菱实"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "百合",
@@ -2348,7 +2767,8 @@
 "鲜百合",
 "蒜脑薯"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "牛油果",
@@ -2358,7 +2778,8 @@
 "鳄梨",
 "酪梨"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": []
 },
 {
 "canonical": "鹰嘴豆",
@@ -2368,7 +2789,12 @@
 "桃豆",
 "鸡心豆"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"高纤维",
+"优质碳水"
+]
 },
 {
 "canonical": "藜麦",
@@ -2378,272 +2804,14 @@
 "奎藜",
 "藜米"
 ],
-"allergens": []
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
 }
 ],
 "substitutions": {
-"生姜": [
-{
-"canonical": "姜粉",
-"reason": "1 小勺姜粉替代 1 片姜"
-},
-{
-"canonical": "料酒",
-"reason": "去腥用途可部分替代"
-}
-],
-"洋葱": [
-{
-"canonical": "大葱",
-"reason": "葱白部分替代，减量使用"
-},
-{
-"canonical": "大蒜",
-"reason": "用蒜片补香气"
-}
-],
-"牛奶": [
-{
-"canonical": "豆浆",
-"reason": "烘焙和浓汤可用无糖豆浆替代"
-},
-{
-"canonical": "酸奶",
-"reason": "部分面糊可用原味酸奶替代"
-}
-],
-"胡椒粉": [
-{
-"canonical": "黑胡椒",
-"reason": "风味更冲，减量使用"
-},
-{
-"canonical": "花椒粉",
-"reason": "麻味替代，风味不同"
-}
-],
-"木耳": [
-{
-"canonical": "腐竹",
-"reason": "泡发后口感接近"
-},
-{
-"canonical": "香菇",
-"reason": "鲜味替代"
-}
-],
-"虾": [
-{
-"canonical": "虾仁",
-"reason": "冻虾仁解冻替代"
-},
-{
-"canonical": "巴沙鱼",
-"reason": "低脂白肉替代"
-}
-],
-"面条": [
-{
-"canonical": "挂面",
-"reason": "同物干鲜互换"
-},
-{
-"canonical": "米粉",
-"reason": "无麸质替代，注意泡发时间"
-}
-],
-"面包糠": [
-{
-"canonical": "吐司",
-"reason": "吐司烤干碾碎替代"
-},
-{
-"canonical": "淀粉",
-"reason": "炸物裹粉替代"
-}
-],
-"香菇": [
-{
-"canonical": "口蘑",
-"reason": "鲜味替代"
-},
-{
-"canonical": "杏鲍菇",
-"reason": "切丁替代，口感更弹"
-}
-],
-"淀粉": [
-{
-"canonical": "面粉",
-"reason": "勾芡替代，容易结块需调水"
-},
-{
-"canonical": "藕粉",
-"reason": "透亮勾芡替代"
-}
-],
-"蟹味菇": [
-{
-"canonical": "金针菇",
-"reason": "口感接近，替换等量"
-},
-{
-"canonical": "杏鲍菇",
-"reason": "切条替代"
-}
-],
-"牛肉": [
-{
-"canonical": "猪肉",
-"reason": "家常替代，成本更低"
-},
-{
-"canonical": "杏鲍菇",
-"reason": "素食替代，切片模拟口感"
-}
-],
-"培根": [
-{
-"canonical": "腊肉",
-"reason": "咸香接近，提前泡淡"
-},
-{
-"canonical": "火腿肠",
-"reason": "切丁替代，减少盐量"
-}
-],
-"莴笋": [
-{
-"canonical": "西葫芦",
-"reason": "脆感替代"
-},
-{
-"canonical": "黄瓜",
-"reason": "凉拌替代"
-}
-],
-"胡萝卜": [
-{
-"canonical": "萝卜",
-"reason": "炖汤替代，甜味不同"
-},
-{
-"canonical": "南瓜",
-"reason": "配色和甜味替代"
-}
-],
-"粉丝": [
-{
-"canonical": "粉条",
-"reason": "更耐煮，提前泡软"
-},
-{
-"canonical": "米粉",
-"reason": "细米粉替代"
-}
-],
-"鸡蛋": [
-{
-"canonical": "淀粉",
-"reason": "炸物裹粉时用淀粉水替代蛋液"
-},
-{
-"canonical": "嫩豆腐",
-"reason": "素食版本可用豆腐替代"
-}
-],
-"香菜": [
-{
-"canonical": "芹菜",
-"reason": "切碎替代，口感接近"
-},
-{
-"canonical": "茼蒿",
-"reason": "烫煮后气味相近"
-}
-],
-"醋": [
-{
-"canonical": "柠檬汁",
-"reason": "酸味清新，等量替换"
-},
-{
-"canonical": "白醋",
-"reason": "酸度接近，无香气"
-}
-],
-"黄油": [
-{
-"canonical": "橄榄油",
-"reason": "煎炒时等量替换，风味更清淡"
-},
-{
-"canonical": "食用油",
-"reason": "烘焙外的烹饪可等量替换"
-}
-],
-"西兰花": [
-{
-"canonical": "菜花",
-"reason": "同科替换，烹饪时间相近"
-}
-],
-"豆腐": [
-{
-"canonical": "嫩豆腐",
-"reason": "口感更软，适合煮汤"
-},
-{
-"canonical": "鸡蛋",
-"reason": "蛋白质替代，做法调整"
-}
-],
-"面粉": [
-{
-"canonical": "淀粉",
-"reason": "勾芡用途可替代，不适合做面团"
-},
-{
-"canonical": "糯米粉",
-"reason": "仅限部分点心"
-}
-],
-"豆角": [
-{
-"canonical": "四季豆",
-"reason": "同类替换，务必焖熟"
-},
-{
-"canonical": "豌豆",
-"reason": "清甜替代"
-}
-],
-"料酒": [
-{
-"canonical": "白酒",
-"reason": "减量使用，去腥后挥发"
-}
-],
-"奶油": [
-{
-"canonical": "牛奶",
-"reason": "加一勺淀粉勾芡模拟浓稠感"
-},
-{
-"canonical": "椰浆",
-"reason": "咖喱和浓汤里风味接近"
-}
-],
-"五花肉": [
-{
-"canonical": "猪肉",
-"reason": "加一勺油弥补油脂不足"
-},
-{
-"canonical": "培根",
-"reason": "烟熏风味，注意减盐"
-}
-],
 "午餐肉": [
 {
 "canonical": "火腿肠",
@@ -2664,14 +2832,126 @@
 "reason": "焖饭时混合杂粮"
 }
 ],
-"蚝油": [
+"香菇": [
 {
-"canonical": "生抽",
-"reason": "用生抽提咸鲜，再加少许糖增厚"
+"canonical": "口蘑",
+"reason": "鲜味替代"
 },
 {
-"canonical": "黄豆酱",
-"reason": "少量替代，注意先剁碎"
+"canonical": "杏鲍菇",
+"reason": "切丁替代，口感更弹"
+}
+],
+"老抽": [
+{
+"canonical": "生抽",
+"reason": "减量上色，另加少许糖"
+},
+{
+"canonical": "酱油",
+"reason": "少量多次调色"
+}
+],
+"木耳": [
+{
+"canonical": "腐竹",
+"reason": "泡发后口感接近"
+},
+{
+"canonical": "香菇",
+"reason": "鲜味替代"
+}
+],
+"培根": [
+{
+"canonical": "腊肉",
+"reason": "咸香接近，提前泡淡"
+},
+{
+"canonical": "火腿肠",
+"reason": "切丁替代，减少盐量"
+}
+],
+"蟹味菇": [
+{
+"canonical": "金针菇",
+"reason": "口感接近，替换等量"
+},
+{
+"canonical": "杏鲍菇",
+"reason": "切条替代"
+}
+],
+"大葱": [
+{
+"canonical": "洋葱",
+"reason": "切碎替代，甜度更高"
+},
+{
+"canonical": "大蒜",
+"reason": "爆香替代，香气不同"
+}
+],
+"五花肉": [
+{
+"canonical": "猪肉",
+"reason": "加一勺油弥补油脂不足"
+},
+{
+"canonical": "培根",
+"reason": "烟熏风味，注意减盐"
+}
+],
+"豆腐": [
+{
+"canonical": "嫩豆腐",
+"reason": "口感更软，适合煮汤"
+},
+{
+"canonical": "鸡蛋",
+"reason": "蛋白质替代，做法调整"
+}
+],
+"香菜": [
+{
+"canonical": "芹菜",
+"reason": "切碎替代，口感接近"
+},
+{
+"canonical": "茼蒿",
+"reason": "烫煮后气味相近"
+}
+],
+"淀粉": [
+{
+"canonical": "面粉",
+"reason": "勾芡替代，容易结块需调水"
+},
+{
+"canonical": "藕粉",
+"reason": "透亮勾芡替代"
+}
+],
+"大蒜": [
+{
+"canonical": "蒜苔",
+"reason": "切碎替代，香气更淡"
+},
+{
+"canonical": "蒜粉",
+"reason": "1 小勺替代 2 瓣蒜"
+}
+],
+"料酒": [
+{
+"canonical": "白酒",
+"reason": "减量使用，去腥后挥发"
+}
+],
+"西兰花": [
+{
+"canonical": "菜花",
+"reason": "同科替换，烹饪时间相近"
 }
 ],
 "猪肉": [
@@ -2694,24 +2974,64 @@
 "reason": "鲜甜接近，减盐"
 }
 ],
-"白糖": [
+"牛肉": [
 {
-"canonical": "冰糖",
-"reason": "敲碎后等量替换"
+"canonical": "猪肉",
+"reason": "家常替代，成本更低"
 },
 {
-"canonical": "蜂蜜",
-"reason": "出锅后加，避免高温"
+"canonical": "杏鲍菇",
+"reason": "素食替代，切片模拟口感"
 }
 ],
-"番茄": [
+"胡椒粉": [
 {
-"canonical": "番茄酱",
-"reason": "3 勺番茄酱加少量糖替代 1 个番茄"
+"canonical": "黑胡椒",
+"reason": "风味更冲，减量使用"
 },
 {
-"canonical": "圣女果",
-"reason": "整颗对半切"
+"canonical": "花椒粉",
+"reason": "麻味替代，风味不同"
+}
+],
+"醋": [
+{
+"canonical": "柠檬汁",
+"reason": "酸味清新，等量替换"
+},
+{
+"canonical": "白醋",
+"reason": "酸度接近，无香气"
+}
+],
+"牛奶": [
+{
+"canonical": "豆浆",
+"reason": "烘焙和浓汤可用无糖豆浆替代"
+},
+{
+"canonical": "酸奶",
+"reason": "部分面糊可用原味酸奶替代"
+}
+],
+"洋葱": [
+{
+"canonical": "大葱",
+"reason": "葱白部分替代，减量使用"
+},
+{
+"canonical": "大蒜",
+"reason": "用蒜片补香气"
+}
+],
+"面粉": [
+{
+"canonical": "淀粉",
+"reason": "勾芡用途可替代，不适合做面团"
+},
+{
+"canonical": "糯米粉",
+"reason": "仅限部分点心"
 }
 ],
 "土豆": [
@@ -2724,14 +3044,44 @@
 "reason": "炖煮时甜味替代"
 }
 ],
-"大葱": [
+"莴笋": [
 {
-"canonical": "洋葱",
-"reason": "切碎替代，甜度更高"
+"canonical": "西葫芦",
+"reason": "脆感替代"
 },
 {
-"canonical": "大蒜",
-"reason": "爆香替代，香气不同"
+"canonical": "黄瓜",
+"reason": "凉拌替代"
+}
+],
+"生姜": [
+{
+"canonical": "姜粉",
+"reason": "1 小勺姜粉替代 1 片姜"
+},
+{
+"canonical": "料酒",
+"reason": "去腥用途可部分替代"
+}
+],
+"胡萝卜": [
+{
+"canonical": "萝卜",
+"reason": "炖汤替代，甜味不同"
+},
+{
+"canonical": "南瓜",
+"reason": "配色和甜味替代"
+}
+],
+"虾": [
+{
+"canonical": "虾仁",
+"reason": "冻虾仁解冻替代"
+},
+{
+"canonical": "巴沙鱼",
+"reason": "低脂白肉替代"
 }
 ],
 "豆瓣酱": [
@@ -2744,24 +3094,104 @@
 "reason": "减盐替换"
 }
 ],
-"老抽": [
+"鸡蛋": [
 {
-"canonical": "生抽",
-"reason": "减量上色，另加少许糖"
+"canonical": "淀粉",
+"reason": "炸物裹粉时用淀粉水替代蛋液"
 },
 {
-"canonical": "酱油",
-"reason": "少量多次调色"
+"canonical": "嫩豆腐",
+"reason": "素食版本可用豆腐替代"
 }
 ],
-"大蒜": [
+"粉丝": [
 {
-"canonical": "蒜苔",
-"reason": "切碎替代，香气更淡"
+"canonical": "粉条",
+"reason": "更耐煮，提前泡软"
 },
 {
-"canonical": "蒜粉",
-"reason": "1 小勺替代 2 瓣蒜"
+"canonical": "米粉",
+"reason": "细米粉替代"
+}
+],
+"豆角": [
+{
+"canonical": "四季豆",
+"reason": "同类替换，务必焖熟"
+},
+{
+"canonical": "豌豆",
+"reason": "清甜替代"
+}
+],
+"面包糠": [
+{
+"canonical": "吐司",
+"reason": "吐司烤干碾碎替代"
+},
+{
+"canonical": "淀粉",
+"reason": "炸物裹粉替代"
+}
+],
+"奶油": [
+{
+"canonical": "牛奶",
+"reason": "加一勺淀粉勾芡模拟浓稠感"
+},
+{
+"canonical": "椰浆",
+"reason": "咖喱和浓汤里风味接近"
+}
+],
+"蚝油": [
+{
+"canonical": "生抽",
+"reason": "用生抽提咸鲜，再加少许糖增厚"
+},
+{
+"canonical": "黄豆酱",
+"reason": "少量替代，注意先剁碎"
+}
+],
+"番茄": [
+{
+"canonical": "番茄酱",
+"reason": "3 勺番茄酱加少量糖替代 1 个番茄"
+},
+{
+"canonical": "圣女果",
+"reason": "整颗对半切"
+}
+],
+"黄油": [
+{
+"canonical": "橄榄油",
+"reason": "煎炒时等量替换，风味更清淡"
+},
+{
+"canonical": "食用油",
+"reason": "烘焙外的烹饪可等量替换"
+}
+],
+"白糖": [
+{
+"canonical": "冰糖",
+"reason": "敲碎后等量替换"
+},
+{
+"canonical": "蜂蜜",
+"reason": "出锅后加，避免高温"
+}
+],
+"面条": [
+{
+"canonical": "挂面",
+"reason": "同物干鲜互换"
+},
+{
+"canonical": "米粉",
+"reason": "无麸质替代，注意泡发时间"
 }
 ]
 },

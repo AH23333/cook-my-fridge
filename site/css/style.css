@@ -370,6 +370,24 @@ a:hover { text-decoration: underline; }
   margin-bottom: 12px;
 }
 .cleanout-list { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.nutrition-badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 4px 0 12px;
+}
+.nutrition-label { font-size: 13px; font-weight: 700; color: var(--ink-soft); }
+.nutrition-badge {
+  background: #eef5ec;
+  border: 1px solid #c9e0c4;
+  color: #3f7a39;
+  border-radius: 999px;
+  padding: 3px 11px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.nutrition-note { font-size: 11.5px; color: var(--ink-soft); }
 
 /* --- Detail page --- */
 .detail {

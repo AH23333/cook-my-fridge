@@ -69,6 +69,14 @@
       `<span>🍳 ${CMF.esc(recipe.methods.join("、"))}</span><span>🍽️ ${CMF.esc(recipe.cookware.join("、"))}</span>` +
       `<span>🥢 ${CMF.esc(recipe.cuisine)}</span></div>` +
       '<div class="tag-pills" style="margin:10px 0">' + CMF.pills(recipe.tags) + "</div>" +
+      (() => {
+        const nf = CMF.recipeNutrition(recipe);
+        return nf.length
+          ? '<div class="nutrition-badges"><span class="nutrition-label">营养速览</span>' +
+            nf.map((f) => `<span class="nutrition-badge">${CMF.esc(f)}</span>`).join("") +
+            '<span class="nutrition-note">定性标签，非精确营养计算</span></div>'
+          : "";
+      })() +
       (recipe.is_ai_generated
         ? '<div class="notice ai">AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。</div>'
         : "") +
