@@ -265,8 +265,8 @@ class AIEngine:
             ],
             temperature=0.6,
         )
-        ideas = payload.get("ideas", [])
-        if not isinstance(ideas, list) or len(ideas) < n:
+        ideas = _as_list(payload.get("ideas"))
+        if len(ideas) < n:
             raise AIGenerationError("ideas 字段格式或数量不符")
         return [str(x) for x in ideas[:n]]
 
