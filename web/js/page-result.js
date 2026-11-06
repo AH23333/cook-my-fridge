@@ -15,7 +15,8 @@
     const methods = methodSel.value ? [CMF.normalizeMethod(methodSel.value)] : [];
     const maxTime = timeSel.value ? Number(timeSel.value) : null;
     const difficulty = diffSel.value ? [diffSel.value] : [];
-    return { methods, maxTime, difficulty, tags: [] };
+    const tags = CMF.getPrefs().tags || [];
+    return { methods, maxTime, difficulty, tags };
   }
 
   function bucketNode(badgeClass, badge, title, matches, wildcardPage) {

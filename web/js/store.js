@@ -8,6 +8,7 @@
     fridge: "cmf.fridge",
     history: "cmf.history",
     feedback: "cmf.feedback",
+    prefs: "cmf.prefs",
   };
 
   CMF.KEYS = KEYS;
@@ -83,6 +84,9 @@
 
   CMF.getFeedback = () => readJSON(KEYS.feedback, {});
   CMF.setFeedback = (map) => writeJSON(KEYS.feedback, map);
+
+  CMF.getPrefs = () => readJSON(KEYS.prefs, { tags: [] });
+  CMF.setPrefs = (prefs) => writeJSON(KEYS.prefs, prefs);
 
   /* --- URL helpers --- */
 
