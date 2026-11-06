@@ -87,6 +87,7 @@ python run.py blindboxes   # 冰箱盲盒
 python run.py ideas        # 每道菜“三个主意”
 python run.py variants     # AI 变体，可 --kinds lazy 限定
 python run.py repair       # 修复单字安全提示与变体标题
+python run.py prune-failures  # 移除已恢复的失败记录
 python run.py audit        # 离线完整性审计（不联网，发现问题退出码 1）
 python run.py build        # 导出静态站点
 ```
