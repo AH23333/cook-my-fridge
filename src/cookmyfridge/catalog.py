@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from functools import lru_cache
 
-from .catalog_data import INGREDIENTS, PANTRY_STAPLES, SUBSTITUTIONS
+from .catalog_data import INGREDIENTS, NUTRITION_FLAGS, PANTRY_STAPLES, SUBSTITUTIONS
 
 
 @lru_cache(maxsize=1)
@@ -15,6 +15,7 @@ def catalog_entries() -> list[dict]:
             "emoji": emoji,
             "synonyms": synonyms,
             "allergens": allergens,
+            "nutrition": nutrition_of(canonical),
         }
         for canonical, category, emoji, synonyms, allergens in INGREDIENTS
     ]
@@ -78,3 +79,12 @@ def is_known(canonical: str) -> bool:
 
 def is_pantry_staple(canonical: str) -> bool:
     return canonical in PANTRY_STAPLES
+
+
+@lru_cache(maxsize=1)
+def nutrition_map() -> dict[str, list[str]]:
+    return dict(NUTRITION_FLAGS)
+
+
+def nutrition_of(canonical: str) -> list[str]:
+    return nutrition_map().get(canonical, [])

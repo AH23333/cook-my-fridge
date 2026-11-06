@@ -64,6 +64,11 @@
     if (filters.tags && filters.tags.length) {
       if (!filters.tags.some((t) => recipe.tags.includes(t))) return false;
     }
+    if (filters.nutrition && filters.nutrition.length) {
+      if (typeof CMF.recipeNutrition !== "function") return false;
+      const have = CMF.recipeNutrition(recipe);
+      if (!filters.nutrition.some((f) => have.includes(f))) return false;
+    }
     return true;
   }
 
