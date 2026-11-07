@@ -93616,5 +93616,5957 @@
   "source": "GLM AI 生成（glm-4-flash）",
   "license": "AI-generated, see About",
   "is_ai_generated": true
+ },
+ "r196:lazy": {
+  "id": "ai-var-r196-lazy",
+  "title": "懒人版香椿炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿炒鸡蛋」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r196:lowcal": {
+  "id": "ai-var-r196-lowcal",
+  "title": "低卡版香椿炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿炒鸡蛋」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 11,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭",
+   "低卡"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r196:airfryer": {
+  "id": "ai-var-r196-airfryer",
+  "title": "空气炸锅版香椿炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿炒鸡蛋」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r196:substitute": {
+  "id": "ai-var-r196-substitute",
+  "title": "家常替代版香椿炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿炒鸡蛋」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r196:method": {
+  "id": "ai-var-r196-method",
+  "title": "换做法版香椿炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿炒鸡蛋」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 13,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r196:leftover": {
+  "id": "ai-var-r196-leftover",
+  "title": "剩菜改造版香椿炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿炒鸡蛋」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 7,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r196:fusion": {
+  "id": "ai-var-r196-fusion",
+  "title": "融合版香椿炒鸡蛋",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鸡蛋",
+    "canonical": "鸡蛋",
+    "amount": "3 个",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿炒鸡蛋」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "下饭",
+   "融合菜"
+  ],
+  "allergens": [
+   "鸡蛋"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r197:lazy": {
+  "id": "ai-var-r197-lazy",
+  "title": "懒人版凉拌紫甘蓝",
+  "ingredients": [
+   {
+    "name": "紫甘蓝",
+    "canonical": "紫甘蓝",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「凉拌紫甘蓝」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "凉拌",
+   "免开火"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "素食",
+   "免开火",
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r197:lowcal": {
+  "id": "ai-var-r197-lowcal",
+  "title": "低卡版凉拌紫甘蓝",
+  "ingredients": [
+   {
+    "name": "紫甘蓝",
+    "canonical": "紫甘蓝",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「凉拌紫甘蓝」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 14,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "素食",
+   "免开火"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r197:airfryer": {
+  "id": "ai-var-r197-airfryer",
+  "title": "空气炸锅版凉拌紫甘蓝",
+  "ingredients": [
+   {
+    "name": "紫甘蓝",
+    "canonical": "紫甘蓝",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「凉拌紫甘蓝」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "素食",
+   "免开火",
+   "空气炸锅"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r197:substitute": {
+  "id": "ai-var-r197-substitute",
+  "title": "家常替代版凉拌紫甘蓝",
+  "ingredients": [
+   {
+    "name": "紫甘蓝",
+    "canonical": "紫甘蓝",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「凉拌紫甘蓝」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "凉拌",
+   "免开火"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "素食",
+   "免开火"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r197:method": {
+  "id": "ai-var-r197-method",
+  "title": "换做法版凉拌紫甘蓝",
+  "ingredients": [
+   {
+    "name": "紫甘蓝",
+    "canonical": "紫甘蓝",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「凉拌紫甘蓝」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 16,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "素食",
+   "免开火"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r197:leftover": {
+  "id": "ai-var-r197-leftover",
+  "title": "剩菜改造版凉拌紫甘蓝",
+  "ingredients": [
+   {
+    "name": "紫甘蓝",
+    "canonical": "紫甘蓝",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「凉拌紫甘蓝」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 9,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "素食",
+   "免开火",
+   "剩菜改造"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r197:fusion": {
+  "id": "ai-var-r197-fusion",
+  "title": "融合版凉拌紫甘蓝",
+  "ingredients": [
+   {
+    "name": "紫甘蓝",
+    "canonical": "紫甘蓝",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "醋",
+    "canonical": "醋",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「凉拌紫甘蓝」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "凉拌",
+   "免开火"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "低卡",
+   "素食",
+   "免开火",
+   "融合菜"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r198:lazy": {
+  "id": "ai-var-r198-lazy",
+  "title": "懒人版蒜蓉豌豆苗",
+  "ingredients": [
+   {
+    "name": "豌豆苗",
+    "canonical": "豌豆苗",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「蒜蓉豌豆苗」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 6,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r198:lowcal": {
+  "id": "ai-var-r198-lowcal",
+  "title": "低卡版蒜蓉豌豆苗",
+  "ingredients": [
+   {
+    "name": "豌豆苗",
+    "canonical": "豌豆苗",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「蒜蓉豌豆苗」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 7,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食",
+   "低卡"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r198:airfryer": {
+  "id": "ai-var-r198-airfryer",
+  "title": "空气炸锅版蒜蓉豌豆苗",
+  "ingredients": [
+   {
+    "name": "豌豆苗",
+    "canonical": "豌豆苗",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「蒜蓉豌豆苗」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 6,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r198:substitute": {
+  "id": "ai-var-r198-substitute",
+  "title": "家常替代版蒜蓉豌豆苗",
+  "ingredients": [
+   {
+    "name": "豌豆苗",
+    "canonical": "豌豆苗",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「蒜蓉豌豆苗」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r198:method": {
+  "id": "ai-var-r198-method",
+  "title": "换做法版蒜蓉豌豆苗",
+  "ingredients": [
+   {
+    "name": "豌豆苗",
+    "canonical": "豌豆苗",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「蒜蓉豌豆苗」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 9,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r198:leftover": {
+  "id": "ai-var-r198-leftover",
+  "title": "剩菜改造版蒜蓉豌豆苗",
+  "ingredients": [
+   {
+    "name": "豌豆苗",
+    "canonical": "豌豆苗",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「蒜蓉豌豆苗」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r198:fusion": {
+  "id": "ai-var-r198-fusion",
+  "title": "融合版蒜蓉豌豆苗",
+  "ingredients": [
+   {
+    "name": "豌豆苗",
+    "canonical": "豌豆苗",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「蒜蓉豌豆苗」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食",
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r199:lazy": {
+  "id": "ai-var-r199-lazy",
+  "title": "懒人版白玉菇豆腐汤",
+  "ingredients": [
+   {
+    "name": "白玉菇",
+    "canonical": "白玉菇",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「白玉菇豆腐汤」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "低卡",
+   "素食",
+   "一人食",
+   "快手"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r199:lowcal": {
+  "id": "ai-var-r199-lowcal",
+  "title": "低卡版白玉菇豆腐汤",
+  "ingredients": [
+   {
+    "name": "白玉菇",
+    "canonical": "白玉菇",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「白玉菇豆腐汤」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 14,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "低卡",
+   "素食",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r199:airfryer": {
+  "id": "ai-var-r199-airfryer",
+  "title": "空气炸锅版白玉菇豆腐汤",
+  "ingredients": [
+   {
+    "name": "白玉菇",
+    "canonical": "白玉菇",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「白玉菇豆腐汤」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "低卡",
+   "素食",
+   "一人食",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r199:substitute": {
+  "id": "ai-var-r199-substitute",
+  "title": "家常替代版白玉菇豆腐汤",
+  "ingredients": [
+   {
+    "name": "白玉菇",
+    "canonical": "白玉菇",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「白玉菇豆腐汤」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "低卡",
+   "素食",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r199:method": {
+  "id": "ai-var-r199-method",
+  "title": "换做法版白玉菇豆腐汤",
+  "ingredients": [
+   {
+    "name": "白玉菇",
+    "canonical": "白玉菇",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「白玉菇豆腐汤」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 16,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "低卡",
+   "素食",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r199:leftover": {
+  "id": "ai-var-r199-leftover",
+  "title": "剩菜改造版白玉菇豆腐汤",
+  "ingredients": [
+   {
+    "name": "白玉菇",
+    "canonical": "白玉菇",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「白玉菇豆腐汤」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 9,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "低卡",
+   "素食",
+   "一人食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r199:fusion": {
+  "id": "ai-var-r199-fusion",
+  "title": "融合版白玉菇豆腐汤",
+  "ingredients": [
+   {
+    "name": "白玉菇",
+    "canonical": "白玉菇",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "半盒",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「白玉菇豆腐汤」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 15,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "低卡",
+   "素食",
+   "一人食",
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r200:lazy": {
+  "id": "ai-var-r200-lazy",
+  "title": "懒人版芦蒿炒豆干",
+  "ingredients": [
+   {
+    "name": "芦蒿",
+    "canonical": "芦蒿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆干",
+    "canonical": "豆干",
+    "amount": "2 块",
+    "optional": false
+   },
+   {
+    "name": "干辣椒",
+    "canonical": "干辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「芦蒿炒豆干」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "淮扬菜",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "低脂"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r200:lowcal": {
+  "id": "ai-var-r200-lowcal",
+  "title": "低卡版芦蒿炒豆干",
+  "ingredients": [
+   {
+    "name": "芦蒿",
+    "canonical": "芦蒿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆干",
+    "canonical": "豆干",
+    "amount": "2 块",
+    "optional": false
+   },
+   {
+    "name": "干辣椒",
+    "canonical": "干辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「芦蒿炒豆干」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "淮扬菜",
+  "time_minutes": 11,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "低脂",
+   "低卡"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r200:airfryer": {
+  "id": "ai-var-r200-airfryer",
+  "title": "空气炸锅版芦蒿炒豆干",
+  "ingredients": [
+   {
+    "name": "芦蒿",
+    "canonical": "芦蒿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆干",
+    "canonical": "豆干",
+    "amount": "2 块",
+    "optional": false
+   },
+   {
+    "name": "干辣椒",
+    "canonical": "干辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「芦蒿炒豆干」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "淮扬菜",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "低脂",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r200:substitute": {
+  "id": "ai-var-r200-substitute",
+  "title": "家常替代版芦蒿炒豆干",
+  "ingredients": [
+   {
+    "name": "芦蒿",
+    "canonical": "芦蒿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆干",
+    "canonical": "豆干",
+    "amount": "2 块",
+    "optional": false
+   },
+   {
+    "name": "干辣椒",
+    "canonical": "干辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「芦蒿炒豆干」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "淮扬菜",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "低脂"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r200:method": {
+  "id": "ai-var-r200-method",
+  "title": "换做法版芦蒿炒豆干",
+  "ingredients": [
+   {
+    "name": "芦蒿",
+    "canonical": "芦蒿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆干",
+    "canonical": "豆干",
+    "amount": "2 块",
+    "optional": false
+   },
+   {
+    "name": "干辣椒",
+    "canonical": "干辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「芦蒿炒豆干」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "淮扬菜",
+  "time_minutes": 13,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "低脂"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r200:leftover": {
+  "id": "ai-var-r200-leftover",
+  "title": "剩菜改造版芦蒿炒豆干",
+  "ingredients": [
+   {
+    "name": "芦蒿",
+    "canonical": "芦蒿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆干",
+    "canonical": "豆干",
+    "amount": "2 块",
+    "optional": false
+   },
+   {
+    "name": "干辣椒",
+    "canonical": "干辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「芦蒿炒豆干」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "淮扬菜",
+  "time_minutes": 7,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "低脂",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r200:fusion": {
+  "id": "ai-var-r200-fusion",
+  "title": "融合版芦蒿炒豆干",
+  "ingredients": [
+   {
+    "name": "芦蒿",
+    "canonical": "芦蒿",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆干",
+    "canonical": "豆干",
+    "amount": "2 块",
+    "optional": false
+   },
+   {
+    "name": "干辣椒",
+    "canonical": "干辣椒",
+    "amount": "2 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「芦蒿炒豆干」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "淮扬菜",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "炒锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "低脂",
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r201:lazy": {
+  "id": "ai-var-r201-lazy",
+  "title": "懒人版牛油果全麦吐司",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "canonical": "全麦面包",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "牛油果",
+    "canonical": "牛油果",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "4 个",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「牛油果全麦吐司」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 6,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "素食",
+   "免开火"
+  ],
+  "allergens": [
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r201:lowcal": {
+  "id": "ai-var-r201-lowcal",
+  "title": "低卡版牛油果全麦吐司",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "canonical": "全麦面包",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "牛油果",
+    "canonical": "牛油果",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "4 个",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「牛油果全麦吐司」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 7,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "素食",
+   "免开火",
+   "低卡"
+  ],
+  "allergens": [
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r201:airfryer": {
+  "id": "ai-var-r201-airfryer",
+  "title": "空气炸锅版牛油果全麦吐司",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "canonical": "全麦面包",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "牛油果",
+    "canonical": "牛油果",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "4 个",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「牛油果全麦吐司」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 6,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "素食",
+   "免开火",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r201:substitute": {
+  "id": "ai-var-r201-substitute",
+  "title": "家常替代版牛油果全麦吐司",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "canonical": "全麦面包",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "牛油果",
+    "canonical": "牛油果",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "4 个",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「牛油果全麦吐司」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "素食",
+   "免开火"
+  ],
+  "allergens": [
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r201:method": {
+  "id": "ai-var-r201-method",
+  "title": "换做法版牛油果全麦吐司",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "canonical": "全麦面包",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "牛油果",
+    "canonical": "牛油果",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "4 个",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「牛油果全麦吐司」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 9,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "素食",
+   "免开火"
+  ],
+  "allergens": [
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r201:leftover": {
+  "id": "ai-var-r201-leftover",
+  "title": "剩菜改造版牛油果全麦吐司",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "canonical": "全麦面包",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "牛油果",
+    "canonical": "牛油果",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "4 个",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「牛油果全麦吐司」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "素食",
+   "免开火",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r201:fusion": {
+  "id": "ai-var-r201-fusion",
+  "title": "融合版牛油果全麦吐司",
+  "ingredients": [
+   {
+    "name": "全麦面包",
+    "canonical": "全麦面包",
+    "amount": "2 片",
+    "optional": false
+   },
+   {
+    "name": "牛油果",
+    "canonical": "牛油果",
+    "amount": "半个",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "4 个",
+    "optional": false
+   },
+   {
+    "name": "黑胡椒",
+    "canonical": "黑胡椒",
+    "amount": "少许",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「牛油果全麦吐司」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "碗"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "素食",
+   "免开火",
+   "融合菜"
+  ],
+  "allergens": [
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r202:lazy": {
+  "id": "ai-var-r202-lazy",
+  "title": "懒人版鱼露蒸鲈鱼",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "canonical": "鲈鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "鱼露",
+    "canonical": "鱼露",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「鱼露蒸鲈鱼」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 14,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低脂",
+   "下饭",
+   "快手"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r202:lowcal": {
+  "id": "ai-var-r202-lowcal",
+  "title": "低卡版鱼露蒸鲈鱼",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "canonical": "鲈鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "鱼露",
+    "canonical": "鱼露",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「鱼露蒸鲈鱼」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 18,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低脂",
+   "下饭",
+   "低卡"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r202:airfryer": {
+  "id": "ai-var-r202-airfryer",
+  "title": "空气炸锅版鱼露蒸鲈鱼",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "canonical": "鲈鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "鱼露",
+    "canonical": "鱼露",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「鱼露蒸鲈鱼」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 16,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低脂",
+   "下饭",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r202:substitute": {
+  "id": "ai-var-r202-substitute",
+  "title": "家常替代版鱼露蒸鲈鱼",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "canonical": "鲈鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "鱼露",
+    "canonical": "鱼露",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「鱼露蒸鲈鱼」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低脂",
+   "下饭"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r202:method": {
+  "id": "ai-var-r202-method",
+  "title": "换做法版鱼露蒸鲈鱼",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "canonical": "鲈鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "鱼露",
+    "canonical": "鱼露",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「鱼露蒸鲈鱼」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 22,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低脂",
+   "下饭"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r202:leftover": {
+  "id": "ai-var-r202-leftover",
+  "title": "剩菜改造版鱼露蒸鲈鱼",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "canonical": "鲈鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "鱼露",
+    "canonical": "鱼露",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「鱼露蒸鲈鱼」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低脂",
+   "下饭",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r202:fusion": {
+  "id": "ai-var-r202-fusion",
+  "title": "融合版鱼露蒸鲈鱼",
+  "ingredients": [
+   {
+    "name": "鲈鱼",
+    "canonical": "鲈鱼",
+    "amount": "1 条",
+    "optional": false
+   },
+   {
+    "name": "鱼露",
+    "canonical": "鱼露",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "生姜",
+    "canonical": "生姜",
+    "amount": "3 片",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「鱼露蒸鲈鱼」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "低脂",
+   "下饭",
+   "融合菜"
+  ],
+  "allergens": [
+   "鱼"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r203:lazy": {
+  "id": "ai-var-r203-lazy",
+  "title": "懒人版豆豉蒸排骨",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉蒸排骨」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 31,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "下饭",
+   "减脂餐",
+   "快手"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r203:lowcal": {
+  "id": "ai-var-r203-lowcal",
+  "title": "低卡版豆豉蒸排骨",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉蒸排骨」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 40,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "下饭",
+   "减脂餐",
+   "低卡"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r203:airfryer": {
+  "id": "ai-var-r203-airfryer",
+  "title": "空气炸锅版豆豉蒸排骨",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉蒸排骨」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 36,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "下饭",
+   "减脂餐",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r203:substitute": {
+  "id": "ai-var-r203-substitute",
+  "title": "家常替代版豆豉蒸排骨",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉蒸排骨」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "下饭",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r203:method": {
+  "id": "ai-var-r203-method",
+  "title": "换做法版豆豉蒸排骨",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉蒸排骨」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 50,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "下饭",
+   "减脂餐"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r203:leftover": {
+  "id": "ai-var-r203-leftover",
+  "title": "剩菜改造版豆豉蒸排骨",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉蒸排骨」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 27,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "下饭",
+   "减脂餐",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r203:fusion": {
+  "id": "ai-var-r203-fusion",
+  "title": "融合版豆豉蒸排骨",
+  "ingredients": [
+   {
+    "name": "排骨",
+    "canonical": "排骨",
+    "amount": "300 克",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "大蒜",
+    "canonical": "大蒜",
+    "amount": "3 瓣",
+    "optional": false
+   },
+   {
+    "name": "生抽",
+    "canonical": "生抽",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉蒸排骨」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "粤菜",
+  "time_minutes": 45,
+  "difficulty": "简单",
+  "cookware": [
+   "蒸锅"
+  ],
+  "tags": [
+   "下饭",
+   "减脂餐",
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r204:lazy": {
+  "id": "ai-var-r204-lazy",
+  "title": "懒人版薏米红豆粥",
+  "ingredients": [
+   {
+    "name": "薏米",
+    "canonical": "薏米",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "红豆",
+    "canonical": "红豆",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "大米",
+    "canonical": "大米",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「薏米红豆粥」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "电饭煲"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 42,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "早餐",
+   "素食",
+   "减脂餐",
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r204:lowcal": {
+  "id": "ai-var-r204-lowcal",
+  "title": "低卡版薏米红豆粥",
+  "ingredients": [
+   {
+    "name": "薏米",
+    "canonical": "薏米",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "红豆",
+    "canonical": "红豆",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "大米",
+    "canonical": "大米",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「薏米红豆粥」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 54,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "早餐",
+   "素食",
+   "减脂餐",
+   "低卡"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r204:airfryer": {
+  "id": "ai-var-r204-airfryer",
+  "title": "空气炸锅版薏米红豆粥",
+  "ingredients": [
+   {
+    "name": "薏米",
+    "canonical": "薏米",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "红豆",
+    "canonical": "红豆",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "大米",
+    "canonical": "大米",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「薏米红豆粥」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 48,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "早餐",
+   "素食",
+   "减脂餐",
+   "空气炸锅"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r204:substitute": {
+  "id": "ai-var-r204-substitute",
+  "title": "家常替代版薏米红豆粥",
+  "ingredients": [
+   {
+    "name": "薏米",
+    "canonical": "薏米",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "红豆",
+    "canonical": "红豆",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "大米",
+    "canonical": "大米",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「薏米红豆粥」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "电饭煲"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 60,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "早餐",
+   "素食",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r204:method": {
+  "id": "ai-var-r204-method",
+  "title": "换做法版薏米红豆粥",
+  "ingredients": [
+   {
+    "name": "薏米",
+    "canonical": "薏米",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "红豆",
+    "canonical": "红豆",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "大米",
+    "canonical": "大米",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「薏米红豆粥」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 66,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "早餐",
+   "素食",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r204:leftover": {
+  "id": "ai-var-r204-leftover",
+  "title": "剩菜改造版薏米红豆粥",
+  "ingredients": [
+   {
+    "name": "薏米",
+    "canonical": "薏米",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "红豆",
+    "canonical": "红豆",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "大米",
+    "canonical": "大米",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「薏米红豆粥」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 36,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "早餐",
+   "素食",
+   "减脂餐",
+   "剩菜改造"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r204:fusion": {
+  "id": "ai-var-r204-fusion",
+  "title": "融合版薏米红豆粥",
+  "ingredients": [
+   {
+    "name": "薏米",
+    "canonical": "薏米",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "红豆",
+    "canonical": "红豆",
+    "amount": "2 勺",
+    "optional": false
+   },
+   {
+    "name": "大米",
+    "canonical": "大米",
+    "amount": "1 勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「薏米红豆粥」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "电饭煲"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 60,
+  "difficulty": "简单",
+  "cookware": [
+   "电饭煲"
+  ],
+  "tags": [
+   "早餐",
+   "素食",
+   "减脂餐",
+   "融合菜"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r205:lazy": {
+  "id": "ai-var-r205-lazy",
+  "title": "懒人版蓝莓奇亚籽酸奶杯",
+  "ingredients": [
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓奇亚籽酸奶杯」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "杯"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r205:lowcal": {
+  "id": "ai-var-r205-lowcal",
+  "title": "低卡版蓝莓奇亚籽酸奶杯",
+  "ingredients": [
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓奇亚籽酸奶杯」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 11,
+  "difficulty": "简单",
+  "cookware": [
+   "杯"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "低卡"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r205:airfryer": {
+  "id": "ai-var-r205-airfryer",
+  "title": "空气炸锅版蓝莓奇亚籽酸奶杯",
+  "ingredients": [
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓奇亚籽酸奶杯」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "杯"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r205:substitute": {
+  "id": "ai-var-r205-substitute",
+  "title": "家常替代版蓝莓奇亚籽酸奶杯",
+  "ingredients": [
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓奇亚籽酸奶杯」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "杯"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r205:method": {
+  "id": "ai-var-r205-method",
+  "title": "换做法版蓝莓奇亚籽酸奶杯",
+  "ingredients": [
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓奇亚籽酸奶杯」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 13,
+  "difficulty": "简单",
+  "cookware": [
+   "杯"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r205:leftover": {
+  "id": "ai-var-r205-leftover",
+  "title": "剩菜改造版蓝莓奇亚籽酸奶杯",
+  "ingredients": [
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓奇亚籽酸奶杯」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 7,
+  "difficulty": "简单",
+  "cookware": [
+   "杯"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r205:fusion": {
+  "id": "ai-var-r205-fusion",
+  "title": "融合版蓝莓奇亚籽酸奶杯",
+  "ingredients": [
+   {
+    "name": "酸奶",
+    "canonical": "酸奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "蜂蜜",
+    "canonical": "蜂蜜",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓奇亚籽酸奶杯」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "杯"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "融合菜"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r206:lazy": {
+  "id": "ai-var-r206-lazy",
+  "title": "懒人版秋葵拌鹰嘴豆",
+  "ingredients": [
+   {
+    "name": "秋葵",
+    "canonical": "秋葵",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鹰嘴豆",
+    "canonical": "鹰嘴豆",
+    "amount": "100 克",
+    "optional": true
+   },
+   {
+    "name": "柠檬汁",
+    "canonical": "柠檬汁",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「秋葵拌鹰嘴豆」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "凉拌",
+   "煮"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 13,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "素食",
+   "减脂餐",
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r206:lowcal": {
+  "id": "ai-var-r206-lowcal",
+  "title": "低卡版秋葵拌鹰嘴豆",
+  "ingredients": [
+   {
+    "name": "秋葵",
+    "canonical": "秋葵",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鹰嘴豆",
+    "canonical": "鹰嘴豆",
+    "amount": "100 克",
+    "optional": true
+   },
+   {
+    "name": "柠檬汁",
+    "canonical": "柠檬汁",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「秋葵拌鹰嘴豆」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 16,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "素食",
+   "减脂餐",
+   "低卡"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r206:airfryer": {
+  "id": "ai-var-r206-airfryer",
+  "title": "空气炸锅版秋葵拌鹰嘴豆",
+  "ingredients": [
+   {
+    "name": "秋葵",
+    "canonical": "秋葵",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鹰嘴豆",
+    "canonical": "鹰嘴豆",
+    "amount": "100 克",
+    "optional": true
+   },
+   {
+    "name": "柠檬汁",
+    "canonical": "柠檬汁",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「秋葵拌鹰嘴豆」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 14,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "素食",
+   "减脂餐",
+   "空气炸锅"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r206:substitute": {
+  "id": "ai-var-r206-substitute",
+  "title": "家常替代版秋葵拌鹰嘴豆",
+  "ingredients": [
+   {
+    "name": "秋葵",
+    "canonical": "秋葵",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鹰嘴豆",
+    "canonical": "鹰嘴豆",
+    "amount": "100 克",
+    "optional": true
+   },
+   {
+    "name": "柠檬汁",
+    "canonical": "柠檬汁",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「秋葵拌鹰嘴豆」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "凉拌",
+   "煮"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 18,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "素食",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r206:method": {
+  "id": "ai-var-r206-method",
+  "title": "换做法版秋葵拌鹰嘴豆",
+  "ingredients": [
+   {
+    "name": "秋葵",
+    "canonical": "秋葵",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鹰嘴豆",
+    "canonical": "鹰嘴豆",
+    "amount": "100 克",
+    "optional": true
+   },
+   {
+    "name": "柠檬汁",
+    "canonical": "柠檬汁",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「秋葵拌鹰嘴豆」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "素食",
+   "减脂餐"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r206:leftover": {
+  "id": "ai-var-r206-leftover",
+  "title": "剩菜改造版秋葵拌鹰嘴豆",
+  "ingredients": [
+   {
+    "name": "秋葵",
+    "canonical": "秋葵",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鹰嘴豆",
+    "canonical": "鹰嘴豆",
+    "amount": "100 克",
+    "optional": true
+   },
+   {
+    "name": "柠檬汁",
+    "canonical": "柠檬汁",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「秋葵拌鹰嘴豆」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 11,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "素食",
+   "减脂餐",
+   "剩菜改造"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r206:fusion": {
+  "id": "ai-var-r206-fusion",
+  "title": "融合版秋葵拌鹰嘴豆",
+  "ingredients": [
+   {
+    "name": "秋葵",
+    "canonical": "秋葵",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "鹰嘴豆",
+    "canonical": "鹰嘴豆",
+    "amount": "100 克",
+    "optional": true
+   },
+   {
+    "name": "柠檬汁",
+    "canonical": "柠檬汁",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "橄榄油",
+    "canonical": "橄榄油",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「秋葵拌鹰嘴豆」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "凉拌",
+   "煮"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 18,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "低脂",
+   "素食",
+   "减脂餐",
+   "融合菜"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r207:lazy": {
+  "id": "ai-var-r207-lazy",
+  "title": "懒人版藜麦鸡胸能量碗",
+  "ingredients": [
+   {
+    "name": "藜麦",
+    "canonical": "藜麦",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "6 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「藜麦鸡胸能量碗」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮",
+   "凉拌"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 21,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "减脂餐",
+   "低脂",
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r207:lowcal": {
+  "id": "ai-var-r207-lowcal",
+  "title": "低卡版藜麦鸡胸能量碗",
+  "ingredients": [
+   {
+    "name": "藜麦",
+    "canonical": "藜麦",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "6 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「藜麦鸡胸能量碗」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 27,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "减脂餐",
+   "低脂",
+   "快手",
+   "低卡"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r207:airfryer": {
+  "id": "ai-var-r207-airfryer",
+  "title": "空气炸锅版藜麦鸡胸能量碗",
+  "ingredients": [
+   {
+    "name": "藜麦",
+    "canonical": "藜麦",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "6 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「藜麦鸡胸能量碗」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 24,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "减脂餐",
+   "低脂",
+   "快手",
+   "空气炸锅"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r207:substitute": {
+  "id": "ai-var-r207-substitute",
+  "title": "家常替代版藜麦鸡胸能量碗",
+  "ingredients": [
+   {
+    "name": "藜麦",
+    "canonical": "藜麦",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "6 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「藜麦鸡胸能量碗」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮",
+   "凉拌"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 30,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "减脂餐",
+   "低脂",
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r207:method": {
+  "id": "ai-var-r207-method",
+  "title": "换做法版藜麦鸡胸能量碗",
+  "ingredients": [
+   {
+    "name": "藜麦",
+    "canonical": "藜麦",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "6 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「藜麦鸡胸能量碗」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 33,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "减脂餐",
+   "低脂",
+   "快手"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r207:leftover": {
+  "id": "ai-var-r207-leftover",
+  "title": "剩菜改造版藜麦鸡胸能量碗",
+  "ingredients": [
+   {
+    "name": "藜麦",
+    "canonical": "藜麦",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "6 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「藜麦鸡胸能量碗」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 18,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "减脂餐",
+   "低脂",
+   "快手",
+   "剩菜改造"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r207:fusion": {
+  "id": "ai-var-r207-fusion",
+  "title": "融合版藜麦鸡胸能量碗",
+  "ingredients": [
+   {
+    "name": "藜麦",
+    "canonical": "藜麦",
+    "amount": "3 勺",
+    "optional": false
+   },
+   {
+    "name": "鸡胸肉",
+    "canonical": "鸡胸肉",
+    "amount": "1 块",
+    "optional": false
+   },
+   {
+    "name": "生菜",
+    "canonical": "生菜",
+    "amount": "4 片",
+    "optional": false
+   },
+   {
+    "name": "圣女果",
+    "canonical": "圣女果",
+    "amount": "6 个",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「藜麦鸡胸能量碗」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮",
+   "凉拌"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 30,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "减脂餐",
+   "低脂",
+   "快手",
+   "融合菜"
+  ],
+  "allergens": [],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r208:lazy": {
+  "id": "ai-var-r208-lazy",
+  "title": "懒人版豆豉拌荞麦面",
+  "ingredients": [
+   {
+    "name": "荞麦面",
+    "canonical": "荞麦面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉拌荞麦面」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮",
+   "凉拌"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 13,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r208:lowcal": {
+  "id": "ai-var-r208-lowcal",
+  "title": "低卡版豆豉拌荞麦面",
+  "ingredients": [
+   {
+    "name": "荞麦面",
+    "canonical": "荞麦面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉拌荞麦面」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 16,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "一人食",
+   "低卡"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r208:airfryer": {
+  "id": "ai-var-r208-airfryer",
+  "title": "空气炸锅版豆豉拌荞麦面",
+  "ingredients": [
+   {
+    "name": "荞麦面",
+    "canonical": "荞麦面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉拌荞麦面」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 14,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "一人食",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r208:substitute": {
+  "id": "ai-var-r208-substitute",
+  "title": "家常替代版豆豉拌荞麦面",
+  "ingredients": [
+   {
+    "name": "荞麦面",
+    "canonical": "荞麦面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉拌荞麦面」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮",
+   "凉拌"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 18,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r208:method": {
+  "id": "ai-var-r208-method",
+  "title": "换做法版豆豉拌荞麦面",
+  "ingredients": [
+   {
+    "name": "荞麦面",
+    "canonical": "荞麦面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉拌荞麦面」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 20,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "一人食"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r208:leftover": {
+  "id": "ai-var-r208-leftover",
+  "title": "剩菜改造版豆豉拌荞麦面",
+  "ingredients": [
+   {
+    "name": "荞麦面",
+    "canonical": "荞麦面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉拌荞麦面」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 11,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "一人食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r208:fusion": {
+  "id": "ai-var-r208-fusion",
+  "title": "融合版豆豉拌荞麦面",
+  "ingredients": [
+   {
+    "name": "荞麦面",
+    "canonical": "荞麦面",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "豆豉",
+    "canonical": "豆豉",
+    "amount": "1 勺",
+    "optional": false
+   },
+   {
+    "name": "黄瓜",
+    "canonical": "黄瓜",
+    "amount": "半根",
+    "optional": false
+   },
+   {
+    "name": "小葱",
+    "canonical": "小葱",
+    "amount": "1 根",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「豆豉拌荞麦面」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮",
+   "凉拌"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 18,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "素食",
+   "一人食",
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆",
+   "麸质"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r209:lazy": {
+  "id": "ai-var-r209-lazy",
+  "title": "懒人版蓝莓香蕉奶昔",
+  "ingredients": [
+   {
+    "name": "牛奶",
+    "canonical": "牛奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓香蕉奶昔」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "料理机"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "夏日饮品"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r209:lowcal": {
+  "id": "ai-var-r209-lowcal",
+  "title": "低卡版蓝莓香蕉奶昔",
+  "ingredients": [
+   {
+    "name": "牛奶",
+    "canonical": "牛奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓香蕉奶昔」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "料理机"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "夏日饮品",
+   "低卡"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r209:airfryer": {
+  "id": "ai-var-r209-airfryer",
+  "title": "空气炸锅版蓝莓香蕉奶昔",
+  "ingredients": [
+   {
+    "name": "牛奶",
+    "canonical": "牛奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓香蕉奶昔」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "料理机"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "夏日饮品",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r209:substitute": {
+  "id": "ai-var-r209-substitute",
+  "title": "家常替代版蓝莓香蕉奶昔",
+  "ingredients": [
+   {
+    "name": "牛奶",
+    "canonical": "牛奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓香蕉奶昔」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 6,
+  "difficulty": "简单",
+  "cookware": [
+   "料理机"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "夏日饮品"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r209:method": {
+  "id": "ai-var-r209-method",
+  "title": "换做法版蓝莓香蕉奶昔",
+  "ingredients": [
+   {
+    "name": "牛奶",
+    "canonical": "牛奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓香蕉奶昔」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 7,
+  "difficulty": "简单",
+  "cookware": [
+   "料理机"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "夏日饮品"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r209:leftover": {
+  "id": "ai-var-r209-leftover",
+  "title": "剩菜改造版蓝莓香蕉奶昔",
+  "ingredients": [
+   {
+    "name": "牛奶",
+    "canonical": "牛奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓香蕉奶昔」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 5,
+  "difficulty": "简单",
+  "cookware": [
+   "料理机"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "夏日饮品",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r209:fusion": {
+  "id": "ai-var-r209-fusion",
+  "title": "融合版蓝莓香蕉奶昔",
+  "ingredients": [
+   {
+    "name": "牛奶",
+    "canonical": "牛奶",
+    "amount": "1 杯",
+    "optional": false
+   },
+   {
+    "name": "香蕉",
+    "canonical": "香蕉",
+    "amount": "1 根",
+    "optional": false
+   },
+   {
+    "name": "蓝莓",
+    "canonical": "蓝莓",
+    "amount": "1 把",
+    "optional": false
+   },
+   {
+    "name": "奇亚籽",
+    "canonical": "奇亚籽",
+    "amount": "1 小勺",
+    "optional": true
+   }
+  ],
+  "steps": [
+   "按「蓝莓香蕉奶昔」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "免开火"
+  ],
+  "cuisine": "轻食",
+  "time_minutes": 6,
+  "difficulty": "简单",
+  "cookware": [
+   "料理机"
+  ],
+  "tags": [
+   "早餐",
+   "快手",
+   "免开火",
+   "夏日饮品",
+   "融合菜"
+  ],
+  "allergens": [
+   "牛奶"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r210:lazy": {
+  "id": "ai-var-r210-lazy",
+  "title": "懒人版香椿拌嫩豆腐",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "半把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿拌嫩豆腐」备好食材，这一步与家常做法一致。",
+   "省去精细刀工，所有食材一次下锅，熟透即可。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "凉拌",
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 8,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r210:lowcal": {
+  "id": "ai-var-r210-lowcal",
+  "title": "低卡版香椿拌嫩豆腐",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "半把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿拌嫩豆腐」备好食材，这一步与家常做法一致。",
+   "少油少糖，改用不粘锅或水炒，出锅前再调味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 11,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食",
+   "低卡"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r210:airfryer": {
+  "id": "ai-var-r210-airfryer",
+  "title": "空气炸锅版香椿拌嫩豆腐",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "半把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿拌嫩豆腐」备好食材，这一步与家常做法一致。",
+   "食材拌少许油，平铺进炸篮，180℃ 中途翻面一次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "空气炸锅"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 10,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食",
+   "空气炸锅"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r210:substitute": {
+  "id": "ai-var-r210-substitute",
+  "title": "家常替代版香椿拌嫩豆腐",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "半把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿拌嫩豆腐」备好食材，这一步与家常做法一致。",
+   "缺哪样就用冰箱里同类食材等量替换，不必专程采购。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "凉拌",
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r210:method": {
+  "id": "ai-var-r210-method",
+  "title": "换做法版香椿拌嫩豆腐",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "半把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿拌嫩豆腐」备好食材，这一步与家常做法一致。",
+   "把原来的做法换成蒸或煮，少油但保持食材原味。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "蒸"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 13,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r210:leftover": {
+  "id": "ai-var-r210-leftover",
+  "title": "剩菜改造版香椿拌嫩豆腐",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "半把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿拌嫩豆腐」备好食材，这一步与家常做法一致。",
+   "把剩菜回锅加热，补一点蔬菜或主食就是新的一餐。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "炒"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 7,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食",
+   "剩菜改造"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
+ },
+ "r210:fusion": {
+  "id": "ai-var-r210-fusion",
+  "title": "融合版香椿拌嫩豆腐",
+  "ingredients": [
+   {
+    "name": "香椿",
+    "canonical": "香椿",
+    "amount": "半把",
+    "optional": false
+   },
+   {
+    "name": "嫩豆腐",
+    "canonical": "嫩豆腐",
+    "amount": "1 盒",
+    "optional": false
+   },
+   {
+    "name": "香油",
+    "canonical": "香油",
+    "amount": "1 小勺",
+    "optional": false
+   },
+   {
+    "name": "盐",
+    "canonical": "盐",
+    "amount": "1 小勺",
+    "optional": false
+   }
+  ],
+  "steps": [
+   "按「香椿拌嫩豆腐」备好食材，这一步与家常做法一致。",
+   "起锅前加一点黑胡椒或柠檬汁，换个风味层次。",
+   "出锅前尝味调整咸淡，注意食材彻底加热后再食用。"
+  ],
+  "methods": [
+   "凉拌",
+   "煮"
+  ],
+  "cuisine": "家常菜",
+  "time_minutes": 12,
+  "difficulty": "简单",
+  "cookware": [
+   "汤锅"
+  ],
+  "tags": [
+   "快手",
+   "低脂",
+   "素食",
+   "融合菜"
+  ],
+  "allergens": [
+   "大豆"
+  ],
+  "safety_notes": [
+   "规则生成的参考变体，非 AI 实测。请确保食材新鲜、彻底加热，注意过敏原。"
+  ],
+  "source": "规则生成（离线模板，非 AI 实测）",
+  "license": "CookMyFridge rule-based, see About",
+  "is_ai_generated": true
  }
 }

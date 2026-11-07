@@ -3007,6 +3007,129 @@
 "高纤维",
 "优质碳水"
 ]
+},
+{
+"canonical": "豌豆苗",
+"category": "蔬菜",
+"emoji": "🌱",
+"synonyms": [
+"豆苗",
+"豌豆尖",
+"龙须苗"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "紫甘蓝",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"紫包菜",
+"红甘蓝",
+"紫圆白菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "香椿",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"香椿芽",
+"椿芽",
+"香椿头"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "白玉菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"白玉蘑菇",
+"海鲜菇",
+"白蟹味菇"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "芦蒿",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"蒌蒿",
+"泥蒿",
+"芦艾"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "全麦面包",
+"category": "主食",
+"emoji": "🍞",
+"synonyms": [
+"全麦切片",
+"wholemeal bread"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "薏米",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"薏苡仁",
+"苡米",
+"六谷子"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "奇亚籽",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"奇亚子",
+"chia",
+"鼠尾草籽"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "鱼露",
+"category": "调料",
+"emoji": "🐟",
+"synonyms": [
+"鱼酱油",
+"味露"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": []
+},
+{
+"canonical": "豆豉",
+"category": "调料",
+"emoji": "🫘",
+"synonyms": [
+"豆豉粒",
+"干豆豉"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
 }
 ],
 "substitutions": {
@@ -3502,6 +3625,13 @@
 "carbs": 0.0,
 "source": "reference"
 },
+"全麦面包": {
+"kcal": 247,
+"protein": 9.0,
+"fat": 3.2,
+"carbs": 45.0,
+"source": "reference"
+},
 "八角": {
 "kcal": 60.0,
 "protein": 1.5,
@@ -3689,6 +3819,13 @@
 "protein": 4.5,
 "fat": 0.2,
 "carbs": 27.6,
+"source": "reference"
+},
+"奇亚籽": {
+"kcal": 486,
+"protein": 16.5,
+"fat": 30.7,
+"carbs": 42.1,
 "source": "reference"
 },
 "奶油": {
@@ -4167,6 +4304,13 @@
 "carbs": 19.0,
 "source": "reference"
 },
+"白玉菇": {
+"kcal": 26,
+"protein": 2.5,
+"fat": 0.3,
+"carbs": 4.0,
+"source": "reference"
+},
 "白糖": {
 "kcal": 400,
 "protein": 0.0,
@@ -4284,6 +4428,13 @@
 "protein": 7.0,
 "fat": 1.0,
 "carbs": 78.0,
+"source": "reference"
+},
+"紫甘蓝": {
+"kcal": 31,
+"protein": 1.4,
+"fat": 0.2,
+"carbs": 7.0,
 "source": "reference"
 },
 "紫菜": {
@@ -4439,6 +4590,13 @@
 "fat": 0.2,
 "carbs": 4.5,
 "source": "estimated"
+},
+"芦蒿": {
+"kcal": 25,
+"protein": 1.8,
+"fat": 0.3,
+"carbs": 3.5,
+"source": "reference"
 },
 "花椒": {
 "kcal": 60.0,
@@ -4706,6 +4864,13 @@
 "carbs": 13.0,
 "source": "estimated"
 },
+"薏米": {
+"kcal": 357,
+"protein": 12.8,
+"fat": 3.3,
+"carbs": 71.1,
+"source": "reference"
+},
 "藕粉": {
 "kcal": 372,
 "protein": 0.2,
@@ -4860,11 +5025,25 @@
 "carbs": 4.5,
 "source": "estimated"
 },
+"豆豉": {
+"kcal": 240,
+"protein": 18.0,
+"fat": 9.0,
+"carbs": 20.0,
+"source": "reference"
+},
 "豌豆": {
 "kcal": 81,
 "protein": 5.4,
 "fat": 0.4,
 "carbs": 14.5,
+"source": "reference"
+},
+"豌豆苗": {
+"kcal": 35,
+"protein": 3.0,
+"fat": 0.4,
+"carbs": 4.0,
 "source": "reference"
 },
 "辣椒": {
@@ -5028,6 +5207,13 @@
 "carbs": 10.0,
 "source": "estimated"
 },
+"香椿": {
+"kcal": 47,
+"protein": 1.7,
+"fat": 0.4,
+"carbs": 9.1,
+"source": "reference"
+},
 "香油": {
 "kcal": 884,
 "protein": 0.0,
@@ -5090,6 +5276,13 @@
 "fat": 3.0,
 "carbs": 1.0,
 "source": "estimated"
+},
+"鱼露": {
+"kcal": 35,
+"protein": 5.0,
+"fat": 0.0,
+"carbs": 3.6,
+"source": "reference"
 },
 "鱿鱼": {
 "kcal": 84,
@@ -5279,6 +5472,10 @@
 "颗": 80.0
 },
 "ingredient_units": {
+"全麦面包": {
+"个": 80.0,
+"片": 30.0
+},
 "冬瓜": {
 "块": 200.0
 },
@@ -5328,6 +5525,10 @@
 "整头": 40.0,
 "瓣": 5.0,
 "颗": 5.0
+},
+"奇亚籽": {
+"勺": 12.0,
+"小勺": 4.0
 },
 "娃娃菜": {
 "把": 150.0,
@@ -5437,6 +5638,10 @@
 "番茄酱": {
 "勺": 15.0
 },
+"白玉菇": {
+"把": 100.0,
+"盒": 150.0
+},
 "白糖": {
 "勺": 12.0,
 "小勺": 4.0
@@ -5459,6 +5664,10 @@
 "份": 150.0,
 "碗": 150.0
 },
+"紫甘蓝": {
+"片": 20.0,
+"颗": 500.0
+},
 "红薯": {
 "个": 180.0
 },
@@ -5480,6 +5689,9 @@
 },
 "芦笋": {
 "把": 150.0
+},
+"芦蒿": {
+"把": 200.0
 },
 "花生油": {
 "勺": 10.0,
@@ -5528,6 +5740,10 @@
 "蒜黄": {
 "把": 150.0
 },
+"薏米": {
+"勺": 15.0,
+"杯": 180.0
+},
 "虾": {
 "个": 15.0,
 "只": 15.0
@@ -5571,8 +5787,16 @@
 "豆角": {
 "把": 150.0
 },
+"豆豉": {
+"勺": 12.0,
+"小勺": 4.0
+},
 "豌豆": {
 "把": 150.0
+},
+"豌豆苗": {
+"把": 150.0,
+"盒": 200.0
 },
 "辣椒": {
 "个": 15.0,
@@ -5628,6 +5852,9 @@
 "馒头": {
 "个": 100.0
 },
+"香椿": {
+"把": 100.0
+},
 "香油": {
 "勺": 10.0,
 "小勺": 4.0
@@ -5650,6 +5877,10 @@
 "高汤": {
 "杯": 240.0,
 "碗": 250.0
+},
+"鱼露": {
+"勺": 15.0,
+"小勺": 5.0
 },
 "鸡翅": {
 "个": 40.0,
