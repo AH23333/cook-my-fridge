@@ -120,6 +120,13 @@ def copy_web_assets() -> None:
     if sw_target.exists():
         version = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
         text = sw_target.read_text(encoding="utf-8")
+        if "cmf-cache-v1" not in text:
+            # str.replace is silent when the marker is absent; a renamed marker
+            # would freeze cache invalidation forever, so fail the build.
+            raise RuntimeError(
+                "sw.js 缺少 cmf-cache-v1 缓存标记，版本注入失败；"
+                "若有意改名请同步更新 build.py 的注入标记。"
+            )
         _retry(
             lambda: sw_target.write_text(
                 text.replace("cmf-cache-v1", f"cmf-cache-{version}"),

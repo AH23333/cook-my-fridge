@@ -1,6 +1,8 @@
 """Static site build pipeline tests (runs fully in temp dirs)."""
 from pathlib import Path
 
+import pytest
+
 import cookmyfridge.build as build
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -75,3 +77,19 @@ def test_retry_recovers_from_transient_oserror():
 
     assert build._retry(flaky) == "ok"
     assert len(calls) == 3
+
+
+def test_build_fails_loudly_when_sw_marker_missing(tmp_path, monkeypatch):
+    """If web/sw.js ever renames the cache marker, version injection silently
+    stops and users keep stale caches forever; the build must fail instead."""
+    fake_site = tmp_path / "site"
+    fake_web = tmp_path / "web"
+    fake_web.mkdir()
+    (fake_web / "sw.js").write_text(
+        'const CACHE_NAME = "cmf-cache-v2";', encoding="utf-8"
+    )
+    monkeypatch.setattr(build, "SITE_DIR", fake_site)
+    monkeypatch.setattr(build, "WEB_DIR", fake_web)
+
+    with pytest.raises(RuntimeError, match="cmf-cache-v1"):
+        build.copy_web_assets()
