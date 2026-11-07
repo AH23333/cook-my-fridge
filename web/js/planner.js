@@ -1,7 +1,7 @@
-/* Weekly meal planner: lunch + dinner, deterministic pure logic, no DOM.
-   Days are [{index, lunch:{recipeId,title}, dinner:{recipeId,title}}].
-   Legacy single-meal weeks are upgraded by migrateWeek() without losing the
-   lunches the user already hand-picked. */
+/* Meal planner: lunch + dinner for 1-4 weeks, deterministic pure logic, no DOM.
+   Days are [{index, lunch:{recipeId,title}, dinner:{recipeId,title}}] where
+   index is the day offset from startDate (0..27). Legacy single-meal weeks
+   are upgraded by migrateWeek() without losing the lunches already picked. */
 (function () {
   "use strict";
 
@@ -9,9 +9,15 @@
   const DAYS = 7;
   const MEALS = ["lunch", "dinner"];
   const WEEKDAYS = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+  const MAX_WEEKS = 4;
 
   CMF.WEEK_MEALS = MEALS.slice();
   CMF.WEEKDAY_LABELS = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
+  CMF.MAX_MENU_WEEKS = MAX_WEEKS;
+  CMF.MENU_WEEK_OPTIONS = [1, 2, 3, 4];
+  // Shared with sw.js: the calendar subscription endpoint lives in this cache.
+  CMF.CALENDAR_CACHE = "cmf-calendar-v1";
+  CMF.CALENDAR_PATH = "calendar.ics";
 
   function mulberry32(seed) {
     let a = seed >>> 0;
@@ -75,7 +81,7 @@
     return recipe ? { recipeId: recipe.id, title: recipe.title } : null;
   }
 
-  /* Flatten a week (new or legacy shape) into meal records. */
+  /* Flatten a menu (new or legacy shape) into meal records. */
   CMF.weekMeals = function (days) {
     const rows = [];
     (days || []).forEach((d, position) => {
@@ -93,24 +99,63 @@
     return rows;
   };
 
-  CMF.buildWeek = function (recipes, fridge, prefs, seed) {
-    const rng = mulberry32(seed || 1);
-    const pool = eligibleRecipes(recipes, prefs);
-    const usedTitles = new Set();
-    const days = Array.from({ length: DAYS }, (_, index) => ({
-      index, lunch: null, dinner: null,
+  CMF.menuWeekCount = function (days) {
+    const meals = CMF.weekMeals(days);
+    if (!meals.length) return 0;
+    return Math.ceil((Math.max(...meals.map((m) => m.index)) + 1) / DAYS);
+  };
+
+  /* Build one 7-day chunk starting at `startIndex`. `used` is shared across
+     weeks so the planner avoids repeating dishes for as long as the eligible
+     pool allows. */
+  function buildChunk(startIndex, used, pool, fridge, rng) {
+    const days = Array.from({ length: DAYS }, (_, i) => ({
+      index: startIndex + i, lunch: null, dinner: null,
     }));
     outer: for (let i = 0; i < DAYS; i += 1) {
       for (const meal of MEALS) {
-        const recipe = pickRecipe(pool, fridge, usedTitles, rng);
+        const recipe = pickRecipe(pool, fridge, used, rng);
         if (!recipe) break outer;
-        usedTitles.add(recipe.title);
+        used.add(recipe.title);
         days[i][meal] = brief(recipe);
       }
     }
-    // Never return a day with a missing meal; better 5 complete days than a
-    // half-empty card when strict diet filters shrink the candidate pool.
+    // Never return a half-empty card; better 5 complete days when strict diet
+    // filters shrink the candidate pool.
     return days.filter((d) => d.lunch && d.dinner);
+  }
+
+  function clampWeeks(weeks) {
+    return Math.max(1, Math.min(MAX_WEEKS, Math.round(Number(weeks) || 1)));
+  }
+
+  /* Grow or shrink an existing menu without discarding hand-picked meals. */
+  CMF.resizeMenu = function (days, weeks, recipes, fridge, prefs, seed) {
+    const target = clampWeeks(weeks);
+    const current = CMF.menuWeekCount(days);
+    if (target <= current) return (days || []).filter((d) => d.index < target * DAYS);
+    const rng = mulberry32(seed || 1);
+    const pool = eligibleRecipes(recipes, prefs);
+    let result = (days || []).slice();
+    for (let w = current; w < target; w += 1) {
+      const used = new Set(CMF.weekMeals(result).map((m) => m.title));
+      let chunk = buildChunk(w * DAYS, used, pool, fridge || [], rng);
+      if (chunk.length < DAYS) {
+        // Pool exhausted (strict diets/allergens): allow repeats across weeks,
+        // but keep every dish inside this week unique.
+        chunk = buildChunk(w * DAYS, new Set(), pool, fridge || [], rng);
+      }
+      result = result.concat(chunk);
+    }
+    return result;
+  };
+
+  CMF.buildMenu = function (weeks, recipes, fridge, prefs, seed) {
+    return CMF.resizeMenu([], weeks, recipes, fridge, prefs, seed);
+  };
+
+  CMF.buildWeek = function (recipes, fridge, prefs, seed) {
+    return CMF.buildMenu(1, recipes, fridge, prefs, seed);
   };
 
   /* Upgrade a legacy week: keep the chosen dish as lunch, fill dinners. */
@@ -162,10 +207,10 @@
     const usedTitles = new Set(allMeals.map((m) => m.title));
     let recipe = pickRecipe(pool, fridge, usedTitles, rng);
     if (!recipe) {
-      // Strict diet/allergen filters can leave fewer eligible dishes than
-      // there are meal slots. A reroll must still do something: relax the
-      // whole-week uniqueness constraint, but never repeat a dish on the
-      // same day or keep the one being replaced.
+      // Strict filters can leave fewer eligible dishes than there are meal
+      // slots. Relax the whole-menu uniqueness, but still exclude the day's
+      // two dishes (which includes the one being replaced) so a reroll always
+      // changes something and never duplicates a dish on the same day.
       const sameDay = new Set(
         allMeals.filter((m) => m.index === index).map((m) => m.title)
       );
@@ -184,6 +229,7 @@
     return CMF.rerollMeal(days, index, "lunch", recipes, fridge, prefs, seed);
   };
 
+  /* Cross-week shopping: which weeks need each missing ingredient. */
   CMF.weekShopping = function (days, recipes, fridge) {
     const byId = new Map(recipes.map((r) => [r.id, r]));
     const fridgeSet = new Set(fridge);
@@ -192,16 +238,21 @@
       const r = byId.get(m.recipeId);
       if (!r) return;
       const match = CMF.matchRecipe(r, fridgeSet);
+      const weekNo = Math.floor(m.index / DAYS);
       match.missing.forEach((c) => {
-        if (!need.has(c)) need.set(c, []);
-        need.get(c).push(r.title);
+        if (!need.has(c)) need.set(c, { recipes: [], weeks: new Set() });
+        const row = need.get(c);
+        row.recipes.push(r.title);
+        row.weeks.add(weekNo);
       });
     });
     return [...need.keys()].sort().map((c) => ({
       canonical: c,
-      recipes: [...new Set(need.get(c))],
+      recipes: [...new Set(need.get(c).recipes)],
+      weeks: [...need.get(c).weeks].sort((a, b) => a - b),
     }));
   };
+  CMF.menuShopping = CMF.weekShopping;
 
   /* Per-person daily totals (one serving of each meal). */
   CMF.weekDayNutrition = function (days, index, recipes) {
@@ -224,6 +275,83 @@
     totals.fat = Math.round(totals.fat * 10) / 10;
     totals.carbs = Math.round(totals.carbs * 10) / 10;
     return totals;
+  };
+
+  /* --- Balance-driven optimisation --- */
+
+  function dayScoreFrom(day, estimates) {
+    if (typeof CMF.scoreBalance !== "function") return 0;
+    const totals = { kcal: 0, protein: 0, fat: 0, carbs: 0, meals: 0 };
+    MEALS.forEach((meal) => {
+      const item = day[meal];
+      const est = item && estimates.get(item.recipeId);
+      if (!est) return;
+      totals.kcal += est.perServing.kcal;
+      totals.protein += est.perServing.protein;
+      totals.fat += est.perServing.fat;
+      totals.carbs += est.perServing.carbs;
+      totals.meals += 1;
+    });
+    return totals.meals ? CMF.scoreBalance(totals, { meals: totals.meals }).score : 0;
+  }
+
+  CMF.optimizeMenu = function (days, recipes, fridge, prefs, seed, opts) {
+    const result = (days || []).map((d) => ({
+      index: d.index, lunch: d.lunch || null, dinner: d.dinner || null,
+    }));
+    if (typeof CMF.scoreBalance !== "function" || !result.length) {
+      return { days: result, before: 0, after: 0, changed: 0 };
+    }
+    const options = opts || {};
+    // Deliberately conservative: only the weakest days, at most a third of the
+    // menu. Replacing every single dish would look like score gaming and throw
+    // away everything the user hand-picked.
+    const target = Number.isFinite(options.target) ? options.target : 70;
+    const maxDays = Number.isFinite(options.maxDays)
+      ? options.maxDays : Math.ceil(result.length / 3);
+    const pool = eligibleRecipes(recipes, prefs);
+    const estimates = new Map();
+    pool.forEach((r) => {
+      const est = typeof CMF.estimateNutrition === "function"
+        ? CMF.estimateNutrition(r) : null;
+      if (est) estimates.set(r.id, est);
+    });
+    const average = (menu) => Math.round(
+      menu.reduce((sum, d) => sum + dayScoreFrom(d, estimates), 0) / menu.length
+    );
+    const before = average(result);
+    const used = new Set(CMF.weekMeals(result).map((m) => m.title));
+    const order = result
+      .map((d) => ({ index: d.index, score: dayScoreFrom(d, estimates) }))
+      .sort((a, b) => a.score - b.score);
+    let changed = 0;
+
+    order.forEach(({ index, score }) => {
+      if (changed >= maxDays || score >= target) return;
+      const pos = result.findIndex((d) => d.index === index);
+      const currentScore = dayScoreFrom(result[pos], estimates);
+      let best = null;
+      let bestScore = currentScore;
+      pool.forEach((r) => {
+        if (used.has(r.title)) return;
+        MEALS.forEach((meal) => {
+          const trial = { ...result[pos], [meal]: brief(r) };
+          const score = dayScoreFrom(trial, estimates);
+          if (score > bestScore) {
+            bestScore = score;
+            best = { meal, recipe: r };
+          }
+        });
+      });
+      if (!best) return;
+      const replaced = result[pos][best.meal];
+      if (replaced) used.delete(replaced.title);
+      result[pos] = { ...result[pos], [best.meal]: brief(best.recipe) };
+      used.add(best.recipe.title);
+      changed += 1;
+    });
+
+    return { days: result, before, after: average(result), changed, seed: seed || 1 };
   };
 
   /* --- Calendar export --- */
@@ -282,16 +410,18 @@
     const now = options.now ? new Date(options.now) : new Date();
     const tzOffset = Number.isFinite(options.tzOffset) ? options.tzOffset : 8;
     const byId = new Map(recipes.map((r) => [r.id, r]));
+    const weeks = CMF.menuWeekCount(days) || 1;
     const stamp =
       now.getUTCFullYear() + pad(now.getUTCMonth() + 1) + pad(now.getUTCDate()) +
       "T" + pad(now.getUTCHours()) + pad(now.getUTCMinutes()) + pad(now.getUTCSeconds()) + "Z";
     const lines = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
-      "PRODID:-//CookMyFridge//Weekly Meal Plan//ZH",
+      "PRODID:-//CookMyFridge//Meal Plan//ZH",
       "CALSCALE:GREGORIAN",
       "METHOD:PUBLISH",
-      "X-WR-CALNAME:CookMyFridge 一周菜单",
+      "X-WR-CALNAME:CookMyFridge " + (weeks > 1 ? weeks + " 周" : "一周") + "菜单",
+      "X-WR-CALDESC:午餐 12:00 · 晚餐 18:00 · 数据由本地菜单生成",
       "X-WR-TIMEZONE:Asia/Shanghai",
     ];
     CMF.weekMeals(days).forEach((m) => {
@@ -306,7 +436,7 @@
         ? CMF.estimateNutrition(recipe)
         : null;
       const description = [
-        "CookMyFridge · " + label + " · " + m.title,
+        "CookMyFridge · 第 " + (Math.floor(m.index / DAYS) + 1) + " 周 · " + label + " · " + m.title,
         ingredients ? "食材：" + ingredients : "",
         est ? "每份约 " + est.perServing.kcal + " kcal（估算）" : "",
         "菜谱：recipe.html?id=" + m.recipeId,
@@ -327,23 +457,36 @@
     lines.push("END:VCALENDAR");
     return lines.join("\r\n") + "\r\n";
   };
+  CMF.menuToICS = CMF.weekToICS;
 
   CMF.weekToText = function (days, startDate) {
     const start = CMF.weekStartDate(startDate);
-    const end = addDays(start, 6);
+    const list = days || [];
+    const weeks = CMF.menuWeekCount(list) || 1;
+    const end = addDays(start, weeks * DAYS - 1);
+    const fmt = (d) => (d.getMonth() + 1) + "/" + d.getDate();
     const header =
-      "CookMyFridge 一周菜单（" + (start.getMonth() + 1) + "/" + start.getDate() +
-      " – " + (end.getMonth() + 1) + "/" + end.getDate() + "）\n";
-    const body = (days || [])
-      .map((d) => {
-        const label = CMF.WEEKDAY_LABELS[d.index] || WEEKDAYS[addDays(start, d.index).getDay()];
-        return (
-          "\n" + label + "\n" +
-          "  午餐：" + (d.lunch ? d.lunch.title : "待安排") + "\n" +
-          "  晚餐：" + (d.dinner ? d.dinner.title : "待安排")
-        );
-      })
-      .join("");
+      "CookMyFridge " + (weeks > 1 ? weeks + " 周" : "一周") + "菜单（" +
+      fmt(start) + " – " + fmt(end) + "）\n";
+    const dayLine = (d) => {
+      const label = CMF.WEEKDAY_LABELS[d.index % DAYS] || WEEKDAYS[addDays(start, d.index).getDay()];
+      return (
+        "\n" + label + "（" + fmt(addDays(start, d.index)) + "）\n" +
+        "  午餐：" + (d.lunch ? d.lunch.title : "待安排") + "\n" +
+        "  晚餐：" + (d.dinner ? d.dinner.title : "待安排")
+      );
+    };
+    let body = "";
+    for (let w = 0; w < weeks; w += 1) {
+      const chunk = list.filter((d) => Math.floor(d.index / DAYS) === w);
+      if (!chunk.length) continue;
+      if (weeks > 1) {
+        body += "\n第 " + (w + 1) + " 周（" + fmt(addDays(start, w * DAYS)) +
+          " – " + fmt(addDays(start, w * DAYS + DAYS - 1)) + "）\n";
+      }
+      body += chunk.map(dayLine).join("");
+    }
     return header + body + "\n\n别点外卖，让冰箱开饭。\n";
   };
+  CMF.menuToText = CMF.weekToText;
 })();

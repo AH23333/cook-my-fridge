@@ -80,6 +80,11 @@
       })() +
       (CMF.renderNutritionCard ? CMF.renderNutritionCard(recipe, factor) : "") +
       (() => {
+        if (!CMF.renderBalanceCard || !CMF.estimateNutrition) return "";
+        const estimate = CMF.estimateNutrition(recipe, factor);
+        return estimate ? CMF.renderBalanceCard(estimate.perServing, { meals: 1 }) : "";
+      })() +
+      (() => {
         if (!CMF.compatibleDiets) return "";
         const keys = CMF.compatibleDiets(recipe);
         if (!keys.length) return "";
