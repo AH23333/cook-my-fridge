@@ -12,8 +12,10 @@ function load(rel) {
   eval(code);
 }
 
+load("web/js/store.js");
 load("web/js/catalog.js");
 load("web/js/nutrition.js");
+load("web/js/qrcode.js");
 load("web/js/share.js");
 
 const CMF = global.window.CMF;
@@ -47,10 +49,10 @@ const canvas = {
 };
 const doc = { createElement: (tag) => (tag === "canvas" ? canvas : {}) };
 
-function draw(recipe) {
+function draw(recipe, opts) {
   texts.length = 0;
   rects.length = 0;
-  const c = CMF.drawShareCanvas(recipe, { doc });
+  const c = CMF.drawShareCanvas(recipe, Object.assign({ doc }, opts || {}));
   return texts.map((t) => t.t);
 }
 
@@ -82,6 +84,28 @@ check("closing slogan", joined.includes("别点外卖"));
 check("no undefined", !joined.includes("undefined"));
 check("no NaN", !joined.includes("NaN"));
 check("all text inside canvas", texts.every((t) => t.y > 0 && t.y <= 1200 && t.x >= 0));
+
+// 2b. QR code on the card
+const qrCells = rects.filter((r) => r.w === r.h && r.w >= 2 && r.w <= 8 && r.x >= 576 && r.y >= 556);
+check("QR dark modules drawn", qrCells.length > 80);
+check("QR quiet-zone background", rects.some((r) => r.w === r.h && r.w >= 120 && r.w <= 168));
+check("QR caption on card", joined.includes("扫码看菜谱"));
+check("QR stays inside canvas", qrCells.every((r) => r.x >= 576 && r.y >= 556 && r.x + r.w <= 744 && r.y + r.h <= 724));
+check("shareUrl explicit injection", CMF.shareUrl(recipe, { url: "https://example.com/r/1" }) === "https://example.com/r/1");
+check("shareUrl default points at recipe", CMF.shareUrl(recipe).includes("recipe.html?id="));
+check("QR missing module degrades", (() => {
+  const saved = CMF.drawQR;
+  CMF.drawQR = undefined;
+  const out = draw(recipe).join("|");
+  CMF.drawQR = saved;
+  return out.includes(recipe.title) && !out.includes("扫码看菜谱");
+})());
+check("overlong QR url does not break card", (() => {
+  try {
+    const out = draw(recipe, { url: "a".repeat(400) }).join("|");
+    return out.includes(recipe.title) && !out.includes("扫码看菜谱");
+  } catch (err) { return false; }
+})());
 
 // 3. AI labelling
 const aiRecipe = { ...recipe, is_ai_generated: true };

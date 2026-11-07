@@ -12,7 +12,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
 
-GLOBAL_SCRIPTS = ("nutrition.js", "diets.js", "pairings.js", "share.js", "ui.js")
+GLOBAL_SCRIPTS = (
+    "nutrition.js", "balance.js", "diets.js",
+    "pairings.js", "qrcode.js", "share.js", "ui.js",
+)
 
 
 def _pages() -> list[Path]:
@@ -43,16 +46,21 @@ def test_no_duplicate_or_missing_script_files():
 def test_sw_precaches_all_scripts():
     sw = (WEB / "sw.js").read_text(encoding="utf-8")
     scripts = sorted(p.name for p in (WEB / "js").glob("*.js"))
-    assert len(scripts) >= 20
+    assert len(scripts) >= 22
     for script in scripts:
         assert f'"js/{script}"' in sw, script
 
 
 def test_new_ui_controls_wired():
     planner = (WEB / "planner.html").read_text(encoding="utf-8")
-    for control in ("btn-shuffle", "btn-export-ics", "btn-copy-week", "week-diet-note"):
+    for control in (
+        "btn-shuffle", "btn-export-ics", "btn-copy-week", "week-diet-note",
+        "week-count", "btn-subscribe", "balance-summary-root", "subscribe-root",
+    ):
         assert f'id="{control}"' in planner
-    assert (WEB / "js" / "page-planner.js").read_text(encoding="utf-8").count("btn-export-ics") >= 1
+    page = (WEB / "js" / "page-planner.js").read_text(encoding="utf-8")
+    assert page.count("btn-export-ics") >= 1
+    assert "btn-optimize" in page and "publishCalendar" in page
 
     fridge = (WEB / "fridge.html").read_text(encoding="utf-8")
     assert 'id="diets-content"' in fridge
@@ -69,7 +77,8 @@ def test_new_styles_exist():
     for selector in (
         ".nutrition-estimate", ".nut-stats", ".nut-energy-seg", ".diet-badge",
         ".diet-chip", ".share-preview", ".share-actions", ".week-meal",
-        ".week-kcal",
+        ".week-kcal", ".balance-card", ".balance-summary", ".balance-badge",
+        ".weeks-select", ".subscribe-box", ".subscribe-url",
     ):
         assert selector in css, selector
 

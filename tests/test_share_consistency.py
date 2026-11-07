@@ -25,5 +25,5 @@ def test_share_card_js():
     )
     payload = json.loads(proc.stdout)
     assert payload["ok"] is True
-    assert payload["checks"] >= 37
+    assert payload["checks"] >= 45
     assert payload["recipes"] >= 195

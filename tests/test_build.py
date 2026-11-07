@@ -59,7 +59,7 @@ def test_service_worker_precaches_every_script():
         p.relative_to(ROOT / "web").as_posix()
         for p in (ROOT / "web" / "js").glob("*.js")
     )
-    assert len(scripts) >= 18
+    assert len(scripts) >= 22
     for script in scripts:
         assert f'"{script}"' in sw, f"missing from SW precache: {script}"
 
