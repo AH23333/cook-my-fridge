@@ -7,6 +7,7 @@ import os
 import pytest
 
 from cookmyfridge.ai import (
+    AIEngine,
     AIGenerationError,
     _recipe_from_payload,
 )
@@ -117,3 +118,60 @@ def test_time_minutes_garbage_raises_generation_error():
         _recipe_from_payload(valid_payload(time_minutes=["很久"]), "ai-test-12")
     with pytest.raises(AIGenerationError, match="time_minutes"):
         _recipe_from_payload(valid_payload(time_minutes="很快就好"), "ai-test-13")
+
+
+class _StubClient:
+    """Offline LLMClient stand-in: always returns the same payload."""
+
+    def __init__(self, payload):
+        self.payload = payload
+        self.calls = 0
+        self.seen_lengths = []
+
+    def chat_json(self, messages, temperature=0.0):
+        self.calls += 1
+        self.seen_lengths.append(len(messages))
+        return self.payload
+
+
+def test_generate_recipe_retry_loop_is_bounded_and_gives_feedback():
+    # Payload always contains an unknown ingredient -> validation fails every
+    # time. The loop must stop after 1 + retries calls, carrying feedback.
+    bad_payload = {
+        "title": "坏菜",
+        "ingredients": [{"name": "火星辣椒", "amount": "1"}],
+        "steps": ["下锅。"],
+        "methods": ["炒"],
+    }
+    client = _StubClient(bad_payload)
+    engine = AIEngine(client=client)
+    with pytest.raises(AIGenerationError, match="多次重试"):
+        engine.generate_wildcard(["番茄"], recipe_id="ai-test-14")
+    assert client.calls == 3  # 1 initial + 2 retries, never an unbounded loop
+    assert client.seen_lengths == [2, 3, 4]  # one feedback message appended each round
+
+
+def test_generate_recipe_succeeds_on_second_attempt():
+    good_payload = {
+        "title": "番茄蛋创意菜",
+        "ingredients": [{"name": "番茄", "amount": "1 个"}],
+        "steps": ["下锅。", "出锅。"],
+        "methods": ["炒"],
+    }
+    responses = iter([
+        {"title": "坏菜", "ingredients": [{"name": "火星辣椒"}], "steps": ["x"], "methods": ["炒"]},
+        good_payload,
+    ])
+
+    class SeqClient:
+        calls = 0
+
+        def chat_json(self, messages, temperature=0.0):
+            self.calls += 1
+            return next(responses)
+
+    seq = SeqClient()
+    engine = AIEngine(client=seq)
+    recipe = engine.generate_wildcard(["番茄"], recipe_id="ai-test-15")
+    assert recipe.title == "番茄蛋创意菜"
+    assert seq.calls == 2

@@ -1,5 +1,8 @@
 """LLM client tests: JSON extraction is offline; live calls are opt-in."""
+import io
 import os
+import urllib.error
+import urllib.request
 
 import pytest
 
@@ -33,6 +36,56 @@ def test_extract_chinese_content():
 def test_extract_failure_raises():
     with pytest.raises(LLMError):
         extract_json("这里完全没有 JSON 内容")
+
+
+def test_chat_http_retries_bounded(monkeypatch):
+    """A permanently failing endpoint must stop after 1 + retries attempts."""
+    monkeypatch.setattr("time.sleep", lambda _s: None)  # skip real backoff
+    attempts = []
+
+    def always_503(req, timeout=None):
+        attempts.append(1)
+        raise urllib.error.HTTPError(
+            req.full_url, 503, "unavailable", {}, io.BytesIO(b"busy")
+        )
+
+    monkeypatch.setattr(urllib.request, "urlopen", always_503)
+    client = LLMClient(api_key="k", base_url="https://example.invalid", model="m")
+    with pytest.raises(LLMError, match="503"):
+        client.chat([{"role": "user", "content": "hi"}], retries=3)
+    assert len(attempts) == 4
+
+
+def test_chat_http_non_retryable_fails_immediately(monkeypatch):
+    monkeypatch.setattr("time.sleep", lambda _s: None)
+    attempts = []
+
+    def always_401(req, timeout=None):
+        attempts.append(1)
+        raise urllib.error.HTTPError(
+            req.full_url, 401, "unauthorized", {}, io.BytesIO(b"bad key")
+        )
+
+    monkeypatch.setattr(urllib.request, "urlopen", always_401)
+    client = LLMClient(api_key="k", base_url="https://example.invalid", model="m")
+    with pytest.raises(LLMError, match="401"):
+        client.chat([{"role": "user", "content": "hi"}], retries=3)
+    assert len(attempts) == 1  # 401 is not retried
+
+
+def test_chat_json_retries_bounded_on_unparseable(monkeypatch):
+    calls = []
+    client = LLMClient(api_key="k", base_url="https://example.invalid", model="m")
+
+    def garbage(messages, **kwargs):
+        calls.append(len(messages))
+        return "这根本不是 JSON"
+
+    monkeypatch.setattr(client, "chat", garbage)
+    with pytest.raises(LLMError, match="多次重试"):
+        client.chat_json([{"role": "user", "content": "hi"}], retries=2)
+    assert len(calls) == 3  # 1 + 2 parse retries, then gives up
+    assert calls == [1, 3, 5]  # assistant reply + correction appended each round
 
 
 def test_extract_empty_raises():

@@ -92,3 +92,32 @@ def test_prune_failures_removes_recovered_keeps_real(tmp_path, monkeypatch):
     assert report["remaining"] == 1
     remaining = json.loads((cache_dir / "failures.json").read_text(encoding="utf-8"))
     assert list(remaining) == ["ideas:r009"]
+
+
+def test_failed_item_recorded_and_batch_continues(tmp_path, monkeypatch):
+    """One broken combo must not kill the batch; failures persist for review,
+    succeeded items are skipped on rerun, failed ones retried."""
+    cache_dir = tmp_path / "ai_cache"
+    monkeypatch.setattr(batch, "CACHE_DIR", cache_dir)
+
+    class _FakeRecipe:
+        def to_dict(self):
+            return {"id": "fake", "title": "假菜"}
+
+    class _FlakyEngine:
+        def generate_wildcard(self, selected):
+            if selected == ["番茄", "土豆"]:
+                raise RuntimeError("boom")
+            return _FakeRecipe()
+
+    runner = batch.BatchRunner(engine=_FlakyEngine(), pause=0)
+    assert runner.run_wildcards(limit=3) == (2, 0, 1)
+    failures = json.loads(
+        (cache_dir / "failures.json").read_text(encoding="utf-8")
+    )
+    assert "wildcards:土豆|番茄" in failures
+    assert "boom" in failures["wildcards:土豆|番茄"]["error"]
+
+    # Rerun: cached items skip, the failed combo is attempted again (and
+    # fails again with the same engine) — nothing silently vanishes.
+    assert runner.run_wildcards(limit=3) == (0, 2, 1)
