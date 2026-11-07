@@ -31,6 +31,7 @@ back to the original link when offline. */
     g: "cmf.goals",
     s: "cmf.shareStats",
     j: "cmf.journal",
+    inv: "cmf.inventory",
   };
   const REVERSE = Object.fromEntries(
     Object.entries(KEY_MAP).map(([short, key]) => [key, short])
@@ -313,6 +314,7 @@ back to the original link when offline. */
   function mergeValue(key, incoming) {
     const local = readRaw(key);
     if (key === "cmf.journal") return CMF.mergeJournals(local, incoming);
+    if (key === "cmf.inventory") return CMF.mergeInventories(local, incoming);
     if (Array.isArray(incoming) && Array.isArray(local)) {
       return [...new Set([...local, ...incoming])];
     }

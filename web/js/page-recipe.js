@@ -204,6 +204,7 @@
           ideasEntry.ideas.map((x) => `<li>${CMF.esc(x)}</li>`).join("") + "</ul>"
         : "") +
       renderJournalPanel(recipe) +
+      '<section id="recipe-inventory"></section>' +
       renderSimilar(recipe) +
       `<p style="font-size:12.5px;color:var(--ink-soft);margin-top:16px">来源：${CMF.esc(recipe.source)} · 许可证：${CMF.esc(recipe.license)}</p>` +
       "</article>";
@@ -234,6 +235,7 @@
     document.getElementById("start-cooking").onclick = () => openCookingMode(recipe);
 
     wireJournalPanel(recipe);
+    if (CMF.mountRecipeInventory) CMF.mountRecipeInventory(root.querySelector("#recipe-inventory"), recipe, factor);
 
     root.querySelectorAll(".ai-actions .btn").forEach((btn) => {
       btn.onclick = () => {

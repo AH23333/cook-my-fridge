@@ -389,7 +389,7 @@
     const root = document.getElementById("backup-content");
     root.innerHTML =
       '<div class="backup-box">' +
-      "<p>导出冰箱、偏好、收藏和计划，换浏览器或设备时可恢复。</p>" +
+      "<p>导出冰箱、偏好、收藏、计划、打卡和库存台账，换浏览器或设备时可恢复。</p>" +
       '<div style="display:flex;gap:9px;flex-wrap:wrap">' +
       '<button class="btn btn-sm" id="btn-export">下载备份文件</button>' +
       '<label class="btn btn-sm" style="cursor:pointer">导入备份' +
@@ -439,7 +439,7 @@
       .map(([kind, count]) => `${CMF.esc(kind)} ${count} 次`).join(" · ") || "暂无";
     root.innerHTML =
       '<div class="sync-box">' +
-      '<p class="sync-intro">把冰箱、偏好、收藏、菜单和营养目标打包成同步码或文件，' +
+      '<p class="sync-intro">把冰箱、偏好、收藏、菜单、营养目标、打卡和库存台账打包成同步码或文件，' +
       '在另一台设备粘贴 / 扫码 / 导入即可恢复。全部在本机完成，不需要账号与服务器。</p>' +
       '<div class="sync-actions">' +
       '<button class="btn btn-primary btn-sm" id="sync-generate">🔗 生成同步码与二维码</button>' +
@@ -477,9 +477,9 @@
         '<button class="btn btn-sm" id="sync-copy-link">🔗 复制同步链接</button>' +
         "</div>" +
         '<div class="sync-qr-row"><div id="sync-qr"></div>' +
-        '<p class="sync-note">二维码用于快速同步冰箱、偏好、收藏与营养目标（不含菜单）；' +
+        '<p class="sync-note">二维码用于快速同步冰箱、偏好、收藏与营养目标（不含菜单、打卡与库存台账）；' +
         (info && info.trimmed ? "数据量较大，已自动精简为偏好与目标。" : "") +
-        "扫码打开后会先询问是否合并。完整菜单请用同步码或同步文件。</p></div>" +
+        "扫码打开后会先询问是否合并。完整数据请用同步码或同步文件。</p></div>" +
         "</div>";
       area.querySelector("#sync-copy-code").onclick = () =>
         CMF.copyText(code).then((ok) => CMF.toast(ok ? "同步码已复制" : "复制失败，请手动选择"));
@@ -800,6 +800,11 @@
 
   function renderAll() {
     renderFridge();
+    if (CMF.mountInventory) CMF.mountInventory(document.getElementById("inventory-content"), () => {
+      renderFridge();
+      renderCleanout();
+      renderShare();
+    });
     renderHistory();
     renderPrefs();
     renderDiets();

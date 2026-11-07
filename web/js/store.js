@@ -16,6 +16,7 @@
     goals: "cmf.goals",
     shareStats: "cmf.shareStats",
     journal: "cmf.journal",
+    inventory: "cmf.inventory",
   };
 
   CMF.KEYS = KEYS;
@@ -136,6 +137,9 @@
      exportData/importData cover it automatically. */
   CMF.getJournal = () => readJSON(KEYS.journal, { cooked: [], ratings: {}, notes: {} });
   CMF.setJournal = (journal) => writeJSON(KEYS.journal, journal);
+
+  CMF.getInventory = () => readJSON(KEYS.inventory, { batches: [] });
+  CMF.setInventory = (inventory) => writeJSON(KEYS.inventory, inventory);
 
   CMF.getFavorites = () => readJSON(KEYS.favorites, []);
   CMF.setFavorites = (list) => writeJSON(KEYS.favorites, list);

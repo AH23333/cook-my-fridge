@@ -1095,3 +1095,122 @@ footer.site-footer {
     display: none !important;
   }
 }
+
+/* --- Scoped inventory ledger and recipe deduction --- */
+.cmf-inventory { min-width: 0; margin: 16px 0; }
+.cmf-inventory .inventory-panel {
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.cmf-inventory h2 { margin: 0 0 8px; font-size: 17px; }
+.cmf-inventory h3 { margin: 12px 0 8px; font-size: 14px; }
+.cmf-inventory h3 small { margin-left: 8px; font-size: 12px; color: var(--ink-soft); font-weight: 400; }
+.cmf-inventory .inventory-note { margin: 6px 0; color: var(--ink-soft); font-size: 12px; line-height: 1.65; }
+.cmf-inventory .inventory-safety { border-left: 3px solid var(--accent); padding-left: 9px; margin-top: 12px; }
+.cmf-inventory .inventory-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 16px;
+  padding: 9px 12px;
+  margin: 12px 0;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+.cmf-inventory .inventory-summary strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+.cmf-inventory .inventory-editor { border-block: 1px solid var(--line); margin: 12px 0; }
+.cmf-inventory summary { cursor: pointer; padding: 10px 0; min-height: 40px; font-weight: 600; }
+.cmf-inventory .inventory-form { padding: 2px 0 12px; }
+.cmf-inventory .inventory-form-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1.3fr) minmax(0, 1fr); gap: 10px 12px; }
+.cmf-inventory .inventory-note-field { grid-column: 1 / -1; }
+.cmf-inventory .inventory-field { display: flex; flex-direction: column; gap: 4px; min-width: 0; color: var(--ink-soft); font-size: 12px; }
+.cmf-inventory .inventory-field input,
+.cmf-inventory .inventory-field select,
+.cmf-inventory .inventory-field textarea {
+  width: 100%;
+  min-width: 0;
+  min-inline-size: 0;
+  min-height: 40px;
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+}
+.cmf-inventory .inventory-field textarea { resize: vertical; }
+.cmf-inventory :is(input, select, textarea, button, summary):focus-visible { outline: 2px solid var(--brand-dark); outline-offset: 3px; }
+.cmf-inventory .inventory-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 10px; }
+.cmf-inventory .btn { min-height: 36px; font-family: inherit; }
+.cmf-inventory [hidden] { display: none !important; }
+.cmf-inventory .inventory-message { margin: 0; font-size: 13px; }
+.cmf-inventory .inventory-message:not(:empty) { padding: 9px 12px; margin: 10px 0; border-left: 3px solid var(--blue); background: var(--surface-2); }
+.cmf-inventory .inventory-message.inventory-error { border-left-color: var(--danger); color: var(--brand-dark); }
+.cmf-inventory .inventory-toolbar { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 12px; max-width: 580px; margin: 12px 0 8px; }
+.cmf-inventory .inventory-list,
+.cmf-inventory .inventory-use-list,
+.cmf-inventory .inventory-preview-lines { list-style: none; margin: 0; padding: 0; }
+.cmf-inventory .inventory-list-head,
+.cmf-inventory .inventory-row { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(80px, .7fr) minmax(124px, 1fr) 48px 118px; gap: 12px; align-items: center; }
+.cmf-inventory .inventory-list-head { padding: 6px 0; font-size: 11.5px; color: var(--ink-soft); border-bottom: 1px solid var(--line); }
+.cmf-inventory .inventory-row { padding: 10px 0; border-bottom: 1px dashed var(--line); }
+.cmf-inventory .inventory-row > * { min-width: 0; }
+.cmf-inventory .inventory-batch-note { display: block; margin-top: 2px; color: var(--ink-soft); font-size: 12px; white-space: pre-wrap; }
+.cmf-inventory .inventory-batch-grams { font-weight: 600; font-variant-numeric: tabular-nums; }
+.cmf-inventory .inventory-expiry { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 7px; font-size: 12px; }
+.cmf-inventory .inventory-expiry time { font-variant-numeric: tabular-nums; }
+.cmf-inventory .inventory-badge { display: inline-block; padding: 1px 7px; border: 1px solid var(--line); border-radius: 5px; color: var(--ink-soft); font-size: 11.5px; }
+.cmf-inventory .inventory-badge[data-status="due"] { border-color: var(--accent); background: var(--surface-2); color: var(--ink); }
+.cmf-inventory .inventory-badge[data-status="expired"] { border-color: var(--danger); color: var(--brand-dark); }
+.cmf-inventory .inventory-location { font-size: 12px; color: var(--ink-soft); }
+.cmf-inventory .inventory-row-actions { display: flex; gap: 6px; }
+.cmf-inventory .inventory-remove { color: var(--brand-dark); }
+.cmf-inventory .inventory-empty { padding: 18px 0; color: var(--ink-soft); }
+.cmf-inventory .inventory-use-fields { padding: 0; margin: 12px 0 0; min-width: 0; border: 0; }
+.cmf-inventory .inventory-use-fields legend { padding: 0 0 4px; font-weight: 600; font-size: 13px; }
+.cmf-inventory .inventory-use-row { display: grid; grid-template-columns: minmax(0, 1fr) 150px; gap: 12px; align-items: center; border-bottom: 1px dashed var(--line); padding: 9px 0; }
+.cmf-inventory .inventory-use-choice { display: flex; align-items: center; gap: 8px; min-height: 36px; font-weight: 600; cursor: pointer; }
+.cmf-inventory .inventory-use-choice input { flex: 0 0 18px; width: 18px; height: 18px; margin: 0; accent-color: var(--brand-dark); }
+.cmf-inventory .inventory-use-meta { font-size: 11.5px; color: var(--ink-soft); margin-left: 26px; }
+.cmf-inventory .inventory-use-fields:disabled { opacity: .7; }
+.cmf-inventory .inventory-use-fields:disabled .inventory-use-choice { cursor: default; }
+.cmf-inventory .inventory-preview:not(:empty) { margin-top: 12px; padding-top: 4px; border-top: 1px solid var(--line); }
+.cmf-inventory .inventory-preview-line { border-bottom: 1px dashed var(--line); padding: 8px 0; }
+.cmf-inventory .inventory-preview-line > div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 14px; }
+.cmf-inventory .inventory-preview-line > div > span { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.cmf-inventory .inventory-shortage { color: var(--brand-dark); margin: 5px 0; font-size: 12px; }
+.cmf-inventory .inventory-allocations { font-size: 12px; color: var(--ink-soft); }
+.cmf-inventory .inventory-allocations summary { font-weight: 400; padding: 6px 0; min-height: 32px; }
+.cmf-inventory .inventory-allocations ul { margin: 0 0 6px; padding-left: 20px; }
+.cmf-inventory .inventory-use-success { border-left: 3px solid var(--green); padding: 8px 12px; background: var(--surface-2); }
+
+@media (max-width: 700px) {
+  .cmf-inventory .inventory-form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cmf-inventory .inventory-name-field { grid-column: 1 / -1; }
+  .cmf-inventory .inventory-list-head { display: none; }
+  .cmf-inventory .inventory-row { grid-template-columns: minmax(0, 1fr) auto; gap: 7px 12px; }
+  .cmf-inventory .inventory-batch-name { grid-column: 1 / -1; }
+  .cmf-inventory .inventory-batch-grams { grid-column: 2; grid-row: 2; text-align: right; }
+  .cmf-inventory .inventory-expiry { grid-column: 1; grid-row: 2; }
+  .cmf-inventory .inventory-location { grid-column: 1; grid-row: 3; }
+  .cmf-inventory .inventory-row-actions { grid-column: 2; grid-row: 3; justify-content: flex-end; }
+}
+@media (max-width: 420px) {
+  .cmf-inventory .inventory-panel { padding: 12px; }
+  .cmf-inventory .inventory-toolbar { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+  .cmf-inventory .inventory-use-row { grid-template-columns: minmax(0, 1fr) 118px; gap: 8px; }
+  .cmf-inventory .inventory-field input,
+  .cmf-inventory .inventory-field select,
+  .cmf-inventory .inventory-field textarea { font-size: 16px; }
+  .cmf-inventory .btn { min-height: 40px; }
+}
+@media print {
+  .cmf-inventory { display: none !important; }
+}
