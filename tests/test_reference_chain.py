@@ -14,7 +14,7 @@ WEB = ROOT / "web"
 
 GLOBAL_SCRIPTS = (
     "nutrition.js", "goals.js", "balance.js", "diets.js",
-    "pairings.js", "qrcode.js", "share.js", "ui.js",
+    "pairings.js", "qrcode.js", "share.js", "sync.js", "ui.js",
 )
 
 
@@ -66,7 +66,9 @@ def test_new_ui_controls_wired():
     fridge = (WEB / "fridge.html").read_text(encoding="utf-8")
     assert 'id="diets-content"' in fridge
     assert 'id="goals-content"' in fridge
-    assert "goal-save" in (WEB / "js" / "page-fridge.js").read_text(encoding="utf-8")
+    assert 'id="sync-content"' in fridge
+    fridge_page = (WEB / "js" / "page-fridge.js").read_text(encoding="utf-8")
+    assert "goal-save" in fridge_page and "sync-generate" in fridge_page
 
     browse = (WEB / "browse.html").read_text(encoding="utf-8")
     assert 'id="filter-diets"' in browse and 'id="calorie-select"' in browse
@@ -83,6 +85,7 @@ def test_new_styles_exist():
         ".week-kcal", ".balance-card", ".balance-summary", ".balance-badge",
         ".weeks-select", ".subscribe-box", ".subscribe-url",
         ".goal-box", ".goal-card", ".goal-progress-bar", ".week-goal",
+        ".shop-week-grid", ".shop-item", ".sync-box", ".sync-qr-row",
     ):
         assert selector in css, selector
 
