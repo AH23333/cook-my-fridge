@@ -1211,6 +1211,18 @@ footer.site-footer {
   .cmf-inventory .inventory-field textarea { font-size: 16px; }
   .cmf-inventory .btn { min-height: 40px; }
 }
+
+/* --- Phone touch targets (stage32 实测：375px 视口下这些小目标点不中) --- */
+@media (max-width: 700px) {
+  .btn { min-height: 40px; }
+  .btn-sm { padding: 8px 14px; }
+  .recipe-card h3 a { display: block; padding: 10px 0; }
+  .week-title { padding: 8px 0; }
+  .star-btn { font-size: 26px; padding: 8px 6px; }
+  .ing-name-btn { padding: 7px 10px; }
+  .shop-item input[type="checkbox"],
+  .inventory-use-check { width: 20px; height: 20px; }
+}
 @media print {
   .cmf-inventory { display: none !important; }
 }
