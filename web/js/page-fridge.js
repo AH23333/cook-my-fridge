@@ -589,6 +589,215 @@
       '<ul class="cleanout-list">' + dishes + "</ul>";
   }
 
+  function offProductHTML(p) {
+    const nut = p.per100g
+      ? `<span class="off-nut">每100g：${p.per100g.kcal != null ? p.per100g.kcal + " kcal" : "—"} · 蛋白 ${p.per100g.protein != null ? p.per100g.protein + "g" : "—"} · 脂肪 ${p.per100g.fat != null ? p.per100g.fat + "g" : "—"} · 碳水 ${p.per100g.carbs != null ? p.per100g.carbs + "g" : "—"}</span>`
+      : '<span class="off-nut">暂无营养数据</span>';
+    const score = p.nutriscore
+      ? `<span class="nutriscore ns-${p.nutriscore}">Nutri-Score ${p.nutriscore.toUpperCase()}</span>`
+      : "";
+    return (
+      '<div class="off-product">' +
+      (p.image ? `<img class="off-img" src="${CMF.esc(p.image)}" alt="" loading="lazy">` : "") +
+      '<div class="off-body">' +
+      `<a class="off-name" href="${CMF.esc(p.url)}" target="_blank" rel="noopener">${CMF.esc(p.name)}</a>` +
+      (p.brands.length ? `<span class="off-brands">${CMF.esc(p.brands.join(" / "))}</span>` : "") +
+      score + nut +
+      (p.barcode ? `<span class="off-barcode">条码 ${CMF.esc(p.barcode)}</span>` : "") +
+      "</div></div>"
+    );
+  }
+
+  function renderFoodfacts() {
+    const root = document.getElementById("foodfacts-content");
+    if (!root) return;
+    if (!CMF.searchOffProducts) {
+      root.innerHTML = '<div class="empty">包装食品查询模块未加载。</div>';
+      return;
+    }
+    const recent = CMF.offRecent ? CMF.offRecent() : [];
+    const recentHtml = recent.length
+      ? '<div class="off-recent">最近：' +
+        recent.map((r) => `<button class="chip chip-sm" data-off-recent="${CMF.esc(r.query)}">${CMF.esc(r.query)}</button>`).join("") +
+        "</div>"
+      : "";
+    const canScan = typeof window.BarcodeDetector === "function";
+    root.innerHTML =
+      '<div class="off-box">' +
+      '<p class="off-intro">查询包装食品的营养成分（每100g）。数据来自 <a href="https://world.openfoodfacts.org" target="_blank" rel="noopener">Open Food Facts</a>（免费开放数据库，ODbL 授权），需联网；结果仅供参考，请以包装标签为准。</p>' +
+      '<div class="off-row">' +
+      '<input type="search" id="off-query" placeholder="输入食品名，如：燕麦片、牛奶…" autocomplete="off">' +
+      '<button class="btn btn-primary btn-sm" id="off-search">搜索</button>' +
+      "</div>" +
+      '<div class="off-row">' +
+      '<input type="text" id="off-barcode" inputmode="numeric" placeholder="或输入条码（8–14 位数字）" autocomplete="off">' +
+      '<button class="btn btn-sm" id="off-lookup">查条码</button>' +
+      (canScan ? '<button class="btn btn-sm" id="off-scan">📷 扫码</button>' : "") +
+      "</div>" +
+      recentHtml +
+      '<div id="off-status" class="off-status"></div>' +
+      '<div id="off-results"></div>' +
+      "</div>";
+
+    const status = root.querySelector("#off-status");
+    const results = root.querySelector("#off-results");
+    const queryInput = root.querySelector("#off-query");
+
+    async function runSearch(text) {
+      const q = String(text || "").trim();
+      if (!q) return;
+      status.textContent = "正在搜索「" + q + "」…";
+      results.innerHTML = "";
+      try {
+        const products = await CMF.searchOffProducts(q);
+        if (CMF.offRemember) CMF.offRemember(q, products[0] ? products[0].name : "");
+        status.textContent = products.length ? "找到 " + products.length + " 个结果：" : "没找到匹配食品，换个关键词试试。";
+        results.innerHTML = products.map(offProductHTML).join("");
+      } catch (e) {
+        status.innerHTML = '<span class="weather-note">查询失败（' + CMF.esc(e.message) + '）。该功能需联网，离线时不可用。</span>';
+      }
+    }
+
+    async function runBarcode(code) {
+      const clean = String(code || "").trim();
+      if (!CMF.validBarcode(clean)) {
+        status.textContent = "条码应为 8–14 位数字。";
+        return;
+      }
+      status.textContent = "正在查询条码 " + clean + "…";
+      results.innerHTML = "";
+      try {
+        const product = await CMF.lookupOffBarcode(clean);
+        if (!product) {
+          status.textContent = "数据库里没有这个条码。";
+          return;
+        }
+        if (CMF.offRemember) CMF.offRemember(clean, product.name);
+        status.textContent = "查询结果：";
+        results.innerHTML = offProductHTML(product);
+      } catch (e) {
+        status.innerHTML = '<span class="weather-note">查询失败（' + CMF.esc(e.message) + '）。该功能需联网。</span>';
+      }
+    }
+
+    root.querySelector("#off-search").onclick = () => runSearch(queryInput.value);
+    queryInput.addEventListener("keydown", (ev) => {
+      if (ev.key === "Enter") runSearch(queryInput.value);
+    });
+    root.querySelector("#off-lookup").onclick = () => runBarcode(root.querySelector("#off-barcode").value);
+    root.querySelectorAll("[data-off-recent]").forEach((btn) => {
+      btn.onclick = () => {
+        queryInput.value = btn.dataset.offRecent;
+        runSearch(btn.dataset.offRecent);
+      };
+    });
+    const scanBtn = root.querySelector("#off-scan");
+    if (scanBtn) {
+      scanBtn.onclick = async () => {
+        status.textContent = "正在启动摄像头…";
+        scanBtn.disabled = true;
+        let stream;
+        try {
+          stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
+          const video = document.createElement("video");
+          video.srcObject = stream;
+          video.setAttribute("playsinline", "");
+          await video.play();
+          const detector = new window.BarcodeDetector({ formats: ["ean_13", "ean_8", "upc_a", "upc_e", "code_128"] });
+          let found = null;
+          for (let i = 0; i < 40 && !found; i++) {
+            const codes = await detector.detect(video);
+            if (codes.length) found = codes[0].rawValue;
+            else await new Promise((r) => setTimeout(r, 150));
+          }
+          if (found) {
+            root.querySelector("#off-barcode").value = found;
+            runBarcode(found);
+          } else {
+            status.textContent = "没扫到条码，请手动输入。";
+          }
+        } catch (e) {
+          status.innerHTML = '<span class="weather-note">摄像头不可用（' + CMF.esc(e.message) + '），请手动输入条码。</span>';
+        } finally {
+          if (stream) stream.getTracks().forEach((t) => t.stop());
+          scanBtn.disabled = false;
+        }
+      };
+    }
+  }
+
+  function renderTools() {
+    const root = document.getElementById("tools-content");
+    if (!root) return;
+    if (!CMF.volumeToMl) {
+      root.innerHTML = '<div class="empty">厨房工具模块未加载。</div>';
+      return;
+    }
+    const units = CMF.TOOL_UNITS || [];
+    const ingredients = CMF.TOOL_DENSITY_INGREDIENTS || [];
+    const unitOptions = units.map((u) => `<option value="${CMF.esc(u)}">${CMF.esc(u)}</option>`).join("");
+    const ingOptions = ingredients.map((i) => `<option value="${CMF.esc(i)}">${CMF.esc(i)}</option>`).join("");
+    const subsRows = (CMF.BAKING_SUBS || [])
+      .map((s) => `<tr><td>${CMF.esc(s.from)}</td><td>${CMF.esc(s.to)}</td><td class="sub-note">${CMF.esc(s.note)}</td></tr>`)
+      .join("");
+    root.innerHTML =
+      '<div class="tools-box">' +
+      '<p class="tools-intro">家常厨房近似换算，仅供估算；密度因品牌与压实程度而异，精确烘焙请用厨房秤。</p>' +
+      '<div class="tool-grid">' +
+      '<div class="tool-card"><h4>🥄 体积换算</h4>' +
+      '<div class="tool-row"><input type="number" id="tool-vol" value="1" min="0" step="0.5" aria-label="数量">' +
+      `<select id="tool-unit" class="filter-select">${unitOptions}</select>` +
+      `<select id="tool-ing" class="filter-select">${ingOptions}</select></div>` +
+      '<div id="tool-vol-out" class="tool-out"></div></div>' +
+      '<div class="tool-card"><h4>🌡️ 烤箱温度</h4>' +
+      '<div class="tool-row"><input type="number" id="tool-temp" value="180" step="5" aria-label="温度">' +
+      '<select id="tool-temp-unit" class="filter-select"><option value="C">°C</option><option value="F">°F</option></select></div>' +
+      '<div id="tool-temp-out" class="tool-out"></div></div>' +
+      "</div>" +
+      '<h4 class="tool-sub-title">🧁 常见烘焙替代</h4>' +
+      '<table class="subs-table"><thead><tr><th>原料</th><th>替代</th><th>备注</th></tr></thead><tbody>' +
+      subsRows + "</tbody></table>" +
+      "</div>";
+
+    const volOut = root.querySelector("#tool-vol-out");
+    function updateVolume() {
+      const value = root.querySelector("#tool-vol").value;
+      const unit = root.querySelector("#tool-unit").value;
+      const ing = root.querySelector("#tool-ing").value;
+      const ml = CMF.volumeToMl(value, unit);
+      if (ml == null) {
+        volOut.textContent = "请输入有效数量。";
+        return;
+      }
+      const grams = CMF.gramsForVolume(ml, ing);
+      volOut.innerHTML =
+        `≈ <strong>${ml} ml</strong>` +
+        (grams != null ? ` · ${CMF.esc(ing)}约 <strong>${grams} g</strong>` : ` · ${CMF.esc(ing)}暂无密度数据`);
+    }
+    const tempOut = root.querySelector("#tool-temp-out");
+    function updateTemp() {
+      const value = root.querySelector("#tool-temp").value;
+      const unit = root.querySelector("#tool-temp-unit").value;
+      if (unit === "C") {
+        const f = CMF.cToF(value);
+        tempOut.innerHTML = f == null ? "请输入有效温度。" : `≈ <strong>${f} °F</strong>`;
+      } else {
+        const c = CMF.fToC(value);
+        tempOut.innerHTML = c == null ? "请输入有效温度。" : `≈ <strong>${c} °C</strong>`;
+      }
+    }
+    ["#tool-vol", "#tool-unit", "#tool-ing"].forEach((sel) => {
+      root.querySelector(sel).addEventListener("input", updateVolume);
+      root.querySelector(sel).addEventListener("change", updateVolume);
+    });
+    ["#tool-temp", "#tool-temp-unit"].forEach((sel) => {
+      root.querySelector(sel).addEventListener("input", updateTemp);
+      root.querySelector(sel).addEventListener("change", updateTemp);
+    });
+    updateVolume();
+    updateTemp();
+  }
+
   function renderAll() {
     renderFridge();
     renderHistory();
@@ -602,6 +811,8 @@
     renderShare();
     renderBackup();
     renderSync();
+    renderFoodfacts();
+    renderTools();
   }
 
   CMF.boots("fridge.html", renderAll);

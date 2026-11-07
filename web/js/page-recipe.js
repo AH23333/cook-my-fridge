@@ -39,6 +39,57 @@
     );
   }
 
+  function renderJournalPanel(recipe) {
+    if (!CMF.logCooked || !CMF.getJournal) return "";
+    const journal = CMF.normalizeJournal(CMF.getJournal());
+    const count = CMF.cookedCountFor(journal, recipe.id);
+    const rating = (journal.ratings || {})[recipe.id] || 0;
+    const note = (journal.notes || {})[recipe.id] || "";
+    const stars = [1, 2, 3, 4, 5]
+      .map((n) => `<button class="star-btn${n <= rating ? " on" : ""}" data-star="${n}" aria-label="${n} 星">${n <= rating ? "★" : "☆"}</button>`)
+      .join("");
+    return (
+      '<div class="journal-panel">' +
+      "<h3>🍳 开饭打卡</h3>" +
+      `<p class="journal-count">${count ? "这道菜你做过 " + count + " 次" : "还没做过这道菜，做完来打个卡吧"}${rating ? " · 当前评分 " + CMF.esc(rating) + " 星" : ""}</p>` +
+      '<div class="journal-rate"><span>评分</span><span class="journal-stars" id="journal-stars">' + stars + "</span></div>" +
+      '<textarea id="journal-note" class="journal-note" rows="2" maxlength="500" placeholder="记一笔：口味、改动、下次注意…">' + CMF.esc(note) + "</textarea>" +
+      '<button class="btn btn-primary btn-sm" id="journal-log">✅ 我做过这道菜</button>' +
+      '<span class="journal-hint">打卡会记录日期、份量、每份估算热量与整菜成本，可在统计页看连击与成就。</span>' +
+      "</div>"
+    );
+  }
+
+  function wireJournalPanel(recipe) {
+    const logBtn = root.querySelector("#journal-log");
+    if (!logBtn) return;
+    let rating = CMF.normalizeJournal(CMF.getJournal()).ratings[recipe.id] || 0;
+    const starsBox = root.querySelector("#journal-stars");
+    function paintStars() {
+      starsBox.querySelectorAll(".star-btn").forEach((b) => {
+        const n = Number(b.dataset.star);
+        b.classList.toggle("on", n <= rating);
+        b.textContent = n <= rating ? "★" : "☆";
+      });
+    }
+    starsBox.querySelectorAll(".star-btn").forEach((b) => {
+      b.onclick = () => {
+        const n = Number(b.dataset.star);
+        rating = rating === n ? 0 : n;
+        paintStars();
+      };
+    });
+    logBtn.onclick = () => {
+      const note = root.querySelector("#journal-note").value;
+      if (!CMF.logCooked(recipe, { rating, note, factor })) {
+        CMF.toast("保存失败，输入已保留，请重试或导出备份后检查存储空间。");
+        return;
+      }
+      CMF.toast("已打卡，做得好！");
+      render(recipe);
+    };
+  }
+
   function render(recipe) {
     const ingredientRows = recipe.ingredients
       .map(
@@ -104,6 +155,16 @@
           '<span class="nutrition-note">保守筛查，请核对配料标签</span></div>'
         );
       })() +
+      (() => {
+        if (!CMF.recipeCost) return "";
+        const c = CMF.recipeCost(recipe, factor);
+        if (!c) return "";
+        return (
+          '<div class="cost-line">💰 估算成本 <strong>¥' + c.total + "</strong>（当前 " + factor + "× 份量）" +
+          (c.unknown ? " · " + c.unknown + " 样食材缺价格数据" : "") +
+          '<span class="nutrition-note">家常估算价，非实时菜价</span></div>'
+        );
+      })() +
       (recipe.is_ai_generated
         ? '<div class="notice ai">AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。</div>'
         : "") +
@@ -142,6 +203,7 @@
         ? "<h3>数据集里没有的三个主意</h3><ul>" +
           ideasEntry.ideas.map((x) => `<li>${CMF.esc(x)}</li>`).join("") + "</ul>"
         : "") +
+      renderJournalPanel(recipe) +
       renderSimilar(recipe) +
       `<p style="font-size:12.5px;color:var(--ink-soft);margin-top:16px">来源：${CMF.esc(recipe.source)} · 许可证：${CMF.esc(recipe.license)}</p>` +
       "</article>";
@@ -170,6 +232,8 @@
     });
 
     document.getElementById("start-cooking").onclick = () => openCookingMode(recipe);
+
+    wireJournalPanel(recipe);
 
     root.querySelectorAll(".ai-actions .btn").forEach((btn) => {
       btn.onclick = () => {

@@ -10,6 +10,8 @@
   let staples = new Set();
   let methodAliases = {};
   let tagAliases = {};
+  let storageTips = {};
+  let storageDefaults = {};
 
   CMF.initCatalog = function () {
     const catalog = CMF.data.catalog;
@@ -24,6 +26,9 @@
     staples = new Set(catalog.pantry_staples || []);
     methodAliases = catalog.method_aliases || {};
     tagAliases = catalog.tag_aliases || {};
+    const storage = catalog.storage || {};
+    storageTips = storage.tips || {};
+    storageDefaults = storage.category_default || {};
   };
 
   CMF.entry = (canonical) => ingredientMap[canonical] || null;
@@ -64,5 +69,12 @@
 
   CMF.allergensOf = function (name) {
     return ingredientMap[name] ? ingredientMap[name].allergens : [];
+  };
+
+  CMF.storageFor = function (canonical) {
+    const row = storageTips[canonical];
+    if (row) return row;
+    const category = CMF.categoryOf(canonical);
+    return storageDefaults[category] || { method: "按包装说明保存", fridgeDays: null, freezerDays: null };
   };
 })();
