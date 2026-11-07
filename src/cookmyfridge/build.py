@@ -106,6 +106,12 @@ def copy_web_assets() -> None:
             )
     for html in WEB_DIR.glob("*.html"):
         _retry(lambda html=html: shutil.copy2(html, SITE_DIR / html.name))
+    # Pages removed from web/ must disappear from the deployable site too;
+    # otherwise deleted pages keep being served forever.
+    keep_html = {p.name for p in WEB_DIR.glob("*.html")}
+    for stale in SITE_DIR.glob("*.html"):
+        if stale.name not in keep_html:
+            stale.unlink()
     for extra in ("sw.js", "manifest.webmanifest", "icon.svg"):
         src = WEB_DIR / extra
         if src.exists():
@@ -138,6 +144,11 @@ def copy_web_assets() -> None:
 
 def build_site() -> dict:
     copy_web_assets()
+    # The build owns site/data wholesale; rebuild it from scratch so orphaned
+    # shards from older versions never linger in the deployable output.
+    data_dir = SITE_DIR / "data"
+    if data_dir.exists():
+        _retry(lambda: shutil.rmtree(data_dir))
     catalog_payload = export_catalog()
     recipes = export_recipes()
     ai = export_ai_cache()

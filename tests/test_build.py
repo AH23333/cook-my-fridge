@@ -93,3 +93,27 @@ def test_build_fails_loudly_when_sw_marker_missing(tmp_path, monkeypatch):
 
     with pytest.raises(RuntimeError, match="cmf-cache-v1"):
         build.copy_web_assets()
+
+
+def test_build_removes_stale_artifacts(tmp_path, monkeypatch):
+    """Pages/data deleted from web/ must not linger in the deployed site/."""
+    fake_site = tmp_path / "site"
+    fake_web = tmp_path / "web"
+    (fake_web / "css").mkdir(parents=True)
+    (fake_web / "js").mkdir(parents=True)
+    (fake_web / "index.html").write_text("<html></html>", encoding="utf-8")
+    # Leftovers from an older deploy: a removed page and an orphan data file.
+    (fake_site / "data").mkdir(parents=True)
+    (fake_site / "ghost.html").write_text("stale", encoding="utf-8")
+    (fake_site / "data" / "ghost.json").write_text("{}", encoding="utf-8")
+    (fake_site / "data" / "ai").mkdir()
+
+    monkeypatch.setattr(build, "SITE_DIR", fake_site)
+    monkeypatch.setattr(build, "WEB_DIR", fake_web)
+
+    build.build_site()
+
+    assert not (fake_site / "ghost.html").exists()
+    assert not (fake_site / "data" / "ghost.json").exists()
+    assert (fake_site / "index.html").exists()
+    assert (fake_site / "data" / "recipes.json").exists()
