@@ -14,6 +14,7 @@ WEB = ROOT / "web"
 
 GLOBAL_SCRIPTS = (
     "nutrition.js", "goals.js", "balance.js", "diets.js",
+    "seasonal.js", "prices.js", "journal.js",
     "pairings.js", "qrcode.js", "share.js", "sync.js", "ui.js",
 )
 
@@ -86,8 +87,44 @@ def test_new_styles_exist():
         ".weeks-select", ".subscribe-box", ".subscribe-url",
         ".goal-box", ".goal-card", ".goal-progress-bar", ".week-goal",
         ".shop-week-grid", ".shop-item", ".sync-box", ".sync-qr-row",
+        ".seasonal-banner", ".seasonal-badge", ".weather-card", ".weather-pick",
+        ".cost-line", ".journal-panel", ".star-btn", ".badge-grid", ".badge-card",
+        ".trend-grid", ".savings-card", ".off-box", ".off-product", ".nutriscore",
+        ".tools-box", ".tool-card", ".subs-table",
     ):
         assert selector in css, selector
+
+
+def test_stage27_controls_wired():
+    index = (WEB / "index.html").read_text(encoding="utf-8")
+    for control in ("seasonal-banner", "weather-card", "nl-voice"):
+        assert f'id="{control}"' in index, control
+    assert 'src="js/weather.js"' in index and 'src="js/voice.js"' in index
+    home = (WEB / "js" / "page-home.js").read_text(encoding="utf-8")
+    assert "renderWeatherCard" in home and "renderSeasonalBanner" in home
+    assert "startVoiceInput" in home
+
+    fridge = (WEB / "fridge.html").read_text(encoding="utf-8")
+    assert 'id="foodfacts-content"' in fridge and 'id="tools-content"' in fridge
+    assert 'src="js/foodfacts.js"' in fridge and 'src="js/tools.js"' in fridge
+    fridge_page = (WEB / "js" / "page-fridge.js").read_text(encoding="utf-8")
+    assert "renderFoodfacts" in fridge_page and "renderTools" in fridge_page
+
+    browse = (WEB / "browse.html").read_text(encoding="utf-8")
+    assert 'id="filter-seasonal"' in browse
+    browse_page = (WEB / "js" / "page-browse.js").read_text(encoding="utf-8")
+    assert "isInSeason" in browse_page and "seasonal" in browse_page
+
+    recipe_page = (WEB / "js" / "page-recipe.js").read_text(encoding="utf-8")
+    assert "renderJournalPanel" in recipe_page and "logCooked" in recipe_page
+    assert "recipeCost" in recipe_page
+    stats_page = (WEB / "js" / "page-stats.js").read_text(encoding="utf-8")
+    assert "renderJournalStats" in stats_page and "achievements" in stats_page
+
+    ui = (WEB / "js" / "ui.js").read_text(encoding="utf-8")
+    assert "storageFor" in ui and "seasonal-badge" in ui
+    catalog = (WEB / "js" / "catalog.js").read_text(encoding="utf-8")
+    assert "CMF.storageFor" in catalog
 
 
 def test_built_catalog_has_nutrition_facts():

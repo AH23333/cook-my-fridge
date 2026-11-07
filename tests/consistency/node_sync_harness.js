@@ -25,6 +25,7 @@ load("web/js/nutrition.js");
 load("web/js/goals.js");
 load("web/js/qrcode.js");
 load("web/js/share.js");
+load("web/js/journal.js");
 load("web/js/sync.js");
 
 const CMF = global.window.CMF;
@@ -248,6 +249,33 @@ check("compact QR goals import", (() => {
     g.profile.mealsPerDay === 3 && g.profile.heightCm === 168 &&
     g.profile.people === 2 && g.profile.activity === "light";
 })());
+
+clear();
+const localJournal = {
+  cooked: [{ id: "local", recipeId: "r001", date: "2026-11-06T12:00:00Z", rating: 4 }],
+  ratings: { r001: 4 }, notes: { r001: "local note" },
+};
+const remoteJournal = {
+  cooked: [{ id: "remote", recipeId: "r002", date: "2026-11-07T12:00:00Z", rating: 5 },
+    { ...localJournal.cooked[0], rating: 1 }],
+  ratings: { r001: 1, r002: 5 }, notes: { r001: "remote edit", r002: "remote note" },
+};
+CMF.setJournal(localJournal);
+const remoteCode = CMF.syncEncode({ d: { j: remoteJournal } });
+CMF.applySyncPayload(CMF.syncDecode(remoteCode), { mode: "merge" });
+let mergedJournal = CMF.getJournal();
+check("journal merge preserves both devices", mergedJournal.cooked.length === 2);
+check("journal merge newest first", mergedJournal.cooked[0].id === "remote");
+check("journal merge keeps local conflict", mergedJournal.cooked.find((e) => e.id === "local").rating === 4);
+check("journal merge combines rating maps", mergedJournal.ratings.r001 === 4 && mergedJournal.ratings.r002 === 5);
+check("journal merge combines note maps", mergedJournal.notes.r001 === "local note" && mergedJournal.notes.r002 === "remote note");
+CMF.applySyncPayload(CMF.syncDecode(remoteCode), { mode: "merge" });
+check("journal repeat merge is idempotent", CMF.getJournal().cooked.length === 2);
+CMF.applySyncPayload({ d: { j: { cooked: [], ratings: {}, notes: {} } } }, { mode: "merge" });
+check("empty journal merge preserves local", CMF.getJournal().cooked.length === 2);
+CMF.applySyncPayload({ d: { j: localJournal } }, { mode: "replace" });
+check("journal replace still replaces", CMF.getJournal().cooked.length === 1 && !CMF.getJournal().ratings.r002);
+check("journal excluded from QR snapshot", !CMF.syncPayload({ slim: true }).d.j);
 
 // 7. consumeSyncHash (confirmation is injectable, no DOM needed)
 clear();
