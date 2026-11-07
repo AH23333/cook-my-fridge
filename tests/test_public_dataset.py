@@ -135,6 +135,35 @@ def test_real_import_is_idempotent_and_reports_unmapped(tmp_path):
     assert len(target.read_text(encoding="utf-8").strip().splitlines()) == 2
 
 
+def test_interrupted_import_write_keeps_previous_file(tmp_path, monkeypatch):
+    """A crash mid-write must leave the previous imported shard byte-identical."""
+    target = tmp_path / "imported.jsonl"
+    report_path = tmp_path / "unmapped.json"
+    first = import_dataset(
+        SAMPLE, dataset="格式演示样例", license_name="CC0",
+        imported_path=target, unmapped_path=report_path,
+    )
+    assert first["imported"] == 2
+    before = target.read_bytes()
+
+    real_write_text = Path.write_text
+
+    def crashing_write_text(self, data, *args, **kwargs):
+        # Simulate a crash halfway through writing the merged shard payload.
+        if '"pub-' in str(data):
+            real_write_text(self, str(data)[: len(str(data)) // 2], *args, **kwargs)
+            raise OSError("simulated crash mid-write")
+        return real_write_text(self, data, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "write_text", crashing_write_text)
+    with pytest.raises(OSError):
+        import_dataset(
+            SAMPLE, dataset="格式演示样例", license_name="CC0",
+            imported_path=target, unmapped_path=report_path,
+        )
+    assert target.read_bytes() == before
+
+
 def test_load_shipped_recipes_merges_shards(tmp_path):
     base = load_shipped_recipes()
     assert len(base) == 210

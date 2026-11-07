@@ -285,6 +285,14 @@ def _load_existing(path: Path) -> list[dict]:
     return out
 
 
+def _atomic_write_text(path: Path, text: str) -> None:
+    """Write via a sibling tmp file so a crash never truncates the target."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(text, encoding="utf-8", newline="\n")
+    tmp.replace(path)
+
+
 def import_dataset(
     source: Path,
     *,
@@ -338,11 +346,12 @@ def import_dataset(
     merged = {str(row.get("id")): row for row in existing}
     for row in accepted:
         merged[row["id"]] = row
-    imported_path.parent.mkdir(parents=True, exist_ok=True)
     lines = [json.dumps(merged[key], ensure_ascii=False) for key in sorted(merged)]
-    imported_path.write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
-    unmapped_path.parent.mkdir(parents=True, exist_ok=True)
-    unmapped_path.write_text(
+    _atomic_write_text(
+        imported_path, "\n".join(lines) + ("\n" if lines else "")
+    )
+    _atomic_write_text(
+        unmapped_path,
         json.dumps(
             {
                 "note": "以下名称未收录进食材目录，相关菜谱未被导入；人工确认后可加同义词或目录条目。",
@@ -355,7 +364,6 @@ def import_dataset(
             ensure_ascii=False,
             indent=2,
         ) + "\n",
-        encoding="utf-8",
     )
     report["total_imported_file"] = len(merged)
     return report
