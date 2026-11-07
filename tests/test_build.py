@@ -98,6 +98,7 @@ def test_bundle_and_html_rewiring(tmp_path, monkeypatch):
     (fake_web / "about.html").write_text(
         "<html><body>\n"
         '  <script src="js/store.js"></script>\n'
+        '  <script>window.CMF.boots("about.html");</script>\n'
         "</body></html>\n",
         encoding="utf-8",
     )
@@ -125,6 +126,10 @@ def test_bundle_and_html_rewiring(tmp_path, monkeypatch):
     about = (fake_site / "about.html").read_text(encoding="utf-8")
     assert about.count('src="js/bundle.js"') == 1
     assert about.index('src="js/bundle.js"') < about.index("</body>")
+    # Inline boots() must run AFTER the bundle: inserting the bundle before
+    # </body> instead of at the first removed module left window.CMF
+    # undefined on about.html (real bug caught by stage27/32/38).
+    assert about.index('src="js/bundle.js"') < about.index("window.CMF.boots")
 
 
 def test_service_worker_precaches_every_page():
