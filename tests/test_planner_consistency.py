@@ -25,4 +25,7 @@ def test_planner_js_weekly_logic():
     )
     payload = json.loads(proc.stdout)
     assert payload["ok"] is True
-    assert payload["checks"] >= 14
+    assert payload["checks"] >= 64
+    assert payload["days"] == 7
+    assert payload["meals"] == 14
+    assert payload["icsBytes"] > 2000
