@@ -278,6 +278,31 @@ CMF.applySyncPayload({ d: { j: localJournal } }, { mode: "replace" });
 check("journal replace still replaces", CMF.getJournal().cooked.length === 1 && !CMF.getJournal().ratings.r002);
 check("journal excluded from QR snapshot", !CMF.syncPayload({ slim: true }).d.j);
 
+// 6b. history merge: identical entries from another device must not
+// duplicate on every sync round-trip, and the 50-entry cap still applies.
+clear();
+const histEntry = { date: "2026-01-01T00:00:00.000Z", selected: ["番茄"] };
+localStorage.setItem("cmf.history", JSON.stringify([histEntry]));
+CMF.applySyncPayload(
+  { v: 1, k: "cmf-sync", t: "", slim: false, d: { h: [histEntry] } },
+  { mode: "merge" }
+);
+check("history merge dedupes identical entries", CMF.getHistory().length === 1);
+CMF.applySyncPayload(
+  { v: 1, k: "cmf-sync", t: "", slim: false, d: { h: [histEntry] } },
+  { mode: "merge" }
+);
+check("history repeat merge stays idempotent", CMF.getHistory().length === 1);
+const manyHistory = [];
+for (let i = 0; i < 60; i++) {
+  manyHistory.push({ date: "2026-01-02T00:" + String(i).padStart(2, "0") + ":00.000Z", selected: ["鸡蛋"] });
+}
+CMF.applySyncPayload(
+  { v: 1, k: "cmf-sync", t: "", slim: false, d: { h: manyHistory } },
+  { mode: "merge" }
+);
+check("history merge keeps 50-entry cap", CMF.getHistory().length === 50);
+
 // 7. consumeSyncHash (confirmation is injectable, no DOM needed)
 clear();
 const linkCode = CMF.syncEncode({ v: 1, k: "cmf-sync", t: "", slim: true, d: { f: ["番茄"] } });

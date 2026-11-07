@@ -316,7 +316,18 @@ back to the original link when offline. */
     if (key === "cmf.journal") return CMF.mergeJournals(local, incoming);
     if (key === "cmf.inventory") return CMF.mergeInventories(local, incoming);
     if (Array.isArray(incoming) && Array.isArray(local)) {
-      return [...new Set([...local, ...incoming])];
+      // Object entries (e.g. history rows) arrive as fresh references, so a
+      // plain Set would never dedupe them and every sync round-trip would add
+      // another copy. Dedupe by content instead; history keeps its 50 cap.
+      const seen = new Set();
+      const merged = [];
+      for (const item of [...local, ...incoming]) {
+        const id = item !== null && typeof item === "object" ? JSON.stringify(item) : item;
+        if (seen.has(id)) continue;
+        seen.add(id);
+        merged.push(item);
+      }
+      return key === "cmf.history" ? merged.slice(0, 50) : merged;
     }
     if (incoming && local && typeof incoming === "object" && typeof local === "object" &&
         !Array.isArray(incoming) && !Array.isArray(local)) {
