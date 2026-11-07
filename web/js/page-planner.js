@@ -222,42 +222,108 @@
       "（在「我的冰箱」页修改）</div>";
   }
 
+  function weekShoppingLabels(state, groups) {
+    return groups.map((g) => {
+      const from = dayDate(state.startDate, g.week * 7);
+      const to = dayDate(state.startDate, g.week * 7 + 6);
+      return `第 ${g.week + 1} 周（${shortDate(from)} – ${shortDate(to)}）`;
+    });
+  }
+
+  function downloadText(filename, text, mime) {
+    const blob = new Blob([text], { type: mime });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
   function renderShopping(state) {
-    const list = CMF.weekShopping(state.days, CMF.data.recipes, CMF.getFridge());
+    const groups = CMF.weeklyShopping(state.days, CMF.data.recipes, CMF.getFridge());
+    const labels = weekShoppingLabels(state, groups);
+    const checked = new Set(state.shopChecked || []);
+    const opts = { weekLabels: labels, checked: [...checked] };
+    const total = groups.reduce((sum, g) => sum + g.total, 0);
     const meals = CMF.weekMeals(state.days).length;
-    if (!list.length) {
+    const fileStem = "CookMyFridge-购物清单-" +
+      String(state.startDate || "").replace(/-/g, "") + "-" + state.weeks + "w";
+
+    if (!total) {
       shopRoot.innerHTML =
-        '<h2 class="section-title">🛒 跨周采购</h2><div class="empty">现有食材足够，无需额外采购。</div>';
+        `<h2 class="section-title">🛒 按周采购（${meals} 餐 · ${state.weeks} 周）</h2>` +
+        '<div class="empty">现有食材足够，所有周都无需额外采购。</div>';
       return;
     }
-    const rows = list
-      .map((item) => {
-        const weeks = state.weeks > 1
-          ? ` · ${item.weeks.map((w) => "第" + (w + 1) + "周").join("、")}`
-          : "";
-        return `<li>${CMF.emojiOf(item.canonical)} ${CMF.esc(item.canonical)} ` +
-          `<span class="shop-meta">用于 ${item.recipes.length} 道菜${weeks}</span></li>`;
+
+    const weekCards = groups
+      .map((g) => {
+        const rows = g.items.map((item) => {
+          const key = g.week + ":" + item.canonical;
+          const done = checked.has(key);
+          return (
+            `<label class="shop-item${done ? " done" : ""}">` +
+            `<input type="checkbox" data-shop-key="${CMF.esc(key)}"${done ? " checked" : ""}>` +
+            `<span class="shop-item-name">${CMF.emojiOf(item.canonical)} ${CMF.esc(item.canonical)}</span>` +
+            `<span class="shop-meta">${CMF.esc(item.category)} · ${item.recipes.length} 道菜</span>` +
+            "</label>"
+          );
+        }).join("");
+        return (
+          `<div class="shop-week" data-week="${g.week}">` +
+          `<div class="shop-week-head"><strong>${CMF.esc(labels[g.week])}</strong>` +
+          `<span>${g.total} 项</span></div>` +
+          (rows || '<div class="empty">本周无需额外采购。</div>') +
+          "</div>"
+        );
       })
       .join("");
+
     shopRoot.innerHTML =
-      `<h2 class="section-title">🛒 跨周采购（${meals} 餐 · ${state.weeks} 周）</h2>` +
-      '<button class="btn btn-sm" id="copy-week-list" style="margin-bottom:10px">复制采购清单</button>' +
-      '<ul class="week-shop-list">' + rows + "</ul>";
+      `<h2 class="section-title">🛒 按周采购（${meals} 餐 · ${state.weeks} 周 · ${total} 项）</h2>` +
+      '<div class="shop-actions">' +
+      '<button class="btn btn-sm" id="copy-week-list">📋 复制清单</button>' +
+      '<button class="btn btn-sm" id="btn-shop-csv">📊 导出 CSV</button>' +
+      '<button class="btn btn-sm" id="btn-shop-text">📄 下载 TXT</button>' +
+      "</div>" +
+      '<div class="shop-week-grid">' + weekCards + "</div>" +
+      '<p class="shop-note">清单按周拆分：同一食材在不同周都要用时会分别列出；' +
+      "勾选状态保存在本机，导出文件会带上已买标记。常备调料与冰箱已有食材不计入。</p>";
 
     shopRoot.querySelector("#copy-week-list").onclick = () => {
-      const text =
-        `CookMyFridge ${state.weeks} 周采购清单\n` +
-        list.map((i) => `- ${i.canonical}（用于 ${i.recipes.length} 道菜）`).join("\n");
-      const done = () => {
-        const b = document.getElementById("copy-week-list");
-        if (!b) return;
-        b.textContent = "✓ 已复制";
-        setTimeout(() => (b.textContent = "复制采购清单"), 1500);
-      };
+      const text = CMF.shoppingToText(groups, opts);
       CMF.copyText(text)
-        .then((ok) => (ok ? done() : CMF.toast("复制失败，请手动选择")))
+        .then((ok) => {
+          if (!ok) return CMF.toast("复制失败，请手动选择");
+          const b = document.getElementById("copy-week-list");
+          if (b) {
+            b.textContent = "✓ 已复制";
+            setTimeout(() => (b.textContent = "📋 复制清单"), 1500);
+          }
+        })
         .catch(() => CMF.toast("复制失败，请手动选择"));
     };
+    shopRoot.querySelector("#btn-shop-csv").onclick = () => {
+      downloadText(fileStem + ".csv", CMF.shoppingToCSV(groups, opts), "text/csv;charset=utf-8");
+      CMF.toast("采购清单已导出（CSV）");
+    };
+    shopRoot.querySelector("#btn-shop-text").onclick = () => {
+      downloadText(fileStem + ".txt", CMF.shoppingToText(groups, opts), "text/plain;charset=utf-8");
+      CMF.toast("采购清单已下载（TXT）");
+    };
+    shopRoot.querySelectorAll("input[data-shop-key]").forEach((box) => {
+      box.onchange = () => {
+        const next = new Set(state.shopChecked || []);
+        if (box.checked) next.add(box.dataset.shopKey);
+        else next.delete(box.dataset.shopKey);
+        state.shopChecked = [...next];
+        saveState(state);
+        renderShopping(state);
+      };
+    });
   }
 
   function renderWeekSelect(state) {
