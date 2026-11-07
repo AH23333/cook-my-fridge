@@ -17,6 +17,7 @@ from .curated_data9 import SPECS_BATCH9
 from .curated_data10 import SPECS_BATCH10
 from .curated_data11 import SPECS_BATCH11
 from .curated_data12 import SPECS_BATCH12
+from .curated_data13 import SPECS_BATCH13
 
 ALL_SPECS = (
     SPECS
@@ -31,12 +32,16 @@ ALL_SPECS = (
     + SPECS_BATCH10
     + SPECS_BATCH11
     + SPECS_BATCH12
+    + SPECS_BATCH13
 )
 from .models import IngredientUse, Recipe
 from .validate import validate_recipe
 from .config import CURATED_DIR
 
 CURATED_FILE = CURATED_DIR / "base_recipes.jsonl"
+# Public-dataset imports are kept in a separate shard so re-running `run.py
+# data` never overwrites third-party records (or their provenance/license).
+IMPORTED_FILE = CURATED_DIR / "imported_recipes.jsonl"
 
 # Method-specific standard safety notes.
 METHOD_SAFETY: dict[str, str] = {
@@ -121,9 +126,40 @@ def load_recipes(path: Path = CURATED_FILE) -> list[Recipe]:
     return recipes
 
 
-def load_all_recipes(curated_path: Path = CURATED_FILE) -> list[Recipe]:
-    """Load every shipped recipe file (curated + AI-generated shards)."""
+def _read_recipe_lines(path: Path) -> list[Recipe]:
+    recipes = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            recipes.append(Recipe.from_dict(json.loads(line)))
+    return recipes
+
+
+def load_shipped_recipes(
+    curated_path: Path = CURATED_FILE, imported_path: Path = IMPORTED_FILE
+) -> list[Recipe]:
+    """Curated corpus plus validated public-dataset imports shipped to site/.
+
+    The two shards are independent: base_recipes.jsonl is regenerated from
+    SPECS, imported_recipes.jsonl is written only by the import pipeline.
+    Imported rows losing an id/title collision are ignored, never merged in.
+    """
     recipes = load_recipes(curated_path)
+    if not imported_path.exists():
+        return recipes
+    seen_ids = {r.id for r in recipes}
+    seen_titles = {r.title for r in recipes}
+    for recipe in _read_recipe_lines(imported_path):
+        if recipe.id in seen_ids or recipe.title in seen_titles:
+            continue
+        recipes.append(recipe)
+        seen_ids.add(recipe.id)
+        seen_titles.add(recipe.title)
+    return recipes
+
+
+def load_all_recipes(curated_path: Path = CURATED_FILE) -> list[Recipe]:
+    """Load every shipped recipe file (curated + imported + AI shards)."""
+    recipes = load_shipped_recipes(curated_path)
     ai_file = CURATED_DIR / "ai_recipes.jsonl"
     if ai_file.exists():
         for line in ai_file.read_text(encoding="utf-8").splitlines():

@@ -9,7 +9,9 @@ import json
 
 from .batch import CACHE_DIR, VARIANT_TITLE_MARKERS, VARIANT_TITLE_SUFFIX
 from .catalog import canonical_set
-from .dataset import load_recipes
+# Alias keeps the historical ``audit.load_recipes`` patch point used by tests
+# while auditing *all* shipped shards (curated + validated public imports).
+from .dataset import load_shipped_recipes as load_recipes
 from .nutrition import nutrition_facts_payload, validate_nutrition
 
 _VARIANT_KINDS = set(VARIANT_TITLE_SUFFIX)

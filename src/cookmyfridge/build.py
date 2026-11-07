@@ -10,7 +10,7 @@ from pathlib import Path
 from . import catalog as cat
 from .batch import CACHE_DIR
 from .config import SITE_DIR, WEB_DIR
-from .dataset import load_recipes
+from .dataset import load_shipped_recipes
 from .models import METHOD_ALIASES, TAG_ALIASES
 from .nutrition import nutrition_facts_payload
 from .validate import vocabulary_snapshot
@@ -60,7 +60,7 @@ def export_catalog() -> dict:
 
 
 def export_recipes() -> list[dict]:
-    recipes = [r.to_dict() for r in load_recipes()]
+    recipes = [r.to_dict() for r in load_shipped_recipes()]
     _write_json(SITE_DIR / "data" / "recipes.json", recipes)
     _write_json(SITE_DIR / "data" / "vocab.json", vocabulary_snapshot())
     return recipes

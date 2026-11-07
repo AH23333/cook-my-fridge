@@ -23,13 +23,20 @@
 
   function render(recipe, sourceLabel) {
     const fb = feedbackState(recipe.id);
+    // Deterministic templates are stored in the same bucket as AI cards, but
+    // must never be presented as model output (or as tested recipes).
+    const isRule = /规则生成/.test(recipe.source || "");
+    const notice = isRule
+      ? '<div class="notice info">规则生成的参考变体（非 AI、未实测），仅提供搭配思路。请确保食材新鲜、彻底加热，注意过敏原。</div>'
+      : '<div class="notice ai">AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。</div>';
+    const label = isRule ? "规则变体（非 AI）" : sourceLabel;
     root.innerHTML =
       '<article class="detail">' +
       `<h1>${CMF.esc(recipe.title)}</h1>` +
-      '<div class="notice ai">AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。</div>' +
+      notice +
       '<div class="meta" style="display:flex;gap:14px;flex-wrap:wrap;color:var(--ink-soft);font-size:13.5px">' +
       `<span>⏱ ${recipe.time_minutes} 分钟</span><span>🎯 ${CMF.esc(recipe.difficulty)}</span>` +
-      `<span>🍳 ${CMF.esc(recipe.methods.join("、"))}</span><span style="background:#fdeee7;padding:2px 9px;border-radius:999px">${CMF.esc(sourceLabel)}</span></div>` +
+      `<span>🍳 ${CMF.esc(recipe.methods.join("、"))}</span><span style="background:#fdeee7;padding:2px 9px;border-radius:999px">${CMF.esc(label)}</span></div>` +
       (recipe.allergens.length
         ? `<div class="notice warn">过敏原：${CMF.esc(recipe.allergens.join("、"))}</div>`
         : "") +

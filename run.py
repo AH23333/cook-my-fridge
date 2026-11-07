@@ -34,6 +34,15 @@ def main() -> None:
     p_var.add_argument("--kinds", type=str, default=None)
     p_var.add_argument("--recipe-limit", type=int, default=None)
 
+    p_import = sub.add_parser("import", help="import a public recipe dataset")
+    p_import.add_argument("--source", required=True, help="path to .jsonl / .csv")
+    p_import.add_argument("--format", default="auto", choices=("auto", "jsonl", "csv"))
+    p_import.add_argument("--dataset", default="未命名数据集", help="provenance label")
+    p_import.add_argument("--license", default=None, help="license of the source dataset")
+    p_import.add_argument("--limit", type=int, default=None)
+    p_import.add_argument("--dry-run", action="store_true")
+
+    sub.add_parser("enrich", help="fill missing variants/ideas with labelled templates")
     sub.add_parser("build")
     sub.add_parser("repair")
     sub.add_parser("prune-failures")
@@ -51,6 +60,26 @@ def main() -> None:
 
         summary = build_site()
         print(summary)
+        return
+
+    if args.task == "import":
+        from cookmyfridge.public_dataset import DEFAULT_LICENSE, import_dataset
+
+        report = import_dataset(
+            Path(args.source),
+            dataset=args.dataset,
+            license_name=args.license or DEFAULT_LICENSE,
+            fmt=args.format,
+            limit=args.limit,
+            dry_run=args.dry_run,
+        )
+        print(report)
+        return
+
+    if args.task == "enrich":
+        from cookmyfridge.enrich import enrich_missing
+
+        print(enrich_missing())
         return
 
     if args.task == "repair":
