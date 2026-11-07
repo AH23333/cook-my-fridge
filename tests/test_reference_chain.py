@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
 
 GLOBAL_SCRIPTS = (
-    "nutrition.js", "balance.js", "diets.js",
+    "nutrition.js", "goals.js", "balance.js", "diets.js",
     "pairings.js", "qrcode.js", "share.js", "ui.js",
 )
 
@@ -64,6 +64,8 @@ def test_new_ui_controls_wired():
 
     fridge = (WEB / "fridge.html").read_text(encoding="utf-8")
     assert 'id="diets-content"' in fridge
+    assert 'id="goals-content"' in fridge
+    assert "goal-save" in (WEB / "js" / "page-fridge.js").read_text(encoding="utf-8")
 
     browse = (WEB / "browse.html").read_text(encoding="utf-8")
     assert 'id="filter-diets"' in browse and 'id="calorie-select"' in browse
@@ -79,6 +81,7 @@ def test_new_styles_exist():
         ".diet-chip", ".share-preview", ".share-actions", ".week-meal",
         ".week-kcal", ".balance-card", ".balance-summary", ".balance-badge",
         ".weeks-select", ".subscribe-box", ".subscribe-url",
+        ".goal-box", ".goal-card", ".goal-progress-bar", ".week-goal",
     ):
         assert selector in css, selector
 
