@@ -9,7 +9,6 @@ Usage: python tests/run_browser_stages.py            # all stages
 from __future__ import annotations
 
 import json
-import re
 import subprocess
 import sys
 import time
@@ -34,10 +33,13 @@ def _parse_payload(stdout: str) -> dict | None:
             return json.loads(lines[-1])
         except json.JSONDecodeError:
             pass
-    match = re.search(r"\{.*\}", stdout, re.DOTALL)
-    if match:
+    # Pretty-printed blocks: decode the first complete JSON value (nested
+    # braces safe) instead of a greedy regex that can span unrelated output.
+    start = stdout.find("{")
+    if start >= 0:
         try:
-            return json.loads(match.group(0))
+            payload, _ = json.JSONDecoder().raw_decode(stdout[start:])
+            return payload
         except json.JSONDecodeError:
             return None
     return None
@@ -53,7 +55,17 @@ def run_stage(path: Path) -> dict:
         timeout=600,
     )
     elapsed = time.time() - started
-    payload = _parse_payload(proc.stdout) or {}
+    payload = _parse_payload(proc.stdout)
+    if payload is None or not isinstance(payload, dict) or "checks" not in payload:
+        return {
+            "stage": path.stem,
+            "exit": proc.returncode,
+            "elapsed_s": round(elapsed, 1),
+            "checks": 0,
+            "failed_checks": ["<runner: 输出里没有可读的结构化报告>"],
+            "page_errors": [],
+            "ok": False,
+        }
     checks = payload.get("checks", {})
     if isinstance(checks, dict):
         # stage29+ format: {"checks": {name: bool}, "errors": [...]}
@@ -65,6 +77,9 @@ def run_stage(path: Path) -> dict:
         total = int(checks or 0)
         failed_checks = list(payload.get("failures", []))
         page_errors = list(payload.get("console_errors", []))
+    if total == 0 and proc.returncode == 0:
+        # A stage that reports nothing is broken, not green.
+        failed_checks = failed_checks + ["<runner: 0 项检查，疑似台架输出契约被破坏>"]
     return {
         "stage": path.stem,
         "exit": proc.returncode,

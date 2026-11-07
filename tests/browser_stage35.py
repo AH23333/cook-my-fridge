@@ -152,13 +152,17 @@ def main():
     finally:
         server.shutdown()
         print(json.dumps({"checks": results, "errors": errors}, ensure_ascii=False, indent=1))
-        print("=== visible-text transcript ===")
-        print(json.dumps(transcript, ensure_ascii=False, indent=1))
         failed = [name for name, ok in results.items() if not ok]
         if failed or errors:
             print("FAILED:", failed, "page errors:", errors)
             raise SystemExit(1)
         print(f"all {len(results)} checks passed, zero page errors")
+        # Transcript goes to stderr: stdout must stay machine-readable for
+        # run_browser_stages.py (a stray JSON-looking block once made the
+        # runner report PASS with 0 checks — a fake green).
+        import sys
+        print("=== visible-text transcript ===", file=sys.stderr)
+        print(json.dumps(transcript, ensure_ascii=False, indent=1), file=sys.stderr)
 
 
 if __name__ == "__main__":
