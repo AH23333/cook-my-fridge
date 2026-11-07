@@ -68,6 +68,26 @@
     return "待改善";
   }
 
+  /* Personal goals replace the population-level AMDR bands with the user's
+     own macro split, allowing a +/-10 percentage-point tolerance. */
+  function personalBands(target) {
+    const energy = {
+      protein: (Number(target.protein) || 0) * 4,
+      fat: (Number(target.fat) || 0) * 9,
+      carbs: (Number(target.carbs) || 0) * 4,
+    };
+    const sum = energy.protein + energy.fat + energy.carbs;
+    const band = (value) => {
+      const pct = sum ? Math.round((value / sum) * 100) : 0;
+      return [Math.max(0, pct - 10), Math.min(100, pct + 10)];
+    };
+    return {
+      protein: band(energy.protein),
+      fat: band(energy.fat),
+      carbs: band(energy.carbs),
+    };
+  }
+
   /* `totals` is {kcal, protein, fat, carbs}, optionally with `meals`.
      opts: { meals, note } - meals scales the energy expectation. */
   CMF.scoreBalance = function (totals, opts) {
@@ -78,6 +98,13 @@
     const fat = Math.max(0, Number(t.fat) || 0);
     const carbs = Math.max(0, Number(t.carbs) || 0);
     const meals = clamp(Number(options.meals || t.meals) || 1, 1, 4);
+    // An explicit target wins; otherwise pick up the stored personal goal.
+    // With no goal configured goalTargets() returns null and the score is
+    // bit-for-bit identical to the original AMDR heuristic.
+    const personal = options.targets || (typeof CMF.goalTargets === "function"
+      ? CMF.goalTargets({ meals }) : null);
+    const usePersonal = !!(personal && Number(personal.kcal) > 0);
+    const bands = usePersonal ? personalBands(personal) : TARGETS;
 
     const energy = { protein: protein * 4, fat: fat * 9, carbs: carbs * 4 };
     const sum = energy.protein + energy.fat + energy.carbs;
@@ -94,13 +121,15 @@
         issues: ["缺少可用于评分的营养数据"],
         tips: ["该菜谱暂缺营养参考值，评分不可用。"],
         companions: [],
+        personal: usePersonal,
+        target: usePersonal ? personal : null,
       };
     }
 
     // 60 points: distance from each recommended energy-share band.
     let macro = 0;
     ["protein", "fat", "carbs"].forEach((key) => {
-      const [low, high] = TARGETS[key];
+      const [low, high] = bands[key];
       const distance = share[key] < low ? low - share[key]
         : share[key] > high ? share[key] - high : 0;
       macro += clamp(20 - distance * 1.2, 0, 20);
@@ -108,14 +137,19 @@
     macro = Math.round(macro);
 
     // 20 points: protein density (g per 100 kcal).
+    const densityTarget = usePersonal
+      ? (Number(personal.protein) || 0) / (Number(personal.kcal) || 1) * 100
+      : TARGETS.proteinDensity;
     const density = (protein / kcal) * 100;
     const proteinScore = Math.round(clamp(
-      (density / TARGETS.proteinDensity) * 20, 0, 20
+      (density / (densityTarget || TARGETS.proteinDensity)) * 20, 0, 20
     ));
 
     // 20 points: does this meal/day cover a plausible amount of energy?
-    const minKcal = TARGETS.kcalPerMeal[0] * meals;
-    const maxKcal = TARGETS.kcalPerMeal[1] * meals;
+    const minKcal = usePersonal
+      ? personal.kcal * 0.75 : TARGETS.kcalPerMeal[0] * meals;
+    const maxKcal = usePersonal
+      ? personal.kcal * 1.25 : TARGETS.kcalPerMeal[1] * meals;
     let energyScore;
     if (kcal < minKcal) energyScore = (kcal / minKcal) * 20;
     else if (kcal > maxKcal) energyScore = clamp(20 - ((kcal - maxKcal) / maxKcal) * 20, 0, 20);
@@ -127,20 +161,20 @@
     const tips = [];
     const sides = [];
 
-    if (share.protein < TARGETS.protein[0]) {
+    if (share.protein < bands.protein[0]) {
       issues.push("蛋白质供能偏低");
       tips.push("加一份鸡蛋、豆腐或瘦肉，把蛋白质补上来。");
       sides.push(...companions("protein", 2));
     }
-    if (share.fat > TARGETS.fat[1]) {
+    if (share.fat > bands.fat[1]) {
       issues.push("脂肪供能偏高");
       tips.push("改用蒸、煮、白灼，或减少用油与肥肉。");
     }
-    if (share.carbs < TARGETS.carbs[0]) {
+    if (share.carbs < bands.carbs[0]) {
       issues.push("碳水供能偏低");
       tips.push("搭配一份米饭、面条或薯类主食。");
       sides.push(...companions("carbs", 2));
-    } else if (share.carbs > TARGETS.carbs[1]) {
+    } else if (share.carbs > bands.carbs[1]) {
       issues.push("碳水供能偏高");
       tips.push("适当减少主食，增加蔬菜与蛋白质。");
       sides.push(...companions("protein", 1));
@@ -168,6 +202,8 @@
       issues,
       tips,
       companions: sides.slice(0, 3),
+      personal: usePersonal,
+      target: usePersonal ? personal : null,
     };
   };
 
@@ -208,6 +244,7 @@
     return (
       '<div class="balance-card ' + cls + '">' +
       '<div class="balance-head"><span>⚖️ 营养均衡评分</span>' +
+      (result.personal ? '<span class="balance-personal">按我的目标</span>' : "") +
       `<span class="balance-grade">${esc(result.grade)}</span></div>` +
       '<div class="balance-score"><strong>' + result.score + '</strong><small>/ 100</small></div>' +
       `<div class="balance-bar"><span style="width:${result.score}%"></span></div>` +
