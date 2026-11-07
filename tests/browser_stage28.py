@@ -263,7 +263,7 @@ def main():
             cached.evaluate("async () => { await navigator.serviceWorker.ready; }")
             cached.reload(wait_until="networkidle")
             cached.wait_for_function("navigator.serviceWorker.controller !== null")
-            check("inventory scripts precached", cached.evaluate("""async () => !!(await caches.match('js/inventory.js')) && !!(await caches.match('js/inventory-ui.js'))"""))
+            check("inventory scripts precached", cached.evaluate("""async () => !!(await caches.match('js/bundle.js'))"""))
             offline.set_offline(True)
             cached.goto(base + "fridge.html", wait_until="load")
             cached.wait_for_selector("#inventory-content form")

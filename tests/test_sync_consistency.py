@@ -37,7 +37,9 @@ def test_sync_is_wired_everywhere():
         html = page.read_text(encoding="utf-8")
         assert 'src="js/sync.js"' in html, page.name
         assert html.index("js/share.js") < html.index("js/sync.js") < html.index("js/ui.js")
-    assert '"js/sync.js"' in (ROOT / "web" / "sw.js").read_text(encoding="utf-8")
+    # Shared modules ship inside the bundle (build.py BUNDLE_MODULES); sw.js
+    # precaches the bundle instead of individual module files.
+    assert '"js/bundle.js"' in (ROOT / "web" / "sw.js").read_text(encoding="utf-8")
     assert '"cmf.shareStats"' in (ROOT / "web" / "js" / "store.js").read_text(encoding="utf-8")
     assert 'id="sync-content"' in (ROOT / "web" / "fridge.html").read_text(encoding="utf-8")
     share = (ROOT / "web" / "js" / "share.js").read_text(encoding="utf-8")

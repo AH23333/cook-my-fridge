@@ -46,9 +46,12 @@ def test_no_duplicate_or_missing_script_files():
 
 def test_sw_precaches_all_scripts():
     sw = (WEB / "sw.js").read_text(encoding="utf-8")
-    scripts = sorted(p.name for p in (WEB / "js").glob("*.js"))
-    assert len(scripts) >= 22
-    for script in scripts:
+    # Shared modules ship inside js/bundle.js (build.py BUNDLE_MODULES);
+    # page scripts stay individual files and must each be precached.
+    assert '"js/bundle.js"' in sw
+    pages = sorted(p.name for p in (WEB / "js").glob("page-*.js"))
+    assert len(pages) >= 8
+    for script in pages:
         assert f'"js/{script}"' in sw, script
 
 
