@@ -808,7 +808,11 @@
   }
 
   CMF.boots("fridge.html", renderAll);
-  // Favorites merge AI cards; those shards load in the background, so repaint
-  // just the favorites section once they land (no user input lives inside it).
-  CMF.onAiReady(() => renderFavorites());
+  // AI shards load on demand: only fetch them here when the favorites list
+  // actually contains an AI card (an id no dataset recipe owns). Most visits
+  // never pay the ~2 MB.
+  const hasAiFavorite = CMF.getFavorites().some(
+    (id) => !CMF.data.recipes.some((r) => r.id === id)
+  );
+  if (hasAiFavorite) CMF.onAiReady(() => renderFavorites());
 })();

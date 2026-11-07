@@ -22,10 +22,11 @@
 
   function ideasHtml(recipe) {
     const entry = CMF.data.ai.ideas.find((x) => x.key === recipe.id);
-    return entry
-      ? "<h3>数据集里没有的三个主意</h3><ul>" +
-          entry.ideas.map((x) => `<li>${CMF.esc(x)}</li>`).join("") + "</ul>"
-      : "";
+    if (entry) {
+      return "<h3>数据集里没有的三个主意</h3><ul>" +
+        entry.ideas.map((x) => `<li>${CMF.esc(x)}</li>`).join("") + "</ul>";
+    }
+    return CMF.data.aiReady ? "" : '<div class="empty">AI 主意加载中…</div>';
   }
 
   const FACTORS = [0.5, 1, 1.5, 2, 3];
@@ -242,11 +243,20 @@
 
     root.querySelectorAll(".ai-actions .btn").forEach((btn) => {
       btn.onclick = () => {
-        const variant = findVariant(recipe.id, btn.dataset.kind);
-        if (variant) {
-          location.href = "wildcard.html?key=" + encodeURIComponent(variant.id);
-        } else {
-          CMF.toast("这个变体还没预生成，先看其他按钮吧");
+        const go = () => {
+          const variant = findVariant(recipe.id, btn.dataset.kind);
+          if (variant) {
+            location.href = "wildcard.html?key=" + encodeURIComponent(variant.id);
+          } else {
+            CMF.toast("这个变体还没预生成，先看其他按钮吧");
+          }
+        };
+        // Variants load on demand; a click before they land waits instead of
+        // wrongly claiming the variant was never generated.
+        if (CMF.data.aiReady) go();
+        else {
+          CMF.toast("AI 变体加载中，请稍候…");
+          CMF.preloadAI().then(go);
         }
       };
     });
@@ -434,13 +444,27 @@
     }
     document.title = recipe.title + " · CookMyFridge";
     render(recipe);
-    // Ideas shard loads in the background; fill only that block when it
-    // lands. (Variant buttons already self-heal: they look variants up at
-    // click time.)
-    CMF.onAiReady(() => {
-      const box = root.querySelector("#ai-ideas");
-      if (box && !box.innerHTML) box.innerHTML = ideasHtml(recipe);
-    });
+    // AI shards load on demand: only when the user scrolls near the AI zone
+    // (or clicks a variant button — that path waits via preloadAI too).
+    // Without an IntersectionObserver we fall back to loading at once.
+    const fillIdeas = () => {
+      CMF.preloadAI().then(() => {
+        const box = root.querySelector("#ai-ideas");
+        if (box) box.innerHTML = ideasHtml(recipe);
+      });
+    };
+    const aiZone = root.querySelector(".ai-actions");
+    if (aiZone && "IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          fillIdeas();
+        }
+      }, { rootMargin: "300px" });
+      io.observe(aiZone);
+    } else {
+      fillIdeas();
+    }
   }
 
   CMF.boots("index.html", start);

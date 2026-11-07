@@ -25,7 +25,7 @@
     };
   }
 
-  function bucketNode(badgeClass, badge, title, matches, wildcardPage) {
+  function bucketNode(badgeClass, badge, title, matches, wildcardPage, emptyText) {
     const cards = matches
       .map((m) => CMF.recipeCard(m, wildcardPage))
       .join("");
@@ -35,7 +35,7 @@
       `<span class="bucket-badge ${badgeClass}">${badge}</span>` +
       `<strong>${title}</strong><span class="count">${matches.length}</span></div>` +
       '<div class="card-grid">' +
-      (cards || '<div class="empty">这一栏暂时没有结果</div>') +
+      (cards || `<div class="empty">${emptyText || "这一栏暂时没有结果"}</div>`) +
       "</div></section>"
     );
   }
@@ -123,10 +123,13 @@
   function render() {
     const result = CMF.search(CMF.data.recipes, selected, currentFilters());
     const wild = wildcardMatches();
+    const aiPending = !CMF.data.aiReady;
     buckets.innerHTML =
       bucketNode("badge-now", "COOK NOW", "现在就能做", dropAllergen(result.cookNow)) +
       bucketNode("badge-almost", "ALMOST", "只差一点", dropAllergen(result.almostThere)) +
-      bucketNode("badge-wild", "AI WILDCARD", "AI 创意菜", dropAllergen(wild), true);
+      (aiPending
+        ? bucketNode("badge-wild", "AI WILDCARD", "AI 创意菜", [], true, "AI 创意菜加载中…")
+        : bucketNode("badge-wild", "AI WILDCARD", "AI 创意菜", dropAllergen(wild), true));
     wirePlanButtons();
   }
 

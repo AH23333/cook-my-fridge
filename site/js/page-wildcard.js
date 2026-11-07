@@ -72,7 +72,9 @@
     if (key) {
       const card = cards.find((c) => c.id === key);
       if (!card) {
-        root.innerHTML = '<div class="empty">找不到这张 AI 卡片。</div>';
+        root.innerHTML = CMF.data.aiReady
+          ? '<div class="empty">找不到这张 AI 卡片。</div>'
+          : '<div class="empty">正在加载 AI 创意数据…</div>';
         return;
       }
       const label = CMF.data.ai.blindboxes.some((b) => b.id === key)
@@ -87,7 +89,9 @@
     if (CMF.queryParam("blind") === "1") {
       const pool = CMF.data.ai.blindboxes;
       if (!pool.length) {
-        root.innerHTML = '<div class="empty">盲盒卡片还在生成中，稍后再来。</div>';
+        root.innerHTML = CMF.data.aiReady
+          ? '<div class="empty">盲盒卡片还在生成中，稍后再来。</div>'
+          : '<div class="empty">正在加载盲盒卡片…</div>';
         return;
       }
       const card = pool[Math.floor(Math.random() * pool.length)];

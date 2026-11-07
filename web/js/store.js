@@ -32,6 +32,7 @@
     recipes: [],
     vocab: null,
     ai: { wildcards: [], blindboxes: [], variants: [], ideas: [] },
+    aiReady: false,
   };
 
   let corePromise = null;
@@ -50,25 +51,6 @@
       d.vocab = vocab;
       return d;
     });
-    // AI shards (~2 MB) queue AFTER the core payload: on constrained links
-    // the first screen gets full bandwidth priority instead of competing
-    // with variants.json (measured: wall 53 s -> ~8 s on slow-3G). Pages
-    // render core content first and refresh only their AI zones when
-    // preloadAI() resolves.
-    aiPromise = corePromise.then(() =>
-      Promise.all([
-        fetchJSON("data/ai/wildcards.json").catch(() => []),
-        fetchJSON("data/ai/blindboxes.json").catch(() => []),
-        fetchJSON("data/ai/variants.json").catch(() => []),
-        fetchJSON("data/ai/ideas.json").catch(() => []),
-      ])
-    ).then(([wild, blind, variants, ideas]) => {
-      d.ai.wildcards = wild;
-      d.ai.blindboxes = blind;
-      d.ai.variants = variants;
-      d.ai.ideas = ideas;
-      return d.ai;
-    });
   }
 
   CMF.preload = function () {
@@ -76,8 +58,32 @@
     return corePromise;
   };
 
+  /* AI shards (~2 MB, mostly variants.json) are NOT fetched on the critical
+     path: they only start downloading when a page actually needs AI content
+     (result buckets, wildcard page, recipe ideas, favorites that contain AI
+     cards). First screen never pays for them (measured on slow-3G: the wall
+     renders from the ~290 KB core payload; variants.json arrives later only
+     where it is used). Callers still get the same promise contract. */
   CMF.preloadAI = function () {
     ensureLoad();
+    if (!aiPromise) {
+      aiPromise = corePromise.then(() =>
+        Promise.all([
+          fetchJSON("data/ai/wildcards.json").catch(() => []),
+          fetchJSON("data/ai/blindboxes.json").catch(() => []),
+          fetchJSON("data/ai/variants.json").catch(() => []),
+          fetchJSON("data/ai/ideas.json").catch(() => []),
+        ])
+      ).then(([wild, blind, variants, ideas]) => {
+        const d = CMF.data;
+        d.ai.wildcards = wild;
+        d.ai.blindboxes = blind;
+        d.ai.variants = variants;
+        d.ai.ideas = ideas;
+        d.aiReady = true; // resolved (shards may be empty on fetch failure)
+        return d.ai;
+      });
+    }
     return aiPromise;
   };
 
