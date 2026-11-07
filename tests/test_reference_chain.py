@@ -14,7 +14,7 @@ WEB = ROOT / "web"
 
 GLOBAL_SCRIPTS = (
     "nutrition.js", "goals.js", "balance.js", "diets.js",
-    "seasonal.js", "prices.js", "journal.js",
+    "seasonal.js", "prices.js", "journal.js", "inventory.js",
     "pairings.js", "qrcode.js", "share.js", "sync.js", "ui.js",
 )
 
@@ -125,6 +125,22 @@ def test_stage27_controls_wired():
     assert "storageFor" in ui and "seasonal-badge" in ui
     catalog = (WEB / "js" / "catalog.js").read_text(encoding="utf-8")
     assert "CMF.storageFor" in catalog
+
+
+def test_inventory_controls_and_sync_are_wired():
+    fridge = (WEB / "fridge.html").read_text(encoding="utf-8")
+    recipe = (WEB / "recipe.html").read_text(encoding="utf-8")
+    assert 'id="inventory-content"' in fridge
+    for html in (fridge, recipe):
+        assert 'src="js/inventory-ui.js"' in html
+        assert html.index("js/inventory.js") < html.index("js/sync.js")
+        assert html.index("js/inventory-ui.js") < html.index("js/page-")
+    fridge_page = (WEB / "js" / "page-fridge.js").read_text(encoding="utf-8")
+    recipe_page = (WEB / "js" / "page-recipe.js").read_text(encoding="utf-8")
+    assert "CMF.mountInventory" in fridge_page
+    assert 'id="recipe-inventory"' in recipe_page and "CMF.mountRecipeInventory" in recipe_page
+    assert 'inventory: "cmf.inventory"' in (WEB / "js" / "store.js").read_text(encoding="utf-8")
+    assert "CMF.mergeInventories" in (WEB / "js" / "sync.js").read_text(encoding="utf-8")
 
 
 def test_built_catalog_has_nutrition_facts():

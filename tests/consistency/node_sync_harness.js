@@ -26,6 +26,7 @@ load("web/js/goals.js");
 load("web/js/qrcode.js");
 load("web/js/share.js");
 load("web/js/journal.js");
+load("web/js/inventory.js");
 load("web/js/sync.js");
 
 const CMF = global.window.CMF;
