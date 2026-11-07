@@ -1,5 +1,8 @@
-/* CookMyFridge service worker: offline-first app shell and data caching. */
-const CACHE_NAME = "cmf-cache-20261107053559";
+/* CookMyFridge service worker: offline-first app shell, data caching and a
+   virtual /calendar.ics subscription endpoint served from Cache Storage. */
+const CACHE_NAME = "cmf-cache-20261107061442";
+const CALENDAR_CACHE = "cmf-calendar-v1";
+const CALENDAR_PATH = "calendar.ics";
 const CORE_ASSETS = [
   "index.html",
   "result.html",
@@ -14,6 +17,8 @@ const CORE_ASSETS = [
   "js/catalog.js",
   "js/search.js",
   "js/nutrition.js",
+  "js/balance.js",
+  "js/qrcode.js",
   "js/diets.js",
   "js/share.js",
   "js/nlparse.js",
@@ -39,6 +44,19 @@ const CORE_ASSETS = [
   "data/ai/ideas.json",
 ];
 
+function emptyCalendar() {
+  return [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//CookMyFridge//Meal Plan//ZH",
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH",
+    "X-WR-CALNAME:CookMyFridge 菜单（尚未生成）",
+    "END:VCALENDAR",
+    ""
+  ].join("\r\n");
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
@@ -53,7 +71,11 @@ self.addEventListener("activate", (event) => {
     caches
       .keys()
       .then((keys) =>
-        Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)))
+        Promise.all(
+          keys
+            .filter((k) => k !== CACHE_NAME && k !== CALENDAR_CACHE)
+            .map((k) => caches.delete(k))
+        )
       )
       .then(() => self.clients.claim())
   );
@@ -64,6 +86,27 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET" || new URL(request.url).origin !== self.location.origin) {
     return;
   }
+
+  // Subscription URL: no file is deployed, the page publishes the current
+  // menu's ICS into CALENDAR_CACHE and this endpoint serves it. Returning an
+  // empty (but valid) calendar keeps calendar clients subscribed instead of
+  // treating a 404 as a broken feed.
+  if (new URL(request.url).pathname.endsWith("/" + CALENDAR_PATH)) {
+    event.respondWith(
+      caches
+        .open(CALENDAR_CACHE)
+        .then((cache) => cache.match(request))
+        .then((cached) => cached || new Response(emptyCalendar(), {
+          status: 200,
+          headers: {
+            "Content-Type": "text/calendar; charset=utf-8",
+            "Cache-Control": "no-cache",
+          },
+        }))
+    );
+    return;
+  }
+
   event.respondWith(
     caches.match(request).then((cached) => {
       if (cached) return cached;

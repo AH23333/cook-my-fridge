@@ -12,15 +12,26 @@
 <body>
   <main class="container">
     <h2 class="section-title">🗓️ 一周菜单</h2>
-    <p class="planner-intro">根据冰箱、口味、过敏原和饮食偏好，自动安排 7 天午餐 + 晚餐共 14 道不重样的菜，优先用现有食材。每日热量为两道菜的每人份估算之和（未计主食、早餐与烹饪损耗），仅作搭配参考，不替代专业营养建议。</p>
+    <p class="planner-intro">根据冰箱、口味、过敏原和饮食偏好，自动安排 1–4 周、每天午餐 + 晚餐不重样的菜，优先用现有食材。均衡评分只看三大营养素供能比，每日热量为两道菜的每人份估算之和（未计主食、早餐与烹饪损耗），仅作搭配参考，不替代专业营养建议。</p>
     <div class="planner-actions">
-      <button class="btn btn-primary btn-sm" id="btn-shuffle">重新生成整周</button>
+      <label class="weeks-select">菜单周数
+        <select id="week-count">
+          <option value="1">1 周 · 14 餐</option>
+          <option value="2">2 周 · 28 餐</option>
+          <option value="3">3 周 · 42 餐</option>
+          <option value="4">4 周 · 56 餐</option>
+        </select>
+      </label>
+      <button class="btn btn-primary btn-sm" id="btn-shuffle">重新生成整份</button>
       <button class="btn btn-sm" id="btn-export-ics">📅 导出日历（.ics）</button>
-      <button class="btn btn-sm" id="btn-copy-week">📋 复制整周菜单</button>
+      <button class="btn btn-sm" id="btn-copy-week">📋 复制整份菜单</button>
+      <button class="btn btn-sm" id="btn-subscribe">🔗 开启日历订阅</button>
     </div>
     <div id="week-diet-note"></div>
+    <div id="balance-summary-root"></div>
     <div id="week-root"></div>
     <div id="shop-root"></div>
+    <div id="subscribe-root"></div>
     <div class="page-spacer"></div>
   </main>
 
@@ -28,9 +39,11 @@
   <script src="js/catalog.js"></script>
   <script src="js/search.js"></script>
   <script src="js/nutrition.js"></script>
+  <script src="js/balance.js"></script>
   <script src="js/diets.js"></script>
   <script src="js/planner.js"></script>
   <script src="js/pairings.js"></script>
+  <script src="js/qrcode.js"></script>
   <script src="js/share.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/page-planner.js"></script>

@@ -49,10 +49,11 @@
     return lines;
   }
 
-  function text(ctx, value, x, y, size, color, weight) {
+  function text(ctx, value, x, y, size, color, weight, maxWidth) {
     font(ctx, size, weight);
     ctx.fillStyle = color;
-    ctx.fillText(value, x, y);
+    if (maxWidth) ctx.fillText(value, x, y, maxWidth);
+    else ctx.fillText(value, x, y);
   }
 
   function rect(ctx, x, y, w, h, color) {
@@ -89,6 +90,19 @@
       .replace(/[\\/:*?"<>|\s]+/g, "-")
       .slice(0, 40);
     return "CookMyFridge-" + safe + ".png";
+  };
+
+  /* Absolute recipe URL for the QR code. Tests inject an explicit URL because
+     a headless harness has no `location`. */
+  CMF.shareUrl = function (recipe, opts) {
+    if (opts && opts.url) return String(opts.url);
+    const id = encodeURIComponent((recipe && recipe.id) || "");
+    if (typeof location !== "undefined" && location.href) {
+      try {
+        return new URL("recipe.html?id=" + id, location.href).href;
+      } catch (err) { /* fall through */ }
+    }
+    return "recipe.html?id=" + id;
   };
 
   /* Returns a canvas. `opts.doc` allows injection in headless tests. */
@@ -141,14 +155,27 @@
       const y = 626 + i * 38;
       rect(ctx, 56, y - 22, 8, 8, COLORS.amber);
       const amount = (use.amount || "").trim();
+      // maxWidth keeps long ingredient lines clear of the QR code column.
       text(
         ctx,
         `${use.canonical}${amount ? "  " + amount : ""}${use.optional ? "（可选）" : ""}`,
-        78, y, 23, COLORS.ink, 400
+        78, y, 23, COLORS.ink, 400, 480
       );
     });
     if ((recipe.ingredients || []).length > 8) {
       text(ctx, `…等共 ${recipe.ingredients.length} 样食材`, 78, 626 + 8 * 38, 20, COLORS.soft, 400);
+    }
+
+    // QR code is optional: a missing qrcode.js or an overlong URL must never
+    // break the whole share card.
+    if (typeof CMF.drawQR === "function") {
+      try {
+        const url = CMF.shareUrl(recipe, opts);
+        if (url) {
+          CMF.drawQR(ctx, url, 576, 556, 168, { light: COLORS.white, dark: COLORS.ink });
+          text(ctx, "扫码看菜谱", 576, 744, 16, COLORS.soft, 600);
+        }
+      } catch (err) { /* skip the QR, keep the card */ }
     }
 
     // Nutrition block
