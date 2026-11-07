@@ -96,3 +96,24 @@ def test_tag_alias_normalized():
     payload = valid_payload(tags=["快手菜"])
     recipe = _recipe_from_payload(payload, "ai-test-9")
     assert recipe.tags == ["快手"]
+
+
+def test_time_minutes_coerced_from_text():
+    recipe = _recipe_from_payload(valid_payload(time_minutes="约20分钟"), "ai-test-10")
+    assert recipe.time_minutes == 20
+
+
+def test_time_minutes_missing_is_zero():
+    payload = valid_payload()
+    del payload["time_minutes"]
+    recipe = _recipe_from_payload(payload, "ai-test-11")
+    assert recipe.time_minutes == 0
+
+
+def test_time_minutes_garbage_raises_generation_error():
+    # Must surface as AIGenerationError so the batch retry loop feeds it back
+    # to the model, instead of a raw ValueError/TypeError killing the item.
+    with pytest.raises(AIGenerationError, match="time_minutes"):
+        _recipe_from_payload(valid_payload(time_minutes=["很久"]), "ai-test-12")
+    with pytest.raises(AIGenerationError, match="time_minutes"):
+        _recipe_from_payload(valid_payload(time_minutes="很快就好"), "ai-test-13")

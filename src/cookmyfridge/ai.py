@@ -2,6 +2,7 @@
 whitelist enforcement, validation and mandatory safety labeling."""
 from __future__ import annotations
 
+import re
 import uuid
 
 from .catalog import allergens_of, canonical_set
@@ -53,6 +54,27 @@ def _as_list(value):
     if isinstance(value, list):
         return value
     return [value]
+
+
+_MINUTES_RE = re.compile(r"\d+")
+
+
+def _coerce_time_minutes(value) -> int:
+    """Tolerate chatty model output ("约20分钟") but fail with feedback on garbage.
+
+    Raising AIGenerationError (not ValueError/TypeError) keeps the failure
+    inside the retry-with-feedback loop instead of killing the batch item.
+    """
+    if value is None or value == "":
+        return 0
+    if isinstance(value, bool):
+        raise AIGenerationError(f"time_minutes 无法解析: {value!r}")
+    if isinstance(value, (int, float)):
+        return max(0, int(value))
+    match = _MINUTES_RE.search(str(value))
+    if match:
+        return int(match.group(0))
+    raise AIGenerationError(f"time_minutes 无法解析: {value!r}")
 
 
 def _recipe_from_payload(
@@ -139,7 +161,7 @@ def _recipe_from_payload(
         steps=[str(s) for s in _as_list(payload.get("steps"))],
         methods=[str(m) for m in methods],
         cuisine=str(payload.get("cuisine", "AI 创意")),
-        time_minutes=int(payload.get("time_minutes", 0) or 0),
+        time_minutes=_coerce_time_minutes(payload.get("time_minutes")),
         difficulty=str(payload.get("difficulty", "简单")),
         cookware=[str(c) for c in _as_list(payload.get("cookware"))],
         tags=tags,
