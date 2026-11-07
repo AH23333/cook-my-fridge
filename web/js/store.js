@@ -43,19 +43,35 @@
     const d = CMF.data;
     corePromise = Promise.all([
       fetchJSON("data/catalog.json"),
-      fetchJSON("data/recipes.json"),
       fetchJSON("data/vocab.json"),
-    ]).then(([catalog, recipes, vocab]) => {
+    ]).then(([catalog, vocab]) => {
       d.catalog = catalog;
-      d.recipes = recipes;
       d.vocab = vocab;
       return d;
     });
+    // recipes.json (184 KB) queues AFTER the blocking core (catalog+vocab,
+    // ~92 KB): fetching it in parallel would still share the same pipe and
+    // slow the wall on throttled links. The ingredient wall, search box,
+    // seasonal banner and NL input all render from the core alone; pages
+    // that need recipes at boot await preloadRecipes().
+    recipesPromise = corePromise.then(() =>
+      fetchJSON("data/recipes.json").catch(() => [])
+    ).then((recipes) => {
+      d.recipes = recipes;
+      return recipes;
+    });
   }
+
+  let recipesPromise = null;
 
   CMF.preload = function () {
     ensureLoad();
     return corePromise;
+  };
+
+  CMF.preloadRecipes = function () {
+    ensureLoad();
+    return recipesPromise;
   };
 
   /* AI shards (~2 MB, mostly variants.json) are NOT fetched on the critical

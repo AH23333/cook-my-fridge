@@ -8,6 +8,16 @@ import cookmyfridge.build as build
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def _seed_bundle_modules(fake_web: Path) -> None:
+    """build_js_bundle requires every module; fixtures get one-line stubs."""
+    js = fake_web / "js"
+    js.mkdir(parents=True, exist_ok=True)
+    for name in build.BUNDLE_MODULES:
+        target = js / f"{name}.js"
+        if not target.exists():
+            target.write_text(f"/* {name} */", encoding="utf-8")
+
+
 def test_build_site(tmp_path, monkeypatch):
     fake_site = tmp_path / "site"
     fake_web = tmp_path / "web"
@@ -21,6 +31,7 @@ def test_build_site(tmp_path, monkeypatch):
     (fake_web / "sw.js").write_text(
         'const CACHE_NAME = "cmf-cache-v1";', encoding="utf-8"
     )
+    _seed_bundle_modules(fake_web)
 
     monkeypatch.setattr(build, "SITE_DIR", fake_site)
     monkeypatch.setattr(build, "WEB_DIR", fake_web)
@@ -55,15 +66,65 @@ def test_export_catalog_includes_staples(tmp_path, monkeypatch):
 
 
 def test_service_worker_precaches_every_script():
-    """Offline-first install must include JS, not just HTML/CSS/data."""
+    """Offline-first install precaches the bundle plus every page script;
+    individual modules ship inside bundle.js instead of being listed."""
     sw = (ROOT / "web" / "sw.js").read_text(encoding="utf-8")
-    scripts = sorted(
-        p.relative_to(ROOT / "web").as_posix()
-        for p in (ROOT / "web" / "js").glob("*.js")
+    assert '"js/bundle.js"' in sw
+    pages = sorted(p.name for p in (ROOT / "web" / "js").glob("page-*.js"))
+    assert len(pages) >= 8
+    for page in pages:
+        assert f'"js/{page}"' in sw, f"missing from SW precache: {page}"
+    # Every shared module must be in the bundle manifest, or its exports
+    # silently vanish from the deployed site.
+    for module in ("store", "catalog", "search", "sync", "ui", "inventory-ui"):
+        assert module in build.BUNDLE_MODULES
+
+
+def test_bundle_and_html_rewiring(tmp_path, monkeypatch):
+    """The bundle concatenates every module; deployed pages reference it
+    exactly once and keep their page script."""
+    fake_site = tmp_path / "site"
+    fake_web = tmp_path / "web"
+    (fake_web / "js").mkdir(parents=True)
+    (fake_web / "css").mkdir(parents=True)
+    (fake_web / "index.html").write_text(
+        "<html><body>\n"
+        '  <script src="js/store.js"></script>\n'
+        '  <script src="js/ui.js"></script>\n'
+        '  <script src="js/page-home.js"></script>\n'
+        "</body></html>\n",
+        encoding="utf-8",
     )
-    assert len(scripts) >= 22
-    for script in scripts:
-        assert f'"{script}"' in sw, f"missing from SW precache: {script}"
+    (fake_web / "about.html").write_text(
+        "<html><body>\n"
+        '  <script src="js/store.js"></script>\n'
+        "</body></html>\n",
+        encoding="utf-8",
+    )
+    for name in build.BUNDLE_MODULES:
+        (fake_web / "js" / f"{name}.js").write_text(
+            f"/* {name} marker */", encoding="utf-8"
+        )
+    (fake_web / "js" / "page-home.js").write_text("/* home */", encoding="utf-8")
+    (fake_web / "css" / "style.css").write_text("/* x */", encoding="utf-8")
+    monkeypatch.setattr(build, "SITE_DIR", fake_site)
+    monkeypatch.setattr(build, "WEB_DIR", fake_web)
+
+    build.copy_web_assets()
+    size = build.build_js_bundle()
+    rewritten = build._rewrite_html_bundles()
+
+    bundle = (fake_site / "js" / "bundle.js").read_text(encoding="utf-8")
+    assert size > 0 and "/* ui marker */" in bundle
+    assert sum(1 for name in build.BUNDLE_MODULES if f"/* {name} marker */" in bundle) == len(build.BUNDLE_MODULES)
+    assert rewritten == 2
+    index = (fake_site / "index.html").read_text(encoding="utf-8")
+    assert index.count('src="js/bundle.js"') == 1
+    assert 'src="js/page-home.js"' in index
+    assert 'src="js/store.js"' not in index
+    about = (fake_site / "about.html").read_text(encoding="utf-8")
+    assert about.count('src="js/bundle.js"') == 1
+    assert about.index('src="js/bundle.js"') < about.index("</body>")
 
 
 def test_service_worker_precaches_every_page():
@@ -119,6 +180,7 @@ def test_build_removes_stale_artifacts(tmp_path, monkeypatch):
     (fake_site / "ghost.html").write_text("stale", encoding="utf-8")
     (fake_site / "data" / "ghost.json").write_text("{}", encoding="utf-8")
     (fake_site / "data" / "ai").mkdir()
+    _seed_bundle_modules(fake_web)
 
     monkeypatch.setattr(build, "SITE_DIR", fake_site)
     monkeypatch.setattr(build, "WEB_DIR", fake_web)

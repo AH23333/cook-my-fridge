@@ -251,9 +251,15 @@
     window.addEventListener("load", () => navigator.serviceWorker.register("sw.js"));
   }
 
-  CMF.boots = function (active, init) {
+  /* opts.deferRecipes: the homepage renders its wall from catalog + vocab
+     alone and fills recipe-dependent widgets (weather picks) when the
+     background recipes.json lands — everyone else awaits recipes as before. */
+  CMF.boots = function (active, init, opts) {
     CMF.renderChrome(active);
-    CMF.preload()
+    const ready = opts && opts.deferRecipes
+      ? CMF.preload()
+      : Promise.all([CMF.preload(), CMF.preloadRecipes()]);
+    ready
       .then(() => {
         CMF.initCatalog();
         if (CMF.buildPairingIndex) CMF.buildPairingIndex(CMF.data.recipes);

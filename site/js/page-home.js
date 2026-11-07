@@ -348,5 +348,10 @@
     renderWeatherCard();
   }
 
-  CMF.boots("index.html", start);
+  CMF.boots("index.html", start, { deferRecipes: true });
+  // recipes.json streams in behind the first paint; fill what depends on it.
+  CMF.preloadRecipes().then(() => {
+    if (CMF.buildPairingIndex) CMF.buildPairingIndex(CMF.data.recipes);
+    renderWeatherCard();
+  });
 })();
