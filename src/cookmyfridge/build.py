@@ -12,6 +12,7 @@ from .batch import CACHE_DIR
 from .config import SITE_DIR, WEB_DIR
 from .dataset import load_recipes
 from .models import METHOD_ALIASES, TAG_ALIASES
+from .nutrition import nutrition_facts_payload
 from .validate import vocabulary_snapshot
 
 
@@ -52,6 +53,7 @@ def export_catalog() -> dict:
         "pantry_staples": sorted(cat.PANTRY_STAPLES),
         "method_aliases": METHOD_ALIASES,
         "tag_aliases": TAG_ALIASES,
+        "nutrition_facts": nutrition_facts_payload(),
     }
     _write_json(SITE_DIR / "data" / "catalog.json", payload)
     return payload

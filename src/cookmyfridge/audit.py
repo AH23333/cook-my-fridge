@@ -10,6 +10,7 @@ import json
 from .batch import CACHE_DIR, VARIANT_TITLE_MARKERS, VARIANT_TITLE_SUFFIX
 from .catalog import canonical_set
 from .dataset import load_recipes
+from .nutrition import nutrition_facts_payload, validate_nutrition
 
 _VARIANT_KINDS = set(VARIANT_TITLE_SUFFIX)
 
@@ -88,12 +89,16 @@ def run_audit() -> dict:
                 dupes = sorted({c for c in canonicals if canonicals.count(c) > 1})
                 problems.append(f"{name}:{key} 食材重复: {dupes}")
 
+    # 7. Nutrition table covers the whole catalog with sane values.
+    problems.extend(validate_nutrition())
+
     return {
         "ok": not problems,
         "problems": problems,
         "counts": {
             "recipes": len(recipes),
             "ingredients": len(known),
+            "nutrition_facts": len(nutrition_facts_payload()["per100g"]),
             "wildcards": len(_load_cache("wildcards")),
             "blindboxes": len(_load_cache("blindboxes")),
             "variants": len(variants),
