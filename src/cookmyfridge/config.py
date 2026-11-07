@@ -18,7 +18,11 @@ WEB_DIR = PACKAGE_ROOT / "web"
 SITE_DIR = PACKAGE_ROOT / "site"
 DOCS_DIR = PACKAGE_ROOT / "docs"
 
-DEFAULT_ENV_FILE = Path(r"D:\Py\PyCharmProjects\Langchain\lc-course\.env")
+DEFAULT_ENV_FILE = PACKAGE_ROOT / ".env"
+# Legacy fallback: the original dev machine keeps the key in another project's
+# .env. Kept so that setup keeps working; new checkouts should use a
+# project-local .env or COOKMYFRIDGE_ENV_FILE instead.
+LEGACY_ENV_FILE = Path(r"D:\Py\PyCharmProjects\Langchain\lc-course\.env")
 
 ZHIPU_DEFAULT_BASE = "https://open.bigmodel.cn/api/paas/v4"
 DEFAULT_MODEL = "glm-4-flash"
@@ -42,6 +46,10 @@ def zhipu_settings() -> tuple[str, str, str]:
     """Return (api_key, base_url, model). Raises KeyError if no key available."""
     env_file = Path(os.environ.get("COOKMYFRIDGE_ENV_FILE", DEFAULT_ENV_FILE))
     file_env = load_env_file(env_file)
+    if "ZHIPU_API_KEY" not in file_env and env_file != LEGACY_ENV_FILE:
+        # Primary file (or its absence) yielded no key; try the legacy path.
+        legacy = load_env_file(LEGACY_ENV_FILE)
+        file_env = {**legacy, **file_env}
     api_key = os.environ.get("ZHIPU_API_KEY") or file_env.get("ZHIPU_API_KEY", "")
     base_url = (
         os.environ.get("ZHIPU_BASE_URL")
