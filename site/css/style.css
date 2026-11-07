@@ -951,6 +951,31 @@ footer.site-footer {
 .subscribe-note { font-size: 11.5px; color: var(--ink-soft); line-height: 1.6; margin: 10px 0 0; word-break: break-all; }
 .subscribe-note code { background: var(--surface-2); padding: 1px 4px; border-radius: 3px; }
 
+/* --- Personal nutrition goals --- */
+.goal-box { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 14px 16px; }
+.goal-intro { font-size: 12.5px; color: var(--ink-soft); line-height: 1.6; margin: 0 0 12px; }
+.goal-form { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px 14px; }
+.goal-field { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--ink-soft); }
+.goal-field select, .goal-field input { font: inherit; font-size: 13px; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-2); padding: 6px 8px; width: 100%; box-sizing: border-box; }
+.goal-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 14px; }
+.goal-state { font-size: 12px; color: var(--ink-soft); }
+.goal-summary { border-left: 3px solid var(--green); background: var(--surface-2); border-radius: var(--radius-sm); padding: 10px 14px; margin-top: 12px; font-size: 13px; line-height: 1.8; }
+.goal-summary strong { font-size: 19px; color: var(--brand-dark); }
+.goal-summary-note { font-size: 11.5px; color: var(--ink-soft); }
+.goal-card { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 12px 14px; margin: 10px 0; }
+.goal-card-head { font-weight: 700; color: var(--brand-dark); margin-bottom: 8px; font-size: 14px; }
+.goal-progress { display: grid; grid-template-columns: 64px 1fr; gap: 2px 8px; align-items: center; margin-bottom: 6px; font-size: 12px; }
+.goal-progress-label { color: var(--ink-soft); grid-row: 1 / 3; }
+.goal-progress-value { color: var(--ink); }
+.goal-progress-bar { height: 6px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.goal-progress-bar i { display: block; height: 100%; background: var(--green); }
+.goal-progress.low .goal-progress-bar i { background: var(--accent); }
+.goal-progress.over .goal-progress-bar i { background: var(--brand); }
+.goal-card-note { font-size: 11px; color: var(--ink-soft); line-height: 1.6; margin-top: 8px; }
+.week-goal { font-size: 11.5px; color: var(--brand-dark); margin-top: 5px; }
+.balance-personal { font-size: 11px; border-radius: 999px; padding: 2px 8px; background: #edf6ee; color: #3f7a39; }
+.balance-personal-note { font-size: 12px; color: var(--ink-soft); margin: -8px 0 14px; }
+
 @media print {
   .modal-overlay {
     display: none !important;

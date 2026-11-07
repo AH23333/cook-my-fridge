@@ -162,6 +162,80 @@
     });
   }
 
+  function goalSelect(id, label, options, current) {
+    return (
+      `<label class="goal-field"><span>${label}</span><select id="${id}">` +
+      options.map(
+        ([key, text]) =>
+          `<option value="${CMF.esc(key)}"${key === current ? " selected" : ""}>${CMF.esc(text)}</option>`
+      ).join("") +
+      "</select></label>"
+    );
+  }
+
+  function goalNumber(id, label, value, min, max) {
+    return (
+      `<label class="goal-field"><span>${label}</span>` +
+      `<input type="number" id="${id}" value="${value}" min="${min}" max="${max}"></label>`
+    );
+  }
+
+  function renderGoals() {
+    const root = document.getElementById("goals-content");
+    if (!root) return;
+    if (typeof CMF.computeGoals !== "function") {
+      root.innerHTML = '<div class="empty">营养目标模块未加载。</div>';
+      return;
+    }
+    const stored = CMF.getGoals ? CMF.getGoals() : null;
+    const enabled = !!(stored && stored.enabled);
+    const profile = CMF.sanitizeGoalProfile(stored ? stored.profile || stored : CMF.DEFAULT_GOAL_PROFILE);
+    const goals = CMF.computeGoals(profile);
+    root.innerHTML =
+      '<div class="goal-box">' +
+      '<p class="goal-intro">按身高体重与活动量估算每日热量和三大营养素目标，' +
+      '用于菜单评分与「占目标百分比」对照。数据只保存在本机，不上传。</p>' +
+      '<div class="goal-form">' +
+      goalSelect("goal-sex", "性别", (CMF.GOAL_SEX || []).map((s) => [s.key, s.label]), profile.sex) +
+      goalNumber("goal-age", "年龄", profile.age, 10, 100) +
+      goalNumber("goal-height", "身高 cm", profile.heightCm, 120, 220) +
+      goalNumber("goal-weight", "体重 kg", profile.weightKg, 30, 200) +
+      goalSelect("goal-activity", "活动量", (CMF.GOAL_ACTIVITY || []).map((a) => [a.key, a.label]), profile.activity) +
+      goalSelect("goal-mode", "目标", (CMF.GOAL_MODES || []).map((m) => [m.key, m.label]), profile.mode) +
+      goalNumber("goal-people", "用餐人数", profile.people, 1, 12) +
+      goalSelect("goal-meals", "每日规划餐数", [[1, "1 餐"], [2, "2 餐（午/晚）"], [3, "3 餐"], [4, "4 餐"]], profile.mealsPerDay) +
+      "</div>" +
+      '<div class="goal-actions">' +
+      '<button class="btn btn-primary btn-sm" id="goal-save">保存并启用</button>' +
+      '<button class="btn btn-sm" id="goal-clear">关闭目标</button>' +
+      `<span class="goal-state">当前：${enabled ? "已启用 ✓" : "未启用（按通用参考范围评分）"}</span>` +
+      "</div></div>" +
+      (enabled ? CMF.renderGoalsSummary(goals) : "");
+
+    root.querySelector("#goal-save").onclick = () => {
+      const val = (id) => root.querySelector(id).value;
+      const next = {
+        enabled: true,
+        sex: val("#goal-sex"),
+        age: val("#goal-age"),
+        heightCm: val("#goal-height"),
+        weightKg: val("#goal-weight"),
+        activity: val("#goal-activity"),
+        mode: val("#goal-mode"),
+        people: val("#goal-people"),
+        mealsPerDay: val("#goal-meals"),
+      };
+      CMF.setGoals({ enabled: true, profile: CMF.sanitizeGoalProfile(next) });
+      CMF.toast("营养目标已保存并启用");
+      renderGoals();
+    };
+    root.querySelector("#goal-clear").onclick = () => {
+      if (CMF.clearGoals) CMF.clearGoals();
+      CMF.toast("已关闭个性化营养目标");
+      renderGoals();
+    };
+  }
+
   const ALLERGEN_OPTIONS = ["花生", "牛奶", "鸡蛋", "鱼", "甲壳类", "大豆", "麸质"];
 
   function renderAllergens() {
@@ -389,6 +463,7 @@
     renderHistory();
     renderPrefs();
     renderDiets();
+    renderGoals();
     renderAllergens();
     renderFavorites();
     renderCleanout();

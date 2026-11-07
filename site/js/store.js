@@ -13,6 +13,7 @@
     favorites: "cmf.favorites",
     week: "cmf.week",
     urgent: "cmf.urgent",
+    goals: "cmf.goals",
   };
 
   CMF.KEYS = KEYS;
@@ -96,6 +97,22 @@
     return { tags: [], diets: [], ...safe };
   };
   CMF.setPrefs = (prefs) => writeJSON(KEYS.prefs, prefs);
+
+  /* Personal nutrition goal profile. The math lives in goals.js; storage is
+     kept here so exportData/importData cover it automatically. */
+  CMF.getGoals = () => {
+    const value = readJSON(KEYS.goals, null);
+    return value && typeof value === "object" && !Array.isArray(value) ? value : null;
+  };
+  CMF.setGoals = (goals) => writeJSON(KEYS.goals, goals);
+  CMF.clearGoals = () => {
+    try {
+      localStorage.removeItem(KEYS.goals);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  };
 
   /* Diet preferences live in the same prefs object as tags/allergens. Always
      read-modify-write so toggling one setting never wipes the others. */

@@ -130,6 +130,10 @@
     const kcal = nutrition && nutrition.meals
       ? `<div class="week-kcal">两餐合计约 ${nutrition.kcal} kcal/人 · 蛋白 ${nutrition.protein} g · 碳水 ${nutrition.carbs} g（未计主食与早餐）</div>`
       : "";
+    const goal = nutrition && nutrition.meals && CMF.goalHint
+      ? CMF.goalHint(nutrition, { meals: nutrition.meals })
+      : "";
+    const goalLine = goal ? `<div class="week-goal">${CMF.esc(goal)}</div>` : "";
     let badge = "";
     if (typeof CMF.balanceDay === "function") {
       const b = CMF.balanceDay(state.days, d.index, CMF.data.recipes);
@@ -141,7 +145,7 @@
     return (
       '<div class="week-card">' +
       `<div class="week-day">${LABELS[d.index % 7]} · ${shortDate(dayDate(state.startDate, d.index))}</div>` +
-      mealRow(d, "lunch") + mealRow(d, "dinner") + kcal + badge +
+      mealRow(d, "lunch") + mealRow(d, "dinner") + kcal + goalLine + badge +
       "</div>"
     );
   }
@@ -182,7 +186,10 @@
   function renderBalance(state) {
     if (!summaryRoot || typeof CMF.balanceMenu !== "function") return;
     const summary = CMF.balanceMenu(state.days, CMF.data.recipes);
-    summaryRoot.innerHTML = CMF.renderBalanceSummary(summary);
+    const personal = CMF.activeGoals && CMF.activeGoals()
+      ? '<div class="balance-personal-note">🎯 均衡评分与热量对照按「我的冰箱 → 我的营养目标」计算。</div>'
+      : "";
+    summaryRoot.innerHTML = CMF.renderBalanceSummary(summary) + personal;
     const btn = summaryRoot.querySelector("#btn-optimize");
     if (btn) {
       btn.onclick = () => {
