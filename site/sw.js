@@ -1,6 +1,6 @@
 /* CookMyFridge service worker: offline-first app shell, data caching and a
    virtual /calendar.ics subscription endpoint served from Cache Storage. */
-const CACHE_NAME = "cmf-cache-20261107091038";
+const CACHE_NAME = "cmf-cache-20261107094025";
 const CALENDAR_CACHE = "cmf-calendar-v1";
 const CALENDAR_PATH = "calendar.ics";
 const CORE_ASSETS = [
@@ -24,6 +24,8 @@ const CORE_ASSETS = [
   "js/seasonal.js",
   "js/prices.js",
   "js/journal.js",
+  "js/inventory.js",
+  "js/inventory-ui.js",
   "js/weather.js",
   "js/voice.js",
   "js/foodfacts.js",
@@ -116,8 +118,10 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  const isPageShell = CORE_ASSETS.some((asset) => asset.endsWith(".html") &&
+    new URL(asset, self.location.href).pathname === new URL(request.url).pathname);
   event.respondWith(
-    caches.match(request).then((cached) => {
+    caches.match(request, { ignoreSearch: isPageShell }).then((cached) => {
       if (cached) return cached;
       return fetch(request)
         .then((response) => {
