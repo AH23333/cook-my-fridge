@@ -168,6 +168,168 @@
     if (ev.key === "Enter") addFromText();
   });
 
+  const voiceBtn = document.getElementById("nl-voice");
+  if (voiceBtn) {
+    if (!CMF.voiceSupported || !CMF.voiceSupported()) {
+      voiceBtn.style.display = "none";
+    } else {
+      let handle = null;
+      voiceBtn.onclick = () => {
+        if (handle) {
+          handle.stop();
+          handle = null;
+          voiceBtn.classList.remove("listening");
+          return;
+        }
+        voiceBtn.classList.add("listening");
+        handle = CMF.startVoiceInput({
+          onResult: (text) => {
+            nlInput.value = text;
+            addFromText();
+          },
+          onState: (s) => {
+            if (s === "idle") {
+              voiceBtn.classList.remove("listening");
+              handle = null;
+            }
+          },
+          onError: (code) => {
+            voiceBtn.classList.remove("listening");
+            handle = null;
+            nlFeedback.textContent =
+              code === "not-supported" ? "这个浏览器不支持语音输入，请用键盘输入。"
+              : code === "no-speech" ? "没听清，再点一次麦克风试试。"
+              : "语音输入不可用（可能未授权麦克风），请用键盘输入。";
+          },
+        });
+      };
+    }
+  }
+
+  function renderSeasonalBanner() {
+    const root = document.getElementById("seasonal-banner");
+    if (!root || !CMF.currentSolarTerm) return;
+    const now = new Date();
+    const term = CMF.currentSolarTerm(now);
+    const names = CMF.seasonalNames ? CMF.seasonalNames(now.getMonth() + 1) : [];
+    if (!term) return;
+    const picks = names.slice(0, 8);
+    root.innerHTML =
+      '<div class="seasonal-banner">' +
+      `<span class="seasonal-term">🌿 ${CMF.esc(term.name)}</span>` +
+      '<span class="seasonal-hint">当季食材更新鲜便宜，点一下加入冰箱：</span>' +
+      '<span class="seasonal-chips">' +
+      picks
+        .map(
+          (c) =>
+            `<button class="chip chip-sm${selected.has(c) ? " selected" : ""}" data-season="${CMF.esc(c)}">${CMF.emojiOf(c)} ${CMF.esc(c)}</button>`
+        )
+        .join("") +
+      "</span></div>";
+    root.querySelectorAll("[data-season]").forEach((btn) => {
+      btn.onclick = () => {
+        const c = btn.dataset.season;
+        if (selected.has(c)) selected.delete(c);
+        else selected.add(c);
+        syncFridge();
+        renderWall(searchInput.value);
+        renderCookBar();
+        renderSeasonalBanner();
+      };
+    });
+  }
+
+  const WEATHER_KINDS = [
+    ["hot", "🥵 炎热"], ["mild", "😊 舒适"], ["cool", "🍃 凉爽"],
+    ["cold", "🥶 寒冷"], ["rain", "🌧️ 下雨"], ["snow", "❄️ 下雪"],
+  ];
+
+  function weatherPicksHTML(weather) {
+    const picks = CMF.weatherSuggestions(CMF.data.recipes, weather, 3);
+    if (!picks.length) return '<div class="empty">暂无建议</div>';
+    return (
+      '<div class="weather-picks">' +
+      picks
+        .map(
+          (p) =>
+            `<a class="weather-pick" href="recipe.html?id=${encodeURIComponent(p.recipe.id)}">` +
+            `<strong>${CMF.esc(p.recipe.title)}</strong>` +
+            `<span>${CMF.esc(p.reason)} · ${p.recipe.time_minutes} 分钟</span></a>`
+        )
+        .join("") +
+      "</div>"
+    );
+  }
+
+  function renderWeatherCard() {
+    const root = document.getElementById("weather-card");
+    if (!root || !CMF.classifyWeather) return;
+    const cities = CMF.WEATHER_CITIES || [];
+    const cached = CMF.readWeatherCache ? CMF.readWeatherCache() : null;
+    const fresh = cached && CMF.weatherCacheFresh && CMF.weatherCacheFresh(cached);
+    const cityOptions = cities
+      .map((c) => `<option value="${c.key}">${CMF.esc(c.label)}</option>`)
+      .join("");
+    const kindOptions = WEATHER_KINDS
+      .map(([k, label]) => `<option value="${k}">${label}</option>`)
+      .join("");
+    root.innerHTML =
+      '<div class="weather-card">' +
+      '<div class="weather-head"><strong>🌤️ 今天天气开饭</strong>' +
+      '<span class="weather-src">数据：Open-Meteo（免费）</span></div>' +
+      '<div class="weather-controls">' +
+      `<select id="weather-city" class="filter-select">${cityOptions}</select>` +
+      '<button class="btn btn-sm" id="weather-fetch">获取天气</button>' +
+      '<span class="weather-or">或手动选</span>' +
+      `<select id="weather-kind" class="filter-select">${kindOptions}</select>` +
+      "</div>" +
+      '<div id="weather-status" class="weather-status"></div>' +
+      '<div id="weather-result"></div>' +
+      "</div>";
+
+    const status = root.querySelector("#weather-status");
+    const result = root.querySelector("#weather-result");
+
+    function showWeather(weather, note) {
+      status.innerHTML =
+        `${weather.emoji} <strong>${CMF.esc(weather.label)}</strong>` +
+        (note ? ` <span class="weather-note">${CMF.esc(note)}</span>` : "") +
+        `<span class="weather-advice">${CMF.esc(weather.advice)}</span>`;
+      result.innerHTML = weatherPicksHTML(weather);
+    }
+
+    if (fresh) {
+      const w = CMF.classifyWeather(cached.tempC, cached.code);
+      showWeather(w, `${cached.city || ""} ${cached.tempC}°C · 缓存`);
+    } else {
+      status.textContent = "选城市点「获取天气」，或直接手动选天气（离线可用）。";
+    }
+
+    root.querySelector("#weather-kind").onchange = (ev) => {
+      const kind = ev.target.value;
+      const temps = { hot: 32, mild: 22, cool: 12, cold: 0, rain: 18, snow: -2 };
+      const codes = { rain: 63, snow: 73 };
+      showWeather(CMF.classifyWeather(temps[kind], codes[kind] || 0), "手动选择");
+    };
+
+    root.querySelector("#weather-fetch").onclick = async () => {
+      const key = root.querySelector("#weather-city").value;
+      const city = cities.find((c) => c.key === key) || cities[0];
+      if (!city || !CMF.fetchCurrentWeather) return;
+      status.textContent = "正在获取 " + city.label + " 天气…";
+      try {
+        const data = await CMF.fetchCurrentWeather({ lat: city.lat, lon: city.lon });
+        if (CMF.writeWeatherCache) {
+          CMF.writeWeatherCache({ ...data, city: city.label });
+        }
+        showWeather(CMF.classifyWeather(data.tempC, data.code), `${city.label} ${data.tempC}°C`);
+      } catch (e) {
+        status.innerHTML =
+          '<span class="weather-note">获取失败（' + CMF.esc(e.message) + '），可手动选天气。</span>';
+      }
+    };
+  }
+
   document.getElementById("btn-random").onclick = randomBox;
   document.getElementById("btn-surprise").onclick = () => {
     const recipes = CMF.data.recipes;
@@ -182,6 +344,8 @@
   function start() {
     renderWall("");
     renderCookBar();
+    renderSeasonalBanner();
+    renderWeatherCard();
   }
 
   CMF.boots("index.html", start);

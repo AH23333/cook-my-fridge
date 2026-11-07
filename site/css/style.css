@@ -1007,6 +1007,89 @@ footer.site-footer {
 .sync-qr-row .sync-note { flex: 1 1 220px; margin: 0; }
 .sync-stats { font-size: 12px; color: var(--ink-soft); margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 10px; }
 
+/* --- Stage 27: seasonal / weather / voice --- */
+.chip-sm { padding: 4px 9px; font-size: 12.5px; }
+.seasonal-banner { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; border: 1px solid var(--line); border-left: 4px solid var(--green); border-radius: var(--radius-sm); background: var(--surface); padding: 10px 14px; margin-bottom: 14px; }
+.seasonal-term { font-weight: 700; color: var(--green); }
+.seasonal-hint { font-size: 12.5px; color: var(--ink-soft); }
+.seasonal-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.seasonal-badge { display: inline-block; margin-left: 8px; padding: 2px 8px; font-size: 11.5px; font-weight: 600; color: var(--green); background: rgba(79, 157, 91, .12); border-radius: 999px; vertical-align: middle; }
+.weather-card { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 12px 16px; margin-bottom: 14px; }
+.weather-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.weather-src { font-size: 11px; color: var(--ink-soft); }
+.weather-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 10px 0; }
+.weather-or { font-size: 12px; color: var(--ink-soft); }
+.weather-status { font-size: 13px; color: var(--ink-soft); margin: 6px 0; }
+.weather-note { color: var(--ink-soft); font-size: 12px; }
+.weather-advice { display: block; margin-top: 4px; color: var(--ink); }
+.weather-picks { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; margin-top: 8px; }
+.weather-pick { display: flex; flex-direction: column; gap: 3px; border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 8px 10px; text-decoration: none; color: var(--ink); background: var(--surface-2); }
+.weather-pick:hover { border-color: var(--accent); }
+.weather-pick span { font-size: 11.5px; color: var(--ink-soft); }
+#nl-voice.listening { background: var(--brand); color: #fff; border-color: var(--brand); animation: pulse 1.2s infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .55; } }
+
+/* --- Stage 27: recipe cost & journal --- */
+.cost-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin: 10px 0; padding: 8px 12px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-2); font-size: 13.5px; }
+.journal-panel { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 14px 16px; margin: 16px 0; }
+.journal-panel h3 { margin: 0 0 8px; }
+.journal-count { font-size: 13px; color: var(--ink-soft); margin: 0 0 10px; }
+.journal-rate { display: flex; align-items: center; gap: 10px; font-size: 13px; margin-bottom: 8px; }
+.journal-stars { display: inline-flex; gap: 2px; }
+.star-btn { background: none; border: none; cursor: pointer; font-size: 22px; line-height: 1; color: var(--line); padding: 0 2px; }
+.star-btn.on { color: var(--accent); }
+.journal-note { width: 100%; box-sizing: border-box; font: 13px/1.5 inherit; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-2); padding: 8px 10px; resize: vertical; margin-bottom: 10px; }
+.journal-hint { display: block; margin-top: 8px; font-size: 11.5px; color: var(--ink-soft); }
+
+/* --- Stage 27: stats achievements / trend / savings --- */
+.savings-card { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; border: 1px solid var(--line); border-left: 4px solid var(--green); border-radius: var(--radius-sm); background: var(--surface); padding: 10px 14px; margin: 12px 0; font-size: 14px; }
+.savings-card span { font-size: 11.5px; color: var(--ink-soft); }
+.badge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; margin: 10px 0; }
+.badge-card { display: flex; flex-direction: column; align-items: center; gap: 4px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 12px 8px; text-align: center; opacity: .7; }
+.badge-card.earned { opacity: 1; border-color: var(--accent); background: rgba(244, 167, 61, .1); }
+.badge-emoji { font-size: 26px; }
+.badge-label { font-size: 12.5px; font-weight: 600; }
+.badge-progress { font-size: 11px; color: var(--ink-soft); }
+.badge-track { width: 100%; height: 5px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.badge-fill { display: block; height: 100%; background: var(--accent); }
+.trend-grid { display: flex; align-items: flex-end; gap: 8px; height: 120px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 12px; margin: 10px 0; }
+.trend-col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; height: 100%; }
+.trend-bar { width: 70%; min-height: 4px; border-radius: 4px 4px 0 0; background: var(--brand); }
+.trend-count { font-size: 11px; color: var(--ink-soft); }
+.trend-label { font-size: 11px; color: var(--ink-soft); }
+
+/* --- Stage 27: Open Food Facts lookup --- */
+.off-box { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 14px 16px; }
+.off-intro { font-size: 12px; color: var(--ink-soft); line-height: 1.6; margin: 0 0 12px; }
+.off-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.off-row input { flex: 1 1 200px; font: 13px/1.5 inherit; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-2); padding: 8px 10px; }
+.off-recent { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 12px; color: var(--ink-soft); margin-bottom: 10px; }
+.off-status { font-size: 13px; color: var(--ink-soft); margin: 8px 0; }
+.off-product { display: flex; gap: 12px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-2); padding: 10px 12px; margin-bottom: 8px; }
+.off-img { width: 64px; height: 64px; object-fit: contain; border-radius: var(--radius-sm); background: #fff; flex: 0 0 auto; }
+.off-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.off-name { font-weight: 600; color: var(--ink); text-decoration: none; }
+.off-name:hover { color: var(--brand); }
+.off-brands, .off-barcode { font-size: 11.5px; color: var(--ink-soft); }
+.off-nut { font-size: 12px; color: var(--ink); }
+.nutriscore { display: inline-block; width: fit-content; padding: 1px 7px; border-radius: 999px; font-size: 11px; font-weight: 700; color: #fff; }
+.ns-a { background: #038141; } .ns-b { background: #85bb2f; } .ns-c { background: #fecb02; color: #5a4a00; } .ns-d { background: #ee8100; } .ns-e { background: #e63e11; }
+
+/* --- Stage 27: kitchen tools --- */
+.tools-box { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 14px 16px; }
+.tools-intro { font-size: 12px; color: var(--ink-soft); line-height: 1.6; margin: 0 0 12px; }
+.tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.tool-card { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-2); padding: 12px 14px; }
+.tool-card h4 { margin: 0 0 10px; }
+.tool-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.tool-row input { width: 80px; font: 13px/1.5 inherit; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 6px 8px; }
+.tool-out { margin-top: 10px; font-size: 13.5px; color: var(--ink); }
+.tool-sub-title { margin: 16px 0 8px; }
+.subs-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.subs-table th, .subs-table td { border: 1px solid var(--line); padding: 6px 9px; text-align: left; vertical-align: top; }
+.subs-table th { background: var(--surface-2); }
+.subs-table .sub-note { color: var(--ink-soft); }
+
 @media print {
   .modal-overlay {
     display: none !important;

@@ -165,12 +165,22 @@
           `<a class="ing-link" href="recipe.html?id=${encodeURIComponent(r.id)}">${CMF.esc(r.title)}</a>`
       );
 
+    const storage = CMF.storageFor ? CMF.storageFor(name) : null;
+    const storageHtml = storage
+      ? CMF.esc(storage.method) +
+        (storage.fridgeDays ? ` · 冷藏约 ${storage.fridgeDays} 天` : "") +
+        (storage.freezerDays ? ` · 冷冻约 ${storage.freezerDays} 天` : "")
+      : "";
+    const month = new Date().getMonth() + 1;
+    const inSeason = CMF.isInSeason ? CMF.isInSeason(name, month) : false;
+    const seasonalBadge = inSeason ? '<span class="seasonal-badge">🌿 本月当季</span>' : "";
+
     const overlay = document.createElement("div");
     overlay.className = "modal-overlay";
     overlay.innerHTML =
       '<div class="modal" role="dialog" aria-modal="true" aria-label="' + CMF.esc(name) + '">' +
       '<button class="modal-close" aria-label="关闭">×</button>' +
-      `<h3><span class="modal-emoji">${entry.emoji}</span>${CMF.esc(name)}</h3>` +
+      `<h3><span class="modal-emoji">${entry.emoji}</span>${CMF.esc(name)}${seasonalBadge}</h3>` +
       `<div class="modal-row"><span>分类</span>${CMF.esc(entry.category)}</div>` +
       '<div class="modal-row"><span>同义词</span>' +
       (entry.synonyms.length ? CMF.esc(entry.synonyms.join("、")) : "无") +
@@ -178,6 +188,7 @@
       '<div class="modal-row"><span>过敏原</span>' +
       (entry.allergens.length ? CMF.esc(entry.allergens.join("、")) : "无") +
       "</div>" +
+      (storageHtml ? '<div class="modal-row"><span>储存</span>' + storageHtml + "</div>" : "") +
       '<div class="modal-row subs"><span>常见替代</span>' + subsHtml + "</div>" +
       '<div class="modal-row pairing"><span>经典搭配</span>' + pairingHtml + "</div>" +
       '<div class="modal-recipes"><strong>用到它的菜谱（' + usedIn.length + "）</strong>" +

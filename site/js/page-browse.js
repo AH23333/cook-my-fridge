@@ -14,8 +14,17 @@
     const diets = criteria.diets || [];
     const maxTime = criteria.maxTime;
     const maxCalories = criteria.maxCalories;
+    const seasonal = !!criteria.seasonal;
+    const month = new Date().getMonth() + 1;
     return recipes.filter((r) => {
       if (maxTime != null && r.time_minutes > maxTime) return false;
+      if (seasonal) {
+        if (typeof CMF.isInSeason !== "function") return false;
+        const hit = r.ingredients.some(
+          (i) => !i.optional && !CMF.isStaple(i.canonical) && CMF.isInSeason(i.canonical, month)
+        );
+        if (!hit) return false;
+      }
       if (diets.length) {
         if (typeof CMF.matchesDiets !== "function") return false;
         if (!CMF.matchesDiets(r, diets)) return false;
@@ -49,7 +58,7 @@
   function init() {
     const state = {
       text: "", methods: [], tags: [], nutrition: [], diets: [],
-      maxTime: null, maxCalories: null,
+      maxTime: null, maxCalories: null, seasonal: false,
     };
     const grid = document.getElementById("browse-grid");
     const count = document.getElementById("browse-count");
@@ -95,6 +104,13 @@
           )
           .join("");
       }
+      const seasonBox = document.getElementById("filter-seasonal");
+      if (seasonBox) {
+        const term = CMF.currentSolarTerm ? CMF.currentSolarTerm(new Date()) : null;
+        const label = term ? "🌿 本月当季（" + term.name + "）" : "🌿 本月当季";
+        seasonBox.innerHTML =
+          `<button class="filter-chip${state.seasonal ? " on" : ""}" data-kind="seasonal" data-value="1" title="只看含本月当季食材的菜">${CMF.esc(label)}</button>`;
+      }
     }
 
     function renderGrid() {
@@ -134,6 +150,7 @@
         if (chip.dataset.kind === "method") toggle(state.methods, value);
         else if (chip.dataset.kind === "nutrition") toggle(state.nutrition, value);
         else if (chip.dataset.kind === "diet") toggle(state.diets, value);
+        else if (chip.dataset.kind === "seasonal") state.seasonal = !state.seasonal;
         else toggle(state.tags, value);
         chip.classList.toggle("on");
         renderGrid();

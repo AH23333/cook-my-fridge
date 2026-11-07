@@ -15,6 +15,7 @@
     urgent: "cmf.urgent",
     goals: "cmf.goals",
     shareStats: "cmf.shareStats",
+    journal: "cmf.journal",
   };
 
   CMF.KEYS = KEYS;
@@ -130,6 +131,11 @@
     CMF.setDiets([...set]);
     return set.has(key);
   };
+
+  /* Cooked-it journal; journal.js owns the shape, storage stays here so
+     exportData/importData cover it automatically. */
+  CMF.getJournal = () => readJSON(KEYS.journal, { cooked: [], ratings: {}, notes: {} });
+  CMF.setJournal = (journal) => writeJSON(KEYS.journal, journal);
 
   CMF.getFavorites = () => readJSON(KEYS.favorites, []);
   CMF.setFavorites = (list) => writeJSON(KEYS.favorites, list);
