@@ -69,6 +69,12 @@
       const have = CMF.recipeNutrition(recipe);
       if (!filters.nutrition.some((f) => have.includes(f))) return false;
     }
+    if (filters.diets && filters.diets.length) {
+      // Fail closed when the diet rules are unavailable: silently showing an
+      // unsafe recipe would be worse than showing an empty result set.
+      if (typeof CMF.matchesDiets !== "function") return false;
+      if (!CMF.matchesDiets(recipe, filters.diets)) return false;
+    }
     return true;
   }
 

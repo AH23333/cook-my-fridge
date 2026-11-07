@@ -63,7 +63,8 @@
     const isFav = new Set(CMF.getFavorites()).has(recipe.id);
     root.innerHTML =
       `<article class="detail"><h1>${CMF.esc(recipe.title)} ` +
-      `<button class="btn btn-sm detail-fav" style="vertical-align:middle">${isFav ? "♥ 已收藏" : "♡ 收藏"}</button></h1>` +
+      `<button class="btn btn-sm detail-fav" style="vertical-align:middle">${isFav ? "♥ 已收藏" : "♡ 收藏"}</button> ` +
+      '<button class="btn btn-sm" id="btn-share-card" style="vertical-align:middle">🖼️ 生成分享图</button></h1>' +
       '<div class="meta" style="display:flex;gap:14px;flex-wrap:wrap;color:var(--ink-soft);font-size:13.5px">' +
       `<span>⏱ ${recipe.time_minutes} 分钟</span><span>🎯 ${CMF.esc(recipe.difficulty)}</span>` +
       `<span>🍳 ${CMF.esc(recipe.methods.join("、"))}</span><span>🍽️ ${CMF.esc(recipe.cookware.join("、"))}</span>` +
@@ -76,6 +77,22 @@
             nf.map((f) => `<span class="nutrition-badge">${CMF.esc(f)}</span>`).join("") +
             '<span class="nutrition-note">定性标签，非精确营养计算</span></div>'
           : "";
+      })() +
+      (CMF.renderNutritionCard ? CMF.renderNutritionCard(recipe, factor) : "") +
+      (() => {
+        if (!CMF.compatibleDiets) return "";
+        const keys = CMF.compatibleDiets(recipe);
+        if (!keys.length) return "";
+        return (
+          '<div class="diet-badges"><span class="nutrition-label">🌱 适配饮食</span>' +
+          keys
+            .map((k) => {
+              const d = (CMF.DIETS || []).find((x) => x.key === k) || { label: k, emoji: "" };
+              return `<span class="diet-badge">${d.emoji} ${CMF.esc(d.label)}</span>`;
+            })
+            .join("") +
+          '<span class="nutrition-note">保守筛查，请核对配料标签</span></div>'
+        );
       })() +
       (recipe.is_ai_generated
         ? '<div class="notice ai">AI 创意菜，未经过人工实测。请确保食材新鲜、彻底加热，注意过敏原。</div>'
@@ -123,6 +140,12 @@
     favBtn.onclick = () => {
       CMF.toggleFavorite(recipe.id);
       render(recipe);
+    };
+
+    const shareBtn = root.querySelector("#btn-share-card");
+    shareBtn.onclick = () => {
+      if (typeof CMF.openShareCard === "function") CMF.openShareCard(recipe);
+      else CMF.toast("分享图模块未加载");
     };
 
     root.querySelectorAll(".factor-btn").forEach((btn) => {

@@ -11,9 +11,21 @@
     const methods = criteria.methods || [];
     const tags = criteria.tags || [];
     const nutrition = criteria.nutrition || [];
+    const diets = criteria.diets || [];
     const maxTime = criteria.maxTime;
+    const maxCalories = criteria.maxCalories;
     return recipes.filter((r) => {
       if (maxTime != null && r.time_minutes > maxTime) return false;
+      if (diets.length) {
+        if (typeof CMF.matchesDiets !== "function") return false;
+        if (!CMF.matchesDiets(r, diets)) return false;
+      }
+      if (maxCalories != null) {
+        const est = typeof CMF.estimateNutrition === "function"
+          ? CMF.estimateNutrition(r)
+          : null;
+        if (!est || est.perServing.kcal > maxCalories) return false;
+      }
       if (methods.length && !methods.every((m) => r.methods.includes(m))) {
         return false;
       }
@@ -35,7 +47,10 @@
   };
 
   function init() {
-    const state = { text: "", methods: [], tags: [], nutrition: [], maxTime: null };
+    const state = {
+      text: "", methods: [], tags: [], nutrition: [], diets: [],
+      maxTime: null, maxCalories: null,
+    };
     const grid = document.getElementById("browse-grid");
     const count = document.getElementById("browse-count");
     const vocab = CMF.data.vocab;
@@ -71,6 +86,15 @@
           )
           .join("");
       }
+      const dietBox = document.getElementById("filter-diets");
+      if (dietBox) {
+        dietBox.innerHTML = (CMF.DIETS || [])
+          .map(
+            (d) =>
+              `<button class="filter-chip${state.diets.includes(d.key) ? " on" : ""}" data-kind="diet" data-value="${d.key}" title="${CMF.esc(d.desc)}">${d.emoji} ${CMF.esc(d.label)}</button>`
+          )
+          .join("");
+      }
     }
 
     function renderGrid() {
@@ -92,6 +116,15 @@
       renderGrid();
     });
 
+    const calorieSelect = document.getElementById("calorie-select");
+    if (calorieSelect) {
+      calorieSelect.addEventListener("change", (ev) => {
+        const v = ev.target.value;
+        state.maxCalories = v === "all" ? null : Number(v);
+        renderGrid();
+      });
+    }
+
     document
       .getElementById("filter-bar")
       .addEventListener("click", (ev) => {
@@ -100,6 +133,7 @@
         const value = chip.dataset.value;
         if (chip.dataset.kind === "method") toggle(state.methods, value);
         else if (chip.dataset.kind === "nutrition") toggle(state.nutrition, value);
+        else if (chip.dataset.kind === "diet") toggle(state.diets, value);
         else toggle(state.tags, value);
         chip.classList.toggle("on");
         renderGrid();

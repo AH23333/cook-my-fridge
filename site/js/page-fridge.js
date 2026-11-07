@@ -125,8 +125,39 @@
         const tag = chip.dataset.tag;
         if (current.has(tag)) current.delete(tag);
         else current.add(tag);
-        CMF.setPrefs({ tags: [...current] });
+        // Read-modify-write: overwriting prefs here used to erase allergens.
+        const next = CMF.getPrefs();
+        next.tags = [...current];
+        CMF.setPrefs(next);
         renderPrefs();
+      };
+    });
+  }
+
+  function renderDiets() {
+    const root = document.getElementById("diets-content");
+    if (!root) return;
+    const options = CMF.DIETS || [];
+    if (!options.length) {
+      root.innerHTML = '<div class="empty">饮食偏好模块未加载。</div>';
+      return;
+    }
+    const active = new Set(CMF.getDiets());
+    root.innerHTML =
+      '<div class="chip-grid">' +
+      options
+        .map(
+          (d) =>
+            `<button type="button" class="chip diet-chip${active.has(d.key) ? " selected" : ""}" data-diet="${d.key}" title="${CMF.esc(d.desc)}" style="justify-content:center">` +
+            `${d.emoji} ${CMF.esc(d.label)}</button>`
+        )
+        .join("") +
+      "</div>" +
+      '<p class="diet-note">筛选规则为保守筛查，结果页、菜谱浏览与一周菜单会同步生效；仍请核对食品包装标签，不能替代专业医疗建议。</p>';
+    root.querySelectorAll(".diet-chip").forEach((chip) => {
+      chip.onclick = () => {
+        CMF.toggleDiet(chip.dataset.diet);
+        renderDiets();
       };
     });
   }
@@ -357,6 +388,7 @@
     renderFridge();
     renderHistory();
     renderPrefs();
+    renderDiets();
     renderAllergens();
     renderFavorites();
     renderCleanout();

@@ -379,8 +379,8 @@ a:hover { text-decoration: underline; }
 }
 .backup-box p { margin: 0 0 10px; font-size: 13px; color: var(--ink-soft); }
 .planner-intro { color: var(--ink-soft); font-size: 13.5px; margin: 4px 0 12px; }
-.planner-actions { margin-bottom: 14px; }
-.week-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.planner-actions { margin-bottom: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+.week-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
 .week-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -391,8 +391,19 @@ a:hover { text-decoration: underline; }
   gap: 8px;
 }
 .week-day { font-size: 12.5px; font-weight: 700; color: var(--brand); }
-.week-title { font-size: 15px; font-weight: 600; }
-.week-reroll { align-self: flex-start; }
+.week-meal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-top: 1px dashed var(--line);
+  padding-top: 7px;
+}
+.week-meal-label { font-size: 11.5px; color: var(--ink-soft); white-space: nowrap; }
+.week-title { font-size: 14.5px; font-weight: 600; flex: 1 1 120px; min-width: 0; }
+.week-title.empty-meal { color: var(--ink-soft); font-weight: 400; }
+.week-kcal { font-size: 11.5px; color: var(--ink-soft); background: var(--surface-2); border-radius: var(--radius-sm); padding: 4px 8px; }
+.week-reroll { flex: 0 0 auto; }
 .week-shop-list { margin: 0; display: flex; flex-direction: column; gap: 7px; }
 .shop-meta { color: var(--ink-soft); font-size: 12px; margin-left: 4px; }
 .cleanout-summary {
@@ -821,6 +832,75 @@ footer.site-footer {
   font-size: 13px;
   text-decoration: none;
 }
+/* --- Quantitative nutrition estimate --- */
+.nutrition-estimate {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #fffdf9, #fff8ef);
+  padding: 12px 14px;
+  margin: 4px 0 14px;
+}
+.nut-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.nut-servings { font-size: 11.5px; color: var(--ink-soft); }
+.nut-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 8px;
+  margin: 10px 0 8px;
+}
+.nut-stat {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  padding: 7px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.nut-stat-label { font-size: 11.5px; color: var(--ink-soft); }
+.nut-stat strong { font-size: 20px; line-height: 1.25; color: var(--ink); }
+.nut-stat strong small { font-size: 11px; font-weight: 600; color: var(--ink-soft); margin-left: 2px; }
+.nut-stat.kcal strong { color: var(--brand-dark); }
+.nut-stat.protein strong { color: var(--green); }
+.nut-stat.fat strong { color: var(--accent); }
+.nut-stat.carbs strong { color: var(--blue); }
+.nut-energy { display: flex; height: 7px; border-radius: 999px; overflow: hidden; background: var(--surface-2); }
+.nut-energy-seg { display: block; height: 100%; }
+.nut-energy-seg.protein { background: #4f9d5b; }
+.nut-energy-seg.fat { background: #f4a73d; }
+.nut-energy-seg.carbs { background: #3f86a8; }
+.nut-legend { font-size: 11.5px; color: var(--ink-soft); margin-top: 5px; }
+.nut-note { font-size: 11px; color: var(--ink-soft); margin-top: 8px; line-height: 1.5; }
+
+/* --- Diet preferences --- */
+.diet-chip { cursor: pointer; font: inherit; }
+.diet-note { font-size: 11.5px; color: var(--ink-soft); margin: 9px 0 0; line-height: 1.55; }
+.diet-badges { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin: 0 0 12px; }
+.diet-badge {
+  background: #edf6ee;
+  border: 1px solid #cbe3cf;
+  color: #3f7a39;
+  border-radius: 999px;
+  padding: 3px 11px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+/* --- Share card preview --- */
+.share-modal { max-width: 420px; text-align: center; }
+.share-modal h3 { margin-bottom: 10px; }
+.share-preview {
+  display: block;
+  width: 100%;
+  max-height: 62vh;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+}
+.share-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 12px; }
+.share-note { font-size: 11.5px; color: var(--ink-soft); margin: 10px 0 0; }
+
 @media print {
   .modal-overlay {
     display: none !important;

@@ -12,10 +12,13 @@
 <body>
   <main class="container">
     <h2 class="section-title">🗓️ 一周菜单</h2>
-    <p class="planner-intro">根据你的冰箱、口味和过敏原，自动安排 7 天不重样的菜单，优先用现有食材。</p>
+    <p class="planner-intro">根据冰箱、口味、过敏原和饮食偏好，自动安排 7 天午餐 + 晚餐共 14 道不重样的菜，优先用现有食材。每日热量为两道菜的每人份估算之和（未计主食、早餐与烹饪损耗），仅作搭配参考，不替代专业营养建议。</p>
     <div class="planner-actions">
       <button class="btn btn-primary btn-sm" id="btn-shuffle">重新生成整周</button>
+      <button class="btn btn-sm" id="btn-export-ics">📅 导出日历（.ics）</button>
+      <button class="btn btn-sm" id="btn-copy-week">📋 复制整周菜单</button>
     </div>
+    <div id="week-diet-note"></div>
     <div id="week-root"></div>
     <div id="shop-root"></div>
     <div class="page-spacer"></div>
@@ -24,8 +27,11 @@
   <script src="js/store.js"></script>
   <script src="js/catalog.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/nutrition.js"></script>
+  <script src="js/diets.js"></script>
   <script src="js/planner.js"></script>
   <script src="js/pairings.js"></script>
+  <script src="js/share.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/page-planner.js"></script>
 </body>
