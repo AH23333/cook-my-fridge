@@ -117,26 +117,37 @@ def build_js_bundle() -> int:
 
 def _rewrite_html_bundles() -> int:
     """Point each deployed page at bundle.js + its page script (25 -> 7 reqs
-    on the first screen; measured slow-3G waterfall: 20 script requests)."""
+    on the first screen; measured slow-3G waterfall: 20 script requests).
+
+    The bundle tag must take the position of the FIRST removed module script:
+    inserting it before </body> instead leaves inline boots() callers (e.g.
+    about.html) running against an undefined window.CMF."""
     rewritten = 0
     for html in SITE_DIR.glob("*.html"):
         text = html.read_text(encoding="utf-8")
         lines = text.splitlines(keepends=True)
+        first_removed = next(
+            (
+                i
+                for i, l in enumerate(lines)
+                if '<script src="js/' in l and "js/page-" not in l
+            ),
+            None,
+        )
+        if first_removed is None:
+            continue
+        first_page = next(
+            (i for i, l in enumerate(lines) if '<script src="js/page-' in l),
+            len(lines),
+        )
         kept = [l for l in lines if '<script src="js/' not in l or "js/page-" in l]
-        if len(kept) != len(lines):
-            for i, line in enumerate(kept):
-                if '<script src="js/page-' in line:
-                    kept.insert(i, '  <script src="js/bundle.js"></script>\n')
-                    break
-            else:
-                for i, line in enumerate(kept):
-                    if "</body>" in line:
-                        kept.insert(i, '  <script src="js/bundle.js"></script>\n')
-                        break
-            _retry(lambda html=html, kept=kept: html.write_text(
-                "".join(kept), encoding="utf-8", newline="\n"
-            ))
-            rewritten += 1
+        kept.insert(
+            min(first_removed, first_page), '  <script src="js/bundle.js"></script>\n'
+        )
+        _retry(lambda html=html, kept=kept: html.write_text(
+            "".join(kept), encoding="utf-8", newline="\n"
+        ))
+        rewritten += 1
     return rewritten
 
 
