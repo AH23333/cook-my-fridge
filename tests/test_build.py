@@ -3,6 +3,8 @@ from pathlib import Path
 
 import cookmyfridge.build as build
 
+ROOT = Path(__file__).resolve().parents[1]
+
 
 def test_build_site(tmp_path, monkeypatch):
     fake_site = tmp_path / "site"
@@ -45,3 +47,31 @@ def test_export_catalog_includes_staples(tmp_path, monkeypatch):
     payload = build.export_catalog()
     assert "盐" in payload["pantry_staples"]
     assert payload["substitutions"]
+    # Iterating an unordered set used to reshuffle the generated JSON on every
+    # build, producing noisy diffs with no content change.
+    assert list(payload["substitutions"]) == sorted(payload["substitutions"])
+
+
+def test_service_worker_precaches_every_script():
+    """Offline-first install must include JS, not just HTML/CSS/data."""
+    sw = (ROOT / "web" / "sw.js").read_text(encoding="utf-8")
+    scripts = sorted(
+        p.relative_to(ROOT / "web").as_posix()
+        for p in (ROOT / "web" / "js").glob("*.js")
+    )
+    assert len(scripts) >= 18
+    for script in scripts:
+        assert f'"{script}"' in sw, f"missing from SW precache: {script}"
+
+
+def test_retry_recovers_from_transient_oserror():
+    calls = []
+
+    def flaky():
+        calls.append(1)
+        if len(calls) < 3:
+            raise OSError("file briefly held by another process")
+        return "ok"
+
+    assert build._retry(flaky) == "ok"
+    assert len(calls) == 3
