@@ -61,6 +61,7 @@ def test_new_ui_controls_wired():
     page = (WEB / "js" / "page-planner.js").read_text(encoding="utf-8")
     assert page.count("btn-export-ics") >= 1
     assert "btn-optimize" in page and "publishCalendar" in page
+    assert "weeklyShopping" in page and "btn-shop-csv" in page
 
     fridge = (WEB / "fridge.html").read_text(encoding="utf-8")
     assert 'id="diets-content"' in fridge
