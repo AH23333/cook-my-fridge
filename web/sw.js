@@ -14,6 +14,8 @@ const CORE_ASSETS = [
   "js/catalog.js",
   "js/search.js",
   "js/nutrition.js",
+  "js/diets.js",
+  "js/share.js",
   "js/nlparse.js",
   "js/cleanout.js",
   "js/planner.js",

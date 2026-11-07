@@ -15,8 +15,14 @@
     const methods = methodSel.value ? [CMF.normalizeMethod(methodSel.value)] : [];
     const maxTime = timeSel.value ? Number(timeSel.value) : null;
     const difficulty = diffSel.value ? [diffSel.value] : [];
-    const tags = CMF.getPrefs().tags || [];
-    return { methods, maxTime, difficulty, tags };
+    const prefs = CMF.getPrefs();
+    return {
+      methods,
+      maxTime,
+      difficulty,
+      tags: prefs.tags || [],
+      diets: prefs.diets || [],
+    };
   }
 
   function bucketNode(badgeClass, badge, title, matches, wildcardPage) {
@@ -140,10 +146,16 @@
       summary.innerHTML = '<div class="empty">还没有选择食材，先去 <a href="index.html">首页</a> 点几样。</div>';
       return;
     }
+    const diets = CMF.getDiets();
     summary.innerHTML =
       '<div class="notice info">冰箱里有：' +
       selected.map((c) => `${CMF.emojiOf(c)} ${CMF.esc(c)}`).join("、") +
-      "</div>";
+      "</div>" +
+      (diets.length
+        ? '<div class="notice safe">🌱 已启用饮食偏好：' +
+          diets.map((k) => CMF.esc(CMF.dietLabel ? CMF.dietLabel(k) : k)).join("、") +
+          '（在「我的冰箱」页修改）</div>'
+        : "");
 
     methodSel.innerHTML =
       '<option value="">全部烹饪方式</option>' +

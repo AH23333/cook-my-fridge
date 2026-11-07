@@ -90,8 +90,28 @@
   CMF.getFeedback = () => readJSON(KEYS.feedback, {});
   CMF.setFeedback = (map) => writeJSON(KEYS.feedback, map);
 
-  CMF.getPrefs = () => readJSON(KEYS.prefs, { tags: [] });
+  CMF.getPrefs = () => {
+    const value = readJSON(KEYS.prefs, {});
+    const safe = value && typeof value === "object" && !Array.isArray(value) ? value : {};
+    return { tags: [], diets: [], ...safe };
+  };
   CMF.setPrefs = (prefs) => writeJSON(KEYS.prefs, prefs);
+
+  /* Diet preferences live in the same prefs object as tags/allergens. Always
+     read-modify-write so toggling one setting never wipes the others. */
+  CMF.getDiets = () => CMF.getPrefs().diets || [];
+  CMF.setDiets = (diets) => {
+    const prefs = CMF.getPrefs();
+    prefs.diets = [...new Set(diets)];
+    return CMF.setPrefs(prefs);
+  };
+  CMF.toggleDiet = (key) => {
+    const set = new Set(CMF.getDiets());
+    if (set.has(key)) set.delete(key);
+    else set.add(key);
+    CMF.setDiets([...set]);
+    return set.has(key);
+  };
 
   CMF.getFavorites = () => readJSON(KEYS.favorites, []);
   CMF.setFavorites = (list) => writeJSON(KEYS.favorites, list);
