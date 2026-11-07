@@ -27,6 +27,7 @@ const CORE_ASSETS = [
   "js/planner.js",
   "js/stats.js",
   "js/pairings.js",
+  "js/sync.js",
   "js/ui.js",
   "js/page-home.js",
   "js/page-result.js",

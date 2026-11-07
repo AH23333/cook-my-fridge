@@ -426,6 +426,131 @@
     };
   }
 
+  function renderSync() {
+    const root = document.getElementById("sync-content");
+    if (!root) return;
+    if (!CMF.syncPayload || !CMF.syncEncode) {
+      root.innerHTML = '<div class="empty">同步模块未加载。</div>';
+      return;
+    }
+    const stats = CMF.getShareStats ? CMF.getShareStats() : { total: 0, byKind: {} };
+    const kinds = Object.entries(stats.byKind || {})
+      .sort((a, b) => b[1] - a[1]).slice(0, 3)
+      .map(([kind, count]) => `${CMF.esc(kind)} ${count} 次`).join(" · ") || "暂无";
+    root.innerHTML =
+      '<div class="sync-box">' +
+      '<p class="sync-intro">把冰箱、偏好、收藏、菜单和营养目标打包成同步码或文件，' +
+      '在另一台设备粘贴 / 扫码 / 导入即可恢复。全部在本机完成，不需要账号与服务器。</p>' +
+      '<div class="sync-actions">' +
+      '<button class="btn btn-primary btn-sm" id="sync-generate">🔗 生成同步码与二维码</button>' +
+      '<button class="btn btn-sm" id="sync-download">⬇️ 下载同步文件</button>' +
+      '<label class="btn btn-sm" style="cursor:pointer">📂 导入同步文件' +
+      '<input type="file" id="sync-file" accept="application/json,.json" style="display:none"></label>' +
+      "</div>" +
+      '<div id="sync-code-area"></div>' +
+      '<div class="sync-import">' +
+      '<label class="sync-field"><span>从同步码导入</span>' +
+      '<textarea id="sync-input" rows="2" placeholder="粘贴 S1. 开头的同步码"></textarea></label>' +
+      '<div class="sync-import-actions">' +
+      '<select id="sync-mode"><option value="merge">合并（保留本机数据）</option>' +
+      '<option value="replace">覆盖本机同名数据</option></select>' +
+      '<button class="btn btn-sm" id="sync-apply">导入</button></div></div>' +
+      `<div class="sync-stats">📊 本地分享统计：共 ${stats.total} 次 · ${kinds}` +
+      `${stats.lastAt ? " · 最近 " + CMF.esc(stats.lastAt.slice(0, 10)) : ""}</div>` +
+      "</div>";
+
+    root.querySelector("#sync-generate").onclick = () => {
+      const full = CMF.syncPayload({});
+      const slim = CMF.syncPayload({ slim: true });
+      const code = CMF.syncEncode(full);
+      const link = CMF.syncShareURL(code);
+      const info = CMF.syncQRInfo
+        ? CMF.syncQRInfo(slim, { url: new URL(".", location.href).href })
+        : null;
+      const area = root.querySelector("#sync-code-area");
+      area.innerHTML =
+        '<div class="sync-result">' +
+        '<label class="sync-field"><span>完整同步码（含菜单）</span>' +
+        `<textarea id="sync-code" rows="3" readonly>${CMF.esc(code)}</textarea></label>` +
+        '<div class="sync-actions">' +
+        '<button class="btn btn-sm" id="sync-copy-code">📋 复制同步码</button>' +
+        '<button class="btn btn-sm" id="sync-copy-link">🔗 复制同步链接</button>' +
+        "</div>" +
+        '<div class="sync-qr-row"><div id="sync-qr"></div>' +
+        '<p class="sync-note">二维码用于快速同步偏好与营养目标（不含菜单）；' +
+        (info && info.trimmed ? "数据量较大，已自动精简为偏好与目标。" : "") +
+        "扫码打开后会先询问是否合并。完整菜单请用同步码或同步文件。</p></div>" +
+        "</div>";
+      area.querySelector("#sync-copy-code").onclick = () =>
+        CMF.copyText(code).then((ok) => CMF.toast(ok ? "同步码已复制" : "复制失败，请手动选择"));
+      area.querySelector("#sync-copy-link").onclick = () =>
+        CMF.copyText(link).then((ok) => CMF.toast(ok ? "同步链接已复制" : "复制失败，请手动选择"));
+      const holder = area.querySelector("#sync-qr");
+      if (info && info.fits && typeof CMF.drawQR === "function" && holder) {
+        try {
+          const canvas = document.createElement("canvas");
+          canvas.width = 220;
+          canvas.height = 220;
+          const ctx = canvas.getContext("2d");
+          if (ctx) {
+            CMF.drawQR(ctx, info.url, 0, 0, 220, { light: "#ffffff", dark: "#2c2620" });
+            holder.appendChild(canvas);
+          }
+        } catch (e) {
+          holder.innerHTML = '<div class="empty">二维码生成失败，请改用同步码。</div>';
+        }
+      } else if (holder) {
+        holder.innerHTML = '<div class="empty">数据较多，二维码放不下；请用同步码或同步文件。</div>';
+      }
+    };
+
+    root.querySelector("#sync-download").onclick = () => {
+      const payload = JSON.stringify(CMF.syncPayload({}), null, 2);
+      const blob = new Blob([payload], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "cookmyfridge-sync.json";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      CMF.toast("同步文件已下载");
+    };
+
+    root.querySelector("#sync-file").onchange = (ev) => {
+      const file = ev.target.files && ev.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const report = CMF.applySyncPayload(
+            JSON.parse(reader.result),
+            { mode: root.querySelector("#sync-mode").value }
+          );
+          CMF.toast(`已同步 ${report.count} 项数据`);
+          renderAll();
+        } catch (e) {
+          CMF.toast("导入失败：" + e.message);
+        }
+      };
+      reader.readAsText(file);
+    };
+
+    root.querySelector("#sync-apply").onclick = () => {
+      try {
+        const payload = CMF.syncDecode(root.querySelector("#sync-input").value);
+        const report = CMF.applySyncPayload(payload, {
+          mode: root.querySelector("#sync-mode").value,
+        });
+        CMF.toast(`已同步 ${report.count} 项数据`);
+        renderAll();
+      } catch (e) {
+        CMF.toast("导入失败：" + e.message);
+      }
+    };
+  }
+
   function renderCleanout() {
     const root = document.getElementById("cleanout-content");
     const fridge = CMF.getFridge();
@@ -470,6 +595,7 @@
     renderPlan();
     renderShare();
     renderBackup();
+    renderSync();
   }
 
   CMF.boots("fridge.html", renderAll);
