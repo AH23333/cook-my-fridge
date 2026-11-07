@@ -517,7 +517,9 @@
             JSON.parse(reader.result),
             { mode: root.querySelector("#sync-mode").value }
           );
-          CMF.toast(`已同步 ${report.count} 项数据`);
+          CMF.toast(report.failed && report.failed.length
+            ? `已同步 ${report.count} 项，${report.failed.length} 项写入失败（存储不可用或已满）`
+            : `已同步 ${report.count} 项数据`);
           renderAll();
         } catch (e) {
           CMF.toast("导入失败：" + e.message);
@@ -532,7 +534,9 @@
         const report = CMF.applySyncPayload(payload, {
           mode: root.querySelector("#sync-mode").value,
         });
-        CMF.toast(`已同步 ${report.count} 项数据`);
+        CMF.toast(report.failed && report.failed.length
+          ? `已同步 ${report.count} 项，${report.failed.length} 项写入失败（存储不可用或已满）`
+          : `已同步 ${report.count} 项数据`);
         renderAll();
       } catch (e) {
         CMF.toast("导入失败：" + e.message);

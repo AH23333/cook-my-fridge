@@ -303,6 +303,32 @@ CMF.applySyncPayload(
 );
 check("history merge keeps 50-entry cap", CMF.getHistory().length === 50);
 
+// 6c. partial write failure is reported, not silently dropped
+clear();
+const realSetItem = localStorage.setItem;
+localStorage.setItem = (k, v) => {
+  if (k === "cmf.fridge") throw new Error("QuotaExceededError");
+  return realSetItem(k, v);
+};
+const partial = CMF.applySyncPayload(
+  { v: 1, k: "cmf-sync", t: "", slim: false, d: { f: ["番茄"], fav: ["r001"] } },
+  { mode: "replace" }
+);
+localStorage.setItem = realSetItem;
+check("partial failure reports failed keys",
+  partial.count === 1 && partial.failed && partial.failed.join() === "cmf.fridge");
+check("failed key not written, good key written",
+  memory["cmf.fridge"] === undefined && JSON.parse(memory["cmf.favorites"]).join() === "r001");
+localStorage.setItem = (k, v) => { throw new Error("all blocked"); };
+let allFailedMsg = "";
+try {
+  CMF.applySyncPayload({ v: 1, k: "cmf-sync", t: "", slim: false, d: { f: ["番茄"] } }, { mode: "replace" });
+} catch (e) {
+  allFailedMsg = e.message;
+}
+localStorage.setItem = realSetItem;
+check("total write failure throws with storage reason", allFailedMsg.includes("存储"));
+
 // 7. consumeSyncHash (confirmation is injectable, no DOM needed)
 clear();
 const linkCode = CMF.syncEncode({ v: 1, k: "cmf-sync", t: "", slim: true, d: { f: ["番茄"] } });
