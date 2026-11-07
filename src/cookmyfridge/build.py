@@ -120,6 +120,13 @@ def copy_web_assets() -> None:
                     src, SITE_DIR / extra
                 )
             )
+    # Launcher icons (PWA): copy and prune like pages so renames never linger.
+    for icon in WEB_DIR.glob("icon-*.png"):
+        _retry(lambda icon=icon: shutil.copy2(icon, SITE_DIR / icon.name))
+    keep_icons = {p.name for p in WEB_DIR.glob("icon-*.png")}
+    for stale in SITE_DIR.glob("icon-*.png"):
+        if stale.name not in keep_icons:
+            stale.unlink()
 
     # Version the service worker cache so each release invalidates old caches.
     sw_target = SITE_DIR / "sw.js"

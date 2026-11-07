@@ -1,6 +1,6 @@
 /* CookMyFridge service worker: offline-first app shell, data caching and a
    virtual /calendar.ics subscription endpoint served from Cache Storage. */
-const CACHE_NAME = "cmf-cache-20261107225209";
+const CACHE_NAME = "cmf-cache-20261107225902";
 const CALENDAR_CACHE = "cmf-calendar-v1";
 const CALENDAR_PATH = "calendar.ics";
 const CORE_ASSETS = [
@@ -15,6 +15,9 @@ const CORE_ASSETS = [
   "stats.html",
   "manifest.webmanifest",
   "icon.svg",
+  "icon-192.png",
+  "icon-512.png",
+  "icon-maskable-512.png",
   "css/style.css",
   "js/store.js",
   "js/catalog.js",
