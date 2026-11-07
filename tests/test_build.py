@@ -66,6 +66,18 @@ def test_service_worker_precaches_every_script():
         assert f'"{script}"' in sw, f"missing from SW precache: {script}"
 
 
+def test_service_worker_precaches_every_page():
+    """Every HTML page must sit in the SW precache: pages missing from
+    CORE_ASSETS fall through to the generic cache-first handler, and an
+    offline first visit silently gets the index.html fallback instead of
+    the requested page (browse/planner/stats were once left out)."""
+    sw = (ROOT / "web" / "sw.js").read_text(encoding="utf-8")
+    pages = sorted(p.name for p in (ROOT / "web").glob("*.html"))
+    assert len(pages) >= 9
+    for page in pages:
+        assert f'"{page}"' in sw, f"missing from SW precache: {page}"
+
+
 def test_retry_recovers_from_transient_oserror():
     calls = []
 
