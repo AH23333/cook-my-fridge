@@ -127,10 +127,19 @@ def load_recipes(path: Path = CURATED_FILE) -> list[Recipe]:
 
 
 def _read_recipe_lines(path: Path) -> list[Recipe]:
+    """Parse a recipe shard, skipping corrupt lines instead of crashing.
+
+    The imported shard is written by an external pipeline; one truncated line
+    (e.g. an interrupted write) must not take down the whole site build.
+    """
     recipes = []
     for line in path.read_text(encoding="utf-8").splitlines():
-        if line.strip():
+        if not line.strip():
+            continue
+        try:
             recipes.append(Recipe.from_dict(json.loads(line)))
+        except (json.JSONDecodeError, KeyError, TypeError):
+            continue
     return recipes
 
 
