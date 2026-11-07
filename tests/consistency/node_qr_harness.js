@@ -1,4 +1,4 @@
-/* Headless tests for the QR encoder (byte mode, EC level M, v1-v10).
+/* Headless tests for the QR encoder (byte mode, EC level M, v1-v40).
    Usage: node node_qr_harness.js [project_root] [--emit <output.json>]
    --emit writes matrices so a Python decoder (ZXing/OpenCV) can verify that
    the generated symbols are actually scannable, not just structurally valid. */
@@ -20,21 +20,44 @@ function check(name, cond) {
   if (!cond) failures.push(name);
 }
 
-const CAPACITY = [0, 14, 26, 42, 62, 84, 106, 122, 152, 180, 213];
-const RAW = [0, 26, 44, 70, 100, 134, 172, 196, 242, 292, 346];
+// Byte-mode capacity = floor((data codewords * 8 - header bits) / 8).
+// Values cross-checked against the segno reference tables for v1-v40.
+const CAPACITY = [
+  0, 14, 26, 42, 62, 84, 106, 122, 152, 180,
+  213, 251, 287, 331, 362, 412, 450, 504, 560, 624,
+  666, 711, 779, 857, 911, 997, 1059, 1125, 1190, 1264,
+  1370, 1452, 1538, 1628, 1722, 1809, 1911, 1989, 2099, 2213,
+  2331,
+];
+const RAW = [
+  0, 26, 44, 70, 100, 134, 172, 196, 242, 292,
+  346, 404, 466, 532, 581, 655, 733, 815, 901, 991,
+  1085, 1156, 1258, 1364, 1474, 1588, 1706, 1828, 1921, 2051,
+  2185, 2323, 2465, 2611, 2761, 2876, 3034, 3196, 3362, 3532,
+  3706,
+];
 
 // 1. capacity table and version selection
-for (let v = 1; v <= 10; v += 1) {
+for (let v = 1; v <= 40; v += 1) {
   check("capacity v" + v, CMF.qrCapacity(v) === CAPACITY[v]);
 }
-check("invalid version capacity", CMF.qrCapacity(0) === 0 && CMF.qrCapacity(11) === 0);
+check("capacity strictly grows", CAPACITY.slice(2).every((c, i) => c > CAPACITY[i + 1]));
+check("v40 capacity is 2331", CMF.qrCapacity(40) === 2331);
+check("invalid version capacity", CMF.qrCapacity(0) === 0 && CMF.qrCapacity(41) === 0);
+check("alignment table covers v1-v40", CMF.qrAlignmentCenters.length === 41);
+check("v32 alignment special case",
+  JSON.stringify(CMF.qrAlignmentCenters[32]) === JSON.stringify([6, 34, 60, 86, 112, 138]));
 const short = CMF.qrMatrix("HELLO WORLD");
 check("short text v1", short.version === 1 && short.size === 21);
 check("version from byte length", CMF.qrMatrix("a".repeat(30)).version === 3);
 check("long url version grows", CMF.qrMatrix("https://example.com/" + "a".repeat(100)).version >= 6);
 check("minVersion override", CMF.qrMatrix("HELLO WORLD", { minVersion: 5 }).version === 5);
 check("too long throws", (() => {
-  try { CMF.qrMatrix("a".repeat(300)); return false; } catch (e) { return /too long/i.test(e.message); }
+  try { CMF.qrMatrix("a".repeat(2400)); return false; } catch (e) { return /too long/i.test(e.message); }
+})());
+check("max payload accepted", CMF.qrMatrix("a".repeat(2331)).version === 40);
+check("over max rejected", (() => {
+  try { CMF.qrMatrix("a".repeat(2332)); return false; } catch (e) { return true; }
 })());
 check("utf8 bytes counted", CMF.qrMatrix("中文测试").bytes === 12);
 check("emoji surrogate pair", CMF.qrMatrix("🍳").bytes === 4);
@@ -60,7 +83,7 @@ function formatBits(q) {
   pos.forEach(([x, y], i) => { bits |= (q.modules[y][x] ? 1 : 0) << i; });
   return bits;
 }
-for (let v = 1; v <= 10; v += 1) {
+for (let v = 1; v <= 40; v += 1) {
   const text = "x".repeat(Math.max(1, CAPACITY[v] - 5));
   const q = CMF.qrMatrix(text, { minVersion: v });
   check("v" + v + " size", q.size === v * 4 + 17);
@@ -85,8 +108,18 @@ for (let v = 1; v <= 10; v += 1) {
     return (calc & 0x3ff) === rem && (data & 7) === q.mask;
   })());
   check("v" + v + " alignment table", (() => {
+    const centers = CMF.qrAlignmentCenters[v];
     // v1 has no alignment pattern, so (16,16) must be a data module.
-    if (v === 1) return q.isFunction[16][16] === false;
+    if (v === 1) return centers.length === 0 && q.isFunction[16][16] === false;
+    // Every non-finder alignment centre must be reserved as a function module.
+    const last = centers.length - 1;
+    for (let aj = 0; aj <= last; aj += 1) {
+      for (let ai = 0; ai <= last; ai += 1) {
+        if ((ai === 0 && aj === 0) || (ai === 0 && aj === last) ||
+            (ai === last && aj === 0)) continue;
+        if (!q.isFunction[centers[aj]][centers[ai]]) return false;
+      }
+    }
     return true;
   })());
   check("v" + v + " version info reserved", v < 7 || q.isFunction[0][q.size - 11] === true);
@@ -150,6 +183,10 @@ const PAYLOADS = [
   "中文测试 🍳 CookMyFridge",
   "HELLO WORLD",
   "https://example.com/recipe.html?id=" + "x".repeat(120),
+  // Sync links need high versions; the real decoder must scan those too.
+  "https://example.com/#s=Z." + "A1b2C3d4".repeat(40),
+  "https://example.com/#s=Z." + "A1b2C3d4".repeat(110),
+  "https://example.com/#s=Z." + "A1b2C3d4".repeat(160),
 ];
 if (process.argv[3] === "--emit" && process.argv[4]) {
   const rows = PAYLOADS.map((text) => {
@@ -159,7 +196,9 @@ if (process.argv[3] === "--emit" && process.argv[4]) {
   fs.writeFileSync(process.argv[4], JSON.stringify(rows));
 }
 check("all payloads encode", PAYLOADS.every((t) => CMF.qrMatrix(t).size > 0));
-check("longest payload within capacity", CMF.qrMatrix(PAYLOADS[5]).version <= 10);
+check("typical share url stays low version", CMF.qrMatrix(PAYLOADS[5]).version <= 10);
+check("sync links use high versions", PAYLOADS.slice(6).every(
+  (t) => CMF.qrMatrix(t).version > 10 && CMF.qrMatrix(t).version <= 40));
 
 if (failures.length) {
   console.error("QR TEST FAILURES:", failures);

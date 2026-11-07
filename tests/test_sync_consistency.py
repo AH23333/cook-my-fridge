@@ -25,8 +25,8 @@ def test_sync_js():
     )
     payload = json.loads(proc.stdout)
     assert payload["ok"] is True
-    assert payload["checks"] >= 110
-    assert 1 <= payload["qrVersion"] <= 10
+    assert payload["checks"] >= 118
+    assert 1 <= payload["qrVersion"] <= 40
     assert payload["codeBytes"] > 50
 
 

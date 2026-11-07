@@ -126,6 +126,22 @@ check("decode round trip", JSON.stringify(decoded.d) === JSON.stringify(full.d))
 check("decode preserves timestamp", decoded.t === full.t);
 check("decode trims whitespace", CMF.syncDecode("  " + code + "\n").d.f.length === 2);
 check("decode strips #sync= prefix", CMF.syncDecode("#sync=" + code).d.f.length === 2);
+check("decode strips #s= prefix", CMF.syncDecode("#s=" + code).d.f.length === 2);
+check("short magic round trip", (() => {
+  const shortCode = CMF.syncEncode(full, { short: true });
+  return /^[ZR]\./.test(shortCode) && CMF.syncDecode(shortCode).d.f.length === 2;
+})());
+check("short raw magic R. decodes", (() => {
+  const tiny = { v: 1, k: "cmf-sync", t: "", slim: false, d: { f: ["A"] } };
+  const c = CMF.syncEncode(tiny, { short: true });
+  return c.startsWith("R.") && CMF.syncDecode(c).d.f[0] === "A";
+})());
+check("short compressed magic Z. decodes", (() => {
+  const repetitive = { v: 1, k: "cmf-sync", t: "", slim: false,
+    d: { f: Array(20).fill("番茄炒蛋") } };
+  const c = CMF.syncEncode(repetitive, { short: true });
+  return c.startsWith("Z.") && CMF.syncDecode(c).d.f.length === 20;
+})());
 check("decode rejects wrong magic", (() => {
   try { CMF.syncDecode("X9.abc"); return false; } catch (e) { return true; }
 })());
@@ -149,6 +165,7 @@ throws("normalize rejects array data", () => CMF.normalizeSyncPayload({ k: "cmf-
 check("hash parsing", CMF.syncFromHash("#sync=" + code) === code);
 check("hash parsing without #", CMF.syncFromHash("sync=" + code) === code);
 check("hash with extra params", CMF.syncFromHash("#foo=1&sync=" + code + "&bar=2") === code);
+check("short hash parsed", CMF.syncFromHash("#s=" + code) === code);
 check("hash without sync", CMF.syncFromHash("#foo=1") === null);
 check("empty hash", CMF.syncFromHash("") === null);
 const shareURL = CMF.syncShareURL(code, { url: "https://example.com/index.html" });
@@ -156,15 +173,31 @@ check("share url has fragment", shareURL.startsWith("https://example.com/index.h
 check("share url replaces old hash", CMF.syncShareURL(code, { url: "https://example.com/#old" }) ===
   "https://example.com/#sync=" + code);
 const info = CMF.syncQRInfo(slim, { url: "https://example.com/index.html" });
-check("qr info has code", info.code.startsWith("S1"));
+check("qr info has code", /^(S1Z?|Z|R)\./.test(info.code));
 check("qr info byte count", info.bytes > 0);
 check("qr info fits slim", info.fits === true);
-check("qr info valid version", info.version >= 1 && info.version <= 10);
+check("qr info valid version", info.version >= 1 && info.version <= 40);
+check("qr info has module count", info.modules === info.version * 4 + 17);
 check("qr url encodable", CMF.qrMatrix(info.url).version === info.version);
-check("qr url contains sync fragment", info.url.includes("#sync="));
+check("qr url contains sync fragment", info.url.includes("#s="));
+check("qr hash decodes", (() => {
+  const decoded = CMF.syncDecode(CMF.syncFromHash(new URL(info.url).hash));
+  return decoded.d && Object.keys(decoded.d).length > 0;
+})());
 check("qr info detects oversized", (() => {
-  const huge = { v: 1, k: "cmf-sync", t: "", slim: false, d: { f: Array(400).fill("番茄炒蛋") } };
+  const huge = { v: 1, k: "cmf-sync", t: "", slim: false, d: {
+    f: Array.from({ length: 1500 }, (_, i) => "食材编号" + i),
+  } };
   return CMF.syncQRInfo(huge, { url: "https://example.com/index.html" }).fits === false;
+})());
+check("qr fits a realistic large fridge without trimming", (() => {
+  const big = { v: 1, k: "cmf-sync", t: "", slim: true, d: {
+    f: Array.from({ length: 40 }, (_, i) => "食材" + i),
+    p: { tags: [], allergens: ["花生"], diets: [] },
+    fav: Array.from({ length: 20 }, (_, i) => "r" + i),
+  } };
+  const r = CMF.syncQRInfo(big, { url: "https://example.com/" });
+  return r.fits === true && r.trimmed === false && r.version > 10 && r.version <= 40;
 })());
 
 // 6. apply / merge
@@ -204,6 +237,16 @@ check("null values skipped", (() => {
   clear();
   CMF.applySyncPayload({ v: 1, k: "cmf-sync", t: "", slim: false, d: { f: null, u: ["番茄"] } });
   return memory["cmf.fridge"] === undefined && memory["cmf.urgent"] !== undefined;
+})());
+check("compact QR goals import", (() => {
+  clear();
+  CMF.applySyncPayload({ d: { g: { e: 1, p: {
+    s: "female", a: 28, h: 168, w: 58, v: "light", m: "cut", n: 2, c: 3,
+  } } } });
+  const g = CMF.activeGoals();
+  return g && g.profile.sex === "female" && g.profile.mode === "cut" &&
+    g.profile.mealsPerDay === 3 && g.profile.heightCm === 168 &&
+    g.profile.people === 2 && g.profile.activity === "light";
 })());
 
 // 7. consumeSyncHash (confirmation is injectable, no DOM needed)

@@ -67,7 +67,10 @@ def test_qr_symbols_are_scannable(tmp_path):
             pytest.skip("no QR decoder (zxing-cpp or opencv) available")
 
     rows = _emit_matrices(tmp_path)
-    assert len(rows) >= 6
+    assert len(rows) >= 9
+    # The sync panel needs high-version symbols; make sure the decoder test
+    # actually exercises them instead of silently passing on v1-v10 only.
+    assert any(row["version"] > 10 for row in rows)
     failures = []
     for row in rows:
         n = row["size"]

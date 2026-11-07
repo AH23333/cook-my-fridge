@@ -101,10 +101,16 @@ check("QR missing module degrades", (() => {
   return out.includes(recipe.title) && !out.includes("扫码看菜谱");
 })());
 check("overlong QR url does not break card", (() => {
+  // EC-M v40 tops out at 2331 bytes; only a URL beyond that must degrade.
   try {
-    const out = draw(recipe, { url: "a".repeat(400) }).join("|");
+    const out = draw(recipe, { url: "a".repeat(3000) }).join("|");
     return out.includes(recipe.title) && !out.includes("扫码看菜谱");
   } catch (err) { return false; }
+})());
+check("medium-length URL still gets a QR", (() => {
+  // Regression guard: a 400-byte URL used to fail; higher versions fix it.
+  const out = draw(recipe, { url: "a".repeat(400) }).join("|");
+  return out.includes(recipe.title) && out.includes("扫码看菜谱");
 })());
 
 // 3. AI labelling
