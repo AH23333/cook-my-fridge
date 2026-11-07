@@ -68,7 +68,13 @@
   }
 
   function saveState(state) {
-    localStorage.setItem("cmf.week", JSON.stringify(state));
+    try {
+      localStorage.setItem("cmf.week", JSON.stringify(state));
+    } catch (e) {
+      // Storage full/blocked: tell the user instead of silently losing the menu.
+      CMF.toast("菜单保存失败：浏览器存储不可用，可先导出备份");
+      return;
+    }
     publishCalendar(state); // keep subscribers fresh after every edit
   }
 
