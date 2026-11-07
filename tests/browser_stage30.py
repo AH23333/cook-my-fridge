@@ -143,6 +143,28 @@ def main():
             stats = page.evaluate("CMF.getShareStats()")
             check("share tracked in storage", stats["total"] == 1 and stats["byKind"].get("link") == 1)
             check("copy attempt produced a toast", page.locator(".toast").inner_text() != "")
+            page.click(".share-modal .modal-close")
+
+            # Cooking mode: the kitchen timer really counts down, pauses
+            # without losing the remaining time, and resumes.
+            page.click("#start-cooking")
+            page.wait_for_selector(".cooking-overlay .timer-preset")
+            page.click('.timer-preset[data-min="1"]')
+            check("preset shows 1 minute", page.locator("#timer-display").inner_text() == "01:00")
+            page.click("#timer-toggle")
+            page.wait_for_timeout(1300)
+            running_display = page.locator("#timer-display").inner_text()
+            check("timer counts down", running_display in ("00:58", "00:59"))
+            page.click("#timer-toggle")  # pause
+            paused_display = page.locator("#timer-display").inner_text()
+            page.wait_for_timeout(900)
+            check("pause freezes remaining time", page.locator("#timer-display").inner_text() == paused_display)
+            page.click("#timer-toggle")  # resume
+            page.wait_for_timeout(1200)
+            resumed = page.locator("#timer-display").inner_text()
+            check("resume continues counting", resumed < paused_display)
+            page.click("#cook-close")
+            check("cooking overlay closed", page.locator(".cooking-overlay").count() == 0)
 
             browser.close()
     finally:

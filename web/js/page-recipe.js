@@ -273,10 +273,13 @@
     overlay.className = "cooking-overlay";
     document.body.appendChild(overlay);
 
-    // Kitchen timer state, kept across step re-renders.
+    // Kitchen timer state, kept across step re-renders. Deadline-based, not
+    // decrement: background tabs throttle setInterval (down to ~1/min after
+    // 5 min), so counting ticks would ring the bell minutes late mid-recipe.
     let tRemaining = 5 * 60;
     let tRunning = false;
     let tInterval = null;
+    let tEndsAt = 0;
 
     function beep() {
       try {
@@ -308,9 +311,8 @@
     }
 
     function tick() {
-      tRemaining -= 1;
-      if (tRemaining <= 0) {
-        tRemaining = 0;
+      tRemaining = Math.max(0, Math.round((tEndsAt - Date.now()) / 1000));
+      if (tRemaining === 0) {
         stopTick();
         beep();
       }
@@ -319,10 +321,13 @@
 
     function toggleTimer() {
       if (tRunning) {
+        // Freeze the remaining time before stopping so pause never loses a tick.
+        tRemaining = Math.max(0, Math.round((tEndsAt - Date.now()) / 1000));
         stopTick();
       } else if (tRemaining > 0) {
         tRunning = true;
-        tInterval = setInterval(tick, 1000);
+        tEndsAt = Date.now() + tRemaining * 1000;
+        tInterval = setInterval(tick, 250);
       }
       renderTimer();
     }
