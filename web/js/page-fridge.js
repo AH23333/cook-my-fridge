@@ -189,7 +189,7 @@
     }
     const stored = CMF.getGoals ? CMF.getGoals() : null;
     const enabled = !!(stored && stored.enabled);
-    const profile = CMF.sanitizeGoalProfile(stored ? stored.profile || stored : CMF.DEFAULT_GOAL_PROFILE);
+    const profile = CMF.sanitizeGoalProfile(stored ? stored.profile || stored.p || stored : CMF.DEFAULT_GOAL_PROFILE);
     const goals = CMF.computeGoals(profile);
     root.innerHTML =
       '<div class="goal-box">' +
@@ -450,7 +450,7 @@
       '<div id="sync-code-area"></div>' +
       '<div class="sync-import">' +
       '<label class="sync-field"><span>从同步码导入</span>' +
-      '<textarea id="sync-input" rows="2" placeholder="粘贴 S1. 开头的同步码"></textarea></label>' +
+      '<textarea id="sync-input" rows="2" placeholder="粘贴 S1. / S1Z. / Z. / R. 开头的同步码"></textarea></label>' +
       '<div class="sync-import-actions">' +
       '<select id="sync-mode"><option value="merge">合并（保留本机数据）</option>' +
       '<option value="replace">覆盖本机同名数据</option></select>' +
@@ -477,7 +477,7 @@
         '<button class="btn btn-sm" id="sync-copy-link">🔗 复制同步链接</button>' +
         "</div>" +
         '<div class="sync-qr-row"><div id="sync-qr"></div>' +
-        '<p class="sync-note">二维码用于快速同步偏好与营养目标（不含菜单）；' +
+        '<p class="sync-note">二维码用于快速同步冰箱、偏好、收藏与营养目标（不含菜单）；' +
         (info && info.trimmed ? "数据量较大，已自动精简为偏好与目标。" : "") +
         "扫码打开后会先询问是否合并。完整菜单请用同步码或同步文件。</p></div>" +
         "</div>";
@@ -488,19 +488,25 @@
       const holder = area.querySelector("#sync-qr");
       if (info && info.fits && typeof CMF.drawQR === "function" && holder) {
         try {
+          // A dense high-version symbol needs >=3px modules to stay scannable;
+          // a fixed 220px canvas would squeeze them to 1-2px on a phone camera.
+          const modules = info.modules || (info.version ? info.version * 4 + 17 : 21);
+          const box = Math.min(600, (modules + 8) * 3);
           const canvas = document.createElement("canvas");
-          canvas.width = 220;
-          canvas.height = 220;
+          canvas.width = box;
+          canvas.height = box;
+          canvas.style.maxWidth = "100%";
+          canvas.style.height = "auto";
           const ctx = canvas.getContext("2d");
           if (ctx) {
-            CMF.drawQR(ctx, info.url, 0, 0, 220, { light: "#ffffff", dark: "#2c2620" });
+            CMF.drawQR(ctx, info.url, 0, 0, box, { light: "#ffffff", dark: "#2c2620" });
             holder.appendChild(canvas);
           }
         } catch (e) {
           holder.innerHTML = '<div class="empty">二维码生成失败，请改用同步码。</div>';
         }
       } else if (holder) {
-        holder.innerHTML = '<div class="empty">数据较多，二维码放不下；请用同步码或同步文件。</div>';
+        holder.innerHTML = '<div class="empty">数据量过大，二维码放不下；请用同步码或同步文件。</div>';
       }
     };
 

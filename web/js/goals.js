@@ -62,16 +62,25 @@
      clamped, unknown enums fall back, and NaN can never reach the formula. */
   CMF.sanitizeGoalProfile = function (raw) {
     const value = raw && typeof raw === "object" ? raw : {};
+    // QR sync stores the profile with one-letter field names (and an `e`
+    // enabled flag) to save bytes; accept both shapes transparently.
+    const src = value.profile || value.p || value;
+    const field = (long, short) => {
+      if (src[long] !== undefined) return src[long];
+      if (src[short] !== undefined) return src[short];
+      if (value[long] !== undefined) return value[long];
+      return value[short];
+    };
     return {
-      enabled: Boolean(value.enabled),
-      sex: pick(SEX, value.sex, DEFAULT_PROFILE.sex),
-      age: int(value.age, DEFAULT_PROFILE.age, 10, 100),
-      heightCm: int(value.heightCm, DEFAULT_PROFILE.heightCm, 120, 220),
-      weightKg: int(value.weightKg, DEFAULT_PROFILE.weightKg, 30, 200),
-      activity: pick(ACTIVITY, value.activity, DEFAULT_PROFILE.activity),
-      mode: pick(MODES, value.mode, DEFAULT_PROFILE.mode),
-      people: int(value.people, DEFAULT_PROFILE.people, 1, 12),
-      mealsPerDay: int(value.mealsPerDay, DEFAULT_PROFILE.mealsPerDay, 1, 4),
+      enabled: Boolean(field("enabled", "e")),
+      sex: pick(SEX, field("sex", "s"), DEFAULT_PROFILE.sex),
+      age: int(field("age", "a"), DEFAULT_PROFILE.age, 10, 100),
+      heightCm: int(field("heightCm", "h"), DEFAULT_PROFILE.heightCm, 120, 220),
+      weightKg: int(field("weightKg", "w"), DEFAULT_PROFILE.weightKg, 30, 200),
+      activity: pick(ACTIVITY, field("activity", "v"), DEFAULT_PROFILE.activity),
+      mode: pick(MODES, field("mode", "m"), DEFAULT_PROFILE.mode),
+      people: int(field("people", "n"), DEFAULT_PROFILE.people, 1, 12),
+      mealsPerDay: int(field("mealsPerDay", "c"), DEFAULT_PROFILE.mealsPerDay, 1, 4),
     };
   };
 
@@ -126,8 +135,10 @@
     const stored = CMF.getGoals();
     if (!stored || typeof stored !== "object") return null;
     // Older/looser payloads may keep `enabled` on the profile itself.
-    const raw = stored.profile || stored;
-    const enabled = stored.enabled !== undefined ? stored.enabled : raw.enabled;
+    const raw = stored.profile || stored.p || stored;
+    const enabled = stored.enabled !== undefined ? stored.enabled
+      : stored.e !== undefined ? stored.e
+      : raw.enabled !== undefined ? raw.enabled : raw.e;
     if (!enabled) return null;
     const profile = CMF.sanitizeGoalProfile({ ...raw, enabled: true });
     return CMF.computeGoals(profile);

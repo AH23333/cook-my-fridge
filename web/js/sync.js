@@ -15,6 +15,8 @@ back to the original link when offline. */
   const CMF = window.CMF;
   const B64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
   const MAGIC = "S1";
+  const SHORT_MAGIC = "Z"; // QR-only: compressed
+  const SHORT_RAW_MAGIC = "R"; // QR-only: raw when LZ77 would only add bytes
 
   // Short keys keep the QR payload small; full names stay in localStorage.
   const KEY_MAP = {
@@ -89,8 +91,9 @@ back to the original link when offline. */
   }
 
   /* Small synchronous LZ77 (4 KiB window, max 18-byte match). JSON keys and
-     repeated ingredient names compress well enough to fit a v1-v10 QR code;
-     no CompressionStream, no async, identical output in Node and browsers. */
+     repeated ingredient names compress well enough for a QR code, even when
+     the encoder has to pick a higher version; no CompressionStream, no async,
+     identical output in Node and browsers. */
   function lzCompress(bytes) {
     const out = [];
     let literals = [];
@@ -194,26 +197,31 @@ back to the original link when offline. */
     throw new Error("同步数据格式不正确");
   };
 
-  CMF.syncEncode = function (payload) {
+  CMF.syncEncode = function (payload, opts) {
     const clean = CMF.normalizeSyncPayload(payload);
     const raw = new TextEncoder().encode(JSON.stringify(clean));
     const packed = lzCompress(raw);
-    // Keep the uncompressed S1. format when compression would only add bytes.
-    if (packed.length < raw.length) return "S1Z." + bytesToCode(packed);
-    return "S1." + bytesToCode(raw);
+    const compressed = packed.length < raw.length;
+    const short = Boolean(opts && opts.short);
+    const magic = short
+      ? compressed ? SHORT_MAGIC : SHORT_RAW_MAGIC
+      : compressed ? "S1Z" : MAGIC;
+    const body = compressed ? packed : raw;
+    return magic + "." + bytesToCode(body);
   };
 
   CMF.syncDecode = function (code) {
-    const text = String(code || "").trim().replace(/^#?sync=/, "");
+    const text = String(code || "").trim().replace(/^#?(?:sync|s)=/, "");
     const dot = text.indexOf(".");
     const magic = dot < 0 ? "" : text.slice(0, dot);
-    if (magic !== "S1" && magic !== "S1Z") {
-      throw new Error("同步码格式不正确（应为 S1. 或 S1Z. 开头）");
+    if (magic !== "S1" && magic !== "S1Z" && magic !== SHORT_MAGIC &&
+        magic !== SHORT_RAW_MAGIC) {
+      throw new Error("同步码格式不正确（应为 S1. / S1Z. / Z. / R. 开头）");
     }
     let payload;
     try {
       let bytes = codeToBytes(text.slice(dot + 1));
-      if (magic === "S1Z") bytes = lzDecompress(bytes);
+      if (magic === "S1Z" || magic === SHORT_MAGIC) bytes = lzDecompress(bytes);
       payload = JSON.parse(new TextDecoder().decode(bytes));
     } catch (e) {
       throw new Error("同步码已损坏，无法解析");
@@ -227,7 +235,8 @@ back to the original link when offline. */
       : hash).replace(/^#/, "");
     if (!value) return null;
     try {
-      const code = new URLSearchParams(value).get("sync");
+      const params = new URLSearchParams(value);
+      const code = params.get("sync") || params.get("s");
       return code || null;
     } catch (e) {
       return null;
@@ -242,34 +251,53 @@ back to the original link when offline. */
         ? new URL("index.html", location.href).href
         : "index.html";
     }
-    return String(base).split("#")[0] + "#sync=" + code;
+    const key = options.short ? "s" : "sync";
+    return String(base).split("#")[0] + "#" + key + "=" + code;
   };
 
-  /* QR feasibility check: never let an overlong payload break a share card. */
+  /* QR feasibility check: never let an overlong payload break a share card.
+     The encoder covers EC-M v1-v40 (up to 2331 bytes), so a normal fridge
+     snapshot fits. `modules` lets the caller size the canvas so dense,
+     high-version symbols stay scannable rather than being squeezed to 1px. */
   CMF.syncQRInfo = function (payload, opts) {
     const options = opts || {};
     function attempt(data) {
-      const code = CMF.syncEncode(data);
-      const url = CMF.syncShareURL(code, options);
+      const code = CMF.syncEncode(data, { short: true });
+      const url = CMF.syncShareURL(code, { ...options, short: true });
       const bytes = new TextEncoder().encode(url).length;
       let version = null;
+      let modules = 0;
       if (typeof CMF.qrMatrix === "function") {
         try {
-          version = CMF.qrMatrix(url).version;
+          const qr = CMF.qrMatrix(url);
+          version = qr.version;
+          modules = qr.size;
         } catch (e) {
           version = null;
         }
       }
-      return { code, url, bytes, version, fits: version !== null, trimmed: false };
+      return {
+        code, url, bytes, version, modules,
+        fits: version !== null, trimmed: false,
+      };
     }
     let info = attempt(payload);
-    // QR v1-v10/EC-M tops out at 213 bytes. When a fridge/favourites list is
-    // too big, drop to the settings that matter most instead of giving up.
+    // Only an exceptionally large snapshot exceeds v40/EC-M. In that case
+    // drop to the settings that matter most instead of giving up entirely.
     if (!info.fits && !options.noTrim) {
       const d = {};
-      ["p", "g", "cmf.prefs", "cmf.goals"].forEach((key) => {
-        if (payload.d[key] != null) d[key] = payload.d[key];
-      });
+      const prefs = payload.d.p != null ? payload.d.p : payload.d["cmf.prefs"];
+      const goals = payload.d.g != null ? payload.d.g : payload.d["cmf.goals"];
+      if (prefs != null) d.p = prefs;
+      if (goals != null) {
+        const gp = goals.profile || goals.p || goals;
+        // One-letter fields are understood by goals.js sanitization.
+        d.g = { e: 1, p: {
+          s: gp.sex ?? gp.s, a: gp.age ?? gp.a, h: gp.heightCm ?? gp.h,
+          w: gp.weightKg ?? gp.w, v: gp.activity ?? gp.v, m: gp.mode ?? gp.m,
+          n: gp.people ?? gp.n, c: gp.mealsPerDay ?? gp.c,
+        } };
+      }
       if (Object.keys(d).length) {
         const smaller = attempt({ d });
         if (smaller.fits) {
