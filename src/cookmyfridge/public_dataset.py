@@ -25,7 +25,10 @@ import ast
 import csv
 import hashlib
 import json
+import os
 import re
+import threading
+import time
 from collections import Counter
 from pathlib import Path
 from typing import Any, Iterable
@@ -271,11 +274,24 @@ def read_records(path: Path, fmt: str = "auto", limit: int | None = None) -> lis
     return rows[:limit] if limit else rows
 
 
+def _read_text_resilient(path: Path) -> str:
+    """Read with brief retries: Windows locks a file while another process is
+    mid-``replace`` onto it, so concurrent imports can hit transient denials."""
+    for attempt in range(5):
+        try:
+            return path.read_text(encoding="utf-8")
+        except PermissionError:
+            if attempt == 4:
+                raise
+            time.sleep(0.05 * (attempt + 1))
+    raise AssertionError("unreachable")
+
+
 def _load_existing(path: Path) -> list[dict]:
     if not path.exists():
         return []
     out = []
-    for line in path.read_text(encoding="utf-8").splitlines():
+    for line in _read_text_resilient(path).splitlines():
         if line.strip():
             try:
                 out.append(json.loads(line))
@@ -285,11 +301,33 @@ def _load_existing(path: Path) -> list[dict]:
 
 
 def _atomic_write_text(path: Path, text: str) -> None:
-    """Write via a sibling tmp file so a crash never truncates the target."""
+    """Write via a unique sibling tmp file, then atomically replace the target.
+
+    The tmp name carries pid + thread id: a fixed name lets concurrent writers
+    interleave on one tmp file and move half-finished content into place.
+    A failed write removes its own tmp so no litter survives. The final
+    replace retries briefly because Windows locks the destination while
+    another process replaces it. Concurrent imports into one target are
+    integrity-safe but last-writer-wins at record level; re-running a lost
+    import is idempotent.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(text, encoding="utf-8", newline="\n")
-    tmp.replace(path)
+    tmp = path.with_name(
+        f"{path.name}.{os.getpid()}.{threading.get_ident()}.tmp"
+    )
+    try:
+        tmp.write_text(text, encoding="utf-8", newline="\n")
+        for attempt in range(5):
+            try:
+                tmp.replace(path)
+                return
+            except PermissionError:
+                if attempt == 4:
+                    raise
+                time.sleep(0.05 * (attempt + 1))
+    except BaseException:
+        tmp.unlink(missing_ok=True)
+        raise
 
 
 def import_dataset(

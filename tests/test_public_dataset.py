@@ -2,6 +2,9 @@
 from __future__ import annotations
 
 import json
+import os
+import stat
+import threading
 from pathlib import Path
 
 import pytest
@@ -162,6 +165,138 @@ def test_interrupted_import_write_keeps_previous_file(tmp_path, monkeypatch):
             imported_path=target, unmapped_path=report_path,
         )
     assert target.read_bytes() == before
+
+
+def test_atomic_write_uses_unique_tmp_names(tmp_path, monkeypatch):
+    """Concurrent writers must not share one tmp path: a fixed name lets two
+    processes interleave writes to the same tmp file and replace() then moves
+    the other writer's half-finished content into place."""
+    from cookmyfridge.public_dataset import _atomic_write_text
+
+    seen: list[str] = []
+    real_replace = Path.replace
+
+    def spy_replace(self, target):
+        seen.append(self.name)
+        return real_replace(self, target)
+
+    monkeypatch.setattr(Path, "replace", spy_replace)
+    target = tmp_path / "out.jsonl"
+    threads = [
+        threading.Thread(
+            target=_atomic_write_text, args=(target, '{"n": %d}\n' % i)
+        )
+        for i in range(2)
+    ]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join(timeout=15)
+    assert len(seen) == 2
+    assert len(set(seen)) == 2, f"tmp name collision: {seen}"
+    assert json.loads(target.read_text(encoding="utf-8"))["n"] in (0, 1)
+
+
+def test_concurrent_imports_leave_valid_file(tmp_path):
+    """Parallel imports into one target: integrity holds (last writer wins),
+    no torn bytes, no hard errors."""
+    target = tmp_path / "imported.jsonl"
+    report_path = tmp_path / "unmapped.json"
+    errors: list[BaseException] = []
+
+    def worker(i):
+        try:
+            import_dataset(
+                SAMPLE, dataset=f"并发数据集{i}", license_name="CC0",
+                imported_path=target, unmapped_path=report_path,
+            )
+        except BaseException as exc:  # noqa: BLE001 - collect for assertion
+            errors.append(exc)
+
+    threads = [threading.Thread(target=worker, args=(i,)) for i in range(8)]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join(timeout=60)
+    assert not errors, errors
+    lines = target.read_text(encoding="utf-8").splitlines()
+    assert lines, "imported shard is empty"
+    for line in lines:  # every line must be a complete record, never torn
+        row = json.loads(line)
+        assert row["id"].startswith("pub-") and row["title"]
+    assert not list(tmp_path.glob("*.tmp"))
+
+
+def test_import_write_failure_cleans_tmp_and_keeps_target(tmp_path, monkeypatch):
+    """ENOSPC mid-write: error propagates, old shard intact, no tmp litter."""
+    target = tmp_path / "imported.jsonl"
+    report_path = tmp_path / "unmapped.json"
+    import_dataset(
+        SAMPLE, dataset="格式演示样例", license_name="CC0",
+        imported_path=target, unmapped_path=report_path,
+    )
+    before = target.read_bytes()
+
+    real_write_text = Path.write_text
+
+    def out_of_space(self, data, *args, **kwargs):
+        if self.name.endswith(".tmp"):
+            real_write_text(self, str(data)[:10], *args, **kwargs)
+            raise OSError(28, "No space left on device")
+        return real_write_text(self, data, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "write_text", out_of_space)
+    with pytest.raises(OSError):
+        import_dataset(
+            SAMPLE, dataset="格式演示样例", license_name="CC0",
+            imported_path=target, unmapped_path=report_path,
+        )
+    assert target.read_bytes() == before
+    assert not list(tmp_path.glob("*.tmp")), "tmp file left behind after failure"
+
+
+@pytest.mark.skipif(os.name != "nt", reason="Windows 上 replace 只读目标会抛 PermissionError")
+def test_import_into_readonly_target_preserves_file(tmp_path):
+    target = tmp_path / "imported.jsonl"
+    report_path = tmp_path / "unmapped.json"
+    import_dataset(
+        SAMPLE, dataset="格式演示样例", license_name="CC0",
+        imported_path=target, unmapped_path=report_path,
+    )
+    before = target.read_bytes()
+    target.chmod(stat.S_IREAD)
+    try:
+        with pytest.raises(OSError):
+            import_dataset(
+                SAMPLE, dataset="格式演示样例", license_name="CC0",
+                imported_path=target, unmapped_path=report_path,
+            )
+        assert target.read_bytes() == before
+    finally:
+        target.chmod(stat.S_IWRITE)
+
+
+def test_import_scales_to_30k_rows(tmp_path):
+    """30k unique valid records: full accept path stays correct at scale."""
+    src = tmp_path / "big.jsonl"
+    row = {
+        "title": "",
+        "ingredients": ["番茄", "鸡蛋"],
+        "steps": ["第一步处理食材。", "第二步下锅煮熟。"],
+        "minutes": 20,
+    }
+    with src.open("w", encoding="utf-8") as fh:
+        for i in range(30000):
+            row["title"] = f"规模菜{i}"
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+    report = import_dataset(
+        src, dataset="规模压测", license_name="CC0",
+        imported_path=tmp_path / "imported.jsonl",
+        unmapped_path=tmp_path / "unmapped.json",
+    )
+    assert report["total"] == 30000
+    assert report["imported"] == 30000
+    assert report["total_imported_file"] == 30000
 
 
 def test_load_shipped_recipes_merges_shards(tmp_path):
