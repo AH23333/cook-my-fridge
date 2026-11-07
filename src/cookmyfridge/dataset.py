@@ -164,14 +164,3 @@ def load_shipped_recipes(
         seen_ids.add(recipe.id)
         seen_titles.add(recipe.title)
     return recipes
-
-
-def load_all_recipes(curated_path: Path = CURATED_FILE) -> list[Recipe]:
-    """Load every shipped recipe file (curated + imported + AI shards)."""
-    recipes = load_shipped_recipes(curated_path)
-    ai_file = CURATED_DIR / "ai_recipes.jsonl"
-    if ai_file.exists():
-        for line in ai_file.read_text(encoding="utf-8").splitlines():
-            if line.strip():
-                recipes.append(Recipe.from_dict(json.loads(line)))
-    return recipes

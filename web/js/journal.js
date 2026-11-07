@@ -204,5 +204,4 @@
     }));
   };
 
-  CMF.JOURNAL_BADGES = BADGES.slice();
 })();

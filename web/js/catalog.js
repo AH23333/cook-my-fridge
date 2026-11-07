@@ -62,11 +62,6 @@
     return methodAliases[key] || key;
   };
 
-  CMF.normalizeTag = function (value) {
-    const key = String(value || "").trim();
-    return tagAliases[key] || key;
-  };
-
   CMF.allergensOf = function (name) {
     return ingredientMap[name] ? ingredientMap[name].allergens : [];
   };

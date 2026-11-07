@@ -380,7 +380,6 @@
 
   // Exposed so harnesses can re-extract codewords from a reference matrix and
   // assert that every version's alignment patterns land in function modules.
-  CMF.qrMaskBit = maskBit;
   CMF.qrAlignmentCenters = ALIGN_CENTERS;
 
   /* Returns {size, version, mask, modules: boolean[][], codewords, ecc}. */

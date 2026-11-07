@@ -11,7 +11,6 @@
   const WEEKDAYS = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
   const MAX_WEEKS = 4;
 
-  CMF.WEEK_MEALS = MEALS.slice();
   CMF.WEEKDAY_LABELS = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
   CMF.MAX_MENU_WEEKS = MAX_WEEKS;
   CMF.MENU_WEEK_OPTIONS = [1, 2, 3, 4];

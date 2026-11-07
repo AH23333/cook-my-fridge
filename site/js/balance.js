@@ -35,7 +35,6 @@
     ],
   };
 
-  CMF.BALANCE_TARGETS = TARGETS;
 
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>"']/g, (ch) => ({

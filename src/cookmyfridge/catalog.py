@@ -71,10 +71,6 @@ def allergens_of(canonical: str) -> list[str]:
     return allergen_map().get(canonical, [])
 
 
-def ingredients_by_category(category: str) -> list[dict]:
-    return [entry for entry in catalog_entries() if entry["category"] == category]
-
-
 def substitutions_for(canonical: str) -> list[dict]:
     rows = SUBSTITUTIONS.get(canonical, [])
     return [{"canonical": alt, "reason": reason} for alt, reason in rows]
