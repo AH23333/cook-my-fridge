@@ -1,5 +1,5 @@
 /* CookMyFridge service worker: offline-first app shell and data caching. */
-const CACHE_NAME = "cmf-cache-20261106233533";
+const CACHE_NAME = "cmf-cache-20261107042206";
 const CORE_ASSETS = [
   "index.html",
   "result.html",
@@ -10,6 +10,24 @@ const CORE_ASSETS = [
   "manifest.webmanifest",
   "icon.svg",
   "css/style.css",
+  "js/store.js",
+  "js/catalog.js",
+  "js/search.js",
+  "js/nutrition.js",
+  "js/nlparse.js",
+  "js/cleanout.js",
+  "js/planner.js",
+  "js/stats.js",
+  "js/pairings.js",
+  "js/ui.js",
+  "js/page-home.js",
+  "js/page-result.js",
+  "js/page-recipe.js",
+  "js/page-wildcard.js",
+  "js/page-fridge.js",
+  "js/page-browse.js",
+  "js/page-planner.js",
+  "js/page-stats.js",
   "data/catalog.json",
   "data/recipes.json",
   "data/vocab.json",

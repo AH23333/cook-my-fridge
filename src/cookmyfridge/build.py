@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import shutil
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -23,13 +24,29 @@ def _write_json(path: Path, value) -> None:
     )
 
 
+def _retry(operation, attempts: int = 4):
+    """Retry a file operation transiently blocked on Windows.
+
+    A local preview server, browser service worker or file indexer can briefly
+    hold generated assets (WinError 1224 / OSError 22). A build should not
+    fail randomly because of that.
+    """
+    for attempt in range(attempts):
+        try:
+            return operation()
+        except OSError:
+            if attempt == attempts - 1:
+                raise
+            time.sleep(0.05 * (attempt + 1))
+
+
 def export_catalog() -> dict:
     entries = cat.catalog_entries()
     payload = {
         "ingredients": entries,
         "substitutions": {
             canonical: cat.substitutions_for(canonical)
-            for canonical in cat.canonical_set()
+            for canonical in sorted(cat.canonical_set())
             if cat.substitutions_for(canonical)
         },
         "pantry_staples": sorted(cat.PANTRY_STAPLES),
@@ -75,23 +92,33 @@ def copy_web_assets() -> None:
     for child in ("css", "js"):
         src = WEB_DIR / child
         if src.exists():
-            shutil.copytree(src, SITE_DIR / child)
+            _retry(
+                lambda src=src, child=child: shutil.copytree(
+                    src, SITE_DIR / child
+                )
+            )
     for html in WEB_DIR.glob("*.html"):
-        shutil.copy2(html, SITE_DIR / html.name)
+        _retry(lambda html=html: shutil.copy2(html, SITE_DIR / html.name))
     for extra in ("sw.js", "manifest.webmanifest", "icon.svg"):
         src = WEB_DIR / extra
         if src.exists():
-            shutil.copy2(src, SITE_DIR / extra)
+            _retry(
+                lambda src=src, extra=extra: shutil.copy2(
+                    src, SITE_DIR / extra
+                )
+            )
 
     # Version the service worker cache so each release invalidates old caches.
     sw_target = SITE_DIR / "sw.js"
     if sw_target.exists():
         version = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
         text = sw_target.read_text(encoding="utf-8")
-        sw_target.write_text(
-            text.replace("cmf-cache-v1", f"cmf-cache-{version}"),
-            encoding="utf-8",
-            newline="\n",
+        _retry(
+            lambda: sw_target.write_text(
+                text.replace("cmf-cache-v1", f"cmf-cache-{version}"),
+                encoding="utf-8",
+                newline="\n",
+            )
         )
 
 

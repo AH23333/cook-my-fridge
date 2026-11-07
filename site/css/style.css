@@ -744,6 +744,66 @@ footer.site-footer {
   min-width: 64px;
   color: var(--ink-soft);
 }
+/* --- Classic ingredient pairings inside the encyclopedia modal --- */
+.modal-row.pairing {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.pairing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+.pairing-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #eadfd5;
+  background: #fffaf6;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.pairing-chip:hover {
+  border-color: var(--accent);
+  background: #fdeee7;
+}
+.pair-count {
+  color: var(--ink-soft);
+  font-size: 11px;
+  background: #f3ece6;
+  border-radius: 999px;
+  padding: 0 5px;
+}
+/* --- Substitution chips inside the encyclopedia modal --- */
+.modal-row.subs {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.sub-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+.sub-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  border: 1px solid #eadfd5;
+  background: #fffaf6;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.sub-reason {
+  color: var(--ink-soft);
+  font-size: 11px;
+}
 .modal-recipes {
   margin-top: 14px;
 }

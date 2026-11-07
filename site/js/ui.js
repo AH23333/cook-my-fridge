@@ -127,6 +127,37 @@
       return;
     }
     const subs = CMF.substitutionsFor(name);
+    // substitutions are {canonical, reason} objects, not plain strings.
+    const subsHtml = subs.length
+      ? '<div class="sub-grid">' +
+        subs
+          .map((s) => {
+            const label = typeof s === "string" ? s : s.canonical;
+            const reason = typeof s === "object" && s.reason ? s.reason : "";
+            return (
+              '<span class="sub-chip"><strong>' +
+              CMF.esc(label) +
+              "</strong>" +
+              (reason ? '<span class="sub-reason">' + CMF.esc(reason) + "</span>" : "") +
+              "</span>"
+            );
+          })
+          .join("") +
+        "</div>"
+      : "无";
+    // pairings.js is optional: pages that skip it must still open the modal.
+    const pairings = CMF.topPairings ? CMF.topPairings(name, 6) : [];
+    const pairingHtml = pairings.length
+      ? '<div class="pairing-grid">' +
+        pairings
+          .map(
+            (p) =>
+              `<button class="pairing-chip" data-name="${CMF.esc(p.canonical)}">` +
+              `${CMF.emojiOf(p.canonical)} ${CMF.esc(p.canonical)} <span class="pair-count">${p.count}</span></button>`
+          )
+          .join("") +
+        "</div>"
+      : '<div class="empty">暂无共现数据</div>';
     const usedIn = CMF.data.recipes
       .filter((r) => r.ingredients.some((i) => i.canonical === name))
       .map(
@@ -147,9 +178,8 @@
       '<div class="modal-row"><span>过敏原</span>' +
       (entry.allergens.length ? CMF.esc(entry.allergens.join("、")) : "无") +
       "</div>" +
-      '<div class="modal-row"><span>常见替代</span>' +
-      (subs.length ? CMF.esc(subs.join("、")) : "无") +
-      "</div>" +
+      '<div class="modal-row subs"><span>常见替代</span>' + subsHtml + "</div>" +
+      '<div class="modal-row pairing"><span>经典搭配</span>' + pairingHtml + "</div>" +
       '<div class="modal-recipes"><strong>用到它的菜谱（' + usedIn.length + "）</strong>" +
       (usedIn.length ? '<div class="ing-link-grid">' + usedIn.join("") + "</div>" : '<div class="empty">暂无菜谱</div>') +
       "</div></div>";
@@ -165,6 +195,13 @@
       if (ev.target === overlay || ev.target.closest(".modal-close")) close();
     });
     document.addEventListener("keydown", onKey);
+    overlay.addEventListener("click", (ev) => {
+      const chip = ev.target.closest(".pairing-chip");
+      if (chip) {
+        close();
+        CMF.showIngredientInfo(chip.dataset.name);
+      }
+    });
     document.body.appendChild(overlay);
   };
 
@@ -208,6 +245,7 @@
     CMF.preload()
       .then(() => {
         CMF.initCatalog();
+        if (CMF.buildPairingIndex) CMF.buildPairingIndex(CMF.data.recipes);
         if (init) init();
       })
       .catch((err) => {
