@@ -173,7 +173,6 @@ def map_record(
     license_name: str,
     known: set[str],
     existing_titles: set[str],
-    index: int = 0,
 ) -> tuple[Recipe | None, str, list[str]]:
     """Map one raw record. Returns (recipe_or_none, skip_reason, unmapped)."""
     title = str(_value(row, "title") or "").strip()
@@ -314,10 +313,10 @@ def import_dataset(
     unmapped: Counter[str] = Counter()
     accepted: list[dict] = []
 
-    for index, row in enumerate(rows):
+    for row in rows:
         recipe, reason, unknowns = map_record(
             row, dataset=dataset, license_name=license_name,
-            known=known, existing_titles=existing_titles, index=index,
+            known=known, existing_titles=existing_titles,
         )
         for name in unknowns:
             unmapped[name] += 1
