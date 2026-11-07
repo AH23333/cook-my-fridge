@@ -170,7 +170,9 @@
     // break the whole share card.
     if (typeof CMF.drawQR === "function") {
       try {
-        const url = CMF.shareUrl(recipe, opts);
+        const url = typeof CMF.shareLink === "function"
+          ? CMF.shareLink(recipe, Object.assign({}, opts, { medium: "qr" }))
+          : CMF.shareUrl(recipe, opts);
         if (url) {
           CMF.drawQR(ctx, url, 576, 556, 168, { light: COLORS.white, dark: COLORS.ink });
           text(ctx, "扫码看菜谱", 576, 744, 16, COLORS.soft, 600);
@@ -217,6 +219,13 @@
       return false;
     }
     const url = canvas.toDataURL("image/png");
+    // Trackable link (UTM + local counter). Falls back to the current page
+    // when the sync module is unavailable.
+    const shareLink = typeof CMF.shareLink === "function"
+      ? CMF.shareLink(recipe, { medium: "card" }) : location.href;
+    const track = (kind) => {
+      if (typeof CMF.trackShare === "function") CMF.trackShare(kind, recipe.id);
+    };
     const overlay = document.createElement("div");
     overlay.className = "modal-overlay share-overlay";
     overlay.innerHTML =
@@ -227,9 +236,11 @@
       '<div class="share-actions">' +
       '<button class="btn btn-primary btn-sm" id="share-download">⬇️ 下载 PNG</button>' +
       '<button class="btn btn-sm" id="share-copy">📋 复制文字</button>' +
+      '<button class="btn btn-sm" id="share-link">🔗 复制分享链接</button>' +
       '<button class="btn btn-sm" id="share-native">📤 系统分享</button>' +
       "</div>" +
-      '<p class="share-note">图片在本地生成，不上传任何数据。营养数值为估算，仅供参考。</p>' +
+      '<p class="share-note">图片在本地生成，不上传任何数据。分享链接带匿名来源参数，' +
+      '可在站点统计中看到来源；本机也记录分享次数。营养数值为估算，仅供参考。</p>' +
       "</div>";
 
     function close() {
@@ -246,6 +257,7 @@
     document.body.appendChild(overlay);
 
     overlay.querySelector("#share-download").onclick = () => {
+      track("png");
       const a = document.createElement("a");
       a.href = url;
       a.download = CMF.shareFileName(recipe);
@@ -255,15 +267,25 @@
       CMF.toast("分享图已保存");
     };
     overlay.querySelector("#share-copy").onclick = () => {
+      track("copy");
       CMF.copyText(CMF.shareText(recipe))
         .then((ok) => CMF.toast(ok ? "菜谱文字已复制" : "复制失败，请手动选择"))
         .catch(() => CMF.toast("复制失败，请手动选择"));
     };
+    overlay.querySelector("#share-link").onclick = () => {
+      track("link");
+      CMF.copyText(shareLink)
+        .then((ok) => CMF.toast(ok ? "分享链接已复制" : "复制失败，请手动选择"))
+        .catch(() => CMF.toast("复制失败，请手动选择"));
+    };
     overlay.querySelector("#share-native").onclick = async () => {
+      track("native");
+      const resolved = typeof CMF.resolveShareLink === "function"
+        ? await CMF.resolveShareLink(shareLink) : shareLink;
       const payload = {
         title: recipe.title + " · CookMyFridge",
         text: CMF.shareText(recipe),
-        url: location.href,
+        url: resolved,
       };
       if (navigator.share) {
         try {

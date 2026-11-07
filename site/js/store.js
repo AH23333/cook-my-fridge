@@ -14,6 +14,7 @@
     week: "cmf.week",
     urgent: "cmf.urgent",
     goals: "cmf.goals",
+    shareStats: "cmf.shareStats",
   };
 
   CMF.KEYS = KEYS;
