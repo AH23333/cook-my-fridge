@@ -57,7 +57,7 @@
     root.setAttribute("aria-labelledby", prefix + "-title");
     root.innerHTML =
       '<div class="inventory-panel">' +
-      `<h2 id="${prefix}-title">库存批次台账</h2>` +
+      `<h2 id="${prefix}-title">批次明细</h2>` +
       '<p class="inventory-note">按批记录剩余克数，与开饭清单分开保存。清空开饭清单不会删除批次。</p>' +
       '<div class="inventory-summary" data-inventory-summary></div>' +
       '<details class="inventory-editor"><summary>添加批次</summary><div data-inventory-editor></div></details>' +
