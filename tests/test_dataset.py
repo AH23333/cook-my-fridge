@@ -51,23 +51,29 @@ def test_provenance_fields_present():
 
 def test_imported_shard_tolerates_corrupt_lines(tmp_path):
     """A truncated imported shard must not break the whole site build."""
-    good = {
-        "id": "pub-good",
-        "title": "导入分片正常菜",
-        "ingredients": [
-            {"name": "番茄", "canonical": "番茄", "amount": "1 个", "optional": False},
-            {"name": "鸡蛋", "canonical": "鸡蛋", "amount": "1 个", "optional": False},
-        ],
-        "steps": ["第一步", "第二步"],
-        "methods": ["煮"],
-    }
+    def row(rid, title):
+        return {
+            "id": rid,
+            "title": title,
+            "ingredients": [
+                {"name": "番茄", "canonical": "番茄", "amount": "1 个", "optional": False},
+                {"name": "鸡蛋", "canonical": "鸡蛋", "amount": "1 个", "optional": False},
+            ],
+            "steps": ["第一步", "第二步"],
+            "methods": ["煮"],
+        }
+
     shard = tmp_path / "imported.jsonl"
+    # Corrupt line sits in the MIDDLE: rows on both sides must still load.
     shard.write_text(
-        json.dumps(good, ensure_ascii=False)
+        json.dumps(row("pub-good-a", "导入分片正常菜甲"), ensure_ascii=False)
         + '\n{"id": "pub-truncated", "title": "半截'
+        + "\n"
+        + json.dumps(row("pub-good-b", "导入分片正常菜乙"), ensure_ascii=False)
         + "\n \n",
         encoding="utf-8",
     )
     recipes = load_shipped_recipes(imported_path=shard)
-    assert any(r.id == "pub-good" for r in recipes)
-    assert not any(r.id == "pub-truncated" for r in recipes)
+    ids = {r.id for r in recipes}
+    assert "pub-good-a" in ids and "pub-good-b" in ids
+    assert "pub-truncated" not in ids

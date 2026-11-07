@@ -73,9 +73,10 @@
     } catch (e) {
       // Storage full/blocked: tell the user instead of silently losing the menu.
       CMF.toast("菜单保存失败：浏览器存储不可用，可先导出备份");
-      return;
+      return false;
     }
     publishCalendar(state); // keep subscribers fresh after every edit
+    return true;
   }
 
   function ensureWeek(state) {
@@ -208,9 +209,9 @@
           return;
         }
         state.days = result.days;
-        saveState(state);
+        const saved = saveState(state);
         renderAll();
-        CMF.toast(`已优化 ${result.changed} 天：均衡 ${result.before} → ${result.after} 分`);
+        if (saved) CMF.toast(`已优化 ${result.changed} 天：均衡 ${result.before} → ${result.after} 分`);
       };
     }
   }
@@ -390,9 +391,9 @@
       state.days, weeks, CMF.data.recipes, CMF.getFridge(), CMF.getPrefs(),
       (state.seed || 1) + 31
     );
-    saveState(state);
+    const saved = saveState(state);
     renderAll();
-    CMF.toast(`菜单已调整为 ${weeks} 周`);
+    if (saved) CMF.toast(`菜单已调整为 ${weeks} 周`);
   };
 
   document.getElementById("btn-shuffle").onclick = () => {
@@ -402,9 +403,9 @@
     state.days = CMF.buildMenu(
       state.weeks, CMF.data.recipes, CMF.getFridge(), CMF.getPrefs(), state.seed
     );
-    saveState(state);
+    const saved = saveState(state);
     renderAll();
-    CMF.toast("整份菜单已重新生成");
+    if (saved) CMF.toast("整份菜单已重新生成");
   };
 
   document.getElementById("btn-export-ics").onclick = () => {
