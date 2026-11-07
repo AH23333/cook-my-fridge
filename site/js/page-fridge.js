@@ -301,22 +301,6 @@
     });
   }
 
-  function fallbackCopy(text, onDone) {
-    const ta = document.createElement("textarea");
-    ta.value = text;
-    ta.style.position = "fixed";
-    ta.style.opacity = "0";
-    document.body.appendChild(ta);
-    ta.select();
-    try {
-      document.execCommand("copy");
-      onDone();
-    } catch (e) {
-      CMF.toast("复制失败，请手动选择文本");
-    }
-    document.body.removeChild(ta);
-  }
-
   function renderPlan() {
     const root = document.getElementById("plan-content");
     const plan = CMF.getPlan();
@@ -365,11 +349,10 @@
         copyBtn.textContent = "✓ 已复制";
         setTimeout(() => (copyBtn.textContent = "📋 复制清单"), 1500);
       };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
-      } else {
-        fallbackCopy(text, done);
-      }
+      CMF.copyText(text).then((ok) => {
+        if (ok) done();
+        else CMF.toast("复制失败，请手动选择文本");
+      });
     };
     root.querySelectorAll("input[data-item]").forEach((box) => {
       box.onchange = () => {
