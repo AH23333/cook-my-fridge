@@ -82,8 +82,19 @@ check("import validates", threw);
 const ignored = CMF.importData({ data: { "cmf.unknown": ["x"] } });
 check("import ignores unknown", ignored === 0);
 
+// write failure (quota/blocked storage) must be visible, never silent
+let toasts = 0;
+CMF.toast = () => { toasts += 1; };
+const realSetItem = localStorage.setItem;
+localStorage.setItem = () => { throw new Error("QuotaExceededError"); };
+check("failed write returns false", CMF.setFridge(["黄瓜"]) === false);
+check("failed write warns the user", toasts === 1);
+check("failed write keeps previous value", mem.get("cmf.fridge") === '["番茄","鸡蛋"]');
+localStorage.setItem = realSetItem;
+check("write recovers after storage returns", CMF.setFridge(["黄瓜"]) === true);
+
 if (failures.length) {
   console.error("STORE TEST FAILURES:", failures);
   process.exit(1);
 }
-console.log(JSON.stringify({ ok: true, checks: 16 }));
+console.log(JSON.stringify({ ok: true, checks: 21 }));

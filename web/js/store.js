@@ -76,6 +76,11 @@
       localStorage.setItem(key, JSON.stringify(value));
       return true;
     } catch (e) {
+      // Storage full/blocked: callers used to get a silent false and the UI
+      // showed a change that never persisted. Surface it once per write.
+      if (typeof CMF.toast === "function") {
+        CMF.toast("保存失败：浏览器存储不可用或已满，本次修改不会被保留");
+      }
       return false;
     }
   }
