@@ -8,11 +8,13 @@ from __future__ import annotations
 import json
 
 from .batch import CACHE_DIR, VARIANT_TITLE_MARKERS, VARIANT_TITLE_SUFFIX
-from .catalog import canonical_set
+from .catalog import canonical_set, storage_payload, validate_storage
 # Alias keeps the historical ``audit.load_recipes`` patch point used by tests
 # while auditing *all* shipped shards (curated + validated public imports).
 from .dataset import load_shipped_recipes as load_recipes
 from .nutrition import nutrition_facts_payload, validate_nutrition
+from .prices import price_facts_payload, validate_prices
+from .seasonal import seasonal_payload, validate_seasonal
 
 _VARIANT_KINDS = set(VARIANT_TITLE_SUFFIX)
 
@@ -94,6 +96,11 @@ def run_audit() -> dict:
     # 7. Nutrition table covers the whole catalog with sane values.
     problems.extend(validate_nutrition())
 
+    # 8. Stage 27 data shards: seasonal names, prices and storage tips.
+    problems.extend(validate_seasonal())
+    problems.extend(validate_prices())
+    problems.extend(validate_storage())
+
     return {
         "ok": not problems,
         "problems": problems,
@@ -101,6 +108,9 @@ def run_audit() -> dict:
             "recipes": len(recipes),
             "ingredients": len(known),
             "nutrition_facts": len(nutrition_facts_payload()["per100g"]),
+            "seasonal_ingredients": len(seasonal_payload()["seasonal"]),
+            "priced_ingredients": len(price_facts_payload()["per500g"]),
+            "storage_tips": len(storage_payload()["tips"]),
             "wildcards": len(_load_cache("wildcards")),
             "blindboxes": len(_load_cache("blindboxes")),
             "variants": len(variants),

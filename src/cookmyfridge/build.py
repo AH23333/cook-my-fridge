@@ -13,6 +13,8 @@ from .config import SITE_DIR, WEB_DIR
 from .dataset import load_shipped_recipes
 from .models import METHOD_ALIASES, TAG_ALIASES
 from .nutrition import nutrition_facts_payload
+from .prices import price_facts_payload
+from .seasonal import seasonal_payload
 from .validate import vocabulary_snapshot
 
 
@@ -54,6 +56,9 @@ def export_catalog() -> dict:
         "method_aliases": METHOD_ALIASES,
         "tag_aliases": TAG_ALIASES,
         "nutrition_facts": nutrition_facts_payload(),
+        "storage": cat.storage_payload(),
+        "price_facts": price_facts_payload(),
+        "seasonal": seasonal_payload(),
     }
     _write_json(SITE_DIR / "data" / "catalog.json", payload)
     return payload

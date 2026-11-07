@@ -3,7 +3,14 @@ from __future__ import annotations
 
 from functools import lru_cache
 
-from .catalog_data import INGREDIENTS, NUTRITION_FLAGS, PANTRY_STAPLES, SUBSTITUTIONS
+from .catalog_data import (
+    CATEGORY_STORAGE,
+    INGREDIENTS,
+    NUTRITION_FLAGS,
+    PANTRY_STAPLES,
+    STORAGE_TIPS,
+    SUBSTITUTIONS,
+)
 
 
 @lru_cache(maxsize=1)
@@ -88,3 +95,43 @@ def nutrition_map() -> dict[str, list[str]]:
 
 def nutrition_of(canonical: str) -> list[str]:
     return nutrition_map().get(canonical, [])
+
+
+def storage_for(canonical: str) -> dict:
+    row = STORAGE_TIPS.get(canonical)
+    if row is None:
+        row = CATEGORY_STORAGE.get(category_of(canonical), ("按包装说明保存", None, None))
+    method, fridge_days, freezer_days = row
+    return {"method": method, "fridgeDays": fridge_days, "freezerDays": freezer_days}
+
+
+@lru_cache(maxsize=1)
+def storage_payload() -> dict:
+    return {
+        "tips": {
+            name: {
+                "method": method,
+                "fridgeDays": fridge,
+                "freezerDays": freezer,
+            }
+            for name, (method, fridge, freezer) in sorted(STORAGE_TIPS.items())
+        },
+        "category_default": {
+            category: {"method": method, "fridgeDays": fridge, "freezerDays": freezer}
+            for category, (method, fridge, freezer) in sorted(CATEGORY_STORAGE.items())
+        },
+    }
+
+
+def validate_storage() -> list[str]:
+    problems: list[str] = []
+    known = canonical_set()
+    for name, (method, fridge, freezer) in STORAGE_TIPS.items():
+        if name not in known:
+            problems.append(f"储存表含目录外食材: {name}")
+        if not method.strip():
+            problems.append(f"储存方法为空: {name}")
+        for label, days in (("冷藏", fridge), ("冷冻", freezer)):
+            if days is not None and days <= 0:
+                problems.append(f"储存天数必须为正: {name} {label}")
+    return problems
