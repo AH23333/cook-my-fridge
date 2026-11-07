@@ -341,14 +341,19 @@ back to the original link when offline. */
     const options = opts || {};
     const mode = options.mode === "merge" ? "merge" : "replace";
     const keys = [];
+    const failed = [];
     Object.entries(clean.d).forEach(([short, value]) => {
       const key = short.startsWith("cmf.") ? short : KEY_MAP[short];
       if (!key || !KNOWN.has(key) || value == null) return;
       const next = mode === "merge" ? mergeValue(key, value) : value;
+      // A failed write must stay visible: count it separately instead of
+      // letting "已同步 N 项" claim work that never persisted.
       if (writeRaw(key, next)) keys.push(key);
+      else failed.push(key);
     });
-    if (!keys.length) throw new Error("同步数据里没有可用的项目");
-    return { count: keys.length, keys, mode, exportedAt: clean.t || "", slim: Boolean(clean.slim) };
+    if (!keys.length && !failed.length) throw new Error("同步数据里没有可用的项目");
+    if (!keys.length) throw new Error("写入失败：浏览器存储不可用或已满，本次同步没有落盘任何数据");
+    return { count: keys.length, keys, failed, mode, exportedAt: clean.t || "", slim: Boolean(clean.slim) };
   };
 
   /* Read a #sync= fragment, optionally ask for confirmation, and import. */
@@ -461,7 +466,11 @@ back to the original link when offline. */
       try {
         const report = CMF.applySyncPayload(payload, { mode: "merge" });
         stripHash();
-        if (CMF.toast) CMF.toast("已同步 " + report.count + " 项数据");
+        if (CMF.toast) {
+          CMF.toast(report.failed && report.failed.length
+            ? `已同步 ${report.count} 项，${report.failed.length} 项写入失败（浏览器存储不可用或已满）`
+            : "已同步 " + report.count + " 项数据");
+        }
         setTimeout(() => location.reload(), 700);
       } catch (e) {
         if (CMF.toast) CMF.toast("同步失败：" + e.message);
