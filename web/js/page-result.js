@@ -143,6 +143,7 @@
 
   function start() {
     if (!selected.length) {
+      buckets.innerHTML = "";
       summary.innerHTML = '<div class="empty">还没有选择食材，先去 <a href="index.html">首页</a> 点几样。</div>';
       return;
     }
@@ -174,6 +175,12 @@
     document.getElementById("btn-decide").onclick = decideForMe;
     render();
     renderUnlock();
+    // AI wildcard cards load in the background; repaint the buckets once
+    // they land so the AI WILDCARD bucket fills in without blocking the page.
+    CMF.onAiReady(() => {
+      render();
+      renderUnlock();
+    });
   }
 
   CMF.boots("index.html", start);

@@ -267,4 +267,11 @@
         );
       });
   };
+
+  /* Run fn once BOTH the core payload and the background AI shards have
+     landed. Pages render core content at boots time and refresh only their
+     AI zones here, so fn always sees a complete CMF.data. */
+  CMF.onAiReady = function (fn) {
+    Promise.all([CMF.preload(), CMF.preloadAI()]).then(fn).catch(() => {});
+  };
 })();

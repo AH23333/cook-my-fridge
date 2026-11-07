@@ -101,4 +101,7 @@
   }
 
   CMF.boots("index.html", start);
+  // This page's content IS the AI shards: start() renders an honest "not
+  // ready yet" state when they are still in flight; re-run once they land.
+  CMF.onAiReady(() => start());
 })();

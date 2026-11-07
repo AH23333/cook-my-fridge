@@ -808,4 +808,7 @@
   }
 
   CMF.boots("fridge.html", renderAll);
+  // Favorites merge AI cards; those shards load in the background, so repaint
+  // just the favorites section once they land (no user input lives inside it).
+  CMF.onAiReady(() => renderFavorites());
 })();

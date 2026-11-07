@@ -20,6 +20,14 @@
     return CMF.data.ai.variants.find((v) => v.key === key) || null;
   }
 
+  function ideasHtml(recipe) {
+    const entry = CMF.data.ai.ideas.find((x) => x.key === recipe.id);
+    return entry
+      ? "<h3>数据集里没有的三个主意</h3><ul>" +
+          entry.ideas.map((x) => `<li>${CMF.esc(x)}</li>`).join("") + "</ul>"
+      : "";
+  }
+
   const FACTORS = [0.5, 1, 1.5, 2, 3];
   let factor = 1;
 
@@ -109,8 +117,6 @@
       )
       .join("");
 
-    const ideasEntry = CMF.data.ai.ideas.find((x) => x.key === recipe.id);
-
     const isFav = new Set(CMF.getFavorites()).has(recipe.id);
     root.innerHTML =
       `<article class="detail"><h1>${CMF.esc(recipe.title)} ` +
@@ -199,10 +205,7 @@
           `<button class="btn btn-sm" data-kind="${kind}">${label}</button>`
       ).join("") +
       "</div>" +
-      (ideasEntry
-        ? "<h3>数据集里没有的三个主意</h3><ul>" +
-          ideasEntry.ideas.map((x) => `<li>${CMF.esc(x)}</li>`).join("") + "</ul>"
-        : "") +
+      '<div id="ai-ideas">' + ideasHtml(recipe) + "</div>" +
       renderJournalPanel(recipe) +
       '<section id="recipe-inventory"></section>' +
       renderSimilar(recipe) +
@@ -431,6 +434,13 @@
     }
     document.title = recipe.title + " · CookMyFridge";
     render(recipe);
+    // Ideas shard loads in the background; fill only that block when it
+    // lands. (Variant buttons already self-heal: they look variants up at
+    // click time.)
+    CMF.onAiReady(() => {
+      const box = root.querySelector("#ai-ideas");
+      if (box && !box.innerHTML) box.innerHTML = ideasHtml(recipe);
+    });
   }
 
   CMF.boots("index.html", start);
