@@ -976,6 +976,19 @@ footer.site-footer {
 .balance-personal { font-size: 11px; border-radius: 999px; padding: 2px 8px; background: #edf6ee; color: #3f7a39; }
 .balance-personal-note { font-size: 12px; color: var(--ink-soft); margin: -8px 0 14px; }
 
+/* --- Shopping list split by week --- */
+.shop-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.shop-week-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.shop-week { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); padding: 12px 14px; }
+.shop-week-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; border-bottom: 1px solid var(--line); padding-bottom: 8px; margin-bottom: 8px; font-size: 13.5px; }
+.shop-week-head span { color: var(--ink-soft); font-size: 12px; }
+.shop-item { display: flex; align-items: center; gap: 8px; padding: 5px 0; font-size: 13px; cursor: pointer; }
+.shop-item.done { opacity: .55; text-decoration: line-through; }
+.shop-item-name { flex: 1 1 auto; }
+.shop-item .shop-meta { font-size: 11px; }
+.shop-week .empty { font-size: 12px; padding: 6px 0; }
+.shop-note { font-size: 11.5px; color: var(--ink-soft); line-height: 1.6; margin-top: 12px; }
+
 @media print {
   .modal-overlay {
     display: none !important;

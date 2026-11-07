@@ -254,6 +254,108 @@
   };
   CMF.menuShopping = CMF.weekShopping;
 
+  /* --- Shopping list split by week --------------------------------------- */
+
+  const CATEGORY_ORDER = [
+    "蔬菜", "肉蛋", "水产", "主食", "豆乳", "调料", "水果", "冷冻食品", "其他",
+  ];
+  CMF.SHOPPING_CATEGORIES = CATEGORY_ORDER.slice();
+
+  function categoryRank(name) {
+    const index = CATEGORY_ORDER.indexOf(name);
+    return index < 0 ? CATEGORY_ORDER.length : index;
+  }
+
+  /* One group per week. An ingredient needed in two different weeks shows up
+     in both (you buy it twice), which the old flat list could not express. */
+  CMF.weeklyShopping = function (days, recipes, fridge) {
+    const byId = new Map((recipes || []).map((r) => [r.id, r]));
+    const fridgeSet = new Set(fridge || []);
+    const weeks = Math.max(1, CMF.menuWeekCount(days) || 1);
+    const buckets = Array.from({ length: weeks }, () => new Map());
+    CMF.weekMeals(days).forEach((m) => {
+      const recipe = byId.get(m.recipeId);
+      if (!recipe) return;
+      const week = Math.floor(m.index / DAYS);
+      if (!buckets[week]) return;
+      const bucket = buckets[week];
+      CMF.matchRecipe(recipe, fridgeSet).missing.forEach((canonical) => {
+        if (!bucket.has(canonical)) {
+          bucket.set(canonical, {
+            canonical,
+            category: typeof CMF.categoryOf === "function"
+              ? CMF.categoryOf(canonical) : "其他",
+            recipes: [],
+            meals: [],
+          });
+        }
+        const row = bucket.get(canonical);
+        if (!row.recipes.includes(recipe.title)) row.recipes.push(recipe.title);
+        row.meals.push(m.meal);
+      });
+    });
+    return buckets.map((bucket, week) => {
+      const items = [...bucket.values()].sort((a, b) => {
+        const rank = categoryRank(a.category) - categoryRank(b.category);
+        return rank || a.canonical.localeCompare(b.canonical, "zh-Hans-CN");
+      });
+      return { week, label: "第 " + (week + 1) + " 周", items, total: items.length };
+    });
+  };
+
+  function csvCell(value) {
+    const text = String(value == null ? "" : value);
+    return /[",\r\n]/.test(text) ? '"' + text.replace(/"/g, '""') + '"' : text;
+  }
+
+  /* BOM + CRLF so Excel on Windows opens Chinese text correctly. */
+  CMF.shoppingToCSV = function (groups, opts) {
+    const options = opts || {};
+    const checked = new Set(options.checked || []);
+    const lines = ["周次,分类,食材,用于菜谱数,菜谱,已买"];
+    (groups || []).forEach((group) => {
+      group.items.forEach((item) => {
+        const key = group.week + ":" + item.canonical;
+        lines.push([
+          group.label, item.category, item.canonical,
+          item.recipes.length, item.recipes.join("、"),
+          checked.has(key) ? "是" : "否",
+        ].map(csvCell).join(","));
+      });
+    });
+    return "\ufeff" + lines.join("\r\n") + "\r\n";
+  };
+
+  CMF.shoppingToText = function (groups, opts) {
+    const options = opts || {};
+    const checked = new Set(options.checked || []);
+    const list = groups || [];
+    const total = list.reduce((sum, g) => sum + g.total, 0);
+    const lines = [
+      "CookMyFridge 采购清单（按周拆分）",
+      `共 ${list.length} 周 · ${total} 项`,
+    ];
+    list.forEach((group) => {
+      const label = (options.weekLabels && options.weekLabels[group.week]) || group.label;
+      lines.push("", `【${label} · ${group.total} 项】`);
+      let category = "";
+      group.items.forEach((item) => {
+        if (item.category !== category) {
+          category = item.category;
+          lines.push("  " + category + "：");
+        }
+        const done = checked.has(group.week + ":" + item.canonical);
+        lines.push(
+          `  - [${done ? "x" : " "}] ${item.canonical}` +
+          `（用于 ${item.recipes.length} 道菜：${item.recipes.join("、")}）`
+        );
+      });
+      if (!group.total) lines.push("  （本周无需额外采购）");
+    });
+    lines.push("", "已按现有冰箱自动扣除，常备调料不计入；清单仅供备菜参考。");
+    return lines.join("\n") + "\n";
+  };
+
   /* Per-person daily totals (one serving of each meal). */
   CMF.weekDayNutrition = function (days, index, recipes) {
     const byId = new Map(recipes.map((r) => [r.id, r]));
