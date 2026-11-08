@@ -54,6 +54,13 @@
   ];
 
   CMF.renderChrome = function (active) {
+    // Skip link: first Tab stop on every page, jumps keyboard users past
+    // the whole nav into <main id="main-content"> (WCAG 2.4.1). Visually
+    // hidden until focused (see style.css .skip-link).
+    const skip = document.createElement("a");
+    skip.className = "skip-link";
+    skip.href = "#main-content";
+    skip.textContent = "跳到主内容";
     const header = document.createElement("header");
     header.className = "site-header";
     header.innerHTML =
@@ -66,6 +73,7 @@
       ).join("") +
       "</nav></div>";
     document.body.prepend(header);
+    document.body.prepend(skip);
 
     const footer = document.createElement("footer");
     footer.className = "site-footer";

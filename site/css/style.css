@@ -42,6 +42,25 @@ a:hover { text-decoration: underline; }
   border-radius: 6px;
 }
 
+/* Skip link: off-screen until it receives keyboard focus (WCAG 2.4.1). */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  background: var(--surface);
+  color: var(--brand-dark);
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 0 0 var(--radius-sm) 0;
+  box-shadow: var(--shadow-sm);
+}
+.skip-link:focus-visible {
+  left: 0;
+}
+/* Skip target: focus ring only matters when reached via the skip link. */
+#main-content:focus { outline: none; }
+
 .container {
   width: 100%;
   max-width: 1080px;
