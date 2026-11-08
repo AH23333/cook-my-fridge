@@ -24,12 +24,14 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Volatile run artifacts: these two deduction-preview shots carry subpixel
-# clip jitter (fractional scroll offset on element screenshots) even after
-# UUID/date sanitization — nothing machine-compares them, tracking them
-# only dirties the tree after every regression run.
+# Volatile run artifacts: these shots carry subpixel clip jitter (fractional
+# offsets in full-page/element captures) — stage28's deduction previews even
+# after UUID/date sanitization; stage27/01-home's weather card makes the
+# bottom-edge cook button land on fractional pixels. Nothing machine-compares
+# them (real assertions live in the stages), tracking only dirties the tree.
 screenshots/stage28/03-deduction-preview.png
 screenshots/stage28/04-deduction-mobile.png
+screenshots/stage27/01-home.png
 
 # Build logs
 *.log
