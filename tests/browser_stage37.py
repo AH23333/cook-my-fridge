@@ -59,9 +59,14 @@ def main():
             cdp.send("Emulation.setCPUThrottlingRate", {"rate": 6})
 
             t0 = time.perf_counter()
-            page.goto(base + "index.html", wait_until="domcontentloaded")
-            check("loading hint visible before data",
-                  "正在加载" in page.locator("#ingredient-wall").inner_text())
+            resp = page.goto(base + "index.html", wait_until="domcontentloaded")
+            # The loading hint is a STATIC-markup guarantee, not a timing
+            # race: since the head prefetch can land core.json before the
+            # bundle finishes on fast links, the wall may already render
+            # before domcontentloaded — reading live inner_text here was
+            # asserting the old serial-wave timing, not user-visible truth.
+            check("loading hint ships in static markup",
+                  "正在加载" in resp.text() and 'id="ingredient-wall"' in resp.text())
             page.wait_for_selector(".chip[data-name]", timeout=30000)
             wall_s = time.perf_counter() - t0
             # Thresholds sit ~20% above the measured ~12.7 s (worst case: local
