@@ -93,12 +93,11 @@ CookMyFridge/
 # 1. 跑测试
 python -m pytest tests -q
 
-# 2. 构建静态站点
+# 2. 构建静态站点（同时产出 .gz/.br 预压缩）
 python run.py build
 
-# 3. 本地预览
-cd site
-python -m http.server 8766
+# 3. 本地预览（按 Accept-Encoding 协商预压缩，同生产语义）
+python run.py serve --port 8766
 # 浏览器打开 http://127.0.0.1:8766/
 ```
 
@@ -138,6 +137,9 @@ python run.py build        # 导出静态站点
 
 - **GitHub Pages**：把 `site/` 内容放到仓库根（或 `/docs`），在 Settings → Pages 选择对应分支。
 - **Cloudflare Pages / Netlify / Vercel**：构建命令留空，发布目录设为 `site`。
+
+构建已产出 `.gz`/`.br` 预压缩资产（省 ~89% 传输字节）；Nginx `gzip_static` /
+Caddy / 边缘平台的配法与缓存头要求见 [docs/部署.md](docs/部署.md)。
 
 ## 数据与 AI 治理
 
