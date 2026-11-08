@@ -97,6 +97,22 @@ def main():
             # controls activate with Enter/Space), not tab sequence.
             page.goto(base + "index.html", wait_until="networkidle")
             page.wait_for_selector(".chip[data-name]")
+
+            # --- A0. skip link: first Tab stop, lands focus on <main> --------
+            page.keyboard.press("Tab")
+            check("skip link is the first Tab stop",
+                  page.evaluate("document.activeElement && document.activeElement.classList.contains('skip-link')"))
+            check("skip link is visible when focused",
+                  page.evaluate("""() => {
+                      const el = document.activeElement;
+                      const r = el.getBoundingClientRect();
+                      return r.left >= 0 && r.width > 0;
+                  }"""))
+            page.keyboard.press("Enter")
+            page.wait_for_timeout(150)
+            check("skip link moves focus to main content",
+                  page.evaluate("document.activeElement && document.activeElement.id === 'main-content'"))
+
             page.focus("#ingredient-search")
             check("chip reachable by Tab from search box", tab_until(page, ACTIVE_IS_CHIP))
             check("focus outline visible on chip", page.evaluate(ACTIVE_VISIBLE))
@@ -180,12 +196,18 @@ def main():
             page.wait_for_selector("#plan-content input[type='checkbox']", timeout=10000)
             page.evaluate("document.querySelector(\"#plan-content input[type='checkbox']\").focus()")
             before = page.evaluate("document.activeElement.checked")
+            item = page.evaluate("document.activeElement.dataset.item")
             page.keyboard.press("Space")
             page.wait_for_timeout(120)
             # Assert the STORAGE flip, not the DOM node: toggling re-renders
             # the list, so the focused element is replaced mid-check.
             check("Space toggles shopping checkbox",
                   bool(page.evaluate("CMF.getPlan().checked.length")) != bool(before))
+            check("focus returns to the same shopping row after re-render",
+                  page.evaluate("""(item) => {
+                      const el = document.activeElement;
+                      return !!el && el.matches("input[data-item]") && el.dataset.item === item;
+                  }""", item))
 
             # --- E. accessible names (real text only) ------------------------
             for name, url in (("home", "index.html"), ("result", "result.html?i=%E7%95%AA%E8%8C%84"),
