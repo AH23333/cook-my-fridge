@@ -51,6 +51,25 @@ def test_build_site(tmp_path, monkeypatch):
     split = json.loads((fake_site / "data" / "catalog.json").read_text(encoding="utf-8"))
     assert core["catalog"]["ingredients"] == split["ingredients"]
     assert (fake_site / "data" / "vocab.json").exists()
+    # Precompressed siblings: big text assets get .gz (deterministic, mtime=0),
+    # tiny files and binaries stay uncompressed.
+    core_gz = fake_site / "data" / "core.json.gz"
+    assert core_gz.exists()
+    import gzip as _gzip
+    assert _gzip.decompress(core_gz.read_bytes()) == (
+        fake_site / "data" / "core.json"
+    ).read_bytes()
+    assert core_gz.read_bytes()[4:8] == b"\x00\x00\x00\x00"  # mtime=0, reproducible
+    assert not (fake_site / "data" / "vocab.json.gz").exists()  # < 1 KB
+    try:
+        import brotli as _brotli
+    except ImportError:
+        _brotli = None
+    if _brotli is not None:
+        core_br = fake_site / "data" / "core.json.br"
+        assert _brotli.decompress(core_br.read_bytes()) == (
+            fake_site / "data" / "core.json"
+        ).read_bytes()
     assert (fake_site / "css" / "style.css").exists()
     assert (fake_site / "index.html").exists()
     for name in ("wildcards", "blindboxes", "variants", "ideas"):

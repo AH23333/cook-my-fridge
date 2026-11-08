@@ -236,6 +236,60 @@ def _inject_core_prefetch() -> int:
     return injected
 
 
+"""Precompressed-asset policy: every text asset >= 1 KB gets a sibling .gz
+(and .br when the optional brotli module is installed) so static hosts with
+gzip_static / brotli_static (and the local `run.py serve`) can answer with
+Content-Encoding instead of compressing per request. mtime=0 keeps .gz
+bytes deterministic across rebuilds."""
+COMPRESS_SUFFIXES: frozenset = frozenset(
+    {".html", ".css", ".js", ".json", ".svg", ".webmanifest", ".ics"}
+)
+COMPRESS_MIN_BYTES = 1024
+
+
+def compress_site_assets() -> dict:
+    """Write deterministic .gz (always) and .br (optional) siblings for the
+    deployable text assets. Returns {"gz": n, "br": n, "saved_pct": pct}."""
+    import gzip
+
+    try:
+        import brotli
+    except ImportError:
+        brotli = None
+
+    gz_count = 0
+    br_count = 0
+    raw_total = 0
+    best_total = 0
+    for path in sorted(SITE_DIR.rglob("*")):
+        if (
+            not path.is_file()
+            or path.suffix not in COMPRESS_SUFFIXES
+            or path.name.endswith((".gz", ".br"))
+        ):
+            continue
+        data = path.read_bytes()
+        if len(data) < COMPRESS_MIN_BYTES:
+            continue
+        raw_total += len(data)
+        gz_data = gzip.compress(data, compresslevel=9, mtime=0)
+        _retry(lambda path=path, gz_data=gz_data: path.with_name(
+            path.name + ".gz"
+        ).write_bytes(gz_data))
+        gz_count += 1
+        best = len(gz_data)
+        if brotli is not None:
+            br_data = brotli.compress(data, quality=11)
+            _retry(lambda path=path, br_data=br_data: path.with_name(
+                path.name + ".br"
+            ).write_bytes(br_data))
+            br_count += 1
+            best = min(best, len(br_data))
+        best_total += best
+    saved = round((1 - best_total / raw_total) * 100, 1) if raw_total else 0.0
+    return {"gz": gz_count, "br": br_count, "saved_pct": saved}
+
+
 def copy_web_assets() -> None:
     if SITE_DIR.exists():
         # Remove only generated asset folders, keep data dir until rewritten.
@@ -311,6 +365,7 @@ def build_site() -> dict:
     recipes = export_recipes()
     export_core(catalog_payload)
     ai = export_ai_cache()
+    compressed = compress_site_assets()
     summary = {
         "recipes": len(recipes),
         "ingredients": len(catalog_payload["ingredients"]),
@@ -319,6 +374,7 @@ def build_site() -> dict:
         "features_kb": round(bundle_bytes["features"] / 1024, 1),
         "html_bundled": rewritten,
         "html_prefetch": prefetched,
+        "precompressed": compressed,
         "site_dir": str(SITE_DIR),
     }
     return summary

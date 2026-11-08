@@ -1,3 +1,5 @@
 # Core runtime uses Python standard library only (urllib, json, dataclasses...).
 # Dev/test dependencies:
 pytest>=8.0
+# Optional: build emits .br precompressed assets when present (.gz always).
+Brotli>=1.1
