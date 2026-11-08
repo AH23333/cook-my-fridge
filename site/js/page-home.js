@@ -43,18 +43,26 @@
     }
   }
 
+  /* Merge at write time: another open tab may have changed cmf.fridge since
+     this page took its `selected` snapshot — writing that stale copy back
+     silently erases the other tab's picks (reproduced two-tab, 2026-11-08).
+     Single-item deltas re-read storage, apply just that delta, then adopt
+     the fresh truth locally. Whole-fridge actions (clear, random box) stay
+     intentional replaces. */
+  function toggleOne(name) {
+    const current = new Set(CMF.getFridge());
+    if (current.has(name)) current.delete(name);
+    else current.add(name);
+    CMF.setFridge([...current]);
+    selected = current;
+  }
+
   function onChipClick(ev) {
     const chip = ev.target.closest(".chip");
     if (!chip) return;
     const name = chip.dataset.name;
-    if (selected.has(name)) {
-      selected.delete(name);
-      chip.classList.remove("selected");
-    } else {
-      selected.add(name);
-      chip.classList.add("selected");
-    }
-    syncFridge();
+    toggleOne(name);
+    chip.classList.toggle("selected", selected.has(name));
     renderCookBar();
   }
 
@@ -86,8 +94,7 @@
     };
     cookBar.querySelectorAll(".x").forEach((x) => {
       x.onclick = () => {
-        selected.delete(x.dataset.name);
-        syncFridge();
+        toggleOne(x.dataset.name);
         renderWall(searchInput.value);
         renderCookBar();
       };
@@ -148,14 +155,17 @@
       nlFeedback.textContent = "没认出已知食材，换个说法或从食材墙点选。";
       return;
     }
+    // Merge into the CURRENT storage, not this page's snapshot (two-tab).
+    const current = new Set(CMF.getFridge());
     let added = 0;
     parsed.forEach((c) => {
-      if (!selected.has(c)) {
-        selected.add(c);
+      if (!current.has(c)) {
+        current.add(c);
         added += 1;
       }
     });
-    syncFridge();
+    CMF.setFridge([...current]);
+    selected = current;
     renderWall(searchInput.value);
     renderCookBar();
     nlInput.value = "";
@@ -240,10 +250,7 @@
       "</span></div>";
     root.querySelectorAll("[data-season]").forEach((btn) => {
       btn.onclick = () => {
-        const c = btn.dataset.season;
-        if (selected.has(c)) selected.delete(c);
-        else selected.add(c);
-        syncFridge();
+        toggleOne(btn.dataset.season);
         renderWall(searchInput.value);
         renderCookBar();
         renderSeasonalBanner();
