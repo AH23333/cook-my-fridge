@@ -16,6 +16,11 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[1] / "site"
 SHOTS = Path(__file__).resolve().parents[1] / "screenshots" / "stage27"
 SHOTS.mkdir(parents=True, exist_ok=True)
+# Sticky header and transient toasts are viewport-anchored: full-page
+# captures stitch them in at whatever scroll/fade state the run hit,
+# which flaps baselines (03-recipe-journal flapped 2026-11-08). Hide for
+# screenshots only; product styles untouched.
+HEADER_MASK = ".site-header, .toast { visibility: hidden !important; }"
 PAGES = [
     "index.html", "result.html?i=%E7%95%AA%E8%8C%84,%E9%B8%A1%E8%9B%8B",
     "recipe.html?id=r001", "wildcard.html?blind=1", "fridge.html",
@@ -95,7 +100,7 @@ with sync_playwright() as p:
     voice_visible = page.locator("#nl-voice").is_visible()
     voice_supported = page.evaluate("typeof CMF.voiceSupported === 'function' && CMF.voiceSupported()")
     check("voice button matches support", voice_visible == bool(voice_supported))
-    page.screenshot(path=str(SHOTS / "01-home.png"), full_page=True)
+    page.screenshot(style=HEADER_MASK, path=str(SHOTS / "01-home.png"), full_page=True)
 
     # 3. Browse: seasonal filter narrows the grid.
     page.goto(BASE + "browse.html", wait_until="networkidle")
@@ -107,7 +112,7 @@ with sync_playwright() as p:
     after = page.locator("#browse-grid .recipe-card").count()
     check("seasonal chip toggles on", "on" in (page.get_attribute("#filter-seasonal .filter-chip", "class") or ""))
     check("seasonal filter narrows", 0 < after <= before)
-    page.screenshot(path=str(SHOTS / "02-browse-seasonal.png"), full_page=True)
+    page.screenshot(style=HEADER_MASK, path=str(SHOTS / "02-browse-seasonal.png"), full_page=True)
 
     # 4. Recipe detail: cost line + journal check-in persists.
     page.goto(BASE + "recipe.html?id=r001", wait_until="networkidle")
@@ -124,13 +129,13 @@ with sync_playwright() as p:
     check("journal note saved", "好吃" in journal["notes"].get("r001", ""))
     check("journal snapshot kcal", isinstance(journal["cooked"][0].get("kcal"), (int, float)))
     check("journal count shown", "做过 1 次" in page.inner_text(".journal-count"))
-    page.screenshot(path=str(SHOTS / "03-recipe-journal.png"), full_page=True)
+    page.screenshot(style=HEADER_MASK, path=str(SHOTS / "03-recipe-journal.png"), full_page=True)
 
     # 5. Ingredient modal: storage encyclopedia row.
     page.locator(".ing-name-btn").first.click()
     page.wait_for_selector(".modal")
     check("modal storage row", "储存" in page.inner_text(".modal"))
-    page.screenshot(path=str(SHOTS / "04-ingredient-modal.png"))
+    page.screenshot(style=HEADER_MASK, path=str(SHOTS / "04-ingredient-modal.png"))
     page.click(".modal-close")
 
     # 6. Fridge: kitchen tools convert offline; foodfacts validates barcode.
@@ -154,7 +159,7 @@ with sync_playwright() as p:
     page.click("#off-lookup")
     page.wait_for_timeout(150)
     check("off barcode validation", "8–14 位数字" in page.inner_text("#off-status"))
-    page.screenshot(path=str(SHOTS / "05-fridge-tools.png"), full_page=True)
+    page.screenshot(style=HEADER_MASK, path=str(SHOTS / "05-fridge-tools.png"), full_page=True)
 
     # 7. Stats: achievements, streak and savings render after the check-in.
     page.goto(BASE + "stats.html", wait_until="networkidle")
@@ -164,7 +169,7 @@ with sync_playwright() as p:
     check("streak card", "当前连击" in page.inner_text("#stats-root"))
     check("savings card", page.locator(".savings-card").count() == 1)
     check("weekly trend", page.locator(".trend-col").count() == 7)
-    page.screenshot(path=str(SHOTS / "06-stats-achievements.png"), full_page=True)
+    page.screenshot(style=HEADER_MASK, path=str(SHOTS / "06-stats-achievements.png"), full_page=True)
 
     page.goto(BASE + "recipe.html?id=r001", wait_until="networkidle")
     hostile = '<img src="x" onerror="window.journalInjected=true">'
