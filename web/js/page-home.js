@@ -103,6 +103,10 @@
 
   function goCook() {
     if (!selected.size) return;
+    // Same double-write class as the journal button: dblclick logged the
+    // cook twice in history (measured). Once per second is plenty — a real
+    // second cook needs new picks anyway.
+    if (!CMF.oncePer("go-cook", 1000)) return;
     const list = [...selected];
     CMF.addHistory({
       date: new Date().toISOString(),

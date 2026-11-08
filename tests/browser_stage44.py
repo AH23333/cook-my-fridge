@@ -157,6 +157,26 @@ def main():
             )
             check("deduction confirm dblclick deducts exactly once",
                   abs(grams - (200 - need)) < 0.01)
+
+            # Undo is receipt-gated: dblclick restores exactly once.
+            undo = page.locator("[data-use-undo]")
+            if undo.count():
+                undo.dblclick()
+                page.wait_for_timeout(200)
+            restored = page.evaluate(
+                "CMF.normalizeInventory(CMF.getInventory()).batches"
+                ".filter(b => !b.deleted).reduce((s, b) => s + b.grams, 0)"
+            )
+            check("undo dblclick restores exactly once", abs(restored - 200) < 0.01)
+
+            # goCook dblclick: one history entry, not two.
+            page.goto(base + "index.html", wait_until="networkidle")
+            page.wait_for_selector(".chip[data-name]")
+            page.click('.chip[data-name="番茄"]')
+            page.locator("#btn-cook").dblclick()
+            page.wait_for_timeout(400)
+            check("cook dblclick logs exactly one history entry",
+                  page.evaluate("CMF.getHistory().length") == 1)
             context2.close()
             browser.close()
     finally:

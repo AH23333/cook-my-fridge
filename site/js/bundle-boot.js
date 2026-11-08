@@ -903,6 +903,23 @@
     const releaseFocus = CMF.mountModalFocus(overlay, close);
   };
 
+  /* "一次操作只落一次账" for write buttons. Playwright-measured: a dblclick
+     fires two full handler runs even if the first disables the button,
+     because a synchronous re-render swaps a fresh ENABLED control under the
+     cursor before the second click lands. A module-scope clock survives
+     re-renders; handlers gate on oncePer(key, windowMs) and failed writes
+     call onceReset so the retry is not eaten. */
+  const onceStamps = {};
+  CMF.oncePer = function (key, windowMs) {
+    const now = Date.now();
+    if (now - (onceStamps[key] || 0) < windowMs) return false;
+    onceStamps[key] = now;
+    return true;
+  };
+  CMF.onceReset = function (key) {
+    delete onceStamps[key];
+  };
+
   /* Focus management for modal overlays: remembers the trigger, moves
      focus inside, traps Tab/Shift+Tab, closes on Escape, and returns focus
      to the trigger on close. Returns a release() that MUST be called by
