@@ -192,7 +192,11 @@ def test_atomic_write_uses_unique_tmp_names(tmp_path, monkeypatch):
         t.start()
     for t in threads:
         t.join(timeout=15)
-    assert len(seen) == 2
+    # Replace calls can exceed the thread count: the Windows retry loop in
+    # _atomic_write_text re-issues replace() when the destination is briefly
+    # locked by the other writer (only happens under machine load — this
+    # flaked 3x in full-suite runs). What must hold is name UNIQUENESS.
+    assert len(seen) >= 2
     assert len(set(seen)) == 2, f"tmp name collision: {seen}"
     assert json.loads(target.read_text(encoding="utf-8"))["n"] in (0, 1)
 

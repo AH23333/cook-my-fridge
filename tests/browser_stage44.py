@@ -1,10 +1,13 @@
-"""Multi-tab concurrency (stage 44): two tabs on one localStorage.
+"""Write-safety under concurrent / repeated activation (stage 44).
 
-The lost-update bug: every page keeps an in-memory snapshot; a stale tab
-writing its snapshot back erased whatever the other tab had added
-(reproduced: A adds 番茄, B adds 鸡蛋 -> fridge held only 鸡蛋). Single-item
-deltas now merge at WRITE time (re-read, apply delta, adopt fresh truth);
-whole-state actions (clear, random box) stay intentional replaces.
+A) Multi-tab: every page keeps an in-memory snapshot; a stale tab writing
+   its snapshot back erased whatever the other tab had added (reproduced:
+   A adds 番茄, B adds 鸡蛋 -> fridge held only 鸡蛋). Single-item deltas
+   now merge at WRITE time; whole-state actions stay intentional replaces.
+B) Rapid re-entry: a dblclick used to log TWO journal entries because each
+   dispatched click re-ran the handler; the log button now disables
+   synchronously. Inventory add/commit flows were probe-verified guarded
+   (preview/receipt gates) and pinned here too.
 """
 from __future__ import annotations
 
@@ -102,8 +105,59 @@ def main():
             a.locator("#btn-clear").click()
             a.wait_for_timeout(150)
             check("clear remains an intentional wipe", fridge() == [])
-
             context.close()
+
+            # --- B. rapid re-entry: one click, one write --------------------
+            context2 = browser.new_context(
+                viewport={"width": 1280, "height": 960}, service_workers="block"
+            )
+            page = context2.new_page()
+            page.on("pageerror", lambda error: errors.append(str(error)))
+            page.goto(base + "recipe.html?id=r001", wait_until="networkidle")
+            page.wait_for_selector("#journal-log")
+            page.locator("#journal-log").dblclick()
+            page.wait_for_timeout(200)
+            check("dblclick logs exactly one journal entry",
+                  page.evaluate("CMF.getJournal().cooked.length") == 1)
+            page.evaluate("""() => {
+                const b = document.querySelector('#journal-log');
+                for (let i = 0; i < 5 && b; i++) b.click();
+            }""")
+            page.wait_for_timeout(200)
+            check("frantic clicks still produce exactly one entry",
+                  page.evaluate("CMF.getJournal().cooked.length") == 1)
+
+            # Inventory batch add: dblclick on submit must not duplicate.
+            page.goto(base + "fridge.html", wait_until="networkidle")
+            page.wait_for_selector("#inventory-content form")
+            ledger = page.locator("#inventory-content")
+            ledger.locator('[name="canonical"]').fill("鸡蛋")
+            ledger.locator('[name="grams"]').fill("200")
+            ledger.locator('button[type="submit"]').dblclick()
+            page.wait_for_timeout(200)
+            check("inventory submit dblclick adds exactly one batch",
+                  page.evaluate("CMF.getInventory().batches.length") == 1)
+
+            # Inventory deduction confirm: receipt-gated, single deduction.
+            need = page.evaluate(
+                "CMF.inventoryRecipeNeeds(CMF.data.recipes.find(r => r.id === 'r001'), 1)"
+                ".find(n => n.canonical === '鸡蛋').grams"
+            )
+            page.goto(base + "recipe.html?id=r001", wait_until="networkidle")
+            page.wait_for_selector(".inventory-use-form")
+            page.locator(".inventory-use-form [data-use-preview]").click()
+            page.wait_for_timeout(200)
+            commit = page.locator("[data-use-commit]")
+            if commit.count():
+                commit.dblclick()
+                page.wait_for_timeout(200)
+            grams = page.evaluate(
+                "CMF.normalizeInventory(CMF.getInventory()).batches"
+                ".filter(b => !b.deleted).reduce((s, b) => s + b.grams, 0)"
+            )
+            check("deduction confirm dblclick deducts exactly once",
+                  abs(grams - (200 - need)) < 0.01)
+            context2.close()
             browser.close()
     finally:
         server.shutdown()

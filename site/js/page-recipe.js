@@ -69,6 +69,11 @@
     );
   }
 
+  /* Module-scope (not closure) so the guard survives render() swapping the
+     panel: both the dblclick's second dispatch and fresh-node re-clicks see
+     the same clock. */
+  let lastLogAt = 0;
+
   function wireJournalPanel(recipe) {
     const logBtn = root.querySelector("#journal-log");
     if (!logBtn) return;
@@ -89,8 +94,17 @@
       };
     });
     logBtn.onclick = () => {
+      // One click, one entry: a dblclick logs twice otherwise. Disabling the
+      // button does NOT help — render() synchronously swaps in a fresh
+      // ENABLED button under the cursor before the dblclick's second click
+      // lands (measured). A module-scope timestamp survives the re-render:
+      // the second click (old or new node, either closure) is ignored.
+      const now = Date.now();
+      if (now - lastLogAt < 1000) return;
+      lastLogAt = now;
       const note = root.querySelector("#journal-note").value;
       if (!CMF.logCooked(recipe, { rating, note, factor })) {
+        lastLogAt = 0; // failed write must not eat the retry
         CMF.toast("保存失败，输入已保留，请重试或导出备份后检查存储空间。");
         return;
       }
