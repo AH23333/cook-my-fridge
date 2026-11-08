@@ -41,12 +41,12 @@
   function ensureLoad() {
     if (corePromise) return;
     const d = CMF.data;
-    corePromise = Promise.all([
-      fetchJSON("data/catalog.json"),
-      fetchJSON("data/vocab.json"),
-    ]).then(([catalog, vocab]) => {
-      d.catalog = catalog;
-      d.vocab = vocab;
+    // One request for the whole blocking core (catalog + vocab merged at
+    // build time): two parallel requests cost an extra round trip for a
+    // 0.5 KB vocab on slow links.
+    corePromise = fetchJSON("data/core.json").then((core) => {
+      d.catalog = core.catalog;
+      d.vocab = core.vocab;
       return d;
     });
     // recipes.json (184 KB) queues AFTER the blocking core (catalog+vocab,

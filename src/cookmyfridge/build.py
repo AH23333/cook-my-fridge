@@ -71,6 +71,18 @@ def export_recipes() -> list[dict]:
     return recipes
 
 
+def export_core(catalog_payload: dict) -> None:
+    """Single-request core payload for boot: catalog + vocab in one JSON so
+    the first screen costs one data round trip instead of two (vocab.json is
+    ~0.5 KB — a pure-latency request on slow links; measured waterfall:
+    466 ms for 803 B). The split files stay for the Node consistency
+    harnesses and any external consumers."""
+    _write_json(
+        SITE_DIR / "data" / "core.json",
+        {"catalog": catalog_payload, "vocab": vocabulary_snapshot()},
+    )
+
+
 def _cache_values(filename: str) -> list:
     source = CACHE_DIR / filename
     if not source.exists():
@@ -223,6 +235,7 @@ def build_site() -> dict:
         _retry(lambda: shutil.rmtree(data_dir))
     catalog_payload = export_catalog()
     recipes = export_recipes()
+    export_core(catalog_payload)
     ai = export_ai_cache()
     summary = {
         "recipes": len(recipes),

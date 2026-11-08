@@ -1,4 +1,5 @@
 """Static site build pipeline tests (runs fully in temp dirs)."""
+import json
 from pathlib import Path
 
 import pytest
@@ -43,6 +44,12 @@ def test_build_site(tmp_path, monkeypatch):
     assert summary["ingredients"] >= 150
     assert (fake_site / "data" / "catalog.json").exists()
     assert (fake_site / "data" / "recipes.json").exists()
+    # Boot fetches a single merged core payload (one round trip instead of
+    # catalog + vocab in parallel).
+    core = json.loads((fake_site / "data" / "core.json").read_text(encoding="utf-8"))
+    assert set(core) == {"catalog", "vocab"}
+    split = json.loads((fake_site / "data" / "catalog.json").read_text(encoding="utf-8"))
+    assert core["catalog"]["ingredients"] == split["ingredients"]
     assert (fake_site / "data" / "vocab.json").exists()
     assert (fake_site / "css" / "style.css").exists()
     assert (fake_site / "index.html").exists()

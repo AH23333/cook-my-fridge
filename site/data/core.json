@@ -1,0 +1,7435 @@
+{
+"catalog": {
+"ingredients": [
+{
+"canonical": "白菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"大白菜",
+"黄芽菜"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "卷心菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"包菜",
+"圆白菜",
+"甘蓝",
+"莲花白"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "娃娃菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"微型大白菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "小白菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"青菜",
+"上海青",
+"小油菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "油菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"芸薹"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "菠菜",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"赤根菜"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "生菜",
+"category": "蔬菜",
+"emoji": "🥗",
+"synonyms": [
+"叶用莴苣"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "芹菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"旱芹"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "韭菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"起阳草"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "香菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"芫荽",
+"胡荽"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "茼蒿",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"皇帝菜",
+"蓬蒿"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "空心菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"通菜",
+"蕹菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "苋菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"汉菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "芥蓝",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"芥兰"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "芦笋",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"石刁柏"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "西兰花",
+"category": "蔬菜",
+"emoji": "🥦",
+"synonyms": [
+"绿花菜",
+"西蓝花"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "菜花",
+"category": "蔬菜",
+"emoji": "🥦",
+"synonyms": [
+"花菜",
+"花椰菜"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "黄瓜",
+"category": "蔬菜",
+"emoji": "🥒",
+"synonyms": [
+"青瓜",
+"胡瓜"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "冬瓜",
+"category": "蔬菜",
+"emoji": "🍈",
+"synonyms": [
+"白瓜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "南瓜",
+"category": "蔬菜",
+"emoji": "🎃",
+"synonyms": [
+"倭瓜",
+"番瓜"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
+},
+{
+"canonical": "丝瓜",
+"category": "蔬菜",
+"emoji": "🥒",
+"synonyms": [
+"胜瓜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "苦瓜",
+"category": "蔬菜",
+"emoji": "🥒",
+"synonyms": [
+"凉瓜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "西葫芦",
+"category": "蔬菜",
+"emoji": "🥒",
+"synonyms": [
+"角瓜",
+"小瓜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "番茄",
+"category": "蔬菜",
+"emoji": "🍅",
+"synonyms": [
+"西红柿",
+"洋柿子",
+"柿子"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "茄子",
+"category": "蔬菜",
+"emoji": "🍆",
+"synonyms": [
+"落苏"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "青椒",
+"category": "蔬菜",
+"emoji": "🫑",
+"synonyms": [
+"菜椒",
+"甜椒",
+"灯笼椒",
+"红甜椒",
+"红椒"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "辣椒",
+"category": "蔬菜",
+"emoji": "🌶️",
+"synonyms": [
+"尖椒",
+"小米辣",
+"朝天椒"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "土豆",
+"category": "蔬菜",
+"emoji": "🥔",
+"synonyms": [
+"马铃薯",
+"洋芋",
+"地蛋"
+],
+"allergens": [],
+"nutrition": [
+"优质碳水"
+]
+},
+{
+"canonical": "红薯",
+"category": "蔬菜",
+"emoji": "🍠",
+"synonyms": [
+"地瓜",
+"甘薯",
+"番薯"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
+},
+{
+"canonical": "山药",
+"category": "蔬菜",
+"emoji": "🍠",
+"synonyms": [
+"薯蓣",
+"淮山"
+],
+"allergens": [],
+"nutrition": [
+"优质碳水"
+]
+},
+{
+"canonical": "莲藕",
+"category": "蔬菜",
+"emoji": "🪷",
+"synonyms": [
+"藕"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
+},
+{
+"canonical": "萝卜",
+"category": "蔬菜",
+"emoji": "🥕",
+"synonyms": [
+"白萝卜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "胡萝卜",
+"category": "蔬菜",
+"emoji": "🥕",
+"synonyms": [
+"红萝卜",
+"甘笋"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂"
+]
+},
+{
+"canonical": "洋葱",
+"category": "蔬菜",
+"emoji": "🧅",
+"synonyms": [
+"球葱",
+"圆葱"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂"
+]
+},
+{
+"canonical": "大葱",
+"category": "蔬菜",
+"emoji": "🧅",
+"synonyms": [
+"葱",
+"葱白"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "生姜",
+"category": "蔬菜",
+"emoji": "🫚",
+"synonyms": [
+"姜",
+"老姜",
+"姜片"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "大蒜",
+"category": "蔬菜",
+"emoji": "🧄",
+"synonyms": [
+"蒜",
+"蒜头",
+"蒜末",
+"蒜蓉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "小葱",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"葱花",
+"香葱",
+"小香葱"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "干辣椒",
+"category": "调料",
+"emoji": "🌶️",
+"synonyms": [
+"辣椒干",
+"干红椒",
+"辣椒粉",
+"辣椒面",
+"辣椒油",
+"辣椒圈"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "蒜苔",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"蒜薹",
+"蒜苗"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "豆角",
+"category": "蔬菜",
+"emoji": "🫘",
+"synonyms": [
+"豇豆",
+"长豆角"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂"
+]
+},
+{
+"canonical": "豌豆",
+"category": "蔬菜",
+"emoji": "🫛",
+"synonyms": [
+"青豆"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "玉米",
+"category": "蔬菜",
+"emoji": "🌽",
+"synonyms": [
+"苞米",
+"苞谷",
+"玉米粒"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
+},
+{
+"canonical": "圣女果",
+"category": "蔬菜",
+"emoji": "🍅",
+"synonyms": [
+"小番茄",
+"樱桃番茄"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "四季豆",
+"category": "蔬菜",
+"emoji": "🫛",
+"synonyms": [
+"菜豆"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "豆芽",
+"category": "蔬菜",
+"emoji": "🌱",
+"synonyms": [
+"绿豆芽",
+"黄豆芽"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "莴笋",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"莴苣"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "竹笋",
+"category": "蔬菜",
+"emoji": "🎋",
+"synonyms": [
+"笋",
+"春笋",
+"冬笋"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "茭白",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"高笋"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "魔芋",
+"category": "蔬菜",
+"emoji": "🍥",
+"synonyms": [
+"魔芋丝",
+"魔芋块",
+"蒟蒻"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "菜心",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"广东菜心",
+"菜薹"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "荷兰豆",
+"category": "蔬菜",
+"emoji": "🫛",
+"synonyms": [
+"雪豆",
+"豌豆荚"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "荸荠",
+"category": "蔬菜",
+"emoji": "🌰",
+"synonyms": [
+"马蹄",
+"地栗"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "木耳",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"黑木耳",
+"云耳"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "银耳",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"白木耳",
+"雪耳"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "香菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"冬菇",
+"花菇"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "金针菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"冬蘑"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "平菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"侧耳"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "杏鲍菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"刺芹菇"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "口蘑",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"白蘑菇"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "蟹味菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"真姬菇"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "海带",
+"category": "蔬菜",
+"emoji": "🌊",
+"synonyms": [
+"昆布"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "紫菜",
+"category": "蔬菜",
+"emoji": "🟣",
+"synonyms": [
+"索菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "裙带菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"干裙带菜",
+"裙带"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "猪肉",
+"category": "肉蛋",
+"emoji": "🥩",
+"synonyms": [
+"里脊",
+"猪里脊",
+"瘦肉",
+"猪肉馅",
+"肉馅",
+"肉末"
+],
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"低碳水"
+]
+},
+{
+"canonical": "五花肉",
+"category": "肉蛋",
+"emoji": "🥓",
+"synonyms": [
+"三层肉",
+"五花"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "排骨",
+"category": "肉蛋",
+"emoji": "🍖",
+"synonyms": [
+"猪排骨",
+"小排"
+],
+"allergens": [],
+"nutrition": [
+"高蛋白"
+]
+},
+{
+"canonical": "猪蹄",
+"category": "肉蛋",
+"emoji": "🍖",
+"synonyms": [
+"猪脚",
+"猪手"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "猪肝",
+"category": "肉蛋",
+"emoji": "🥩",
+"synonyms": [
+"肝片"
+],
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"高铁",
+"低脂"
+]
+},
+{
+"canonical": "牛肉",
+"category": "肉蛋",
+"emoji": "🥩",
+"synonyms": [
+"牛里脊",
+"肥牛"
+],
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"低碳水",
+"高铁"
+]
+},
+{
+"canonical": "牛腩",
+"category": "肉蛋",
+"emoji": "🥩",
+"synonyms": [
+"牛腹肉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "羊肉",
+"category": "肉蛋",
+"emoji": "🥩",
+"synonyms": [
+"羊腿肉",
+"羔羊肉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "鸡肉",
+"category": "肉蛋",
+"emoji": "🍗",
+"synonyms": [
+"整鸡",
+"三黄鸡",
+"土鸡",
+"鸡肉丝"
+],
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"低碳水"
+]
+},
+{
+"canonical": "鸡胸肉",
+"category": "肉蛋",
+"emoji": "🍗",
+"synonyms": [
+"鸡脯肉"
+],
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "鸡腿",
+"category": "肉蛋",
+"emoji": "🍗",
+"synonyms": [
+"鸡大腿"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "鸡翅",
+"category": "肉蛋",
+"emoji": "🍗",
+"synonyms": [
+"鸡翅膀",
+"翅中"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "鸡爪",
+"category": "肉蛋",
+"emoji": "🍗",
+"synonyms": [
+"凤爪"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "鸭肉",
+"category": "肉蛋",
+"emoji": "🦆",
+"synonyms": [
+"鸭",
+"老鸭"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "鸡蛋",
+"category": "肉蛋",
+"emoji": "🥚",
+"synonyms": [
+"鸡子",
+"土鸡蛋"
+],
+"allergens": [
+"鸡蛋"
+],
+"nutrition": [
+"高蛋白",
+"低碳水"
+]
+},
+{
+"canonical": "咸鸭蛋",
+"category": "肉蛋",
+"emoji": "🥚",
+"synonyms": [
+"腌鸭蛋",
+"咸蛋"
+],
+"allergens": [
+"鸡蛋"
+],
+"nutrition": []
+},
+{
+"canonical": "鹌鹑蛋",
+"category": "肉蛋",
+"emoji": "🥚",
+"synonyms": [
+"鹌鹑",
+"鹌鹑卵"
+],
+"allergens": [
+"鸡蛋"
+],
+"nutrition": []
+},
+{
+"canonical": "火腿肠",
+"category": "肉蛋",
+"emoji": "🌭",
+"synonyms": [
+"火腿"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "午餐肉",
+"category": "肉蛋",
+"emoji": "🥫",
+"synonyms": [
+"梅林午餐肉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "香肠",
+"category": "肉蛋",
+"emoji": "🌭",
+"synonyms": [
+"腊肠"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "腊肉",
+"category": "肉蛋",
+"emoji": "🥓",
+"synonyms": [
+"咸肉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "培根",
+"category": "肉蛋",
+"emoji": "🥓",
+"synonyms": [
+"烟肉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "鲫鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"鲫瓜子"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": []
+},
+{
+"canonical": "草鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"鲩鱼"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": []
+},
+{
+"canonical": "带鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"刀鱼"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": []
+},
+{
+"canonical": "鳕鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"狭鳕"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "三文鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"鲑鱼",
+"大马哈鱼"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": [
+"高蛋白",
+"低碳水"
+]
+},
+{
+"canonical": "金枪鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"吞拿鱼",
+"金枪鱼罐头"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "巴沙鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"龙利鱼柳"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "鲈鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"花鲈",
+"寨花"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": []
+},
+{
+"canonical": "鱼",
+"category": "水产",
+"emoji": "🐟",
+"synonyms": [
+"鲜鱼",
+"整鱼"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": []
+},
+{
+"canonical": "虾",
+"category": "水产",
+"emoji": "🦐",
+"synonyms": [
+"大虾",
+"基围虾",
+"明虾"
+],
+"allergens": [
+"甲壳类"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "虾仁",
+"category": "水产",
+"emoji": "🦐",
+"synonyms": [
+"青虾仁",
+"海米"
+],
+"allergens": [
+"甲壳类"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "鱿鱼",
+"category": "水产",
+"emoji": "🦑",
+"synonyms": [
+"枪乌贼"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "螃蟹",
+"category": "水产",
+"emoji": "🦀",
+"synonyms": [
+"蟹",
+"大闸蟹"
+],
+"allergens": [
+"甲壳类"
+],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "扇贝",
+"category": "水产",
+"emoji": "🐚",
+"synonyms": [
+"带子"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "花蛤",
+"category": "水产",
+"emoji": "🐚",
+"synonyms": [
+"花甲",
+"蛤蜊"
+],
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "蟹棒",
+"category": "水产",
+"emoji": "🦀",
+"synonyms": [
+"蟹柳",
+"模拟蟹肉"
+],
+"allergens": [
+"鱼",
+"鸡蛋"
+],
+"nutrition": []
+},
+{
+"canonical": "虾滑",
+"category": "水产",
+"emoji": "🍤",
+"synonyms": [
+"手打虾滑"
+],
+"allergens": [
+"甲壳类"
+],
+"nutrition": []
+},
+{
+"canonical": "虾皮",
+"category": "水产",
+"emoji": "🦐",
+"synonyms": [
+"毛虾",
+"海米干"
+],
+"allergens": [
+"甲壳类"
+],
+"nutrition": []
+},
+{
+"canonical": "大米",
+"category": "主食",
+"emoji": "🍚",
+"synonyms": [
+"米",
+"粳米"
+],
+"allergens": [],
+"nutrition": [
+"优质碳水"
+]
+},
+{
+"canonical": "米饭",
+"category": "主食",
+"emoji": "🍚",
+"synonyms": [
+"白米饭",
+"剩饭",
+"隔夜饭"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "小米",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"粟米"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
+},
+{
+"canonical": "糯米",
+"category": "主食",
+"emoji": "🍚",
+"synonyms": [
+"江米"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "莲子",
+"category": "主食",
+"emoji": "🪷",
+"synonyms": [
+"莲米",
+"白莲"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "燕麦",
+"category": "主食",
+"emoji": "🥣",
+"synonyms": [
+"燕麦片"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
+},
+{
+"canonical": "面粉",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"小麦粉",
+"中筋面粉"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "面条",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"鲜面",
+"手擀面"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "挂面",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"干面条"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "方便面",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"泡面",
+"速食面"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "荞麦面",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"荞麦面条"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "乌冬面",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"日式乌冬"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "意面",
+"category": "主食",
+"emoji": "🍝",
+"synonyms": [
+"意大利面",
+"通心粉"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "米粉",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"米线"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "粉丝",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"细粉",
+"龙口粉丝"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "粉条",
+"category": "主食",
+"emoji": "🍜",
+"synonyms": [
+"红薯粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "馒头",
+"category": "主食",
+"emoji": "🍞",
+"synonyms": [
+"馍"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "面包糠",
+"category": "主食",
+"emoji": "🍞",
+"synonyms": [
+"面包屑"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "糯米粉",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"江米粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "藕粉",
+"category": "主食",
+"emoji": "🟡",
+"synonyms": [
+"藕淀粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "面包",
+"category": "主食",
+"emoji": "🍞",
+"synonyms": [
+"餐包"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "吐司",
+"category": "主食",
+"emoji": "🍞",
+"synonyms": [
+"切片面包",
+"方包",
+"白吐司",
+"全麦吐司"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "饺子",
+"category": "主食",
+"emoji": "🥟",
+"synonyms": [
+"水饺"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "馄饨",
+"category": "主食",
+"emoji": "🥟",
+"synonyms": [
+"云吞"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "包子",
+"category": "主食",
+"emoji": "🥟",
+"synonyms": [
+"肉包"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "豆腐",
+"category": "豆乳",
+"emoji": "🧈",
+"synonyms": [
+"北豆腐",
+"南豆腐"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": [
+"高蛋白",
+"高纤维",
+"低碳水"
+]
+},
+{
+"canonical": "嫩豆腐",
+"category": "豆乳",
+"emoji": "🧈",
+"synonyms": [
+"内酯豆腐",
+"绢豆腐"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": [
+"高蛋白",
+"低碳水"
+]
+},
+{
+"canonical": "老豆腐",
+"category": "豆乳",
+"emoji": "🧈",
+"synonyms": [
+"硬豆腐"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "豆干",
+"category": "豆乳",
+"emoji": "🧈",
+"synonyms": [
+"豆腐干",
+"香干"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": [
+"高蛋白",
+"高纤维",
+"低碳水"
+]
+},
+{
+"canonical": "腐竹",
+"category": "豆乳",
+"emoji": "🟡",
+"synonyms": [
+"豆腐皮"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": [
+"高蛋白",
+"低碳水"
+]
+},
+{
+"canonical": "豆浆",
+"category": "豆乳",
+"emoji": "🥛",
+"synonyms": [
+"豆汁"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "毛豆",
+"category": "豆乳",
+"emoji": "🫛",
+"synonyms": [
+"青大豆"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "蚕豆",
+"category": "豆乳",
+"emoji": "🫘",
+"synonyms": [
+"胡豆",
+"南豆"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "黄豆",
+"category": "豆乳",
+"emoji": "🫘",
+"synonyms": [
+"大豆"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": [
+"高蛋白",
+"高纤维",
+"优质碳水"
+]
+},
+{
+"canonical": "绿豆",
+"category": "豆乳",
+"emoji": "🫘",
+"synonyms": [
+"青小豆"
+],
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"高纤维",
+"优质碳水"
+]
+},
+{
+"canonical": "红豆",
+"category": "豆乳",
+"emoji": "🫘",
+"synonyms": [
+"赤小豆",
+"红小豆"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "牛奶",
+"category": "豆乳",
+"emoji": "🥛",
+"synonyms": [
+"纯牛奶",
+"鲜奶",
+"低脂牛奶",
+"脱脂牛奶"
+],
+"allergens": [
+"牛奶"
+],
+"nutrition": []
+},
+{
+"canonical": "酸奶",
+"category": "豆乳",
+"emoji": "🥛",
+"synonyms": [
+"酸乳"
+],
+"allergens": [
+"牛奶"
+],
+"nutrition": []
+},
+{
+"canonical": "奶酪",
+"category": "豆乳",
+"emoji": "🧀",
+"synonyms": [
+"芝士片",
+"干酪",
+"芝士"
+],
+"allergens": [
+"牛奶"
+],
+"nutrition": []
+},
+{
+"canonical": "黄油",
+"category": "豆乳",
+"emoji": "🧈",
+"synonyms": [
+"牛油",
+"白脱"
+],
+"allergens": [
+"牛奶"
+],
+"nutrition": []
+},
+{
+"canonical": "奶油",
+"category": "豆乳",
+"emoji": "🍶",
+"synonyms": [
+"淡奶油",
+"稀奶油"
+],
+"allergens": [
+"牛奶"
+],
+"nutrition": []
+},
+{
+"canonical": "花生",
+"category": "豆乳",
+"emoji": "🥜",
+"synonyms": [
+"花生米",
+"花生仁"
+],
+"allergens": [
+"花生"
+],
+"nutrition": []
+},
+{
+"canonical": "食用油",
+"category": "调料",
+"emoji": "🫒",
+"synonyms": [
+"植物油",
+"色拉油",
+"菜籽油",
+"油"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "清水",
+"category": "调料",
+"emoji": "💧",
+"synonyms": [
+"水",
+"白开水",
+"饮用水",
+"温水",
+"凉水",
+"冰块"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "花生油",
+"category": "调料",
+"emoji": "🫒",
+"synonyms": [],
+"allergens": [
+"花生"
+],
+"nutrition": []
+},
+{
+"canonical": "橄榄油",
+"category": "调料",
+"emoji": "🫒",
+"synonyms": [],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "香油",
+"category": "调料",
+"emoji": "🫒",
+"synonyms": [
+"芝麻油",
+"麻油"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "芝麻",
+"category": "调料",
+"emoji": "🌰",
+"synonyms": [
+"白芝麻",
+"黑芝麻",
+"熟芝麻",
+"熟白芝麻",
+"白芝麻粒"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "酵母",
+"category": "调料",
+"emoji": "🍞",
+"synonyms": [
+"干酵母",
+"酵母粉",
+"发酵粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "盐",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"食盐",
+"精盐"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "白糖",
+"category": "调料",
+"emoji": "🍬",
+"synonyms": [
+"白砂糖",
+"绵白糖",
+"糖"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "冰糖",
+"category": "调料",
+"emoji": "🍬",
+"synonyms": [
+"老冰糖"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "生抽",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"味极鲜"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "老抽",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"酱油膏"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "酱油",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"豉油"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "醋",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"米醋",
+"陈醋",
+"香醋",
+"黑醋"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "料酒",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"黄酒",
+"绍酒"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "蚝油",
+"category": "调料",
+"emoji": "🦪",
+"synonyms": [
+"牡蛎油"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "豆瓣酱",
+"category": "调料",
+"emoji": "🥫",
+"synonyms": [
+"郫县豆瓣"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "黄豆酱",
+"category": "调料",
+"emoji": "🥫",
+"synonyms": [
+"大豆酱"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "甜面酱",
+"category": "调料",
+"emoji": "🥫",
+"synonyms": [
+"甜酱"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "辣椒酱",
+"category": "调料",
+"emoji": "🌶️",
+"synonyms": [
+"剁椒"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "老干妈",
+"category": "调料",
+"emoji": "🌶️",
+"synonyms": [
+"陶华碧老干妈"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "火锅底料",
+"category": "调料",
+"emoji": "🍲",
+"synonyms": [
+"牛油底料"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "可乐",
+"category": "调料",
+"emoji": "🥤",
+"synonyms": [
+"汽水"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "咖喱块",
+"category": "调料",
+"emoji": "🍛",
+"synonyms": [
+"咖喱"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "味噌",
+"category": "调料",
+"emoji": "🍲",
+"synonyms": [
+"白味噌",
+"赤味噌",
+"日式味噌"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "番茄酱",
+"category": "调料",
+"emoji": "🍅",
+"synonyms": [
+"番茄沙司"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "沙拉酱",
+"category": "调料",
+"emoji": "🫙",
+"synonyms": [
+"蛋黄酱",
+"美乃滋"
+],
+"allergens": [
+"鸡蛋"
+],
+"nutrition": []
+},
+{
+"canonical": "芝麻酱",
+"category": "调料",
+"emoji": "🫙",
+"synonyms": [
+"麻酱"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "花生酱",
+"category": "调料",
+"emoji": "🫙",
+"synonyms": [],
+"allergens": [
+"花生"
+],
+"nutrition": []
+},
+{
+"canonical": "腐乳",
+"category": "调料",
+"emoji": "🫙",
+"synonyms": [
+"豆腐乳"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "花椒",
+"category": "调料",
+"emoji": "🟤",
+"synonyms": [
+"麻椒"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "八角",
+"category": "调料",
+"emoji": "🟤",
+"synonyms": [
+"大料",
+"八角茴香"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "桂皮",
+"category": "调料",
+"emoji": "🟤",
+"synonyms": [
+"肉桂",
+"肉桂粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "香叶",
+"category": "调料",
+"emoji": "🌿",
+"synonyms": [
+"月桂叶"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "罗勒",
+"category": "调料",
+"emoji": "🌿",
+"synonyms": [
+"罗勒叶",
+"九层塔"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "高汤",
+"category": "调料",
+"emoji": "🍲",
+"synonyms": [
+"鸡汤",
+"骨头汤",
+"清汤"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "胡椒粉",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"胡椒",
+"白胡椒",
+"白胡椒粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "黑胡椒",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"黑椒"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "孜然",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"安息茴香"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "十三香",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"五香粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "鸡精",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"鸡粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "淀粉",
+"category": "调料",
+"emoji": "🌾",
+"synonyms": [
+"生粉",
+"玉米淀粉",
+"水淀粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "蜂蜜",
+"category": "调料",
+"emoji": "🍯",
+"synonyms": [
+"蜜糖"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "蒸鱼豉油",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"蒸鱼酱油"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+},
+{
+"canonical": "姜粉",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"干姜粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "蒜粉",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"大蒜粉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "花椒粉",
+"category": "调料",
+"emoji": "🧂",
+"synonyms": [
+"花椒面"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "白酒",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"烧酒"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "白醋",
+"category": "调料",
+"emoji": "🍶",
+"synonyms": [
+"米醋白醋"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "椰浆",
+"category": "调料",
+"emoji": "🥥",
+"synonyms": [
+"椰奶"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "柠檬汁",
+"category": "调料",
+"emoji": "🍋",
+"synonyms": [
+"柠檬原汁"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "苹果",
+"category": "水果",
+"emoji": "🍎",
+"synonyms": [
+"红富士"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "香蕉",
+"category": "水果",
+"emoji": "🍌",
+"synonyms": [
+"甘蕉"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "橙子",
+"category": "水果",
+"emoji": "🍊",
+"synonyms": [
+"甜橙",
+"脐橙"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "橘子",
+"category": "水果",
+"emoji": "🍊",
+"synonyms": [
+"桔子",
+"蜜橘"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "柠檬",
+"category": "水果",
+"emoji": "🍋",
+"synonyms": [
+"柠果"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "葡萄",
+"category": "水果",
+"emoji": "🍇",
+"synonyms": [
+"提子"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "西瓜",
+"category": "水果",
+"emoji": "🍉",
+"synonyms": [
+"夏瓜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "草莓",
+"category": "水果",
+"emoji": "🍓",
+"synonyms": [
+"士多啤梨"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "蓝莓",
+"category": "水果",
+"emoji": "🫐",
+"synonyms": [
+"蓝浆果"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "菠萝",
+"category": "水果",
+"emoji": "🍍",
+"synonyms": [
+"凤梨"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "芒果",
+"category": "水果",
+"emoji": "🥭",
+"synonyms": [
+"杧果"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "梨",
+"category": "水果",
+"emoji": "🍐",
+"synonyms": [
+"雪梨",
+"鸭梨"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "桃子",
+"category": "水果",
+"emoji": "🍑",
+"synonyms": [
+"桃",
+"水蜜桃"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "猕猴桃",
+"category": "水果",
+"emoji": "🥝",
+"synonyms": [
+"奇异果"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "火龙果",
+"category": "水果",
+"emoji": "🐉",
+"synonyms": [
+"红龙果"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "柚子",
+"category": "水果",
+"emoji": "🍊",
+"synonyms": [
+"文旦"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "木瓜",
+"category": "水果",
+"emoji": "🍈",
+"synonyms": [
+"番木瓜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "樱桃",
+"category": "水果",
+"emoji": "🍒",
+"synonyms": [
+"车厘子"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "荔枝",
+"category": "水果",
+"emoji": "🍒",
+"synonyms": [
+"丹荔",
+"荔枝冰块"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "龙眼",
+"category": "水果",
+"emoji": "🍒",
+"synonyms": [
+"桂圆"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "红枣",
+"category": "水果",
+"emoji": "🔴",
+"synonyms": [
+"大枣",
+"干枣",
+"枣"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "枸杞",
+"category": "水果",
+"emoji": "🔴",
+"synonyms": [
+"枸杞子",
+"红枸杞"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "核桃",
+"category": "水果",
+"emoji": "🌰",
+"synonyms": [
+"核桃仁",
+"胡桃"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "腰果",
+"category": "水果",
+"emoji": "🥜",
+"synonyms": [
+"腰果仁",
+"鸡腰果"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "百香果",
+"category": "水果",
+"emoji": "🟣",
+"synonyms": [
+"西番莲",
+"鸡蛋果",
+"热情果"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "蔓越莓",
+"category": "水果",
+"emoji": "🔴",
+"synonyms": [
+"蔓越莓干",
+"小红莓"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "石榴",
+"category": "水果",
+"emoji": "🔴",
+"synonyms": [
+"安石榴",
+"石榴籽"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "椰子",
+"category": "水果",
+"emoji": "🥥",
+"synonyms": [
+"椰肉",
+"椰青"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "无花果",
+"category": "水果",
+"emoji": "🍑",
+"synonyms": [
+"蜜果",
+"无花果干"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "速冻饺子",
+"category": "冷冻食品",
+"emoji": "🥟",
+"synonyms": [
+"冻饺子"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "速冻包子",
+"category": "冷冻食品",
+"emoji": "🥟",
+"synonyms": [
+"冻包子"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "手抓饼",
+"category": "冷冻食品",
+"emoji": "🫓",
+"synonyms": [
+"葱油饼"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "冻薯条",
+"category": "冷冻食品",
+"emoji": "🍟",
+"synonyms": [
+"冷冻薯条"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "冻豌豆",
+"category": "冷冻食品",
+"emoji": "🟢",
+"synonyms": [
+"冷冻豌豆"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "冻玉米粒",
+"category": "冷冻食品",
+"emoji": "🌽",
+"synonyms": [
+"冷冻玉米粒"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "冻虾仁",
+"category": "冷冻食品",
+"emoji": "🦐",
+"synonyms": [
+"冷冻虾仁"
+],
+"allergens": [
+"甲壳类"
+],
+"nutrition": []
+},
+{
+"canonical": "冻鸡块",
+"category": "冷冻食品",
+"emoji": "🍗",
+"synonyms": [
+"上校鸡块",
+"鸡米花"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "汤圆",
+"category": "冷冻食品",
+"emoji": "🍡",
+"synonyms": [
+"元宵"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "冷冻混合菜",
+"category": "冷冻食品",
+"emoji": "🥗",
+"synonyms": [
+"杂菜粒",
+"什锦菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "秋葵",
+"category": "蔬菜",
+"emoji": "🫛",
+"synonyms": [
+"羊角豆",
+"黄秋葵"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"低脂",
+"低碳水"
+]
+},
+{
+"canonical": "羽衣甘蓝",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"绿叶甘蓝",
+"kale"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "抱子甘蓝",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"球芽甘蓝",
+"小卷心菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "茴香",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"茴香菜",
+"小怀香"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "荠菜",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"菱角菜",
+"护生草"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "苦菊",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"苦苣",
+"苦叶生菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "韭黄",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"韭芽",
+"黄韭"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "蒜黄",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"蒜苗黄"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "折耳根",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"鱼腥草",
+"蕺菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "马齿苋",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"马苋",
+"五行草"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "菱角",
+"category": "蔬菜",
+"emoji": "🪷",
+"synonyms": [
+"水菱",
+"菱实"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "百合",
+"category": "蔬菜",
+"emoji": "🪷",
+"synonyms": [
+"鲜百合",
+"蒜脑薯"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "牛油果",
+"category": "水果",
+"emoji": "🥑",
+"synonyms": [
+"鳄梨",
+"酪梨"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "鹰嘴豆",
+"category": "豆乳",
+"emoji": "🫘",
+"synonyms": [
+"桃豆",
+"鸡心豆"
+],
+"allergens": [],
+"nutrition": [
+"高蛋白",
+"高纤维",
+"优质碳水"
+]
+},
+{
+"canonical": "藜麦",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"奎藜",
+"藜米"
+],
+"allergens": [],
+"nutrition": [
+"高纤维",
+"优质碳水"
+]
+},
+{
+"canonical": "豌豆苗",
+"category": "蔬菜",
+"emoji": "🌱",
+"synonyms": [
+"豆苗",
+"豌豆尖",
+"龙须苗"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "紫甘蓝",
+"category": "蔬菜",
+"emoji": "🥬",
+"synonyms": [
+"紫包菜",
+"红甘蓝",
+"紫圆白菜"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "香椿",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"香椿芽",
+"椿芽",
+"香椿头"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "白玉菇",
+"category": "蔬菜",
+"emoji": "🍄",
+"synonyms": [
+"白玉蘑菇",
+"海鲜菇",
+"白蟹味菇"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "芦蒿",
+"category": "蔬菜",
+"emoji": "🌿",
+"synonyms": [
+"蒌蒿",
+"泥蒿",
+"芦艾"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "全麦面包",
+"category": "主食",
+"emoji": "🍞",
+"synonyms": [
+"全麦切片",
+"wholemeal bread"
+],
+"allergens": [
+"麸质"
+],
+"nutrition": []
+},
+{
+"canonical": "薏米",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"薏苡仁",
+"苡米",
+"六谷子"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "奇亚籽",
+"category": "主食",
+"emoji": "🌾",
+"synonyms": [
+"奇亚子",
+"chia",
+"鼠尾草籽"
+],
+"allergens": [],
+"nutrition": []
+},
+{
+"canonical": "鱼露",
+"category": "调料",
+"emoji": "🐟",
+"synonyms": [
+"鱼酱油",
+"味露"
+],
+"allergens": [
+"鱼"
+],
+"nutrition": []
+},
+{
+"canonical": "豆豉",
+"category": "调料",
+"emoji": "🫘",
+"synonyms": [
+"豆豉粒",
+"干豆豉"
+],
+"allergens": [
+"大豆"
+],
+"nutrition": []
+}
+],
+"substitutions": {
+"五花肉": [
+{
+"canonical": "猪肉",
+"reason": "加一勺油弥补油脂不足"
+},
+{
+"canonical": "培根",
+"reason": "烟熏风味，注意减盐"
+}
+],
+"午餐肉": [
+{
+"canonical": "火腿肠",
+"reason": "切片替代，口感相近"
+},
+{
+"canonical": "香肠",
+"reason": "切丁替代"
+}
+],
+"土豆": [
+{
+"canonical": "山药",
+"reason": "炖汤替代，口感粉糯"
+},
+{
+"canonical": "红薯",
+"reason": "炖煮时甜味替代"
+}
+],
+"培根": [
+{
+"canonical": "腊肉",
+"reason": "咸香接近，提前泡淡"
+},
+{
+"canonical": "火腿肠",
+"reason": "切丁替代，减少盐量"
+}
+],
+"大米": [
+{
+"canonical": "糯米",
+"reason": "少量混合增加黏度"
+},
+{
+"canonical": "小米",
+"reason": "焖饭时混合杂粮"
+}
+],
+"大葱": [
+{
+"canonical": "洋葱",
+"reason": "切碎替代，甜度更高"
+},
+{
+"canonical": "大蒜",
+"reason": "爆香替代，香气不同"
+}
+],
+"大蒜": [
+{
+"canonical": "蒜苔",
+"reason": "切碎替代，香气更淡"
+},
+{
+"canonical": "蒜粉",
+"reason": "1 小勺替代 2 瓣蒜"
+}
+],
+"奶油": [
+{
+"canonical": "牛奶",
+"reason": "加一勺淀粉勾芡模拟浓稠感"
+},
+{
+"canonical": "椰浆",
+"reason": "咖喱和浓汤里风味接近"
+}
+],
+"料酒": [
+{
+"canonical": "白酒",
+"reason": "减量使用，去腥后挥发"
+}
+],
+"木耳": [
+{
+"canonical": "腐竹",
+"reason": "泡发后口感接近"
+},
+{
+"canonical": "香菇",
+"reason": "鲜味替代"
+}
+],
+"洋葱": [
+{
+"canonical": "大葱",
+"reason": "葱白部分替代，减量使用"
+},
+{
+"canonical": "大蒜",
+"reason": "用蒜片补香气"
+}
+],
+"淀粉": [
+{
+"canonical": "面粉",
+"reason": "勾芡替代，容易结块需调水"
+},
+{
+"canonical": "藕粉",
+"reason": "透亮勾芡替代"
+}
+],
+"牛奶": [
+{
+"canonical": "豆浆",
+"reason": "烘焙和浓汤可用无糖豆浆替代"
+},
+{
+"canonical": "酸奶",
+"reason": "部分面糊可用原味酸奶替代"
+}
+],
+"牛肉": [
+{
+"canonical": "猪肉",
+"reason": "家常替代，成本更低"
+},
+{
+"canonical": "杏鲍菇",
+"reason": "素食替代，切片模拟口感"
+}
+],
+"猪肉": [
+{
+"canonical": "鸡胸肉",
+"reason": "低脂替代，缩短加热时间"
+},
+{
+"canonical": "牛肉",
+"reason": "口感不同，注意顺纹切"
+}
+],
+"生姜": [
+{
+"canonical": "姜粉",
+"reason": "1 小勺姜粉替代 1 片姜"
+},
+{
+"canonical": "料酒",
+"reason": "去腥用途可部分替代"
+}
+],
+"生抽": [
+{
+"canonical": "酱油",
+"reason": "同物通用，注意颜色深浅"
+},
+{
+"canonical": "蒸鱼豉油",
+"reason": "鲜甜接近，减盐"
+}
+],
+"番茄": [
+{
+"canonical": "番茄酱",
+"reason": "3 勺番茄酱加少量糖替代 1 个番茄"
+},
+{
+"canonical": "圣女果",
+"reason": "整颗对半切"
+}
+],
+"白糖": [
+{
+"canonical": "冰糖",
+"reason": "敲碎后等量替换"
+},
+{
+"canonical": "蜂蜜",
+"reason": "出锅后加，避免高温"
+}
+],
+"粉丝": [
+{
+"canonical": "粉条",
+"reason": "更耐煮，提前泡软"
+},
+{
+"canonical": "米粉",
+"reason": "细米粉替代"
+}
+],
+"老抽": [
+{
+"canonical": "生抽",
+"reason": "减量上色，另加少许糖"
+},
+{
+"canonical": "酱油",
+"reason": "少量多次调色"
+}
+],
+"胡椒粉": [
+{
+"canonical": "黑胡椒",
+"reason": "风味更冲，减量使用"
+},
+{
+"canonical": "花椒粉",
+"reason": "麻味替代，风味不同"
+}
+],
+"胡萝卜": [
+{
+"canonical": "萝卜",
+"reason": "炖汤替代，甜味不同"
+},
+{
+"canonical": "南瓜",
+"reason": "配色和甜味替代"
+}
+],
+"莴笋": [
+{
+"canonical": "西葫芦",
+"reason": "脆感替代"
+},
+{
+"canonical": "黄瓜",
+"reason": "凉拌替代"
+}
+],
+"虾": [
+{
+"canonical": "虾仁",
+"reason": "冻虾仁解冻替代"
+},
+{
+"canonical": "巴沙鱼",
+"reason": "低脂白肉替代"
+}
+],
+"蚝油": [
+{
+"canonical": "生抽",
+"reason": "用生抽提咸鲜，再加少许糖增厚"
+},
+{
+"canonical": "黄豆酱",
+"reason": "少量替代，注意先剁碎"
+}
+],
+"蟹味菇": [
+{
+"canonical": "金针菇",
+"reason": "口感接近，替换等量"
+},
+{
+"canonical": "杏鲍菇",
+"reason": "切条替代"
+}
+],
+"西兰花": [
+{
+"canonical": "菜花",
+"reason": "同科替换，烹饪时间相近"
+}
+],
+"豆瓣酱": [
+{
+"canonical": "黄豆酱",
+"reason": "加一勺辣椒面补辣"
+},
+{
+"canonical": "辣椒酱",
+"reason": "减盐替换"
+}
+],
+"豆腐": [
+{
+"canonical": "嫩豆腐",
+"reason": "口感更软，适合煮汤"
+},
+{
+"canonical": "鸡蛋",
+"reason": "蛋白质替代，做法调整"
+}
+],
+"豆角": [
+{
+"canonical": "四季豆",
+"reason": "同类替换，务必焖熟"
+},
+{
+"canonical": "豌豆",
+"reason": "清甜替代"
+}
+],
+"醋": [
+{
+"canonical": "柠檬汁",
+"reason": "酸味清新，等量替换"
+},
+{
+"canonical": "白醋",
+"reason": "酸度接近，无香气"
+}
+],
+"面包糠": [
+{
+"canonical": "吐司",
+"reason": "吐司烤干碾碎替代"
+},
+{
+"canonical": "淀粉",
+"reason": "炸物裹粉替代"
+}
+],
+"面条": [
+{
+"canonical": "挂面",
+"reason": "同物干鲜互换"
+},
+{
+"canonical": "米粉",
+"reason": "无麸质替代，注意泡发时间"
+}
+],
+"面粉": [
+{
+"canonical": "淀粉",
+"reason": "勾芡用途可替代，不适合做面团"
+},
+{
+"canonical": "糯米粉",
+"reason": "仅限部分点心"
+}
+],
+"香菇": [
+{
+"canonical": "口蘑",
+"reason": "鲜味替代"
+},
+{
+"canonical": "杏鲍菇",
+"reason": "切丁替代，口感更弹"
+}
+],
+"香菜": [
+{
+"canonical": "芹菜",
+"reason": "切碎替代，口感接近"
+},
+{
+"canonical": "茼蒿",
+"reason": "烫煮后气味相近"
+}
+],
+"鸡蛋": [
+{
+"canonical": "淀粉",
+"reason": "炸物裹粉时用淀粉水替代蛋液"
+},
+{
+"canonical": "嫩豆腐",
+"reason": "素食版本可用豆腐替代"
+}
+],
+"黄油": [
+{
+"canonical": "橄榄油",
+"reason": "煎炒时等量替换，风味更清淡"
+},
+{
+"canonical": "食用油",
+"reason": "烘焙外的烹饪可等量替换"
+}
+]
+},
+"pantry_staples": [
+"八角",
+"冰糖",
+"十三香",
+"姜粉",
+"孜然",
+"干辣椒",
+"料酒",
+"桂皮",
+"橄榄油",
+"淀粉",
+"清水",
+"生抽",
+"白糖",
+"白酒",
+"白醋",
+"盐",
+"老抽",
+"胡椒粉",
+"花椒",
+"花椒粉",
+"花生油",
+"蒜粉",
+"蒸鱼豉油",
+"蚝油",
+"酱油",
+"醋",
+"食用油",
+"香叶",
+"香油",
+"鸡精",
+"黑胡椒"
+],
+"method_aliases": {
+"拌": "凉拌",
+"凉拌菜": "凉拌",
+"撕": "凉拌",
+"焖": "炖",
+"烧": "炖",
+"红烧": "炖",
+"焯": "煮",
+"焯水": "煮",
+"汆": "煮",
+"汆烫": "煮",
+"白灼": "煮",
+"灼": "煮",
+"勾芡": "煮",
+"烘焙": "烤",
+"焗": "烤",
+"泡": "免开火",
+"冷藏": "免开火",
+"无需加热": "免开火",
+"不用开火": "免开火",
+"搅拌": "免开火",
+"搅匀": "免开火",
+"混合": "免开火",
+"搅打": "免开火",
+"搅拌机": "免开火",
+"破壁机": "免开火",
+"榨汁": "免开火",
+"鲜榨": "免开火",
+"冷冻": "免开火",
+"冰冻": "免开火",
+"剥壳": "免开火",
+"加冰": "免开火"
+},
+"tag_aliases": {
+"快手菜": "快手",
+"快手料理": "快手",
+"减脂": "减脂餐",
+"低热量": "低卡",
+"午餐": "一人食",
+"晚餐": "一人食",
+"家常菜": "下饭",
+"家常": "下饭",
+"融合": "融合菜",
+"清凉解暑": "夏日饮品",
+"冰箱冷藏": "免开火"
+},
+"nutrition_facts": {
+"per100g": {
+"三文鱼": {
+"kcal": 208,
+"protein": 20.4,
+"fat": 13.4,
+"carbs": 0.0,
+"source": "reference"
+},
+"丝瓜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"乌冬面": {
+"kcal": 125,
+"protein": 3.0,
+"fat": 0.4,
+"carbs": 27.0,
+"source": "reference"
+},
+"五花肉": {
+"kcal": 508,
+"protein": 9.3,
+"fat": 53.0,
+"carbs": 0.0,
+"source": "reference"
+},
+"全麦面包": {
+"kcal": 247,
+"protein": 9.0,
+"fat": 3.2,
+"carbs": 45.0,
+"source": "reference"
+},
+"八角": {
+"kcal": 60.0,
+"protein": 1.5,
+"fat": 1.0,
+"carbs": 10.0,
+"source": "estimated"
+},
+"冬瓜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"冰糖": {
+"kcal": 397,
+"protein": 0.0,
+"fat": 0.0,
+"carbs": 100.0,
+"source": "reference"
+},
+"冷冻混合菜": {
+"kcal": 60,
+"protein": 3.0,
+"fat": 0.5,
+"carbs": 10.0,
+"source": "reference"
+},
+"冻玉米粒": {
+"kcal": 112,
+"protein": 4.0,
+"fat": 1.2,
+"carbs": 22.8,
+"source": "reference"
+},
+"冻薯条": {
+"kcal": 312,
+"protein": 3.4,
+"fat": 15.0,
+"carbs": 41.0,
+"source": "reference"
+},
+"冻虾仁": {
+"kcal": 93,
+"protein": 18.6,
+"fat": 0.8,
+"carbs": 2.8,
+"source": "reference"
+},
+"冻豌豆": {
+"kcal": 81,
+"protein": 5.4,
+"fat": 0.4,
+"carbs": 14.5,
+"source": "reference"
+},
+"冻鸡块": {
+"kcal": 260,
+"protein": 15.0,
+"fat": 16.0,
+"carbs": 16.0,
+"source": "reference"
+},
+"包子": {
+"kcal": 227,
+"protein": 7.5,
+"fat": 8.0,
+"carbs": 31.0,
+"source": "reference"
+},
+"十三香": {
+"kcal": 60.0,
+"protein": 1.5,
+"fat": 1.0,
+"carbs": 10.0,
+"source": "estimated"
+},
+"午餐肉": {
+"kcal": 229,
+"protein": 9.4,
+"fat": 15.9,
+"carbs": 12.0,
+"source": "reference"
+},
+"南瓜": {
+"kcal": 23,
+"protein": 0.7,
+"fat": 0.1,
+"carbs": 5.3,
+"source": "reference"
+},
+"卷心菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"口蘑": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"可乐": {
+"kcal": 43,
+"protein": 0.0,
+"fat": 0.0,
+"carbs": 10.6,
+"source": "reference"
+},
+"吐司": {
+"kcal": 280,
+"protein": 8.5,
+"fat": 4.0,
+"carbs": 51.0,
+"source": "reference"
+},
+"味噌": {
+"kcal": 199,
+"protein": 12.0,
+"fat": 6.0,
+"carbs": 26.0,
+"source": "reference"
+},
+"咖喱块": {
+"kcal": 450,
+"protein": 6.0,
+"fat": 25.0,
+"carbs": 48.0,
+"source": "reference"
+},
+"咸鸭蛋": {
+"kcal": 190,
+"protein": 12.7,
+"fat": 12.7,
+"carbs": 6.0,
+"source": "reference"
+},
+"四季豆": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"土豆": {
+"kcal": 77,
+"protein": 2.0,
+"fat": 0.1,
+"carbs": 17.0,
+"source": "reference"
+},
+"圣女果": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"培根": {
+"kcal": 181,
+"protein": 22.3,
+"fat": 9.0,
+"carbs": 1.4,
+"source": "reference"
+},
+"大米": {
+"kcal": 346,
+"protein": 7.4,
+"fat": 0.8,
+"carbs": 77.9,
+"source": "reference"
+},
+"大葱": {
+"kcal": 30,
+"protein": 1.6,
+"fat": 0.3,
+"carbs": 5.8,
+"source": "reference"
+},
+"大蒜": {
+"kcal": 128,
+"protein": 4.5,
+"fat": 0.2,
+"carbs": 27.6,
+"source": "reference"
+},
+"奇亚籽": {
+"kcal": 486,
+"protein": 16.5,
+"fat": 30.7,
+"carbs": 42.1,
+"source": "reference"
+},
+"奶油": {
+"kcal": 345,
+"protein": 2.3,
+"fat": 36.0,
+"carbs": 3.1,
+"source": "reference"
+},
+"奶酪": {
+"kcal": 328,
+"protein": 25.7,
+"fat": 23.5,
+"carbs": 3.5,
+"source": "reference"
+},
+"姜粉": {
+"kcal": 350.0,
+"protein": 3.0,
+"fat": 1.0,
+"carbs": 82.0,
+"source": "estimated"
+},
+"娃娃菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"嫩豆腐": {
+"kcal": 57,
+"protein": 6.2,
+"fat": 2.7,
+"carbs": 2.6,
+"source": "reference"
+},
+"孜然": {
+"kcal": 60.0,
+"protein": 1.5,
+"fat": 1.0,
+"carbs": 10.0,
+"source": "estimated"
+},
+"小白菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"小米": {
+"kcal": 361,
+"protein": 9.0,
+"fat": 3.1,
+"carbs": 75.1,
+"source": "reference"
+},
+"小葱": {
+"kcal": 30,
+"protein": 1.6,
+"fat": 0.4,
+"carbs": 5.0,
+"source": "reference"
+},
+"山药": {
+"kcal": 57,
+"protein": 1.9,
+"fat": 0.2,
+"carbs": 12.4,
+"source": "reference"
+},
+"巴沙鱼": {
+"kcal": 100.0,
+"protein": 18.0,
+"fat": 3.0,
+"carbs": 1.0,
+"source": "estimated"
+},
+"带鱼": {
+"kcal": 127,
+"protein": 17.7,
+"fat": 4.9,
+"carbs": 3.1,
+"source": "reference"
+},
+"干辣椒": {
+"kcal": 60.0,
+"protein": 1.5,
+"fat": 1.0,
+"carbs": 10.0,
+"source": "estimated"
+},
+"平菇": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"意面": {
+"kcal": 350,
+"protein": 12.0,
+"fat": 1.5,
+"carbs": 71.0,
+"source": "reference"
+},
+"扇贝": {
+"kcal": 60,
+"protein": 11.1,
+"fat": 0.6,
+"carbs": 2.4,
+"source": "reference"
+},
+"手抓饼": {
+"kcal": 320,
+"protein": 7.0,
+"fat": 17.0,
+"carbs": 35.0,
+"source": "reference"
+},
+"折耳根": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"抱子甘蓝": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"挂面": {
+"kcal": 346,
+"protein": 10.0,
+"fat": 0.9,
+"carbs": 74.0,
+"source": "reference"
+},
+"排骨": {
+"kcal": 278,
+"protein": 16.7,
+"fat": 23.1,
+"carbs": 0.7,
+"source": "reference"
+},
+"料酒": {
+"kcal": 70,
+"protein": 0.5,
+"fat": 0.1,
+"carbs": 8.0,
+"source": "reference"
+},
+"方便面": {
+"kcal": 472,
+"protein": 9.5,
+"fat": 21.1,
+"carbs": 60.9,
+"source": "reference"
+},
+"无花果": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"木瓜": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"木耳": {
+"kcal": 27,
+"protein": 1.5,
+"fat": 0.2,
+"carbs": 6.0,
+"source": "reference"
+},
+"杏鲍菇": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"枸杞": {
+"kcal": 349,
+"protein": 13.9,
+"fat": 1.5,
+"carbs": 64.1,
+"source": "reference"
+},
+"柚子": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"柠檬": {
+"kcal": 29,
+"protein": 1.1,
+"fat": 0.3,
+"carbs": 9.3,
+"source": "reference"
+},
+"柠檬汁": {
+"kcal": 22,
+"protein": 0.4,
+"fat": 0.2,
+"carbs": 6.9,
+"source": "reference"
+},
+"核桃": {
+"kcal": 654,
+"protein": 15.2,
+"fat": 65.2,
+"carbs": 13.7,
+"source": "reference"
+},
+"桂皮": {
+"kcal": 60.0,
+"protein": 1.5,
+"fat": 1.0,
+"carbs": 10.0,
+"source": "estimated"
+},
+"桃子": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"梨": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"椰子": {
+"kcal": 354,
+"protein": 3.3,
+"fat": 33.5,
+"carbs": 15.2,
+"source": "reference"
+},
+"椰浆": {
+"kcal": 197,
+"protein": 2.0,
+"fat": 19.0,
+"carbs": 5.0,
+"source": "reference"
+},
+"樱桃": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"橄榄油": {
+"kcal": 884,
+"protein": 0.0,
+"fat": 100.0,
+"carbs": 0.0,
+"source": "reference"
+},
+"橘子": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"橙子": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"毛豆": {
+"kcal": 131,
+"protein": 13.1,
+"fat": 5.0,
+"carbs": 10.5,
+"source": "reference"
+},
+"汤圆": {
+"kcal": 250,
+"protein": 4.0,
+"fat": 6.0,
+"carbs": 45.0,
+"source": "reference"
+},
+"沙拉酱": {
+"kcal": 680,
+"protein": 1.4,
+"fat": 75.0,
+"carbs": 3.0,
+"source": "reference"
+},
+"油菜": {
+"kcal": 884.0,
+"protein": 0.0,
+"fat": 100.0,
+"carbs": 0.0,
+"source": "estimated"
+},
+"洋葱": {
+"kcal": 40,
+"protein": 1.1,
+"fat": 0.1,
+"carbs": 9.0,
+"source": "reference"
+},
+"海带": {
+"kcal": 13,
+"protein": 1.2,
+"fat": 0.1,
+"carbs": 2.1,
+"source": "reference"
+},
+"淀粉": {
+"kcal": 346,
+"protein": 0.5,
+"fat": 0.1,
+"carbs": 85.0,
+"source": "reference"
+},
+"清水": {
+"kcal": 0.0,
+"protein": 0.0,
+"fat": 0.0,
+"carbs": 0.0,
+"source": "reference"
+},
+"火腿肠": {
+"kcal": 212,
+"protein": 14.0,
+"fat": 10.4,
+"carbs": 15.6,
+"source": "reference"
+},
+"火锅底料": {
+"kcal": 600,
+"protein": 5.0,
+"fat": 60.0,
+"carbs": 12.0,
+"source": "reference"
+},
+"火龙果": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"燕麦": {
+"kcal": 367,
+"protein": 15.0,
+"fat": 6.7,
+"carbs": 61.0,
+"source": "reference"
+},
+"牛奶": {
+"kcal": 54,
+"protein": 3.0,
+"fat": 3.2,
+"carbs": 3.4,
+"source": "reference"
+},
+"牛油果": {
+"kcal": 160,
+"protein": 2.0,
+"fat": 14.7,
+"carbs": 8.5,
+"source": "reference"
+},
+"牛肉": {
+"kcal": 125,
+"protein": 20.2,
+"fat": 4.2,
+"carbs": 1.2,
+"source": "reference"
+},
+"牛腩": {
+"kcal": 250,
+"protein": 17.0,
+"fat": 20.0,
+"carbs": 0.0,
+"source": "reference"
+},
+"猕猴桃": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"猪肉": {
+"kcal": 395,
+"protein": 13.2,
+"fat": 37.0,
+"carbs": 2.4,
+"source": "reference"
+},
+"猪肝": {
+"kcal": 129,
+"protein": 19.3,
+"fat": 3.5,
+"carbs": 5.0,
+"source": "reference"
+},
+"猪蹄": {
+"kcal": 260,
+"protein": 22.6,
+"fat": 18.8,
+"carbs": 0.0,
+"source": "reference"
+},
+"玉米": {
+"kcal": 112,
+"protein": 4.0,
+"fat": 1.2,
+"carbs": 22.8,
+"source": "reference"
+},
+"甜面酱": {
+"kcal": 160,
+"protein": 5.0,
+"fat": 1.0,
+"carbs": 32.0,
+"source": "reference"
+},
+"生姜": {
+"kcal": 46,
+"protein": 1.3,
+"fat": 0.6,
+"carbs": 10.3,
+"source": "reference"
+},
+"生抽": {
+"kcal": 53,
+"protein": 5.6,
+"fat": 0.1,
+"carbs": 9.9,
+"source": "reference"
+},
+"生菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"番茄": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"番茄酱": {
+"kcal": 81,
+"protein": 1.5,
+"fat": 0.2,
+"carbs": 19.0,
+"source": "reference"
+},
+"白玉菇": {
+"kcal": 26,
+"protein": 2.5,
+"fat": 0.3,
+"carbs": 4.0,
+"source": "reference"
+},
+"白糖": {
+"kcal": 400,
+"protein": 0.0,
+"fat": 0.0,
+"carbs": 100.0,
+"source": "reference"
+},
+"白菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"白酒": {
+"kcal": 298,
+"protein": 0.0,
+"fat": 0.0,
+"carbs": 0.0,
+"source": "reference"
+},
+"白醋": {
+"kcal": 20,
+"protein": 0.1,
+"fat": 0.0,
+"carbs": 1.0,
+"source": "reference"
+},
+"百合": {
+"kcal": 162,
+"protein": 3.2,
+"fat": 0.1,
+"carbs": 38.8,
+"source": "reference"
+},
+"百香果": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"盐": {
+"kcal": 0.0,
+"protein": 0.0,
+"fat": 0.0,
+"carbs": 0.0,
+"source": "reference"
+},
+"石榴": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"秋葵": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"空心菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"竹笋": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"米粉": {
+"kcal": 348,
+"protein": 7.0,
+"fat": 0.6,
+"carbs": 79.0,
+"source": "reference"
+},
+"米饭": {
+"kcal": 116,
+"protein": 2.6,
+"fat": 0.3,
+"carbs": 25.9,
+"source": "reference"
+},
+"粉丝": {
+"kcal": 335,
+"protein": 0.8,
+"fat": 0.2,
+"carbs": 83.0,
+"source": "reference"
+},
+"粉条": {
+"kcal": 337,
+"protein": 0.5,
+"fat": 0.1,
+"carbs": 84.0,
+"source": "reference"
+},
+"糯米": {
+"kcal": 348,
+"protein": 7.3,
+"fat": 1.0,
+"carbs": 78.3,
+"source": "reference"
+},
+"糯米粉": {
+"kcal": 350,
+"protein": 7.0,
+"fat": 1.0,
+"carbs": 78.0,
+"source": "reference"
+},
+"紫甘蓝": {
+"kcal": 31,
+"protein": 1.4,
+"fat": 0.2,
+"carbs": 7.0,
+"source": "reference"
+},
+"紫菜": {
+"kcal": 35,
+"protein": 4.0,
+"fat": 0.3,
+"carbs": 5.0,
+"source": "reference"
+},
+"红枣": {
+"kcal": 264,
+"protein": 3.2,
+"fat": 0.5,
+"carbs": 67.8,
+"source": "reference"
+},
+"红薯": {
+"kcal": 86,
+"protein": 1.6,
+"fat": 0.1,
+"carbs": 20.0,
+"source": "reference"
+},
+"红豆": {
+"kcal": 324,
+"protein": 20.2,
+"fat": 0.6,
+"carbs": 63.4,
+"source": "reference"
+},
+"绿豆": {
+"kcal": 329,
+"protein": 21.6,
+"fat": 0.8,
+"carbs": 62.0,
+"source": "reference"
+},
+"罗勒": {
+"kcal": 60.0,
+"protein": 1.5,
+"fat": 1.0,
+"carbs": 10.0,
+"source": "estimated"
+},
+"羊肉": {
+"kcal": 203,
+"protein": 19.0,
+"fat": 14.1,
+"carbs": 0.0,
+"source": "reference"
+},
+"羽衣甘蓝": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"老干妈": {
+"kcal": 550,
+"protein": 6.0,
+"fat": 50.0,
+"carbs": 15.0,
+"source": "reference"
+},
+"老抽": {
+"kcal": 60,
+"protein": 5.0,
+"fat": 0.1,
+"carbs": 12.0,
+"source": "reference"
+},
+"老豆腐": {
+"kcal": 98,
+"protein": 12.2,
+"fat": 4.8,
+"carbs": 1.5,
+"source": "reference"
+},
+"胡椒粉": {
+"kcal": 350.0,
+"protein": 3.0,
+"fat": 1.0,
+"carbs": 82.0,
+"source": "estimated"
+},
+"胡萝卜": {
+"kcal": 39,
+"protein": 1.0,
+"fat": 0.2,
+"carbs": 8.8,
+"source": "reference"
+},
+"腊肉": {
+"kcal": 498,
+"protein": 11.8,
+"fat": 48.8,
+"carbs": 2.9,
+"source": "reference"
+},
+"腐乳": {
+"kcal": 133,
+"protein": 12.0,
+"fat": 8.0,
+"carbs": 5.0,
+"source": "reference"
+},
+"腐竹": {
+"kcal": 461,
+"protein": 44.6,
+"fat": 21.7,
+"carbs": 22.3,
+"source": "reference"
+},
+"腰果": {
+"kcal": 553,
+"protein": 18.2,
+"fat": 43.8,
+"carbs": 30.2,
+"source": "reference"
+},
+"芒果": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"芝麻": {
+"kcal": 573,
+"protein": 17.7,
+"fat": 49.7,
+"carbs": 23.4,
+"source": "reference"
+},
+"芝麻酱": {
+"kcal": 595,
+"protein": 17.0,
+"fat": 53.0,
+"carbs": 21.0,
+"source": "reference"
+},
+"芥蓝": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"芦笋": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"芦蒿": {
+"kcal": 25,
+"protein": 1.8,
+"fat": 0.3,
+"carbs": 3.5,
+"source": "reference"
+},
+"花椒": {
+"kcal": 60.0,
+"protein": 1.5,
+"fat": 1.0,
+"carbs": 10.0,
+"source": "estimated"
+},
+"花椒粉": {
+"kcal": 350.0,
+"protein": 3.0,
+"fat": 1.0,
+"carbs": 82.0,
+"source": "estimated"
+},
+"花生": {
+"kcal": 567,
+"protein": 25.8,
+"fat": 49.2,
+"carbs": 16.1,
+"source": "reference"
+},
+"花生油": {
+"kcal": 884,
+"protein": 0.0,
+"fat": 100.0,
+"carbs": 0.0,
+"source": "reference"
+},
+"花生酱": {
+"kcal": 588,
+"protein": 25.0,
+"fat": 50.0,
+"carbs": 20.0,
+"source": "reference"
+},
+"花蛤": {
+"kcal": 62,
+"protein": 10.1,
+"fat": 1.1,
+"carbs": 2.8,
+"source": "reference"
+},
+"芹菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"苋菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"苦瓜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"苦菊": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"苹果": {
+"kcal": 52,
+"protein": 0.3,
+"fat": 0.2,
+"carbs": 13.8,
+"source": "reference"
+},
+"茄子": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"茭白": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"茴香": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"茼蒿": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"草莓": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"草鱼": {
+"kcal": 100.0,
+"protein": 18.0,
+"fat": 3.0,
+"carbs": 1.0,
+"source": "estimated"
+},
+"荔枝": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"荞麦面": {
+"kcal": 340,
+"protein": 12.0,
+"fat": 2.0,
+"carbs": 68.0,
+"source": "reference"
+},
+"荠菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"荷兰豆": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"荸荠": {
+"kcal": 61,
+"protein": 1.2,
+"fat": 0.1,
+"carbs": 14.2,
+"source": "reference"
+},
+"莲子": {
+"kcal": 350,
+"protein": 17.0,
+"fat": 2.0,
+"carbs": 67.0,
+"source": "reference"
+},
+"莲藕": {
+"kcal": 74,
+"protein": 1.9,
+"fat": 0.2,
+"carbs": 16.4,
+"source": "reference"
+},
+"莴笋": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"菜心": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"菜花": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"菠菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"菠萝": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"菱角": {
+"kcal": 98,
+"protein": 4.5,
+"fat": 0.1,
+"carbs": 21.4,
+"source": "reference"
+},
+"萝卜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"葡萄": {
+"kcal": 69,
+"protein": 0.7,
+"fat": 0.2,
+"carbs": 18.1,
+"source": "reference"
+},
+"蒜粉": {
+"kcal": 350.0,
+"protein": 3.0,
+"fat": 1.0,
+"carbs": 82.0,
+"source": "estimated"
+},
+"蒜苔": {
+"kcal": 61,
+"protein": 2.0,
+"fat": 0.1,
+"carbs": 15.0,
+"source": "reference"
+},
+"蒜黄": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"蒸鱼豉油": {
+"kcal": 55,
+"protein": 5.0,
+"fat": 0.1,
+"carbs": 10.0,
+"source": "reference"
+},
+"蓝莓": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"蔓越莓": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+},
+"薏米": {
+"kcal": 357,
+"protein": 12.8,
+"fat": 3.3,
+"carbs": 71.1,
+"source": "reference"
+},
+"藕粉": {
+"kcal": 372,
+"protein": 0.2,
+"fat": 0.1,
+"carbs": 92.0,
+"source": "reference"
+},
+"藜麦": {
+"kcal": 368,
+"protein": 14.1,
+"fat": 6.1,
+"carbs": 64.2,
+"source": "reference"
+},
+"虾": {
+"kcal": 93,
+"protein": 18.6,
+"fat": 0.8,
+"carbs": 2.8,
+"source": "reference"
+},
+"虾仁": {
+"kcal": 93,
+"protein": 18.6,
+"fat": 0.8,
+"carbs": 2.8,
+"source": "reference"
+},
+"虾滑": {
+"kcal": 110,
+"protein": 12.0,
+"fat": 3.0,
+"carbs": 8.0,
+"source": "reference"
+},
+"虾皮": {
+"kcal": 153,
+"protein": 30.7,
+"fat": 2.2,
+"carbs": 2.5,
+"source": "reference"
+},
+"蚕豆": {
+"kcal": 104,
+"protein": 8.0,
+"fat": 0.5,
+"carbs": 17.0,
+"source": "reference"
+},
+"蚝油": {
+"kcal": 114,
+"protein": 4.0,
+"fat": 0.2,
+"carbs": 24.0,
+"source": "reference"
+},
+"蜂蜜": {
+"kcal": 304,
+"protein": 0.3,
+"fat": 0.0,
+"carbs": 82.4,
+"source": "reference"
+},
+"螃蟹": {
+"kcal": 103,
+"protein": 17.5,
+"fat": 2.6,
+"carbs": 2.3,
+"source": "reference"
+},
+"蟹味菇": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"蟹棒": {
+"kcal": 95,
+"protein": 7.6,
+"fat": 0.8,
+"carbs": 14.0,
+"source": "reference"
+},
+"裙带菜": {
+"kcal": 16,
+"protein": 1.4,
+"fat": 0.2,
+"carbs": 2.5,
+"source": "reference"
+},
+"西兰花": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"西瓜": {
+"kcal": 30,
+"protein": 0.6,
+"fat": 0.2,
+"carbs": 7.6,
+"source": "reference"
+},
+"西葫芦": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"豆干": {
+"kcal": 140,
+"protein": 16.2,
+"fat": 7.0,
+"carbs": 4.0,
+"source": "reference"
+},
+"豆浆": {
+"kcal": 31,
+"protein": 3.0,
+"fat": 1.6,
+"carbs": 1.2,
+"source": "reference"
+},
+"豆瓣酱": {
+"kcal": 180,
+"protein": 8.0,
+"fat": 7.0,
+"carbs": 20.0,
+"source": "reference"
+},
+"豆腐": {
+"kcal": 81,
+"protein": 8.1,
+"fat": 3.7,
+"carbs": 4.2,
+"source": "reference"
+},
+"豆芽": {
+"kcal": 18,
+"protein": 2.1,
+"fat": 0.1,
+"carbs": 2.9,
+"source": "reference"
+},
+"豆角": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"豆豉": {
+"kcal": 240,
+"protein": 18.0,
+"fat": 9.0,
+"carbs": 20.0,
+"source": "reference"
+},
+"豌豆": {
+"kcal": 81,
+"protein": 5.4,
+"fat": 0.4,
+"carbs": 14.5,
+"source": "reference"
+},
+"豌豆苗": {
+"kcal": 35,
+"protein": 3.0,
+"fat": 0.4,
+"carbs": 4.0,
+"source": "reference"
+},
+"辣椒": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"辣椒酱": {
+"kcal": 150.0,
+"protein": 6.0,
+"fat": 6.0,
+"carbs": 22.0,
+"source": "estimated"
+},
+"速冻包子": {
+"kcal": 227,
+"protein": 7.5,
+"fat": 8.0,
+"carbs": 31.0,
+"source": "reference"
+},
+"速冻饺子": {
+"kcal": 210,
+"protein": 8.0,
+"fat": 8.0,
+"carbs": 26.0,
+"source": "reference"
+},
+"酱油": {
+"kcal": 53,
+"protein": 5.6,
+"fat": 0.1,
+"carbs": 9.9,
+"source": "reference"
+},
+"酵母": {
+"kcal": 325,
+"protein": 40.0,
+"fat": 7.0,
+"carbs": 35.0,
+"source": "reference"
+},
+"酸奶": {
+"kcal": 72,
+"protein": 2.5,
+"fat": 2.7,
+"carbs": 9.3,
+"source": "reference"
+},
+"醋": {
+"kcal": 31,
+"protein": 2.0,
+"fat": 0.1,
+"carbs": 5.0,
+"source": "reference"
+},
+"金枪鱼": {
+"kcal": 130,
+"protein": 28.0,
+"fat": 1.3,
+"carbs": 0.0,
+"source": "reference"
+},
+"金针菇": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"银耳": {
+"kcal": 26,
+"protein": 0.7,
+"fat": 0.1,
+"carbs": 6.5,
+"source": "reference"
+},
+"青椒": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"面包": {
+"kcal": 265,
+"protein": 8.0,
+"fat": 3.2,
+"carbs": 50.0,
+"source": "reference"
+},
+"面包糠": {
+"kcal": 380,
+"protein": 11.0,
+"fat": 5.0,
+"carbs": 72.0,
+"source": "reference"
+},
+"面条": {
+"kcal": 110,
+"protein": 3.9,
+"fat": 0.4,
+"carbs": 22.0,
+"source": "reference"
+},
+"面粉": {
+"kcal": 344,
+"protein": 11.2,
+"fat": 1.5,
+"carbs": 71.5,
+"source": "reference"
+},
+"韭菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"韭黄": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"食用油": {
+"kcal": 884,
+"protein": 0.0,
+"fat": 100.0,
+"carbs": 0.0,
+"source": "reference"
+},
+"饺子": {
+"kcal": 210,
+"protein": 8.0,
+"fat": 8.0,
+"carbs": 26.0,
+"source": "reference"
+},
+"馄饨": {
+"kcal": 190,
+"protein": 7.5,
+"fat": 6.0,
+"carbs": 27.0,
+"source": "reference"
+},
+"馒头": {
+"kcal": 223,
+"protein": 7.0,
+"fat": 1.1,
+"carbs": 47.0,
+"source": "reference"
+},
+"香叶": {
+"kcal": 60.0,
+"protein": 1.5,
+"fat": 1.0,
+"carbs": 10.0,
+"source": "estimated"
+},
+"香椿": {
+"kcal": 47,
+"protein": 1.7,
+"fat": 0.4,
+"carbs": 9.1,
+"source": "reference"
+},
+"香油": {
+"kcal": 884,
+"protein": 0.0,
+"fat": 100.0,
+"carbs": 0.0,
+"source": "reference"
+},
+"香肠": {
+"kcal": 508,
+"protein": 24.1,
+"fat": 40.7,
+"carbs": 11.2,
+"source": "reference"
+},
+"香菇": {
+"kcal": 26,
+"protein": 2.2,
+"fat": 0.3,
+"carbs": 5.2,
+"source": "reference"
+},
+"香菜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"香蕉": {
+"kcal": 89,
+"protein": 1.1,
+"fat": 0.3,
+"carbs": 22.8,
+"source": "reference"
+},
+"马齿苋": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"高汤": {
+"kcal": 10,
+"protein": 0.6,
+"fat": 0.2,
+"carbs": 1.2,
+"source": "reference"
+},
+"魔芋": {
+"kcal": 7,
+"protein": 0.1,
+"fat": 0.0,
+"carbs": 3.0,
+"source": "reference"
+},
+"鱼": {
+"kcal": 100.0,
+"protein": 18.0,
+"fat": 3.0,
+"carbs": 1.0,
+"source": "estimated"
+},
+"鱼露": {
+"kcal": 35,
+"protein": 5.0,
+"fat": 0.0,
+"carbs": 3.6,
+"source": "reference"
+},
+"鱿鱼": {
+"kcal": 84,
+"protein": 17.0,
+"fat": 1.4,
+"carbs": 0.0,
+"source": "reference"
+},
+"鲈鱼": {
+"kcal": 100.0,
+"protein": 18.0,
+"fat": 3.0,
+"carbs": 1.0,
+"source": "estimated"
+},
+"鲫鱼": {
+"kcal": 100.0,
+"protein": 18.0,
+"fat": 3.0,
+"carbs": 1.0,
+"source": "estimated"
+},
+"鳕鱼": {
+"kcal": 82,
+"protein": 17.8,
+"fat": 0.7,
+"carbs": 0.0,
+"source": "reference"
+},
+"鸡爪": {
+"kcal": 254,
+"protein": 23.9,
+"fat": 16.4,
+"carbs": 2.7,
+"source": "reference"
+},
+"鸡精": {
+"kcal": 60.0,
+"protein": 1.5,
+"fat": 1.0,
+"carbs": 10.0,
+"source": "estimated"
+},
+"鸡翅": {
+"kcal": 194,
+"protein": 17.4,
+"fat": 11.8,
+"carbs": 4.6,
+"source": "reference"
+},
+"鸡肉": {
+"kcal": 167,
+"protein": 19.3,
+"fat": 9.4,
+"carbs": 1.3,
+"source": "reference"
+},
+"鸡胸肉": {
+"kcal": 118,
+"protein": 24.6,
+"fat": 1.9,
+"carbs": 0.6,
+"source": "reference"
+},
+"鸡腿": {
+"kcal": 181,
+"protein": 16.0,
+"fat": 13.0,
+"carbs": 0.0,
+"source": "reference"
+},
+"鸡蛋": {
+"kcal": 143,
+"protein": 12.6,
+"fat": 9.5,
+"carbs": 1.1,
+"source": "reference"
+},
+"鸭肉": {
+"kcal": 240,
+"protein": 15.5,
+"fat": 19.7,
+"carbs": 0.2,
+"source": "reference"
+},
+"鹌鹑蛋": {
+"kcal": 160,
+"protein": 13.0,
+"fat": 11.0,
+"carbs": 2.1,
+"source": "reference"
+},
+"鹰嘴豆": {
+"kcal": 364,
+"protein": 19.3,
+"fat": 6.0,
+"carbs": 61.0,
+"source": "reference"
+},
+"黄油": {
+"kcal": 717,
+"protein": 0.9,
+"fat": 81.1,
+"carbs": 0.1,
+"source": "reference"
+},
+"黄瓜": {
+"kcal": 25.0,
+"protein": 1.6,
+"fat": 0.2,
+"carbs": 4.5,
+"source": "estimated"
+},
+"黄豆": {
+"kcal": 390,
+"protein": 35.0,
+"fat": 16.0,
+"carbs": 34.0,
+"source": "reference"
+},
+"黄豆酱": {
+"kcal": 170,
+"protein": 9.0,
+"fat": 6.0,
+"carbs": 20.0,
+"source": "reference"
+},
+"黑胡椒": {
+"kcal": 60.0,
+"protein": 1.5,
+"fat": 1.0,
+"carbs": 10.0,
+"source": "estimated"
+},
+"龙眼": {
+"kcal": 55.0,
+"protein": 0.8,
+"fat": 0.3,
+"carbs": 13.0,
+"source": "estimated"
+}
+},
+"unit_grams": {
+"g": 1.0,
+"ml": 1.0,
+"个": 100.0,
+"串": 100.0,
+"份": 150.0,
+"克": 1.0,
+"几个": 200.0,
+"几滴": 2.0,
+"几片": 30.0,
+"几颗": 20.0,
+"勺": 15.0,
+"包": 200.0,
+"千克": 1000.0,
+"半个": 50.0,
+"半勺": 7.5,
+"半只": 75.0,
+"半根": 40.0,
+"半盒": 125.0,
+"半碗": 100.0,
+"只": 150.0,
+"块": 40.0,
+"头": 40.0,
+"小勺": 5.0,
+"小把": 25.0,
+"少许": 5.0,
+"把": 50.0,
+"整头": 40.0,
+"斤": 500.0,
+"朵": 30.0,
+"条": 60.0,
+"杯": 240.0,
+"根": 80.0,
+"棵": 200.0,
+"段": 40.0,
+"毫升": 1.0,
+"片": 15.0,
+"瓣": 5.0,
+"盒": 250.0,
+"盘": 200.0,
+"碗": 200.0,
+"罐": 300.0,
+"袋": 200.0,
+"适量": 5.0,
+"颗": 80.0
+},
+"ingredient_units": {
+"全麦面包": {
+"个": 80.0,
+"片": 30.0
+},
+"冬瓜": {
+"块": 200.0
+},
+"冰糖": {
+"块": 8.0
+},
+"包子": {
+"个": 80.0
+},
+"南瓜": {
+"块": 200.0
+},
+"卷心菜": {
+"把": 150.0,
+"颗": 300.0
+},
+"口蘑": {
+"个": 18.0,
+"把": 80.0,
+"朵": 18.0
+},
+"吐司": {
+"片": 30.0
+},
+"咖喱块": {
+"块": 10.0
+},
+"咸鸭蛋": {
+"个": 60.0
+},
+"四季豆": {
+"把": 150.0
+},
+"土豆": {
+"个": 150.0
+},
+"圣女果": {
+"个": 15.0,
+"颗": 15.0
+},
+"大葱": {
+"根": 80.0,
+"段": 25.0
+},
+"大蒜": {
+"头": 40.0,
+"整头": 40.0,
+"瓣": 5.0,
+"颗": 5.0
+},
+"奇亚籽": {
+"勺": 12.0,
+"小勺": 4.0
+},
+"娃娃菜": {
+"把": 150.0,
+"颗": 300.0
+},
+"嫩豆腐": {
+"盒": 300.0
+},
+"小白菜": {
+"把": 150.0
+},
+"小葱": {
+"把": 40.0,
+"根": 12.0
+},
+"干辣椒": {
+"个": 2.0,
+"把": 10.0,
+"根": 3.0
+},
+"平菇": {
+"把": 80.0,
+"朵": 20.0
+},
+"折耳根": {
+"把": 150.0
+},
+"抱子甘蓝": {
+"把": 150.0
+},
+"挂面": {
+"把": 100.0
+},
+"料酒": {
+"勺": 15.0,
+"小勺": 5.0
+},
+"木耳": {
+"把": 80.0,
+"朵": 20.0
+},
+"杏鲍菇": {
+"把": 80.0,
+"朵": 20.0
+},
+"柠檬": {
+"个": 100.0
+},
+"梨": {
+"个": 200.0
+},
+"橄榄油": {
+"勺": 10.0,
+"小勺": 4.0
+},
+"橘子": {
+"个": 100.0
+},
+"橙子": {
+"个": 180.0
+},
+"沙拉酱": {
+"勺": 15.0
+},
+"油菜": {
+"把": 150.0
+},
+"洋葱": {
+"个": 150.0
+},
+"淀粉": {
+"勺": 10.0,
+"小勺": 4.0
+},
+"清水": {
+"杯": 240.0,
+"毫升": 1.0,
+"碗": 250.0
+},
+"牛奶": {
+"杯": 240.0,
+"盒": 250.0
+},
+"牛油果": {
+"个": 150.0
+},
+"玉米": {
+"个": 200.0,
+"根": 200.0
+},
+"生姜": {
+"块": 15.0,
+"片": 3.0
+},
+"生抽": {
+"勺": 15.0,
+"小勺": 5.0
+},
+"生菜": {
+"把": 150.0,
+"棵": 250.0,
+"片": 12.0
+},
+"番茄": {
+"个": 150.0
+},
+"番茄酱": {
+"勺": 15.0
+},
+"白玉菇": {
+"把": 100.0,
+"盒": 150.0
+},
+"白糖": {
+"勺": 12.0,
+"小勺": 4.0
+},
+"白菜": {
+"棵": 600.0,
+"片": 30.0
+},
+"盐": {
+"勺": 6.0,
+"小勺": 3.0
+},
+"秋葵": {
+"把": 150.0
+},
+"空心菜": {
+"把": 150.0
+},
+"米饭": {
+"份": 150.0,
+"碗": 150.0
+},
+"紫甘蓝": {
+"片": 20.0,
+"颗": 500.0
+},
+"红薯": {
+"个": 180.0
+},
+"羽衣甘蓝": {
+"把": 150.0
+},
+"老抽": {
+"勺": 15.0,
+"小勺": 5.0
+},
+"老豆腐": {
+"块": 200.0
+},
+"胡萝卜": {
+"根": 120.0
+},
+"芥蓝": {
+"把": 150.0
+},
+"芦笋": {
+"把": 150.0
+},
+"芦蒿": {
+"把": 200.0
+},
+"花生油": {
+"勺": 10.0,
+"小勺": 4.0
+},
+"芹菜": {
+"把": 150.0
+},
+"苋菜": {
+"把": 150.0
+},
+"苦菊": {
+"把": 150.0
+},
+"苹果": {
+"个": 200.0
+},
+"茴香": {
+"把": 150.0
+},
+"茼蒿": {
+"把": 150.0
+},
+"荠菜": {
+"把": 150.0
+},
+"荷兰豆": {
+"把": 150.0
+},
+"莲藕": {
+"段": 150.0,
+"节": 150.0
+},
+"菜心": {
+"把": 150.0
+},
+"菜花": {
+"颗": 300.0
+},
+"菠菜": {
+"把": 150.0
+},
+"蒜苔": {
+"把": 150.0
+},
+"蒜黄": {
+"把": 150.0
+},
+"薏米": {
+"勺": 15.0,
+"杯": 180.0
+},
+"虾": {
+"个": 15.0,
+"只": 15.0
+},
+"虾仁": {
+"只": 10.0
+},
+"蜂蜜": {
+"勺": 20.0,
+"小勺": 7.0
+},
+"螃蟹": {
+"只": 200.0
+},
+"蟹味菇": {
+"把": 80.0,
+"朵": 20.0
+},
+"西兰花": {
+"朵": 40.0,
+"棵": 300.0,
+"颗": 300.0
+},
+"西瓜": {
+"个": 1000.0,
+"半个": 500.0,
+"块": 200.0,
+"片": 100.0
+},
+"豆浆": {
+"杯": 240.0,
+"碗": 250.0
+},
+"豆腐": {
+"块": 200.0,
+"盒": 300.0
+},
+"豆芽": {
+"把": 150.0
+},
+"豆角": {
+"把": 150.0
+},
+"豆豉": {
+"勺": 12.0,
+"小勺": 4.0
+},
+"豌豆": {
+"把": 150.0
+},
+"豌豆苗": {
+"把": 150.0,
+"盒": 200.0
+},
+"辣椒": {
+"个": 15.0,
+"根": 15.0
+},
+"速冻饺子": {
+"个": 20.0,
+"袋": 500.0
+},
+"酱油": {
+"勺": 15.0,
+"小勺": 5.0
+},
+"醋": {
+"勺": 15.0,
+"小勺": 5.0
+},
+"金针菇": {
+"把": 80.0,
+"朵": 20.0
+},
+"银耳": {
+"把": 80.0,
+"朵": 20.0
+},
+"青椒": {
+"个": 100.0,
+"颗": 100.0
+},
+"面包": {
+"个": 80.0,
+"片": 30.0
+},
+"面条": {
+"份": 200.0,
+"把": 100.0,
+"碗": 200.0
+},
+"韭菜": {
+"把": 150.0
+},
+"韭黄": {
+"把": 150.0
+},
+"食用油": {
+"勺": 10.0,
+"小勺": 4.0
+},
+"饺子": {
+"个": 20.0,
+"份": 250.0
+},
+"馒头": {
+"个": 100.0
+},
+"香椿": {
+"把": 100.0
+},
+"香油": {
+"勺": 10.0,
+"小勺": 4.0
+},
+"香菇": {
+"个": 15.0,
+"把": 80.0,
+"朵": 15.0
+},
+"香菜": {
+"把": 30.0
+},
+"香蕉": {
+"个": 120.0,
+"根": 120.0
+},
+"马齿苋": {
+"把": 150.0
+},
+"高汤": {
+"杯": 240.0,
+"碗": 250.0
+},
+"鱼露": {
+"勺": 15.0,
+"小勺": 5.0
+},
+"鸡翅": {
+"个": 40.0,
+"只": 40.0
+},
+"鸡腿": {
+"个": 120.0,
+"只": 120.0
+},
+"鸡蛋": {
+"个": 50.0,
+"半个": 25.0
+},
+"鹌鹑蛋": {
+"个": 10.0,
+"颗": 10.0
+},
+"黄油": {
+"块": 10.0
+},
+"黄瓜": {
+"根": 200.0
+}
+},
+"note": "按每 100 克可食部的通用食物成分近似值估算，未计烹饪损耗；仅供参考，不替代专业营养计算或食品标签。"
+},
+"storage": {
+"tips": {
+"三文鱼": {
+"method": "生食级当天吃，熟食可冷冻",
+"fridgeDays": 1,
+"freezerDays": 60
+},
+"五花肉": {
+"method": "分装冷冻，用前冷藏解冻",
+"fridgeDays": 2,
+"freezerDays": 180
+},
+"冻虾仁": {
+"method": "-18°C 冷冻",
+"fridgeDays": null,
+"freezerDays": 120
+},
+"冻鸡块": {
+"method": "-18°C 冷冻",
+"fridgeDays": null,
+"freezerDays": 180
+},
+"卷心菜": {
+"method": "冷藏保鲜袋，整颗比切开的耐放",
+"fridgeDays": 14,
+"freezerDays": null
+},
+"口蘑": {
+"method": "纸袋冷藏，别沾水",
+"fridgeDays": 5,
+"freezerDays": 60
+},
+"吐司": {
+"method": "冷冻保存，吃前复烤",
+"fridgeDays": null,
+"freezerDays": 30
+},
+"土豆": {
+"method": "阴凉避光，和苹果放一起抑芽",
+"fridgeDays": 30,
+"freezerDays": null
+},
+"大米": {
+"method": "密封阴凉，夏天可冷藏防虫，以包装期限为准",
+"fridgeDays": null,
+"freezerDays": null
+},
+"大葱": {
+"method": "纸包冷藏或晾干常温",
+"fridgeDays": 10,
+"freezerDays": 60
+},
+"大蒜": {
+"method": "网袋常温通风，别闷塑料袋",
+"fridgeDays": null,
+"freezerDays": null
+},
+"奶酪": {
+"method": "密封冷藏，硬质更耐放",
+"fridgeDays": 14,
+"freezerDays": 90
+},
+"嫩豆腐": {
+"method": "原盒冷藏，开封当天吃",
+"fridgeDays": 2,
+"freezerDays": null
+},
+"小葱": {
+"method": "厨房纸包好冷藏",
+"fridgeDays": 5,
+"freezerDays": 30
+},
+"山药": {
+"method": "常温通风，切口包好冷藏",
+"fridgeDays": 14,
+"freezerDays": null
+},
+"带鱼": {
+"method": "冷冻保存，煎前冷藏解冻",
+"fridgeDays": 1,
+"freezerDays": 120
+},
+"平菇": {
+"method": "纸袋冷藏",
+"fridgeDays": 4,
+"freezerDays": 60
+},
+"排骨": {
+"method": "分装冷冻，用前冷藏解冻",
+"fridgeDays": 2,
+"freezerDays": 180
+},
+"木耳": {
+"method": "干品密封常温，泡发后当天吃",
+"fridgeDays": null,
+"freezerDays": null
+},
+"杏鲍菇": {
+"method": "纸袋冷藏，怕闷",
+"fridgeDays": 7,
+"freezerDays": 60
+},
+"柚子": {
+"method": "常温通风极耐放",
+"fridgeDays": 30,
+"freezerDays": null
+},
+"柠檬": {
+"method": "冷藏或切片冷冻",
+"fridgeDays": 21,
+"freezerDays": 60
+},
+"桃子": {
+"method": "常温催熟，熟后冷藏",
+"fridgeDays": 5,
+"freezerDays": null
+},
+"梨": {
+"method": "冷藏更脆",
+"fridgeDays": 14,
+"freezerDays": null
+},
+"橘子": {
+"method": "常温通风，别闷袋",
+"fridgeDays": 10,
+"freezerDays": null
+},
+"橙子": {
+"method": "常温通风或冷藏",
+"fridgeDays": 14,
+"freezerDays": null
+},
+"汤圆": {
+"method": "-18°C 冷冻，开裂易煮破",
+"fridgeDays": null,
+"freezerDays": 180
+},
+"洋葱": {
+"method": "网袋挂阴凉通风处",
+"fridgeDays": null,
+"freezerDays": null
+},
+"海带": {
+"method": "干品常温，泡发后冷藏",
+"fridgeDays": 3,
+"freezerDays": null
+},
+"牛奶": {
+"method": "开封后冷藏 48 小时内喝完，以包装要求为准",
+"fridgeDays": 2,
+"freezerDays": null
+},
+"牛肉": {
+"method": "冷藏 1–2 天，长期分装冷冻",
+"fridgeDays": 2,
+"freezerDays": 240
+},
+"牛腩": {
+"method": "分装冷冻，炖前冷藏解冻",
+"fridgeDays": 2,
+"freezerDays": 240
+},
+"猕猴桃": {
+"method": "常温催熟，软后冷藏",
+"fridgeDays": 10,
+"freezerDays": null
+},
+"猪肉": {
+"method": "冷藏 1–2 天内吃，长期分装冷冻",
+"fridgeDays": 2,
+"freezerDays": 180
+},
+"猪肝": {
+"method": "当天吃最好，冷藏别超一天",
+"fridgeDays": 1,
+"freezerDays": 90
+},
+"玉米": {
+"method": "带皮冷藏，糖分转化快",
+"fridgeDays": 4,
+"freezerDays": 90
+},
+"生姜": {
+"method": "常温通风或埋沙里",
+"fridgeDays": 21,
+"freezerDays": 60
+},
+"生菜": {
+"method": "厨房纸包好冷藏，避免压伤",
+"fridgeDays": 5,
+"freezerDays": null
+},
+"番茄": {
+"method": "常温催熟更好吃，熟透再冷藏",
+"fridgeDays": 5,
+"freezerDays": null
+},
+"白菜": {
+"method": "阴凉通风处或冷藏，不要沾水",
+"fridgeDays": 14,
+"freezerDays": null
+},
+"竹笋": {
+"method": "带壳冷藏或煮熟冷冻",
+"fridgeDays": 5,
+"freezerDays": 60
+},
+"红薯": {
+"method": "阴凉通风，别冷藏（易硬心）",
+"fridgeDays": null,
+"freezerDays": null
+},
+"羊肉": {
+"method": "分装冷冻，膻味重密封好",
+"fridgeDays": 2,
+"freezerDays": 240
+},
+"胡萝卜": {
+"method": "保鲜袋冷藏，别和苹果同放",
+"fridgeDays": 14,
+"freezerDays": null
+},
+"腐竹": {
+"method": "干品常温，泡发后当天吃",
+"fridgeDays": null,
+"freezerDays": null
+},
+"芒果": {
+"method": "常温催熟，别冷藏生果",
+"fridgeDays": 5,
+"freezerDays": null
+},
+"花蛤": {
+"method": "盐水吐沙后冷藏，尽快吃",
+"fridgeDays": 2,
+"freezerDays": null
+},
+"芹菜": {
+"method": "锡纸或保鲜袋包好冷藏",
+"fridgeDays": 10,
+"freezerDays": null
+},
+"苹果": {
+"method": "冷藏可放很久，常温更快面",
+"fridgeDays": 30,
+"freezerDays": null
+},
+"茄子": {
+"method": "常温阴凉处，冷藏易发黑",
+"fridgeDays": 4,
+"freezerDays": null
+},
+"草莓": {
+"method": "不洗冷藏，吃多少洗多少",
+"fridgeDays": 3,
+"freezerDays": 60
+},
+"莲藕": {
+"method": "带泥常温或泡水冷藏",
+"fridgeDays": 7,
+"freezerDays": null
+},
+"菜花": {
+"method": "不洗直接冷藏保鲜袋",
+"fridgeDays": 5,
+"freezerDays": 60
+},
+"菠菜": {
+"method": "厨房纸包好冷藏，尽快吃",
+"fridgeDays": 4,
+"freezerDays": 30
+},
+"菠萝": {
+"method": "常温尽快吃，切块冷藏",
+"fridgeDays": 3,
+"freezerDays": null
+},
+"萝卜": {
+"method": "阴凉通风，缨子摘掉再放",
+"fridgeDays": 14,
+"freezerDays": null
+},
+"葡萄": {
+"method": "不洗冷藏，吃前再洗",
+"fridgeDays": 7,
+"freezerDays": null
+},
+"虾": {
+"method": "鲜虾当天吃，或水瓶冷冻法",
+"fridgeDays": 1,
+"freezerDays": 120
+},
+"虾仁": {
+"method": "冷冻保存，解冻后当天做",
+"fridgeDays": 1,
+"freezerDays": 120
+},
+"蜂蜜": {
+"method": "常温密封，结晶是正常现象，以包装期限为准",
+"fridgeDays": null,
+"freezerDays": null
+},
+"螃蟹": {
+"method": "活蟹冷藏盖湿布，尽快吃",
+"fridgeDays": 2,
+"freezerDays": null
+},
+"西兰花": {
+"method": "不洗直接冷藏保鲜袋",
+"fridgeDays": 5,
+"freezerDays": 60
+},
+"西瓜": {
+"method": "整瓜常温，切开包膜冷藏当天吃",
+"fridgeDays": 2,
+"freezerDays": null
+},
+"豆干": {
+"method": "密封冷藏",
+"fridgeDays": 5,
+"freezerDays": 60
+},
+"豆腐": {
+"method": "泡水冷藏每天换水",
+"fridgeDays": 3,
+"freezerDays": null
+},
+"豆芽": {
+"method": "泡水冷藏每天换水",
+"fridgeDays": 3,
+"freezerDays": null
+},
+"豆角": {
+"method": "保鲜袋冷藏，尽快吃",
+"fridgeDays": 5,
+"freezerDays": 60
+},
+"速冻包子": {
+"method": "-18°C 冷冻",
+"fridgeDays": null,
+"freezerDays": 180
+},
+"速冻饺子": {
+"method": "-18°C 冷冻，别反复解冻",
+"fridgeDays": null,
+"freezerDays": 180
+},
+"酸奶": {
+"method": "冷藏，开封当天吃完",
+"fridgeDays": 7,
+"freezerDays": null
+},
+"金针菇": {
+"method": "冷藏保鲜袋，尽快吃",
+"fridgeDays": 4,
+"freezerDays": 60
+},
+"银耳": {
+"method": "干品密封常温，泡发后当天吃",
+"fridgeDays": null,
+"freezerDays": null
+},
+"青椒": {
+"method": "保鲜袋冷藏，别沾水",
+"fridgeDays": 7,
+"freezerDays": 60
+},
+"面包": {
+"method": "常温 2–3 天，吃不完冷冻别冷藏",
+"fridgeDays": null,
+"freezerDays": 30
+},
+"面条": {
+"method": "鲜面冷藏 2 天，干面常温",
+"fridgeDays": 2,
+"freezerDays": 60
+},
+"面粉": {
+"method": "密封阴凉，长期可冷冻，以包装期限为准",
+"fridgeDays": null,
+"freezerDays": null
+},
+"韭菜": {
+"method": "厨房纸包好冷藏，叶片易蔫",
+"fridgeDays": 4,
+"freezerDays": null
+},
+"食用油": {
+"method": "避光阴凉，开封后尽快用完，以包装期限为准",
+"fridgeDays": null,
+"freezerDays": null
+},
+"香菇": {
+"method": "纸袋冷藏，别闷塑料袋",
+"fridgeDays": 5,
+"freezerDays": 60
+},
+"香菜": {
+"method": "根部朝下插水杯或纸包冷藏",
+"fridgeDays": 5,
+"freezerDays": 30
+},
+"香蕉": {
+"method": "常温挂起，冷藏皮会黑",
+"fridgeDays": null,
+"freezerDays": null
+},
+"鱼": {
+"method": "当天吃最好，冷冻前处理干净",
+"fridgeDays": 1,
+"freezerDays": 90
+},
+"鱿鱼": {
+"method": "处理干净冷冻",
+"fridgeDays": 1,
+"freezerDays": 90
+},
+"鲈鱼": {
+"method": "处理干净当天做，或冷冻",
+"fridgeDays": 1,
+"freezerDays": 90
+},
+"鲫鱼": {
+"method": "处理干净当天做，或冷冻",
+"fridgeDays": 1,
+"freezerDays": 90
+},
+"鳕鱼": {
+"method": "冷冻保存，解冻后当天做",
+"fridgeDays": 1,
+"freezerDays": 120
+},
+"鸡翅": {
+"method": "分装冷冻",
+"fridgeDays": 2,
+"freezerDays": 180
+},
+"鸡肉": {
+"method": "冷藏 1–2 天，长期分装冷冻",
+"fridgeDays": 2,
+"freezerDays": 180
+},
+"鸡胸肉": {
+"method": "按餐分装冷冻，解冻后当天做",
+"fridgeDays": 2,
+"freezerDays": 180
+},
+"鸡腿": {
+"method": "分装冷冻",
+"fridgeDays": 2,
+"freezerDays": 180
+},
+"鸡蛋": {
+"method": "冷藏大头朝上，别洗了再存",
+"fridgeDays": 30,
+"freezerDays": null
+},
+"黄油": {
+"method": "冷藏一个月，长期冷冻",
+"fridgeDays": 30,
+"freezerDays": 180
+},
+"黄瓜": {
+"method": "冷藏温度别太低，怕冻伤",
+"fridgeDays": 5,
+"freezerDays": null
+}
+},
+"category_default": {
+"主食": {
+"method": "干品密封阴凉常温；鲜食按包装说明保存",
+"fridgeDays": null,
+"freezerDays": null
+},
+"冷冻食品": {
+"method": "-18°C 冷冻，别反复解冻",
+"fridgeDays": null,
+"freezerDays": 180
+},
+"水产": {
+"method": "当天吃最好，处理干净再冷冻",
+"fridgeDays": 1,
+"freezerDays": 90
+},
+"水果": {
+"method": "看品种：热带果常温，浆果冷藏",
+"fridgeDays": 7,
+"freezerDays": null
+},
+"肉蛋": {
+"method": "冷藏 1–2 天内吃，长期分装冷冻",
+"fridgeDays": 2,
+"freezerDays": 180
+},
+"蔬菜": {
+"method": "多数冷藏保鲜袋，叶菜尽快吃",
+"fridgeDays": 5,
+"freezerDays": 60
+},
+"调料": {
+"method": "按瓶身说明，多数常温阴凉",
+"fridgeDays": null,
+"freezerDays": null
+},
+"豆乳": {
+"method": "冷藏，开封尽快吃完",
+"fridgeDays": 3,
+"freezerDays": null
+}
+}
+},
+"price_facts": {
+"per500g": {
+"三文鱼": 55,
+"丝瓜": 6,
+"乌冬面": 8,
+"五花肉": 18,
+"全麦面包": 15,
+"冬瓜": 2,
+"冰糖": 6,
+"冷冻混合菜": 10,
+"冻玉米粒": 8,
+"冻薯条": 10,
+"冻虾仁": 35,
+"冻豌豆": 8,
+"冻鸡块": 18,
+"包子": 12,
+"午餐肉": 18,
+"南瓜": 3,
+"卷心菜": 3,
+"口蘑": 12,
+"吐司": 12,
+"味噌": 15,
+"咖喱块": 15,
+"咸鸭蛋": 12,
+"四季豆": 7,
+"土豆": 2.5,
+"圣女果": 8,
+"培根": 28,
+"大米": 4,
+"大葱": 4,
+"大蒜": 8,
+"奇亚籽": 30,
+"奶油": 30,
+"奶酪": 35,
+"娃娃菜": 5,
+"嫩豆腐": 4,
+"小白菜": 4,
+"小米": 7,
+"小葱": 6,
+"山药": 8,
+"巴沙鱼": 15,
+"带鱼": 18,
+"平菇": 6,
+"意面": 10,
+"扇贝": 25,
+"手抓饼": 10,
+"挂面": 5,
+"排骨": 25,
+"料酒": 6,
+"无花果": 15,
+"木瓜": 7,
+"木耳": 30,
+"杏鲍菇": 8,
+"枸杞": 30,
+"柚子": 5,
+"柠檬": 10,
+"核桃": 25,
+"桃子": 8,
+"梨": 6,
+"椰子": 8,
+"椰浆": 12,
+"樱桃": 30,
+"橄榄油": 40,
+"橘子": 6,
+"橙子": 7,
+"毛豆": 7,
+"汤圆": 10,
+"沙拉酱": 15,
+"油菜": 4,
+"洋葱": 3,
+"海带": 6,
+"淀粉": 5,
+"火腿肠": 12,
+"火锅底料": 15,
+"火龙果": 8,
+"燕麦": 10,
+"牛奶": 6,
+"牛油果": 15,
+"牛肉": 40,
+"牛腩": 38,
+"猕猴桃": 12,
+"猪肉": 15,
+"猪肝": 12,
+"猪蹄": 20,
+"玉米": 4,
+"甜面酱": 8,
+"生姜": 8,
+"生抽": 8,
+"生菜": 5,
+"番茄": 5,
+"番茄酱": 10,
+"白玉菇": 10,
+"白糖": 4,
+"白菜": 2.5,
+"百香果": 12,
+"盐": 2,
+"石榴": 8,
+"秋葵": 9,
+"空心菜": 5,
+"竹笋": 10,
+"米粉": 6,
+"粉丝": 8,
+"粉条": 7,
+"糯米": 6,
+"糯米粉": 7,
+"紫甘蓝": 6,
+"紫菜": 20,
+"红枣": 15,
+"红薯": 3.5,
+"红豆": 9,
+"绿豆": 8,
+"羊肉": 40,
+"老干妈": 12,
+"老抽": 8,
+"老豆腐": 4.5,
+"胡萝卜": 3,
+"腊肉": 30,
+"腐乳": 10,
+"腐竹": 18,
+"腰果": 35,
+"芒果": 10,
+"芝麻": 12,
+"芝麻酱": 15,
+"芥蓝": 7,
+"芦笋": 12,
+"芦蒿": 12,
+"花生": 10,
+"花生油": 15,
+"花生酱": 15,
+"花蛤": 8,
+"芹菜": 4,
+"苋菜": 5,
+"苦瓜": 6,
+"苹果": 7,
+"茄子": 4,
+"茭白": 9,
+"茼蒿": 6,
+"草莓": 20,
+"草鱼": 12,
+"荔枝": 15,
+"荞麦面": 10,
+"荠菜": 10,
+"荷兰豆": 12,
+"荸荠": 8,
+"莲子": 30,
+"莲藕": 7,
+"莴笋": 4,
+"菜心": 6,
+"菜花": 5,
+"菠菜": 6,
+"菠萝": 5,
+"萝卜": 2.5,
+"葡萄": 10,
+"蒜苔": 8,
+"蓝莓": 30,
+"蔓越莓": 25,
+"薏米": 12,
+"藕粉": 20,
+"藜麦": 25,
+"虾": 35,
+"虾仁": 40,
+"虾滑": 30,
+"虾皮": 20,
+"蚕豆": 8,
+"蚝油": 10,
+"蜂蜜": 30,
+"螃蟹": 40,
+"蟹味菇": 10,
+"蟹棒": 15,
+"裙带菜": 15,
+"西兰花": 7,
+"西瓜": 2.5,
+"西葫芦": 4,
+"豆干": 8,
+"豆浆": 4,
+"豆瓣酱": 8,
+"豆腐": 4,
+"豆芽": 2.5,
+"豆角": 6,
+"豆豉": 10,
+"豌豆": 9,
+"豌豆苗": 10,
+"辣椒": 7,
+"辣椒酱": 10,
+"速冻包子": 12,
+"速冻饺子": 12,
+"酱油": 8,
+"酵母": 15,
+"酸奶": 8,
+"醋": 6,
+"金枪鱼": 30,
+"金针菇": 6,
+"银耳": 25,
+"青椒": 5,
+"面包": 12,
+"面条": 5,
+"面粉": 3.5,
+"韭菜": 5,
+"食用油": 10,
+"饺子": 15,
+"馄饨": 15,
+"馒头": 4,
+"香椿": 25,
+"香油": 25,
+"香肠": 25,
+"香菇": 10,
+"香菜": 8,
+"香蕉": 4,
+"魔芋": 5,
+"鱼露": 12,
+"鱿鱼": 22,
+"鲈鱼": 22,
+"鲫鱼": 15,
+"鳕鱼": 35,
+"鸡爪": 18,
+"鸡翅": 20,
+"鸡肉": 12,
+"鸡胸肉": 12,
+"鸡腿": 12,
+"鸡蛋": 6,
+"鸭肉": 15,
+"鹌鹑蛋": 12,
+"鹰嘴豆": 12,
+"黄油": 40,
+"黄瓜": 4,
+"黄豆": 6,
+"黄豆酱": 8,
+"龙眼": 12
+},
+"category_default": {
+"主食": 7,
+"冷冻食品": 15,
+"水产": 28,
+"水果": 10,
+"肉蛋": 20,
+"蔬菜": 6,
+"调料": 12,
+"豆乳": 8
+},
+"fallback": 10.0,
+"takeout_per_meal": 30.0
+},
+"seasonal": {
+"solar_terms": [
+{
+"name": "小寒",
+"month": 1,
+"day": 6
+},
+{
+"name": "大寒",
+"month": 1,
+"day": 20
+},
+{
+"name": "立春",
+"month": 2,
+"day": 4
+},
+{
+"name": "雨水",
+"month": 2,
+"day": 19
+},
+{
+"name": "惊蛰",
+"month": 3,
+"day": 6
+},
+{
+"name": "春分",
+"month": 3,
+"day": 21
+},
+{
+"name": "清明",
+"month": 4,
+"day": 5
+},
+{
+"name": "谷雨",
+"month": 4,
+"day": 20
+},
+{
+"name": "立夏",
+"month": 5,
+"day": 6
+},
+{
+"name": "小满",
+"month": 5,
+"day": 21
+},
+{
+"name": "芒种",
+"month": 6,
+"day": 6
+},
+{
+"name": "夏至",
+"month": 6,
+"day": 21
+},
+{
+"name": "小暑",
+"month": 7,
+"day": 7
+},
+{
+"name": "大暑",
+"month": 7,
+"day": 23
+},
+{
+"name": "立秋",
+"month": 8,
+"day": 7
+},
+{
+"name": "处暑",
+"month": 8,
+"day": 23
+},
+{
+"name": "白露",
+"month": 9,
+"day": 8
+},
+{
+"name": "秋分",
+"month": 9,
+"day": 23
+},
+{
+"name": "寒露",
+"month": 10,
+"day": 8
+},
+{
+"name": "霜降",
+"month": 10,
+"day": 23
+},
+{
+"name": "立冬",
+"month": 11,
+"day": 7
+},
+{
+"name": "小雪",
+"month": 11,
+"day": 22
+},
+{
+"name": "大雪",
+"month": 12,
+"day": 7
+},
+{
+"name": "冬至",
+"month": 12,
+"day": 22
+}
+],
+"seasonal": {
+"丝瓜": [
+6,
+7,
+8,
+9
+],
+"冬瓜": [
+7,
+8,
+9
+],
+"南瓜": [
+8,
+9,
+10
+],
+"口蘑": [
+9,
+10
+],
+"山药": [
+10,
+11,
+12
+],
+"带鱼": [
+11,
+12,
+1
+],
+"平菇": [
+9,
+10,
+11
+],
+"无花果": [
+8,
+9,
+10
+],
+"柚子": [
+9,
+10,
+11
+],
+"桃子": [
+6,
+7,
+8
+],
+"梨": [
+8,
+9,
+10
+],
+"椰子": [
+6,
+7,
+8
+],
+"樱桃": [
+4,
+5
+],
+"橘子": [
+10,
+11,
+12
+],
+"橙子": [
+10,
+11,
+12,
+1
+],
+"毛豆": [
+7,
+8,
+9
+],
+"火龙果": [
+6,
+7,
+8,
+9
+],
+"牛肉": [
+11,
+12,
+1
+],
+"猕猴桃": [
+9,
+10,
+11
+],
+"玉米": [
+7,
+8,
+9
+],
+"番茄": [
+6,
+7,
+8
+],
+"白菜": [
+11,
+12,
+1
+],
+"百合": [
+9,
+10
+],
+"百香果": [
+7,
+8,
+9
+],
+"石榴": [
+9,
+10
+],
+"秋葵": [
+6,
+7,
+8,
+9
+],
+"空心菜": [
+5,
+6,
+7,
+8,
+9
+],
+"竹笋": [
+2,
+3,
+4,
+12
+],
+"红枣": [
+9,
+10
+],
+"羊肉": [
+11,
+12,
+1
+],
+"芒果": [
+5,
+6,
+7
+],
+"芥蓝": [
+11,
+12,
+1
+],
+"芦笋": [
+3,
+4,
+5
+],
+"芦蒿": [
+2,
+3,
+4
+],
+"芹菜": [
+10,
+11,
+12
+],
+"苋菜": [
+5,
+6,
+7
+],
+"苦瓜": [
+6,
+7,
+8
+],
+"苹果": [
+9,
+10,
+11
+],
+"茄子": [
+6,
+7,
+8,
+9
+],
+"茭白": [
+9,
+10
+],
+"草莓": [
+12,
+1,
+2,
+3,
+4
+],
+"荔枝": [
+6,
+7
+],
+"荠菜": [
+2,
+3,
+4
+],
+"荷兰豆": [
+3,
+4,
+5
+],
+"荸荠": [
+10,
+11,
+12
+],
+"莲藕": [
+9,
+10,
+11
+],
+"莴笋": [
+3,
+4,
+5
+],
+"菜心": [
+3,
+4,
+10,
+11
+],
+"菜花": [
+9,
+10,
+11
+],
+"菠菜": [
+3,
+4,
+10,
+11,
+12
+],
+"菠萝": [
+3,
+4,
+5
+],
+"菱角": [
+8,
+9,
+10
+],
+"萝卜": [
+11,
+12,
+1,
+2
+],
+"葡萄": [
+7,
+8,
+9
+],
+"蒜黄": [
+11,
+12,
+1
+],
+"蚕豆": [
+4,
+5
+],
+"西兰花": [
+9,
+10,
+11
+],
+"西瓜": [
+6,
+7,
+8
+],
+"豆角": [
+6,
+7,
+8
+],
+"豌豆": [
+3,
+4,
+5
+],
+"豌豆苗": [
+2,
+3,
+4
+],
+"青椒": [
+6,
+7,
+8,
+9
+],
+"韭菜": [
+2,
+3,
+4
+],
+"韭黄": [
+11,
+12,
+1
+],
+"香椿": [
+3,
+4
+],
+"香菇": [
+9,
+10,
+11,
+3,
+4
+],
+"鲫鱼": [
+10,
+11,
+12
+],
+"黄瓜": [
+5,
+6,
+7,
+8
+],
+"龙眼": [
+7,
+8
+]
+},
+"by_month": {
+"1": [
+"带鱼",
+"橙子",
+"牛肉",
+"白菜",
+"羊肉",
+"芥蓝",
+"草莓",
+"萝卜",
+"蒜黄",
+"韭黄"
+],
+"2": [
+"竹笋",
+"芦蒿",
+"草莓",
+"荠菜",
+"萝卜",
+"豌豆苗",
+"韭菜"
+],
+"3": [
+"竹笋",
+"芦笋",
+"芦蒿",
+"草莓",
+"荠菜",
+"荷兰豆",
+"莴笋",
+"菜心",
+"菠菜",
+"菠萝",
+"豌豆",
+"豌豆苗",
+"韭菜",
+"香椿",
+"香菇"
+],
+"4": [
+"樱桃",
+"竹笋",
+"芦笋",
+"芦蒿",
+"草莓",
+"荠菜",
+"荷兰豆",
+"莴笋",
+"菜心",
+"菠菜",
+"菠萝",
+"蚕豆",
+"豌豆",
+"豌豆苗",
+"韭菜",
+"香椿",
+"香菇"
+],
+"5": [
+"樱桃",
+"空心菜",
+"芒果",
+"芦笋",
+"苋菜",
+"荷兰豆",
+"莴笋",
+"菠萝",
+"蚕豆",
+"豌豆",
+"黄瓜"
+],
+"6": [
+"丝瓜",
+"桃子",
+"椰子",
+"火龙果",
+"番茄",
+"秋葵",
+"空心菜",
+"芒果",
+"苋菜",
+"苦瓜",
+"茄子",
+"荔枝",
+"西瓜",
+"豆角",
+"青椒",
+"黄瓜"
+],
+"7": [
+"丝瓜",
+"冬瓜",
+"桃子",
+"椰子",
+"毛豆",
+"火龙果",
+"玉米",
+"番茄",
+"百香果",
+"秋葵",
+"空心菜",
+"芒果",
+"苋菜",
+"苦瓜",
+"茄子",
+"荔枝",
+"葡萄",
+"西瓜",
+"豆角",
+"青椒",
+"黄瓜",
+"龙眼"
+],
+"8": [
+"丝瓜",
+"冬瓜",
+"南瓜",
+"无花果",
+"桃子",
+"梨",
+"椰子",
+"毛豆",
+"火龙果",
+"玉米",
+"番茄",
+"百香果",
+"秋葵",
+"空心菜",
+"苦瓜",
+"茄子",
+"菱角",
+"葡萄",
+"西瓜",
+"豆角",
+"青椒",
+"黄瓜",
+"龙眼"
+],
+"9": [
+"丝瓜",
+"冬瓜",
+"南瓜",
+"口蘑",
+"平菇",
+"无花果",
+"柚子",
+"梨",
+"毛豆",
+"火龙果",
+"猕猴桃",
+"玉米",
+"百合",
+"百香果",
+"石榴",
+"秋葵",
+"空心菜",
+"红枣",
+"苹果",
+"茄子",
+"茭白",
+"莲藕",
+"菜花",
+"菱角",
+"葡萄",
+"西兰花",
+"青椒",
+"香菇"
+],
+"10": [
+"南瓜",
+"口蘑",
+"山药",
+"平菇",
+"无花果",
+"柚子",
+"梨",
+"橘子",
+"橙子",
+"猕猴桃",
+"百合",
+"石榴",
+"红枣",
+"芹菜",
+"苹果",
+"茭白",
+"荸荠",
+"莲藕",
+"菜心",
+"菜花",
+"菠菜",
+"菱角",
+"西兰花",
+"香菇",
+"鲫鱼"
+],
+"11": [
+"山药",
+"带鱼",
+"平菇",
+"柚子",
+"橘子",
+"橙子",
+"牛肉",
+"猕猴桃",
+"白菜",
+"羊肉",
+"芥蓝",
+"芹菜",
+"苹果",
+"荸荠",
+"莲藕",
+"菜心",
+"菜花",
+"菠菜",
+"萝卜",
+"蒜黄",
+"西兰花",
+"韭黄",
+"香菇",
+"鲫鱼"
+],
+"12": [
+"山药",
+"带鱼",
+"橘子",
+"橙子",
+"牛肉",
+"白菜",
+"竹笋",
+"羊肉",
+"芥蓝",
+"芹菜",
+"草莓",
+"荸荠",
+"菠菜",
+"萝卜",
+"蒜黄",
+"韭黄",
+"鲫鱼"
+]
+}
+}
+},
+"vocab": {
+"categories": [
+"蔬菜",
+"肉蛋",
+"水产",
+"主食",
+"豆乳",
+"调料",
+"水果",
+"冷冻食品"
+],
+"methods": [
+"炒",
+"煮",
+"蒸",
+"烤",
+"煎",
+"炸",
+"炖",
+"凉拌",
+"微波炉",
+"电饭煲",
+"空气炸锅",
+"免开火"
+],
+"difficulties": [
+"简单",
+"中等",
+"较难"
+],
+"tags": [
+"快手",
+"低卡",
+"下饭",
+"一人食",
+"早餐",
+"夜宵",
+"素食",
+"剩菜改造",
+"空气炸锅",
+"免开火",
+"宝宝辅食",
+"减脂餐",
+"低脂",
+"甜品",
+"海鲜",
+"夏日饮品",
+"融合菜"
+]
+}
+}
