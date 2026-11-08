@@ -7,7 +7,7 @@ import threading
 from http.server import ThreadingHTTPServer
 from pathlib import Path
 
-from cookmyfridge.serve import PrecompressedHandler, pick_precompressed
+from cookmyfridge.serve import PrecompressedHandler, make_handler, pick_precompressed
 
 
 def _seed(tmp_path: Path) -> None:
@@ -33,6 +33,43 @@ def test_pick_falls_back_gzip_then_identity(tmp_path):
     # No precompressed sibling at all -> identity even when gzip accepted.
     actual, enc = pick_precompressed(str(tmp_path / "plain.txt"), "gzip")
     assert enc is None and actual.endswith("plain.txt")
+
+
+def test_prefix_mount_redirects_404s_and_serves(tmp_path):
+    _seed(tmp_path)
+    server = ThreadingHTTPServer(
+        ("127.0.0.1", 0), make_handler(str(tmp_path), prefix="cookmyfridge")
+    )
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    try:
+        # / redirects into the mount point.
+        conn = http.client.HTTPConnection("127.0.0.1", server.server_port)
+        conn.request("GET", "/")
+        resp = conn.getresponse()
+        assert resp.status in (301, 302)
+        assert resp.getheader("Location") == "/cookmyfridge/"
+        resp.read()
+
+        # Outside the prefix: 404, like a real project-site host.
+        conn = http.client.HTTPConnection("127.0.0.1", server.server_port)
+        conn.request("GET", "/big.txt")
+        assert conn.getresponse().status == 404
+
+        # Inside the prefix: served, and precompression still negotiates.
+        conn = http.client.HTTPConnection("127.0.0.1", server.server_port)
+        conn.request("GET", "/cookmyfridge/big.txt", headers={"Accept-Encoding": "gzip"})
+        resp = conn.getresponse()
+        assert resp.status == 200
+        assert resp.getheader("Content-Encoding") == "gzip"
+        assert gzip.decompress(resp.read()) == (tmp_path / "big.txt").read_bytes()
+
+        # Bare prefix (no trailing slash) behaves like a directory request.
+        conn = http.client.HTTPConnection("127.0.0.1", server.server_port)
+        conn.request("GET", "/cookmyfridge")
+        assert conn.getresponse().status in (200, 301, 302)
+    finally:
+        server.shutdown()
+        server.server_close()
 
 
 def test_handler_negotiates_and_marks_vary(tmp_path):

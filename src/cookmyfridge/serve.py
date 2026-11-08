@@ -30,9 +30,34 @@ def pick_precompressed(filename: str, accept_encoding: str) -> tuple[str, str | 
 
 
 class PrecompressedHandler(http.server.SimpleHTTPRequestHandler):
-    """SimpleHTTPRequestHandler that substitutes precompressed siblings."""
+    """SimpleHTTPRequestHandler that substitutes precompressed siblings.
+
+    url_prefix emulates subpath hosting (GitHub Pages project sites serve
+    under /<repo>/): requests outside the prefix 404, exactly like the real
+    host, and / redirects into the prefix."""
+
+    url_prefix = ""
+
+    def translate_path(self, path):
+        if self.url_prefix:
+            bare = path.split("?", 1)[0].split("#", 1)[0]
+            if bare == self.url_prefix:
+                path = self.url_prefix + "/" + path[len(bare):]
+                bare = self.url_prefix + "/"
+            if bare.startswith(self.url_prefix + "/"):
+                path = path[len(self.url_prefix):]
+            else:
+                # Outside the mount point: route to a guaranteed-missing
+                # file so the normal flow answers 404.
+                return str(Path(self.directory) / "__outside_prefix__")
+        return super().translate_path(path)
 
     def send_head(self):  # mirrors stdlib control flow
+        if self.url_prefix and self.path.split("?", 1)[0] in ("", "/"):
+            self.send_response(302)
+            self.send_header("Location", self.url_prefix + "/")
+            self.end_headers()
+            return None
         path = self.translate_path(self.path)
         if not Path(path).is_dir():
             actual, encoding = pick_precompressed(
@@ -53,14 +78,26 @@ class PrecompressedHandler(http.server.SimpleHTTPRequestHandler):
         pass
 
 
-def serve_site(port: int = 8000) -> None:
+def make_handler(directory: str, prefix: str = ""):
+    """Handler factory with per-server prefix (class attrs are process-wide,
+    so tests and servers each get their own subclass)."""
+    normalized = ("/" + prefix.strip("/")) if prefix.strip("/") else ""
+
+    class _Handler(PrecompressedHandler):
+        url_prefix = normalized
+
+    return lambda *a, **kw: _Handler(*a, directory=directory, **kw)
+
+
+def serve_site(port: int = 8000, prefix: str = "") -> None:
     if not SITE_DIR.exists():
         raise SystemExit("site/ 不存在，先跑 python run.py build")
-    handler = lambda *a, **kw: PrecompressedHandler(  # noqa: E731
-        *a, directory=str(SITE_DIR), **kw
+    server = http.server.ThreadingHTTPServer(
+        ("127.0.0.1", port), make_handler(str(SITE_DIR), prefix)
     )
-    server = http.server.ThreadingHTTPServer(("127.0.0.1", port), handler)
-    print(f"serving {SITE_DIR} at http://127.0.0.1:{server.server_port}/")
+    base = f"http://127.0.0.1:{server.server_port}"
+    mount = ("/" + prefix.strip("/") + "/") if prefix.strip("/") else "/"
+    print(f"serving {SITE_DIR} at {base}{mount}")
     print("precompressed .br/.gz negotiated per Accept-Encoding; Ctrl+C to stop")
     try:
         server.serve_forever()

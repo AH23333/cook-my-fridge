@@ -48,6 +48,10 @@ def main() -> None:
         "serve", help="preview site/ locally (negotiates precompressed .br/.gz)"
     )
     p_serve.add_argument("--port", type=int, default=8000)
+    p_serve.add_argument(
+        "--prefix", default="",
+        help="mount under a subpath (e.g. cookmyfridge) to emulate GitHub Pages",
+    )
     sub.add_parser("repair")
     sub.add_parser("prune-failures")
     sub.add_parser("audit")
@@ -69,7 +73,7 @@ def main() -> None:
     if args.task == "serve":
         from cookmyfridge.serve import serve_site
 
-        serve_site(args.port)
+        serve_site(args.port, prefix=args.prefix)
         return
 
     if args.task == "import":
