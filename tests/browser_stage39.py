@@ -91,7 +91,9 @@ def main():
             # features fetch is issued by boots() after init() renders, and
             # init() runs only after core.json resolves — so features.start
             # must sit after core's responseEnd.
-            check("features fetch starts only after core data landed",
+            f_start = features["start"] if features else -1
+            c_end = core["end"] if core else -1
+            check(f"features fetch starts only after core data landed (f={f_start:.0f}ms c={c_end:.0f}ms)",
                   features is not None and core is not None
                   and features["start"] > core["end"])
             check("core fetch starts before bundle download ends",
