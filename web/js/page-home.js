@@ -69,7 +69,8 @@
       picked
         .map(
           (c) =>
-            `<span class="mini-tag">${CMF.emojiOf(c)} ${CMF.esc(c)}<span class="x" data-name="${CMF.esc(c)}">×</span></span>`
+            `<span class="mini-tag">${CMF.emojiOf(c)} ${CMF.esc(c)}` +
+            `<button type="button" class="x" data-name="${CMF.esc(c)}" aria-label="移除 ${CMF.esc(c)}">×</button></span>`
         )
         .join("") +
       "</div>" +

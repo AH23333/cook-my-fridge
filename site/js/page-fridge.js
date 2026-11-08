@@ -478,6 +478,8 @@
           const canvas = document.createElement("canvas");
           canvas.width = box;
           canvas.height = box;
+          canvas.setAttribute("role", "img");
+          canvas.setAttribute("aria-label", "同步二维码：用另一台设备扫码打开同步链接");
           canvas.style.maxWidth = "100%";
           canvas.style.height = "auto";
           const ctx = canvas.getContext("2d");
@@ -613,11 +615,11 @@
       '<div class="off-box">' +
       '<p class="off-intro">查询包装食品的营养成分（每100g）。数据来自 <a href="https://world.openfoodfacts.org" target="_blank" rel="noopener">Open Food Facts</a>（免费开放数据库，ODbL 授权），需联网；结果仅供参考，请以包装标签为准。</p>' +
       '<div class="off-row">' +
-      '<input type="search" id="off-query" placeholder="输入食品名，如：燕麦片、牛奶…" autocomplete="off">' +
+      '<input type="search" id="off-query" aria-label="搜索包装食品名称" placeholder="输入食品名，如：燕麦片、牛奶…" autocomplete="off">' +
       '<button class="btn btn-primary btn-sm" id="off-search">搜索</button>' +
       "</div>" +
       '<div class="off-row">' +
-      '<input type="text" id="off-barcode" inputmode="numeric" placeholder="或输入条码（8–14 位数字）" autocomplete="off">' +
+      '<input type="text" id="off-barcode" inputmode="numeric" aria-label="输入食品条码" placeholder="或输入条码（8–14 位数字）" autocomplete="off">' +
       '<button class="btn btn-sm" id="off-lookup">查条码</button>' +
       (canScan ? '<button class="btn btn-sm" id="off-scan">📷 扫码</button>' : "") +
       "</div>" +
