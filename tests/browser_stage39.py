@@ -1,14 +1,15 @@
 """First-screen request budget (stage 39) on the stage37 slow-3G profile.
 
-Locks in the waterfall shape measured 2026-11-08:
-- 5 requests total by networkidle, 4 critical (css, bundle, page, core.json);
-- the core-data fetch starts BEFORE bundle.js finishes downloading (the
-  build-injected window.__cmfCore prefetch collapses the old serial wave);
+Locks in the waterfall shape after the bundle split (2026-11-08):
+- critical requests are css + bundle-boot.js + page script + core.json
+  (the ~172 KB bundle-features.js is injected AFTER the first render on
+  lean pages and must never appear on the critical path);
+- the core-data fetch starts BEFORE bundle-boot.js finishes downloading
+  (the build-injected window.__cmfCore prefetch collapses the serial wave);
 - zero data/ai/* bytes before the ingredient wall renders (AI on demand).
 
-The wall itself stays byte-bound (~10.5 s uncompressed local: 358 KB over a
-50 KB/s pipe; bundle.js is the long pole — real hosts with gzip see far
-less), so the wall assertion stays a generous tripwire only.
+The wall assertion stays a generous tripwire (local server has no gzip;
+real hosts compress ~4x).
 """
 from __future__ import annotations
 
@@ -73,11 +74,15 @@ def main():
             critical = [e for e in entries if e["end"] <= wall_ms + 50]
             names = {e["name"] for e in critical}
             check("critical requests <= 5", len(critical) <= 5)
-            check("total requests by networkidle <= 6", total <= 6)
+            check("total requests by networkidle <= 7", total <= 7)
             check("no AI shards before the wall",
                   not any(n.startswith("data/ai/") for n in names))
             check("core.json on the critical path", "data/core.json" in names)
-            bundle_end = next((e["end"] for e in entries if e["name"] == "js/bundle.js"), None)
+            # The split: only bundle-boot.js may be critical; the ~172 KB
+            # features bundle is injected after the first render.
+            check("features bundle NOT on the critical path",
+                  "js/bundle-features.js" not in names)
+            bundle_end = next((e["end"] for e in entries if e["name"] == "js/bundle-boot.js"), None)
             core_start = next((e["start"] for e in entries if e["name"] == "data/core.json"), None)
             check("core fetch starts before bundle download ends",
                   bundle_end is not None and core_start is not None and core_start < bundle_end)

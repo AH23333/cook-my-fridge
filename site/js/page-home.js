@@ -169,42 +169,53 @@
   });
 
   const voiceBtn = document.getElementById("nl-voice");
-  if (voiceBtn) {
-    if (!CMF.voiceSupported || !CMF.voiceSupported()) {
-      voiceBtn.style.display = "none";
-    } else {
-      let handle = null;
-      voiceBtn.onclick = () => {
-        if (handle) {
-          handle.stop();
-          handle = null;
-          voiceBtn.classList.remove("listening");
-          return;
-        }
-        voiceBtn.classList.add("listening");
-        handle = CMF.startVoiceInput({
-          onResult: (text) => {
-            nlInput.value = text;
-            addFromText();
-          },
-          onState: (s) => {
-            if (s === "idle") {
-              voiceBtn.classList.remove("listening");
-              handle = null;
-            }
-          },
-          onError: (code) => {
+  function wireVoice() {
+    let handle = null;
+    voiceBtn.onclick = () => {
+      if (handle) {
+        handle.stop();
+        handle = null;
+        voiceBtn.classList.remove("listening");
+        return;
+      }
+      voiceBtn.classList.add("listening");
+      handle = CMF.startVoiceInput({
+        onResult: (text) => {
+          nlInput.value = text;
+          addFromText();
+        },
+        onState: (s) => {
+          if (s === "idle") {
             voiceBtn.classList.remove("listening");
             handle = null;
-            nlFeedback.textContent =
-              code === "not-supported" ? "这个浏览器不支持语音输入，请用键盘输入。"
-              : code === "no-speech" ? "没听清，再点一次麦克风试试。"
-              : "语音输入不可用（可能未授权麦克风），请用键盘输入。";
-          },
-        });
-      };
+          }
+        },
+        onError: (code) => {
+          voiceBtn.classList.remove("listening");
+          handle = null;
+          nlFeedback.textContent =
+            code === "not-supported" ? "这个浏览器不支持语音输入，请用键盘输入。"
+            : code === "no-speech" ? "没听清，再点一次麦克风试试。"
+            : "语音输入不可用（可能未授权麦克风），请用键盘输入。";
+        },
+      });
+    };
+  }
+
+  /* voice.js lives in the deferred features bundle: the button starts
+     hidden and appears once features land (only when speech is supported).
+     Sync-bundle pages run this block with voice.js already present. */
+  function refreshVoiceButton() {
+    if (!voiceBtn) return;
+    if (CMF.voiceSupported && CMF.voiceSupported()) {
+      voiceBtn.style.display = "";
+      wireVoice();
+    } else {
+      voiceBtn.style.display = "none";
     }
   }
+  refreshVoiceButton();
+  CMF.onFeatures(refreshVoiceButton);
 
   function renderSeasonalBanner() {
     const root = document.getElementById("seasonal-banner");
@@ -350,8 +361,12 @@
 
   CMF.boots("index.html", start, { deferRecipes: true });
   // recipes.json streams in behind the first paint; fill what depends on it.
+  // weather.js / pairings.js live in the deferred features bundle, so the
+  // enrichment waits for BOTH the data and the features script.
   CMF.preloadRecipes().then(() => {
-    if (CMF.buildPairingIndex) CMF.buildPairingIndex(CMF.data.recipes);
-    renderWeatherCard();
+    CMF.onFeatures(() => {
+      if (CMF.buildPairingIndex) CMF.buildPairingIndex(CMF.data.recipes);
+      renderWeatherCard();
+    });
   });
 })();

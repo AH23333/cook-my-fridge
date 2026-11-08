@@ -73,23 +73,36 @@ def test_export_catalog_includes_staples(tmp_path, monkeypatch):
 
 
 def test_service_worker_precaches_every_script():
-    """Offline-first install precaches the bundle plus every page script;
-    individual modules ship inside bundle.js instead of being listed."""
+    """Offline-first install precaches both split bundles plus every page
+    script; individual modules ship inside the bundles, never listed."""
     sw = (ROOT / "web" / "sw.js").read_text(encoding="utf-8")
-    assert '"js/bundle.js"' in sw
+    assert '"js/bundle-boot.js"' in sw
+    assert '"js/bundle-features.js"' in sw
     pages = sorted(p.name for p in (ROOT / "web" / "js").glob("page-*.js"))
     assert len(pages) >= 8
     for page in pages:
         assert f'"js/{page}"' in sw, f"missing from SW precache: {page}"
-    # Every shared module must be in the bundle manifest, or its exports
-    # silently vanish from the deployed site.
+    # Every shared module must be in one of the bundle manifests, or its
+    # exports silently vanish from the deployed site.
     for module in ("store", "catalog", "search", "sync", "ui", "inventory-ui"):
         assert module in build.BUNDLE_MODULES
 
 
+def test_bundle_split_manifest_covers_every_module():
+    """The boot/features split must partition BUNDLE_MODULES exactly:
+    a module dropped from BOTH loses its exports on the deployed site;
+    a module in BOTH ships twice and race-redefines CMF members."""
+    assert sorted(build.BOOT_MODULES + build.FEATURE_MODULES) == sorted(build.BUNDLE_MODULES)
+    assert not (set(build.BOOT_MODULES) & set(build.FEATURE_MODULES))
+    # Boot must stay self-sufficient: every page boots on it alone.
+    for module in ("store", "catalog", "search", "ui"):
+        assert module in build.BOOT_MODULES
+
+
 def test_bundle_and_html_rewiring(tmp_path, monkeypatch):
-    """The bundle concatenates every module; deployed pages reference it
-    exactly once and keep their page script."""
+    """The split bundles concatenate every module; defer pages reference
+    only bundle-boot.js, sync pages get both bundles before their page
+    script, and the features bundle carries its readiness marker."""
     fake_site = tmp_path / "site"
     fake_web = tmp_path / "web"
     (fake_web / "js").mkdir(parents=True)
@@ -109,41 +122,69 @@ def test_bundle_and_html_rewiring(tmp_path, monkeypatch):
         "</body></html>\n",
         encoding="utf-8",
     )
+    # A content-heavy page (NOT in DEFER_PAGES) must keep features sync.
+    (fake_web / "recipe.html").write_text(
+        "<html><head></head><body>\n"
+        '  <script src="js/store.js"></script>\n'
+        '  <script src="js/ui.js"></script>\n'
+        '  <script src="js/page-recipe.js"></script>\n'
+        "</body></html>\n",
+        encoding="utf-8",
+    )
     for name in build.BUNDLE_MODULES:
         (fake_web / "js" / f"{name}.js").write_text(
             f"/* {name} marker */", encoding="utf-8"
         )
     (fake_web / "js" / "page-home.js").write_text("/* home */", encoding="utf-8")
+    (fake_web / "js" / "page-recipe.js").write_text("/* recipe */", encoding="utf-8")
     (fake_web / "css" / "style.css").write_text("/* x */", encoding="utf-8")
     monkeypatch.setattr(build, "SITE_DIR", fake_site)
     monkeypatch.setattr(build, "WEB_DIR", fake_web)
 
     build.copy_web_assets()
-    size = build.build_js_bundle()
+    sizes = build.build_js_bundle()
     rewritten = build._rewrite_html_bundles()
     prefetched = build._inject_core_prefetch()
 
-    bundle = (fake_site / "js" / "bundle.js").read_text(encoding="utf-8")
-    assert size > 0 and "/* ui marker */" in bundle
-    assert sum(1 for name in build.BUNDLE_MODULES if f"/* {name} marker */" in bundle) == len(build.BUNDLE_MODULES)
-    assert rewritten == 2
+    boot = (fake_site / "js" / "bundle-boot.js").read_text(encoding="utf-8")
+    features = (fake_site / "js" / "bundle-features.js").read_text(encoding="utf-8")
+    assert sizes["boot"] > 0 and sizes["features"] > 0
+    assert "/* ui marker */" in boot and "/* nutrition marker */" in features
+    assert sum(1 for name in build.BOOT_MODULES if f"/* {name} marker */" in boot) == len(build.BOOT_MODULES)
+    assert sum(1 for name in build.FEATURE_MODULES if f"/* {name} marker */" in features) == len(build.FEATURE_MODULES)
+    # The readiness marker lets CMF.onFeatures tell a sync-loaded bundle
+    # from one it still has to inject.
+    assert features.rstrip().endswith("window.__cmfFeaturesReady = true;")
+    assert rewritten == 3
+
     index = (fake_site / "index.html").read_text(encoding="utf-8")
-    assert index.count('src="js/bundle.js"') == 1
+    assert index.count('src="js/bundle-boot.js"') == 1
+    assert 'src="js/bundle-features.js"' not in index  # defer page
     assert 'src="js/page-home.js"' in index
     assert 'src="js/store.js"' not in index
+
     about = (fake_site / "about.html").read_text(encoding="utf-8")
-    assert about.count('src="js/bundle.js"') == 1
-    assert about.index('src="js/bundle.js"') < about.index("</body>")
+    assert about.count('src="js/bundle-boot.js"') == 1
+    assert 'src="js/bundle-features.js"' not in about
+    assert about.index('src="js/bundle-boot.js"') < about.index("</body>")
     # Inline boots() must run AFTER the bundle: inserting the bundle before
     # </body> instead of at the first removed module left window.CMF
     # undefined on about.html (real bug caught by stage27/32/38).
-    assert about.index('src="js/bundle.js"') < about.index("window.CMF.boots")
+    assert about.index('src="js/bundle-boot.js"') < about.index("window.CMF.boots")
+
+    recipe = (fake_site / "recipe.html").read_text(encoding="utf-8")
+    assert (
+        recipe.index('src="js/bundle-boot.js"')
+        < recipe.index('src="js/bundle-features.js"')
+        < recipe.index('src="js/page-recipe.js"')
+    )
+
     # Core-data prefetch lands in <head> on every page so the data wave
     # overlaps the bundle download; store.js consumes window.__cmfCore.
-    assert prefetched == 2
-    for name in ("index.html", "about.html"):
+    assert prefetched == 3
+    for name in ("index.html", "about.html", "recipe.html"):
         built = (fake_site / name).read_text(encoding="utf-8")
-        assert built.index("window.__cmfCore") < built.index('src="js/bundle.js"'), name
+        assert built.index("window.__cmfCore") < built.index('src="js/bundle-boot.js"'), name
 
 
 def test_service_worker_precaches_every_page():

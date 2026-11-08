@@ -37,7 +37,7 @@ def test_goals_module_is_wired_everywhere():
         html = page.read_text(encoding="utf-8")
         assert 'src="js/goals.js"' in html, page.name
         assert html.index("js/nutrition.js") < html.index("js/goals.js") < html.index("js/balance.js")
-    # Shared modules ship inside the bundle (build.py BUNDLE_MODULES); sw.js
-    # precaches the bundle instead of individual module files.
-    assert '"js/bundle.js"' in (ROOT / "web" / "sw.js").read_text(encoding="utf-8")
+    # Shared modules ship inside the split bundles (build.py BOOT/FEATURE
+    # manifests); goals.js lives in the features bundle.
+    assert '"js/bundle-features.js"' in (ROOT / "web" / "sw.js").read_text(encoding="utf-8")
     assert '"cmf.goals"' in (ROOT / "web" / "js" / "store.js").read_text(encoding="utf-8")

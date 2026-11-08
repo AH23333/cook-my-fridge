@@ -251,11 +251,69 @@
     window.addEventListener("load", () => navigator.serviceWorker.register("sw.js"));
   }
 
+  /* --- split-bundle feature loading ---------------------------------------
+     The build ships js/bundle-boot.js (what every page needs at first paint:
+     store/catalog/search/nlparse/seasonal/ui, ~31 KB) and
+     js/bundle-features.js (everything else, ~172 KB). Content-heavy pages
+     (recipe/fridge/planner/stats/browse) load BOTH as plain sync scripts —
+     behavior identical to the old single bundle. Lean pages (index/result/
+     wildcard/about) load only the boot bundle synchronously; boots() starts
+     the features download AFTER the first render, and CMF.onFeatures() gates
+     enrichment that touches feature modules (weather card, voice input,
+     pairings index). Pages passing opts.skipFeatures (about/wildcard) never
+     use feature modules, so the features bundle never ships there. */
+  let featuresPromise = null;   // download promise, once injection starts
+  let featuresSkipped = false;
+  let waiterPromise = null;     // shared pre-injection promise
+  let waiterResolve = null;
+
+  /* The pipe belongs to the first screen until boots() says otherwise:
+     onFeatures(fn) called during page-script execution must only QUEUE,
+     never start the ~172 KB download. boots() fires startFeatures() after
+     the first render and flushes the queue. */
+  function startFeatures() {
+    if (window.__cmfFeaturesReady || featuresSkipped) {
+      return Promise.resolve();
+    }
+    if (!featuresPromise) {
+      featuresPromise = new Promise((resolve) => {
+        const s = document.createElement("script");
+        s.src = "js/bundle-features.js";
+        s.onload = () => resolve();
+        // The SW precaches the bundle; a load failure here degrades feature
+        // widgets (they stay empty), it must never fail the boot.
+        s.onerror = () => resolve();
+        document.body.appendChild(s);
+      });
+    }
+    return featuresPromise;
+  }
+
+  CMF.onFeatures = function (fn) {
+    let p;
+    if (window.__cmfFeaturesReady || featuresSkipped) {
+      p = Promise.resolve();
+    } else if (featuresPromise) {
+      p = featuresPromise;
+    } else {
+      if (!waiterPromise) {
+        waiterPromise = new Promise((resolve) => {
+          waiterResolve = resolve;
+        });
+      }
+      p = waiterPromise;
+    }
+    return fn ? p.then(fn) : p;
+  };
+
   /* opts.deferRecipes: the homepage renders its wall from catalog + vocab
      alone and fills recipe-dependent widgets (weather picks) when the
-     background recipes.json lands — everyone else awaits recipes as before. */
+     background recipes.json lands — everyone else awaits recipes as before.
+     opts.skipFeatures: page uses no feature modules at all (about/wildcard),
+     so the features bundle is neither injected nor awaited. */
   CMF.boots = function (active, init, opts) {
     CMF.renderChrome(active);
+    featuresSkipped = !!(opts && opts.skipFeatures);
     const ready = opts && opts.deferRecipes
       ? CMF.preload()
       : Promise.all([CMF.preload(), CMF.preloadRecipes()]);
@@ -264,6 +322,12 @@
         CMF.initCatalog();
         if (CMF.buildPairingIndex) CMF.buildPairingIndex(CMF.data.recipes);
         if (init) init();
+        // First render is on screen; lean pages start the features download
+        // now (sync pages already have it, this resolves immediately) and
+        // any queued onFeatures() waiters are flushed.
+        startFeatures().then(() => {
+          if (waiterResolve) waiterResolve();
+        });
       })
       .catch((err) => {
         const main = document.querySelector(".container") || document.body;
@@ -276,8 +340,11 @@
 
   /* Run fn once BOTH the core payload and the background AI shards have
      landed. Pages render core content at boots time and refresh only their
-     AI zones here, so fn always sees a complete CMF.data. */
+     AI zones here, so fn always sees a complete CMF.data. Features are
+     chained in too: AI-zone repaints may use feature modules. */
   CMF.onAiReady = function (fn) {
-    Promise.all([CMF.preload(), CMF.preloadAI()]).then(fn).catch(() => {});
+    Promise.all([CMF.preload(), CMF.preloadAI(), CMF.onFeatures()])
+      .then(fn)
+      .catch(() => {});
   };
 })();

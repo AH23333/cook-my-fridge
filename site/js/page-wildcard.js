@@ -104,7 +104,9 @@
       '<div class="empty">从 <a href="result.html">结果页</a> 点一张 AI 卡片，或直接来个 <a href="wildcard.html?blind=1">冰箱盲盒</a>。</div>';
   }
 
-  CMF.boots("index.html", start);
+  // This page uses zero feature modules (esc + storage + AI shards only):
+  // skip the features bundle entirely.
+  CMF.boots("index.html", start, { skipFeatures: true });
   // This page's content IS the AI shards: start() renders an honest "not
   // ready yet" state when they are still in flight; re-run once they land.
   CMF.onAiReady(() => start());

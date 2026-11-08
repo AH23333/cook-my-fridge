@@ -100,38 +100,82 @@ def export_ai_cache() -> dict:
     return out
 
 
-"""Shared JS modules concatenated into one bundle by the build (dev tree
-stays modular in web/js; only site/ ships the bundle). Order only needs to
+"""Shared JS modules concatenated into two bundles by the build (dev tree
+stays modular in web/js; only site/ ships the bundles). Order only needs to
 be stable: every module is an IIFE that registers onto window.CMF and is
-used at call time, never at load time."""
-BUNDLE_MODULES: tuple[str, ...] = (
-    "store", "catalog", "search", "nlparse", "nutrition", "goals", "balance",
-    "diets", "seasonal", "prices", "journal", "inventory", "pairings",
-    "planner", "stats", "cleanout", "qrcode", "share", "sync", "weather",
-    "voice", "foodfacts", "tools", "inventory-ui", "ui",
+used at call time, never at load time.
+
+Split rationale (per-page boot-path audit, 2026-11-08): the first screen
+needs only BOOT_MODULES (~31 KB); FEATURE_MODULES (~172 KB) are enrichment.
+Lean pages (DEFER_PAGES) load boot synchronously and the features bundle is
+injected by CMF.boots() AFTER the first render; content-heavy pages load
+both synchronously, exactly like the old single bundle."""
+BOOT_MODULES: tuple[str, ...] = (
+    "store", "catalog", "search", "nlparse", "seasonal", "ui",
+)
+FEATURE_MODULES: tuple[str, ...] = (
+    "nutrition", "goals", "balance", "diets", "prices", "journal",
+    "inventory", "pairings", "planner", "stats", "cleanout", "qrcode",
+    "share", "sync", "weather", "voice", "foodfacts", "tools", "inventory-ui",
+)
+BUNDLE_MODULES: tuple[str, ...] = BOOT_MODULES + FEATURE_MODULES
+
+# Pages whose boot path touches no feature module (audited per page-*.js):
+# index renders wall+banner from boot modules (weather/voice enrich via
+# CMF.onFeatures), result/wildcard render from search+recipeCard+storage,
+# about is static. Everyone else gets bundle-features.js synchronously.
+DEFER_PAGES: frozenset = frozenset(
+    {"index.html", "about.html", "result.html", "wildcard.html"}
 )
 
+BOOT_BUNDLE = "js/bundle-boot.js"
+FEATURE_BUNDLE = "js/bundle-features.js"
 
-def build_js_bundle() -> int:
-    """Concatenate the shared modules into site/js/bundle.js. Returns bytes."""
+
+def _concat_modules(names: tuple[str, ...]) -> str:
     out = []
-    for name in BUNDLE_MODULES:
+    for name in names:
         src = WEB_DIR / "js" / f"{name}.js"
         if not src.exists():
             raise RuntimeError(f"bundle 模块缺失: {src}")
         out.append(src.read_text(encoding="utf-8"))
-    target = SITE_DIR / "js" / "bundle.js"
-    target.parent.mkdir(parents=True, exist_ok=True)
-    text = "\n;\n".join(out)
-    _retry(lambda: target.write_text(text, encoding="utf-8", newline="\n"))
-    return len(text.encode("utf-8"))
+    return "\n;\n".join(out)
+
+
+def build_js_bundle() -> dict:
+    """Write site/js/bundle-boot.js and site/js/bundle-features.js.
+
+    Returns {"boot": bytes, "features": bytes}. The features bundle ends
+    with a readiness marker so CMF.onFeatures() can tell a synchronously
+    loaded bundle from one that still needs injecting."""
+    boot = _concat_modules(BOOT_MODULES)
+    features = (
+        _concat_modules(FEATURE_MODULES)
+        + "\n;\nwindow.__cmfFeaturesReady = true;\n"
+    )
+    for path, text in (
+        (SITE_DIR / BOOT_BUNDLE, boot),
+        (SITE_DIR / FEATURE_BUNDLE, features),
+    ):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        _retry(lambda path=path, text=text: path.write_text(
+            text, encoding="utf-8", newline="\n"
+        ))
+    return {
+        "boot": len(boot.encode("utf-8")),
+        "features": len(features.encode("utf-8")),
+    }
 
 
 def _rewrite_html_bundles() -> int:
-    """Point each deployed page at bundle.js + its page script (25 -> 7 reqs
-    on the first screen; measured slow-3G waterfall: 20 script requests).
+    """Point each deployed page at the split bundles + its page script.
 
-    The bundle tag must take the position of the FIRST removed module script:
+    Every page gets bundle-boot.js; pages outside DEFER_PAGES also get
+    bundle-features.js synchronously (their boot path renders feature
+    content), while DEFER_PAGES let CMF.boots() inject it after the first
+    render.
+
+    The boot tag must take the position of the FIRST removed module script:
     inserting it before </body> instead leaves inline boots() callers (e.g.
     about.html) running against an undefined window.CMF."""
     rewritten = 0
@@ -152,10 +196,11 @@ def _rewrite_html_bundles() -> int:
             (i for i, l in enumerate(lines) if '<script src="js/page-' in l),
             len(lines),
         )
+        tags = [f'  <script src="{BOOT_BUNDLE}"></script>\n']
+        if html.name not in DEFER_PAGES:
+            tags.append(f'  <script src="{FEATURE_BUNDLE}"></script>\n')
         kept = [l for l in lines if '<script src="js/' not in l or "js/page-" in l]
-        kept.insert(
-            min(first_removed, first_page), '  <script src="js/bundle.js"></script>\n'
-        )
+        kept[min(first_removed, first_page):min(first_removed, first_page)] = tags
         _retry(lambda html=html, kept=kept: html.write_text(
             "".join(kept), encoding="utf-8", newline="\n"
         ))
@@ -270,7 +315,8 @@ def build_site() -> dict:
         "recipes": len(recipes),
         "ingredients": len(catalog_payload["ingredients"]),
         "ai_cards": ai,
-        "bundle_kb": round(bundle_bytes / 1024, 1),
+        "boot_kb": round(bundle_bytes["boot"] / 1024, 1),
+        "features_kb": round(bundle_bytes["features"] / 1024, 1),
         "html_bundled": rewritten,
         "html_prefetch": prefetched,
         "site_dir": str(SITE_DIR),
