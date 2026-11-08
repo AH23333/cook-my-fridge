@@ -44,6 +44,10 @@ def main() -> None:
 
     sub.add_parser("enrich", help="fill missing variants/ideas with labelled templates")
     sub.add_parser("build")
+    p_serve = sub.add_parser(
+        "serve", help="preview site/ locally (negotiates precompressed .br/.gz)"
+    )
+    p_serve.add_argument("--port", type=int, default=8000)
     sub.add_parser("repair")
     sub.add_parser("prune-failures")
     sub.add_parser("audit")
@@ -60,6 +64,12 @@ def main() -> None:
 
         summary = build_site()
         print(summary)
+        return
+
+    if args.task == "serve":
+        from cookmyfridge.serve import serve_site
+
+        serve_site(args.port)
         return
 
     if args.task == "import":
