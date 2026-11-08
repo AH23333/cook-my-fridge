@@ -117,6 +117,25 @@
     }
   }
 
+  /* Valid JSON with the wrong TYPE is as real as broken JSON: hand edits,
+     older app versions, and corrupted writes all land here, and a bare
+     readJSON would hand "42" to new Set() or .some() and white-screen the
+     page (found by the corrupt-shape sweep, 2026-11-08). Getters validate
+     shape, not just syntax. */
+  function readArray(key) {
+    const v = readJSON(key, []);
+    return Array.isArray(v) ? v : [];
+  }
+
+  function readStringArray(key) {
+    return readArray(key).filter((x) => typeof x === "string");
+  }
+
+  function readObject(key, fallback) {
+    const v = readJSON(key, fallback);
+    return v && typeof v === "object" && !Array.isArray(v) ? v : fallback;
+  }
+
   function writeJSON(key, value) {
     try {
       localStorage.setItem(key, JSON.stringify(value));
@@ -131,18 +150,21 @@
     }
   }
 
-  CMF.getFridge = () => readJSON(KEYS.fridge, []);
+  CMF.getFridge = () => readStringArray(KEYS.fridge);
   CMF.setFridge = (list) => writeJSON(KEYS.fridge, list);
 
-  CMF.getHistory = () => readJSON(KEYS.history, []);
+  CMF.getHistory = () =>
+    readArray(KEYS.history).filter(
+      (e) => e && typeof e === "object" && Array.isArray(e.selected)
+    );
   CMF.addHistory = (entry) => {
-    const list = readJSON(KEYS.history, []);
+    const list = readArray(KEYS.history);
     list.unshift(entry);
     writeJSON(KEYS.history, list.slice(0, 50));
   };
   CMF.clearHistory = () => writeJSON(KEYS.history, []);
 
-  CMF.getFeedback = () => readJSON(KEYS.feedback, {});
+  CMF.getFeedback = () => readObject(KEYS.feedback, {});
   CMF.setFeedback = (map) => writeJSON(KEYS.feedback, map);
 
   CMF.getPrefs = () => {
@@ -186,13 +208,27 @@
 
   /* Cooked-it journal; journal.js owns the shape, storage stays here so
      exportData/importData cover it automatically. */
-  CMF.getJournal = () => readJSON(KEYS.journal, { cooked: [], ratings: {}, notes: {} });
+  CMF.getJournal = () => {
+    const v = readObject(KEYS.journal, null);
+    if (!v) return { cooked: [], ratings: {}, notes: {} };
+    return {
+      cooked: Array.isArray(v.cooked) ? v.cooked : [],
+      ratings:
+        v.ratings && typeof v.ratings === "object" && !Array.isArray(v.ratings)
+          ? v.ratings
+          : {},
+      notes:
+        v.notes && typeof v.notes === "object" && !Array.isArray(v.notes)
+          ? v.notes
+          : {},
+    };
+  };
   CMF.setJournal = (journal) => writeJSON(KEYS.journal, journal);
 
-  CMF.getInventory = () => readJSON(KEYS.inventory, { batches: [] });
+  CMF.getInventory = () => readObject(KEYS.inventory, { batches: [] });
   CMF.setInventory = (inventory) => writeJSON(KEYS.inventory, inventory);
 
-  CMF.getFavorites = () => readJSON(KEYS.favorites, []);
+  CMF.getFavorites = () => readStringArray(KEYS.favorites);
   CMF.setFavorites = (list) => writeJSON(KEYS.favorites, list);
   CMF.toggleFavorite = (recipeId) => {
     const set = new Set(CMF.getFavorites());
@@ -202,7 +238,7 @@
     return set.has(recipeId);
   };
 
-  CMF.getUrgent = () => readJSON(KEYS.urgent, []);
+  CMF.getUrgent = () => readStringArray(KEYS.urgent);
   CMF.setUrgent = (list) => writeJSON(KEYS.urgent, list);
   CMF.toggleUrgent = (canonical) => {
     const set = new Set(CMF.getUrgent());
@@ -212,7 +248,17 @@
     return set.has(canonical);
   };
 
-  CMF.getPlan = () => readJSON(KEYS.plan, { recipeIds: [], checked: [] });
+  CMF.getPlan = () => {
+    const v = readObject(KEYS.plan, null);
+    return {
+      recipeIds: Array.isArray(v && v.recipeIds)
+        ? v.recipeIds.filter((x) => typeof x === "string")
+        : [],
+      checked: Array.isArray(v && v.checked)
+        ? v.checked.filter((x) => typeof x === "string")
+        : [],
+    };
+  };
   CMF.setPlan = (plan) => writeJSON(KEYS.plan, plan);
   CMF.togglePlanRecipe = (recipeId) => {
     const plan = CMF.getPlan();

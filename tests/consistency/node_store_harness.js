@@ -46,8 +46,10 @@ check("plan add", CMF.togglePlanRecipe("r002") === true);
 check("plan stored", JSON.stringify(CMF.getPlan().recipeIds) === '["r002"]');
 check("plan remove", CMF.togglePlanRecipe("r002") === false);
 
-// history is capped at 50
-for (let i = 0; i < 60; i++) CMF.addHistory({ id: "r" + i });
+// history is capped at 50 (entries carry the app's real write shape:
+// renderHistory maps h.selected, so getHistory drops shapeless junk)
+for (let i = 0; i < 60; i++)
+  CMF.addHistory({ date: "2026-01-0" + ((i % 9) + 1), selected: ["番茄"] });
 check("history capped at 50", CMF.getHistory().length === 50);
 
 // clear history empties the list
