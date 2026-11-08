@@ -126,6 +126,17 @@ def main():
             page.wait_for_timeout(200)
             check("frantic clicks still produce exactly one entry",
                   page.evaluate("CMF.getJournal().cooked.length") == 1)
+            # Enter then immediate mouse click: two activation paths, one entry.
+            page.wait_for_timeout(1100)  # let the oncePer window lapse first
+            page.evaluate("CMF.setJournal({cooked: [], ratings: {}, notes: {}})")
+            page.reload(wait_until="networkidle")
+            page.wait_for_selector("#journal-log")
+            page.focus("#journal-log")
+            page.keyboard.press("Enter")
+            page.locator("#journal-log").click()
+            page.wait_for_timeout(200)
+            check("Enter+click logs exactly one entry",
+                  page.evaluate("CMF.getJournal().cooked.length") == 1)
 
             # Inventory batch add: dblclick on submit must not duplicate.
             page.goto(base + "fridge.html", wait_until="networkidle")
@@ -176,6 +187,23 @@ def main():
             page.locator("#btn-cook").dblclick()
             page.wait_for_timeout(400)
             check("cook dblclick logs exactly one history entry",
+                  page.evaluate("CMF.getHistory().length") == 1)
+            # Enter then immediate mouse click on cook: one history entry.
+            # The Enter activation navigates; the follow-up click either
+            # lands first (oncePer swallows it) or misses the unloaded page
+            # — both outcomes must yield exactly one entry.
+            page.goto(base + "index.html", wait_until="networkidle")
+            page.evaluate("CMF.clearHistory()")  # previous section left one entry
+            page.wait_for_selector(".chip[data-name]")
+            page.click('.chip[data-name="鸡蛋"]')
+            page.focus("#btn-cook")
+            page.keyboard.press("Enter")
+            try:
+                page.locator("#btn-cook").click(timeout=1200)
+            except Exception:
+                pass
+            page.wait_for_timeout(400)
+            check("cook Enter+click logs exactly one history entry",
                   page.evaluate("CMF.getHistory().length") == 1)
             context2.close()
             browser.close()
