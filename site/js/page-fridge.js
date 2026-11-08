@@ -364,6 +364,12 @@
         current.checked = [...set];
         CMF.setPlan(current);
         renderPlan();
+        // renderPlan() replaced every row; hand focus back to the same item
+        // so keyboard users don't restart the list after each toggle.
+        const again = root.querySelector(
+          `input[data-item="${CSS.escape(item)}"]`
+        );
+        if (again) again.focus();
       };
     });
   }
