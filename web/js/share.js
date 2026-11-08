@@ -245,16 +245,17 @@
 
     function close() {
       overlay.remove();
-      document.removeEventListener("keydown", onKey);
-    }
-    function onKey(ev) {
-      if (ev.key === "Escape") close();
+      releaseFocus();
     }
     overlay.addEventListener("click", (ev) => {
       if (ev.target === overlay || ev.target.closest(".modal-close")) close();
     });
-    document.addEventListener("keydown", onKey);
     document.body.appendChild(overlay);
+    // Focus trap + Escape + restore-on-close live in ui.js; share.js loads
+    // earlier in the bundle but this runs long after every module is up.
+    const releaseFocus = CMF.mountModalFocus
+      ? CMF.mountModalFocus(overlay, close)
+      : () => {};
 
     overlay.querySelector("#share-download").onclick = () => {
       track("png");

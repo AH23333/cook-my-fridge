@@ -30,6 +30,15 @@ function fakeEl() {
     querySelector() {
       return null;
     },
+    querySelectorAll() {
+      return [];
+    },
+    hasAttribute() {
+      return false;
+    },
+    focus() {
+      this.focused = true;
+    },
     insertAdjacentHTML() {},
     setAttribute() {},
     closest() {
@@ -50,6 +59,7 @@ global.document = {
   querySelector: () => null,
   createElement: () => fakeEl(),
   body: { appendChild: (el) => (appended.push(el), el) },
+  activeElement: null,
   addEventListener(type, fn) {
     (docListeners[type] = docListeners[type] || []).push(fn);
   },
@@ -107,7 +117,9 @@ check("chip click opens a new modal", next !== modal && !!next.innerHTML);
 check("chip navigates to the clicked ingredient", next.innerHTML.includes("番茄") && modal.removed === true);
 
 // Escape closes the newly opened modal.
-(docListeners.keydown || []).forEach((fn) => fn({ key: "Escape" }));
+(docListeners.keydown || []).forEach((fn) =>
+  fn({ key: "Escape", stopPropagation() {} })
+);
 check("Escape closes the modal", next.removed === true);
 
 // Graceful degradation: a page that did not load pairings.js must not crash.

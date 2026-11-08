@@ -62,7 +62,7 @@
       "<h3>🍳 开饭打卡</h3>" +
       `<p class="journal-count">${count ? "这道菜你做过 " + count + " 次" : "还没做过这道菜，做完来打个卡吧"}${rating ? " · 当前评分 " + CMF.esc(rating) + " 星" : ""}</p>` +
       '<div class="journal-rate"><span>评分</span><span class="journal-stars" id="journal-stars">' + stars + "</span></div>" +
-      '<textarea id="journal-note" class="journal-note" rows="2" maxlength="500" placeholder="记一笔：口味、改动、下次注意…">' + CMF.esc(note) + "</textarea>" +
+      '<textarea id="journal-note" class="journal-note" rows="2" maxlength="500" aria-label="打卡笔记" placeholder="记一笔：口味、改动、下次注意…">' + CMF.esc(note) + "</textarea>" +
       '<button class="btn btn-primary btn-sm" id="journal-log">✅ 我做过这道菜</button>' +
       '<span class="journal-hint">打卡会记录日期、份量、每份估算热量与整菜成本，可在统计页看连击与成就。</span>' +
       "</div>"
@@ -284,6 +284,9 @@
     let index = 0;
     const overlay = document.createElement("div");
     overlay.className = "cooking-overlay";
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlay.setAttribute("aria-label", "烹饪模式：" + recipe.title);
     document.body.appendChild(overlay);
 
     // Kitchen timer state, kept across step re-renders. Deadline-based, not
@@ -373,6 +376,10 @@
     }
 
     function paint() {
+      // Re-rendering replaces every control; if focus lived inside (keyboard
+      // step-through), hand it to the primary action of the NEW step or it
+      // would be lost to <body> and the trap would feel broken.
+      const hadFocusInside = overlay.contains(document.activeElement);
       overlay.innerHTML =
         '<div class="cooking-card">' +
         `<div class="cooking-progress">第 ${index + 1} / ${steps.length} 步 · ${CMF.esc(recipe.title)}</div>` +
@@ -420,19 +427,30 @@
         done.onclick = () => close();
       overlay.querySelector("#cook-close").onclick = () => close();
       wireTimer();
+      if (hadFocusInside) {
+        const primary =
+          overlay.querySelector("#cook-next") ||
+          overlay.querySelector("#cook-done") ||
+          overlay.querySelector("#cook-close");
+        if (primary) primary.focus();
+      }
     }
 
     function close() {
       stopTick();
       releaseWakeLock();
       overlay.remove();
+      releaseFocus();
     }
 
-    overlay.onkeydown = (e) => {
-      if (e.key === "Escape") close();
-    };
     requestWakeLock();
     paint();
+    // Focus trap + document-level Escape + restore-on-close (ui.js). The old
+    // overlay.onkeydown only fired when focus happened to be inside — which
+    // nothing guaranteed, so Escape was dead on open (stage41 red).
+    const releaseFocus = CMF.mountModalFocus(overlay, close, {
+      initial: "#cook-next, #cook-done, #cook-close",
+    });
   }
 
   function start() {

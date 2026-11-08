@@ -197,15 +197,11 @@
 
     function close() {
       overlay.remove();
-      document.removeEventListener("keydown", onKey);
-    }
-    function onKey(ev) {
-      if (ev.key === "Escape") close();
+      releaseFocus();
     }
     overlay.addEventListener("click", (ev) => {
       if (ev.target === overlay || ev.target.closest(".modal-close")) close();
     });
-    document.addEventListener("keydown", onKey);
     overlay.addEventListener("click", (ev) => {
       const chip = ev.target.closest(".pairing-chip");
       if (chip) {
@@ -214,6 +210,56 @@
       }
     });
     document.body.appendChild(overlay);
+    const releaseFocus = CMF.mountModalFocus(overlay, close);
+  };
+
+  /* Focus management for modal overlays: remembers the trigger, moves
+     focus inside, traps Tab/Shift+Tab, closes on Escape, and returns focus
+     to the trigger on close. Returns a release() that MUST be called by
+     the owner's close() — it detaches the key handler and restores focus.
+     Without this, keyboard users lose focus into the void behind the
+     overlay and Escape only works by accident of where focus happened to
+     be (measured red in stage41 before this existed). */
+  CMF.mountModalFocus = function (overlay, close, opts) {
+    const trigger = document.activeElement;
+    const modal = overlay.querySelector(".modal, .cooking-card") || overlay;
+    if (!modal.hasAttribute("tabindex")) modal.setAttribute("tabindex", "-1");
+    const focusables = () =>
+      [...modal.querySelectorAll(
+        'a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      )].filter((el) => !el.disabled && el.offsetParent !== null);
+    const preferred =
+      opts && opts.initial ? modal.querySelector(opts.initial) : null;
+    const first = preferred || focusables()[0];
+    (first || modal).focus();
+    function onKey(ev) {
+      if (ev.key === "Escape") {
+        ev.stopPropagation();
+        close();
+        return;
+      }
+      if (ev.key !== "Tab") return;
+      const list = focusables();
+      if (!list.length) {
+        ev.preventDefault();
+        modal.focus();
+        return;
+      }
+      const firstEl = list[0];
+      const lastEl = list[list.length - 1];
+      if (ev.shiftKey && (document.activeElement === firstEl || document.activeElement === modal)) {
+        ev.preventDefault();
+        lastEl.focus();
+      } else if (!ev.shiftKey && document.activeElement === lastEl) {
+        ev.preventDefault();
+        firstEl.focus();
+      }
+    }
+    document.addEventListener("keydown", onKey, true);
+    return function release() {
+      document.removeEventListener("keydown", onKey, true);
+      if (trigger && trigger.isConnected && trigger.focus) trigger.focus();
+    };
   };
 
   CMF.copyText = function (text) {
