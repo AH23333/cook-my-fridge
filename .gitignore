@@ -24,5 +24,12 @@ Thumbs.db
 .idea/
 .vscode/
 
+# Volatile run artifacts: these two deduction-preview shots carry subpixel
+# clip jitter (fractional scroll offset on element screenshots) even after
+# UUID/date sanitization — nothing machine-compares them, tracking them
+# only dirties the tree after every regression run.
+screenshots/stage28/03-deduction-preview.png
+screenshots/stage28/04-deduction-mobile.png
+
 # Build logs
 *.log

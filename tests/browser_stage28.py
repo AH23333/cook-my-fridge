@@ -185,6 +185,30 @@ def main():
             tomato.locator(".inventory-use-grams").fill("500")
             use.locator("[data-use-preview]").click()
             use.locator(".inventory-allocations summary").click()
+            # Allocation rows print raw batch UUIDs (random per run) and
+            # today-relative expiry dates (shift daily) — the baseline
+            # screenshots flapped on both. Swap in stable placeholders for
+            # the screenshot only (display-level, logic untouched).
+            use.evaluate("""(el) => {
+                const ids = new Map(), days = new Map();
+                el.querySelectorAll("*").forEach((n) => {
+                    n.childNodes.forEach((t) => {
+                        if (t.nodeType !== 3) return;
+                        t.textContent = t.textContent
+                            .replace(
+                                /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g,
+                                (m) => {
+                                    if (!ids.has(m)) ids.set(m, `批次#${ids.size + 1}`);
+                                    return ids.get(m);
+                                }
+                            )
+                            .replace(/\\d{4}-\\d{2}-\\d{2}/g, (m) => {
+                                if (!days.has(m)) days.set(m, `日期${"ABCDEF"[days.size]}`);
+                                return days.get(m);
+                            });
+                    });
+                });
+            }""")
             use.screenshot(path=str(SHOTS / "03-deduction-preview.png"), style=HEADER_MASK)
             page.set_viewport_size({"width": 390, "height": 844})
             use.screenshot(path=str(SHOTS / "04-deduction-mobile.png"), style=HEADER_MASK)
