@@ -13,6 +13,7 @@ from __future__ import annotations
 import functools
 import http.server
 import json
+import sys
 import threading
 import time
 from pathlib import Path
@@ -20,18 +21,18 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
-
-
-class Quiet(http.server.SimpleHTTPRequestHandler):
-    def log_message(self, *args):
-        pass
+# Serve through the production negotiation handler: precompressed .br/.gz
+# make the slow-3G readings match what real hosts deliver (an uncompressed
+# test server overstates transfer ~4x on JS/JSON).
+sys.path.insert(0, str(ROOT / "src"))
+from cookmyfridge.serve import PrecompressedHandler  # noqa: E402
 
 
 def main():
     results = {}
     errors = []
     server = http.server.ThreadingHTTPServer(
-        ("127.0.0.1", 0), functools.partial(Quiet, directory=str(ROOT / "site"))
+        ("127.0.0.1", 0), functools.partial(PrecompressedHandler, directory=str(ROOT / "site"))
     )
     threading.Thread(target=server.serve_forever, daemon=True).start()
     base = f"http://127.0.0.1:{server.server_port}/"
@@ -69,8 +70,9 @@ def main():
                   "正在加载" in resp.text() and 'id="ingredient-wall"' in resp.text())
             page.wait_for_selector(".chip[data-name]", timeout=30000)
             wall_s = time.perf_counter() - t0
-            # Thresholds sit ~20% above the measured ~12.7 s (worst case: local
-            # server has no gzip; real hosts compress JSON ~90%).
+            # Baseline 2026-11-08 (bundle split + precompressed serving):
+            # ~4.5 s on this profile. Uncompressed serving read ~12.7 s —
+            # the threshold keeps tripwire generosity for both worlds.
             check(f"wall renders fast on slow 3G ({wall_s:.1f}s < 15s)", wall_s < 15)
             page.click('.chip[data-name="番茄"]')
             page.click('.chip[data-name="鸡蛋"]')
