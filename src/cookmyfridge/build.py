@@ -163,6 +163,34 @@ def _rewrite_html_bundles() -> int:
     return rewritten
 
 
+CORE_PREFETCH_TAG = (
+    '  <script>window.__cmfCore=fetch("data/core.json",{cache:"no-cache"})'
+    '.then(function(r){if(!r.ok)throw new Error("加载失败: data/core.json");'
+    "return r.json()});</script>"
+)
+
+
+def _inject_core_prefetch() -> int:
+    """Start the core-data fetch while the HTML is still parsing. Without
+    this hook store.js only calls fetch() after bundle.js (~200 KB) has
+    downloaded AND executed — on the slow-3G profile the data wave starts
+    ~6.4 s in and the wall pays ~2.3 s of avoidable serialization. The
+    inline script lets core.json download in parallel with the bundle;
+    store.js consumes window.__cmfCore when present. Every page boots
+    through CMF.boots -> CMF.preload, so all nine get the tag."""
+    injected = 0
+    for html in SITE_DIR.glob("*.html"):
+        text = html.read_text(encoding="utf-8")
+        if "window.__cmfCore" in text or "<head>" not in text:
+            continue
+        _retry(lambda html=html, text=text: html.write_text(
+            text.replace("<head>", "<head>\n" + CORE_PREFETCH_TAG, 1),
+            encoding="utf-8", newline="\n",
+        ))
+        injected += 1
+    return injected
+
+
 def copy_web_assets() -> None:
     if SITE_DIR.exists():
         # Remove only generated asset folders, keep data dir until rewritten.
@@ -228,6 +256,7 @@ def build_site() -> dict:
     copy_web_assets()
     bundle_bytes = build_js_bundle()
     rewritten = _rewrite_html_bundles()
+    prefetched = _inject_core_prefetch()
     # The build owns site/data wholesale; rebuild it from scratch so orphaned
     # shards from older versions never linger in the deployable output.
     data_dir = SITE_DIR / "data"
@@ -243,6 +272,7 @@ def build_site() -> dict:
         "ai_cards": ai,
         "bundle_kb": round(bundle_bytes / 1024, 1),
         "html_bundled": rewritten,
+        "html_prefetch": prefetched,
         "site_dir": str(SITE_DIR),
     }
     return summary

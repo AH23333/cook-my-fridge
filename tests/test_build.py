@@ -95,7 +95,7 @@ def test_bundle_and_html_rewiring(tmp_path, monkeypatch):
     (fake_web / "js").mkdir(parents=True)
     (fake_web / "css").mkdir(parents=True)
     (fake_web / "index.html").write_text(
-        "<html><body>\n"
+        "<html><head></head><body>\n"
         '  <script src="js/store.js"></script>\n'
         '  <script src="js/ui.js"></script>\n'
         '  <script src="js/page-home.js"></script>\n'
@@ -103,7 +103,7 @@ def test_bundle_and_html_rewiring(tmp_path, monkeypatch):
         encoding="utf-8",
     )
     (fake_web / "about.html").write_text(
-        "<html><body>\n"
+        "<html><head></head><body>\n"
         '  <script src="js/store.js"></script>\n'
         '  <script>window.CMF.boots("about.html");</script>\n'
         "</body></html>\n",
@@ -121,6 +121,7 @@ def test_bundle_and_html_rewiring(tmp_path, monkeypatch):
     build.copy_web_assets()
     size = build.build_js_bundle()
     rewritten = build._rewrite_html_bundles()
+    prefetched = build._inject_core_prefetch()
 
     bundle = (fake_site / "js" / "bundle.js").read_text(encoding="utf-8")
     assert size > 0 and "/* ui marker */" in bundle
@@ -137,6 +138,12 @@ def test_bundle_and_html_rewiring(tmp_path, monkeypatch):
     # </body> instead of at the first removed module left window.CMF
     # undefined on about.html (real bug caught by stage27/32/38).
     assert about.index('src="js/bundle.js"') < about.index("window.CMF.boots")
+    # Core-data prefetch lands in <head> on every page so the data wave
+    # overlaps the bundle download; store.js consumes window.__cmfCore.
+    assert prefetched == 2
+    for name in ("index.html", "about.html"):
+        built = (fake_site / name).read_text(encoding="utf-8")
+        assert built.index("window.__cmfCore") < built.index('src="js/bundle.js"'), name
 
 
 def test_service_worker_precaches_every_page():

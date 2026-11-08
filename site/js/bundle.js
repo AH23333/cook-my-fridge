@@ -43,8 +43,11 @@
     const d = CMF.data;
     // One request for the whole blocking core (catalog + vocab merged at
     // build time): two parallel requests cost an extra round trip for a
-    // 0.5 KB vocab on slow links.
-    corePromise = fetchJSON("data/core.json").then((core) => {
+    // 0.5 KB vocab on slow links. Deployed pages carry a build-injected
+    // window.__cmfCore fetch that starts while the HTML is still parsing,
+    // so the data wave overlaps the bundle download instead of queueing
+    // behind it; the plain fetch is the fallback for the dev tree.
+    corePromise = (window.__cmfCore || fetchJSON("data/core.json")).then((core) => {
       d.catalog = core.catalog;
       d.vocab = core.vocab;
       return d;
