@@ -42,10 +42,17 @@ def extract_json(text: str):
 class LLMClient:
     def __init__(self, api_key: str | None = None, base_url: str | None = None,
                  model: str | None = None):
-        settings_key, settings_base, settings_model = zhipu_settings()
-        self.api_key = api_key or settings_key
-        self.base_url = base_url or settings_base
-        self.model = model or settings_model
+        # Only touch environment/.env config for values the caller did not
+        # supply explicitly, so fully-parameterised instances (e.g. tests)
+        # never require ZHIPU_API_KEY to exist.
+        self.api_key = api_key
+        self.base_url = base_url
+        self.model = model
+        if self.api_key is None or self.base_url is None or self.model is None:
+            settings_key, settings_base, settings_model = zhipu_settings()
+            self.api_key = self.api_key or settings_key
+            self.base_url = self.base_url or settings_base
+            self.model = self.model or settings_model
 
     def chat(
         self,
