@@ -135,7 +135,8 @@ python run.py build        # 导出静态站点
 
 将 `site/` 目录整体推送到任意静态托管即可：
 
-- **GitHub Pages**：把 `site/` 内容放到仓库根（或 `/docs`），在 Settings → Pages 选择对应分支。
+- **GitHub Pages（自动部署，推荐）**：仓库已内置 `.github/workflows/pages.yml`，推送到 `main` 分支即自动跑测试 → 审计 → 构建 → 发布 `site/`。只需一次性在 GitHub 仓库 Settings → Pages 将 Source 设为 **GitHub Actions**。
+- **GitHub Pages（手动）**：把 `site/` 内容放到仓库根（或 `/docs`），在 Settings → Pages 选择对应分支。
 - **Cloudflare Pages / Netlify / Vercel**：构建命令留空，发布目录设为 `site`。
 
 构建已产出 `.gz`/`.br` 预压缩资产（省 ~89% 传输字节）；Nginx `gzip_static` /
